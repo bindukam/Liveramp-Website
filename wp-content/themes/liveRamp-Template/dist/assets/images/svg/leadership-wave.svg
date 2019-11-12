@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 132.5 465.5">
+   <defs>
+      <style>
+         .cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8,.cls-9{fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:3.5px;}
+         <!-- .cls-1{stroke:#fae164;} -->
+         .cls-2{stroke:var(--theme-primary-color);}
+         <!-- .cls-3{stroke:#eef3f8;} -->
+         <!-- .cls-4{stroke:#fff6c9;} -->
+         .cls-5{stroke:var(--theme-faded-color);}
+         <!-- .cls-6{stroke:#d1e8cb;} -->
+         <!-- .cls-7{stroke:#a3d39c;} -->
+         .cls-8{stroke:#1d3463;}
+         .cls-9{stroke:var(--theme-accent-color);}
+      </style>
+   </defs>
+   <title>leadership-wave</title>
+   <g id="c4">
+      <path id="Stroke_1_Copy" data-name="Stroke 1 Copy" class="cls-1" d="M647.71,488.88a216.73,216.73,0,0,0,3.92-37.59c.43-18.65-1.12-34.07-3.93-47.41" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_19_Copy" data-name="Stroke 19 Copy" class="cls-1" d="M575.58,437.88c.14,4.28.16,8.73,0,13.39-.55,22.74-3.92,40.57-8.92,55.61" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_1_Copy-2" data-name="Stroke 1 Copy-2" class="cls-2" d="M647.71,488.88a216.73,216.73,0,0,0,3.92-37.59c.43-18.65-1.12-34.07-3.93-47.41" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_19_Copy-2" data-name="Stroke 19 Copy-2" class="cls-2" d="M575.58,437.88c.14,4.28.16,8.73,0,13.39-.55,22.74-3.92,40.57-8.92,55.61" transform="translate(-520.95 -327.13)"/>
+   </g>
+   <g id="c3">
+      <path id="Stroke_3_Copy_2" data-name="Stroke 3 Copy 2" class="cls-3" d="M594.7,596.88c14-33.48,35.86-53.29,48-90" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_9_Copy_2" data-name="Stroke 9 Copy 2" class="cls-4" d="M613.7,446.88c0,1.48,0,3-.07,4.51-.42,18.32-2.6,33.45-5.93,46.49" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_11_Copy" data-name="Stroke 11 Copy" class="cls-4" d="M608.7,403.88a157.6,157.6,0,0,1,4,25" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_17_Copy" data-name="Stroke 17 Copy" class="cls-3" d="M522.7,587.88c11.27-23.19,26-40.41,37-64" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_3_Copy_2-2" data-name="Stroke 3 Copy 2-2" class="cls-5" d="M594.7,596.88c14-33.48,35.86-53.29,48-90" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_9_Copy_2-2" data-name="Stroke 9 Copy 2-2" class="cls-5" d="M613.7,446.88c0,1.48,0,3-.07,4.51-.42,18.32-2.6,33.45-5.93,46.49" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_11_Copy-2" data-name="Stroke 11 Copy-2" class="cls-5" d="M608.7,403.88a157.6,157.6,0,0,1,4,25" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_17_Copy-2" data-name="Stroke 17 Copy-2" class="cls-5" d="M522.7,587.88c11.27-23.19,26-40.41,37-64" transform="translate(-520.95 -327.13)"/>
+   </g>
+   <g id="c2">
+      <path id="Stroke_13_Copy" data-name="Stroke 13 Copy" class="cls-6" d="M547.46,702.88a207,207,0,0,1-2.69-40.39c1.89-79.41,37.73-98.82,56.93-147.61" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_15_Copy_2" data-name="Stroke 15 Copy 2" class="cls-7" d="M573.7,419.88c-4.89-41.64-21.78-64.21-36-91" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_13_Copy-2" data-name="Stroke 13 Copy-2" class="cls-8" d="M547.46,702.88a207,207,0,0,1-2.69-40.39c1.89-79.41,37.73-98.82,56.93-147.61" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_15_Copy_2-2" data-name="Stroke 15 Copy 2-2" class="cls-8" d="M573.7,419.88c-4.89-41.64-21.78-64.21-36-91" transform="translate(-520.95 -327.13)"/>
+   </g>
+   <g id="c1">
+      <path id="Stroke_5_Copy" data-name="Stroke 5 Copy" class="cls-3" d="M589.54,613.88c-3.8,13.53-6.3,29.32-6.77,48.7-1.59,66.78,23,92.3,40.93,128.3" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_7_Copy" data-name="Stroke 7 Copy" class="cls-7" d="M575.7,328.88c10,18.47,21.28,34.95,29,57" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_5_Copy-2" data-name="Stroke 5 Copy-2" class="cls-9" d="M589.54,613.88c-3.8,13.53-6.3,29.32-6.77,48.7-1.59,66.78,23,92.3,40.93,128.3" transform="translate(-520.95 -327.13)"/>
+      <path id="Stroke_7_Copy-2" data-name="Stroke 7 Copy-2" class="cls-9" d="M575.7,328.88c10,18.47,21.28,34.95,29,57" transform="translate(-520.95 -327.13)"/>
+   </g>
+</svg>

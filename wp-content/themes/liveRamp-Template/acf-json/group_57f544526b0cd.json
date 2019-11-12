@@ -1,0 +1,41 @@
+{
+    "key": "group_57f544526b0cd",
+    "title": "Department Filter",
+    "fields": [
+        {
+            "key": "field_57e9fc55861ad",
+            "label": "Exclude Departments",
+            "name": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "acf-options"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [],
+    "active": true,
+    "description": "",
+    "old_ID": 46287,
+    "modified": 1555016319
+}

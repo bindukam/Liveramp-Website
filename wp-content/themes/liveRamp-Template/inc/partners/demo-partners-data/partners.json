@@ -1,0 +1,318 @@
+[
+  {
+    "id": 38,
+    "name": "24/7 Media",
+    "description": "24/7 Media creates the technology tools for business advantage in the digital age, offering our clients powerful and streamlined marketing solutions in a complex digital industry.",
+    "url": "http://www.xaxis.com/",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/38.png",
+    "categories": [
+      "Media",
+      "Video",
+      "Search"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "none",
+    "availabilities": [
+      "UK",
+      "FR",
+      "US"
+    ]
+  },
+  {
+    "id": 48,
+    "name": "Accuen",
+    "description": "Accuen is a digital media execution platform that provides holistic data management, audience modeling, and inventory procurement.",
+    "url": "http://www.accuenmedia.com/technology/",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/48.png",
+    "categories": [
+      "Media"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "none",
+    "availabilities": [
+      "US"
+    ]
+  },
+  {
+    "id": 58,
+    "name": "Adobe Audience Manager",
+    "description": "Adobe® AudienceManager is a data management platform that consolidates audience information from all available sources. It identifies, quantifies, and optimizes high-value target audiences, which can then be offered to advertisers via an integrated, secure, privacy-friendly management system that works across all advertising distribution platforms.",
+    "url": "http://www.adobe.com/products/audiencemanager.html",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/58.png",
+    "categories": [
+      "DMP",
+      "Mobile Integration"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "gold",
+    "availabilities": [
+      "UK",
+      "FR",
+      "US"
+    ]
+  },
+  {
+    "id": 88,
+    "name": "AdRoll",
+    "description": "AdRoll is a full-service display platform that provides retargeting, analytics, optimization, and enterprise solutions for advertisers.",
+    "url": "http://www.adroll.com/features",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/88.png",
+    "categories": [
+      "Media"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "gold",
+    "availabilities": [
+      "UK",
+      "FR",
+      "US"
+    ]
+  },
+  {
+    "id": 108,
+    "name": "AOL",
+    "description": "AOL Advertising provides advertisers, agencies, and publishers with comprehensive and efficient online advertising tools.",
+    "url": "http://advertising.aol.com/",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/108.png",
+    "categories": [
+      "Media",
+      "Video",
+      "User Account Integration"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "gold",
+    "availabilities": [
+      "UK",
+      "FR",
+      "US"
+    ]
+  },
+  {
+    "id": 118,
+    "name": "AppNexus",
+    "description": "AppNexus provides an open and customizable advertising technology platform to serve buyers and sellers of online advertising",
+    "url": "http://www.appnexus.com/platform",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/118.png",
+    "categories": [
+      "Media"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "gold",
+    "availabilities": [
+      "UK",
+      "FR",
+      "US"
+    ]
+  },
+  {
+    "id": 128,
+    "name": "Arcametrics",
+    "description": "Arcametrics provides custom lookalike and branded category audiences to online advertisers, advertising agencies, and lead gen companies. We enable advertisers to improve display and video campaign performance by targeting highly optimized prospect audiences that mirror existing customers or converters.",
+    "url": "http://www.arcametrics.com/about/",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/128.png",
+    "categories": [
+      "Measurement"
+    ],
+    "badges": null,
+    "use_cases": [
+      "Online to Offline Attribution",
+      "Look-alike Modeling"
+    ],
+    "level": "none",
+    "availabilities": [
+      "US"
+    ]
+  },
+  {
+    "id": 138,
+    "name": "Audience Science",
+    "description": "AudienceScience helps advertisers manage their audience data and digital ad spend.",
+    "url": "http://www.audiencescience.com/technology/",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/138.png",
+    "categories": [
+      "DMP",
+      "Media"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "none",
+    "availabilities": [
+      "UK",
+      "FR",
+      "US"
+    ]
+  },
+  {
+    "id": 148,
+    "name": "Bizo",
+    "description": "Bizo's platform offers data management and targeting capabilities which enable B2B marketers to reach audiences through online display.",
+    "url": "http://www.bizo.com/technology/",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/148.png",
+    "categories": [
+      "Media"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "none",
+    "availabilities": [
+      "US"
+    ]
+  },
+  {
+    "id": 158,
+    "name": "Oracle Data Cloud (BlueKai)",
+    "description": "BlueKai is a data management platform, data exchange, and analytics system that allows 1st and 3rd party data providers to utilize their data effectively online.",
+    "url": "http://bluekai.com/data-management-platform.php",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/158.png",
+    "categories": [
+      "DMP"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "gold",
+    "availabilities": [
+      "UK",
+      "FR",
+      "US"
+    ]
+  },
+  {
+    "id": 168,
+    "name": "Brand.net",
+    "description": "Brand.net,a Valassis Digital company, is a leading ad network that uses precise targeting technology to deliver probability over possibility and action over exposure.",
+    "url": "http://www.brand.net/solution/",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/168.png",
+    "categories": [
+      "Media"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "none",
+    "availabilities": [
+      "US"
+    ]
+  },
+  {
+    "id": 178,
+    "name": "BrightRoll",
+    "description": "BrightRoll offers innovative video advertising solutions – including proprietary ad serving and optimization, advanced audience targeting, standard-setting ad units and transparent reporting – to reach audiences across web, mobile and connected TV",
+    "url": "http://www.brightroll.com/",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/178.png",
+    "categories": [
+      "Media",
+      "Video"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "gold",
+    "availabilities": [
+      "UK",
+      "FR",
+      "US"
+    ]
+  },
+  {
+    "id": 198,
+    "name": "Chango",
+    "description": "Chango is a technology media company in the field of data-driven and programmatic digital advertising, specializing in search retargeting and programmatic marketing. ",
+    "url": "http://www.chango.com/about",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/198.png",
+    "categories": [
+      "Media"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "none",
+    "availabilities": [
+      "UK",
+      "FR",
+      "US"
+    ]
+  },
+  {
+    "id": 208,
+    "name": "Collective",
+    "description": "Collective specializes in delivering multiscreen solutions to advertisers and publishers.",
+    "url": "http://collective.com/",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/208.png",
+    "categories": [
+      "Media",
+      "Mobile Integration",
+      "Video"
+    ],
+    "badges": null,
+    "use_cases": [
+      "CRM Retargeting",
+      "Ad Suppression"
+    ],
+    "level": "gold",
+    "availabilities": [
+      "US"
+    ]
+  },
+  {
+    "id": 2089918,
+    "name": "comScore",
+    "description": "comScore is a leading internet technology company that measures what people do as they navigate the digital world - and turns that information into insights and actions for our clients to maximize the value of their digital investments.",
+    "url": "http://www.comscore.com/Products",
+    "logo_url": "https://connect.liveramp-live.dev.cc/public/destinations/show_logo/218.png",
+    "categories": [
+      "Measurement"
+    ],
+    "badges": [
+      "Connector",
+      "Go-to-Market"
+    ],
+    "use_cases": [
+      "Online to Offline Attribution"
+    ],
+    "level": "platinum",
+    "availabilities": [
+      "UK",
+      "FR",
+      "US"
+    ]
+  }
+]

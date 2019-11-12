@@ -1,0 +1,27 @@
+<svg preserveAspectRatio="none" id="title-underline" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372.5 3.5">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #73C06B;
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3.5px;
+      }
+
+      .cls-1-op {
+        opacity: 0.4;
+        isolation: isolate;
+      }
+    </style>
+  </defs>
+  <title>title-underline</title>
+  <g id="Color_2" data-name="Color 2">
+    <path id="Line_2_Copy" data-name="Line 2 Copy" class="cls-1 .cls-1-op" d="M577.7,511.8h96.2" transform="translate(-454.05 -510.05)"/>
+    <path id="Line_2_Copy_3" data-name="Line 2 Copy 3" class="cls-1 .cls-1-op" d="M721.9,511.8H824.8" transform="translate(-454.05 -510.05)"/>
+  </g>
+  <g id="Color_1" data-name="Color 1">
+    <path id="Line_2" data-name="Line 2" class="cls-2" d="M455.8,511.8H582.2" transform="translate(-454.05 -510.05)"/>
+    <path id="Line_2_Copy_2" data-name="Line 2 Copy 2" class="cls-2" d="M655.9,511.8h87.2" transform="translate(-454.05 -510.05)"/>
+  </g>
+</svg>
