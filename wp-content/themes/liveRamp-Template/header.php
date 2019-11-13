@@ -25,13 +25,9 @@
 		<link rel="alternate" href="<?php echo get_permalink($post->ID) ?>" hreflang="<?php the_field('href_lang_tag', 'option') ?>" />
 		<!-- End Href Lang Tag -->
 
-		<!-- Drift Code -->
 		<?php the_field('drift_code', 'option') ?>
-		<!-- End Drift Code -->
 		
-		<!-- Drift Async Code -->
 		<?php the_field('async_drift_code', 'option') ?>
-		<!-- End Drift Async Code -->		
 
 		<!-- VIMEO TRACKING CODE -->
 		<script type='text/javascript' defer='defer' src='https://extend.vimeocdn.com/ga/10577812.js'></script>
