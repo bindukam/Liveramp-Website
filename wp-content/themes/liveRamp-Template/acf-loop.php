@@ -25,7 +25,7 @@
 
         // Tabbed: Horizontal Tabbed Module
         if(get_row_layout()=='tabbed_horizontal_tabbed_module'){
-          include ('acf-modules/tabbed_horizontal_tabbed_module.php');
+          include ('acf-modules/tabbed_horizontal_tabbed_module.php'); 
         }
 
         // Offer Strip
