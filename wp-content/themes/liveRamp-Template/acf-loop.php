@@ -30,7 +30,7 @@
 
         // Offer Strip
         if(get_row_layout()=='offer_strip'){
-          include ('acf-modules/offer_strip.php');
+          include ('acf-modules/offer_strip.php'); 
         }
 
         // Carded Square 6-Card Content
