@@ -29,12 +29,20 @@
 	<div class="grid-container">
 		<div class="grid-x grid-padding-x align-top<?php echo $center; echo $flipped; ?>">
 			<div class="<?php echo $size ?> cell content small-order-2 <?php echo $orderContent ?> big-first-p z-5-r">
-				<h3 class="green title">
-					<?php the_sub_field('title') ?>
-				</h3>
-				<div class="no-lineheight pad-ul">
-				  <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="">
-			  </div>
+				
+				<?php if (get_sub_field('title')): ?>
+					<div class="title_area">
+						<h3 class="green title">
+							<?php the_sub_field('title') ?>
+						</h3>
+						<div class="no-lineheight pad-ul">
+						  <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="">
+					  	</div>
+					</div>
+					
+				<?php endif ?>
+				
+
 				<?php if (get_sub_field('description')): ?>
 					<?php the_sub_field('description'); ?>
 				<?php endif ?>
