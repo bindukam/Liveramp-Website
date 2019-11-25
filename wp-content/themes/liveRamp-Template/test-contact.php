@@ -12,6 +12,8 @@
     <!-- Href Lang Tag  -->
     <link rel="alternate" href="https://liveramp.com/contact/" hreflang="en-us" />
     <!-- End Href Lang Tag -->
+    <script src="https://config-prod.choice.faktor.io/b4826de8-0c24-44f4-a1b5-194cd70a93fb/faktor.js"></script>
+
     <!-- Google Tag Manager -->
     <script>
     (function(w, d, s, l, i) {
@@ -917,7 +919,6 @@
                                     <img src="https://24graj2x2dk813ys0w26mhu5-wpengine.netdna-ssl.com/wp-content/themes/liveRamp-Template/dist/assets/images/svg/title-underline.svg" alt="" class="pad-ul">
                                     <div class="caption dark-slate margin-bottom-1">All fields required * </div>
 
-<script src="https://config-prod.choice.faktor.io/b4826de8-0c24-44f4-a1b5-194cd70a93fb/faktor.js"></script>
     <!-- onclick Function to consent for  marketo only -->
     <script>
         function accept__mkto() {
