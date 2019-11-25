@@ -92,9 +92,9 @@ function sass() {
     .pipe(rename({suffix: '.min'}))
     .pipe($.if(!PRODUCTION, $.sourcemaps.write()))
     .pipe($.if(REVISIONING && PRODUCTION || REVISIONING && DEV, $.rev()))
-    .pipe(gulp.dest(PATHS.dist + '/assets/css'))
+    .pipe(gulp.dest(PATHS.dist + '/assets/css_updated'))
     .pipe($.if(REVISIONING && PRODUCTION || REVISIONING && DEV, $.rev.manifest()))
-    .pipe(gulp.dest(PATHS.dist + '/assets/css'))
+    .pipe(gulp.dest(PATHS.dist + '/assets/css_updated'))
     .pipe(browser.reload({ stream: true }));
 }
 
