@@ -3,7 +3,7 @@
 <?php get_header(); ?>
 
 <?php include('acf-loop.php'); ?>
-
+<script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=2exmzubhkmuiooljxoyyrw" async="true"></script>
 <script>
 
 //FREEZE FLOATING FORM ON WHEN FOOTER REACHES FOLD
