@@ -3,67 +3,112 @@
 <?php get_header(); ?>
 
 <?php include('acf-loop.php'); ?>
-<script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=2exmzubhkmuiooljxoyyrw" async="true"></script>
 <script>
 
 //FREEZE FLOATING FORM ON WHEN FOOTER REACHES FOLD
 $(document).ready(function() {
-    var $windo = $(window);
-    var $footer = $('#footer');
-    var $floating_form = $('.floating-form');
-    
-    var windo_height = $windo.height();
-    var footer_offset_top = $footer.offset().top;
-    var floating_form_height = $floating_form.height();
+    var $floating_form_floater = $('.floating-form.floater');
+    var $floating_form_sticker = $('.floating-form.sticker');
+    var rect = {};
+    var footer_top_window = 0;
+    var window_height = 0;
+   
 
-    $(document).scroll(function() {
+
+    function isElementInViewport (el, dir ) {
+
+        //special bonus for those using jQuery
+        if (typeof jQuery === "function" && el instanceof jQuery) {
+            el = el[0];
+        }
+
+console.log(dir);
+
+        rect = el.getBoundingClientRect();
+        footer_top_window = rect.top;
+        window_height = window.innerHeight;
         
-        var scroll_distance = Math.round($windo.scrollTop());
+        console.log('Window Height',window_height);
+        console.log('Footer to Top',footer_top_window);
 
-	    if (footer_offset_top - windo_height + floating_form_height - scroll_distance < 0) {
-	        $floating_form.css ('position','static');
-	    } else {
-	        $floating_form.css ('position','fixed');
-	    }
-    })
+        if ( (dir=='Down') && (footer_top_window < window_height) ) {
+            //$('body').css('background-color','red');
+           	$floating_form_floater.hide();
+           	$floating_form_sticker.css('visibility','visible')
+
+        }
+        if ( (dir=='Up') && (footer_top_window > window_height) ) {
+            //$('body').css('background-color','yellow');
+            $floating_form_floater.show();
+            $floating_form_sticker.css('visibility','hidden')
+
+        }
+    }
+    var position = $(window).scrollTop(); 
+
+    $(window).scroll(function() { 
+        var scroll = $(window).scrollTop(); 
+        if (scroll > position) { 
+            //console.log('scrollDown');
+            isElementInViewport ($('#footer'), 'Down');
+        } else { 
+            //console.log('scrollUp'); 
+            isElementInViewport ($('#footer'), 'Up');
+        } 
+        position = scroll; 
+    }); 
 });
 
 $(document).ready(function() {
 	//$('#popoup-overlay').show().css('position','fixed').prependTo($('body'));
 
-	$('#click-open-popup').click(
-		() => {$('#popoup-overlay').show().css('position','fixed').prependTo($('body'));}
+	$('#click-open-popup_a, #click-open-popup_b').click(
+		function () {
+			$.colorbox({ inline: true, width: '100%', href: '#mobile-popup', fixed: false, top: true });
+		}
 	)
 	$('#click-close').click(
 		(e) => {$(e.target).parent().hide();return false;}
 	);
 
-
 });
 </script>
-
-<div class="floating-form">
+<div class="floating-form floater">
 	
 	<div class="grid-container">
-		<div class="mktoButtonRow"><span class="mktoButtonWrap mktoRound" style=""><button type="submit" class="mktoButton button cta" id="click-open-popup"><?php the_field('button_label') ?></button></span></div>
+		<a class="lp-legal button" id="click-open-popup_a">Get in Touch</a>
+
 		<div class="message-legal">
 			<p><?php the_field('button_message') ?></p>
 		</div>
 	</div>
 
-	<div id="popoup-overlay">
+</div>	
+<div class="floating-form sticker" style="visibility: hidden;position: static">
+	
+	<div class="grid-container">
+		<a class="lp-legal button" id="click-open-popup_b">Get in Touch</a>
 
-		<img src="/wp-content/themes/liveRamp-Template/dist/assets/images/icon-close_white_100x100.png" alt="" id="click-close">
-		
-		<div class="marketo_form">
+		<div class="message-legal">
+			<p><?php the_field('button_message') ?></p>
+		</div>
+	</div>
+
+</div>	
+
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/standalone-pages/assets/colorbox/example3/colorbox.css">
+<script src="<?php echo get_template_directory_uri() ?>/standalone-pages/assets/colorbox/jquery.colorbox.js"></script>
+<script src="https://lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
+
+<div style="display:none">
+    <div id="mobile-popup">
+		<div class="marketo_form" >
 
 			<div class="form-intro">
 				<p><?php the_field('button_message') ?></p>
 				<p><?php the_field('form_message') ?></p> 
 			</div>
 
-			<script src="https://lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
-										
 			<form id="mktoForm_3923"></form>
 			
 			<script>
@@ -88,6 +133,7 @@ $(document).ready(function() {
 				});
 			</script>
 		</div>
-	</div>
+    </div>
 </div>
+
 <?php get_footer(); ?>
