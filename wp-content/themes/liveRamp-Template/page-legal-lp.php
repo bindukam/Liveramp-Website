@@ -67,9 +67,9 @@ $(document).ready(function() {
 		
 		$(document).scroll(function() {
 			if ($(document).scrollTop() > 1200) {
-				$('#hidemobileforms').show();
+				$('#hidemobileforms').fadeIn();
 			} else {
-				$('#hidemobileforms').hide();
+				$('#hidemobileforms').fadeOut();
 			}
 		})
 
