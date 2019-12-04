@@ -77,7 +77,7 @@ $(document).ready(function() {
 });
 
 </script>
-<div id="hidemobileforms">
+<div id="hidemobileforms" style="position: absolute;">
 	<div class="floating-form floater">
 		
 		<div class="grid-container">
