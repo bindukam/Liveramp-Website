@@ -76,7 +76,7 @@ $(document).ready(function() {
 <div class="floating-form floater">
 	
 	<div class="grid-container">
-		<a class="lp-legal button" id="click-open-popup_a">Get in Touch</a>
+		<a class="lp-legal button" id="click-open-popup_a"><?php the_field('button_label') ?></a>
 
 		<div class="message-legal">
 			<p><?php the_field('button_message') ?></p>
@@ -87,7 +87,7 @@ $(document).ready(function() {
 <div class="floating-form sticker" style="visibility: hidden;position: static">
 	
 	<div class="grid-container">
-		<a class="lp-legal button" id="click-open-popup_b">Get in Touch</a>
+		<a class="lp-legal button" id="click-open-popup_b"><?php the_field('button_label') ?></a>
 
 		<div class="message-legal">
 			<p><?php the_field('button_message') ?></p>
