@@ -46,7 +46,7 @@ get_header(); ?>
 				<div class="cell large-5 form-cell">
 					<div data-sticky-container>
 
-						<div class="form-wrapper box-shadow-over-white b-radius white-bkg" style="display:none">
+						<div class="form-wrapper box-shadow-over-white b-radius white-bkg">
 							
 							<h3 class="form-title">Contact Us</h3>
 							
