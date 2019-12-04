@@ -59,29 +59,48 @@ $(document).ready(function() {
 	});
 
 });
+
+//HIDE FORM FOR MOBILE AND ONLY SHOW EITHER FLOATER OR STICKER WHEN USER SCROLLS DISTANCE 1200PX
+$(document).ready(function() {
+	if(window.innerWidth <= 500) {
+		$('#hidemobileforms').hide();
+		
+		$(document).scroll(function() {
+			if ($(document).scrollTop() > 1200) {
+				$('#hidemobileforms').show();
+			} else {
+				$('#hidemobileforms').hide();
+			}
+		})
+
+	}
+});
+
 </script>
-<div class="floating-form floater">
-	
-	<div class="grid-container">
-		<a class="lp-legal button" id="click-open-popup_a"><?php the_field('button_label') ?></a>
+<div id="hidemobileforms">
+	<div class="floating-form floater">
+		
+		<div class="grid-container">
+			<a class="lp-legal button" id="click-open-popup_a"><?php the_field('button_label') ?></a>
 
-		<div class="message-legal">
-			<p><?php the_field('button_message') ?></p>
+			<div class="message-legal">
+				<p><?php the_field('button_message') ?></p>
+			</div>
 		</div>
-	</div>
 
-</div>	
-<div class="floating-form sticker" style="visibility: hidden;position: static">
-	
-	<div class="grid-container">
-		<a class="lp-legal button" id="click-open-popup_b"><?php the_field('button_label') ?></a>
+	</div>	
+	<div class="floating-form sticker" style="visibility: hidden;position: static">
+		
+		<div class="grid-container">
+			<a class="lp-legal button" id="click-open-popup_b"><?php the_field('button_label') ?></a>
 
-		<div class="message-legal">
-			<p><?php the_field('button_message') ?></p>
+			<div class="message-legal">
+				<p><?php the_field('button_message') ?></p>
+			</div>
 		</div>
-	</div>
 
-</div>	
+	</div>	
+</div>
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/standalone-pages/assets/colorbox/example3/colorbox.css">
 <script src="<?php echo get_template_directory_uri() ?>/standalone-pages/assets/colorbox/jquery.colorbox.js"></script>
@@ -93,7 +112,6 @@ $(document).ready(function() {
 
 			<div class="form-intro">
 				<p><?php the_field('button_message') ?></p>
-				<p><?php the_field('form_message') ?></p> 
 			</div>
 
 			<form id="mktoForm_3923"></form>
