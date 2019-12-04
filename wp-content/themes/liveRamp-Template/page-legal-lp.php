@@ -13,46 +13,35 @@ $(document).ready(function() {
     var footer_top_window = 0;
     var window_height = 0;
    
-
-
     function isElementInViewport (el, dir ) {
 
-        //special bonus for those using jQuery
         if (typeof jQuery === "function" && el instanceof jQuery) {
             el = el[0];
         }
-
-console.log(dir);
 
         rect = el.getBoundingClientRect();
         footer_top_window = rect.top;
         window_height = window.innerHeight;
         
-        console.log('Window Height',window_height);
-        console.log('Footer to Top',footer_top_window);
-
         if ( (dir=='Down') && (footer_top_window < window_height) ) {
-            //$('body').css('background-color','red');
            	$floating_form_floater.hide();
            	$floating_form_sticker.css('visibility','visible')
 
         }
         if ( (dir=='Up') && (footer_top_window > window_height) ) {
-            //$('body').css('background-color','yellow');
             $floating_form_floater.show();
             $floating_form_sticker.css('visibility','hidden')
 
         }
     }
+    
     var position = $(window).scrollTop(); 
 
     $(window).scroll(function() { 
         var scroll = $(window).scrollTop(); 
         if (scroll > position) { 
-            //console.log('scrollDown');
             isElementInViewport ($('#footer'), 'Down');
         } else { 
-            //console.log('scrollUp'); 
             isElementInViewport ($('#footer'), 'Up');
         } 
         position = scroll; 
@@ -60,16 +49,14 @@ console.log(dir);
 });
 
 $(document).ready(function() {
-	//$('#popoup-overlay').show().css('position','fixed').prependTo($('body'));
 
-	$('#click-open-popup_a, #click-open-popup_b').click(
-		function () {
-			$.colorbox({ inline: true, width: '100%', href: '#mobile-popup', fixed: false, top: true });
-		}
-	)
-	$('#click-close').click(
-		(e) => {$(e.target).parent().hide();return false;}
-	);
+	$('#click-open-popup_a, #click-open-popup_b').click(function () {
+		$.colorbox({ inline: true, width: '100%', href: '#mobile-popup', fixed: false, top: true });
+	});
+	
+	$('#click-close').click(function (e) {
+		$(this).parent().hide();return false;
+	});
 
 });
 </script>

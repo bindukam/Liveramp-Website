@@ -915,9 +915,12 @@
                         <div class="cell large-5 form-cell">
                             <div data-sticky-container>
                                 <div class="form-wrapper box-shadow-over-white b-radius white-bkg">
+                                    
                                     <h3 class="form-title">Contact Us</h3>
                                     <img src="https://24graj2x2dk813ys0w26mhu5-wpengine.netdna-ssl.com/wp-content/themes/liveRamp-Template/dist/assets/images/svg/title-underline.svg" alt="" class="pad-ul">
                                     <div class="caption dark-slate margin-bottom-1">All fields required * </div>
+
+<!-- //////////////////////////////////////////////////////// -->
 
     <!-- onclick Function to consent for  marketo only -->
     <script>
@@ -964,8 +967,6 @@
     </script>
     <!-- end of consent logic check for marketo -->
 
-
-
     <!-- Button div -->
     <div id="consent_panel" class="consent_panel_css">
         <button id="mkto_btn" class="consent_Btn mktoButton button cta" onclick="accept__mkto();">Accept</button>
@@ -978,9 +979,6 @@
 
     <!-- added this div with ID=mkto_consent to call the marketo form callback once the consent check is done-->
     <div id="mkto_consent"></div>
-
-
-
 
     <!-- If you have this logic implemented on the page then you only need to add checkMktoConsent() to checkConsentDataWithCallback()-->
     <script>
@@ -1003,7 +1001,7 @@
     </script>
 
 
-
+<!-- //////////////////////////////////////////////////////// -->
 
 
                                 </div>
