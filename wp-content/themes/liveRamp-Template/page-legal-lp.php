@@ -77,7 +77,9 @@ $(document).ready(function() {
 });
 
 </script>
-<div id="hidemobileforms" style="position: absolute;">
+
+<!-- position:absolute needed for fade effect on phones -->
+<div id="hidemobileforms">
 	<div class="floating-form floater">
 		
 		<div class="grid-container">
