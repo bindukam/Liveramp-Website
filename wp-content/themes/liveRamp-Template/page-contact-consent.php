@@ -62,6 +62,7 @@ get_header(); ?>
 			</div>
 		</div>
 	</section>
+	
 	<section class="location" id="contact-location">
 		<div class="grid-container">
 			<div class="grid-x">
