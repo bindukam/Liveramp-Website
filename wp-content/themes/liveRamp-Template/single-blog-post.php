@@ -204,7 +204,7 @@ get_header(); ?>
 			 ?>
 
 
-<?php get_template_part( 'blog_archive_parts/blog_subscribe' ); ?>
+<?php //get_template_part( 'blog_archive_parts/blog_subscribe' ); ?>
 
 
 
