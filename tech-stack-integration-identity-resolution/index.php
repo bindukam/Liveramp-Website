@@ -2,6 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+  
+  <!-- Privacy Manager CCPA -->
+  <script src="https://ccpa-wrapper.privacymanager.io/ccpa/3558357f-205f-47db-ac66-c4312817054e/ccpa-liveramp.js"></script>
+  <!-- Faktor CMP script -->
+  <script src="https://config-prod.choice.faktor.io/b4826de8-0c24-44f4-a1b5-194cd70a93fb/faktor.js"></script>
+  
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5QZ89C6');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- No GDPR conditional trigger -->
+<script>__cmp('gdprApplies', undefined, function (result){if (!result){window.dataLayer.push({'event': 'NoGDPR_apply'});}}); </script>
+<meta name="google-site-verification" content="OE9AE4FvJh8Psx8iIhF_ytCyHA-j_J3IiKrrXdTLd3w" />
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
