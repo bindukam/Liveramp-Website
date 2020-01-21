@@ -53,7 +53,7 @@ get_header(); ?>
 
 <section class="blog-header green-bkg <?php echo $add_waves; ?>" id='blog-header'>
 	<div class="grid-container">
-		<div class="grid-x align-center header-grid  <?php echo $big_header ?>">
+		<div class="grid-x align-center header-grid <?php echo $big_header ?>">
 			<div class="cell breadcrumbs-wrapper">
 				<div class="breadcrumbs-cell white">
 					<p id="breadcrumbs">
@@ -63,18 +63,18 @@ get_header(); ?>
 
 			</div>
 			
-				<div class="cell medium-8 title-wrapper">
-					<div class="terms white">
-						<p><?php echo $term; ?></p>
-					</div>
-					<div class="title white">
-						<?php the_title( '<h1 class="flexo-regular">', '</h1>', true ); ?>
-					</div>
-					<div class="meta-wrapper">
-						<p class="white"><?php the_date() ?>&nbsp;&nbsp;|&nbsp;&nbsp; <?php the_author(); ?> </p>
-					</div>
+			<div class="cell medium-8 title-wrapper">
+				<div class="terms white">
+					<p><?php echo $term; ?></p>
 				</div>
-			
+				<div class="title white">
+					<?php the_title( '<h1 class="flexo-regular">', '</h1>', true ); ?>
+				</div>
+				<div class="meta-wrapper">
+					<p class="white"><?php the_date() ?>&nbsp;&nbsp;|&nbsp;&nbsp; <?php the_author(); ?> </p>
+				</div>
+			</div>
+		
 		</div>
 	</div>
 </section>
