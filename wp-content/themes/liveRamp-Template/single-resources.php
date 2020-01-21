@@ -47,21 +47,18 @@
 	$term = $terms[0]->name;
 	$term_id = $terms[0]->term_id;
 
-
-
-
-
 get_header(); ?>
+
 <?php setPostViews(get_the_ID()); ?>
+
 <section class="blog-header green-bkg <?php echo $add_waves; ?>" id='blog-header'>
 	<div class="grid-container">
 		<div class="grid-x align-center header-grid  <?php echo $big_header ?>">
 			<div class="cell breadcrumbs-wrapper">
 				<div class="breadcrumbs-cell white">
 					<p id="breadcrumbs">
-						<a href="/news">Back to news</a>
+						<a href="/news"><?php _translate('back_to_news') ?></a>
 					</p>
-
 				</div>
 
 			</div>

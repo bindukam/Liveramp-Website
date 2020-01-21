@@ -102,6 +102,7 @@ include 'inc/helpers/date-helpers.php';
 include 'inc/excerpt.php';
 include 'inc/breadcrumbs.php';
 include 'inc/acf/international-site-specific-opts.php';
+include 'inc/acf/translations.php';
 
 
 // include 'inc/acf/features.php';
@@ -708,3 +709,15 @@ function add_post_type_column( $value, $column_name, $id ) { //Print event_type 
 }
 
 add_filter( 'manage_users_custom_column', 'add_post_type_column', 10, 3 );
+
+function _translate($word) {
+	$field = get_field_object('back_to_news', 'option');
+	//echo '<pre style="background-color:white">xx'.print_r($field, 1).'</pre>';
+
+	if (!empty($field['value'])) {
+		echo $field['value'];
+	} else {
+		echo $field['label'];
+	}
+} ?>
+
