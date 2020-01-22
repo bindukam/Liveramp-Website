@@ -40,7 +40,7 @@
 <div id="more-button">
 	<?php if (  $wp_query->max_num_pages > 1 ) : // don't display the button if there are not enough posts ?>
 		<div class="text-center pad-1">
-				<div class="button news_loadmore outline down-arrow">More posts</div>
+				<div class="button news_loadmore outline down-arrow"><?php _translate('more_posts') ?></div>
 			</div>
 	<?php endif; ?>	
 </div>

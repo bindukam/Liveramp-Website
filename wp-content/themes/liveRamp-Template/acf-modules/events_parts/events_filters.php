@@ -136,16 +136,16 @@
 	<div class="grid-x grid-margin-y">
 
     <div class="cell header">
-      <h2 class="flexo-medium">Events</h2>
+      <h2 class="flexo-medium"><?php _translate('events') ?></h2>
       
       <div class="divider"><img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/blue-headline-line.svg" alt="divider"></div>
 
-      <p>Filters</p>
+      <p><?php _translate('filters') ?></p>
     </div>
 			 
 			<div class="cell location-filter ">
-				<label for="locationfilter">Location </label>
-				<select name="locationfilter" id="locationfilter"><option value="">All</option>
+				<label for="locationfilter"><?php _translate('location') ?></label>
+				<select name="locationfilter" id="locationfilter"><option value=""><?php _translate('all') ?></option>
 					<?php
 					
 					// ksort($select_locations);
@@ -165,8 +165,8 @@
       
       <?php if (sizeof($select_liveramp) != 0): ?>
         <div class="cell liveramp-filter ">
-          <label for="liverampfilter">Type </label>
-          <select name="liverampfilter" id="liverampfilter"><option value="">All</option>
+          <label for="liverampfilter"><?php _translate('type') ?></label>
+          <select name="liverampfilter" id="liverampfilter"><option value=""><?php _translate('all') ?></option>
             <?php
             
             ksort($select_liveramp);
@@ -182,8 +182,8 @@
 			
 
 			<div class="cell  date-filter">
-				<label for="date_field">Date </label>
-				<select name="date_field" id="date_field"><option value="">All</option>
+				<label for="date_field"><?php _translate('date') ?></label>
+				<select name="date_field" id="date_field"><option value=""><?php _translate('all') ?></option>
 				<?php
 					
 					foreach ($select_dates as $key => $value) {
@@ -196,7 +196,7 @@
 				 
 			</div>
 			<div class="cell reset-filters" style="display: none;">
-					<p class="button outline reset-events" id="">Reset Events</p>
+					<p class="button outline reset-events" id=""><?php _translate('reset_events') ?></p>
 			</div>
 				
 	</div>

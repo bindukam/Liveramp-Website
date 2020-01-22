@@ -713,7 +713,7 @@ add_filter( 'manage_users_custom_column', 'add_post_type_column', 10, 3 );
 
 //_translate('back_to_news')
 function _translate($word) {
-	$field = get_field_object('back_to_news', 'option');
+	$field = get_field_object($word, 'option');
 	//echo '<pre style="background-color:white">xx'.print_r($field, 1).'</pre>';
 
 	if (!empty($field['value'])) {

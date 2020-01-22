@@ -12,7 +12,7 @@
 						if (get_sub_field('contact_email') || get_sub_field('contact_phone')) : ?>
 
 							<div class="contact show-for-medium">
-								<h3>Contact Our <br> Press Team</h3>
+								<h3><?php _translate('contact_our_press_team') ?></h3>
 								<div class="divider"><img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/blue-headline-line.svg" alt="divider"></div>
 								<div class="grid-x align-middle">
 									<?php
@@ -42,7 +42,7 @@
 						endif; ?>
 						
 						<div class="social show-for-medium horiz-social">
-							<p>Share Page</p>
+							<p><?php _translate('share_page') ?></p>
 							
 							<?php echo do_shortcode("[wp_social_sharing]") ?>	
 							
@@ -60,7 +60,7 @@
 
 
 			<div class="cell contact show-for-small-only">
-				<h3>Contact Our <br> Press Team</h3>
+				<h3><?php _translate('contact_our_press_team') ?></h3>
 				<div class="divider">
 					<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/blue-headline-line.svg" alt="divider">
 				</div>
@@ -86,7 +86,7 @@
 				</div>
 				<div class="social center-social grid-x">
 					<div class="small-12">
-						<p>Share Page</p>
+						<p><?php _translate('share_page') ?></p>
 						<?php echo do_shortcode("[wp_social_sharing]") ?>
 					</div>	
 				</div>	
