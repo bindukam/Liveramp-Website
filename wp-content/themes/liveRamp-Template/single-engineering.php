@@ -42,7 +42,7 @@ get_header(); ?>
 			<div class="cell breadcrumbs-wrapper">
 				<div class="breadcrumbs-cell white">
 					<p id="breadcrumbs">
-					<a href="/careers/engineers/">Back to engineering</a>
+					<a href="/careers/engineers/"><?php _translate('back_to_engineering')  ?></a>
 					</p>
 					
 					<?php
@@ -149,7 +149,7 @@ get_header(); ?>
 						<div class="grid-container related-posts">
 							<div class="grid-x grid-margin-x grid-margin-y">
 								<div class="cell text-center">
-									<h3>Related Posts</h3>
+									<h3><?php _translate('related_posts')  ?></h3>
 									<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/small-blue-line.svg" alt="small blue line" class="pad-1">
 								</div>
 							</div>

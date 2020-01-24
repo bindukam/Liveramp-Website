@@ -8,7 +8,7 @@
 		<div class="grid-x top-two grid-margin-x grid-padding-x align-center">
 
 				<div class="cell text-center header">
-					<h2>Featured blog posts</h2>
+					<h2><?php _translate('featured_blog_posts')  ?></h2>
 
 						<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="divider line" class="divider">
 
@@ -101,22 +101,15 @@
 				        	}
 
 				         ?>
-
-
 				        	<div class="cell click-card medium-auto blog-card hover-bump" data-url="<?php echo the_permalink(); ?>">
 				        		<div class="author date">
 				        			<?php the_author(); ?> | <?php the_date('M d, Y'); ?>
 				        		</div>
 				        		<div class="image-wrapper">
-									
 									<div class="feature-image b-radius relative" style="background-image:url(<?php echo $background_url ?>)">
-									<?php echo file_get_contents(get_template_directory_uri().'/dist/assets/images/svg/rectangle-border-blog.svg'); ?> 
-
-
+										<?php echo file_get_contents(get_template_directory_uri().'/dist/assets/images/svg/rectangle-border-blog.svg'); ?> 
+				        			</div>
 				        		</div>
-
-				        		</div>
-
 				        		<div class="meta">
 				        			<?php
 
@@ -145,11 +138,6 @@
 				        			<h3><?php the_title(); ?></h3>
 				        		</div>
 				        	</div>
-
-
-
-
-
 
 				    <?php endforeach; ?>
 

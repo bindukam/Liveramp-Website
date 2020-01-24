@@ -13,7 +13,7 @@
 
 <input type="search" value="" placeholder="Search the partner directory" id="search"/>
 <div class="search-container">
-  <h4 class="margin-bottom-2">Filters</h4>
+  <h4 class="margin-bottom-2"><?php _translate('filters') ?></h4>
   <form id="partners-form">
     <?php
     $filterCount = 0;
@@ -44,7 +44,7 @@
       array_push($filtersDump, $optionDump);
    endforeach;
    ?>
-   <div class="hide button outline" id="reset">Reset Filter</div>
+   <div class="hide button outline" id="reset"><?php _translate('reset_filter') ?></div>
    <div class="share-icons horiz-social">
       <?php echo do_shortcode("[wp_social_sharing social_options='facebook,twitter,linkedin']") ?>
     </div>
@@ -111,6 +111,6 @@ foreach ($data->all_items as $partner) {
   <?php echo $noData; ?>
 </div>
 <button id="loadmore" class="hide button down-arrow">
-   Load More
+   <?php _translate('load_more')  ?>
 </button>
 <script type="text/javascript" src="../wp-content/themes/liveRamp-Template/partner-integrations.js"></script>

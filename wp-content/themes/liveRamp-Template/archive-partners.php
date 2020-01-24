@@ -21,7 +21,7 @@ if( !empty($partner_url) ) { // It's the single partner page
    	<section class="partners-archive pad-section">
        <div class="grid-container">
          <div class="title-container">
-            <h2 class="title">Partners</h2>
+            <h2 class="title"><?php _translate('partners')  ?></h2>
             <div class="small-separator"></div>
          </div>
    		<?php get_template_part('template-parts/partner-filters'); ?>

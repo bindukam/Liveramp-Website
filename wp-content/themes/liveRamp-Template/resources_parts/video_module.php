@@ -29,7 +29,7 @@
 					<div class="cell large-8 video-cell primary-bkg b-radius hard-shadow white">
 						
 						<div class="now-playing">
-							<p>Now Playing</p>
+							<p><?php _translate('now_playing')  ?></p>
 							<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="divider line" class="divider">
 						</div>
 						

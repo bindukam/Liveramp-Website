@@ -4,7 +4,7 @@
 		<div class="grid-x align-middle filter-grid">
 
 						<div class="cell text large-shrink">
-							Show me resources by
+							<?php _translate('show_me_resources_by')  ?>
 						</div>
 						<div class="cell large-shrink category-filter ">
 							<?php

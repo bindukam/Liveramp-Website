@@ -53,7 +53,7 @@ get_header(); ?>
 			<div class="cell breadcrumbs-wrapper">
 				<div class="breadcrumbs-cell white">
 					<p id="breadcrumbs">
-						<a href="/news">Back to news</a>
+						<a href="/news"><?php _translate('back_to_news')  ?></a>
 					</p>
 
 				</div>
@@ -163,7 +163,7 @@ get_header(); ?>
 						<div class="grid-container related-posts">
 							<div class="grid-x grid-margin-x grid-margin-y">
 								<div class="cell text-center">
-									<h3>Related Posts</h3>
+									<h3><?php _translate('related_posts')  ?></h3>
 									<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/small-blue-line.svg" alt="small blue line" class="pad-1">
 								</div>
 							</div>

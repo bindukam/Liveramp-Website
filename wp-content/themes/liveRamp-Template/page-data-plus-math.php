@@ -72,7 +72,7 @@ get_header(); ?>
 	        <div class="grid-container z-5-r">
 	            <div class="grid-x align-middle content">
 	                <div class="cell medium-7 white">
-	                    <h1>Data Plus Math Opt Out</h1>
+	                    <h1><?php _translate('data_plus_math_opt_out')  ?></h1>
 	                </div>
 	                <div class="cell medium-5 image">
 	                    <img width="1024" height="225" src="http://lrmultidevelop.wpengine.com/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-1024x225.png" class="hero-image" alt="" srcset="http://lrmultidevelop.wpengine.com/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-1024x225.png 1024w, http://lrmultidevelop.wpengine.com/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-300x66.png 300w, http://lrmultidevelop.wpengine.com/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-768x169.png 768w, http://lrmultidevelop.wpengine.com/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-640x141.png 640w, http://lrmultidevelop.wpengine.com/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller.png 1200w" sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 770px"> </div>
@@ -84,7 +84,7 @@ get_header(); ?>
 				<div class="grid-x grid-padding-x align-top align-center text-center no-image">
 					<div class="medium-9 cell content small-order-2 medium-order-1 big-first-p z-5-r">
 						<p id="opt-out" class="opt-out-status-p"></p>
-						<a class="button" target="" href="/">Continue</a>
+						<a class="button" target="" href="/"><?php _translate('continue')  ?></a>
 					</div>
 				</div>
 			</div>

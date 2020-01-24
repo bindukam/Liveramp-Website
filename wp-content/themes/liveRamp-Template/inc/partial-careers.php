@@ -1,14 +1,14 @@
 <section class="careers" id="careers-scroll">
 	<header class="header-careers">
 		<div class="ctn">
-			<h1 class="title">Career Search</h1>
+			<h1 class="title"><?php _translate('career_search')  ?></h1>
 		</div>
 	</header>
 	<nav class="nav-sort">
 		<div class="ctn">
 			<div class="select-ctn">
 				<select class="menu-sort iso-select-careers">
-					<option value="*">All</option>
+					<option value="*"><?php _translate('all')  ?></option>
 					<?php
 						$terms = get_terms( 'careers_categories' );
 						if ( !empty( $terms ) && !is_wp_error( $terms ) ):

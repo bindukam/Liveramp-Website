@@ -48,11 +48,11 @@ get_header(); ?>
 
 						<div class="form-wrapper box-shadow-over-white b-radius white-bkg" style="display:none">
 							
-							<h3 class="form-title">Contact Us</h3>
+							<h3 class="form-title"><?php _translate('contact_us')  ?></h3>
 							
 							<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" class="pad-ul">
 							
-							<div class="caption dark-slate margin-bottom-1">All fields required * </div>
+							<div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> * <?php _translate('contact_us')  ?></div>
 							
 							<script src="<?php echo get_field('marketo_form_url', 'option') ?>/js/forms2/js/forms2.min.js"></script>
 							
@@ -134,7 +134,7 @@ get_header(); ?>
 						      	    			</div>
 						      	    			<div class="cell small-11 link">
 						      	    				<a href="<?php the_sub_field('google_maps') ?>" target="_blank" class="arrow-tag">
-						      	    					Get Directions
+						      	    					<?php _translate('get_directions')  ?>
 						      	    				</a>
 						      	    			</div>
 						      	    		</div>
@@ -145,7 +145,7 @@ get_header(); ?>
 						      	    				</div>
 						      	    				<div class="cell small-11 link">
 						      	    					<a href="<?php the_sub_field('website') ?>" target="_blank">
-						      	    						Website
+						      	    						<?php _translate('website')  ?>
 						      	    					</a>
 
 

@@ -68,7 +68,7 @@ get_header(); ?>
 			<div class="grid-x">
 				<div class="cell large-5">
 					<div class="locations">
-						<h2>Our Offices</h2>
+						<h2><?php _translate('our_offices')  ?></h2>
 
 						<ul class="accordion" data-accordion data-multi-expand="true" data-allow-all-closed="true">
 						  <?php if (have_rows('locations')): ?>
@@ -110,7 +110,7 @@ get_header(); ?>
 						      	    			</div>
 						      	    			<div class="cell small-11 link">
 						      	    				<a href="<?php the_sub_field('google_maps') ?>" target="_blank" class="arrow-tag">
-						      	    					Get Directions
+						      	    					<?php _translate('get_directions')  ?>
 						      	    				</a>
 						      	    			</div>
 						      	    		</div>
@@ -121,7 +121,7 @@ get_header(); ?>
 						      	    				</div>
 						      	    				<div class="cell small-11 link">
 						      	    					<a href="<?php the_sub_field('website') ?>" target="_blank">
-						      	    						Website
+						      	    						<?php _translate('website')  ?>
 						      	    					</a>
 
 

@@ -115,7 +115,7 @@
 							<!-- end list item -->
 						</ul>
 
-						<p class="no-results">There are no items for this search criteria.</p>
+						<p class="no-results"><?php _translate('there_are_no_items_for_this_search_criteria')  ?>.</p>
 
 						<div class="center">
 							<div class="btn load-more">

@@ -47,14 +47,14 @@ if( $api_url = get_field('content_api_url', 'options') )
                <div class="grid-x margin-1">
          			<div class="cell">
          				<a href="/partners" class="white bold breadcrumb">
-                        Back to Partners
+                        <?php _translate('back_to_partners')  ?>
                      </a>
          			</div>
          		</div>
 
                <div class="grid-x partner-hero">
                   <div class="medium-12 large-6 cell">
-                     <h6>Our partnership with</h6>
+                     <h6><?php _translate('our_partnership_with')  ?></h6>
                      <h2>
                         <?php echo $titleData; ?>
                      </h2>
@@ -62,7 +62,7 @@ if( $api_url = get_field('content_api_url', 'options') )
                      </div>
                      <?php echo $contentData; ?>
                      <?php if ($urlData) : ?>
-                        <a href="<?php echo $urlData ?>"><button class="button outline margin-top-1" >Visit website
+                        <a href="<?php echo $urlData ?>"><button class="button outline margin-top-1" ><?php _translate('visit_website')  ?>
                         </button></a> 
                         
                      <?php endif; ?>
@@ -161,7 +161,7 @@ if( $api_url = get_field('content_api_url', 'options') )
          <section class="resources pad-section">
             <div class="grid-container">
                <div class="title-cell text-center">
-                  <h2 class="primary">Resources</h2>
+                  <h2 class="primary"><?php _translate('resources')  ?></h2>
                   <?php the_field('resource_subheader', 'options') ?>
                   <div class="no-lineheight pad-ul">
       					<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" class="title-underline">
@@ -283,7 +283,7 @@ if( $api_url = get_field('content_api_url', 'options') )
                   <?php endwhile; ?>
                   </div>
                <div class="full-width flex-c margin-top-2">
-                  <button class="hide button outline down-arrow" id="loadmore">Load more</button>
+                  <button class="hide button outline down-arrow" id="loadmore"><?php _translate('load_more')  ?></button>
                </div>
             </div>
 
@@ -299,7 +299,7 @@ if( $api_url = get_field('content_api_url', 'options') )
 	<div class="grid-container z-5-r">
 		<div class="grid-x align-middle align-center pad-1">
 			<div class="cell medium-4 text-center">
-				 <a href="/contact?ref=<?php echo $partner_url ?>" target="_blank" class="button">Get in touch</a>
+				 <a href="/contact?ref=<?php echo $partner_url ?>" target="_blank" class="button"><?php _translate('get_in_touch')  ?></a>
 			</div>
 		</div>
 	</div>
