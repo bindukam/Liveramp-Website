@@ -9,7 +9,7 @@
     } 
 
 ?>
-<?php echo $feed_link; ?> 
+<?php //echo $feed_link; ?> 
 <input type="search" value="" placeholder="Search the partner directory" id="search"/>
 <div class="search-container">
   <h4 class="margin-bottom-2"><?php _translate('filters') ?></h4>
