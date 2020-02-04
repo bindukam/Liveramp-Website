@@ -33,13 +33,6 @@ if( $api_url = get_field('content_api_url', 'options') )
    $certtool = '<div class="tooltips"><span class="tooltip-toggle">i</span><span class="tooltip-content">' . $filters[3]->tooltip . '</span></div>';
    $leveltool = '<div class="tooltips"><span class="tooltip-toggle">i</span><span class="tooltip-content">' . $filters[4]->tooltip . '</span></div>';
 
-//   $tooltip = '';
-//   if( $filter->tooltip ) { 
-    
-//     $tooltip = '<span class="tooltip-toggle" data-tooltip title="' . $filter->tooltip . '">i</span>';
-//    } 
-
-
    if( $api_url ): ?>
       <section class="single-partner">
          <div class="white primary-bkg pad-section no-overflow no-margin-bottom">

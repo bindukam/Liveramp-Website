@@ -1,16 +1,15 @@
 <?php
-// get json and make it an array
-    $data = json_decode(file_get_contents('https://partners.liveramp.com/api/?lang=us'));
-    // example of getting just a page
-    // $page = file_get_contents('https://partners.liveramp.com/partners/180bytwo/');
-
+    $feed_link = get_field('content_api_url','option');
+    //$feed_link = 'http://lrpartnerdev.wpengine.com/api/?lang=us';  
+    //$feed_link = 'http://lrpartnerdev.wpengine.com/api/?lang=au';  
+    $data = json_decode(file_get_contents($feed_link));
 
     if (!$data) {
       $noData = '<a href="/partners/" class="oops">Oops - Hold on while we try again. (Or click here to reload)</a>';
     } 
 
 ?>
-
+<?php echo $feed_link; ?> 
 <input type="search" value="" placeholder="Search the partner directory" id="search"/>
 <div class="search-container">
   <h4 class="margin-bottom-2"><?php _translate('filters') ?></h4>
