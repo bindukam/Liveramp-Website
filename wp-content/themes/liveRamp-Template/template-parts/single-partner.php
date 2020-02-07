@@ -1,6 +1,5 @@
 <?php
 $partner_url = get_query_var('partner'); // Checks to see if there is a single partner slug in the URL e.g. liveramp.com/partners/{ partner-slug }
-
 // It's a single partner page
 if( $api_url = get_field('content_api_url', 'options') )
 {
@@ -33,7 +32,9 @@ if( $api_url = get_field('content_api_url', 'options') )
    $certtool = '<div class="tooltips"><span class="tooltip-toggle">i</span><span class="tooltip-content">' . $filters[3]->tooltip . '</span></div>';
    $leveltool = '<div class="tooltips"><span class="tooltip-toggle">i</span><span class="tooltip-content">' . $filters[4]->tooltip . '</span></div>';
 
-   if( $api_url ): ?>
+   if( $api_url ): 
+      ?>
+
       <section class="single-partner">
          <div class="white primary-bkg pad-section no-overflow no-margin-bottom">
             <div class="grid-container relative">
@@ -55,14 +56,12 @@ if( $api_url = get_field('content_api_url', 'options') )
                      </div>
                      <?php echo $contentData; ?>
                      <?php if ($urlData) : ?>
-                        <a href="<?php echo $urlData ?>"><button class="button outline margin-top-1" ><?php _translate('visit_website')  ?>
-                        </button></a> 
-                        
+                        <a href="<?php echo $urlData ?>"><button class="button outline margin-top-1" ><?php _translate('visit_website')  ?></button></a> 
                      <?php endif; ?>
                   </div>
                   <div class="medium-12 large-6 cell flex-c partner-image align-self-middle">
                      <div class="img-bg-circle">
-                        <img src="<?php echo $imgData ?>">
+                        <img src="<?php echo swaphttp ($imgData) ?>">
                      </div>
                   </div>
                </div>
@@ -208,7 +207,7 @@ if( $api_url = get_field('content_api_url', 'options') )
                         if ($value == $type->slug) {
                            $typeid = 'resources_categories_' . $type->term_id . '';
                            $icon_url = get_field('icon', $typeid );
-                           $icon = '<img src="'.$icon_url.'" class="icon">';
+                           $icon = '<img src="'.swaphttp($icon_url).'" class="icon">';
                         }
                      }
 
@@ -240,7 +239,7 @@ if( $api_url = get_field('content_api_url', 'options') )
                            if ($type->slug == 'video') {
                               $typeid = 'resources_categories_' . $type->term_id . '';
                               $icon_url = get_field('icon', $typeid );
-                              $icon = '<img src="'.$icon_url.'" class="icon">';
+                              $icon = '<img src="'.swaphttp($icon_url).'" class="icon">';
                            }
                         }
 

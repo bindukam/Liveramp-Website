@@ -88,7 +88,7 @@ foreach ($data->all_items as $partner) {
         echo " ";
       }
       ?>">
-      <a href="<?php echo $partner->page_url ?>" alt="<?php echo $partner->name ?>">
+      <a href="<?php echo home_url() ?><?php echo $partner->page_url ?>" alt="<?php echo $partner->name ?>">
           <div class="partner-content">
               <img src="<?php echo $partner->image_url ?>" class="partner-image">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 183.5 183.5" class="square-hoverborder"><path class="cls-1" d="M181.75,52.62V13.75a12,12,0,0,0-12-12H147.28"/><path class="cls-2" d="M66.75,181.75h103a12,12,0,0,0,12-12V114.31"/><path class="cls-1" d="M1.75,153.4v16.35a12,12,0,0,0,12,12H34.34"/><path class="cls-3" d="M40.42,1.75H13.75a12,12,0,0,0-12,12V61.31"/></svg>

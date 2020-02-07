@@ -721,5 +721,9 @@ function _translate($word) {
 	} else {
 		echo $field['label'];
 	}
-} ?>
+} 
+
+function swaphttp ($url) {return str_replace( 'http://', 'https://', $url );}
+
+?>
 

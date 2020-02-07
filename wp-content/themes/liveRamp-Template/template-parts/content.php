@@ -16,14 +16,19 @@
 		if ( is_single() ) {
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		} else {
-			the_title( '<h4 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' );
+			the_title( '<h4 class="entry-title" style="margin-bottom:0"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h4>' );
 		}
 	?>
 		<?php //foundationpress_entry_meta(); ?>
 	</header>
-	<div class="entry-content">
-		<?php  the_excerpt(); ?>
-		<?php edit_post_link( __( '(Edit)', 'foundationpress' ), '<span class="edit-link">', '</span>' ); ?>
+	<div class="entry-content" style="padding-bottom: 20px;">
+		<?php 
+		if (!empty(get_the_excerpt())) {
+			echo get_the_excerpt();
+		} else {
+			$ex = $wpdb->get_results( "SELECT post_excerpt FROM $wpdb->posts WHERE ID=".$post->ID );
+			echo $ex[0]->post_excerpt;
+		} ?>
 	</div>
 	<footer>
 		<?php

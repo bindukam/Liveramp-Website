@@ -2,6 +2,7 @@
 /*
 Template Name: Partners Archive
 */
+
 $partner_url = get_query_var('partner'); // Checks to see if there is a single partner slug in the URL e.g. liveramp.com/partners/{ partner-slug }
 
 get_header();
