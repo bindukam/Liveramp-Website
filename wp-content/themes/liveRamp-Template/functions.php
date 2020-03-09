@@ -80,7 +80,6 @@ include 'inc/acf/hero-repeater.php';
 include 'inc/acf/events-page.php';
 include 'inc/acf/link-resources.php';
 include 'inc/acf/product-page.php';
-include 'inc/acf/marketo-forms.php'; 
 include 'inc/acf/news.php';
 include 'inc/acf/people-based-marketing.php';
 include 'inc/acf/resources.php';
@@ -104,12 +103,6 @@ include 'inc/breadcrumbs.php';
 include 'inc/acf/international-site-specific-opts.php';
 include 'inc/acf/translations.php';
 
-
-// include 'inc/acf/features.php';
-// include 'inc/acf/wysiwyg.php';
-// include 'inc/acf/related-articles-block.php';
-// include 'inc/acf/additional-content.php';
-//include 'inc/acf/webinars.php';
 
 // add resource links from old site to the new one 
 
@@ -724,6 +717,3 @@ function _translate($word) {
 } 
 
 function swaphttp ($url) {return str_replace( 'http://', 'https://', $url );}
-
-?>
-
