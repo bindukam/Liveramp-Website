@@ -197,10 +197,7 @@ get_header(); ?>
 
 			 ?>
 
-
-<?php get_template_part( 'blog_archive_parts/blog_subscribe' ); ?>
-
-
+<?php get_template_part( 'blog_archive_parts/blog_subscribe_engineering' ); ?>
 
 <script>
 
@@ -225,8 +222,10 @@ get_header(); ?>
 	});
 
 </script>
-<?php if (!empty(get_field('subscribe_form_id', 'option'))) {  ?>
-
+<?php if (!empty(get_field('engineering_subscribe_form_id', 'option'))) {  ?>
+<style>
+.mktoFormRow.makered {color:white;}
+</style>
 	<script src="<?php echo get_field('marketo_form_url', 'option') ?>/js/forms2/js/forms2.min.js"></script>
 	<script>
 			jQuery( document ).ready(function() {
@@ -236,7 +235,7 @@ get_header(); ?>
 			   var mktoFormConfig = {
 			   		podId : "<?php echo get_field('marketo_form_url', 'option') ?>",
 			   		munchkinId : "320-CHP-056",
-			   	   formIds : [<?php echo get_field('subscribe_form_id', 'option') ?>]
+			   	   formIds : [<?php echo get_field('engineering_subscribe_form_id', 'option') ?>]
 			   };
 
 			   /* ---- NO NEED TO TOUCH ANYTHING BELOW THIS LINE! ---- */
@@ -260,11 +259,15 @@ get_header(); ?>
 			   			jQuery('.mktoOffset').remove();
 			   			jQuery('.mktoAsterix').remove();
 			   			jQuery('input').css('width', '');
-			   			jQuery('.mktoButtonWrap').css('margin-left', '2rem');
+			   			jQuery('.mktoButtonWrap').css('margin-left', '1rem');
 			   			jQuery('.mktoButton').addClass('button cta');
 			   			jQuery('.mktoFormCol').css('margin-bottom', '');
 			   			jQuery('form button').html('<i class="far fa-angle-right"></i>').removeClass('button cta');
-			   			jQuery('.form-wrapper').fadeIn('400'),
+			   			jQuery('.form-wrapper').fadeIn('400');
+			   			var $moveme = jQuery('.mktoFormRow').eq(3);
+			   			$moveme.parent().after($moveme);
+			   			$moveme.addClass('makered');
+
 
 			   		arrayFrom(formEl.querySelectorAll("label[for]")).forEach(function(labelEl) {
 			   			var forEl = formEl.querySelector('[id="' + labelEl.htmlFor + '"]');
@@ -279,7 +282,6 @@ get_header(); ?>
 			   		       var response = '.response_'+instance
 			   		       form.getFormElem().hide();
 			   		       jQuery(response).fadeIn('400');
-			   		       console.log(instance);
 
 			   		       // Return false to prevent the submission handler from taking the lead to the follow up url
 			   		       return false;

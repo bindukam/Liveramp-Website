@@ -23,7 +23,7 @@
 					// echo $dept_id;
 				 ?>
 				<div class="cell job-card hover-bump flex-c" data-job-id="<?php echo $job->id ?>" data-department="<?php echo $dept_id; ?>" data-location="<?php echo $loc_id; ?>">
-					<div class="job pad-1 b-radius data-equalizer-watch="job-card">
+					<div class="job pad-1 b-radius" data-equalizer-watch="job-card">
 						<h4 class="core-blue"><?php echo $job->title ?></h4>
 						<p><?php echo $job->location->name ?></p>
 					</div>

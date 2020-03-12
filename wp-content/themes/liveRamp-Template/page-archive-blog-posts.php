@@ -37,6 +37,9 @@ get_template_part( 'blog_archive_parts/post_continue' ); ?>
 <!-- PAGE BUILDER ENDS HERE -->
 
 <?php get_template_part( 'blog_archive_parts/blog_subscribe' ); ?>
+<style>
+.mktoFormRow.makered {color:white;}
+</style>
 
 <?php if (!empty(get_field('subscribe_form_id', 'option'))) {  ?>
 
@@ -72,14 +75,18 @@ get_template_part( 'blog_archive_parts/post_continue' ); ?>
 			   			jQuery('.mktoOffset').remove();
 			   			jQuery('.mktoAsterix').remove();
 			   			jQuery('input').css('width', '');
-			   			jQuery('.mktoButtonWrap').css('margin-left', '2rem');
+			   			jQuery('.mktoButtonWrap').css('margin-left', '1rem');
 			   			jQuery('.mktoButton').addClass('button cta');
 			   			jQuery('.mktoButton').removeClass('mktoButton');
 			   			jQuery('.mktoFormCol').css('margin-bottom', '');
 			   			jQuery('#filter-signup form button').html('<i class="far fa-angle-right"></i>').removeClass('button cta').addClass('mktoButton');
 			   			jQuery(".email-form form button").addClass('mktoButton');
+			   			jQuery('.form-wrapper').fadeIn('400');
+			   			
+			   			var $moveme = jQuery('.mktoFormRow:nth-of-type(10)');
+			   			$moveme.parent().after($moveme);
+			   			$moveme.addClass('makered');
 
-			   			jQuery('.form-wrapper').fadeIn('400'),
 
 			   		arrayFrom(formEl.querySelectorAll("label[for]")).forEach(function(labelEl) {
 			   			var forEl = formEl.querySelector('[id="' + labelEl.htmlFor + '"]');
