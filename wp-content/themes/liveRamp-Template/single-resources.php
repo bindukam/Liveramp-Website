@@ -57,7 +57,7 @@ get_header(); ?>
 			<div class="cell breadcrumbs-wrapper">
 				<div class="breadcrumbs-cell white">
 					<p id="breadcrumbs">
-						<a href="/news"><?php _translate('back_to_news') ?></a>
+						<a href="/resources"><?php _translate('back_to_resources') ?></a>
 					</p>
 				</div>
 
