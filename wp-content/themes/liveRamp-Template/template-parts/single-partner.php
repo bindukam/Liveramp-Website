@@ -4,9 +4,9 @@ $partner_url = get_query_var('partner'); // Checks to see if there is a single p
 if( $api_url = get_field('content_api_url', 'options') )
 {
    //http://lrpartnerdev.wpengine.com/wp-json/acf/?lang=us
-   echo $theurl = 'https://partners.liveramp.com/wp-json/wp/v2/partner/?slug=' . $partner_url . '/&_embed=true';
+   $theurl = 'https://partners.liveramp.com/wp-json/wp/v2/partner/?slug=' . $partner_url . '/&_embed=true';
    $data = json_decode(file_get_contents($theurl));
-   echo '<pre style="background-color:white">'.print_r($data, 1).'</pre>';
+   //echo '<pre style="background-color:white">'.print_r($data, 1).'</pre>';
 
    // get the id pf the partner
    $partner_id = $data[0]->id;
