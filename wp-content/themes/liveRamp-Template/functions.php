@@ -58,6 +58,195 @@ require_once( 'library/gutenberg.php' );
 // require_once( 'library/class-foundationpress-protocol-relative-theme-assets.php' );
 
 
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title'    => 'Theme General Settings',
+        'menu_title'    => 'Theme Settings',
+        'menu_slug'     => 'theme-general-settings',
+        'redirect'      => false
+    ));
+}
+
+
+$labels = array(
+	'name' => _x('News', 'post type general name'),
+	'singular_name' => _x('News', 'post type singular name'),
+	'add_new' => _x('Add New', 'News'),
+	'add_new_item' => __('Add New News'),
+	'edit_item' => __('Edit News'),
+	'new_item' => __('New News'),
+	'view_item' => __('View News'),
+	'search_items' => __('Search News'),
+	'not_found' => __('Nothing found'),
+	'not_found_in_trash' => __('Nothing found in Trash'),
+	'parent_item_colon' => ''
+);
+
+$args = array(
+	'labels' => $labels,
+	'public' => true,
+	'publicly_queryable' => true,
+	'show_ui' => true,
+	'query_var' => true,
+	'capability_type' => 'post',
+	'hierarchical' => false,
+	'has_archive' => false,
+	'menu_position' => null,
+	'supports' => array('title', 'editor', 'thumbnail', 'author'),
+	'rewrite' => true,
+	'show_in_nav_menus' => true,
+);
+
+register_post_type('news' , $args);
+
+$labels = array(
+	'name' => _x('Blog', 'post type general name'),
+	'singular_name' => _x('Blog', 'post type singular name'),
+	'add_new' => _x('Add New', 'Blog'),
+	'add_new_item' => __('Add New Blog'),
+	'edit_item' => __('Edit Blog'),
+	'new_item' => __('New Blog'),
+	'view_item' => __('View Blog'),
+	'search_items' => __('Search Blog'),
+	'not_found' => __('Nothing found'),
+	'not_found_in_trash' => __('Nothing found in Trash'),
+	'parent_item_colon' => ''
+);
+
+$args = array(
+	'labels' => $labels,
+	'public' => true,
+	'publicly_queryable' => true,
+	'show_ui' => true,
+	'query_var' => true,
+	'capability_type' => 'post',
+	'hierarchical' => false,
+	'has_archive' => false,
+	'menu_position' => null,
+	'supports' => array('title', 'editor', 'thumbnail','author', 'comments'),
+
+	'rewrite' => array( 'slug' => 'blog', 'with_front' => true ),
+
+	// 'rewrite' => array( "slug" => "blog", 'with_front' => false ),
+
+	'show_in_nav_menus' => true,
+);
+
+register_post_type('blog-post' , $args);
+
+
+$labels = array(
+	'name' => _x('Events', 'post type general name'),
+	'singular_name' => _x('Event', 'post type singular name'),
+	'add_new' => _x('Add New', 'Webinars'),
+	'add_new_item' => __('Add New Event'),
+	'edit_item' => __('Edit Events'),
+	'new_item' => __('New Event'),
+	'view_item' => __('View Events'),
+	'search_items' => __('Search Events'),
+	'not_found' => __('Nothing found'),
+	'not_found_in_trash' => __('Nothing found in Trash'),
+	'parent_item_colon' => ''
+);
+
+$args = array(
+	'labels' => $labels,
+	'public' => true,
+	'publicly_queryable' => true,
+	'show_ui' => true,
+	'query_var' => true,
+	'capability_type' => 'post',
+	'hierarchical' => false,
+	'has_archive' => false,
+	'menu_position' => null,
+	'supports' => array('title', 'editor', 'thumbnail', 'author'),
+	'rewrite' => true,
+	'show_in_nav_menus' => true,
+);
+
+register_post_type('events' , $args);
+	
+$labels = array(
+	'name' => _x('Resources', 'post type general name'),
+	'singular_name' => _x('Resources', 'post type singular name'),
+	'add_new' => _x('Add New', 'Resources'),
+	'add_new_item' => __('Add New Resources'),
+	'edit_item' => __('Edit Resources'),
+	'new_item' => __('New Resources'),
+	'view_item' => __('View Resources'),
+	'search_items' => __('Search Resources'),
+	'not_found' => __('Nothing found'),
+	'not_found_in_trash' => __('Nothing found in Trash'),
+	'parent_item_colon' => ''
+);
+
+$args = array(
+	'labels' => $labels,
+	'public' => true,
+	'publicly_queryable' => true,
+	'show_ui' => true,
+	'query_var' => true,
+	'capability_type' => 'post',
+	'hierarchical' => false,
+	'has_archive' => false,
+	'menu_position' => null,
+	'supports' => array('title', 'editor', 'thumbnail', 'author'),
+	'rewrite' => true,
+	'show_in_nav_menus' => true,
+);
+
+register_post_type('resources' , $args);
+
+/**
+ * Post Type: Partners.
+ */
+
+$labels = array(
+	"name" => __( "Partners", "custom-post-type-ui" ),
+	"singular_name" => __( "Partner", "custom-post-type-ui" ),
+);
+
+$args = array(
+	"label" => __( "Partners", "custom-post-type-ui" ),
+	"labels" => $labels,
+	"description" => "",
+	"public" => false,
+	"publicly_queryable" => true,
+	"show_ui" => false,
+	"delete_with_user" => false,
+	"show_in_rest" => false,
+	"rest_base" => "",
+	"rest_controller_class" => "WP_REST_Posts_Controller",
+	"has_archive" => false,
+	"show_in_menu" => true,
+	"show_in_nav_menus" => false,
+	"exclude_from_search" => false,
+	"capability_type" => "post",
+	"map_meta_cap" => true,
+	"hierarchical" => false,
+	"rewrite" => array( "slug" => "all_partners", "with_front" => true ),
+	"query_var" => true,
+	"supports" => array( "title", "editor", "thumbnail" ),
+);
+
+register_post_type( "all_partners", $args );
+
+
+
+
+
+
+
+
+
+
+
+
+/**********************************************************************/
+
+
 // enable excerpt field on pages 
 // Adding excerpt for page
 add_post_type_support( 'page', 'excerpt' );
@@ -71,55 +260,38 @@ function wps_deregister_styles() {
 
 // FROM OLD SITE
 
-// Config
-require __DIR__.'/inc/config.php';
+
+//require __DIR__.'/inc/config.php';
 include 'inc/setup.php';
 include 'inc/custom-fields-global.php';
 include 'inc/custom-fields.php';
-include 'inc/acf/hero-repeater.php';
-include 'inc/acf/events-page.php';
-include 'inc/acf/link-resources.php';
-include 'inc/acf/product-page.php';
-include 'inc/acf/news.php';
-include 'inc/acf/people-based-marketing.php';
-include 'inc/acf/resources.php';
-include 'inc/acf/resources-page.php';
-include 'inc/partner-rewrite.php';
 include 'inc/resource-links-resync.php';
-include 'inc/helpers/term-helpers.php';
-include 'inc/helpers/resources.php';
-include 'inc/acf/hreflang.php';
-include 'inc/acf/news.php';
-include 'inc/post-types.php'; // must be before partners section
-include 'inc/acf/theme-settings.php';
-include 'inc/fetch-partners.php';
-include 'inc/acf/post-archive-options.php';
 include 'inc/taxonomies.php';
-include 'inc/header-nav-walker.php';
-include 'inc/helpers/make-elements.php';
-include 'inc/helpers/date-helpers.php';
 include 'inc/excerpt.php';
 include 'inc/breadcrumbs.php';
-include 'inc/acf/international-site-specific-opts.php';
-include 'inc/acf/translations.php';
+
+
+include 'inc/partner-rewrite.php';
+//include 'inc/post-types.php'; // must be before partners section
+//include 'inc/helpers/term-helpers.php';
+//include 'inc/helpers/resources.php';
+//include 'inc/helpers/make-elements.php';
+//include 'inc/helpers/date-helpers.php';
+include 'inc/fetch-partners.php';
+//include 'inc/header-nav-walker.php';
 
 
 // add resource links from old site to the new one 
 
 	// include resource links utility files
-	require __DIR__.'/inc/resource-links-api/ResourceLinks.php';
+	//require __DIR__.'/inc/resource-links-api/ResourceLinks.php';
 	// Include coded ACF definitions
-	require __DIR__.'/inc/resource-links-api/ResourceLinksACF.php';
+	//require __DIR__.'/inc/resource-links-api/ResourceLinksACF.php';
 
 	// Only load on the .com site
 
 
 	// ACF
-	include 'inc/acf/blog-settings-old.php';
-	include 'inc/acf/careers-old.php';
-	// include 'inc/acf/partners-old.php';
-	include 'inc/acf/hero.php';
-	include 'inc/acf/page-basic.php';
 
 	//include partnersData utility files
 	// @todo - only load these on the partners page to save a db call
@@ -129,14 +301,14 @@ include 'inc/acf/translations.php';
 	require __DIR__.'/inc/vendors/custom-post-type/src/CPT.php';
 
 	// @todo is this needed?
-	require __DIR__.'/inc/career/careers-acf.php';
+	//require __DIR__.'/inc/career/careers-acf.php';
 
 	// include career office api options - @todo remove these files if no issues reported
 	// require __DIR__.'/inc/career/api/office.php';
 	// require __DIR__.'/inc/career/api/offices.php';
 	// require __DIR__.'/inc/career/options/OfficesOptions.php';
 
-	require __DIR__.'/inc/blog.php';
+	//require __DIR__.'/inc/blog.php';
 	require __DIR__.'/inc/resource-links.php';
 
 // END OF OLD RESOURCE LINKS 

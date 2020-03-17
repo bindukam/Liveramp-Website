@@ -1,0 +1,28 @@
+Career Parts uses an API to get data from green house
+
+The job posting page is a sub page of careers and used the page-job.php template
+
+acf-loop.php
+career_parts/filters.php
+career_parts/career_listings.php
+
+Todo
+
+1. How does the page work
+2. Careers hero not being used..why?
+3. rename the pages and templates in. this secton
+4. move the careers helpers to a new directory tbd
+5. Clean up code in templates
+
+
+Careers 			- Default Template
+— Engineers 		- Default Template
+— Job Listing 		- Job Postings
+— LiveRamp Values  	- WSWG page - name will change
+- Open Positions 	- Career API 
+- University 		- Default Template
+
+
+Rename files names
+page-careers-api.php => page-careers-api.php
+page-job.php => page-careers-job.php 

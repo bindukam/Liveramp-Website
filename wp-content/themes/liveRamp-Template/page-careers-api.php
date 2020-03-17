@@ -36,17 +36,11 @@ get_header(); ?>
 
 <?php include('acf-loop.php') ;?>	
 
-<?php //include( 'career_parts/careers_hero.php' ); ?>
+<?php //include( 'sub-templates/career_parts/careers_hero.php' );//breadcrumb - not being used?>
 
-<?php include( 'career_parts/filters.php' ); ?>
+<?php include( 'sub-templates/career_parts/filters.php' ); ?>
 
-<?php include( 'career_parts/career_listings.php' ); ?>
+<?php include( 'sub-templates/career_parts/career_listings.php' ); ?>
 
-
-<!-- PAGE BUILDER ENDS HERE -->
-
-<?php //get_template_part( 'blog_archive_parts/blog_subscribe' ); ?>
-
-<!-- <script src="https://boards.greenhouse.io/embed/job_board/js?for=liveramp"></script> -->
 <?php
 get_footer();

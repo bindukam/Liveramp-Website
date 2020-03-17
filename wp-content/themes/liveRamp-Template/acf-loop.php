@@ -22,7 +22,6 @@
           include ('acf-modules/carded_4_card_grid.php');
         }
 
-
         // Tabbed: Horizontal Tabbed Module
         if(get_row_layout()=='tabbed_horizontal_tabbed_module'){
           include ('acf-modules/tabbed_horizontal_tabbed_module.php'); 
@@ -140,7 +139,6 @@
           include ('acf-modules/latest_posts.php');
         }
 
-
          // Engineering Blog 
         if(get_row_layout()=='engineering_blog'){
           include ('acf-modules/engineering_blog.php');
@@ -165,7 +163,6 @@
         if(get_row_layout()=='video_hero'){
           include ('acf-modules/video_hero.php');
         }
-
 
       }
     }
