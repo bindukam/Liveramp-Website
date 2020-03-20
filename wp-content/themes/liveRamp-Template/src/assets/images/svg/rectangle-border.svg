@@ -1,0 +1,16 @@
+<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264.04 138.44" class="blog-image-border" style="height: 135px; width: 260px;" preserveAspectRatio="none">
+     <defs>
+       <style>
+           .cls-1,
+           .cls-2,
+           .cls-3 {
+             fill:#fff;
+           }
+       </style>
+     </defs>
+     <title>blog-post-frame</title>
+    <path class="cls-1" d="M377.81,129.68V90.8a12,12,0,0,0-12-12H343.34" transform="translate(-115.52 -77.05)"/>
+    <path class="cls-2" d="M262.81,213.75h103a12,12,0,0,0,12-12V146.3" transform="translate(-115.52 -77.05)"/>
+    <path class="cls-1" d="M117.27,185.4v16.35a12,12,0,0,0,12,12h20.59" transform="translate(-115.52 -77.05)"/>
+    <path class="cls-3" d="M155.94,78.8H129.27a12,12,0,0,0-12,12v47.57" transform="translate(-115.52 -77.05)"/>
+</svg>
