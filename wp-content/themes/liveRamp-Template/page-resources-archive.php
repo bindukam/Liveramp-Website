@@ -17,13 +17,13 @@ get_header(); ?>
 
 
 
-<?php get_template_part( 'resources_parts/resources_hero' ); ?>
+<?php get_template_part( 'sub-templates/resources_parts/resources_hero' ); ?>
 
-<?php get_template_part( 'resources_parts/filters' ); ?>
+<?php get_template_part( 'sub-templates/resources_parts/filters' ); ?>
 
-<?php get_template_part( 'resources_parts/top-six' ); ?>
+<?php get_template_part( 'sub-templates/resources_parts/top-six' ); ?>
 
-<?php get_template_part( 'resources_parts/video_module' ); ?>
+<?php get_template_part( 'sub-templates/resources_parts/video_module' ); ?>
 
 <!-- PAGE BUILDER GOES HERE -->
 <div class="hide-for-filters">
@@ -31,9 +31,9 @@ get_header(); ?>
 </div>
 <!-- PAGE BUILDER ENDS HERE -->
 
-<?php get_template_part( 'resources_parts/post_continue' ); ?>
+<?php get_template_part( 'sub-templates/resources_parts/post_continue' ); ?>
 
-<?php get_template_part( 'resources_parts/featured_blog' ); ?>
+<?php get_template_part( 'sub-templates/resources_parts/featured_blog' ); ?>
 
 
 
@@ -233,7 +233,7 @@ get_header(); ?>
 
 
 
-<?php get_template_part( 'resources_parts/resource_footer' ); ?>
+<?php get_template_part( 'sub-templates/resources_parts/resource_footer' ); ?>
 
 
 

@@ -234,12 +234,44 @@ $args = array(
 register_post_type( "all_partners", $args );
 
 
+// FROM OLD SITE
+function custom_rewrite_tag() {
+	add_rewrite_tag('%partners%', '([^&]+)');
+}
+add_action('init', 'custom_rewrite_tag', 10, 0);
 
 
+function custom_rewrite_rule() {
+	add_rewrite_rule('^partners/([^/]*)/?','index.php?pagename=partners&partner=$matches[1]','top');
+}
+add_action('init', 'custom_rewrite_rule', 10, 0);
 
 
+add_filter('query_vars', 'add_partner_var', 0, 1);
+function add_partner_var($vars){
+    $vars[] = 'partner';
+    return $vars;
+}
 
+// include resource links utility files
+//require __DIR__.'/inc/resource-links-api/ResourceLinks.php';
+// Include coded ACF definitions
+require __DIR__.'/inc/resource-links-api/ResourceLinksACF.php';
 
+include 'inc/resource-links-resync.php';
+
+// include custom post type class
+require __DIR__.'/inc/vendors/custom-post-type/src/CPT.php';
+
+require __DIR__.'/inc/resource-links.php';
+
+function cc_mime_types( $mimes ){
+$mimes['svg'] = 'image/svg+xml';
+return $mimes;
+}
+add_filter( 'upload_mimes', 'cc_mime_types' );
+
+include 'inc/taxonomies.php';
 
 
 
@@ -258,35 +290,27 @@ function wps_deregister_styles() {
     wp_deregister_style( 'wp-block-library' );
 }
 
-// FROM OLD SITE
-
 
 //require __DIR__.'/inc/config.php';
-include 'inc/setup.php';
-include 'inc/custom-fields-global.php';
-include 'inc/custom-fields.php';
-include 'inc/resource-links-resync.php';
-include 'inc/taxonomies.php';
+//include 'inc/setup.php';
+//include 'inc/custom-fields-global.php';
+//include 'inc/custom-fields.php';
 include 'inc/excerpt.php';
 include 'inc/breadcrumbs.php';
 
 
-include 'inc/partner-rewrite.php';
+//include 'inc/partner-rewrite.php';
 //include 'inc/post-types.php'; // must be before partners section
 //include 'inc/helpers/term-helpers.php';
 //include 'inc/helpers/resources.php';
 //include 'inc/helpers/make-elements.php';
 //include 'inc/helpers/date-helpers.php';
-include 'inc/fetch-partners.php';
+//include 'inc/fetch-partners.php';
 //include 'inc/header-nav-walker.php';
 
 
 // add resource links from old site to the new one 
 
-	// include resource links utility files
-	//require __DIR__.'/inc/resource-links-api/ResourceLinks.php';
-	// Include coded ACF definitions
-	//require __DIR__.'/inc/resource-links-api/ResourceLinksACF.php';
 
 	// Only load on the .com site
 
@@ -295,10 +319,9 @@ include 'inc/fetch-partners.php';
 
 	//include partnersData utility files
 	// @todo - only load these on the partners page to save a db call
-	$url = $_SERVER['REQUEST_URI'];
 
 	// include custom post type class
-	require __DIR__.'/inc/vendors/custom-post-type/src/CPT.php';
+	//require __DIR__.'/inc/vendors/custom-post-type/src/CPT.php';
 
 	// @todo is this needed?
 	//require __DIR__.'/inc/career/careers-acf.php';
@@ -309,7 +332,6 @@ include 'inc/fetch-partners.php';
 	// require __DIR__.'/inc/career/options/OfficesOptions.php';
 
 	//require __DIR__.'/inc/blog.php';
-	require __DIR__.'/inc/resource-links.php';
 
 // END OF OLD RESOURCE LINKS 
 

@@ -48,7 +48,7 @@ function resource_loadmore_ajax_handler(){
 
 
 			$new_card = 'new-card';
-			include( locate_template( 'resources_parts/post_card.php', false, false ) );
+			include( locate_template( 'sub-templates/resources_parts/post_card.php', false, false ) );
 
 
 		endwhile;
@@ -120,9 +120,6 @@ function resource_filter_function(){
 
 
 
-
-
-
 	$wp_query = new WP_Query( $args );
 
 	// var_dump($args);
@@ -130,10 +127,7 @@ function resource_filter_function(){
 	if( $wp_query->have_posts() ) :
 		while( $wp_query->have_posts() ): $wp_query->the_post();
 			$new_card = 'new-card';
-
-			include( locate_template( 'resources_parts/post_card.php', false, false ) );
-			// get_template_part( 'blog_archive_parts/post_card' );
-			// the_title( '', '', true );
+			include( locate_template( 'sub-templates/resources_parts/post_card.php', false, false ) );
 		endwhile;
 		wp_reset_postdata();
 	else :

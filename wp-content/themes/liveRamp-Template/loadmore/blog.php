@@ -49,7 +49,7 @@
 
 
 				$new_card = 'new-card';
-				include( locate_template( 'blog_archive_parts/post_card.php', false, false ) );
+				include( locate_template( 'sub-templates/blog_archive_parts/post_card.php', false, false ) );
 
 
 			endwhile;
@@ -115,8 +115,7 @@
 			while( $wp_query->have_posts() ): $wp_query->the_post();
 				$new_card = 'new-card';
 
-				include( locate_template( 'blog_archive_parts/post_card.php', false, false ) );
-				// get_template_part( 'blog_archive_parts/post_card' );
+				include( locate_template( 'sub-templates/blog_archive_parts/post_card.php', false, false ) );
 			endwhile;
 			wp_reset_postdata();
 		else :

@@ -112,11 +112,7 @@
 <?php endif; ?>
 
 <?php wp_footer(); ?>
-<script type="text/javascript" src="/wp-content/themes/liveRamp-Template/js/slick.min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/TextPlugin.min.js"></script> -->
-<!-- <script src="https://boards.greenhouse.io/embed/job_board/js?for=liveramp"></script> -->
-
+<script type="text/javascript" src="<?php get_stylesheet_directory_uri() ?>'/dist/assets/js/js/slick.min.js"></script>
 
 
 

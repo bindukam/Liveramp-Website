@@ -15,15 +15,15 @@ get_header();
 
 $pageid = get_the_ID();
 
-get_template_part( 'blog_archive_parts/blog_hero' );
+get_template_part( 'sub-templates/blog_archive_parts/blog_hero' );
 
-get_template_part( 'blog_archive_parts/filters' );
+get_template_part( 'sub-templates/blog_archive_parts/filters' );
 
-get_template_part( 'blog_archive_parts/top_six' );
+get_template_part( 'sub-templates/blog_archive_parts/top_six' );
 
-get_template_part( 'blog_archive_parts/video_module' );
+get_template_part( 'sub-templates/blog_archive_parts/video_module' );
 
-get_template_part( 'blog_archive_parts/post_continue' ); ?>
+get_template_part( 'sub-templates/blog_archive_parts/post_continue' ); ?>
 
 
 
@@ -36,7 +36,7 @@ get_template_part( 'blog_archive_parts/post_continue' ); ?>
 
 <!-- PAGE BUILDER ENDS HERE -->
 
-<?php get_template_part( 'blog_archive_parts/blog_subscribe' ); ?>
+<?php get_template_part( 'sub-templates/blog_archive_parts/blog_subscribe' ); ?>
 <style>
 .mktoFormRow.makered {color:white;}
 </style>
