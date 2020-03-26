@@ -1,0 +1,81 @@
+.video-panel {
+
+	.divider {
+		width: 200px;
+
+		.cls-1 {
+			stroke: $core-blue;
+		}
+
+	}
+
+	.now-playing {
+		color: $core-blue;
+		font-size: 1.125rem;
+
+		p {
+			margin-bottom: 0;
+		}
+
+	}
+
+	.horiz-wavelines {
+		z-index: 2;
+	    position: absolute;
+	    height: 100%;
+	    width: 980px;
+	    background-image: url(../../../src/assets/images/svg/wavelines-mb.svg);
+	    background-position: right -3em center;
+	    background-repeat: no-repeat;
+		 transform: rotate(90deg);
+		 right: -33em;
+	}
+}
+
+
+
+.resource-thumbnails {
+    margin: 1rem;
+
+    .title {
+    	margin: 0 0 1rem 0;
+    }
+
+	 .project-name {
+		 color: #bbc5d3;
+	 }
+
+	.replace-video {
+		cursor: pointer;
+
+		.replace-grid {
+
+			 .next-video {
+			 	min-width: 265px;
+			 	max-width: 265px;
+			 	min-height: 140px;
+			 	border-radius: $b-radius;
+			 	-webkit-background-size: cover;
+			 	     -o-background-size: cover;
+			 	        background-size: cover;
+			 	background-repeat: no-repeat;
+			 	background-position: center;
+			 	margin-bottom: 1rem;
+
+
+			 }
+
+			 .title {
+			 	color: $white;
+			 	margin-left: 1rem;
+			 	max-width: 265px;
+			 }
+		}
+
+
+		&.hide-video {
+			display: none;
+		}
+	}
+
+}

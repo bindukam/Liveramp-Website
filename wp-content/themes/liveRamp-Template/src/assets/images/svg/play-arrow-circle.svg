@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="603" height="383" viewBox="0 0 603 383">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c9c9c9;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #f78d2d;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <path id="Rectangle_3548" data-name="Rectangle 3548" class="cls-1" d="M12,0H603a0,0,0,0,1,0,0V383a0,0,0,0,1,0,0H12A12,12,0,0,1,0,371V12A12,12,0,0,1,12,0Z" transform="translate(242 5663)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_132" data-name="Mask Group 132" class="cls-2" transform="translate(-242 -5663)">
+    <image id="Image_170" data-name="Image 170" width="700" height="390" transform="translate(160 5663)" xlink:href="play-arrow-circle-image.png"/>
+    <g id="Group_11123" data-name="Group 11123" transform="translate(0 -0.001)">
+      <ellipse id="Ellipse_433" data-name="Ellipse 433" class="cls-3" cx="33.807" cy="33.807" rx="33.807" ry="33.807" transform="translate(318 5477)"/>
+      <path id="Path_15847" data-name="Path 15847" class="cls-4" d="M1439.893,401.281l17.372-12.3-17.372-12.3v15.726" transform="translate(-1094.737 5121.75)"/>
+    </g>
+  </g>
+</svg>
