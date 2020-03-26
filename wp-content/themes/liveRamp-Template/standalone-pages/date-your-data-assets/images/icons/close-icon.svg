@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .icon-close-st0{fill:none;stroke:#ffffff;stroke-width:8;stroke-miterlimit:10;}
+  </style>
+  <line class="icon-close-st0" x1="98.31009" y1="1.62521" x2="1.56051" y2="98.37479"/>
+  <line class="icon-close-st0" x1="1.56051" y1="1.62521" x2="98.31009" y2="98.37479"/>
+</svg>

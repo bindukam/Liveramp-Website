@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 581.5 5.5">
+  <defs>
+    <style>
+      .b6084711-4c51-40b9-abd0-e9dde55d5b35, .b9206a73-531f-44d4-b337-354519fa5bb2, .f963edbd-79b6-4dec-825f-4a23bbdc89c0 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 5.5px;
+      }
+
+      .b6084711-4c51-40b9-abd0-e9dde55d5b35 {
+        stroke: #7e9fb4;
+      }
+
+      .f963edbd-79b6-4dec-825f-4a23bbdc89c0 {
+        stroke: #55555a;
+      }
+
+      .b9206a73-531f-44d4-b337-354519fa5bb2 {
+        stroke: #599cf4;
+      }
+
+      .b4647395-a5a9-4e49-9ee1-f6fbe4c826a2 {
+        fill: #36568a;
+      }
+    </style>
+  </defs>
+  <title>illustrations_AW</title>
+  <g id="bf11273b-41c1-4fb5-8046-b0426b7668e5" data-name="Layer 1">
+    <g>
+      <path id="a2f0826f-4cce-47ce-bf2c-1a26c947d89f" data-name="Stroke-1" class="b6084711-4c51-40b9-abd0-e9dde55d5b35" d="M434.75,2.75h144"/>
+      <path id="e5c4a373-792b-4bb6-b8df-e28f83c9658b" data-name="Stroke-3" class="f963edbd-79b6-4dec-825f-4a23bbdc89c0" d="M290.75,2.75h144"/>
+      <path id="b282d2c2-4dc3-4e2f-94e6-05bb6763dd03" data-name="Stroke-5" class="b6084711-4c51-40b9-abd0-e9dde55d5b35" d="M146.75,2.75h144"/>
+      <path id="a0f24420-d53a-4c39-b0d4-3e41cb8635a7" data-name="Stroke-7" class="b9206a73-531f-44d4-b337-354519fa5bb2" d="M2.75,2.75h144"/>
+      <circle id="a67640d9-2024-4f18-b43b-7c62af7ab807" data-name="Oval" class="b4647395-a5a9-4e49-9ee1-f6fbe4c826a2" cx="146.75" cy="2.75" r="2.75"/>
+      <circle id="a3fc47a7-ca23-40e9-9109-29ff26517ddb" data-name="Oval" cx="290.75" cy="2.75" r="2.75"/>
+      <circle id="e01fb527-4837-4544-9d2b-d5e2bd8378b3" data-name="Oval" cx="434.75" cy="2.75" r="2.75"/>
+    </g>
+  </g>
+</svg>

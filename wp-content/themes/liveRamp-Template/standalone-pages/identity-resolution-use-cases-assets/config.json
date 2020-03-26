@@ -1,0 +1,217 @@
+{
+	"cases": [
+		{
+			"content": {
+				"content":	"<p>When it comes to vehicle and part recalls, you need to let the owners of your vehicles and parts know they're being recalled. Thing is, you need to make sure only those people know about it.</p><p>Some of the biggest automotive companies are onboarding their offline data so they can resolve their customer identities and specifically target the people who own vehicles that need to be recalled.</p><p>The result – they've lowered their media spend. And they aren't going around the Internet, inadvertently worrying other buyers. Neat.</p>",
+				"excerpt":	"When it comes to vehicle and part recalls, you need to let the owners of your vehicles and parts know they're being recalled.",
+				"title":	"Keeping vehicle recalls on the down low"
+			},
+			"experience":	[ "baic" ],
+			"id":			"keow",
+			"images": 		4,
+			"industry": 	[ "auto" ],
+			"tactic":		[ "tang" ],
+			"url":			"keeping-vehicle-recalls-on-down-low"
+		},
+		{
+			"content": {
+				"content":	"<p>Brands have been looking for smart ways to target people based on their preferences for some time now.</p><p>The trouble is, you either have to target folks in the same walled gardens where they share their preferences, or you need to use cookie data without much context beyond their browsing history. Option one limits the channels you can use. And option two relies on data that isn't really persistent.</p><p>Identity resolution has given brands the ability to reliably target people interested in specific events (like the Superbowl and Coachella) – across channels. Two neat examples.</p><p>A travel company targeted people interested in the Fifa World Cup with offers on trips to Brazil (where the tournament took place).</p><p>In another case, a health brand is using it to market to the users of weight and calorie tracking apps, even beyond the apps themselves. It's become a reliable, omnichannel way to find people with preferences that match your product.</p>",
+				"excerpt":	"Brands have been looking for smart ways to target people based on their preferences for some time now.",
+				"title":	"Targeting sports and music fans &mdash; everywhere"
+			},
+			"experience":	[ "baic" ],
+			"id":			"tare",
+			"images": 		3,
+			"industry": 	[ "trel", "rety", "heth", "ennt" ],
+			"tactic":		[ "tang" ],
+			"url":			"targeting-sports-music-fans"
+		},
+		{
+			"content": {
+				"content":	"<p>You know that thing where you get targeted for products you already own? That sucks. But it's a whole lot worse if you stumble across an offer on something you own when you're searching for something similar.</p><p>In the insurance business, you might have new offers on certain policies like home insurance, and you really don't want to be flogging them to people who already have them.</p><p>One insurance company is using people-based search to adjust their keyword targeting for existing policyholders through Google Adwords.</p><p>This way, they can suppress the ads for policies their customers already own and offer them upsells on complementary policies instead. And save a bunch in media spend, too.</p>",
+				"excerpt":	"You know that thing where you get targeted for products you already own? That sucks.",
+				"title":	"Suppressing insurance ads with people-based search"
+			},
+			"experience":	[ "baic" ],
+			"id":			"such",
+			"images":		4,
+			"industry": 	[ "ince", "fies" ],
+			"tactic":		[ "suon", "sech" ],
+			"url":			"suppressing-insurance-ads-people-based-search"
+		},
+		{
+			"content": {
+				"content":	"<p>Competition is fierce in the home improvement game. One of the biggest retail chains has partnered with Ibotta (a cash rewards app) to target the customers of its biggest rival.</p><p>By resolving the identities of the app's users, it can target its rival's customers with competitive discounts, while sharing loyalty-based discounts with its own most regular customers.</p><p>Best of all, they can see whether or not their rival's customers converted and whether or not they've increased their own most loyal customers' share of wallet.</p>",
+				"excerpt":	"Competition is fierce in the home improvement game. One of the biggest retail chains has partnered with Ibotta.",
+				"title":	"Targeting a rival DIY supplier&rsquo;s customers"
+			},
+			"experience":	[ "aded" ],
+			"id":			"tars",
+			"images":		4,
+			"industry": 	[ "reil", "hont" ],
+			"tactic":		[ "tang", "acon", "ment", "aton", "clng" ],
+			"url":			"targeting-competitors-customers"
+		},
+		{
+			"content": {
+				"content":	"<p>Picture this: you're a market researcher working for one of the world's biggest lingerie brands. And you're looking to expand your product set beyond the one line.</p><p>What do you do? The people-based marketers at one global brand in this situation decided to get a broader view of their customers' preferences. Specifically, they wanted to know what other product categories their customers were fans of – even if they didn't sell those products.</p><p>Using third-party data and identity resolution, they found the answer – athletic sports wear. Not only was that an interesting new insight into their customers – the company acted on their recommendation.</p><p>These are the kinds of insights that become possible when you take a people-based approach to analyzing your data and understanding your customers.</p><p>It's a brave new day for marketers.</p>",
+				"excerpt":	"Picture this: you're a market researcher working for one of the world's biggest lingerie brands.",
+				"title":	"Identifying your next product line"
+			},
+			"experience":	[],
+			"id":			"idne",
+			"images":		4,
+			"industry": 	[ "reil" ],
+			"tactic":		[ "ancs" ],
+			"url":			"identifying-your-next-product-line"
+		},
+		{
+			"content": {
+				"content":	"<p>When people start searching for their next car, they're usually looking for something with specific features. Like adaptive cruise control. Or those seats that warm themselves up.</p><p>One car company decided to target their prospects based on the specific features they cared most about.</p><p>So if you've been searching for cars with cruise control, they're using identity resolution and third-party data to spot that preference.</p><p>This way, they can promote their best content about adaptive cruise control to you, across their digital channels.</p>",
+				"excerpt":	"When people start searching for their next car, they're usually looking for something with specific features.",
+				"title":	"Pushing the right content to motor heads"
+			},
+			"experience":	[ "baic" ],
+			"id":			"puds",
+			"images":		2,
+			"industry": 	[ "auto" ],
+			"tactic":		[ "tang", "peon" ],
+			"url":			"pushing-right-content-motor-heads"
+		},
+		{
+			"content": {
+				"content":	"<p>Media buying used to be about demographic insight. If you were buying a spot on TV, you needed to know which shows 18-24 year olds watched.</p><p>One cable TV network is taking this insight to a whole new level.</p><p>They're using identity resolution to tie their customers' (the media buyers) first-party data to third-party consumer data on stuff like car lease expiration dates.</p><p>That means they can tell media buyers precisely which shows the people on their lists are watching – and where to spend their money. These are segments that can be addressed on TV and are likelier to convert.</p><p>This is people-based targeting. For TV.</p>",
+				"excerpt":	"Media buying used to be about demographic insight. If you were buying a spot on TV, you needed to know which shows 18-24 year olds watched.",
+				"title":	"People-based addressable TV"
+			},
+			"experience":	[ "aded" ],
+			"id":			"petv",
+			"images":		4,
+			"industry": 	[ "teon" ],
+			"tactic":		[ "tang" ],
+			"url":			"people-based-addressable-tv"
+		},
+		{
+			"content": {
+				"content":	"<p>People-based marketing works well in tight spaces – saturated markets where competition is brutal.</p><p>That's good news for telcos, where one company is using a neat, people-based tactic to target its customers on mobile.</p><p>Using identity resolution, they're personalizing their in-app ads to give customers specific recommendations for phone and plan upgrades.</p><p>This way, they can use the relationships they've already developed with their customers to keep the competition away – and personalize wherever their customers go.</p>",
+				"excerpt":	"People-based marketing works well in tight spaces – saturated markets where competition is brutal.",
+				"title":	"Personalizing in-app ads"
+			},
+			"experience":	[ "baic" ],
+			"id":			"peds",
+			"images":		4,
+			"industry": 	[ "teco" ],
+			"tactic":		[ "peon", "tang" ],
+			"url":			"personalizing-in-app-ads"
+		},
+		{
+			"content": {
+				"content":	"<p>There are two kinds of people who book tables at restaurants – hardcore foodies who do it all the time and casual diners who go once in a while.</p><p>An online restaurant reservation service is using identity resolution to send these two groups different incentives.</p><p>The company wants their power users to use the service when they travel, so they're sending them discounts for booking restaurants outside their home regions.</p><p>And they want to nudge casual users to use the service more so they're sending them discounts for restaurants that are closer to home.</p><p>Oh, and they make more money when people book through the app (as opposed to through the restaurants' websites). So they've made sure their display ads, emails and push notifications take both segments straight to the app.</p>",
+				"excerpt":	"There are two kinds of people who book tables at restaurants – hardcore foodies and casual diners.",
+				"title":	"Treating hardcore foodies and casual diners differently"
+			},
+			"experience":	[ "baic" ],
+			"id":			"trly",
+			"images":		3,
+			"industry": 	[ "tech", "rety" ],
+			"tactic":		[ "tang", "seon" ],
+			"url":			"treating-hardcore-foodies-casual-diners-differently"
+		},
+		{
+			"content": {
+				"content":	"<p>What do you do when your highest value prospects aren't opening your emails? It's a tricky situation. But one big arts and crafts retailer found a smart way around it.</p><p>Here's what they did. First, they started working with LiveIntent – a company that manages newsletters for around 900 different interest-specific publications with a total audience of over 130 million people.</p><p>Then, the retailer used identity resolution to match their list of high-value prospects (the ones who weren't opening their emails) to LiveIntent's audience.</p><p>Now they could see the topics prospects really cared about. They wouldn't open emails from the retailer – but they were opening emails about things like tech gadgets.</p><p>They used identity resolution to track conversions from these emails, and even in-store sales.</p><p>Most important, they now have the insight they need to spend more strategically. That interior design fan? They know they can target them more effectively with a full-page ad in a tech magazine.</p><p>What started as a tricky situation turned into a huge advantage.</p>",
+				"excerpt":	"What do you do when your highest value prospects aren't opening your emails?",
+				"title":	"Identity-based targeting &mdash; in email"
+			},
+			"experience":	[ "aded" ],
+			"id":			"idil",
+			"images":		4,
+			"industry": 	[ "reil" ],
+			"tactic":		[ "tang" ],
+			"url":			"identity-based-targeting-email"
+		},
+		{
+			"content": {
+				"content":	"<p>Being one of the world's biggest producers and distributors of soft drinks is great. But it doesn't mean your customers hang out on your website.</p><p>In fact, it's incredibly hard to even figure out who your customers are when most of them buy your products from supermarkets, vending machines and restaurants.</p><p>So how do you do people-based marketing when you don't know your own customers? You partner up.</p><p>In this case, the drinks company used the loyalty card data of a giant, multinational supermarket. Because of their loyalty program, the supermarket has information related to the buyer's drink preferences and purchases. And because the drinks company uses identity resolution, they can target that list in a privacy-compliant way across the digital ecosystem.</p><p>The retailer gets a new revenue stream by monetizing its loyalty card data. And the drinks company gets to run targeted campaigns they can attribute back to in-store sales.</p><p>There's nothing sweeter than a win-win.</p>",
+				"excerpt":	"Being one of the world's biggest producers and distributors of soft drinks is great. But it doesn't mean your customers hang out on your website.",
+				"title":	"People-based marketing to people you don&rsquo;t know"
+			},
+			"experience":	[ "aded" ],
+			"id":			"peow",
+			"images":		3,
+			"industry": 	[ "reil", "foge" ],
+			"tactic":		[ "daon", "loty", "tang", "aton" ],
+			"url":			"people-based-marketing-customers-you-dont-know"
+		},
+		{
+			"content": {
+				"content":	"<p>People-based marketing is definitely an online phenomenon. But a few innovators are bringing its benefits to offline channels too.</p><p>Two great examples:<br>One retailer targets its highest lifetime value shoppers with digital billboards based on location data. Since the billboards are smart enough to be dynamic, they can use identity resolution to deliver super-targeted offers.</p><p>In another case, an insurance company uses personalized direct mail to retarget high-value website visitors. If one of these visitors goes to their site and requests a quote, the insurer sends them a personalized direct mailer as well as personalized messages across its digital channels.</p><p>People-based marketing is literally happening everywhere.</p>",
+				"excerpt":	"People-based marketing is definitely an online phenomenon. But a few innovators are bringing its benefits to offline channels too.",
+				"title":	"Taking people-based marketing offline"
+			},
+			"experience":	[ "aded" ],
+			"id":			"tane",
+			"images":		3,
+			"industry": 	[ "reil", "fies" ],
+			"tactic":		[ "ofng", "peon", "tang" ],
+			"url":			"taking-people-based-marketing-offline"
+		},
+		{
+			"content": {
+				"content":	"<p>You know that old marketing vision about people walking past a store and getting tailored recommendations delivered to them?</p><p>A chain of department stores is making it real.</p><p>They're using in-store beacons and identity resolution to figure out when one of their customers is browsing in their store.</p><p>Then, they're delivering ads that are personally relevant to that customer through third-party apps.</p><p>The best part – they can then use identity resolution to see the effect this is having on their in-store and online sales.</p><p>Location-based, people-based gold.</p>",
+				"excerpt":	"You know that old marketing vision about people walking past a store and getting tailored recommendations delivered to them?",
+				"title":	"People-based beacons"
+			},
+			"experience":	[ "aded" ],
+			"id":			"pens",
+			"images":		3,
+			"industry": 	[ "reil" ],
+			"tactic":		[ "peon", "tang", "loed", "ment" ],
+			"url":			"people-based-beacons"
+		}		
+	],
+	"filters": {
+		"industry": {
+			"auto": "Auto",
+			"ennt": "Entertainment",
+			"fies": "Financial Services",
+			"foge": "Food & Beverage",
+			"heth": "Health",
+			"hont": "Home Improvement",
+			"ince": "Insurance",
+			"rety": "Restaurant & Hospitality",
+			"reil": "Retail",
+			"trel": "Travel",
+			"tech": "Tech",
+			"teco": "Telco",
+			"teon": "TV"
+		},
+		"tactic": {
+			"acon": "Acquisition",
+			"ancs": "Analytics",
+			"aton": "Attribution",
+			"clng": "Closed Loop Reporting",
+			"daon": "Data Monetization",
+			"loed": "Location-based",
+			"loty": "Loyalty",
+			"ment": "Measurement",
+			"ofng": "Offline targeting",
+			"peon": "Personalization",
+			"seon": "Segmentation",
+			"suon": "Suppression",
+			"sech": "Search",
+			"tang": "Targeting"
+		},
+		"experience": {
+			"aded": "Advanced",
+			"baic": "Basic"
+		}
+	},
+	"page": {
+		"excerpt": "Identity resolution has made people-based marketing possible, everywhere. Find out how some of the smartest marketers are using it",
+		"parent_url": "https://liveramp.com/resources/",
+		"title": "LiveRamp - Identity Resolution Use Cases",
+		"type": "website",
+		"url": "https://liveramp.com/identity-resolution-use-cases/"
+	}
+}

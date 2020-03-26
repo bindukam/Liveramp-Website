@@ -1,0 +1,1 @@
+<div class="color-bar"><span></span><span></span><span></span></div>
