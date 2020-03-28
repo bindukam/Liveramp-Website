@@ -1,0 +1,71 @@
+DEPLOY NOTES
+
+Create a backup installation of live site to cross check against after we swap out the new site.
+
+delete everything in master and commit
+copy everthing from partnerdebug to master and commit
+push
+deploy to staging
+test
+if looks good. then deploy from git to production. delete the original theme first. or just rename it
+
+Then 
+
+Set page view list to 100
+Add template view code - in functions file - should already be there
+
+INSTALL whole-lot.json FILE WILL INSTALL ALL OF THESE in one go
+* Events, Hreflang, International, Marketo, News, Partners, Resources, Translations, WSWG Fields
+* These will be automatically set to the correct templates
+
+FILENAME CHANGES
+
+Run through spreadsheet page checklist and make sure the templates are set correctly
+
+* Wswg pages - Also make sure WSWG Template Fields module is still working. - set this in ACF and check on wswg page that it appears
+* Wswg pages - Need to change in ACF so that Page Builder not show up on WSWG pages - compare acf settings
+* ACF - Also change ACF Group 'Partner Archive Footer Content' to 'Partner Archive' Template
+* Check SVG uploads - find code and see if you can fix
+
+STANDALONE PAGES
+delete Cannes
+delete Dmexco
+delete Events
+
+* date-your-data - move into wp
+* tech stack  - move into wp
+* identity-resolution-use-cases - move into wp
+
+* Delete events and tv attribution
+* Add standalone pages use root (no subdirectory) as parent three landing pages and set page to correct template.
+
+* Test contact form and make sure corret marketo form id is being used.
+* Test subscribe form on blog
+* Partners
+
+INTERNATIONAL
+* Run through above steps for above
+
+
+
+PHASE TWO
+
+1. clear out unused acf groups
+2. export and reimport acf fields using json files
+3. refactor functions file and store code in library
+4. comment functions file
+5. clear out javascript and refactor repeated code where possible
+6. reorganise the single page of partners section
+
+
+
+
+
+
+
+
+
+
+
+
+

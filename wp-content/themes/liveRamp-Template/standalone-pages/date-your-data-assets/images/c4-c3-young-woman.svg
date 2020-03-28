@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 325 250">
+  <defs>
+    <style>
+      .c4-c3-young-woman-cls-3,.c4-c3-young-woman-cls-4{fill:none}.c4-c3-young-woman-cls-3,.c4-c3-young-woman-cls-4,.c4-c3-young-woman-cls-5{stroke:#7e9fb4;stroke-width:5px;stroke-linecap:round;stroke-linejoin:round}.c4-c3-young-woman-cls-4,.c4-c3-young-woman-cls-5{stroke:#fa8d28;stroke-width:3px}.c4-c3-young-woman-cls-5{fill:#fff}
+    </style>
+    <clipPath id="c4-c3-young-woman-clip-path">
+      <path fill="none" d="M-.49 0h325v250h-325z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#c4-c3-young-woman-clip-path)">
+    <path class="c4-c3-young-woman-cls-3" d="M185.78 182.4l.05 20.12s57.93 2.45 60.64 45.29l.12 73.34M139.53 183.56l.05 19.08a109.71 109.71 0 0 0-27.42 6c-7.07 2.58-14.37 6.24-20.34 11.42a36.64 36.64 0 0 0-12.39 20.56c-.37 1.82-.6 8.83-.67 25.46v55.1"/>
+    <path class="c4-c3-young-woman-cls-3" d="M161.5 321.15l-.13-53.48-24.29-63.55M161.72 267.67l25.79-65.03M205 131.44l-.45 18.05a42.51 42.51 0 0 1-42 38.14c-21.41.06-39.65-16-42.45-36.66v-20.53s7.23-65.5 43.47-44.27C192 64.44 205 131.44 205 131.44z"/>
+    <path class="c4-c3-young-woman-cls-3" d="M95.64 215.72c-3.8-31 22.78-73.17 12-102.78C90.67 66.11 145.06 61 161 61h.5c10.66 0 30.4 0 45.79 16.44 0 0 12.79 12.76 6.54 34.09-8 27.48 17.37 69.54 13.49 101"/>
+    <path class="c4-c3-young-woman-cls-4" d="M105.73 115.38c4.81-2.39 56.51-26.57 110 0M135.56 200s-8 70.17 27.11 70.17S189.78 200 189.78 200"/>
+    <ellipse class="c4-c3-young-woman-cls-5" cx="216.51" cy="100.7" rx="10.05" ry="6.4" transform="rotate(-45 216.51 100.698)"/>
+    <ellipse class="c4-c3-young-woman-cls-5" cx="197.75" cy="119.45" rx="10.05" ry="6.4" transform="rotate(-45 197.756 119.447)"/>
+    <ellipse class="c4-c3-young-woman-cls-5" cx="216.51" cy="119.45" rx="6.4" ry="10.05" transform="rotate(-45 216.508 119.45)"/>
+    <ellipse class="c4-c3-young-woman-cls-5" cx="197.75" cy="100.7" rx="6.4" ry="10.05" transform="rotate(-45 197.747 100.69)"/>
+    <circle class="c4-c3-young-woman-cls-5" cx="206.76" cy="110.44" r="9.29"/>
+    <path class="c4-c3-young-woman-cls-4" d="M135.56 200s-8 63.17 27.11 63.17S189.78 200 189.78 200"/>
+    <path class="c4-c3-young-woman-cls-4" d="M135.56 200s-8 78.17 27.11 78.17S189.78 200 189.78 200"/>
+    <path class="c4-c3-young-woman-cls-4" d="M135.56 200s-8 90.17 27.11 90.17S189.78 200 189.78 200"/>
+  </g>
+</svg>

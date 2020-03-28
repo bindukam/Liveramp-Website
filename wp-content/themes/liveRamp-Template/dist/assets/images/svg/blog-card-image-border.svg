@@ -1,0 +1,16 @@
+<svg  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 326 171">
+  <defs>
+    <style>
+        .cls-1,
+        .cls-2,
+        .cls-3 {
+          fill:#fff;
+        }
+    </style>
+  </defs>
+  <title>blog-post-frame</title>
+  <path class="cls-1" d="M62.43,94.92V63.09a12,12,0,0,1,12-12h75.34" transform="translate(-61.93 -50.59)"/>
+  <path class="cls-2" d="M149.77,221.09H74.43a12,12,0,0,1-12-12V176.42" transform="translate(-61.93 -50.59)"/>
+  <path class="cls-3" d="M387.43,176.42v32.67a12,12,0,0,1-12,12H306.91" transform="translate(-61.93 -50.59)"/>
+  <path class="cls-2" d="M306.91,51.09h68.52a12,12,0,0,1,12,12V94.92" transform="translate(-61.93 -50.59)"/>
+</svg>

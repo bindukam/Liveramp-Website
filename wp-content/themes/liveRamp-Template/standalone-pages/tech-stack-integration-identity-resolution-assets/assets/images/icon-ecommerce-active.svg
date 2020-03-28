@@ -1,0 +1,22 @@
+<svg id="a0d0ab46-1d4f-4eb3-b0a3-7485b4370558" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .e782d9ee-9051-491d-bdba-f1e01bb502a7 {
+        fill: none;
+        stroke: #73c06b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>icon-ecommerce</title>
+  <g>
+    <path class="e782d9ee-9051-491d-bdba-f1e01bb502a7" d="M15.673,34.512a2.494,2.494,0,1,1-2.494-2.487A2.491,2.491,0,0,1,15.673,34.512Z"/>
+    <path class="e782d9ee-9051-491d-bdba-f1e01bb502a7" d="M34.669,34.512a2.494,2.494,0,1,1-2.494-2.487A2.49,2.49,0,0,1,34.669,34.512Z"/>
+    <line class="e782d9ee-9051-491d-bdba-f1e01bb502a7" x1="27.481" y1="11.256" x2="27.481" y2="28.875"/>
+    <line class="e782d9ee-9051-491d-bdba-f1e01bb502a7" x1="17.506" y1="11.256" x2="17.506" y2="28.875"/>
+    <path class="e782d9ee-9051-491d-bdba-f1e01bb502a7" d="M12.324,10.437H36.209L34.574,28.875H10.222L8.151,10.3a4.3,4.3,0,0,0-4.36-3.808"/>
+    <line class="e782d9ee-9051-491d-bdba-f1e01bb502a7" x1="34.962" y1="18.925" x2="9.512" y2="18.925"/>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="217.213" height="3.5" viewBox="0 0 217.213 3.5">
+  <defs>
+    <style>
+      .bluesvg {
+        fill: none;
+        stroke: var(--theme-primary-color);
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+        stroke-width: 3.5px;
+      }
+
+      .svgfade {
+        opacity: 0.226;
+      }
+    </style>
+  </defs>
+  <g id="Group_9903" data-name="Group 9903" transform="translate(-679.25 -5086.25)">
+    <g id="Group_9350" data-name="Group 9350" transform="translate(-344.5 3372.792)">
+      <g id="Group_15" data-name="Group 15" transform="translate(1025.5 1715.208)">
+        <path id="Line_2" data-name="Line 2" class="bluesvg svgfade" d="M0,1.25H183.213" transform="translate(30.5 -1.25)"/>
+        <path id="Line_2_Copy" data-name="Line 2 Copy" class="bluesvg" d="M.5,1.208H100.92" transform="translate(-0.5 -1.208)"/>
+      </g>
+    </g>
+  </g>
+</svg>
