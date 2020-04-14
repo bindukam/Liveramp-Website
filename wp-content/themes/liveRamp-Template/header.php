@@ -21,9 +21,7 @@
 		<meta charset="<?php bloginfo( 'charset' ); ?>" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		
-		<!-- Href Lang Tag  -->
-		<link rel="alternate" href="<?php echo get_permalink($post->ID) ?>" hreflang="<?php the_field('href_lang_tag', 'option') ?>" />
-		<!-- End Href Lang Tag -->
+		<?php include ('library/hreflang.php') ?>
 
 		<?php the_field('drift_code', 'option') ?>
 		
