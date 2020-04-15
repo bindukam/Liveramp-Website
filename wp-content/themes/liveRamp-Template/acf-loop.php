@@ -32,6 +32,11 @@
           include ('acf-modules/offer_strip.php'); 
         }
 
+        // 3 CTAs
+        if(get_row_layout()=='three_ctas'){
+          include ('acf-modules/three-ctas.php'); 
+        }
+
         // Carded Square 6-Card Content
         if(get_row_layout()=='carded_square_6-card_content'){
           include ('acf-modules/carded_square_6-card_content.php');
