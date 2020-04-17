@@ -1,26 +1,27 @@
-<?php if (!empty(get_field('subscribe_form_id', 'option'))) {  ?>
+<?php if (!empty($subscribe_form_id)) { ?>
+	
 	<section class="blog-subscribe">
-	<div class="grid-x grid-padding-x grid-margin-x medium-blue-bkg subscribe b-radius align-middle align-center">
-		<div class="cell medium-8 text-center">
-			<h2 class="core-blue">Subscribe for Updates</h2>
-			
-			<div class="email-form text-center">
+		<div class="grid-x grid-padding-x grid-margin-x medium-blue-bkg subscribe b-radius align-middle align-center">
+			<div class="cell medium-8 text-center">
+				<h2 class="core-blue">Subscribe for Updates</h2>
 				
-				<div class="response_one white" style="display:none">
-					<h4>Thank you for subscribing</h4>
-				</div>
-
-				<div class="form-wrapper" style="display:none">
+				<div class="email-form text-center">
 					
-					<form class="mktoForm" data-formId="<?php echo get_field('subscribe_form_id','option') ?>" data-formInstance="one"></form>	
+					<div class="response_one white" style="display:none">
+						<h4>Thank you for subscribing</h4>
+					</div>
+
+					<div class="form-wrapper" style="display:none">
+						
+						<form class="mktoForm" data-formId="<?php echo $subscribe_form_id ?>" data-formInstance="one"></form>	
+
+					</div>
 
 				</div>
 
 			</div>
-
 		</div>
-	</div>
-</section>
+	</section>
 	<style>
 	.mktoFormRow.makered {color:white;}
 	</style>
@@ -35,7 +36,7 @@
 			   var mktoFormConfig = {
 			   		podId : "https://lp.liveramp.com",
 			   		munchkinId : "320-CHP-056",
-			   	   formIds : [<?php echo get_field('subscribe_form_id', 'option') ?>]
+			   	   formIds : [<?php echo $subscribe_form_id ?>]
 			   };
 
 			   /* ---- NO NEED TO TOUCH ANYTHING BELOW THIS LINE! ---- */
@@ -66,9 +67,9 @@
 			   			jQuery(".email-form form button").addClass('mktoButton');
 			   			jQuery('.form-wrapper').fadeIn('400');
 			   			
-			   			var $moveme = jQuery('.mktoFormRow:nth-of-type(10)');
-			   			$moveme.parent().after($moveme);
-			   			$moveme.addClass('makered');
+			   			var $moveme = jQuery('.blog-subscribe .mktoButtonRow').prev();
+			   			//$moveme.css('background-color','red')
+			   			$moveme.addClass('text-format').parent().after($moveme);
 
 
 			   		arrayFrom(formEl.querySelectorAll("label[for]")).forEach(function(labelEl) {

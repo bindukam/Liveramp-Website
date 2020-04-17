@@ -36,7 +36,8 @@ get_template_part( 'template-parts/blog_archive_parts/post_continue' ); ?>
 
 <!-- PAGE BUILDER ENDS HERE -->
 
-<?php get_template_part( 'template-parts/blog_archive_parts/blog_subscribe' ); ?>
+<?php $subscribe_form_id=get_field('subscribe_form_id', 'option');?>
+<?php include( locate_template( 'template-parts/blog_archive_parts/blog_subscribe.php', false, false ) ); ?>
 
 <script>
 
