@@ -680,3 +680,14 @@ function codismo_table_column( $column, $post_id ) {
     }
  
 }
+
+/** "Add X-XSS headers" code start */
+add_action('send_headers', function(){
+	header("Strict-Transport-Security: max-age=31536000; includeSubDomains");
+	header("X-Frame-Options: SAMEORIGIN");
+	header("X-XSS-Protection: 1; mode=block");
+	header("X-Content-Type-Options: nosniff");
+	header("Referrer-Policy: strict-origin-when-cross-origin");
+}, 1);
+/** "Add X-XSS headers" code ends*/
+ 

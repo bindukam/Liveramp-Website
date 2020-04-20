@@ -28,22 +28,22 @@
 		<?php the_field('async_drift_code', 'option') ?>
 
 		<!-- VIMEO TRACKING CODE -->
-		<script type='text/javascript' defer='defer' src='https://extend.vimeocdn.com/ga/10577812.js'></script>
+		<script type='text/javascript' defer='defer' src='<?php echo $theme_uri; ?>/dist/assets/js/10577812.js'></script>
 		<!-- END VIMEO TRACKING CODE -->
 
 		<!-- VIMEO PLAYER API -->
-		<script src="https://player.vimeo.com/api/player.js"></script>
+		<script type='text/javascript' src="<?php echo $theme_uri; ?>/dist/assets/js/vimeo-player.js"></script>
 		<!-- END VIMEO PLAYER API -->
 
 		<!-- wistia script  -->
-		<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+		<script type='text/javascript' charset="ISO-8859-1" src="<?php echo $theme_uri; ?>/dist/assets/js/E-v1.js" async></script>
 
 		<!-- iframe resizer  -->
 		<style>	.ubermenu  svg.ubermenu-image {	max-width: 1em; } </style>
 
 		<?php wp_head(); ?>
 		
-		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="<?php echo $theme_uri; ?>/dist/assets/css/slick.css"/>
 
 		<!-- CSS code -->
 		<style><?php the_field('css_code', 'option') ?></style>
