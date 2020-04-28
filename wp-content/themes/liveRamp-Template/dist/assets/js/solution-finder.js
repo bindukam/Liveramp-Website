@@ -1,4 +1,7 @@
+
 jQuery(function($){
+	
+	//alert (2);
 
 	let response = document.querySelector('#sf-response'), // set-up variables
 		form = document.querySelector('#solution-form'),
@@ -20,7 +23,14 @@ jQuery(function($){
 		let roleFilter = role.value,
 			interestFilter = interest.value,
 			sort_byFilter = sort_by.value;
+		
+		//console.clear();
 	
+		//console.log('roleFilter: ',roleFilter);
+		//console.log('interestFilter: ',interestFilter);
+		//console.log('sort_byFilter: ',sort_byFilter);
+
+
 		setTimeout(function(){ // timeout for animation (we want it to fire halfway through animation)
 			submitButton.innerHTML = "Update Results"; // now that we have results - change button text
 			showcase.innerHTML = "";
@@ -32,11 +42,17 @@ jQuery(function($){
 				solution.classList.remove("shown-result");
 				solution.classList.remove("waiting-result"); // and reset result classes
 	
+				
 				// If card data matches the criteria set by the form...
 				if(solution.dataset.interests.includes(interestFilter) && solution.dataset.roles.includes(roleFilter)){
-	
+					
+					//var test = solution.dataset.url.split("/");
+					//var n = test.length - 2;
+					//console.log(test[n]);
+					
 					// Move all cards that match the speed to the top of results...
 					if(solution.dataset.sort_bys.includes(sort_byFilter)){
+						//console.log(1)
 						resultsContainer.prepend(solution);
 					} else { // ..and all others below.
 						resultsContainer.append(solution);
@@ -161,7 +177,7 @@ jQuery(function($){
 		});
 	
 	
-		console.log('did stuff!');
+		//console.log('did stuff!');
 	}
 	
 	});

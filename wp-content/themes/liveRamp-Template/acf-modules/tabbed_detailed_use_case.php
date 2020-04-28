@@ -31,7 +31,14 @@
 				<?php endif ?>
 			<?php endif ?>
 		<?php endif ?>
+<style>
+	.tabbed_detailed_use_case .tabs-wrapper .tabs .tabs-title {width:auto;padding: .5rem 0;flex-grow: 1;
+    flex-basis: 0;}
 
+    .tabs-title>a {padding: 1.25rem 0;}
+
+
+</style>		
 		<div class="grid-x">
 
 			 <!-- tabs  tabs start here  -->
@@ -58,7 +65,7 @@
 
 			 		      		$href = '#detail_tab'.$i;
 			 		      	 ?>
-			 					<div class="cell medium-3 tabs-title <?php echo $active ?>">
+			 					<div class="cell tabs-title <?php echo $active ?>">
 			 						<a href="<?php echo $href ?>" aria-selected="<?php echo $aria ?>" class="icon-wrapper">
 			 							<div class="icon-square">
 											<?php if( the_sub_field('icon')): ?>
@@ -73,7 +80,6 @@
 			 		      	<?php ++$i ?>
 			 		      <?php endwhile ?>
 			 		  <?php endif ?>
-
 
 			 		</div>
 			 		<!-- END tabs -->

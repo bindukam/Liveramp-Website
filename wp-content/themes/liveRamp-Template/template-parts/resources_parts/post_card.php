@@ -49,7 +49,8 @@
 		<div class="post-image click-card"  data-url="<?php echo $data_url; ?>" data-blank="<?php echo $data_blank; ?>">
 			
 			<div class="feature-image" style="background-image:url(<?php echo $background_url ?>)">
-				<?php if ($video_play): ?>
+				
+				<?php if ($video_play && get_field('remove_play_icon_on_tile')==false): ?>
 					<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/play-arrow.svg" alt="play icon">
 				<?php endif ?>
 			</div>
