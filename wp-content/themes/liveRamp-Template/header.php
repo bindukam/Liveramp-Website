@@ -43,7 +43,7 @@
 
 		<?php wp_head(); ?>
 		
-		<link rel="stylesheet" type="text/css" href="<?php echo $theme_uri; ?>/dist/assets/js/slick.css"/>
+		<!-- <link rel="stylesheet" type="text/css" href="<?php echo $theme_uri; ?>/dist/assets/js/slick.css"/> -->
 
 		<!-- CSS code -->
 		<style><?php the_field('css_code', 'option') ?></style>
