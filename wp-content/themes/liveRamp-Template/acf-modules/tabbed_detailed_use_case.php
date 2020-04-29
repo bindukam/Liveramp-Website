@@ -13,7 +13,7 @@
 
 		?>
 		<?php if ($total > 1): ?>
-			<?php if (!(get_sub_field('overlay_header'))): ?>
+			<?php if (!(get_sub_field('overlay_header'))): ?> 
 				<?php if (get_sub_field('description')): ?>
 					<div class="grid-x">
 						<div class="cell text-center">
