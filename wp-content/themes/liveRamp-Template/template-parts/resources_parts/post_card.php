@@ -41,7 +41,7 @@
 					$data_url = get_permalink();	
 					$data_blank = "";
 					}
-			 ?>
+			 ?> 
 			
 
 		
