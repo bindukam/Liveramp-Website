@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
   
   <!-- Privacy Manager CCPA -->
-  <script src="https://ccpa-wrapper.privacymanager.io/ccpa/3558357f-205f-47db-ac66-c4312817054e/ccpa-liveramp.js"></script>
+  <script defer src="https://ccpa-wrapper.privacymanager.io/ccpa/3558357f-205f-47db-ac66-c4312817054e/ccpa-liveramp.js"></script>
   <!-- Faktor CMP script -->
-  <script src="https://config-prod.choice.faktor.io/b4826de8-0c24-44f4-a1b5-194cd70a93fb/faktor.js"></script>
+  <script defer src="https://config-prod.choice.faktor.io/b4826de8-0c24-44f4-a1b5-194cd70a93fb/faktor.js"></script>
   
   <!-- Google Tag Manager -->
   <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
