@@ -65,8 +65,8 @@ $ip = getVisIPAddr();
 // it into a PHP variable 
  $ipdat = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip)); 
 
- echo 'Country Name: ' . $ipdat->geoplugin_countryName . "\n"; 
-echo 'Country Code: ' . $ipdat->geoplugin_countryCode . "\n";
+/*  echo 'Country Name: ' . $ipdat->geoplugin_countryName . "\n"; 
+echo 'Country Code: ' . $ipdat->geoplugin_countryCode . "\n"; */
 
 $countryCode = $ipdat->geoplugin_countryCode;
 //$countryCode = 'AU'; //for testing only
