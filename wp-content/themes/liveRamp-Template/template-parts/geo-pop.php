@@ -163,6 +163,7 @@ if(array_key_exists($countryCode,$countryLabelList)){
 <script type="text/javascript">
 	$(function () {
 		var countryCode = '<?php echo $ipdat->geoplugin_countryCode; ?>';
-		console.log(countryCode)
+		console.log(countryCode);
+		console.log('Test')
 	})
 </script>
