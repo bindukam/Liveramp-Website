@@ -5,21 +5,36 @@
 	$counter += 1;
 ?>
 
+<?php if (get_sub_field('background_image')) { ?>
+<style>
+	#teal-theme .green-bg-box-before::before {
+	    background-image: url(<?php echo get_sub_field('background_image') ?>);
+	    background-repeat: no-repeat;
+	    background-position: center center;
+	    background-size: 600px;
+	    left: 0;
+	    width: 100%;
+	    background-color: transparent;
+	}	
+</style>
+	
+<?php  } ?>
 <section class="multi_colored_content_cards pad-section <?php echo 'id-' . $counter;?>">
-	<?php 
-	?>
 
 	<div class="grid-container content">
 		<div class="grid-x grid-margin-x grid-margin-y margin-bottom-1">
 
 			<?php if ((get_sub_field('title')) || (get_sub_field('description'))): ?>
+				
 				<div class="cell small-12 text-center title-cell">
+					
 					<?php if (get_sub_field('title')): ?>
 					    <h2 class="green"><?php the_sub_field('title') ?></h2>
-					<div class="pad-ul no-lineheight">
-						<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="">
-					</div>
+						<div class="pad-ul no-lineheight">
+							<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="">
+						</div>
 					<?php endif ?>
+					
 					<div class="big-first-p">
 						<?php if (get_sub_field('description')): ?>
 							<?php the_sub_field('description'); ?>
@@ -27,6 +42,7 @@
 					</div>
 
 				</div>
+			
 			<?php endif ?>
 
 		</div>
@@ -67,8 +83,6 @@
 		    					</div>
 
 			    			<?php endif ?>
-
-
 
 			    			<?php if (get_sub_field('solid_color')): ?>
 								<!--  SOLID COLOR CARD -->

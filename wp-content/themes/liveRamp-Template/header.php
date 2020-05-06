@@ -53,6 +53,8 @@
 		<?php the_field('bugherd_code', 'option') ?>
 		<!-- End Bugherd Code -->
 
+		<script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=boxtwtjwrzcua9blxferxg" async="true"></script>
+
 	</head>
 <body <?php body_class(); ?>>
 

@@ -1,23 +1,23 @@
-<section class="content_standard_image_and_text_module pad-section">
+<section class="content_larger_image_and_text_module pad-section">
 
 	<?php
 	if (get_sub_field('image')):
 		$hide = '';
 		$center = '';
-		$size = 'medium-5';
+		$size = 'large-5';
 	else:
 		$hide = ' hide';
 		$center = ' align-center text-center no-image';
-		$size = 'medium-9';
+		$size = 'large-9';
 	endif;
 
 	if (get_sub_field('flip_module') === true):
-		$orderContent = 'medium-order-2';
-		$orderImage = 'medium-order-1';
+		$orderContent = 'large-order-2';
+		$orderImage = 'large-order-1';
 		$flipped = ' flipped';
 	else:
-		$orderContent = 'medium-order-1';
-		$orderImage = 'medium-order-2';
+		$orderContent = 'large-order-1';
+		$orderImage = 'large-order-2';
 		$flipped = '';
 	endif;
 
@@ -27,7 +27,7 @@
 	
 
 	<div class="grid-container">
-		<div class="grid-x grid-padding-x align-top<?php echo $center; echo $flipped; ?>">
+		<div class="grid-x grid-padding-x align-middle<?php echo $center; echo $flipped; ?>">
 			<div class="<?php echo $size ?> cell content small-order-2 <?php echo $orderContent ?> big-first-p z-5-r">
 				
 				<?php if (get_sub_field('title')): ?>
@@ -59,8 +59,8 @@
 				<a href="<?php echo $url ?>" class="button cta outline tag2" target="<?php echo $target ?>"><?php echo $title ?></a>
 				<?php endif ?>
 			</div>
-			<div class="cell align-top medium-7 image-container small-order-1 <?php echo $orderImage . $hide ?>">
-				<div class="image-area green-bg-box-before">
+			<div class="cell align-top large-7 image-container small-order-1 <?php echo $orderImage . $hide ?>">
+				<div class="image-area">
 					<div class="image align-middle">
 						<?php echo wp_get_attachment_image( get_sub_field('image'), full, '',array( "class" => "b-radius tab-image" ) ); ?>
 					</div>
