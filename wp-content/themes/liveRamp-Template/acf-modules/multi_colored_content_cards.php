@@ -19,7 +19,7 @@
 </style>
 	
 <?php  } ?>
-<section class="multi_colored_content_cards pad-section <?php echo 'id-' . $counter;?>">
+<section class="multi_colored_content_cards pad-section <?php echo 'id-' . $counter;?>" style="padding-bottom:55px">
 
 	<div class="grid-container content">
 		<div class="grid-x grid-margin-x grid-margin-y margin-bottom-1">

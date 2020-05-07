@@ -10,15 +10,15 @@
 <section class="offer_strip_with_image green-bkg relative <?php the_sub_field('width_toggle') ?> wave-graphic <?php if (get_sub_field('overlay')): echo 'overlay-me'; endif; ?>">
 
 	<div class="grid-container z-5-r">
-		<div class="grid-x align-middle pad-1" style="justify-content: space-around;">
+		<div class="grid-x align-middle align-right pad-1">
 			
-			<div class="cell medium-12 large-4 text-area">
+			<div class="cell medium-6 text-area" style="padding-right:40px">
 				<h3 class="yellow">
 					<?php the_sub_field('title') ?><span class="white"><?php the_sub_field('description') ?></span>
 				</h3>
 			</div>
 			
-			<div class="cell medium-12 large-6 icon-area">
+			<div class="cell medium-4 icon-area">
 				<img src="<?php the_sub_field('image') ?>">
 
 				<?php
