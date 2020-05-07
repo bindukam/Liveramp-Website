@@ -12,13 +12,13 @@
 	<div class="grid-container z-5-r">
 		<div class="grid-x align-middle pad-1" style="justify-content: space-around;">
 			
-			<div class="cell large-12 xxlarge-4 text-area">
+			<div class="cell medium-12 large-4 text-area">
 				<h3 class="yellow">
 					<?php the_sub_field('title') ?><span class="white"><?php the_sub_field('description') ?></span>
 				</h3>
 			</div>
 			
-			<div class="cell large-12 xxlarge-6 icon-area">
+			<div class="cell medium-12 large-6 icon-area">
 				<img src="<?php the_sub_field('image') ?>">
 
 				<?php

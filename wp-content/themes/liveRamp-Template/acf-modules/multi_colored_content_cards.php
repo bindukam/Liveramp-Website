@@ -89,18 +89,17 @@
 			    				<div class="cell large-2 medium-3 small-4 green-bkg card-title solid">
 
 	    							<div class="c1">
-	    									<img src="<?php the_sub_field('icon') ?>" alt="" class="icon">
+	    								<img src="<?php the_sub_field('icon') ?>" alt="" class="icon">
 	    							</div>
 
 		    					</div>
 							<?php endif ?>
 							
-							<?php 
-							if (get_sub_field('cta')) { 
-									$pad = ' extra-padding';
+							<?php if (get_sub_field('cta')) { 
+								$pad = ' extra-padding';
 							} ?>
 
-			    			<div class="cell large-8  medium-7 small-6 content<?php echo $pad?>">
+			    			<div class="cell large-8 medium-7 small-6 content<?php echo $pad?>">
 			    				<?php if (get_sub_field('solid_color')): ?>
 			    					<h4 class="white title-solid"><?php the_sub_field('title') ?></h4>
 			    				<?php endif ?>
