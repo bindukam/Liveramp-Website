@@ -168,7 +168,6 @@ if(array_key_exists($countryCode,$countryLabelList)){
 	$(function () {
 		var countryCode = '<?php echo $countryCode; ?>';
 		var curPageURL = '<?php echo $curPageURL; ?>';
-		//var network_home_url = '<?php echo $network_home_url; ?>';
 		var orgUrl = '<?php echo $orgUrl; ?>';
 		console.log(countryCode);
 		console.log('main_site: '+orgUrl+' curPageURL: '+curPageURL);
