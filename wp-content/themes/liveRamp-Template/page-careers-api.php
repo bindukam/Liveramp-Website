@@ -27,6 +27,9 @@ get_header(); ?>
 
 	// get job listings  information from Greenhouse 
 	$jobs = json_decode(file_get_contents('https://api.greenhouse.io/v1/boards/liveramp/jobs?content=true'));
+	//$jobs = json_decode(file_get_contents('http://canneslpdev.wpengine.com/TestCode/careers.json.php'));
+	//$jobs = json_decode(file_get_contents('http://kumardesai.com/careers.json'));
+
 	$jobs = $jobs->jobs;
 
  ?>
