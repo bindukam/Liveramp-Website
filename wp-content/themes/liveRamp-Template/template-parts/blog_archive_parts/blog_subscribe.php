@@ -27,14 +27,14 @@
 	</style>
 
 
-	<script src="https://lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri() ?>/forms2.min.js"></script>
 	<script>
 			jQuery( document ).ready(function() {
 
 			   /* config area - replace with your instance values */
 
 			   var mktoFormConfig = {
-			   		podId : "https://lp.liveramp.com",
+			   		podId : "//app-sj25.marketo.com",
 			   		munchkinId : "320-CHP-056",
 			   	   formIds : [<?php echo $subscribe_form_id ?>]
 			   };
