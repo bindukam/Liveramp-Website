@@ -69,7 +69,7 @@ $ip = getVisIPAddr();
 echo 'Country Code: ' . $ipdat->geoplugin_countryCode . "\n"; */
 
 $countryCode = $ipdat->geoplugin_countryCode;
-$countryCode = 'CN'; //for testing only
+//$countryCode = 'CN'; //for testing only
 $countryLabelList = [
 	'FR'=>'France',
 	'GB'=>'UK',
