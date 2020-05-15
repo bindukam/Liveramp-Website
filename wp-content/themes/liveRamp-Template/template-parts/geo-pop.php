@@ -75,9 +75,6 @@ $countryLabelList = [
 	'GB'=>'UK',
 	'AU'=>'Australia',
 	'JP'=>'Japan',
-	'DE'=>'Germany',
-	'ES'=>'Spain',
-	'IT'=>'Italy',
 	'CN'=>'China',
 ];
 
@@ -102,15 +99,6 @@ if(array_key_exists($countryCode,$countryLabelList)){
 				break;
 			case 'JP':
 				$refer_to_site_url = $expUrls.'.co.jp/';
-				break;
-			case 'DE':
-				$refer_to_site_url = $orgUrl.'/lr-de/';
-				break;
-			case 'ES':
-				$refer_to_site_url = $orgUrl.'/lr-es/';
-				break;
-			case 'IT':
-				$refer_to_site_url = $orgUrl.'/lr-it/';
 				break;
 			case 'CN':
 				$refer_to_site_url = $orgUrl.'.cn/';
