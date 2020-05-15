@@ -69,7 +69,7 @@ $ip = getVisIPAddr();
 echo 'Country Code: ' . $ipdat->geoplugin_countryCode . "\n"; */
 
 $countryCode = $ipdat->geoplugin_countryCode;
-//$countryCode = 'AU'; //for testing only
+$countryCode = 'CN'; //for testing only
 $countryLabelList = [
 	'FR'=>'France',
 	'GB'=>'UK',
@@ -80,6 +80,7 @@ $countryLabelList = [
 
 if(array_key_exists($countryCode,$countryLabelList)){ 
 	$orgUrl = network_home_url(); 
+	$choporgUrl = chop($orgUrl,"/");
 	//$orgUrl = site_url(); 
 	//$network_home_url = network_home_url(); 
 	$curPageURL = get_page_link(); 
@@ -95,13 +96,13 @@ if(array_key_exists($countryCode,$countryLabelList)){
 				$refer_to_site_url = $expUrls.'.uk/';
 				break;
 			case 'AU':
-				$refer_to_site_url = $orgUrl.'.au/';
+				$refer_to_site_url = $choporgUrl.'.au/';
 				break;
 			case 'JP':
 				$refer_to_site_url = $expUrls.'.co.jp/';
 				break;
 			case 'CN':
-				$refer_to_site_url = $orgUrl.'.cn/';
+				$refer_to_site_url = $choporgUrl.'.cn/';
 				break;
 			default:
 				$refer_to_site_url = $orgUrl;
@@ -157,7 +158,8 @@ if(array_key_exists($countryCode,$countryLabelList)){
 		var countryCode = '<?php echo $countryCode; ?>';
 		var curPageURL = '<?php echo $curPageURL; ?>';
 		var orgUrl = '<?php echo $orgUrl; ?>';
+		var choporgUrl = '<?php echo $choporgUrl; ?>';
 		console.log(countryCode);
-		console.log('main_site: '+orgUrl+' curPageURL: '+curPageURL);
+		console.log('main_site: '+orgUrl+' curPageURL: '+curPageURL+ '   choporgUrl: '+choporgUrl);
 	})
 </script>
