@@ -54,7 +54,7 @@ get_header(); ?>
 							
 							<div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> * <?php _translate('contact_us')  ?></div>
 							
-							<script src="<?php echo get_field('marketo_form_url', 'option') ?>/js/forms2/js/forms2.min.js"></script>
+							<script src="<?php echo get_stylesheet_directory_uri() ?>/forms2.min.js"></script>
 							
 							<?php
 								$id = get_field('form_embed_id');
@@ -64,7 +64,7 @@ get_header(); ?>
 							<form id="<?php echo $mkto_id; ?>"></form>
 							
 							<script>
-								MktoForms2.loadForm("<?php echo get_field('marketo_form_url', 'option') ?>", "320-CHP-056", <?php echo get_field('contact_form_id', 'option') ?>, function(form) {
+								MktoForms2.loadForm("//app-sj25.marketo.com", "320-CHP-056", <?php echo get_field('contact_form_id', 'option') ?>, function(form) {
 								    jQuery('form').removeClass().removeAttr('style');
 								    jQuery('.mktoForm').css('width', '100%');
 								    jQuery('.mktoGutter').remove();

@@ -77,7 +77,7 @@ get_header(); ?>
 			<div class="cell medium-2 social-icons show-for-medium">
 				<div data-sticky-container>
 					<div class="sticky social-sticky" data-sticky data-top-anchor="blog-header:bottom" data-btm-anchor="post-footer:top" data-margin-top='10' data-margin-bottom='15'>
-						<?php echo DISPLAY_ULTIMATE_PLUS(); ?>
+						<?php //echo DISPLAY_ULTIMATE_PLUS(); ?>
 						<div class="share-icons">
 							
 						</div>

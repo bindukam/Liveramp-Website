@@ -18,9 +18,9 @@
 			</div>
 		<?php endif ?>
 
-		<div class="grid-x align-middle align-center">
-			<div class="cell text-center  box-shadow-over-white b-radius no-overflow">
-				<script src="https://fast.wistia.com/embed/medias/<?php the_sub_field('video_id') ?>.jsonp" async></script><script src="<?php echo get_template_directory_uri(); ?>/dist/assets/js/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0px 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_<?php the_sub_field('video_id') ?> videoFoam=true  box-shadow-over-white b-radius" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+		<div class="grid-x align-middle align-center video-area">
+			<div class="cell text-center box-shadow-over-white b-radius no-overflow video-container">
+				<script src="https://fast.wistia.com/embed/medias/<?php the_sub_field('video_id') ?>.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0px 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_<?php the_sub_field('video_id') ?> videoFoam=true  box-shadow-over-white b-radius" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
 			</div>
 		</div>
 	</div>
