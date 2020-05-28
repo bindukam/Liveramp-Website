@@ -135,7 +135,7 @@ get_header(); ?>
 											<?php endif ?>
 											<?php if (get_sub_field('hr_phone')): ?>
 												<p class="smallText"><a href="tel:<?php the_sub_field('hr_phone') ?>" class="arrow-tag" data-wpel-link="internal"> <?php the_sub_field('hr_phone') ?> </a></p>
-											<?php endif ?>
+											<?php endif ?> 
 
 						      	    	</div>
 						      	    </div>
