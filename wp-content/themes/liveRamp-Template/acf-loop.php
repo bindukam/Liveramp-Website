@@ -32,6 +32,15 @@
           include ('acf-modules/offer_strip.php'); 
         }
 
+        // Offer Strip with Image
+        if(get_row_layout()=='offer_strip_with_image'){
+          include ('acf-modules/offer_strip_with_image.php'); 
+        }
+        // 3 CTAs
+        if(get_row_layout()=='three_ctas'){
+          include ('acf-modules/three-ctas.php'); 
+        }
+
         // Carded Square 6-Card Content
         if(get_row_layout()=='carded_square_6-card_content'){
           include ('acf-modules/carded_square_6-card_content.php');
@@ -50,6 +59,11 @@
         // Content Standard Image and Text Module
         if(get_row_layout()=='content_standard_image_and_text_module'){
           include ('acf-modules/content_standard_image_and_text_module.php');
+        }
+
+        // Content Standard Image and Text Module
+        if(get_row_layout()=='content_larger_image_and_text_module'){
+          include ('acf-modules/content_larger_image_and_text_module.php');
         }
 
         // Resource : 3 Card Image and Text
@@ -80,6 +94,11 @@
         // Hero: Simple Text
         if(get_row_layout()=='hero_simple_text'){
           include ('acf-modules/hero_simple_text.php');
+        }
+
+        // Hero: Centered Text
+        if(get_row_layout()=='hero_centered_text'){
+          include ('acf-modules/hero_centered_text.php');
         }
 
         // Gallery Icon Grid

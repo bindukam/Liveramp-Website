@@ -20,8 +20,9 @@ if( $api_url = get_field('content_api_url', 'options') )
    $titleData = $data[0]->title->rendered;
    $contentData = $data[0]->content->rendered;
    $img = $data[0]->_links->{'wp:attachment'}[0]->href;
-   $imageData = json_decode(file_get_contents($img));
-   $imgData = $imageData[0]->guid->rendered;
+   //$imageData = json_decode(file_get_contents($img)); // 4.27.20 - didn't work in some cases
+   //$imgData = $imageData[0]->guid->rendered;
+   $imgData = $data[0]->acf->image_url->url; // 4.27.20 - replacement
    $urlData = $data[0]->acf->external_url;
 
 

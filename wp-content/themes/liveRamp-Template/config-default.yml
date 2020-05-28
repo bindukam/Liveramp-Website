@@ -16,10 +16,10 @@ REVISIONING: false
 PATHS:
   # Path to dist folder
   dist: "dist"
-  # Paths to static assets that aren't images, CSS, or JavaScript
+  # Paths to static assets
   assets:
     - "src/assets/**/*"
-    - "!src/assets/{images,images/**/*,js,js/**/*,scss,scss/**/*}"
+    - "!src/assets/{images,images/**/*,scss,scss/**/*}"
   # Paths to Sass libraries, which can then be loaded with @import
   sass:
     - "node_modules/foundation-sites/scss"

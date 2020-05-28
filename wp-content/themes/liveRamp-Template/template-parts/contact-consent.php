@@ -19,7 +19,7 @@
             console.log('here: mkto_F');
             var mkto_S = document.createElement('script');
             mkto_S.type = 'text/javascript';
-            mkto_S.src = 'wp-content/themes/liveRamp-Template/library/mkto-forms/mkto_consent_<?php echo get_field('contact_form_id', 'option') ?>.js';
+            mkto_S.src = '<?php echo get_stylesheet_directory_uri() ?>/library/mkto-forms/mkto_consent_<?php echo get_field('contact_form_id', 'option') ?>.js';
             document.getElementById('mkto_consent').appendChild(mkto_S);
         }
     </script>
@@ -47,12 +47,12 @@
 
     <!-- Button div -->
     <div id="consent_panel" class="consent_panel_css">
-        <p>Contact form not showing? You may need to update your consent preferences. Click Accept to give consent for Marketo</p>
+        <p>Contact form not showing? You may need to update your consent preferences. Click “Accept” to give consent and enable the form.</p> 
         <button id="mkto_btn" class="consent_Btn mktoButton button cta" onclick="accept__mkto();">Accept</button>
     </div>
 
     <!-- provided from mkto embedded script can call forms.min from marketo original link -->
-    <script src="https://lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
+    <script src="<?php echo get_stylesheet_directory_uri() ?>/forms2.min.js"></script>
     <form id="mktoForm_<?php echo get_field('contact_form_id', 'option') ?>"></form>
 
     <!-- added this div with ID=mkto_consent to call the marketo form callback once the consent check is done-->
