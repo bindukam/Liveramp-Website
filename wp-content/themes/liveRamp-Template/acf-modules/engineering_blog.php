@@ -1,6 +1,4 @@
 <?php 
-	// var_dump($post); 
-
 	$temp_post = $post;
 ?>
 
@@ -38,10 +36,6 @@
 							// no posts found
 						}
 
-						// // Restore original Post Data
-						// wp_reset_postdata();
-
-
 					 ?>	
 				</div>
 				<div id="more-button">
@@ -59,9 +53,9 @@
 				</script>
 
 				<?php 
-				// Restore original Post Data
-						wp_reset_postdata();
- 					?>		
+					// Restore original Post Data
+					wp_reset_postdata();
+ 				?>		
 			</div>
 
 		</div>
@@ -70,5 +64,4 @@
 
 <?php 
 	$post = $temp_post;	
-	// var_dump($post); 
 ?>
