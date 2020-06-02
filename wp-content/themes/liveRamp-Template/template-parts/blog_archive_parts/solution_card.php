@@ -25,21 +25,6 @@
       }?>">
       <div class="card-title pad-1 green-bkg white">
         <h4><?php the_title(); ?></h4>
-        data-roles="<?php if ( ! empty( $roles ) && ! is_wp_error( $roles ) ){
-           foreach ( $roles as $role ) {
-             echo  $role->slug ;
-             echo " ";
-           }
-        }?>
-        <br><br>
-        data-interests="<?php if ( ! empty( $interests ) && ! is_wp_error( $interests ) ){
-           foreach ( $interests as $interest ) {
-             echo  $interest->slug ;
-             echo " ";
-           }
-        }?>
-        <br><br>
-      
       </div>
       <div class="card-content pad-1">
          <?php the_excerpt(); ?>
