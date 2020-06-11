@@ -1,0 +1,295 @@
+// THIS FILE IS UNUSED?
+
+.mega-menu {
+
+	.ubermenu {
+
+		&.ubermenu-bar-align-right {
+			float: unset;
+			@include breakpoint(large) {
+				float: right;
+			}
+		}
+
+		.ubermenu-nav {
+
+			@include breakpoint(medium) {
+				-webkit-justify-content: center;
+				        justify-content: center;
+			}
+
+			// TOP LEVEL STYLES HERE
+			.ubermenu-item-level-0 {
+
+				.ubermenu-target {
+
+					padding: 1.5rem 2rem 2rem;
+    				margin-top: 0;
+					border-bottom: 2px solid $white;
+					font-size: .875rem;
+
+					.ubermenu-target-text {
+
+							color: $dark-gray;
+							white-space: nowrap;
+					}
+
+					&:hover,
+					 {
+						border-color: $core-orange;
+						// color: red;
+					}
+
+
+					&.mega-button {
+
+						&:hover {
+							border-color: $white;
+						}
+
+						.ubermenu-target-text {
+							.title {
+								background: $core-orange;
+								padding: .75rem 2rem;
+								color: $white;
+								-webkit-border-radius: 30px;
+								        border-radius: 30px;
+
+								&:after {
+									@include transition(.75s);
+									position: absolute;
+								    font-family: "Font Awesome 5 Free";
+								    font-weight: 900;
+								    content: "\f0da";
+								    opacity: 0;
+								}
+
+								&:hover {
+									background-color: lighten($core-orange, 5%);
+									&:after{
+										opacity: 1;
+										-webkit-transform: translate(5px, 0px);
+										   -moz-transform: translate(5px, 0px);
+										    -ms-transform: translate(5px, 0px);
+										     -o-transform: translate(5px, 0px);
+										        transform: translate(5px, 0px);
+									}
+								}
+							}
+						}
+					}
+
+
+
+
+				}
+
+				&.ubermenu-active {
+					.ubermenu-target {
+							border-color: $core-orange;
+					}
+
+				}
+
+				// SUB LEVEL STYLES START HERE
+
+				.ubermenu-submenu {
+
+					.ubermenu-grid-row {
+						display: flex;
+						-webkit-flex-direction: row;
+						    -ms-flex-direction: row;
+						        flex-direction: row;
+						    margin-bottom: 0;
+						    padding-right: 0;
+
+
+					    .ubermenu-column {
+
+					    	.ubermenu-submenu {
+
+					    		    	.ubermenu-target {
+					    		    		padding: 1rem 2rem 0;
+					    		    		border: 0px;
+
+
+					    		    		.ubermenu-target-title,
+					    		    		.ubermenu-target-description {
+					    		    			padding-left: 0;
+					    		    			margin-left: 3rem;
+
+					    		    		}
+
+
+					    		    		.ubermenu-target-title {
+					    		    			margin-bottom: .25rem;
+
+					    		    			.title {
+					    		    				border: 0px;
+					    		    			}
+
+					    		    		}
+
+					    		    		span:last-child {
+					    		    			white-space: normal;
+					    		    			border-bottom: 2px solid $white;
+					    		    			padding-bottom: .5rem;
+					    		    		}
+
+					    		    		.style-svg {
+					    		    			max-width: 30px;
+					    		    			max-height: 35px;
+					    		    			margin-right: .5rem;
+					    						path,
+					    						.cls-1,
+					    						.cls-2,
+					    						.cls-3,
+					    						.cls-4 {
+					    							stroke: $gray;
+					    							stroke-width: 5.5px;
+					    						}
+
+					    		    		}
+
+					    		    		&:hover {
+
+					    		    			.ubermenu-target-title {
+					    		    				color: $core-orange;
+					    		    			}
+
+					    		    			span:last-child {
+					    		    				border-color: $core-orange;
+					    		    			}
+
+					    		    			.style-svg {
+					    							path,
+					    							.cls-1,
+					    							.cls-2 {
+					    								stroke: $core-orange;
+					    							}
+
+					    		    		}
+
+
+					    		    		}
+
+
+					    				}
+
+					    				.no-description {
+
+					    				}
+
+					    		}
+
+					    		&.ubermenu-large {
+
+					    			.ubermenu-target {
+		    				    		 margin-bottom: 1rem;
+
+		    				    		.ubermenu-target-title,
+		    				    		.ubermenu-target-description {
+
+		    				    			margin-left: 0rem;
+
+		    				    		}
+
+
+		    				    		.ubermenu-target-title {
+		    				    			margin-top: 1.25rem;
+		    				    			font-size: 1.125rem;
+
+		    				    		}
+
+		    				    		.ubermenu-target-description {
+		    				    			font-size: .875rem;
+
+		    				    		}
+
+		    				    		.style-svg {
+		    				    			max-width: 50px;
+		    				    			max-height: 50px;
+
+		    								path,
+		    								.cls-1,
+		    								.cls-2,
+		    								.cls-3,
+		    								.cls-4 {
+		    									stroke: $gray;
+		    									stroke-width: 5.5px;
+		    								}
+
+		    				    		}
+
+					    			}
+
+					    		}
+
+						    	&.column-1 {
+						    		background-color: $white !important;
+						    		padding-top: 1rem;
+						    	}
+
+						    	&.column-2 {
+						    		background-color: $light-gray;
+
+						    		.ubermenu-submenu {
+
+			    			    		.ubermenu-target {
+
+
+			    				    		.ubermenu-target-title,
+			    				    		.ubermenu-target-description {
+			    				    			padding-left: 0;
+			    				    			margin-left: 0rem;
+			    				    		}
+
+
+			    				    		.ubermenu-target-title {
+
+			    				    			&:after {
+			    				    				content: '>';
+			    				    				position: absolute;
+			    				    				right: 40px;
+			    				    			}
+
+			    				    		}
+
+			    				    		.ubermenu-target-description {
+			    				    			border-color: $light-gray;
+			    				    			padding-bottom: 1.5rem;
+
+			    				    		}
+
+
+
+			    				    		&:hover {
+
+			    				    			.ubermenu-target-title {
+			    				    				color: $core-orange;
+
+			    				    			}
+
+			    								.ubermenu-target-description {
+			    									border-color: $core-orange;
+
+			    								}
+
+			    							}
+
+			    						}
+
+						    		}
+
+								}
+							}
+
+						}
+
+				}
+			}
+
+		}
+
+	}
+}

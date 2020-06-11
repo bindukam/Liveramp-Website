@@ -1,0 +1,96 @@
+
+@mixin core-blue-mix {
+	@include color-theme($core-blue, $core-blue-light, $core-blue-40, $white, $yellow, $gray, $core-orange);
+}
+#core-blue-theme {
+	@include core-blue-mix;
+	--theme-primary-color: #00A8E1;
+	--theme-faded-color: #E7F7FC;
+	--theme-variant-color: #84D3EF;
+	--theme-contrast-color: #fefefe;
+	--theme-accent-color: #FAE164;
+
+
+
+	.split-lines {
+		background-image: url(../../assets/images/svg/spilt-cb.svg);
+	}
+	.waves-bkg,
+	.bottom-wave {
+		background-image: url(../../assets/images/svg/wave-cb.svg);
+	}
+	.waves {
+		background-image: url('../../assets/images/svg/wavelines-ctastrip-oncolor-cb.svg');
+	    width: 380px;
+	    height: 210px;
+	    left: -350px;
+	}
+	.wave {
+		background-image: url(../../assets/images/svg/leadership-wave-cb.svg);
+	}
+	.wysiwyg-hero,
+	.bottomwave {
+	   background-image: url(../../assets/images/svg/wavelines-cb.svg);
+	}
+ 	.carousel-quote-impact-stmt {
+	   .circle-wrapper {
+	 		background-image: url('../../assets/images/svg/circle-lines-cb.svg');
+		}
+	}
+	.team-modal {
+		.photo-wrapper {
+	 		background-image: url('../../assets/images/svg/circle-lines-cb.svg');
+		}
+	}
+	.diagonal-lines {
+		background-image: url('../../assets/images/svg/diagonal-lines-core-cb.svg');
+	}
+	.wave-graphic {
+		background-image: url('../../assets/images/svg/wavelines-ctastrip-oncolor-cb.svg');
+	}
+	.content_standard_image_and_text_module {
+		 .image-area:after {
+		background-image: url('../../assets/images/svg/wavelines-cb.svg');
+		}
+	}
+	.tabbed_expanded_left_justified_vertical_tab_module {
+		.icon-wrapper {
+		    background-image: url(../../assets/images/svg/corner-circle-lines-cb.svg);
+		 }
+	 }
+ 	.resource_3_card_image_and_text {
+
+		@include breakpoint(medium) {
+			.resource-card.weighted:first-child {
+ 				background-image: url(../../assets/images/svg/leadership-wave-cb.svg);
+			}
+		}
+ 	}
+
+ 	.tabbed_detailed_use_case {
+ 		.bg-art {
+			&:before{
+				background-image: url('../../assets/images/svg/cb-rect.svg');
+
+			}
+			&:after{
+				background-image: url('../../assets/images/svg/wavelines-cb.svg');
+
+			}
+ 		}
+ 	}
+
+ 	.hero_simple_text::before {
+ 			background-image: url('../../assets/images/svg/wavelines-cb.svg');
+ 		
+ 	}
+
+ 	.carded_square_6-card_content {
+ 		&.side-curls {
+ 			@include breakpoint(large) {
+ 				background-image: url(../../assets/images/svg/swirl-left-cb.svg), url(../../assets/images/svg/swirl-right-cb.svg); // replace me
+ 				
+ 			}
+ 		}
+ 	}
+}

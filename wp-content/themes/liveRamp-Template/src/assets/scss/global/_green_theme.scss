@@ -1,0 +1,27 @@
+@mixin green-mix {
+	@include color-theme($green, $light-green, $green-50, $white, $yellow, $gray, $yellow-40);
+}
+:root,
+#green-theme,
+#-theme {
+	--theme-primary-color: #73C06B;
+	--theme-faded-color: #F0F8EF;
+	--theme-variant-color: #B8DFB5;
+	--theme-contrast-color: #fefefe;
+	--theme-accent-color: #FAE164;
+	--theme-mixin-color: #9D9DA3;
+	--theme-mixin2-color:  #FEF6D1;
+}
+#green-theme,
+#-theme {
+	@include green-mix;
+}
+
+.diagonal-lines {
+	background-image: url('../../assets/images/svg/diagonal-lines-core-green.svg');
+}
+.wave-graphic {
+
+    background-image: url("../../assets/images/svg/wavelines-ctastrip-oncolor-green.svg");
+
+}

@@ -1,0 +1,410 @@
+.partners-archive {
+   & > .grid-container {
+     display: grid;
+     grid-template-columns: 20em auto;
+     grid-template-areas: 'title search''filters results';
+     grid-gap: 2rem;
+     
+     @include breakpoint(medium down){
+       grid-template-columns: 1fr;
+       grid-template-areas: 'title' 'filters' 'search' 'results';
+ 
+    }
+   }
+   #partners-response,
+   #partners-results {
+      display: none;
+  }
+   #partners-showcase {
+      grid-area: results;
+  }
+  #partners-form {
+     select {
+        background-image: url("../images/arrow-down.svg");
+        background-size: 12px;
+        padding-left: .7rem;
+     }
+  }
+   .result-group {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     grid-gap: 2rem;
+     margin-bottom: 3rem;
+     padding-bottom: 0rem;
+     grid-area: results;
+     @include breakpoint(medium down) {
+       grid-template-columns: repeat(3, 1fr);
+       justify-content: center;
+    }
+    @include breakpoint(small only) {
+      grid-template-columns: repeat(2, 1fr);
+   }
+ 
+     &:last-of-type {
+       padding-bottom: 2rem;
+    }
+   }
+   #loadmore {
+      grid-area: results;
+      align-self: end;
+      justify-self: center;
+    }
+    .search-container {
+       grid-area: filters;
+       // max-width: 20em;
+ 
+    }
+   .partner {
+     @include bot-rt-shadow;
+     @include b-radius;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     align-self: center;
+     justify-self: center;
+     width: 10rem;
+     height: 10rem;
+     padding: 1rem;
+     border: 3.5px solid #F7F7F7;
+     position: relative;
+ 
+     .square-hoverborder {
+       @include cover-container;
+       transform: scale(1.04);
+ 
+ 
+       .cls-1,.cls-2,.cls-3{
+         fill:none;
+         stroke-linecap:round;
+         stroke-miterlimit:10;
+         stroke-width:3.5px;
+         stroke-dasharray: 200;
+         stroke-dashoffset: 200;
+         transition:  all .5s ease;
+       }
+       .cls-1 {
+         stroke: $core-blue;
+       }
+       .cls-2{
+         stroke: $slate;
+       }
+       .cls-3{
+         stroke:$core-orange;
+       }
+     }
+ 
+     &::before {
+       font-size: 1rem;
+       padding: .25rem;
+       padding-right: 1rem;
+       position: absolute;
+       top: .5rem;
+       left: 0;
+       border-radius: 2px;
+       height: 1.55rem;
+       width: 3rem;
+       content: '';
+ 
+     }
+ 
+     &::after {
+       font-size: 1rem;
+       height: 1.55rem;
+       padding-right: 1.5rem;
+       padding-left: .5rem;
+       display: flex;
+       align-items: center;
+       position: absolute;
+       top: .5rem;
+       left: .3rem;
+       background-position: right;
+       background-repeat: no-repeat;
+       border-radius: 2px;
+       color: $white;
+       background-size: cover;
+ 
+     }
+ 
+     &.elite {
+       &:before {
+         background-color: $core-orange;
+ 
+       }
+       &:after {
+         content: 'Elite';
+         background-image: url("../images/svg/partner-tag-orange.svg");
+       }
+     }
+ 
+     &.select {
+       &:before {
+         background-color: $green;
+ 
+       }
+       &:after {
+         content: 'Select';
+         background-image: url("../images/svg/partner-tag-green.svg");
+       }
+     }
+ 
+ 
+     &.integrated {
+       &:before {
+         background-color: $core-blue;
+ 
+       }
+       &:after {
+         content: 'Integrated';
+         background-image: url("../images/svg/partner-tag-blue.svg");
+       }
+     }
+ 
+     &:hover {
+       cursor: pointer;
+ 
+       .square-hoverborder {
+         .cls-1,.cls-2,.cls-3{
+           stroke-dashoffset: 0;
+ 
+         }
+       }
+     }
+   }
+   input {
+    @include bot-rt-shadow;
+    border-radius: 8px;
+    border: 1px solid $light-gray;
+    color: $gray;
+    background-image: url(../images/svg/search-magnifying.svg);
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+     background-size: 1.4rem;
+     padding-left: 2rem;
+     width: 100%;
+   }
+   .filter-group {
+     margin-bottom: 2rem;
+ 
+     label {
+       color: $gray;
+       padding-bottom: .5rem;
+     }
+ 
+     select {
+       @include bot-rt-shadow;
+       border-radius: 8px;
+       border: 1px solid $light-gray;
+       color: $gray;
+     }
+ 
+     &:hover {
+ 
+       label {
+         color: $medium-gray;
+       }
+       select {
+         border-color: $core-orange;
+         color: $medium-gray;
+       }
+     }
+ 
+   }
+ 
+ 
+ }
+ 
+ 
+ 
+ .single-partner {
+   .partner-hero {
+      // display: grid;
+      span {
+        color: $white !important;
+      }
+   }
+    .partner-image {
+       background: url("../images/partners-background.png");
+       background-size: contain;
+       background-repeat: no-repeat;
+       margin-right:-2rem;
+       position: absolute;
+       right: 2em;
+       height: 400px;
+       background-position: center right;
+       width: 530px;
+    }
+    .img-bg-circle {
+       width: 10em;
+       height: 10em;
+       display: flex;
+       justify-content: center;
+       align-content: center;
+       background: $white;
+       border-radius: 50%;
+       padding: 2em;
+       overflow: hidden;
+       position: absolute;
+       right: 167px;
+       top: 131px;
+ 
+       img {
+          object-fit: contain;
+       }
+ 
+    }
+    @include breakpoint(medium down) {
+       .partner-hero {
+          display: grid;
+          span {
+            color: $white !important;
+          }
+       }
+       .partner-image {
+          margin-right: 0;
+          right: unset;
+          position: relative;
+          justify-self: center;
+          background-position: center;
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          background-size: 450px auto;
+       }
+       .img-bg-circle {
+          position: relative;
+          margin-right: 40px;
+          margin-top: 22px;
+          right: unset;
+          top: unset;
+       }
+    }
+    .partner-info {
+       .grid-container {
+          padding-left: 0;
+       }
+       .info-tag {
+          color: $dark-blue;
+          border-bottom: 1px solid $gray;
+          max-width: 14em;
+          margin: 1rem -1em .3em;
+          padding: 0 1em .3rem;
+          height: max-content;
+          min-height: 3rem;
+          @include breakpoint(medium down) {
+             max-width: stretch;
+             width: 100%;
+          }
+       }
+       .cell {
+          padding: 0 1em;
+       }
+       p {
+          margin-bottom: .3em;
+       }
+    }
+ 
+    .certification-slider {
+       max-width: 400px;
+       .slick-dots {
+          margin: 0 0.6rem 0 0rem;
+       }
+    }
+    .certification {
+       height: 14em;
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+       width: 254px;
+ 
+       &.reseller  {
+          background-image:url("../images/Reseller.png");
+       }
+       &.activation  {
+          background-image:url("../images/Activation.png");
+       }
+       &.advanced-activation  {
+          background-image:url("../images/AdvancedActivation.png");
+       }
+       &.advanced-people-based  {
+          background-image:url("../images/AdvancedPeopleBased.png");
+       }
+       &.connectivity  {
+          background-image:url("../images/Connectivity.png");
+       }
+       &.data-accessibility  {
+          background-image:url("../images/DataAccessibility.png");
+       }
+       &.data-innovation  {
+          background-image:url("../images/DataInnovation.png");
+       }
+       &.discoverability  {
+          background-image:url("../images/Discoverability.png");
+       }
+       &.identity-resolution  {
+          background-image:url("../images/IdentityResolution.png");
+       }
+       &.measurement  {
+          background-image:url("../images/Measurement.png");
+       }
+       &.measurement-analytics  {
+          background-image:url("../images/MeasurementAnalytics.png");
+       }
+       &.measurement-innovation  {
+          background-image:url("../images/MeasurementInnovation.png");
+       }
+       &.omnichannel-thought-leadership  {
+          background-image:url("../images/OmnichannelThoughtLeadership.png");
+       }
+       &.subscription-data-package  {
+          background-image:url("../images/subscription-data-package.png");
+       }
+       
+    }
+    .breadcrumb {
+       &:hover {
+          text-decoration: underline;
+       }
+    }
+ }
+ .resources {
+    & > .grid-container {
+       max-width: 60em;
+    }
+    .title-underline {
+        max-width: 400px;
+    }
+    .resource-image {
+       height: 150px;
+       background: $light-gray;
+       width: 100%;
+       // height: 100%;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-size: contain;
+    }
+    .resource-card {
+       border-radius: $b-radius;
+       @include box-shadow-mixin;
+       margin: 1rem;
+       overflow:hidden;
+       max-width: calc(33.3% - 2rem);
+       cursor: pointer;
+ 
+       @include breakpoint(small only) {
+          max-width: 100%;
+       }
+    }
+    .icon {
+       max-width: 1.5rem;
+       max-height: 1.5rem;
+       display: inline-block;
+       height: 100%;
+       width: 100%;
+       margin-right: .5rem;
+       & * {
+          stroke: $core-orange !important;
+       }
+    }
+ }
+ 

@@ -1,0 +1,169 @@
+.hero_customer_quote_carousel {
+	padding: 2rem 0 0 0;
+	
+	
+	&.hero {
+		padding: 0;
+		height: unset;
+	}
+
+	.hero-grid {
+		min-height: 400px;
+		
+		// using breakpoint large down does not work here
+		//@include breakpoint(1025px down) {
+		//	padding-right: 0.75rem;
+		//	padding-left: 0.75rem;
+		//}
+	}
+
+	.full-module-slider {
+		margin: 0;
+	}
+
+	.logo {
+		max-height: 75px;
+		margin: 0 0 0 1.5rem;
+	}
+
+	.image {
+		background-image: url(../images/svg/diagonal-lines-core-green.svg);
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		     -o-background-size: cover;
+		        background-size: cover;
+		padding-left: 1.25rem;
+		background-position: -38px 80px;
+    	align-self: flex-end;
+
+	}
+
+
+	.name,
+	.title {
+		color: $white;
+	}
+
+	.quote-title {
+		margin: 0 0 1rem 0;
+	}
+
+	.cta {
+		color: $white;
+		margin: 1rem 0 ;
+	}
+	.quote{
+		position: relative;
+		font-size: 1.25rem;
+		line-height: 2rem;
+		position: relative;
+		color: $white;
+		z-index: 1;
+		margin-bottom: 1rem;
+	    font-weight: 700;
+
+		&:before {
+			// content: url('../../assets/images/svg/quote-green.svg');
+			content:'\201c';
+			font-family: 'Flexo Medium';
+			color: $dark-blue;
+			font-size: 16rem;
+			position: absolute;
+			z-index: -1;
+		    top: 82px;
+		    left: -84px;
+		    
+		    @include breakpoint(small down) {
+	    	    top: 50px;
+	    	    font-size: 10rem;
+	    	    left: -30px;
+		    }
+		}
+
+		&.no-quote {
+
+				&:before {
+					content: "";
+				}
+
+		}
+
+		&.no-bold {
+			font-family: 'Flexo';
+			font-weight: 400;
+		}
+	}
+
+	.content {
+		// padding: 4rem 0 5rem;
+
+
+	}
+
+	.bullets {
+		position: relative;
+		top: -85px;
+		z-index: 99;
+
+	}
+	.orbit {
+		.orbit-bullets {
+			text-align: left;
+
+			button {
+				&:first-of-type {
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+	@include breakpoint(large down) {
+		.content {
+			padding: 6rem 2rem 8rem 5rem;
+
+		}		
+	}
+
+	@include breakpoint(medium down) {
+		.content {
+			padding: 6rem 2rem 8rem 6rem;
+
+		}		
+	}
+
+	@include breakpoint(40em down) {
+
+		.image {
+			width: 50%;
+			position: absolute;
+			bottom: 0;
+			left:50%;
+			min-width: 300px;
+		}
+
+		.logo {
+			margin: 1em 0 0;
+		}
+
+
+		.content {
+			padding: 6rem 2rem 8rem;
+
+			.grid-x {
+				flex-direction: column;
+				margin: 3rem 0 0;
+				align-items: baseline;
+			}
+		}
+		.bullets {
+			position: relative;
+			top: -4.5rem;
+			z-index: 99;
+		}
+		.orbit-bullets {
+			padding: 0 2rem;
+		}
+	}
+
+}

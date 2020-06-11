@@ -1,0 +1,85 @@
+// See functions.scss for function font-face
+
+@include font-face('Flexo', '../fonts/Flexo-Font/Flexo-Regular', null, null, otf);
+@include font-face('Flexo Bold', '../fonts/Flexo-Font/Flexo-Bold', bold, null, otf);
+@include font-face('Flexo Medium', '../fonts/Flexo-Font/Flexo-Medium', null, null, otf);
+@include font-face('Flexo Demi', '../fonts/Flexo-Font/Flexo-Demi', null, null, otf);
+
+$fa-font-path:"../../../node_modules/@fortawesome/fontawesome-pro/webfonts";
+// FONT FACES
+
+.flexo-bold {
+  font-family: 'Flexo Bold';
+}
+
+.flexo-medium {
+  font-family: 'Flexo Medium';
+}
+
+.flexo-regular {
+  font-family: 'Flexo';
+}
+
+.flexo-demi {
+  font-family: 'Flexo Demi';
+}
+
+// HEADINGS
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Flexo Bold';
+}
+body h1 {
+  text-transform: unset;
+}
+
+h1,
+h2 {
+  line-height: 1.25em;
+}
+
+h3 {
+  line-height: 1.4em;
+}
+
+h4 {
+  line-height: 1.375em;
+  font-weight: 700;
+  font-family: 'Flexo Bold';
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+p {
+  &.large {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+// WHITE SPACE & WRAPPING
+
+.nowrap {
+  white-space: nowrap;
+}
+
+// ALL CAPS
+
+.allcaps {
+  text-transform: uppercase;
+}
+
+.tag1 {
+  font-size: .875rem;
+}
+
+.tag2 {
+  font-size: .75rem;
+}

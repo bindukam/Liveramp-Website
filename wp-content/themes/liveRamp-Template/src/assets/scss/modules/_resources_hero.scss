@@ -1,0 +1,103 @@
+.resources_hero {
+	padding: 4rem 0;
+	cursor: pointer;
+	.wave-oncol {
+
+		max-width: 300px;
+		width: 90%;
+		max-height: 480px;
+		justify-self: flex-end;
+		-webkit-align-self: center;
+		-ms-flex-item-align: center;
+		-ms-grid-row-align: center;
+		align-self: center;
+		background-image: url(../../assets/images/svg/leadership-wave-oncolor-mb.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center right;
+		height: 100%;
+		position: relative;
+		right: -3em;
+	}
+
+	.slick-slider {
+		margin-left: 0; 
+	}
+
+	.slick-dots {
+		margin: 0;
+	}
+
+	.hero-slide {
+
+		.image {
+
+			min-height: 215px;
+			max-height: 215px;
+
+			@include breakpoint(medium) {
+				min-height: 345px;
+				max-height: 345px;
+			}
+			@include breakpoint(large) {
+				min-height: 400px;
+				max-height: 400px;
+			}
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			display: flex;
+		    justify-content: center;
+		    align-items: center;
+		}
+		.content {
+			padding: 1rem;
+			// border-radius: 0 0 $b-radius $b-radius;
+
+			@include breakpoint(medium) {
+				padding: 2rem;
+			}
+
+			@include breakpoint(large) {
+				padding: 4rem;
+			}
+
+			.term {
+
+				.icon {
+					max-width: 35px;
+					display: inline-flex;
+				}
+			}
+		}
+	}
+}
+.top-six {
+	.waves {
+		width: 800px;
+		position: absolute;
+		left: -40%;
+		top: 1rem;
+		background-image: url(../../assets/images/svg/wavelines-ctastrip-green.svg);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: 100% 0%;
+		position: relative;
+		z-index: 3;
+		
+		@include breakpoint(medium down) {
+			top: 12rem;
+		}
+	}
+}
+
+.resource-filters {
+	position: relative;
+	z-index: 100; // place filter above next element 
+	.filter-grid {
+		@include breakpoint(large) {
+
+			flex-flow: row;
+		}
+	}
+}

@@ -1,0 +1,136 @@
+.blog-subscribe {
+	
+	 .subscribe button {
+	    font-size: 1rem !important;
+	    font-family: 'Flexo Bold' !important;
+	    font-size: 1rem !important;
+	    font-weight: 700 !important;
+	    border-radius: 30px !important;
+	    background-color: #fa8d28 !important;
+	    background-image: none !important;
+	    padding: .75rem 2.6rem !important;
+	    min-width: 12em !important;
+	    width: 12em !important;
+	    white-space: nowrap !important;
+	    outline: 0 !important;
+	    color: #FFF !important;
+	    line-height: 1 !important;
+	    font-style: normal !important;
+	    border: 0px none !important;
+	    -webkit-transition: all 1s cubic-bezier(.19,1,.22,1) !important;
+	    transition: all 1s cubic-bezier(.19,1,.22,1) !important;
+	}
+	.text-format span {color:#fff;} 
+	
+	.email-form {
+	    display: flex; 
+	    flex-direction: row;
+	    justify-content: center; 
+	}
+	
+	.form-wrapper {
+		form {
+			display: flex;
+			flex-direction: column;
+			position: relative;
+			@include breakpoint(medium) {
+				flex-direction: row;
+			}
+			
+			input {
+				border-radius: 6px;
+				padding-left: 3rem;
+				color: $medium-light-gray;
+				background-image: url(../../assets/images/svg/envelope-open-text-light.svg);
+				background-repeat: no-repeat;
+				background-position: 1em 7px;
+				background-size: 20px; 
+				width: 100%;
+				max-width: 16em;
+			}
+			
+			.mktoError {
+				color: $core-orange;
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 3.5rem;
+				
+			}
+		}
+	}
+
+	.mktoFormRow {
+		max-width: 16em;
+		
+		input {
+			margin-right: 1rem;
+		}
+	}
+	.mktoForm {
+		
+		.mktoButtonWrap  {
+			
+			&.mktoRound {
+
+				.mktoButton {
+					background-color: $core_orange;	
+				}
+				
+			}
+
+		}
+	}
+	
+}
+
+#filter-signup {
+	form {
+		
+		button.mktoButton {
+		    background: $core-orange;
+		    border-radius: 30px;
+		    width: 40px;
+		    height: 40px;
+		    transform: translate(0px,3px);
+		}
+
+		input {
+			margin-bottom: 0;
+			border-radius: .5rem !important;
+			// background-image : url(../../assets/images/arrow-down.svg);
+			font-size: .95rem;
+			font-family: "Flexo Medium";
+			color: $gray;
+			background-position: right;
+    		background-size: 12px; 
+    		min-width: 100px;
+    		height: 3rem;
+    		padding: .7rem;
+    		border: 0px;
+    		
+    		&::placeholder {
+    			color: $gray;
+    		}
+		}
+	}
+	
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,287 @@
+.blog-header {
+  padding: 1rem 0 0 0;
+
+  &.extra-padding {
+    padding-bottom: 10em;
+  }
+
+  &.add-waves {
+    @include breakpoint(large) {
+      background-image: url(../../assets/images/svg/wavelines-ctastrip-blue.svg);
+      background-repeat: no-repeat;
+      background-size: 350px;
+      background-position: center right 82vw;
+    }
+    @include breakpoint(small only) {
+      .header-grid.big-header {
+        padding: 0 1rem;
+        min-height: 250px;
+
+      }
+    }
+  }
+
+  .header-grid {
+    min-height: 280px;
+
+    &.big-header {
+      min-height: 450px;
+      margin: 0 0 4rem 0;
+    }
+
+    .breadcrumbs-wrapper {
+      padding: 0;
+      #breadcrumbs {
+        a {
+          color: $white;
+          font-weight: 700;
+          font-size: 0.875rem;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        .breadcrumb_last {
+          display: block;
+        }
+      }
+    }
+
+    .small-title {
+      font-weight: 700;
+    }
+
+    .title-wrapper {
+      padding: 0 1rem;
+      @include breakpoint(medium) {
+        margin: -4rem 0 0 0;
+        padding: 0;
+      }
+
+      .title {
+        h1 {
+          font-size: 1.625rem;
+          @include breakpoint(medium) {
+            font-size: 2.625rem;
+          }
+        }
+      }
+      
+    }
+  }
+
+}
+
+.blog-post {
+  .feature-image-wrapper {
+    // background-image: url(../../assets/images/blog-picture-lines.svg);
+    background-repeat: no-repeat;
+    
+    background-size: 90%;
+    background-position: right top;
+    
+    @include breakpoint(medium) {
+      padding: 1rem 1rem 0 0;
+    }
+
+    .featured-hero {
+      background-position: center;
+      @include hard-shadow;
+    }
+  }
+
+  .sfsi_plus_wicons {
+    margin-bottom: 1rem !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    color: $medium-blue;
+  }
+
+  .title-wrapper {
+    margin: 2rem 0;
+
+    @include breakpoint(medium){
+      margin: 2rem 0 1rem;
+
+    }
+
+    .terms {
+      color: $core-blue;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      
+      @include breakpoint(medium){
+        margin-bottom: .75rem;
+
+        p {
+        margin-bottom: .75rem;
+          
+        }
+      }
+    }
+
+    @include breakpoint(medium){
+      .title {
+          margin-bottom: 2rem;
+        }
+    }
+
+    .meta-wrapper {
+      p {
+        color: $gray;
+      }
+    }
+  }
+
+  .article {
+    &.overlay {
+      margin-top: -150px;
+    }
+
+    .article-content {
+       margin-top: 3em;
+      @include breakpoint(small down) {
+        ol {
+          margin: 0 1.5rem 1.25rem 2.5rem;
+        }
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    ul {
+      padding: 0 1.5rem;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $medium-blue;
+    }
+  }
+
+  strong {
+    color: $core-blue;
+    font-weight: 700;
+  }
+
+  .wp-block-embed {
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    iframe {
+      width: 760px;
+      height: 334px;
+      @include hard-shadow;
+    }
+  }
+
+  iframe {
+    width: 100%;
+  }
+
+  .post-footer {
+    margin: 2rem 0 0 0;
+
+    .leave-comment-wrapper {
+      .leave-comment {
+        color: $core-orange;
+        cursor: pointer;
+      }
+    }
+
+    .comments-wrapper {
+      margin: 2rem 0 0 0;
+
+      section {
+        &#respond {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.blog-footer {
+  @include breakpoint(small down) {
+    .related-posts {
+      padding: 1.5rem;
+    }
+  }
+
+  .related-post-wrapper {
+    cursor: pointer;
+
+    .related-image {
+      -webkit-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      height: 66px;
+      width: 128px;
+    }
+
+    .content {
+      padding: 0 0 0 0.5rem;
+      .term {
+        color: $core-blue;
+        font-size: 0.75rem;
+      }
+      .title {
+        font-weight: 700;
+      }
+      .author {
+        font-size: 0.875rem;
+        color: $gray;
+      }
+    }
+  }
+
+
+}
+
+.blog-subscribe {
+
+
+  @include breakpoint(medium) {
+    margin-bottom: -48px;
+  }
+
+  .subscribe {
+    @include breakpoint(large) {
+      background-image: url(../../assets/images/svg/wavelines-ctastrip-blue.svg);
+      background-repeat: no-repeat;
+      background-size: 300px;
+      background-position: left;
+    }
+
+    padding: 1rem;
+    @include breakpoint(medium) {
+      margin: 3rem;
+    }
+    min-height: 250px;
+
+    button {
+      border-radius: 30px;
+      font-size: 1rem;
+      background-color: $core-orange;
+      padding: .75rem 2.6rem;
+    }
+  }
+}

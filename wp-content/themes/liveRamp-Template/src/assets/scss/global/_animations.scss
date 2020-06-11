@@ -1,0 +1,15 @@
+section {
+	opacity: 0;
+	transform: translate(0, 3rem);
+    transition: opacity 1s ease 0s, transform 1s ease 0s;
+  
+    &.entrance-anim,
+    &#footer,
+    &.overlay-me ,
+    &.breadcrumbs,
+    &[class*='hero'],//make all classes that include "flex-" display as flex
+    &.footer-nav {
+        opacity: 100;
+        transform: translate(0, 0rem);
+    }
+}

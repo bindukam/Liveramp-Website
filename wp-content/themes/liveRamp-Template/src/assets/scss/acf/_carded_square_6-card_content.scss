@@ -1,0 +1,73 @@
+.carded_square_6-card_content {
+	position: relative;
+	
+		&.bottom-wave {
+			background-position: bottom center;
+			background-repeat: no-repeat;
+			-webkit-background-size: 0px;
+			     -o-background-size: 0px;
+			        background-size: 0px;
+			padding-bottom: 2rem;
+		   background-image: url(../../assets/images/svg/wave-green.svg);
+			z-index: 1;
+
+			@include breakpoint(medium) {
+				-webkit-background-size: 600px;
+				     -o-background-size: 600px;
+				        background-size: 600px;
+				padding-bottom: 11rem;
+			}
+
+		}
+		&.side-curls {
+			@include breakpoint(large) {
+				background-image: url(../../assets/images/svg/swirl-left-green.svg), url(../../assets/images/svg/swirl-right-green.svg); // replace me
+				background-repeat: no-repeat;
+				background-position: -20% center, 120% center;
+				background-size: 40% 100%;
+			}
+
+
+		}
+
+
+		.card {
+			padding: 1.5rem;
+			margin-bottom: 2rem;
+			.icon {
+				 height: 55px;
+			    max-width: 55px;
+			    width: auto;
+    			 margin: 0 0 0.5em;
+				 .cls-1 {
+					 stroke: $white !important;
+					 opacity: 1;
+				 }
+				.cls-2{
+					stroke: var(--theme-accent-color) !important;
+				}
+				.st1 {
+					stroke: var(--theme-accent-color);
+					fill: none;
+				}
+			}
+			// added slight gap between slides on mobile
+			@include breakpoint(small) {
+				border-right: 1px solid $white;
+				border-left: 1px solid $white;
+			}
+		}
+		.card-title {
+		   display: grid;
+		   padding-bottom: 1em;
+			grid-template-rows: 3.5rem auto;
+
+			img {
+			    margin-right: 1em;
+			}
+			h4 {
+    			margin: 1rem 0 0.4rem;
+				font-size: 1.25rem;
+			}
+		}
+}

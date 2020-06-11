@@ -1,0 +1,64 @@
+@mixin respond-to($media) {
+    @if $media==lg {
+        @media only screen and (max-width: 1441px) {
+            @content;
+        }
+    }
+
+    @else if $media==md {
+        @media only screen and (max-width: 1260px) {
+            @content;
+        }
+    }
+
+    @else if $media==sm {
+        @media only screen and (max-width: 1025px) {
+            @content;
+        }
+    }
+
+    @else if $media==vsm {
+        @media only screen and (max-width: 640px) { 
+            @content;
+        }
+    }
+}
+
+// @include respond-to(lg) {
+//     -background-color: blue; 
+// }
+
+// @include respond-to(md) {
+//     -background-color: green;
+// }
+
+// @include respond-to(sm) {
+//     -background-color: yellow;
+// }
+
+// @include respond-to(vsm) {
+//     -background-color: pink;
+// }
+
+$display-wide: 1200;
+$display-narrow: 500;
+
+@mixin fluid($property, $minValue, $maxValue) {
+
+    #{$property}: #{$maxValue}px;
+
+    @include respond-to(lg) {
+        //if less than 1140px
+        $x: ($maxValue - $minValue)/($display-wide - $display-narrow);
+        $y: $maxValue - $display-wide * $x;
+        #{$property}: calc(#{100*$x}vw + #{$y}px);
+    }
+
+    @include respond-to(vsm) {
+        //if less than 500px
+        #{$property}: #{$minValue}px;
+    }
+}
+//@include fluid('font-size', 16, 20);
+
+

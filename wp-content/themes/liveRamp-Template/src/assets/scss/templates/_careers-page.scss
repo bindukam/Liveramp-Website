@@ -1,0 +1,43 @@
+.careers-listings {
+	min-height: 350px;
+	padding: 2rem 0;
+	
+	
+	.reset {
+		display: block; 
+		margin:0;
+		.reset-filters {
+			display: none; 
+			cursor:pointer; 
+		}
+	}
+ 	
+ 	#jobs {
+ 		margin:0;
+
+		.job-card {
+			cursor: pointer;	
+
+			.job {
+				margin: 0 0 .5rem 0;
+				min-height: 135px;
+				min-width: 260px;
+				max-height: 135px;
+				max-width: 260px;
+				background-repeat: no-repeat;
+				background-size: 150px;
+				background-position: center;
+				border: 3.5px solid $xlight-gray;
+
+				
+			}
+
+		}
+	}
+	#no-results {
+		display: none;
+	    min-height: 150px;
+	    align-items: center;
+	    .cell {text-align: center}
+	}
+}

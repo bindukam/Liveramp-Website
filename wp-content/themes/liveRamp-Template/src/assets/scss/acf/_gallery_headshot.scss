@@ -1,0 +1,237 @@
+.gallery_headshot {
+	@include breakpoint(large) {
+		background-image:url(../../assets/images/svg/leadership-wave-green.svg), url(../../assets/images/svg/leadership-wave-green.svg);
+		background-repeat: no-repeat;
+    	background-size: 7%;
+    	background-position: -2% 239px, 102% bottom;
+	}
+
+	// position: relative;
+
+	// .wave {
+ //    max-width: 300px;
+ //    width: 90%;
+ //    max-height: 300px;
+ //    justify-self: flex-start;
+ //    -webkit-align-self: center;
+ //    -ms-flex-item-align: center;
+ //    -ms-grid-row-align: center;
+ //    align-self: center;
+ //    background-image: url(../../assets/images/svg/leadership-wave-green.svg);
+ //    background-repeat: no-repeat;
+ //    background-size: contain;
+ //    background-position: left -2em center;
+ //    height: 100%;
+ //    position: relative;
+	// }
+	// .bottomwave{
+	// 	max-width: 700px;
+	// 	width: 100%;
+	// 	margin-right: -54%;
+	// 	-webkit-align-self: flex-end;
+	// 	-ms-flex-item-align: end;
+	// 	align-self: flex-end;
+	// 	justify-self: flex-end;
+	// 	-webkit-transform: rotate(180deg);
+	// 	-ms-transform: rotate(180deg);
+	// 	transform: rotate(180deg);
+	// 	background-image: url(../../assets/images/svg/wavelines-green.svg);
+	// 	background-repeat: no-repeat;
+	// 	background-size: 700px;
+	// 	/* background-position: right bottom 100%; */
+	// 	position: relative;
+	// 	height: 100%;
+	// }
+
+	.member {
+		cursor: pointer;
+		@include breakpoint(small only) {
+		    display: grid;
+			 grid-template-columns: 1fr 2fr;
+		    grid-template-rows: auto 1fr;
+		    grid-template-areas: 'img name''img position''border border';
+			 grid-gap: 0 1em;
+			 text-align: left;
+
+			 svg {
+				width: 100%;
+				grid-area: border;
+				height: 3px;
+
+				 path {
+					stroke: $core-orange !important;
+				}
+			 }
+
+			 &:nth-of-type(3n+2) svg path {
+				stroke: $light-gray !important;
+			}
+			&:nth-of-type(3n+0) svg path {
+				stroke: $core-blue !important;
+			}
+			 
+			 .position {
+				 color: $gray;
+				 font-size: rem-calc(14);
+			 }
+			 .photo-circle-wrapper .photo-circle {
+				
+			 }
+		 }
+
+		.photo-circle-wrapper {
+			margin-bottom: 1rem;
+			position: relative;
+			grid-area: img;
+
+			.circle-wrapper {
+
+				.photo-circle {
+					width: 94%;
+					height: auto;
+					.cls-1 {
+					        fill: #fff;
+					      }
+
+				      .st1, .st2, .st3 {
+				        fill: none;
+				        stroke-linecap: round;
+				        stroke-linejoin: round;
+				        stroke-width: 3px;
+				        stroke-dasharray: 200;
+			            stroke-dashoffset: 200;
+			            transition: all .5s ease;
+				      }
+
+				      .st1 {
+				        stroke: var(--theme-accent-color);
+				      }
+
+				      .st2 {
+				        stroke: var(--theme-primary-color);
+				      }
+
+				      .st3 {
+				        stroke: var(--theme-variant-color);
+				      }
+
+				}
+
+			}
+
+			.photo-wrapper {
+				position: absolute;
+				top: 6%;
+				width: 82%;
+				left: 9%;
+				@include breakpoint(small only){
+					left: 6%;
+				}
+
+				.photo {
+				    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.1);
+				    border-radius: 50%;
+				}
+			}
+
+		}
+
+		.name {
+			color: var(--theme-primary-color);
+			font-weight: 600;
+			margin-bottom: 6px;
+		}
+
+		.position {
+			color: $gray;
+		}
+
+		&:hover {
+
+			.circle-wrapper {
+					.photo-circle {
+				      .st1, .st2, .st3 {
+			            	stroke-dashoffset: 0;
+
+				      }
+					}
+				}
+				.position {
+					color: $dark-gray;
+				}
+
+			.name {
+				color: $core-orange;
+			}
+
+
+
+		}
+
+	}
+
+}
+
+.team_modal {
+
+		padding: 2rem;
+
+
+		.reveal.large {
+			top: 100px !important;
+		}
+
+		.description {
+			max-height: 300px;
+			margin-bottom: 1rem;
+			overflow: auto;
+		}
+
+		.underline {
+			width: 50%;
+			margin-bottom: 1rem;
+		}
+
+		-webkit-border-radius: 12px;
+		        border-radius: 12px;
+
+		.links {
+			a {
+				padding-right: .5rem;
+				color: $slate;
+				transition: color .3 ease;
+				&:hover {
+					color: $core-orange;
+				}
+			}
+		}
+
+		.photo-wrapper {
+			background: url('../../assets/images/svg/circle-lines-green.svg');
+			background-repeat: no-repeat;
+			background-size: 80%;
+			background-position: 30% 70%;
+			.photo {
+				border-radius: 50%;
+				width: 404px;
+				transform: scale(0.8);
+				transform-origin: 70% 30%;
+			}
+		}
+
+
+		.modal_arrow {
+			color: $light-gray;
+			cursor: pointer;
+			&.modal_previous {
+				z-index: 20;
+				position: relative;
+				right: 10px;
+			}
+			&.modal_next {
+				z-index: 20;
+				position: relative;
+				left: 10px;
+			}	
+		}
+}

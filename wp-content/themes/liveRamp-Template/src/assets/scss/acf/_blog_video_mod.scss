@@ -1,0 +1,105 @@
+.video-panel {
+
+	margin: 3rem 0;
+	@include breakpoint(medium) {
+		background-image: url(../../assets/images/svg/wavelines-mb-vertical.svg);
+		background-repeat: no-repeat;
+		background-position-x: 105%;
+
+	}
+
+	.video-title {
+		margin: 0 0 1.5rem 0;
+		font-size: 2rem;
+	}
+
+	.video-cell {
+
+		margin: -2rem 0rem -2rem 2rem;
+		padding: 2rem;
+
+		@include breakpoint(medium down) {
+			margin: 0;
+			width: 100%;
+			padding: 1rem;
+			border-radius: 0;
+		}
+
+
+
+		.video-wrapper {
+			position: relative;
+
+			.wistia_embed {
+				max-width: 100%;
+			}
+
+			.playbutton {
+				position: absolute;
+				top: 130px;
+				left: 50%;
+				transform: translateX(-35px);
+				cursor: pointer;
+				transition: transform .5s ease;
+
+				&:hover {
+					transform: translateX(-35px) scale(1.25);
+				}
+			}
+
+		}
+
+
+	}
+
+	.thumbnails {
+		display: flex;
+		-webkit-flex-direction: row;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		    -webkit-justify-content: space-between;
+		            justify-content: space-between;
+		    margin: 1rem 0;
+
+		.replace-video {
+			cursor: pointer;
+
+			.replace-grid {
+				display: flex;
+				-webkit-flex-direction: row;
+				    -ms-flex-direction: row;
+				        flex-direction: row;
+				    -webkit-align-items: center;
+				            align-items: center;
+
+				 .next-video {
+				 	min-width: 150px;
+				 	max-width: 150px;
+				 	min-height: 100px;
+				 	border-radius: $b-radius;
+				 	-webkit-background-size: cover;
+				 	     -o-background-size: cover;
+				 	        background-size: cover;
+				 	background-repeat: no-repeat;
+				 	background-position: center;
+
+
+				 }
+
+				 .title {
+				 	color: $white;
+				 	margin-left: 1rem;
+				 }
+			}
+
+
+			&.hide-video {
+				display: none;
+			}
+		}
+
+	}
+	.bg-art {
+		display: none;
+	}
+}

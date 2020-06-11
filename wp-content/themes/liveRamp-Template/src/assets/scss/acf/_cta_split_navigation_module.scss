@@ -1,0 +1,25 @@
+.cta_split_navigation_module{
+
+	.cta-wrap {
+		// display: flex;
+		// -webkit-flex-direction: column;
+		//     -ms-flex-direction: column;
+		//         flex-direction: column;
+		// -webkit-justify-content: space-between;
+		//             justify-content: space-between;
+
+		    h3 {
+		    	font-family: 'Flexo Medium';
+		    	margin-bottom: 1rem;
+		    	line-height: 1.75rem;
+		    }
+	}
+
+
+	.split-lines {
+		height: 250px;
+		background-repeat: no-repeat;
+		width: 65px;
+		background-image: url(../../assets/images/svg/spilt-green.svg);
+	}
+}

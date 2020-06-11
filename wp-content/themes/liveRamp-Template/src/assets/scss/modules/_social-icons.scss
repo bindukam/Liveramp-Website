@@ -1,0 +1,26 @@
+.social-icons {
+	padding: 1rem 0;
+	.sfsi_plus_widget {
+		
+		.sfsiplus_norm_row {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+.social-share-footer {
+	
+	.sfsi_plus_widget {
+	    display: flex;
+	    flex-direction: column;
+	    align-items: flex-end;
+		
+		.sfsiplus_norm_row {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			position: unset !important;
+		}
+	}
+}

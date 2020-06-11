@@ -1,0 +1,198 @@
+ 
+.button, 
+.icon {
+	@include transition(.5s);
+}
+@mixin after-arrow {
+	@include transition(.75s);
+		content: "";
+		opacity: 0;
+		background-image: url('../images/svg/arrow-white.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: .8rem;
+		width: .8rem;
+		margin-right: -.2em;
+		margin-left: .2em;
+		display: inline-block;
+
+}
+.arrow-tag {
+	&:after {
+		@include after-arrow;
+		background-image: url('../images/svg/arrow.svg');
+	}
+	&:hover:after {
+		opacity: 1;
+		-webkit-transform: translate(5px, 0px);
+			-moz-transform: translate(5px, 0px);
+			 -ms-transform: translate(5px, 0px);
+			  -o-transform: translate(5px, 0px);
+				  transform: translate(5px, 0px);
+	}
+}
+
+.button,
+.button:focus {
+	font-family: 'Flexo Bold';
+	@include transition(1s);
+	background-color: $core-orange;
+	min-width: 9rem;
+	display: inline-flex;
+	// white-space: nowrap;
+	align-items: center;
+
+
+	&.outline {
+		background-color: $white;
+		border: 2px solid $core-orange;
+		color: $core-orange;
+
+		&:after {
+			background-image: url('../images/svg/arrow.svg');
+		}
+		&:hover {
+			background-color: $white;
+		}
+		&.whiteoutline {
+			border-color: $white;
+		}
+	}
+
+	&.button-white{
+		border-color: $white;
+		color: $white;
+		background-color: none;
+		
+		&:after {
+			background-image: url('../images/svg/arrow-white.svg');
+		}
+
+		&:hover {
+			background-color: lighten($green, 7%);
+		}
+	}
+
+	&:after {
+		@include after-arrow;
+	}
+
+	&:hover {
+		background-color: lighten($core-orange, 10%);
+		&:after{
+			opacity: 1;
+			-webkit-transform: translate(5px, 0px);
+			   -moz-transform: translate(5px, 0px);
+			    -ms-transform: translate(5px, 0px);
+			     -o-transform: translate(5px, 0px);
+			        transform: translate(5px, 0px);
+		}
+	}
+	&.down-arrow::after {
+    transform: rotate(90deg) translate(-3px, -5px);
+	}
+
+	&.down-arrow:hover:after {
+	    transform: rotate(90deg) translate(2px, -5px);
+	}
+
+	&:before {
+		content: "";
+		opacity: 0;
+		height: .8rem;
+		width: .8rem;
+		margin-right: -.2em;
+		margin-left: .2em;
+		display: inline-block;
+	}
+
+}
+.arrow {
+	height: 1rem;
+	width: 1rem;
+	margin: 0 .5rem;
+	.cls-1,
+	.cls-2,
+	* {
+		stroke: $core-orange;
+		stroke-width: 2px;
+	}
+}
+
+.mktoButton {
+    // width: 2.5rem;
+    min-width: 2.5rem;
+	height: 2.5rem;
+
+	svg {
+			transform: translateX(0px);
+			transition: $transition;
+	}
+
+	&:hover {
+		cursor: pointer;
+		background-color: lighten($core-orange, 5%) !important;
+
+		svg {
+			transform: translateX(2px);
+		}
+	}
+}
+
+.cta {
+	.button,
+	&.button {
+		font-size: 1rem;
+		font-family: 'Flexo Bold';
+		min-width: 12em;
+		width: 12em;
+		white-space: nowrap;
+	}
+}
+
+.slick-slider {
+	.slick-dots {
+		li button {
+			display: inline;
+			 font-size: 0;
+			 width: 1.8rem;
+			 height: 2rem;
+			 border-radius: 0;
+			 margin: .25rem;
+			 position: relative;
+			 background-color: transparent!important;
+			 cursor: pointer;
+			 opacity: 1;
+
+			 &:before {
+				 content: '';
+				 display: block;
+				 height: 1rem;
+				 width: 1rem;
+				 border-radius: 50%;
+				 background: transparent;
+				 border: 1.5px solid $core-orange;
+				 left: 7px;
+				 margin-top: 9px;
+			 }
+		}
+		li.slick-active {
+			 button {
+				opacity: 1;
+				&::before {
+					background: $core-orange;
+					border: 1.5px solid $core-orange;
+				}
+			}
+		}
+	} //slick-dots
+} //slick-slider
+.primary-bkg,
+.green-bkg {
+	.slick-slider .slick-dots li button:before {
+		border-color: $white;
+	}
+	.slick-slider .slick-dots li.slick-active button:before {
+		border-color: $core-orange;
+	}
+}

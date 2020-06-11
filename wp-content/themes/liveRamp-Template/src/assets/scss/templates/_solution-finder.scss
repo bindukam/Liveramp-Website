@@ -1,0 +1,146 @@
+.solution-finder {
+   margin-bottom: 0;
+   .solution-card {
+      cursor: pointer;
+      border-radius: $b-radius;
+      overflow: hidden;
+      height: 100%;
+      width: 100%;
+      @include box-shadow-mixin;
+      // display: none;
+      &.visible {
+         // display: block;
+      }
+      .card-content {
+         color: $dark-gray;
+      }
+      button {
+         cursor: pointer;
+         color: $core-orange;
+         &:after {
+            content: '>';
+            padding-left: .5rem;
+         }
+      }
+   }
+
+   #sf-showcase {
+      display: grid;
+   }
+
+   .no-results {
+      text-align: center;
+   }
+
+   form {
+      display: block;
+      text-align: center;
+      @include breakpoint(small down) { 
+         display: flex;
+         flex-direction: column;
+         flex-wrap: wrap;
+         width: 100%;
+      }
+
+      & > div {
+         display: inline-grid;
+         grid-template-columns: repeat(4,auto);
+         margin: 0;
+         align-items: center;
+         height: -moz-min-content;
+         grid-gap: 1em;
+         justify-content: center;
+
+         @include breakpoint(medium down) { 
+            grid-template-columns: repeat(2,auto);
+         }
+         @include breakpoint(small down) { 
+            grid-template-columns: auto;
+            display: flex;
+            flex-direction: column;
+         }
+      }
+
+      select {
+         display: inline-block;
+         min-width: 9.5rem;
+         max-width: 16rem;
+         border-color: #9D9DA3;
+         color: #9D9DA3;
+         font-size: .8rem;
+         //background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='8' height='6' viewBox='0 0 8 6'><line x1='0'  y1='0' x2='4' y2='6'  stroke='orange' stroke-width='1.5px' /><line x1='4' y1='6' x2='8' y2='0' stroke='orange' stroke-width='1.5px' /></svg>");
+         position: relative;
+         width: auto;
+         height: 3rem;
+         padding: .7rem;
+         background-image: url(../../assets/images/arrow-down.svg);
+         //background-position: right;
+         background-size: 12px;
+         padding-right: 2rem;
+         &::before {
+            //content: ">";
+            //transform: rotate(90deg) translate(-3px, -5px);
+            //position: absolute;
+            //right: 1em;
+         }
+         &:hover:after {
+      	   //transform: rotate(90deg) translate(1px, -5px);
+         }
+         @include breakpoint(small down) { 
+            display: flex;
+            width: 73%;
+         }
+      }
+      span {
+         font-family: 'flexo bold';
+         display: inline-block;
+         @include breakpoint(small down) { 
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 1em;
+         }
+      }
+   }
+   .footer-overlay {
+      min-height: 135px;
+      margin-top: -8rem;
+   }
+
+   .select {
+      /* display: inline-block; */
+      /* grid-template-areas: ''; */
+      display: inline-grid;
+      grid-template-areas: 'a';
+      height: auto;
+      margin: 0;
+      width: auto;
+    }
+
+    .select > * {
+      grid-area: a;
+    }
+
+    .select-styled {
+      position: relative; 
+      display: inline-block; 
+      position: relative;
+      min-height: unset;
+      @include breakpoint(medium down) { 
+         margin-bottom: 1em;
+      }
+
+    }
+}
+
+
+
+/* app.css | http://liverampus.dev.cc/wp-content/themes/liveRamp-Template/dist/assets/css/app.css?ver=2.10.4 */
+
+/* .solution-finder #solution-form div { */
+
+    
+    .select > * {
+      grid-area: a;
+    }
+    

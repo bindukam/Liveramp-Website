@@ -1,0 +1,109 @@
+.content_standard_image_and_text_module {
+
+	position: relative;
+	margin-top: 1rem;
+	overflow: hidden;
+
+
+	.title {
+		width: fit-content;
+		position: relative;
+		font-size: 2.375rem;
+		line-height: 2.75rem;
+		margin: 0;
+
+		div {
+			margin-top: .5rem;
+			position: absolute;
+			width: auto;
+			max-width: 90%;
+		}
+	}
+
+	.button {
+		margin-top: 1rem;
+	}
+
+	.image img {
+    	@include hard-shadow;
+	}
+
+	.image-container {
+	    display: flex;
+	    justify-content: flex-end;
+		 @include breakpoint(small only) {
+    		 justify-content: center;
+			 margin-bottom: 2rem;
+		 }
+	}
+
+	.image-area {
+		border-radius: 12px !important;
+		position: relative;
+		left: .5rem;
+		width: 80%;
+		height: auto;
+    	margin-top: 5rem;
+
+		// &:before {
+		//     @include green-bg-box;
+		// }
+		&:after {
+			z-index: 2;
+			position: absolute;
+			height: 100%;
+			width: 690px;
+			top: -4rem;
+			left: -2rem;
+			content: '';
+			background-image: url(../../../src/assets/images/svg/wavelines-green.svg);
+			background-position: top right;
+			background-repeat: no-repeat;
+			@include breakpoint(small only) {
+				left: -6rem;
+			}
+		}
+		.image {
+		    z-index: 5;
+		    position: relative;
+		}
+	}
+
+
+	.b-radius {
+		border-radius: 12px;
+	}
+
+
+	@include breakpoint(medium) {
+		p {
+			padding-right: 5rem;
+		}
+		.no-image p {
+			padding: 0;
+		}
+	}
+
+
+
+	.flipped {
+
+		.image-area:before {
+			left: -50%;
+		}
+
+		.image-area:after {
+			left: -40%;
+		}
+
+		.image-container {
+			justify-content: flex-start;
+		}
+
+
+
+
+	}
+
+
+}

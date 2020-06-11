@@ -1,0 +1,69 @@
+
+.standard_video {
+	
+	margin-top: 50px;
+
+	br {display:none;}
+	
+	@include breakpoint(small only) {
+		margin-top: 25px;
+	}
+	
+	@include breakpoint(medium) {
+	}	
+	
+	@include breakpoint(large) {
+	}
+	
+	@include breakpoint(xxlarge) {
+	}	
+	
+	.title-cell {
+
+		h2 {
+			font-size: 2.375rem;
+			line-height: 2.75rem;
+
+			@include breakpoint(small only) {
+				font-size: 2.375rem;
+			    line-height: 2.75rem; 
+			}
+			
+			@include breakpoint(medium) {
+			}	
+			
+			@include breakpoint(large) {
+			}
+			
+			@include breakpoint(xxlarge) {
+				font-size: 2.25rem;
+				line-height: 2.75rem; 
+				width:992px;
+				text-align: center;
+				margin:auto;
+			}	
+
+		}
+	}
+
+	.video-area {
+		
+		margin-top : 25px;
+		
+		.video-container {
+			width : 100%;
+
+			@include breakpoint(medium) {}
+
+			@include breakpoint(large) {width: 772px;}
+
+			@include breakpoint(xlarge) {}
+
+			@include breakpoint(xxlarge) {}
+
+			&.box-shadow-over-white {
+			    box-shadow: 10px 10px 0px 0px rgba(231,231,231,1);
+			}
+		}
+	}
+}

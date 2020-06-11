@@ -1,0 +1,373 @@
+
+
+$dark-nav-color: #2C3840;
+
+// CORE COLORS
+$dark-blue: #0F3264;
+$dark-blue-light: #E8EAEF;
+$dark-blue-80: #4A5D82;
+$dark-blue-60: #7785A1;
+$dark-blue-40: #A4ADC0;
+$dark-blue-20: #D1D5DF;
+$medium-blue: #004BA5;
+$medium-blue-80: #3E71B3;
+$medium-blue-60: #6E94C6;
+$medium-blue-40: #C2D2E7;
+$medium-blue-20: #E6EDF5;
+$core-blue: #00A8E1;
+$core-blue-light: #E7F7FC;
+$core-blue-80: #3AB9E6;
+$core-blue-60: #6BCAEC;
+$core-blue-40: #84D3EF;
+$core-blue-20: #CDEDF8;
+$green: #73C06B;
+$green-80: #8ECD8A;
+$green-60: #AAD9A7;
+$green-50: #B8DFB5;
+$green-40: #C6E6C4;
+$green-20: #E2F2E1;
+$light-green: #F0F8EF;
+$yellow: #FAE164;
+$yellow-80: #FAE682;
+$yellow-60: #FBECA1;
+$yellow-40: #FEF6D1;
+$yellow-20: #FDF8DF;
+$light-yellow: #FEF6D1;
+$light-gray: #e6e6e6;
+$xlight-gray: #F8F8F8;
+$gray: #9D9DA3;
+$medium-light-gray: #9b9b9b;
+$medium-gray: #56565B;
+$dark-gray: #323232;
+$dark-gray-80: #5B5A5A;
+$dark-gray-60: #848383;
+$dark-gray-40: #A1A1A3;
+$dark-gray-20: #D5D5D5;
+$core-orange: #FA8D28;
+$light-core-orange: #FBC695;
+$light-slate: #EDF3F8;
+$slate: #DBE4EC;
+$dark-slate: #9CB6CB;
+$blue-slate: #7D9FB8;
+$teal: #09A8AB;
+
+
+$black-a20: rgba(0,0,0,.1);
+
+
+$black: #0a0a0a;
+$white: #fefefe;
+
+$shiftnav-title: #191818;
+
+:root {
+	--green: $green;
+	--yellow: $yellow;
+	--teal: $teal;
+	--dark-blue: $dark-blue;
+	--medium-blue: $medium-blue;
+	--core-blue: $core-blue;
+	--dark-gray: $dark-gray;
+	--orange: $core-orange;
+}
+
+
+// COLOR STYLES
+
+.dark-blue {
+	color: $dark-blue;
+}
+.dark-blue-80 {
+	color: $dark-blue-80;
+}
+.dark-blue-60 {
+	color: $dark-blue-60;
+}
+.dark-blue-40 {
+	color: $dark-blue-40;
+}
+.dark-blue-20 {
+	color: $dark-blue-20;
+}
+
+.medium-blue {
+	color: $medium-blue;
+}
+.medium-blue-80 {
+	color: $medium-blue-80;
+}
+.medium-blue-60 {
+	color: $medium-blue-60;
+}
+.medium-blue-40 {
+	color: $medium-blue-40;
+}
+.medium-blue-20 {
+	color: $medium-blue-20;
+}
+
+.core-blue {
+	color: $core-blue;
+}
+.core-blue-80 {
+	color: $core-blue-80;
+}
+.core-blue-60 {
+	color: $core-blue-60;
+}
+.core-blue-40 {
+	color: $core-blue-40;
+}
+.core-blue-20 {
+	color: $core-blue-20;
+}
+
+.green {
+	color: $green;
+}
+.green-80 {
+	color: $green-80;
+}
+.green-60 {
+	color: $green-60;
+}
+.green-40 {
+	color: $green-40;
+}
+.green-20 {
+	color: $green-20;
+}
+
+.light-green {
+	color: $light-green;
+}
+
+.yellow {
+	color: $yellow;
+}
+.yellow-80 {
+	color: $yellow-80;
+}
+.yellow-60 {
+	color: $yellow-60;
+}
+.yellow-40 {
+	color: $yellow-40;
+}
+.yellow-20 {
+	color: $yellow-20;
+}
+
+.light-yellow {
+	color: $light-yellow;
+}
+
+.light-gray {
+	color: $light-gray;
+}
+
+.gray {
+	color: $gray;
+}
+
+.medium-gray {
+	color: $medium-gray;
+}
+
+.dark-gray {
+	color: $dark-gray;
+}
+.dark-gray-80 {
+	color: $dark-gray-80;
+}
+.dark-gray-60 {
+	color: $dark-gray-60;
+}
+.dark-gray-40 {
+	color: $dark-gray-40;
+}
+.dark-gray-20 {
+	color: $dark-gray-20;
+}
+
+.core-orange, .orange {
+	color: $core-orange;
+}
+.light-core-orange {
+	color: $light-core-orange;
+}
+.slate {
+	color: $slate;
+}
+.light-slate {
+	color: $light-slate;
+}
+
+.dark-slate {
+	color: $dark-slate;
+}
+
+.blue-slate {
+	color: $blue-slate;
+}
+
+.white {
+	color: $white;
+}
+
+.black {
+	color: $black;
+}
+
+
+
+// BACKGROUNDS
+
+// Background colors
+
+.dark-blue-bkg {
+	background-color: $dark-blue;
+}
+.dark-blue-80-bkg {
+	background-color: $dark-blue-80;
+}
+.dark-blue-60-bkg {
+	background-color: $dark-blue-60;
+}
+.dark-blue-40-bkg {
+	background-color: $dark-blue-40;
+}
+.dark-blue-20-bkg {
+	background-color: $dark-blue-20;
+}
+
+.medium-blue-bkg {
+	background-color: $medium-blue;
+}
+.medium-blue-80-bkg {
+	background-color: $medium-blue-80;
+}
+.medium-blue-60-bkg {
+	background-color: $medium-blue-60;
+}
+.medium-blue-40-bkg {
+	background-color: $medium-blue-40;
+}
+.medium-blue-20-bkg {
+	background-color: $medium-blue-20;
+}
+
+.core-blue-bkg {
+	background-color: $core-blue;
+}
+.core-blue-80-bkg {
+	background-color: $core-blue-80;
+}
+.core-blue-60-bkg {
+	background-color: $core-blue-60;
+}
+.core-blue-40-bkg {
+	background-color: $core-blue-40;
+}
+.core-blue-20-bkg {
+	background-color: $core-blue-20;
+}
+
+
+.green-bkg {
+	background-color: $green;
+}
+.green-80-bkg {
+	background-color: $green-80;
+}
+.green-60-bkg {
+	background-color: $green-60;
+}
+.green-40-bkg {
+	background-color: $green-40;
+}
+.green-20-bkg {
+	background-color: $green-20;
+}
+
+.light-green-bkg {
+	background-color: $light-green;
+}
+
+.yellow-bkg {
+	background-color: $yellow;
+}
+.yellow-80-bkg {
+	background-color: $yellow-80;
+}
+.yellow-60-bkg {
+	background-color: $yellow-60;
+}
+.yellow-40-bkg {
+	background-color: $yellow-40;
+}
+.yellow-20-bkg {
+	background-color: $yellow-20;
+}
+
+.light-yellow-bkg {
+	background-color: $light-yellow;
+}
+.light-gray-bkg {
+	background-color: $light-gray;
+}
+.gray-bkg {
+	background-color: $gray;
+}
+.medium-gray-bkg {
+	background-color: $medium-gray;
+}
+
+.dark-gray-bkg {
+	background-color: $dark-gray;
+}
+.dark-gray-80-bkg {
+	background-color: $dark-gray-80;
+}
+.dark-gray-60-bkg {
+	background-color: $dark-gray-60;
+}
+.dark-gray-40-bkg {
+	background-color: $dark-gray-40;
+}
+.dark-gray-20-bkg {
+	background-color: $dark-gray-20;
+}
+
+.core-orange-bkg {
+	background-color: $core-orange;
+}
+
+.light-core-orange-bkg {
+	background-color: $light-core-orange;
+}
+.light-core-orange-bkg {
+	background-color: $light-core-orange;
+}
+.slate-bkg {
+	background-color: $slate;
+}
+.light-slate-bkg {
+	background-color: $light-slate;
+}
+
+.dark-slate-bkg {
+	background-color: $dark-slate;
+}
+
+.blue-slate-bkg {
+	background-color: $blue-slate;
+}
+
+.white-bkg {
+	background-color: $white;
+}
+
+.black-bkg {
+	background-color: $black;
+}

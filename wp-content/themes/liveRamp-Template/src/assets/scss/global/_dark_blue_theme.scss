@@ -1,0 +1,138 @@
+
+@mixin dark-blue-mix {
+	@include color-theme($dark-blue, $dark-blue-light, $dark-blue-40, $white, $yellow, $gray, $core-orange);
+}
+#dark-blue-theme {
+	@include dark-blue-mix;
+	--theme-primary-color: #0F3264;
+	--theme-faded-color: #E8EAEF;
+	--theme-variant-color: #A4ADC0;
+	--theme-contrast-color: #fefefe;
+	--theme-accent-color: #00A8E1;
+	--theme-mixin-color: #9D9DA3;
+	--theme-mixin2-color:  #FEF6D1;
+
+	.tabbed_expanded_left_justified_vertical_tab_module {
+		.tabs-title {
+			.text, .arrow {
+		    	color: $white;
+			}
+			&.is-active {
+				.text, .arrow {
+				   color: var(--theme-primary-color);
+				}
+			}
+		}
+		.alternate-layout {
+			.tabs-title {
+				.text, .arrow {
+			    	color: $core-blue;
+				}
+			}
+		}
+	}
+
+	.split-lines {
+		background-image: url(../../assets/images/svg/spilt-db.svg);
+	}
+	.waves-bkg,
+	.bottom-wave {
+		background-image: url(../../assets/images/svg/wave-db.svg);
+	}
+	.waves {
+		background-image: url(../../assets/images/svg/wavelines-db.svg);
+	}
+	.green-bkg .waves,
+	.primary-bkg .waves {
+		background-image: url(../../assets/images/svg/wavelines-oncolor-db.svg);
+	}
+	.wave {
+		background-image: url(../../assets/images/svg/leadership-wave-db.svg);
+	}
+	.wysiwyg-hero,
+.bottomwave {
+	   background-image: url(../../assets/images/svg/wavelines-db.svg);
+	}
+ 	.carousel-quote-impact-stmt {
+	   .circle-wrapper {
+	 		background-image: url('../../assets/images/svg/circle-lines-db.svg');
+		}
+	}
+	.team-modal {
+		.photo-wrapper {
+	 		background-image: url('../../assets/images/svg/circle-lines-db.svg');
+		}
+	}
+	.diagonal-lines {
+		background-image: url('../../assets/images/svg/diagonal-lines-core-db.svg');
+	}
+	.wave-graphic {
+		background-image: url('../../assets/images/svg/wavelines-ctastrip-db.svg');
+	}
+	.content_standard_image_and_text_module {
+		 .image-area:after {
+		background-image: url('../../assets/images/svg/wavelines-db.svg');
+		}
+	}
+	.tabbed_expanded_left_justified_vertical_tab_module {
+	  .icon-wrapper {
+		    background-image: url(../../assets/images/svg/corner-circle-lines-db.svg);
+		 }
+	 }
+ 	.resource_3_card_image_and_text {
+
+		@include breakpoint(medium) {
+			.resource-card.weighted:first-child {
+ 				background-image: url(../../assets/images/svg/leadership-wave-db.svg);
+			}
+		}
+ 	}
+
+
+	#title-underline {
+		.cls-1,
+		.cls-2 {
+			stroke: var(--theme-accent-color);
+		}
+	}
+
+   .carousel-quote-impact-stmt {
+      .quote {
+         p:before {
+          color: var(--theme-accent-color);
+         }
+      }
+   }
+
+	#c1 * {
+		stroke: $core-blue;
+	}
+
+	.tabbed_detailed_use_case {
+		.bg-art {
+		   &:before{
+			   background-image: url('../../assets/images/svg/db-rect.svg');
+
+		   }
+		   &:after{
+			   background-image: url('../../assets/images/svg/wavelines-db.svg');
+
+		   }
+		}
+	}
+
+	.hero_simple_text::before {
+			background-image: url(../../assets/images/svg/wavelines-db.svg);
+		
+	}
+
+	.carded_square_6-card_content {
+		&.side-curls {
+			@include breakpoint(large) {
+				background-image: url(../../assets/images/svg/swirl-left-db.svg), url(../../assets/images/svg/swirl-right-db.svg); // replace me
+				
+			}
+		}
+	}
+
+}

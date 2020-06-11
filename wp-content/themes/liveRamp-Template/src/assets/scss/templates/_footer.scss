@@ -1,0 +1,227 @@
+body>img {
+  //fix to bug leading to extra space below the page
+  display: none;
+}
+
+#footer {
+
+  .footer-container {
+
+    .footer-grid {
+
+      padding: 3rem 1rem 5rem;
+      border-bottom: 1px $medium-gray solid;
+
+      @include breakpoint(small only) {
+        padding: 3rem 1rem 2rem;
+      }
+
+      .menu {
+        .is-active>a {
+          background: $dark-gray;
+        }
+      }
+
+
+      .footer-widget-wrapper {
+        position: relative;
+
+
+
+        .footer-nav {
+          .menu {
+            flex-direction: column;
+          }
+
+        }
+
+        .widget {
+          h6 {
+            color: $white;
+            padding: .5rem 0;
+            font-size: .75rem;
+            font-family: "Flexo Bold";
+            margin: 0 0 .4rem;
+            border-bottom: 1px solid $medium-gray;
+
+            @include breakpoint(small down) {
+              border-bottom: 0px;
+              margin: 0px;
+            }
+
+            &:after {
+              content: none;
+            }
+          }
+
+          @include breakpoint(small only) {
+            border-bottom: 1px solid $medium-gray;
+
+            ul {
+              max-height: 0px;
+              overflow: hidden;
+              height: 100%;
+              @include transition(1s);
+
+            }
+
+            h6:after {
+              position: absolute;
+              content: "+";
+              right: 0;
+              top: .2rem;
+              color: white;
+              font-size: 1.8rem;
+              font-family: "flexo medium";
+
+              @include breakpoint(small down) {
+                margin-top: -5px;
+              }
+            }
+
+            &.selected {
+              ul {
+                padding-bottom: 1em;
+                padding-left: .5em;
+                max-height: 1000px;
+              }
+
+              h6:after {
+                content: "-";
+              }
+            }
+          }
+
+          ul {
+            list-style: none;
+            padding-left: 0;
+
+
+            li {
+              width: 100%;
+
+              a {
+                padding: .5rem 0;
+                color: $white;
+                font-size: .75rem;
+
+                &:hover {
+                  color: $core-orange;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .sub-footer {
+      margin: 0 1rem;
+      align-items: center;
+
+      @include breakpoint(small only) {
+        padding-top: 2rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-areas: 'copyright''logo''social';
+        text-align: center;
+      }
+
+      .copyright {
+        font-size: .75rem;
+        color: $white;
+
+      li.is-active>a {
+        background: none;
+      }
+        a {
+          color: $white;
+          margin: 0 .5rem;
+
+
+
+          &:first-child {
+            margin-left: 0;
+
+            &:before {
+              content: "";
+              display: inline-block;
+              width: 16px;
+              height: 16px;
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-image: url(../../assets/images/ach.png);
+              position: relative;
+              top: 3px;
+            }
+          }
+
+        }
+
+        .copy {
+          margin: 0 .5rem;
+          display: block;
+
+        }
+      }
+
+      .connect {
+        font-size: .75rem;
+        color: $white;
+
+        @include breakpoint(small only) {
+
+          display: grid;
+          justify-content: center;
+
+          &>.grid-x {
+            margin: 1em;
+            max-width: 16em;
+            align-items: center;
+            text-align: center;
+          }
+        }
+
+        a {
+          height: 25px;
+          width: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: $white;
+          border-radius: 50%;
+          color: $dark-gray;
+        }
+      }
+    }
+  }
+
+  .logo {
+    max-width: 140px;
+    margin-bottom: -5px;
+
+    svg * {
+      fill: $white;
+    }
+
+    @include breakpoint(small only) {
+      grid-area: logo;
+      justify-self: center;
+      width: 100%;
+
+    }
+
+    a {
+      display: block;
+    }
+  }
+}
+
+@include breakpoint(small only) {
+  .sticky.is-anchored.is-at-bottom {
+    background: $white;
+    position: fixed;
+    top: 0 !important;
+  }
+}

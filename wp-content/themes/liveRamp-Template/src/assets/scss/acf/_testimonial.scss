@@ -1,0 +1,203 @@
+.testimonial_archive {
+
+		margin: 3rem 0;
+
+
+		.post-card {
+			cursor: pointer;
+			@include breakpoint(medium down) {
+				max-width: 260px;
+			}
+
+			.post-image {
+				position: relative;
+
+
+				.blog-image-border {
+					position: absolute;
+					top: 0px;
+					.cls-1, .cls-2, .cls-3 {
+					  fill: none;
+					  stroke-width: 4px;
+					  stroke-miterlimit: 10;
+					  stroke-dasharray: 400;
+			          stroke-dashoffset: 400;
+			          transition: all 1s ease;
+					}
+
+					.cls-1 {
+					  stroke: $core-orange;
+
+					}
+
+					.cls-2 {
+					  stroke: $core-blue;
+
+					}
+
+					.cls-3 {
+					  stroke: $slate;
+
+					}
+				}
+
+				.play-button {
+					position: absolute;
+					top: 27%;
+					left: 37%;
+				}
+				.feature-image {
+					margin: .5rem 0;
+					min-height: 135px;
+					min-width: 260px;
+					max-height: 135px;
+					max-width: 260px;
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-position: center;
+					// border: 2px solid $gray;
+
+				}
+			}
+
+
+
+			.author,
+			.date {
+				font-size: .75rem;
+				color: $gray;
+			}
+
+			.title {
+				// font-size: 1.325rem;
+				// line-height: 1.75rem;
+				color: $gray;
+				
+				// font-weight: 700;
+			}
+
+			.term {
+				font-weight: 700;
+				font-family: 'Flexo Bold';
+				margin-bottom: 0;
+				color: $black;
+			}
+
+			&:hover {
+
+				.post-image {
+
+					.blog-image-border {
+
+						.cls-1, .cls-2, .cls-3 {
+
+				          stroke-dashoffset: 0;
+
+						}
+
+					}
+
+				}
+
+				.title,
+				.term {
+					color: $core-orange;
+					text-decoration: underline;
+				}
+
+			}
+		}
+
+
+	form {
+			&#filter,
+			&#search {
+
+				label {
+					color: $gray;
+				}
+
+				select,
+				input,
+				.cell {
+					// border: 1px solid;
+					margin-bottom: 1rem;
+				}
+
+				.show-me {
+					margin: 1rem 0;
+				}
+
+			}
+
+			&#search {
+				input[type='text'] {
+					// box-shadow: 3px 2px 8px 2px $slate
+				}
+			}
+		}
+
+
+	#filter {
+
+		margin: 2.75rem 0 0 0;
+	}
+
+ 	.contact {
+		margin: 3rem 0 0 0;
+		
+		h3 {
+			font-family: 'Flexo Medium';
+		}
+
+		.divider {
+			width: 175px;
+			margin-bottom: 1rem;
+		}
+
+ 		.icon {
+
+ 			svg#phone-icon,
+ 			svg#letter-icon {
+
+ 				max-width: 30px;
+
+ 				#c2,
+ 				#c1 {
+ 					.st0,
+ 					.st1 {
+ 						stroke: $gray;
+ 					}
+ 				}
+
+ 			}
+ 		}
+ 	}
+
+ 	.social {
+ 		margin: 3rem 0 0 0;
+
+ 		.sfsi_plus_widget {
+ 			transform: translate(-7px, 0);
+ 		}
+ 	}
+
+ 	.archive {
+
+ 			#news-card-wrapper {
+ 				margin: 1rem 0;
+ 			}
+
+			 @include breakpoint(medium) {
+				padding-top: 2rem;
+			}
+			 
+
+		}
+	.no-posts-cell {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+}

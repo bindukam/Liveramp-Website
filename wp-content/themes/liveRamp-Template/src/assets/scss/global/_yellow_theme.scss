@@ -1,0 +1,169 @@
+
+@mixin yellow-mix {
+	@include color-theme($yellow, $light-yellow, $yellow-40, $dark-gray, $core-blue, $gray, $core-orange);
+}
+#yellow-theme {
+	@include yellow-mix;
+	--theme-primary-color: #FAE164;
+	--theme-faded-color: #FEF6D1; 
+	--theme-variant-color:  #FCF2C0;
+	--theme-contrast-color: #323232;
+	--theme-accent-color: #00A8E1;
+	.hero_customer_quote_carousel {
+		.quote, .name {
+			color: var(--theme-contrast-color);
+		}
+	}
+	.carousel-quote-impact-stmt {
+		.author {
+			color: var(--theme-contrast-color);
+		}
+	}
+	.cta_split_navigation_module {
+		h3 {
+			color: var(--theme-contrast-color);
+		}
+	}
+	.primary,
+	.green,
+	h1,
+	h2,
+	h3 {
+		color: var(--theme-contrast-color);
+	}
+
+	.split-lines {
+		background-image: url(../../assets/images/svg/spilt-yellow.svg);
+	}
+	.waves-bkg,
+	.bottom-wave {
+		background-image: url(../../assets/images/svg/wave-yellow.svg);
+	}
+	.waves {
+		background-image: url(../../assets/images/svg/wavelines-yellow.svg);
+	}
+	.wave {
+		background-image: url(../../assets/images/svg/leadership-wave-yellow.svg);
+	}
+	.wysiwyg-hero,
+	.bottomwave {
+	   background-image: url(../../assets/images/svg/wavelines-yellow.svg);
+	}
+	.carousel-quote-impact-stmt {
+	   .circle-wrapper {
+	 		background-image: url('../../assets/images/svg/circle-lines-yellow.svg');
+		}
+	}
+	.team-modal {
+		.photo-wrapper {
+	 		background-image: url('../../assets/images/svg/circle-lines-yellow.svg');
+		}
+	}
+	.diagonal-lines {
+		background-image: url('../../assets/images/svg/diagonal-lines-core-yellow.svg');
+	}
+	.wave-graphic {
+		background-image: url('../../assets/images/svg/wavelines-ctastrip-yellow.svg');
+	}
+	.button-white {
+		border-color: var(--theme-accent-color);
+		color: var(--theme-accent-color);
+	}
+	.content_standard_image_and_text_module {
+		 .image-area:after {
+		background-image: url('../../assets/images/svg/wavelines-yellow.svg');
+		}
+	}
+	.resource_3_card_image_and_text {
+
+		@include breakpoint(medium) {
+			.resource-card.weighted:first-child {
+				background-image: url(../../assets/images/svg/leadership-wave-yellow.svg);
+			}
+		}
+	}
+	.tabs-title {
+		a {
+			color: var(--theme-contrast-color);
+		}
+
+		&.is-active {
+			.text, .arrow {
+			   color: var(--theme-contrast-color);
+			}
+		}
+	}
+	.tabbed_expanded_left_justified_vertical_tab_module {
+	  .icon-wrapper {
+		    background-image: url(../../assets/images/svg/corner-circle-lines-yellow.svg);
+		 }
+
+		.alternate-layout{
+			.tab-title:not(.is-active) {
+				.tabs-title-a {
+					color: #7D9FB8;
+				}
+				.tab-divider {
+					.cls-1 {
+						stroke: #7D9FB8;
+					}
+				}
+				.icon {
+					max-height: 25px;
+					width: auto;
+					// opacity: 0;
+					& * {
+						stroke: #7D9FB8;
+					}
+				}
+			}
+		}
+		.panel-wrapper {
+			.icon {
+				* {
+					stroke: var(--theme-contrast-color);
+				}
+			}
+		}
+	}
+   .orbit .orbit-bullets button {
+      border-color: $dark-gray;
+      &.is-active {
+         border-color: $core-orange;
+
+      }
+   }
+
+	#c1 * {
+		stroke: $white;
+	}
+	#c2 * {
+		stroke: $core-blue;
+	}
+
+	.tabbed_detailed_use_case {
+		.bg-art {
+		   &:before{
+			   background-image: url('../../assets/images/svg/yellow-rect.svg');
+
+		   }
+		   &:after{
+			   background-image: url('../../assets/images/svg/wavelines-yellow.svg');
+		   }
+		}
+	}
+
+	.hero_simple_text::before {
+			background-image: url(../../assets/images/svg/wavelines-yellow.svg);
+		
+	}
+
+	.carded_square_6-card_content {
+		&.side-curls {
+			@include breakpoint(large) {
+				background-image: url(../../assets/images/svg/swirl-left-yellow.svg), url(../../assets/images/svg/swirl-right-yellow.svg); // replace me
+				
+			}
+		}
+	}
+}

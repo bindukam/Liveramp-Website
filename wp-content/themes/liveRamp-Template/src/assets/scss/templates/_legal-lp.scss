@@ -1,0 +1,187 @@
+.floating-form {
+  background-color: #73C16D;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+
+  .grid-container {
+    max-width: 870px;
+    display: grid;
+    grid-template-columns: 192px 1fr;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 97px;
+    padding: 20px 0;
+
+    @include respond-to(vsm) {
+      grid-template-columns: 1fr;
+      padding: 20px 50px;
+      min-height: 0;
+
+    }
+
+    a.lp-legal.button {
+      background: #fefefe;
+      color: #fa8d28;
+      border: 1px solid #fefefe;
+      font-size: 1rem;
+      padding: 14px 28px;
+      text-decoration: none;
+      display: block;
+      margin-bottom: 0;
+
+      &:focus {
+        transition: none;
+        background: #fefefe;
+      }
+
+      &:after {
+        background-image: url(../images/svg/arrow.svg);
+      }
+    }
+
+    .message-legal {
+      padding-left: 20px;
+
+      p {
+        padding: 0;
+        margin: 0;
+        color: #fff;
+        font-size: 16px;
+      }
+
+      @include respond-to(vsm) {
+        display: none;
+      }
+
+    }
+
+  }
+
+}
+
+.marketo_form {
+  
+  max-width: 744px;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  form {
+
+      @include respond-to(sm) {
+        width: 90%;
+      }
+
+  }
+
+
+
+  .form-intro {
+    margin-bottom: 35px;
+
+    @include respond-to(vsm) {
+      padding-top: 40px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #ffffff;
+      text-align: center;
+
+      @include respond-to(sm) {
+        padding: 0 40px;
+        text-align: left;
+      }
+
+      &:first-of-type {
+        display: none;
+
+        @include respond-to(vsm) {
+          display: block;
+        }
+      }
+    }
+
+  }
+
+  .mktoFormRow {
+    margin-bottom: 20px;
+
+    label {
+      display: block;
+      margin: 0;
+      font-size: 12pxm;
+      font-weight: 400;
+      line-height: 1.8;
+      color: #ffffff;
+    }
+
+    input[type="text"], input[type="email"] {
+      display: block;
+      box-sizing: border-box;
+      width: 239px;
+      height: 54px;
+      padding: 0;
+      margin: 0;
+      border: 1px solid #56565b;
+      border-radius: 0;
+      background-color: #fefefe;
+      box-shadow: inset 0 1px 2px rgba(10, 10, 10, .1);
+      background: #FFFFFF 0% 0% no-repeat padding-box;
+      border: 1px solid #56565B4E;
+      border-radius: 4px;
+      padding: 0 10px;
+
+      @include respond-to(sm) {
+        width: 100%;
+      }
+
+    }
+
+    .mktoError {
+      color: #fa8d28;
+    }
+  }
+
+  .mktoButtonRow {
+    padding-top: 24px;
+
+    .cta.button {
+      border-radius: 24px;
+      width: auto;
+      height: auto;
+      cursor: pointer;
+      background: #fefefe;
+      border: 1px solid #fefefe;
+      color: #fa8d28;
+      font-size: 1rem;
+      padding: 14px 28px;
+      text-decoration: none;
+      display: block;
+      min-width:0;
+      width:174px;
+      box-sizing: border-box;
+
+      &:hover {
+        background: #fefefe;
+        background-color: #fefefe !important;
+        border: 1px solid #fefefe;
+        color: #fa8d28;
+      }
+
+      &:focus {
+        transition: none;
+        background: #fefefe;
+      }
+
+      &:after {
+        background-image: url(../images/svg/arrow.svg);
+      }
+    }
+  }
+}

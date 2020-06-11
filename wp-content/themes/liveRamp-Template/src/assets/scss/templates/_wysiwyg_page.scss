@@ -1,0 +1,34 @@
+.wysiwyg-hero {
+	// background hidden on smaller screens
+	@include breakpoint(small only) {
+		background-image: none !important;	
+	}
+
+	@include breakpoint(medium only) {
+		background-image: none !important;	
+	}
+
+	@include breakpoint(large only) {
+		background-image: none !important;
+	}
+	
+	// background-repeat: no-repeat;
+
+	@include breakpoint(large) {
+		background-image: url(../../assets/images/svg/wavelines-green.svg);
+		background-repeat: no-repeat;
+	    background-position: -527px;
+    	background-size: 50%;	
+	}
+
+	margin: 0 0 4rem 0;
+		.wysiwyg-grid {
+			min-height: 300px;
+			@include breakpoint(medium down) {
+				min-height: 200px;
+			}
+			@include breakpoint(small only) {
+				min-height: 150px;
+			}
+		}
+	}

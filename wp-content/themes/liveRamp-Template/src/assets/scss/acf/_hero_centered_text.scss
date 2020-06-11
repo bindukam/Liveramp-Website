@@ -1,0 +1,106 @@
+
+.hero_centered_text {
+	position: relative;
+	padding: 6rem 1rem;
+	
+
+	.content {
+		display: block;  
+		text-align: center;
+		h1 {
+			font-size: 48px; 
+			line-height: 60px;
+			margin-bottom: 3rem;
+			br {display:none;}
+		}
+		p {
+			width:auto;
+			margin:auto;
+			font-size: 30px; 
+			line-height: 36px; 
+		}
+		
+		@include breakpoint(small only) {
+			h1 {
+				font-size: 48px; 
+				line-height: 60px;
+				margin-bottom: 3rem;
+				br {display:none;}
+
+			}
+			p {
+				width:auto;
+				margin:auto;
+				font-size: 26px; 
+				line-height: 36px; 
+			}
+		}
+		
+		@include breakpoint(medium) {
+			p {
+				width:auto;
+			}
+		}	
+		
+		@include breakpoint(large) {
+			h1 {
+				font-size: 52px; 
+				line-height: 62px;
+				margin-bottom: 1.1rem;
+				br {display:block;}
+
+			}
+			p {
+				max-width:992px;
+				margin:auto;
+				font-size: 26px; 
+				line-height: 40px; 
+			}
+		}
+		
+		@include breakpoint(xxlarge) {
+		}	
+	}
+
+	// background hidden on smaller screens
+
+
+	&::before {
+		content: '';
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+
+		@include breakpoint(small only) {
+			background-image: none;
+		}
+		
+		@include breakpoint(medium) {
+			background-image: none;
+		}	
+		
+		@include breakpoint(large) {
+		    background-image: url(../../assets/images/svg/wavelines-ctastrip-oncolor-teal.svg);
+			background-repeat: no-repeat;
+			background-position: right 91vw center;
+			background-size: 19%;	
+			transform: scaleX( 1 );
+		}	
+
+	}
+	&.withimage::before{
+		@include breakpoint(xlarge down) {
+			background-image: none !important;
+		}
+	}
+	
+	.content {
+		min-height: 200px; 
+		@include breakpoint(small only){
+			min-height: 100%;
+		}
+	}
+
+}

@@ -1,0 +1,161 @@
+.carousel-quote-impact-stmt {
+	// background: url('../../assets/images/carousel-bg-pale-green.png');
+	// background-repeat: no-repeat;
+	// background-position: top center;
+	// -webkit-background-size: 100% 88%;
+	//      -o-background-size: 100% 88%;
+	//         background-size: 100% 88%;
+	
+	.carousel {
+		.bg-art{
+    		transform: scaleY(0.95) translateY(-6%);
+			display: flex;
+			justify-content: center;
+
+			#quote-bg {
+				height: 100%;
+			   min-width: 1000px;
+				width: 100%;
+				.cls-1 {
+					fill: var(--theme-faded-color);
+					stroke: none;
+				}
+			}
+			@include breakpoint(medium down) {
+	    		transform: scaleY(0.95) translateY(2%);
+
+			}
+		}
+		.circle-wrapper {
+			background-repeat: no-repeat;
+		}
+
+		.full-module-slider {
+				  @include breakpoint(small down) {
+						margin: 0 -2rem;
+				  }
+
+			    .a-slide {
+			    	min-height: 200px;
+			    	padding: 2rem;
+					display: flex;
+					// position: absolute;
+					// top: 0;
+
+			    	.circle-wrapper {
+			    		background-image: url('../../assets/images/svg/circle-lines-green.svg');
+			    		background-repeat: no-repeat;
+		    		    background-position: calc(50% - 2rem) 4px;
+		    		    background-size: 368px;
+						position: relative;
+						
+						@include breakpoint(small down) {
+							// background-position: calc(40% - 0rem) 10px;
+							background: none !important;
+						}
+
+		    		    .circle {
+							display: flex;
+							filter: drop-shadow(15px 10px 0px $black-a20);
+							justify-content: center;
+							height: 375px;
+		    		    }
+			    		.circle-image {
+			    			clip-path: circle(170px at center);
+			    			transform: translate(0px ,-31px);
+							height: 100%;
+							width: auto;
+							max-width: unset;
+							position: absolute;
+			    		}
+			    		.accent-image {
+			    		    position: absolute;
+			    		    top: 250px;
+			    		    left: 308px;
+			    		    max-height: 115px;
+			    		    width: auto;
+							 @include breakpoint(medium down) {
+								 left: 213px;
+							 }
+			    		}
+			    	}
+
+					@include breakpoint(medium down) {
+						.slide {
+							flex-direction: column;
+							flex-flow: column;
+							.cell {
+								width: 100%;
+							}
+						}
+					}
+					@include breakpoint(small only) {
+						.circle-wrapper {
+							transform: scale(0.7);
+							margin-bottom: -15%;
+							margin-top: -7%;
+						}
+					}
+
+
+			    	.quote{
+			    		position: relative;
+						@include breakpoint(medium down) {
+							left: 0px;
+							margin-top: 2em;
+						}
+
+						p {
+							font-size: 1.5rem;
+							position: relative;
+							z-index: 1;
+							&:before {
+								// content: url('../../assets/images/svg/quote-green.svg');
+								 content: '\201c';
+							    font-family: 'Flexo Bold';
+							    color: var(--theme-primary-color);
+							    font-size: 14rem;
+							    position: absolute;
+							    z-index: -1;
+							    top: -91px;
+							    left: -73px;
+
+							}
+
+							@include breakpoint(medium down) {
+								font-size: 1.25rem;
+								
+								&:before {
+									 left: -3px;
+									 top: -3.5rem;
+									 font-size: 5rem;
+								 }
+							 }
+
+							@include breakpoint(small only) {
+								font-size: 1.125rem;
+							}
+						}
+
+
+						&.no-quote {
+							p {
+								&:before {
+									content: "";
+								}
+							}
+						}
+			    	}
+			    	.author {
+			    		font-size: 1.125rem;
+						@include breakpoint(small only) {
+							font-size: 1rem;
+						}
+			    	}
+			    }
+		}
+
+
+
+	}
+}

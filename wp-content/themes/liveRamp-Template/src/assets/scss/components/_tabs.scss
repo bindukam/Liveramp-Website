@@ -1,0 +1,55 @@
+.tabs-title-cell {
+	margin: 1.25rem 0 .625rem;
+
+	p {
+		margin-bottom: .5rem;
+	}
+}
+
+.tabs-title {
+	background-color: unset;
+}
+
+.tabs,
+.tabs-content {
+    border: none;
+    // background: none;
+}
+
+.tabs-content {
+	background: none;
+}
+
+.tabs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	-webkit-border-radius: $b-radius;
+	        border-radius: $b-radius;
+	margin-bottom: 3rem;
+}
+
+.tabs-title,
+.accordion-item {
+	float: unset;
+	width: 100%;
+	@include breakpoint(medium) {
+		text-align: center;
+	}
+
+
+	a {
+		-webkit-border-radius: $b-radius;
+		border-radius: $b-radius;
+	    font-size: 1rem;
+	    font-family: 'Flexo Bold';;
+
+	    @include breakpoint(medium) {
+	    	font-size: 1.25rem;
+	    }
+	}
+}
+
+.tabs-panel {
+	padding: 1rem 0;
+}

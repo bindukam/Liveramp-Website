@@ -1,0 +1,16 @@
+.orbit {
+
+	.orbit-bullets {
+
+		button {
+			width: .875rem;
+			height: .875rem;
+			cursor: pointer;
+			border: 2px solid $light-gray;
+			margin: .1rem .5rem;
+			&.is-active {
+				border-color: $core-orange;
+			}
+		}
+	}
+}

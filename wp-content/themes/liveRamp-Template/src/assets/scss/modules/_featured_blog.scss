@@ -1,0 +1,120 @@
+.featured_blog {
+	background-image: url(../../assets/images/svg//background-container-light-gray.svg);
+	background-repeat: repeat-x;
+	background-position-y: 286px;
+	background-size:  100% ;
+
+	margin: 2rem 0;
+	padding: 2rem 0 4rem 0;
+
+	.waves {
+		background-image:  url(../../assets/images/svg/wavelines-green.svg);
+		background-repeat: no-repeat;
+		background-position-y: 215px;
+		background-size: 40%;
+	}
+
+	@include breakpoint(small only){
+		.blog-image-border {
+			display: none;
+		}
+	}
+
+
+	.header {
+		margin: 1rem 0;
+
+		.divider {
+			width: 300px;
+		}
+	}
+	.blog-card {
+		cursor: pointer;
+		margin-left: 1.5rem;
+		margin-right: 1.5rem;
+		@include breakpoint(small only) {
+			margin-bottom: 2rem;
+			width: calc(100% - 2rem);
+		}
+
+		&:hover {
+			.meta,
+			.title h3 {
+				color: $core-orange !important;
+
+			}
+		}
+	}
+
+	.author {
+		color: $gray;
+	}
+
+	.meta,
+	.title {
+		margin: 0 0 1rem 0;
+		@include breakpoint(small only) {
+			margin-bottom: .5rem;
+		}
+
+		h3 {
+			font-size: 1.325rem;
+		}
+	}
+
+	.meta {
+		font-weight: 700;
+		color: $core-blue;
+	}
+
+	.top-two {
+		@include breakpoint(medium)	 {
+			margin-bottom: 4rem;
+		}
+		
+		.image-wrapper {
+			position: relative;
+			
+			svg {
+				position: absolute;
+				top: 0;
+			}
+		}
+		.feature-image {
+			min-height: 110px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			margin: 1rem 0;
+			border-radius: 22px;
+
+			@include breakpoint(medium) {
+				min-height: 259px;
+			}
+		}
+
+		
+	}
+
+	.bottom-4 {
+		.blog-card {
+
+			@include breakpoint(medium) {
+				max-width: 25%;
+			}
+
+			.author {
+				white-space: nowrap;
+			}
+
+			.feature-image {
+				min-height: 110px;
+				max-height: 110px;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				margin: 1rem 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,309 @@
+select {
+	margin-bottom: 0;
+	-webkit-border-radius: .5rem;
+	        border-radius: .5rem;
+	cursor: pointer;
+}
+input {
+	cursor: text;
+}
+
+form {
+	&#filter,
+	&#filter1,
+	&#filter2,
+	&#search {
+		padding: 1rem 0;
+		.cell {
+			
+			margin: 0 0 .5rem 0;	
+				
+			@include breakpoint(large) {
+				margin: 0 .75rem 0 0;
+				
+				&:last-child {
+					margin: 0 0 0 0;
+				}	
+			}
+			
+
+		}
+		
+		.button {
+			margin-bottom: 0;
+		}
+
+		select,
+		input{
+			font-size: 1rem;
+			font-family: "Flexo Medium";
+			color: $gray;
+			min-width: 100px;
+			height: 3rem;
+			padding: .7rem;
+			border: 0px;
+			margin-bottom: 0;
+			border-radius: .5rem !important;
+			border: 1px solid;
+			box-shadow: 0px 2px 6px 2px $slate;
+			
+
+			&:-webkit-autofill  {
+				background-color: #FFF !important;
+			}
+			
+			
+			&::placeholder {
+				font-size: .95rem;
+				font-family: "Flexo Medium";
+				color: $gray;
+			}
+
+		}
+
+		select {
+			background-image : url(../../assets/images/arrow-down.svg);
+			background-position: right;
+    		background-size: 12px; 
+		}
+
+		input[type='text'].search {
+			background-image : url(../../assets/images/svg/search-magnifying.svg);
+			background-position: 10px center;
+			background-size: 27px; 
+			background-repeat: no-repeat;
+			padding-left: 38px;		
+		}
+
+		&.no-border {
+			
+			input,
+			select {
+				border: 0px;
+				box-shadow: none; 
+			}	
+		}
+
+	}
+
+	input[type='submit'] {
+		-webkit-border-radius: 20px;
+		        border-radius: 20px;
+		
+	}
+
+	
+}
+
+
+// @import "compass/css3";
+
+// @import "compass";
+// @import url("https://fonts.googleapis.com/css?family=Lato");
+
+$background: $white;
+$select-color: $dark-gray;
+// $select-background: $white;
+$select-width: 220px;
+$select-height: 40px; 
+
+// body { 
+//   font-family: Lato, Arial;
+//   color: $select-color;
+//   padding: 20px;
+//   background-color: $background;
+// }
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+  span { 
+    font-size: 13px;
+    display: block;
+    padding-left: 4px;
+  }
+}
+// p {
+//   // margin-top: 200px;
+//   a {
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     display: inline-block;
+//     color: #fff;
+//     padding: 5px 10px;
+//     margin: 0 5px;
+//     background-color: darken($select-background, 2);
+//     @include transition(all 0.2s ease-in);
+//     &:hover {
+//       background-color: darken($select-background, 5);
+//     }
+//   }
+// }
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  // font-size: 16px;
+  // color: $select-color;
+  width: $select-width;
+  height: $select-height;
+  // margin-bottom: 1rem;
+}
+.select-styled {
+//  
+  font-size: 1rem;
+  font-family: "Flexo Medium";
+  color: $dark-gray;
+  min-width: 100px;
+  min-height: 3rem;
+  padding: .7rem;
+  border: 0px;
+  margin-bottom: 0;
+  border-radius: .5rem;
+  border: 1px solid;
+  box-shadow: 0px 2px 6px 2px $slate;
+  // z-index: 999;
+
+  position: absolute; 
+  top: 0;
+  right: 0;
+  // bottom: 0;
+  left: 0;
+  background-color: $select-background;
+  padding: 8px 25px 8px 8px;
+  display: flex;
+  align-items: center;
+  @include transition(all 0.2s ease-in);
+
+  background-image : url(../../assets/images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-position: right .4em center;
+  background-size: 12px; 
+
+  // &:after {
+  //   content:"";
+  //   width: 0;
+  //   height: 0;
+  //   border: 7px solid transparent;
+  //   border-color: $select-color transparent transparent transparent;
+  //   position: absolute;
+  //   top: 16px;
+  //   right: 10px;
+  // }
+  &:hover {
+    background-color: darken($select-background, 2);
+  }
+  &:active, &.active {
+    background-color: darken($select-background, 5);
+    // &:after {
+    //   top: 9px;
+    //   border-color: transparent transparent $select-color transparent;
+    // }
+  }
+}
+
+.select-options {
+  display: none; 
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: 998;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: $white;
+  max-height: 20em;
+  overflow-y: auto;
+  border-top: .5rem $light-gray;
+  border-radius: 0 0 .5rem .5rem;
+  @include bot-rt-shadow;
+
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE 10+ */
+
+  &::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
+  }
+
+  li {
+    margin: 0;
+    padding: 12px;
+    border-top: 1px solid darken($select-background, 10);
+    @include transition(all 0.15s ease-in);
+    &:hover {
+      color: $dark-gray;
+      background: $light-gray;
+    }
+    &[rel="hide"] {
+      display: none;
+    }
+  }
+}
+body {
+
+  .tooltips {
+    // position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    
+    .tooltip-toggle {
+      width: 1.3rem;
+      height: 1.3rem;
+      display: inline-flex;
+      background: $gray;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0.5em;
+      border-radius: 50%;
+      color: white;
+      font-size: .6rem;
+      padding-top: 3px;
+    }
+    .tooltip-content {
+      top: 0;
+      left:0;
+      right:0;
+      font-size: 0.825rem;
+      line-height: 1.25em;
+      padding: 0rem;
+      position: absolute;
+      max-height: 0;
+      overflow: hidden;
+      max-width: 20em;
+      background: $light-gray;
+      color: $dark-gray;
+      border-radius: $b-radius;
+      @include bot-rt-shadow;
+      z-index: 100;
+      transition: $transition;
+      font-family: flexo medium;
+      
+      &.bottom::before {
+        border-color: transparent transparent $light-gray;
+      }
+      &.top::before {
+        border-color: $light-gray transparent transparent;
+      }
+    }
+    &:hover {
+      .tooltip-content {
+        max-height:20em;
+        padding: 0.5rem;
+        overflow: auto;
+      }
+
+    }
+
+  }
+}

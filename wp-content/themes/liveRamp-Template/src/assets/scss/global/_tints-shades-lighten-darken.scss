@@ -1,0 +1,998 @@
+// TINTS
+
+// See funsction.scss for tint and shade function
+
+// TINTS & Shades
+// DARK BLUE
+$dark-blue-80-tint:	tint($dark-blue, 20%);
+$dark-blue-60-tint:	tint($dark-blue, 40%);
+$dark-blue-40-tint:	tint($dark-blue, 60%);
+$dark-blue-20-tint:	tint($dark-blue, 80%);
+
+$dark-blue-80-shade:	shade($dark-blue, 20%);
+$dark-blue-60-shade:	shade($dark-blue, 40%);
+$dark-blue-40-shade:	shade($dark-blue, 60%);
+$dark-blue-20-shade:	shade($dark-blue, 80%);
+
+
+// MEDIUM BLUE
+$medium-blue-80-tint: tint($medium-blue, 20%);
+$medium-blue-60-tint: tint($medium-blue, 40%);
+$medium-blue-40-tint: tint($medium-blue, 60%);
+$medium-blue-20-tint: tint($medium-blue, 80%);
+
+$medium-blue-80-shade: shade($medium-blue, 20%);
+$medium-blue-60-shade: shade($medium-blue, 40%);
+$medium-blue-40-shade: shade($medium-blue, 60%);
+$medium-blue-20-shade: shade($medium-blue, 80%);
+
+// CORE BLUE
+$core-blue-80-tint:	tint($core-blue, 20%);
+$core-blue-60-tint:	tint($core-blue, 40%);
+$core-blue-40-tint:	tint($core-blue, 60%);
+$core-blue-20-tint:	tint($core-blue, 80%);
+
+$core-blue-80-shade:	shade($core-blue, 20%);
+$core-blue-60-shade:	shade($core-blue, 40%);
+$core-blue-40-shade:	shade($core-blue, 60%);
+$core-blue-20-shade:	shade($core-blue, 80%);
+
+// GREEN
+$green-80-tint:	tint($green, 20%);
+$green-60-tint:	tint($green, 40%);
+$green-40-tint:	tint($green, 60%);
+$green-20-tint:	tint($green, 80%);
+
+$green-80-shade:	shade($green, 20%);
+$green-60-shade:	shade($green, 40%);
+$green-40-shade:	shade($green, 60%);
+$green-20-shade:	shade($green, 80%);
+
+// Orange
+$core-orange-80-tint:	tint($core-orange, 20%);
+$core-orange-60-tint:	tint($core-orange, 40%);
+$core-orange-40-tint:	tint($core-orange, 60%);
+$core-orange-20-tint:	tint($core-orange, 80%);
+
+$core-orange-80-shade:	shade($core-orange, 20%);
+$core-orange-60-shade:	shade($core-orange, 40%);
+$core-orange-40-shade:	shade($core-orange, 60%);
+$core-orange-20-shade:	shade($core-orange, 80%);
+
+// Yellow
+$yellow-80-tint:	tint($yellow, 20%);
+$yellow-60-tint:	tint($yellow, 40%);
+$yellow-40-tint:	tint($yellow, 60%);
+$yellow-20-tint:	tint($yellow, 80%);
+
+$yellow-80-shade:	shade($yellow, 20%);
+$yellow-60-shade:	shade($yellow, 40%);
+$yellow-40-shade:	shade($yellow, 60%);
+$yellow-20-shade:	shade($yellow, 80%);
+
+// DARK GRAY
+$dark-gray-80-tint:	tint($dark-gray, 20%);
+$dark-gray-60-tint:	tint($dark-gray, 40%);
+$dark-gray-40-tint:	tint($dark-gray, 60%);
+$dark-gray-20-tint:	tint($dark-gray, 80%);
+
+$dark-gray-80-shade:	shade($dark-gray, 20%);
+$dark-gray-60-shade:	shade($dark-gray, 40%);
+$dark-gray-40-shade:	shade($dark-gray, 60%);
+$dark-gray-20-shade:	shade($dark-gray, 80%);
+
+// Lightne & Darken
+// DARK BLUE
+$dark-blue-80-lighten:	lighten($dark-blue, 5%);
+$dark-blue-60-lighten:	lighten($dark-blue, 10%);
+$dark-blue-40-lighten:	lighten($dark-blue, 15%);
+$dark-blue-20-lighten:	lighten($dark-blue, 20%);
+
+$dark-blue-80-darken:	darken($dark-blue, 5%);
+$dark-blue-60-darken:	darken($dark-blue, 10%);
+$dark-blue-40-darken:	darken($dark-blue, 15%);
+$dark-blue-20-darken:	darken($dark-blue, 20%);
+
+
+// MEDIUM BLUE
+$medium-blue-80-lighten: lighten($medium-blue, 5%);
+$medium-blue-60-lighten: lighten($medium-blue, 10%);
+$medium-blue-40-lighten: lighten($medium-blue, 15%);
+$medium-blue-20-lighten: lighten($medium-blue, 20%);
+
+$medium-blue-80-darken: darken($medium-blue, 5%);
+$medium-blue-60-darken: darken($medium-blue, 10%);
+$medium-blue-40-darken: darken($medium-blue, 15%);
+$medium-blue-20-darken: darken($medium-blue, 20%);
+
+// CORE BLUE
+$core-blue-80-lighten:	lighten($core-blue, 5%);
+$core-blue-60-lighten:	lighten($core-blue, 10%);
+$core-blue-40-lighten:	lighten($core-blue, 15%);
+$core-blue-20-lighten:	lighten($core-blue, 20%);
+
+$core-blue-80-darken:	darken($core-blue, 5%);
+$core-blue-60-darken:	darken($core-blue, 10%);
+$core-blue-40-darken:	darken($core-blue, 15%);
+$core-blue-20-darken:	darken($core-blue, 20%);
+
+// GREEN
+$green-80-lighten:	lighten($green, 5%);
+$green-60-lighten:	lighten($green, 10%);
+$green-40-lighten:	lighten($green, 15%);
+$green-20-lighten:	lighten($green, 20%);
+
+$green-80-darken:	darken($green, 5%);
+$green-60-darken:	darken($green, 10%);
+$green-40-darken:	darken($green, 15%);
+$green-20-darken:	darken($green, 20%);
+
+// Orange
+$core-orange-80-lighten:	lighten($core-orange, 5%);
+$core-orange-60-lighten:	lighten($core-orange, 10%);
+$core-orange-40-lighten:	lighten($core-orange, 15%);
+$core-orange-20-lighten:	lighten($core-orange, 20%);
+
+$core-orange-80-darken:	darken($core-orange, 5%);
+$core-orange-60-darken:	darken($core-orange, 10%);
+$core-orange-40-darken:	darken($core-orange, 15%);
+$core-orange-20-darken:	darken($core-orange, 20%);
+
+// Yellow
+$yellow-80-lighten:	lighten($yellow, 5%);
+$yellow-60-lighten:	lighten($yellow, 10%);
+$yellow-40-lighten:	lighten($yellow, 15%);
+$yellow-20-lighten:	lighten($yellow, 20%);
+
+$yellow-80-darken:	darken($yellow, 5%);
+$yellow-60-darken:	darken($yellow, 10%);
+$yellow-40-darken:	darken($yellow, 15%);
+$yellow-20-darken:	darken($yellow, 20%);
+
+// DARK GRAY
+$dark-gray-80-lighten:	lighten($dark-gray, 5%);
+$dark-gray-60-lighten:	lighten($dark-gray, 10%);
+$dark-gray-40-lighten:	lighten($dark-gray, 15%);
+$dark-gray-20-lighten:	lighten($dark-gray, 20%);
+
+$dark-gray-80-darken:	darken($dark-gray, 5%);
+$dark-gray-60-darken:	darken($dark-gray, 10%);
+$dark-gray-40-darken:	darken($dark-gray, 15%);
+$dark-gray-20-darken:	darken($dark-gray, 20%);
+
+
+
+// TINTS AND SHADES COLOR CLASS
+// DARK BLUE
+.dark-blue-80-tint {
+	color: $dark-blue-80-tint ;
+}
+.dark-blue-60 {
+	color: $dark-blue-60-tint ;
+}
+.dark-blue-40-tint {
+	color: $dark-blue-40-tint ;
+}
+.dark-blue-20-tint {
+	color: $dark-blue-20-tint ;
+}
+
+.dark-blue-80-shade {
+	color: $dark-blue-80-shade ;
+}
+.dark-blue-60 {
+	color: $dark-blue-60-shade ;
+}
+.dark-blue-40-shade {
+	color: $dark-blue-40-shade ;
+}
+.dark-blue-20-shade {
+	color: $dark-blue-20-shade ;
+}
+
+
+// MEDIUM BLUE
+.medium-blue-80-tint {
+	color: $medium-blue-80-tint ;
+}
+.medium-blue-60-tint {
+	color: $medium-blue-60-tint ;
+}
+.medium-blue-40-tint {
+	color: $medium-blue-40-tint ;
+}
+.medium-blue-20-tint {
+	color: $medium-blue-20-tint ;
+}
+
+.medium-blue-80-shade {
+	color: $medium-blue-80-shade ;
+}
+.medium-blue-60-shade {
+	color: $medium-blue-60-shade ;
+}
+.medium-blue-40-shade {
+	color: $medium-blue-40-shade ;
+}
+.medium-blue-20-shade {
+	color: $medium-blue-20-shade ;
+}
+
+// CORE BLUE
+.core-blue-80-tint {
+	color: $core-blue-80-tint ;
+}
+.core-blue-60-tint {
+	color: $core-blue-60-tint ;
+}
+.core-blue-40-tint {
+	color: $core-blue-40-tint ;
+}
+.core-blue-20-tint {
+	color: $core-blue-20-tint ;
+}
+
+.core-blue-80-shade {
+	color: $core-blue-80-shade ;
+}
+.core-blue-60-shade {
+	color: $core-blue-60-shade ;
+}
+.core-blue-40-shade {
+	color: $core-blue-40-shade ;
+}
+.core-blue-20-shade {
+	color: $core-blue-20-shade ;
+}
+
+// GREEN
+.green-80-tint {
+	color: $green-80-tint ;
+}
+.green-60-tint {
+	color: $green-60-tint ;
+}
+.green-40-tint {
+	color: $green-40-tint ;
+}
+.green-20-tint {
+	color: $green-20-tint ;
+}
+
+.green-80-shade {
+	color: $green-80-shade ;
+}
+.green-60-shade {
+	color: $green-60-shade ;
+}
+.green-40-shade {
+	color: $green-40-shade ;
+}
+.green-20-shade {
+	color: $green-20-shade ;
+}
+
+// Orange
+.core-orange-80-tint {
+	color: $core-orange-80-tint ;
+}
+.core-orange-60-tint {
+	color: $core-orange-60-tint ;
+}
+.core-orange-40-tint {
+	color: $core-orange-40-tint ;
+}
+.core-orange-20-tint {
+	color: $core-orange-20-tint ;
+}
+
+.core-orange-80-shade {
+	color: $core-orange-80-shade ;
+}
+.core-orange-60-shade {
+	color: $core-orange-60-shade ;
+}
+.core-orange-40-shade {
+	color: $core-orange-40-shade ;
+}
+.core-orange-20-shade {
+	color: $core-orange-20-shade ;
+}
+
+// Yellow
+.yellow-80-tint {
+	color: $yellow-80-tint ;
+}
+.yellow-60-tint {
+	color: $yellow-60-tint ;
+}
+.yellow-40-tint {
+	color: $yellow-40-tint ;
+}
+.yellow-20-tint {
+	color: $yellow-20-tint ;
+}
+
+.yellow-80-shade {
+	color: $yellow-80-shade ;
+}
+.yellow-60-shade {
+	color: $yellow-60-shade ;
+}
+.yellow-40-shade {
+	color: $yellow-40-shade ;
+}
+.yellow-20-shade {
+	color: $yellow-20-shade ;
+}
+
+// DARK GRAY
+.dark-gray-80-tint {
+	color: $dark-gray-80-tint ;
+}
+.dark-gray-60-tint {
+	color: $dark-gray-60-tint ;
+}
+.dark-gray-40-tint {
+	color: $dark-gray-40-tint ;
+}
+.dark-gray-20-tint {
+	color: $dark-gray-20-tint ;
+}
+
+.dark-gray-80-shade {
+	color: $dark-gray-80-shade ;
+}
+.dark-gray-60-shade {
+	color: $dark-gray-60-shade ;
+}
+.dark-gray-40-shade {
+	color: $dark-gray-40-shade ;
+}
+.dark-gray-20-shade {
+	color: $dark-gray-20-shade ;
+}
+
+
+
+// TINTS AND SHADE BACKGROUNDS
+// DARK BLUE
+.dark-blue-80-tint-bkg {
+	background-color: $dark-blue-80-tint ;
+}
+.dark-blue-60-tint-bkg {
+	background-color: $dark-blue-60-tint ;
+}
+.dark-blue-40-tint-bkg {
+	background-color: $dark-blue-40-tint ;
+}
+.dark-blue-20-tint-bkg {
+	background-color: $dark-blue-20-tint ;
+}
+
+.dark-blue-80-shade-bkg {
+	background-color: $dark-blue-80-shade ;
+}
+.dark-blue-60-shade-bkg {
+	background-color: $dark-blue-60-shade ;
+}
+.dark-blue-40-shade-bkg {
+	background-color: $dark-blue-40-shade ;
+}
+.dark-blue-20-shade-bkg {
+	background-color: $dark-blue-20-shade ;
+}
+
+
+
+
+// MEDIUM BLUE
+.medium-blue-80-tint-bkg {
+	background-color: $medium-blue-80-tint ;
+}
+.medium-blue-60-tint-bkg {
+	background-color: $medium-blue-60-tint ;
+}
+.medium-blue-40-tint-bkg {
+	background-color: $medium-blue-40-tint ;
+}
+.medium-blue-20-tint-bkg {
+	background-color: $medium-blue-20-tint ;
+}
+
+.medium-blue-80-shade-bkg {
+	background-color: $medium-blue-80-shade ;
+}
+.medium-blue-60-shade-bkg {
+	background-color: $medium-blue-60-shade ;
+}
+.medium-blue-40-shade-bkg {
+	background-color: $medium-blue-40-shade ;
+}
+.medium-blue-20-shade-bkg {
+	background-color: $medium-blue-20-shade ;
+}
+
+// CORE BLUE
+.core-blue-80-tint-bkg {
+	background-color: $core-blue-80-tint ;
+}
+.core-blue-60-tint-bkg {
+	background-color: $core-blue-60-tint ;
+}
+.core-blue-40-tint-bkg {
+	background-color: $core-blue-40-tint ;
+}
+.core-blue-20-tint-bkg {
+	background-color: $core-blue-20-tint ;
+}
+
+.core-blue-80-shade-bkg {
+	background-color: $core-blue-80-shade ;
+}
+.core-blue-60-shade-bkg {
+	background-color: $core-blue-60-shade ;
+}
+.core-blue-40-shade-bkg {
+	background-color: $core-blue-40-shade ;
+}
+.core-blue-20-shade-bkg {
+	background-color: $core-blue-20-shade ;
+}
+
+// GREEN
+.green-80-tint-bkg {
+	background-color: $green-80-tint ;
+}
+.green-60-tint-bkg {
+	background-color: $green-60-tint ;
+}
+.green-40-tint-bkg {
+	background-color: $green-40-tint ;
+}
+.green-20-tint-bkg {
+	background-color: $green-20-tint ;
+}
+
+.green-80-shade-bkg {
+	background-color: $green-80-shade ;
+}
+.green-60-shade-bkg {
+	background-color: $green-60-shade ;
+}
+.green-40-shade-bkg {
+	background-color: $green-40-shade ;
+}
+.green-20-shade-bkg {
+	background-color: $green-20-shade ;
+}
+
+// Core ORange
+.core-orange-80-tint-bkg {
+	background-color: $core-orange-80-tint ;
+}
+.core-orange-60-tint-bkg {
+	background-color: $core-orange-60-tint ;
+}
+.core-orange-40-tint-bkg {
+	background-color: $core-orange-40-tint ;
+}
+.core-orange-20-tint-bkg {
+	background-color: $core-orange-20-tint ;
+}
+
+.core-orange-80-shade-bkg {
+	background-color: $core-orange-80-shade ;
+}
+.core-orange-60-shade-bkg {
+	background-color: $core-orange-60-shade ;
+}
+.core-orange-40-shade-bkg {
+	background-color: $core-orange-40-shade ;
+}
+.core-orange-20-shade-bkg {
+	background-color: $core-orange-20-shade ;
+}
+
+// Yellow
+.yellow-80-tint-bkg {
+	background-color: $yellow-80-tint ;
+}
+.yellow-60-tint-bkg {
+	background-color: $yellow-60-tint ;
+}
+.yellow-40-tint-bkg {
+	background-color: $yellow-40-tint ;
+}
+.yellow-20-tint-bkg {
+	background-color: $yellow-20-tint ;
+}
+
+.yellow-80-shade-bkg {
+	background-color: $yellow-80-shade ;
+}
+.yellow-60-shade-bkg {
+	background-color: $yellow-60-shade ;
+}
+.yellow-40-shade-bkg {
+	background-color: $yellow-40-shade ;
+}
+.yellow-20-shade-bkg {
+	background-color: $yellow-20-shade ;
+}
+
+// DARK GRAY
+.dark-gray-80-tint-bkg {
+	background-color: $dark-gray-80-tint ;
+}
+.dark-gray-60-tint-bkg {
+	background-color: $dark-gray-60-tint ;
+}
+.dark-gray-40-tint-bkg {
+	background-color: $dark-gray-40-tint ;
+}
+.dark-gray-20-tint-bkg {
+	background-color: $dark-gray-20-tint ;
+}
+
+.dark-gray-80-shade-bkg {
+	background-color: $dark-gray-80-shade ;
+}
+.dark-gray-60-shade-bkg {
+	background-color: $dark-gray-60-shade ;
+}
+.dark-gray-40-shade-bkg {
+	background-color: $dark-gray-40-shade ;
+}
+.dark-gray-20-shade-bkg {
+	background-color: $dark-gray-20-shade ;
+}
+
+// LIGHTEN AND DARKEN
+
+
+// DARK BLUE
+.dark-blue-80-lighten {
+	color: $dark-blue-80-lighten ;
+}
+.dark-blue-60 {
+	color: $dark-blue-60-lighten ;
+}
+.dark-blue-40-lighten {
+	color: $dark-blue-40-lighten ;
+}
+.dark-blue-20-lighten {
+	color: $dark-blue-20-lighten ;
+}
+
+.dark-blue-80-darken {
+	color: $dark-blue-80-darken ;
+}
+.dark-blue-60 {
+	color: $dark-blue-60-darken ;
+}
+.dark-blue-40-darken {
+	color: $dark-blue-40-darken ;
+}
+.dark-blue-20-darken {
+	color: $dark-blue-20-darken ;
+}
+
+
+// MEDIUM BLUE
+.medium-blue-80-lighten {
+	color: $medium-blue-80-lighten ;
+}
+.medium-blue-60-lighten {
+	color: $medium-blue-60-lighten ;
+}
+.medium-blue-40-lighten {
+	color: $medium-blue-40-lighten ;
+}
+.medium-blue-20-lighten {
+	color: $medium-blue-20-lighten ;
+}
+
+.medium-blue-80-darken {
+	color: $medium-blue-80-darken ;
+}
+.medium-blue-60-darken {
+	color: $medium-blue-60-darken ;
+}
+.medium-blue-40-darken {
+	color: $medium-blue-40-darken ;
+}
+.medium-blue-20-darken {
+	color: $medium-blue-20-darken ;
+}
+
+// CORE BLUE
+.core-blue-80-lighten {
+	color: $core-blue-80-lighten ;
+}
+.core-blue-60-lighten {
+	color: $core-blue-60-lighten ;
+}
+.core-blue-40-lighten {
+	color: $core-blue-40-lighten ;
+}
+.core-blue-20-lighten {
+	color: $core-blue-20-lighten ;
+}
+
+.core-blue-80-darken {
+	color: $core-blue-80-darken ;
+}
+.core-blue-60-darken {
+	color: $core-blue-60-darken ;
+}
+.core-blue-40-darken {
+	color: $core-blue-40-darken ;
+}
+.core-blue-20-darken {
+	color: $core-blue-20-darken ;
+}
+
+// GREEN
+.green-80-lighten {
+	color: $green-80-lighten ;
+}
+.green-60-lighten {
+	color: $green-60-lighten ;
+}
+.green-40-lighten {
+	color: $green-40-lighten ;
+}
+.green-20-lighten {
+	color: $green-20-lighten ;
+}
+
+.green-80-darken {
+	color: $green-80-darken ;
+}
+.green-60-darken {
+	color: $green-60-darken ;
+}
+.green-40-darken {
+	color: $green-40-darken ;
+}
+.green-20-darken {
+	color: $green-20-darken ;
+}
+
+// Orange
+.core-orange-80-lighten {
+	color: $core-orange-80-lighten ;
+}
+.core-orange-60-lighten {
+	color: $core-orange-60-lighten ;
+}
+.core-orange-40-lighten {
+	color: $core-orange-40-lighten ;
+}
+.core-orange-20-lighten {
+	color: $core-orange-20-lighten ;
+}
+
+.core-orange-80-darken {
+	color: $core-orange-80-darken ;
+}
+.core-orange-60-darken {
+	color: $core-orange-60-darken ;
+}
+.core-orange-40-darken {
+	color: $core-orange-40-darken ;
+}
+.core-orange-20-darken {
+	color: $core-orange-20-darken ;
+}
+
+// Yellow
+.yellow-80-lighten {
+	color: $yellow-80-lighten ;
+}
+.yellow-60-lighten {
+	color: $yellow-60-lighten ;
+}
+.yellow-40-lighten {
+	color: $yellow-40-lighten ;
+}
+.yellow-20-lighten {
+	color: $yellow-20-lighten ;
+}
+
+.yellow-80-darken {
+	color: $yellow-80-darken ;
+}
+.yellow-60-darken {
+	color: $yellow-60-darken ;
+}
+.yellow-40-darken {
+	color: $yellow-40-darken ;
+}
+.yellow-20-darken {
+	color: $yellow-20-darken ;
+}
+
+// DARK GRAY
+.dark-gray-80-lighten {
+	color: $dark-gray-80-lighten ;
+}
+.dark-gray-60-lighten {
+	color: $dark-gray-60-lighten ;
+}
+.dark-gray-40-lighten {
+	color: $dark-gray-40-lighten ;
+}
+.dark-gray-20-lighten {
+	color: $dark-gray-20-lighten ;
+}
+
+.dark-gray-80-darken {
+	color: $dark-gray-80-darken ;
+}
+.dark-gray-60-darken {
+	color: $dark-gray-60-darken ;
+}
+.dark-gray-40-darken {
+	color: $dark-gray-40-darken ;
+}
+.dark-gray-20-darken {
+	color: $dark-gray-20-darken ;
+}
+
+
+
+// Background colors
+
+.dark-blue-bkg {
+	background-color: $dark-blue;
+} 
+.medium-blue-bkg {
+	background-color: $medium-blue;
+} 
+.core-blue-bkg {
+	background-color: $core-blue;
+} 
+
+.dark-blue-bkg {
+	background-color: $dark-blue;
+} 
+.medium-blue-bkg {
+	background-color: $medium-blue;
+} 
+.core-blue-bkg {
+	background-color: $core-blue;
+} 
+
+.green-bkg {
+	background-color: $green;
+} 
+.light-green-bkg {
+	background-color: $light-green;
+} 
+.yellow-bkg {
+	background-color: $yellow;
+} 
+.light-yellow-bkg {
+	background-color: $light-yellow;
+} 
+.light-gray-bkg {
+	background-color: $light-gray;
+} 
+.gray-bkg {
+	background-color: $gray;
+} 
+.medium-gray-bkg {
+	background-color: $medium-gray;
+} 
+.dark-gray-bkg {
+	background-color: $dark-gray;
+} 
+.core-orange-bkg {
+	background-color: $core-orange;
+} 
+.light-core-orange-bkg {
+	background-color: $light-core-orange;
+} 
+.slate-bkg {
+	background-color: $slate;
+} 
+.light-slate-bkg {
+	background-color: $light-slate;
+}
+
+
+// TINTS AND SHADE BACKGROUNDS
+// DARK BLUE
+.dark-blue-80-lighten-bkg {
+	background-color: $dark-blue-80-lighten ;
+}
+.dark-blue-60-lighten-bkg {
+	background-color: $dark-blue-60-lighten ;
+}
+.dark-blue-40-lighten-bkg {
+	background-color: $dark-blue-40-lighten ;
+}
+.dark-blue-20-lighten-bkg {
+	background-color: $dark-blue-20-lighten ;
+}
+
+.dark-blue-80-darken-bkg {
+	background-color: $dark-blue-80-darken ;
+}
+.dark-blue-60-darken-bkg {
+	background-color: $dark-blue-60-darken ;
+}
+.dark-blue-40-darken-bkg {
+	background-color: $dark-blue-40-darken ;
+}
+.dark-blue-20-darken-bkg {
+	background-color: $dark-blue-20-darken ;
+}
+
+
+
+
+// MEDIUM BLUE
+.medium-blue-80-lighten-bkg {
+	background-color: $medium-blue-80-lighten ;
+}
+.medium-blue-60-lighten-bkg {
+	background-color: $medium-blue-60-lighten ;
+}
+.medium-blue-40-lighten-bkg {
+	background-color: $medium-blue-40-lighten ;
+}
+.medium-blue-20-lighten-bkg {
+	background-color: $medium-blue-20-lighten ;
+}
+
+.medium-blue-80-darken-bkg {
+	background-color: $medium-blue-80-darken ;
+}
+.medium-blue-60-darken-bkg {
+	background-color: $medium-blue-60-darken ;
+}
+.medium-blue-40-darken-bkg {
+	background-color: $medium-blue-40-darken ;
+}
+.medium-blue-20-darken-bkg {
+	background-color: $medium-blue-20-darken ;
+}
+
+// CORE BLUE
+.core-blue-80-lighten-bkg {
+	background-color: $core-blue-80-lighten ;
+}
+.core-blue-60-lighten-bkg {
+	background-color: $core-blue-60-lighten ;
+}
+.core-blue-40-lighten-bkg {
+	background-color: $core-blue-40-lighten ;
+}
+.core-blue-20-lighten-bkg {
+	background-color: $core-blue-20-lighten ;
+}
+
+.core-blue-80-darken-bkg {
+	background-color: $core-blue-80-darken ;
+}
+.core-blue-60-darken-bkg {
+	background-color: $core-blue-60-darken ;
+}
+.core-blue-40-darken-bkg {
+	background-color: $core-blue-40-darken ;
+}
+.core-blue-20-darken-bkg {
+	background-color: $core-blue-20-darken ;
+}
+
+// GREEN
+.green-80-lighten-bkg {
+	background-color: $green-80-lighten ;
+}
+.green-60-lighten-bkg {
+	background-color: $green-60-lighten ;
+}
+.green-40-lighten-bkg {
+	background-color: $green-40-lighten ;
+}
+.green-20-lighten-bkg {
+	background-color: $green-20-lighten ;
+}
+
+.green-80-darken-bkg {
+	background-color: $green-80-darken ;
+}
+.green-60-darken-bkg {
+	background-color: $green-60-darken ;
+}
+.green-40-darken-bkg {
+	background-color: $green-40-darken ;
+}
+.green-20-darken-bkg {
+	background-color: $green-20-darken ;
+}
+
+// Core ORange
+.core-orange-80-lighten-bkg {
+	background-color: $core-orange-80-lighten ;
+}
+.core-orange-60-lighten-bkg {
+	background-color: $core-orange-60-lighten ;
+}
+.core-orange-40-lighten-bkg {
+	background-color: $core-orange-40-lighten ;
+}
+.core-orange-20-lighten-bkg {
+	background-color: $core-orange-20-lighten ;
+}
+
+.core-orange-80-darken-bkg {
+	background-color: $core-orange-80-darken ;
+}
+.core-orange-60-darken-bkg {
+	background-color: $core-orange-60-darken ;
+}
+.core-orange-40-darken-bkg {
+	background-color: $core-orange-40-darken ;
+}
+.core-orange-20-darken-bkg {
+	background-color: $core-orange-20-darken ;
+}
+
+// Yellow
+.yellow-80-lighten-bkg {
+	background-color: $yellow-80-lighten ;
+}
+.yellow-60-lighten-bkg {
+	background-color: $yellow-60-lighten ;
+}
+.yellow-40-lighten-bkg {
+	background-color: $yellow-40-lighten ;
+}
+.yellow-20-lighten-bkg {
+	background-color: $yellow-20-lighten ;
+}
+
+.yellow-80-darken-bkg {
+	background-color: $yellow-80-darken ;
+}
+.yellow-60-darken-bkg {
+	background-color: $yellow-60-darken ;
+}
+.yellow-40-darken-bkg {
+	background-color: $yellow-40-darken ;
+}
+.yellow-20-darken-bkg {
+	background-color: $yellow-20-darken ;
+}
+
+// DARK GRAY
+.dark-gray-80-lighten-bkg {
+	background-color: $dark-gray-80-lighten ;
+}
+.dark-gray-60-lighten-bkg {
+	background-color: $dark-gray-60-lighten ;
+}
+.dark-gray-40-lighten-bkg {
+	background-color: $dark-gray-40-lighten ;
+}
+.dark-gray-20-lighten-bkg {
+	background-color: $dark-gray-20-lighten ;
+}
+
+.dark-gray-80-darken-bkg {
+	background-color: $dark-gray-80-darken ;
+}
+.dark-gray-60-darken-bkg {
+	background-color: $dark-gray-60-darken ;
+}
+.dark-gray-40-darken-bkg {
+	background-color: $dark-gray-40-darken ;
+}
+.dark-gray-20-darken-bkg {
+	background-color: $dark-gray-20-darken ;
+}
+

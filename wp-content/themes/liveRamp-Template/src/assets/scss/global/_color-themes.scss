@@ -1,0 +1,122 @@
+@mixin color-theme($primary-color, $faded-color, $variant-color, $contrast-color, $accent-color, $mixin-color, $mixin2-color ) {
+
+	.primary,
+	.green,
+	h1,
+	h2,
+	h3 {
+		color: $primary-color;
+	}
+	&.color-theme {
+		overflow: hidden;
+		.white {
+			color: $contrast-color;
+		}
+		.yellow,
+		.accent {
+			color: var(--theme-accent-color);
+		}
+	}
+	#title-underline,
+	#title-underline2
+	 {
+		.cls-1,
+		.cls-2 {
+			stroke: $accent-color;
+		}
+		.cls-1 {
+			opacity: .5;
+		}
+	}
+	#c1 * {
+		stroke: $accent-color;
+		display: block;
+		fill: transparent;
+		stroke-width: 6;
+	}
+	#c2 * {
+		fill: transparent;
+		stroke: $contrast-color;
+		stroke-width: 6;
+		display: block;
+	}
+	.green-bkg,
+	.primary-bkg {
+		background-color: $primary-color;
+	}
+	.green-bkg,
+	.primary-bkg,
+	.white {
+		.primary,
+		.green,
+		h1,
+		h2,
+		h3,
+		a:not(.button) {
+			 color: $contrast-color;
+		}
+		a {
+			text-decoration: underline;
+		}
+		a.breadcrumb,
+		a.bold,
+		a.button {
+			text-decoration: none;
+
+		}
+	}
+	.green-bg-box-before::before,
+	.green-bg-box,
+	.green-20-bkg {
+		background-color: $faded-color;
+	}
+	.button-white {
+		background-color: $primary-color;
+	}
+	.core-blue {
+		color: $core-blue;
+	}
+	.tabbed_expanded_left_justified_vertical_tab_module {
+		.tabs-panel,
+		.accordion-item {
+			#c1 *,
+			#c2 * {
+				stroke: var(--theme-primary-color);
+			}
+		}
+		.alternate-layout .tabs-title,
+		.alternate-layout .accordion-title {
+			#c1 *,
+			#c2 * {
+				stroke: #90C9E5;
+			}
+		}
+		.tabs-title,
+		.alternate-layout .tabs-title.is-active {
+			#c1 *,
+			#c2 * {
+				stroke: var(--theme-contrast-color)
+			}
+		}
+	}
+
+}
+@import "global/yellow_theme";
+@import "global/dark_blue_theme";
+@import "global/medium_blue_theme";
+@import "global/core_blue_theme";
+@import "global/dark_gray_theme";
+@import "global/teal_theme";
+@import "global/green_theme";
+
+//only for use within color-theme mixin
+// @mixin primary-bg {
+// 	.primary-bg {
+// 		background-color: $theme-primary-color;
+// 	}
+// }
+// @mixin primary-text {
+// 	.primary {
+// 		color: $theme-primary-color;
+// 	}
+// }

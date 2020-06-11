@@ -1,0 +1,54 @@
+.hero_simple_text {
+	position: relative;
+	padding: 4rem 1rem;
+	
+	// background hidden on smaller screens
+
+
+	&::before {
+		content: '';
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		background-image: url(../../assets/images/svg/wavelines-green.svg);
+
+		@include breakpoint(small only) {
+			background-image: none !important;
+		}
+		
+		@include breakpoint(medium) {
+			background-repeat: no-repeat;
+			background-position: center left -250px;
+			background-size: 500px;
+			transform: scaleX( -1 );
+		}	
+		@include breakpoint(large) {
+			background-repeat: no-repeat;
+			background-position: center left -250px;
+			background-size: 700px;
+			transform: scaleX( -1 );
+		}
+		
+		@include breakpoint(xxlarge) {
+			background-position: center right 90vw;
+			background-size: 50%;	
+			transform: scaleX( 1 );
+		}	
+
+	}
+	&.withimage::before{
+		@include breakpoint(xlarge down) {
+			background-image: none !important;
+		}
+	}
+	
+	.content {
+		min-height: 200px; 
+		@include breakpoint(small only){
+			min-height: 100%;
+		}
+	}
+
+}

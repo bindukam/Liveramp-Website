@@ -1,0 +1,72 @@
+.bm-new-section {
+    
+    position: static;
+
+    .bm-section-outer {
+        display: flex;
+        box-sizing: border-box;
+        justify-content: center;
+        padding: 1.825rem 1rem 2rem;
+        margin: 0px -16px;
+        
+        @include respond-to(sm) {
+            display: block;
+            padding:  4rem 1rem 3rem;
+            margin:0;
+        }
+
+        .bm-section-inr {
+            width: 33.33%;
+            box-sizing: border-box;
+            padding: 0px 20px;
+            text-align: center;  
+
+            @include respond-to(sm) {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            h2.bm-heading.green {
+                margin-bottom: 15px;
+                @include respond-to(sm) {
+                    margin-bottom: 10px;
+                }
+            }
+            
+            p.bm-content {
+                min-height: 126px;
+                @include respond-to(sm) {
+                    min-height: 0;
+                }
+            }
+
+            a.bm-cta{
+                position: relative;
+                display: inline-block;  
+            }
+            a.bm-cta::after{ 
+                border: none;
+                background: url('https://24graj2x2dk813ys0w26mhu5-wpengine.netdna-ssl.com/wp-content/themes/liveRamp-Template/dist/assets/images/svg/arrow.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                height: 13px;
+                width: 13px;
+                -webkit-transform: translatey(-50%);
+                -ms-transform: translatey(-50%);
+                transform: translatey(-50%);
+                position: absolute;
+                top: 50%;
+                right: -21px;
+                left: auto;
+                content: '';
+                margin-top: -1px;
+            }
+        }
+    }
+
+    
+
+
+      
+
+}

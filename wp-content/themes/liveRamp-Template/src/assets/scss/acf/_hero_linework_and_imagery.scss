@@ -1,0 +1,95 @@
+.hero_linework_and_imagery {
+	.title {
+		margin: 0rem 0 0 0;
+	}
+	.title_wdescription {
+		//margin for title only if there's a description; otherwise centered.
+		margin: 2.6rem 0 0 0;
+	}
+	@include breakpoint(large) {
+		height: 400px;
+		min-height: 40vh;
+
+		.content {
+			height: min-content;
+			align-self: center;
+		}
+	}
+
+	&.tall {
+		height: 600px;
+		min-height: 60vh;
+
+	}
+
+	.grid-container{
+		@include breakpoint(large) {
+			height: 100%;
+		}
+		.grid-x {
+			@include breakpoint(large) {
+				height: 100%;
+			}
+			justify-content: flex-start;
+		}
+
+	}
+	@include breakpoint(medium down) {
+		// height: 570px;
+    	// min-height: 60vh;
+
+		.grid-container .grid-x {
+			// justify-content: center;
+			overflow: hidden;
+		}
+
+		&.tall {
+			height: 700px;
+			min-height: 80vh;
+
+		}
+	}
+	@include breakpoint(large down) {
+		// padding: 0;
+
+		.grid-container{
+			padding: 0 1.5rem;
+		}
+	}
+
+	
+	.description {
+		font-size: 1.125em;
+		line-height: 1.25;
+	}
+	.image {
+		display: flex;
+		justify-content: flex-end;
+		position: absolute;
+		right: 2rem;
+		width: 100%;
+		@include breakpoint(small only) {
+			right: 0rem;
+		}
+		.hero-image {
+			max-height: 400px;
+			width: auto;
+			flex-shrink: 0px;
+		}
+	}
+
+	.mobile-image {
+		margin: 2rem 0 0 0;
+		width: 100%;
+		align-self: baseline;
+		display: flex;
+		justify-content: center;
+		img {
+			max-width: 450px;
+
+		}
+
+	}
+
+
+}
