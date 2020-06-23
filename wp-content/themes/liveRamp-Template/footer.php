@@ -9,7 +9,7 @@
  */
 ?>
 </div>
-<?php get_template_part( 'template-parts/geo-pop' ); ?>
+<?php   //get_template_part( 'template-parts/geo-pop' ); ?>
 <section id="footer" class="dark-gray-bkg">
 	<footer class="footer">
 	    <div class="footer-container">
