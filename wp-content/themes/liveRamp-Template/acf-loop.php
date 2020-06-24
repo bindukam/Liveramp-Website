@@ -38,7 +38,7 @@
         }
         // 3 CTAs
         if(get_row_layout()=='three_ctas'){
-          include ('acf-modules/three-ctas.php'); 
+          include ('acf-modules/three_ctas.php'); 
         }
 
         // Carded Square 6-Card Content
