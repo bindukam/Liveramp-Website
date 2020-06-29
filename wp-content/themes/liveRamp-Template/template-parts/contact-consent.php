@@ -19,7 +19,7 @@
             console.log('here: mkto_F');
             var mkto_S = document.createElement('script');
             mkto_S.type = 'text/javascript';
-            mkto_S.src = '<?php echo get_stylesheet_directory_uri() ?>/library/mkto-forms/mkto_consent_<?php echo get_field('contact_form_id', 'option') ?>.js';
+            mkto_S.src = '<?php echo get_stylesheet_directory_uri() ?>/library/mkto-forms/mkto_consent_<?php echo get_field('contact_form_id', 'option') ?>.js'; 
             document.getElementById('mkto_consent').appendChild(mkto_S);
         }
     </script>
