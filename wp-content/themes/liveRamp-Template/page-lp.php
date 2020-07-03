@@ -14,7 +14,7 @@
 get_header('lp'); ?> 
 
 <?php 
-    include('acf-loop.php');
+    include('acf-lp-loop.php');
 ?>
 
 <?php
