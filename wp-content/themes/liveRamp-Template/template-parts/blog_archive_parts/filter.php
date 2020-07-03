@@ -15,7 +15,7 @@
 									   )
 									):
 
-									echo '<select name="blog_categories" data-default="Category"><option value="" hidden>Category</option>';
+									echo '<select name="blog_categories" data-default="Category" aria-label="Category"><option value="" hidden>Category</option>';
 									foreach ( $terms as $term ) :
 										// var_dump($term);
 										// echo $term->slug;
@@ -38,7 +38,7 @@
 									   )
 									):
 
-									echo '<select name="author" data-default="Author"><option value="" hidden>Author</option>';
+									echo '<select name="author" data-default="Author" aria-label="Author"><option value="" hidden>Author</option>';
 									foreach ( $authors as $author ) :
 										$aid = $author->ID;
 										// WP_Query arguments
@@ -76,7 +76,7 @@
 								$already_selected_value = date("Y");
 								$earliest_year = 2016;
 
-								print '<select name="date_field" data-default="Date">
+								print '<select name="date_field" data-default="Date" aria-label="Date">
 											<option value="" hidden>Date</option>';
 
 								foreach (range(date('Y'), $earliest_year) as $x) {

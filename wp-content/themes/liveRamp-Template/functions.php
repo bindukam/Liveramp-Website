@@ -140,7 +140,7 @@ function wpbsearchform( $form ) {
 
     $form = '<div class="searchform-wrapper"><form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
     <i class="far fa-search"></i>
-    <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="Search" />
+    <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="Search" aria-label="Search"/>
     </form>
     </div>';
 

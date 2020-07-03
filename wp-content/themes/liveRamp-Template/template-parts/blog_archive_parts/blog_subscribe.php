@@ -63,7 +63,7 @@
 			   			jQuery('.mktoButton').addClass('button cta');
 			   			jQuery('.mktoButton').removeClass('mktoButton');
 			   			jQuery('.mktoFormCol').css('margin-bottom', '');
-			   			jQuery('#filter-signup form button').html('<i class="far fa-angle-right"></i>').removeClass('button cta').addClass('mktoButton');
+			   			jQuery('#filter-signup form button').html('<i class="far fa-angle-right"></i>').removeClass('button cta').addClass('mktoButton').attr("aria-label", "Marketo Button")  ;
 			   			jQuery(".email-form form button").addClass('mktoButton');
 			   			jQuery('.form-wrapper').fadeIn('400');
 			   			

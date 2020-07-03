@@ -87,7 +87,7 @@
 							if( have_rows('icon_list', 'option') ):
 							    while ( have_rows('icon_list', 'option') ) : the_row();?>
 									<div class="cell">
-										<a href="<?php the_sub_field('social_link'); ?>" target="_blank" rel="nofollow">
+										<a href="<?php the_sub_field('social_link'); ?>" target="_blank" rel="nofollow" aria-label="<?php the_sub_field('social_sitename'); ?>">
 											<i class="fab <?php the_sub_field('social_icon'); ?>"></i>
 										</a>
 									</div>
