@@ -27,6 +27,11 @@
                 if($module_name == 'standard_video'){
                     include ('acf-lp-modules/standard_video.php');
                 }
+
+                // 3 Card Image and Text
+                if(get_row_layout()=='three_card_image_and_text'){
+                  include ('acf-lp-modules/three_card_image_and_text.php');
+                }
             }
         }
     }
