@@ -13,7 +13,8 @@ register_nav_menus(
 		'mobile-nav' => esc_html__( 'Mobile', 'foundationpress' ),
 		'top-menu' => esc_html__( 'Top Menu', 'foundationpress' ),
 		'mega-menu' => esc_html__( 'Mega Menu', 'foundationpress' ),
-		'copyright-menu' => esc_html__( 'Copyright Menu', 'foundationpress' )
+		'copyright-menu' => esc_html__( 'Copyright Menu', 'foundationpress' ),
+		'lp-footer-menu' => esc_html__( 'LP Footer Menu', 'foundationpress' )
 	)
 );
 
