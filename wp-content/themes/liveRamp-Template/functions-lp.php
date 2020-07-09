@@ -7,7 +7,7 @@ if( !function_exists('lvrmp_lp_posts_register') ) {
     function lvrmp_lp_posts_register() {
 
         $labels = array(
-            'name' => _x('LP Event', 'post type general name'),
+            'name' => _x('LP Events', 'post type general name'),
             'singular_name' => _x('LP Event', 'post type singular name'),
             'add_new' => _x('Add New', 'LP Event'),
             'add_new_item' => __('Add New LP Event'),
