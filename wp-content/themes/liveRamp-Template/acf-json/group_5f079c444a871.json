@@ -3,6 +3,23 @@
     "title": "LP Events",
     "fields": [
         {
+            "key": "field_5f07abd54552f",
+            "label": "Event Date",
+            "name": "event_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 1
+        },
+        {
             "key": "field_5f079c5b29d07",
             "label": "Marketo Form ID",
             "name": "marketo_form_id",
@@ -23,7 +40,7 @@
         },
         {
             "key": "field_5f079cab29d08",
-            "label": "LP Event",
+            "label": "Event Details",
             "name": "event",
             "type": "repeater",
             "instructions": "",
@@ -60,10 +77,10 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5f079e2629d0b",
-                    "label": "Date Time - From",
-                    "name": "date_from",
-                    "type": "date_time_picker",
+                    "key": "field_5f07ae013e945",
+                    "label": "Time - From",
+                    "name": "time_from",
+                    "type": "time_picker",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -72,15 +89,14 @@
                         "class": "",
                         "id": ""
                     },
-                    "display_format": "d\/m\/Y g:i a",
-                    "return_format": "d\/m\/Y g:i a",
-                    "first_day": 1
+                    "display_format": "g:i a",
+                    "return_format": "g:i a"
                 },
                 {
-                    "key": "field_5f079ef629d0c",
-                    "label": "Date Time - To",
-                    "name": "date_to",
-                    "type": "date_time_picker",
+                    "key": "field_5f07ae123e946",
+                    "label": "Time - To",
+                    "name": "time_to",
+                    "type": "time_picker",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -89,9 +105,8 @@
                         "class": "",
                         "id": ""
                     },
-                    "display_format": "d\/m\/Y g:i a",
-                    "return_format": "d\/m\/Y g:i a",
-                    "first_day": 1
+                    "display_format": "g:i a",
+                    "return_format": "g:i a"
                 },
                 {
                     "key": "field_5f079f1229d0d",
@@ -206,7 +221,7 @@
                         "class": "",
                         "id": ""
                     },
-                    "taxonomy": "category",
+                    "taxonomy": "lp_event_categories",
                     "field_type": "checkbox",
                     "add_term": 1,
                     "save_terms": 0,
@@ -235,5 +250,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1594337083
+    "modified": 1594338958
 }
