@@ -1,11 +1,11 @@
 {
     "key": "group_5f079c444a871",
-    "title": "LP Event",
+    "title": "LP Events",
     "fields": [
         {
             "key": "field_5f079c5b29d07",
-            "label": "Marketo ID",
-            "name": "marketo_id",
+            "label": "Marketo Form ID",
+            "name": "marketo_form_id",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -23,7 +23,7 @@
         },
         {
             "key": "field_5f079cab29d08",
-            "label": "Event",
+            "label": "LP Event",
             "name": "event",
             "type": "repeater",
             "instructions": "",
@@ -40,6 +40,25 @@
             "layout": "row",
             "button_label": "Add Event",
             "sub_fields": [
+                {
+                    "key": "field_5f07a7141330f",
+                    "label": "Event Marketo ID",
+                    "name": "event_marketo_id",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
+                },
                 {
                     "key": "field_5f079e2629d0b",
                     "label": "Date Time - From",
@@ -216,5 +235,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1594335268
+    "modified": 1594337083
 }
