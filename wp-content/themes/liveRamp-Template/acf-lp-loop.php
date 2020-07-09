@@ -29,9 +29,15 @@
                 }
 
                 // 3 Card Image and Text
-                if(get_row_layout()=='three_card_image_and_text'){
-                  include ('acf-lp-modules/three_card_image_and_text.php');
+                if($module_name =='three_card_image_and_text'){
+                    include ('acf-lp-modules/three_card_image_and_text.php');
                 }
+
+                // Content Standard Image and Text Module
+                if($module_name =='image_and_text'){
+                    include ('acf-lp-modules/image_and_text.php');
+                }
+
             }
         }
     }

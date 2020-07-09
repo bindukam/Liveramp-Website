@@ -1,0 +1,68 @@
+.page-template-page-lp {
+
+    .image_and_text_module {
+
+        position: relative;
+        margin-top: 1rem;
+        overflow: hidden;
+
+
+        h2.title {
+            color: inherit !important;
+        }
+
+        .button {
+            width: auto;
+            margin-top: 1rem;
+        }
+
+        .image img {
+            @include hard-shadow;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: flex-end;
+             @include breakpoint(small only) {
+                 justify-content: center;
+                 margin-bottom: 2rem;
+             }
+        }
+
+        .image-area {
+            border-radius: 12px !important;
+            position: relative;
+            left: .5rem;
+            width: 80%;
+            height: auto;
+        }
+
+        .b-radius {
+            border-radius: 12px;
+        }
+
+        @include breakpoint(medium) {
+            p {
+                padding-right: 0;
+            }
+            .no-image p {
+                padding: 0;
+            }
+        }
+
+        .flipped {
+
+            .image-area:before {
+                left: -50%;
+            }
+
+            .image-area:after {
+                left: -40%;
+            }
+
+            .image-container {
+                justify-content: flex-start;
+            }
+        }
+    }
+}
