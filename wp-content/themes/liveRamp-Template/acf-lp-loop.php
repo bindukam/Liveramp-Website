@@ -13,14 +13,19 @@
 
                 $module_name = get_row_layout();
 
+                // HERO - Webinar, eBook, Video, ShareSlide
+                if($module_name == 'hero_with_form'){
+                    include ('acf-lp-modules/hero_with_form.php');
+                }
+
                 // Offer Strip
                 if($module_name == 'offer_strip'){
-                    include ('acf-lp-modules/offer_strip.php'); 
+                    include ('acf-lp-modules/offer_strip.php');
                 }
 
                 // 3 CTAs
                 if($module_name == 'three_ctas'){
-                    include ('acf-lp-modules/three_ctas.php'); 
+                    include ('acf-lp-modules/three_ctas.php');
                 }
 
                 // Standard Video
