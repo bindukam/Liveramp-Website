@@ -4,8 +4,25 @@
     "fields": [
         {
             "key": "field_5f07abd54552f",
-            "label": "Event Date",
-            "name": "event_date",
+            "label": "Start Date",
+            "name": "start_date",
+            "type": "date_picker",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "display_format": "d\/m\/Y",
+            "return_format": "d\/m\/Y",
+            "first_day": 1
+        },
+        {
+            "key": "field_5f07bef399789",
+            "label": "End Date",
+            "name": "end_date",
             "type": "date_picker",
             "instructions": "",
             "required": 0,
@@ -116,8 +133,8 @@
                 },
                 {
                     "key": "field_5f07ae013e945",
-                    "label": "Time - From",
-                    "name": "time_from",
+                    "label": "Start Time",
+                    "name": "start_time",
                     "type": "time_picker",
                     "instructions": "",
                     "required": 0,
@@ -132,8 +149,8 @@
                 },
                 {
                     "key": "field_5f07ae123e946",
-                    "label": "Time - To",
-                    "name": "time_to",
+                    "label": "End Time",
+                    "name": "end_time",
                     "type": "time_picker",
                     "instructions": "",
                     "required": 0,
@@ -288,5 +305,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1594342000
+    "modified": 1594343289
 }
