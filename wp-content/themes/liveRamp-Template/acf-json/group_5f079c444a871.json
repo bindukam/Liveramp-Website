@@ -37,6 +37,25 @@
             "first_day": 1
         },
         {
+            "key": "field_5f07cd8b57749",
+            "label": "Location",
+            "name": "location",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5f07ba36bcdb7",
             "label": "Headline",
             "name": "headline",
@@ -305,5 +324,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1594345710
+    "modified": 1594346906
 }
