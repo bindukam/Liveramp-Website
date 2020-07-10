@@ -264,10 +264,10 @@
                     "delay": 0
                 },
                 {
-                    "key": "field_5f079f4d29d10",
-                    "label": "Speaker Name",
-                    "name": "speaker_name",
-                    "type": "text",
+                    "key": "field_5f07cead024a4",
+                    "label": "Speakers",
+                    "name": "speakers",
+                    "type": "repeater",
                     "instructions": "",
                     "required": 0,
                     "conditional_logic": 0,
@@ -276,11 +276,32 @@
                         "class": "",
                         "id": ""
                     },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
+                    "collapsed": "",
+                    "min": 0,
+                    "max": 0,
+                    "layout": "table",
+                    "button_label": "",
+                    "sub_fields": [
+                        {
+                            "key": "field_5f07cec5024a5",
+                            "label": "Speaker Name",
+                            "name": "speaker_name",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ]
                 },
                 {
                     "key": "field_5f079f6229d12",
@@ -324,5 +345,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1594346906
+    "modified": 1594347231
 }
