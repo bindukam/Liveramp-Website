@@ -54,7 +54,7 @@ if( !function_exists('register_lp_tax') ) {
                     'new_item_name' => 'New Category'
                 ),
                 'show_ui' => true,
-                'hierarchical' => true,
+                'hierarchical' => false,
                 'show_tagcloud' => false
             )
         );
