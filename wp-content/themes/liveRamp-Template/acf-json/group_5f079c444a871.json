@@ -202,25 +202,6 @@
                     "return_format": "g:i a"
                 },
                 {
-                    "key": "field_5f079f1229d0d",
-                    "label": "Headline",
-                    "name": "headline",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
                     "key": "field_5f07cfe31d9fd",
                     "label": "Speaking Event?",
                     "name": "speaking_event",
@@ -297,6 +278,33 @@
                     "maxlength": "",
                     "rows": "",
                     "new_lines": ""
+                },
+                {
+                    "key": "field_5f079f1229d0d",
+                    "label": "Headline",
+                    "name": "headline",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5f07cfe31d9fd",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "maxlength": ""
                 },
                 {
                     "key": "field_5f07cead024a4",
@@ -388,5 +396,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1594347649
+    "modified": 1594347910
 }
