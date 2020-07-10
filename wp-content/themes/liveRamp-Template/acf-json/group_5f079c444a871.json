@@ -264,25 +264,6 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_5f079f5929d11",
-                    "label": "Speaker Title",
-                    "name": "speaker_title",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": ""
-                },
-                {
                     "key": "field_5f079f6229d12",
                     "label": "Event Category",
                     "name": "event_category",
@@ -324,5 +305,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1594343838
+    "modified": 1594345710
 }
