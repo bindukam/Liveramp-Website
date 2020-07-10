@@ -30,7 +30,7 @@ if( !function_exists('lvrmp_lp_posts_register') ) {
             'hierarchical' => false,
             'has_archive' => false,
             'menu_position' => null,
-            'supports' => array('title', 'editor', 'thumbnail', 'author'),
+            'supports' => array('title', 'thumbnail', 'author'),
             'rewrite' => true,
             'show_in_nav_menus' => true,
         );
