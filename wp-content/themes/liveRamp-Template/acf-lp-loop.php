@@ -13,9 +13,24 @@
 
                 $module_name = get_row_layout();
 
-                // HERO - Webinar, eBook, Video, ShareSlide
+                // Hero with form - Webinar and eBook (1st variant design)
                 if($module_name == 'hero_with_form'){
                     include ('acf-lp-modules/hero_with_form.php');
+                }
+
+                // Talent
+                if($module_name == 'talent'){
+                    include ('acf-lp-modules/talent.php');
+                }
+
+                // Hero with Image Block
+                if($module_name == 'hero_with_image_block'){
+                    include ('acf-lp-modules/hero_with_image.php');
+                }
+
+                // eBook (2nd variant design)
+                if($module_name == 'ebook'){
+                    include ('acf-lp-modules/ebook.php');
                 }
 
                 // Offer Strip
@@ -23,14 +38,9 @@
                     include ('acf-lp-modules/offer_strip.php');
                 }
 
-                // 3 CTAs
-                if($module_name == 'three_ctas'){
-                    include ('acf-lp-modules/three_ctas.php');
-                }
-
-                // Standard Video
-                if($module_name == 'standard_video'){
-                    include ('acf-lp-modules/standard_video.php');
+                // Image and Text Module
+                if($module_name =='image_and_text'){
+                    include ('acf-lp-modules/image_and_text.php');
                 }
 
                 // 3 Card Image and Text
@@ -38,9 +48,9 @@
                     include ('acf-lp-modules/three_card_image_and_text.php');
                 }
 
-                // Content Standard Image and Text Module
-                if($module_name =='image_and_text'){
-                    include ('acf-lp-modules/image_and_text.php');
+                // Standard Media - Video and SlideShare
+                if($module_name == 'standard_media'){
+                    include ('acf-lp-modules/standard_medi.php');
                 }
 
             }
