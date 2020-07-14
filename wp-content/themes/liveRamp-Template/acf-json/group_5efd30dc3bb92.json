@@ -634,6 +634,49 @@
                             "ui_off_text": ""
                         },
                         {
+                            "key": "field_5f0e1af99b90d",
+                            "label": "Eyebrow Text",
+                            "name": "eyebrow_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f0e1b0b9b90e",
+                            "label": "Eyebrow Image",
+                            "name": "eyebrow_image",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
                             "key": "field_5f0cad7c8a61e",
                             "label": "Title",
                             "name": "title",
@@ -1432,5 +1475,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1594757792
+    "modified": 1594760031
 }
