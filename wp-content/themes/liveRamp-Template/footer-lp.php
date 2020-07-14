@@ -17,7 +17,7 @@
 	        <div class="grid-container">
 	        	<div class="grid-x grid-padding-y sub-footer ">
 					<div class="cell auto logo">
-						<a href="<?php echo site_url(); ?>">
+						<a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>">
 							<?php
 							// THEM URI to link to images within the assets folder
                             $theme_uri = get_stylesheet_directory();

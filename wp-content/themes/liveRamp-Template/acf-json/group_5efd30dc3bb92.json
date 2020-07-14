@@ -42,10 +42,10 @@
                             "ui_off_text": ""
                         },
                         {
-                            "key": "field_5f07d7bf308ef",
-                            "label": "Eyebrow",
-                            "name": "eyebrow",
-                            "type": "select",
+                            "key": "field_5f0cdbf23aa36",
+                            "label": "Eyebrow Text",
+                            "name": "eyebrow_text",
+                            "type": "text",
                             "instructions": "",
                             "required": 1,
                             "conditional_logic": 0,
@@ -54,19 +54,35 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "choices": {
-                                "ebook": "eBook",
-                                "webinar": "Webinar"
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f0cdea93aa37",
+                            "label": "Eyebrow Icon",
+                            "name": "eyebrow_icon",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
                             },
-                            "default_value": [
-                                "webinar"
-                            ],
-                            "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
-                            "return_format": "value",
-                            "ajax": 0,
-                            "placeholder": ""
+                            "return_format": "id",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
                         },
                         {
                             "key": "field_5f07d8b6308f2",
@@ -1416,5 +1432,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1594666521
+    "modified": 1594678997
 }

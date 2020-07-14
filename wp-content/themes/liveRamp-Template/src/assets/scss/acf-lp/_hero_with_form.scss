@@ -1,111 +1,71 @@
 .page-template-page-lp {
 
     .hero-with-form {
+        overflow: hidden;
+        padding: 4rem 1rem;
+        
+        .list-item {
+            display: flex;
+            border-bottom: 1px solid $dark-gray-40;
+            padding: 30px 0;
 
-    }
+            &:last-child {
+                border-bottom: none;
+            }
 
-    .form-cell {
+            background-position: center right 90vw;
+            background-size: 50%;
+            transform: scaleX( 1 );
 
-        .form-wrapper {
-            // width: 400px;
-            padding: 2rem;
-            border: 3.5px solid $xlight-gray;
-            // max-height: calc(100vh - 12em);
-            // overflow-y: auto;
+            .icon {
+                max-height: 50px;
+                max-width: 50px;
+                margin-right: 20px;
+            }
 
-            .form-title {
-                margin: 0 0 1rem 0;
+            .copy {
+                margin: auto 0;
             }
         }
 
-        .sticky.social-sticky.b-radius.is-anchored.is-at-bottom {
-            @media screen and (max-width: 1023px) {
-                top: 1px !important;
-            }
-            
-            @include breakpoint(medium down) {
-                position: relative;
-            }
+        .grid-container {
+            z-index: 10;
+            position: relative;
         }
 
-        form {
-            input,
-            textarea,
-            select {
-                margin-bottom: 0;
-                border-radius: 4px;
-                border-color: $slate;
-                background-color: lighten($light-slate, 2%);
-                color: $dark-slate;
+        &:before {
+            content: '';
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-image: url(../images/svg/spilt-green.svg);
+            z-index: 0;
 
-                &.mktoInvalid {
-                    border-color: red;
-                }
-
-                &:focus {
-                    border-color: $slate;
-                    -webkit-box-shadow: 0 0 0 $white;
-                            box-shadow: 0 0 0 $white;
-                }
+            @include breakpoint(small only) {
+                background-image: none !important;
             }
 
-            .mktoFormRow {
-                margin: 0 0 1.5rem 0;
+            @include breakpoint(medium) {
+                background-repeat: repeat;
+                background-position: center;
+                background-size: 100px;
+                transform: translate(55%, 60%) rotate(45deg);
             }
 
-            label {
-                // width: 400px;
-                white-space: nowrap;
-                font-size: 1rem;
-                color: $dark-slate;
-            }
-            .mktoFieldWrap {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                -webkit-flex-flow: row wrap;
-                    -ms-flex-flow: row wrap;
-                        flex-flow: row wrap;
-                        @include breakpoint(small only) {
-                            flex-flow: column;
-                            align-items: initial;
-                            
-                        }
-
-                input,
-                select {
-                    flex-basis: 60%;
-                }
-
-                select {
-                    background-image : url(../../assets/images/arrow-down.svg);
-                }
-
-                textarea {
-                    flex-basis: 100%;
-                    margin-top: 1rem;
-                }
-
-                .mktoError {
-                    justify-self: flex-end;
-                    width: 100%;
-                    text-align: right;
-
-                }
-                .mktoErrorMsg {
-                    color: $core-orange;
-                }
+            @include breakpoint(large) {
+                background-repeat: repeat;
+                background-position: center;
+                background-size: 100px;
+                transform: translate(55%, 60%) rotate(45deg);
             }
 
-            .mktoButtonRow {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
-
-                button.mktoButton.button.cta {
-                    border-radius: 20px;
-                }
+            @include breakpoint(xxlarge) {
+                background-repeat: repeat;
+                background-position: center;
+                background-size: 100px;
+                transform: translate(55%, 60%) rotate(45deg);
             }
         }
     }

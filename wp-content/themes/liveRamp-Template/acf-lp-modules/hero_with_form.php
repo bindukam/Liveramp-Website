@@ -2,18 +2,31 @@
 
 $eyebrow = get_sub_field('eyebrow');
 
+ $theme_uri = get_stylesheet_directory();
+ $theme_images = $theme_uri.'/dist/assets/images';
+ $theme_svg = $theme_images.'/svg';
+
 ?>
 
-<section class="primary-bkg">
+<section class="hero-with-form primary-bkg">
+    <div class="grid-container green-bkg">
+        <div class="grid-x grid-margin-x align-justify">
+            <div class="cell">
+                <div class="header-logo">
+                    <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><?php echo file_get_contents("$theme_svg/lr_logo.svg"); ?></a> 
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell  large-5 content">
                 <div class="eyebrow <?php echo $eyebrow; ?>"><?php echo $eyebrow; ?></div>
                 <?php if (get_sub_field('title')): ?>
-                    <h2 class="green"><?php the_sub_field('title') ?></h2>
+                    <h1 class="green"><?php the_sub_field('title') ?></h1>
                  <?php endif ?>
-                <?php if (get_sub_field('subheadline')): ?>
-                    <h4 class="green"><?php the_sub_field('subheadline') ?></h4>
+                <?php if (get_sub_field('list_headline')): ?>
+                    <h4 class="green"><?php the_sub_field('list_headline') ?></h4>
                  <?php endif ?>
                 <?php if (have_rows('list')): ?>
                     <?php while(have_rows('list')) : ?>
@@ -29,9 +42,9 @@ $eyebrow = get_sub_field('eyebrow');
                             $copy = get_sub_field('copy');
                         }
                     ?>
-                    <div class="list-item">
+                    <div class="cell list-item">
                         <div class="icon"><?php echo $icon; ?></div>
-                        <div class="copy"><?php echo $copy; ?></div>
+                        <div class="copy green"><?php echo $copy; ?></div>
                     </div>
                     <?php endwhile ?>
                 <?php endif ?>
@@ -43,7 +56,7 @@ $eyebrow = get_sub_field('eyebrow');
                     <div class="form-wrapper box-shadow-over-white b-radius white-bkg">
                         
                         <?php if (get_sub_field('form_title')): ?>
-                            <h3 class="form-title"><?php get_sub_field('form_title')  ?></h3>
+                            <div class="h3 form-title dark-gray"><?php echo get_sub_field('form_title')  ?></div>
                         <?php endif ?>
                         
                         <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" class="pad-ul">
@@ -79,21 +92,4 @@ $eyebrow = get_sub_field('eyebrow');
             </div>
         </div>
     </div>
-
-
-    <?php if (!get_sub_field('video_id')): ?>
-    <div class="grid-x align-middle align-center video-area">
-        <div class="cell text-center box-shadow-over-white b-radius no-overflow video-container">
-            <script src="https://fast.wistia.com/embed/medias/<?php the_sub_field('video_id') ?>.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0px 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_<?php the_sub_field('video_id') ?> videoFoam=true  box-shadow-over-white b-radius" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
-        </div>
-    </div>
-    <?php endif ?>
 </section>
-
-<script>
-		$( document ).ready(function() {
-		    console.log( "video ready!" );
-		    // alert('booger');
-
-		});
-</script>
