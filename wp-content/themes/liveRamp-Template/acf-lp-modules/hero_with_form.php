@@ -1,10 +1,8 @@
 <?php
 
-$eyebrow = get_sub_field('eyebrow');
-
- $theme_uri = get_stylesheet_directory();
- $theme_images = $theme_uri.'/dist/assets/images';
- $theme_svg = $theme_images.'/svg';
+$theme_uri = get_stylesheet_directory();
+$theme_images = $theme_uri.'/dist/assets/images';
+$theme_svg = $theme_images.'/svg';
 
 ?>
 
@@ -20,8 +18,11 @@ $eyebrow = get_sub_field('eyebrow');
     </div>
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-justify">
-            <div class="cell  large-5 content">
-                <div class="eyebrow <?php echo $eyebrow; ?>"><?php echo $eyebrow; ?></div>
+            <div class="cell  large-6 content">
+                <div class="cell eyebrow">
+                    <div class="icon" style="background-image:url(<?php echo get_sub_field('eyebrow_icon'); ?>);"></div>
+                    <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>
+                </div>
                 <?php if (get_sub_field('title')): ?>
                     <h1 class="green"><?php the_sub_field('title') ?></h1>
                  <?php endif ?>
@@ -36,14 +37,14 @@ $eyebrow = get_sub_field('eyebrow');
                         $copy = '';
                         $card = get_sub_field('card');
                         if (get_sub_field('icon')) {
-                            $icon = wp_get_attachment_image( get_sub_field('icon'));
+                            $icon = get_sub_field('icon');
                         }
                         if (get_sub_field('copy')) {
                             $copy = get_sub_field('copy');
                         }
                     ?>
                     <div class="cell list-item">
-                        <div class="icon"><?php echo $icon; ?></div>
+                        <div class="icon" style="background-image:url(<?php echo $icon; ?>);"></div>
                         <div class="copy green"><?php echo $copy; ?></div>
                     </div>
                     <?php endwhile ?>

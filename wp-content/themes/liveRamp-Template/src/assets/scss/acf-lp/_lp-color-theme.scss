@@ -1,0 +1,45 @@
+﻿.page-template-page-lp {
+
+    #dark-blue-theme {
+        .hero-with-form {
+            &:before {
+                background-image: url(../../assets/images/svg/spilt-db.svg);
+            }
+        }
+    }
+    #core-blue-theme {
+        .hero-with-form {
+            &:before {
+                background-image: url(../../assets/images/svg/spilt-cb.svg);
+            }
+        }
+	}
+    #dark-gray-theme {
+        .hero-with-form {
+            &:before {
+                background-image: url(../../assets/images/svg/spilt-dg.svg);
+            }
+        }
+    }
+    #medium-blue-theme {
+        .hero-with-form {
+            &:before {
+                background-image: url(../../assets/images/svg/spilt-mb.svg);
+            }
+        }
+	}
+    #teal-theme {
+        .hero-with-form {
+            &:before {
+                background-image: url(../../assets/images/svg/spilt-teal.svg);
+            }
+        }
+    }
+    #yellow-theme {
+        .hero-with-form {
+            &:before {
+                background-image: url(../../assets/images/svg/spilt-yellow.svg);
+            }
+        }
+    }
+}

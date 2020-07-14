@@ -3,6 +3,20 @@
     .hero-with-form {
         overflow: hidden;
         padding: 4rem 1rem;
+
+        .eyebrow {
+            display: flex;
+            padding-bottom: 8px;
+
+            .icon {
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 22px;
+                height: 22px;
+                margin-right: 6px;
+            }
+        }
         
         .list-item {
             display: flex;
@@ -13,13 +27,12 @@
                 border-bottom: none;
             }
 
-            background-position: center right 90vw;
-            background-size: 50%;
-            transform: scaleX( 1 );
-
             .icon {
-                max-height: 50px;
-                max-width: 50px;
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 50px;
+                height: 50px;
                 margin-right: 20px;
             }
 
