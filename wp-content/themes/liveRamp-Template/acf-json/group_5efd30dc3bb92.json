@@ -1274,7 +1274,7 @@
                 "layout_5f037ef7b9efd": {
                     "key": "layout_5f037ef7b9efd",
                     "name": "three_card_image_and_text",
-                    "label": "LP Three Card Image and Text",
+                    "label": "LP Resource :  3 Card Image and Text",
                     "display": "row",
                     "sub_fields": [
                         {
@@ -1432,5 +1432,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1594756676
+    "modified": 1594757792
 }
