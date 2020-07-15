@@ -654,8 +654,8 @@
                         },
                         {
                             "key": "field_5f0e1b0b9b90e",
-                            "label": "Eyebrow Image",
-                            "name": "eyebrow_image",
+                            "label": "Eyebrow Icon",
+                            "name": "eyebrow_icon",
                             "type": "image",
                             "instructions": "",
                             "required": 1,
@@ -799,7 +799,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
+                            "return_format": "id",
                             "preview_size": "medium",
                             "library": "all",
                             "min_width": "",
@@ -861,7 +861,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "id",
+                                    "return_format": "url",
                                     "preview_size": "thumbnail",
                                     "library": "all",
                                     "min_width": "",
@@ -1475,5 +1475,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1594760031
+    "modified": 1594841027
 }

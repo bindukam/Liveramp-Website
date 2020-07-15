@@ -3,42 +3,47 @@
     #dark-blue-theme {
         .hero-with-form {
             &:before {
-                background-image: url(../../assets/images/svg/spilt-db.svg);
+                background-image: url(../../assets/images/svg/diagonal-lines-core-db.svg);
             }
         }
     }
+
     #core-blue-theme {
         .hero-with-form {
             &:before {
-                background-image: url(../../assets/images/svg/spilt-cb.svg);
+                background-image: url(../../assets/images/svg/diagonal-lines-core-cb.svg);
             }
         }
-	}
+    }
+
     #dark-gray-theme {
         .hero-with-form {
             &:before {
-                background-image: url(../../assets/images/svg/spilt-dg.svg);
+                background-image: url(../../assets/images/svg/diagonal-lines-core-dg.svg);
             }
         }
     }
+
     #medium-blue-theme {
         .hero-with-form {
             &:before {
-                background-image: url(../../assets/images/svg/spilt-mb.svg);
-            }
-        }
-	}
-    #teal-theme {
-        .hero-with-form {
-            &:before {
-                background-image: url(../../assets/images/svg/spilt-teal.svg);
+                background-image: url(../../assets/images/svg/diagonal-lines-core-mb.svg);
             }
         }
     }
+
+    #teal-theme {
+        .hero-with-form {
+            &:before {
+                background-image: url(../../assets/images/svg/diagonal-lines-core-teal.svg);
+            }
+        }
+    }
+
     #yellow-theme {
         .hero-with-form {
             &:before {
-                background-image: url(../../assets/images/svg/spilt-yellow.svg);
+                background-image: url(../../assets/images/svg/diagonal-lines-core-yellow.svg);
             }
         }
     }

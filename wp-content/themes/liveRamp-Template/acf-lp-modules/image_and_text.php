@@ -56,7 +56,7 @@
 			</div>
 			<div class="cell align-top medium-6 image-container small-order-1 <?php echo $orderImage . $hide ?>">
 				<div class="image-area">
-                    <?php echo wp_get_attachment_image( get_sub_field('image'), 'full', '',array( "class" => "b-radius tab-image" ) ); ?>
+                    <?php echo wp_get_attachment_image( get_sub_field('image'), 'full', false, array( "class" => "b-radius tab-image" ) ); ?>
 				</div>
 			</div>
 		</div>

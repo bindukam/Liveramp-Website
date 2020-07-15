@@ -1,20 +1,52 @@
 <?php
 
-$eyebrow = get_sub_field('eyebrow');
-
+$theme_uri = get_stylesheet_directory();
+$theme_images = $theme_uri.'/dist/assets/images';
+$theme_svg = $theme_images.'/svg';
+$mkto_id = get_sub_field('marketo_form_id', 'option');
 ?>
 
-<section class="primary-bkg">
+<script src="<?php echo get_stylesheet_directory_uri() ?>/forms2.min.js"></script>
+<section class="hero-with-form primary-bkg ebook-top-section">
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-justify">
-            <div class="cell  large-5 content">
-                <div class="eyebrow <?php echo $eyebrow; ?>"><?php echo $eyebrow; ?></div>
+            <div class="cell  large-6 content">
+                <div class="header-logo">
+                    <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><?php echo file_get_contents("$theme_svg/lr_logo.svg"); ?></a> 
+                </div>
+                <div class="cell eyebrow">
+                    <div class="icon" style="background-image:url(<?php echo get_sub_field('eyebrow_icon'); ?>);"></div>
+                    <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>
+                </div>
                 <?php if (get_sub_field('title')): ?>
-                    <h2 class="green"><?php the_sub_field('title') ?></h2>
+                    <h1 class="green"><?php the_sub_field('title') ?></h1>
                  <?php endif ?>
+				<?php if (get_sub_field('cta')):
+
+					$url = get_sub_field('cta')['url'];
+					$title = get_sub_field('cta')['title'];
+					$target = get_sub_field('cta')['target'];
+				?>
+				<a href="<?php echo $url ?>" class="button cta" target="<?php echo $target ?>"><?php echo $title ?></a>
+				<?php endif ?>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="hero-with-form ebook-bottom-section">
+    <div class="hero-with-form primary-bkg ebook-float"></div>
+    <div class="grid-container">
+        <div class="grid-x grid-margin-x align-justify">
+            <div class="cell  large-6 content">
                 <?php if (get_sub_field('subheadline')): ?>
-                    <h4 class="green"><?php the_sub_field('subheadline') ?></h4>
+                    <div class="h3 bold subheadline"><?php the_sub_field('subheadline') ?></div>
                  <?php endif ?>
+                <?php if (get_sub_field('description')): ?>
+                    <div class="copy"><?php the_sub_field('description') ?></div>
+                 <?php endif ?>
+                <?php if (get_sub_field('list_headline')): ?>
+                    <h4 class="green"><?php the_sub_field('list_headline') ?></h4>
+                <?php endif ?>
                 <?php if (have_rows('list')): ?>
                     <?php while(have_rows('list')) : ?>
                     <?php the_row(); ?>
@@ -23,15 +55,15 @@ $eyebrow = get_sub_field('eyebrow');
                         $copy = '';
                         $card = get_sub_field('card');
                         if (get_sub_field('icon')) {
-                            $icon = wp_get_attachment_image( get_sub_field('icon'));
+                            $icon = get_sub_field('icon');
                         }
                         if (get_sub_field('copy')) {
                             $copy = get_sub_field('copy');
                         }
                     ?>
-                    <div class="list-item">
-                        <div class="icon"><?php echo $icon; ?></div>
-                        <div class="copy"><?php echo $copy; ?></div>
+                    <div class="cell list-item green-bkg">
+                        <div class="icon" style="background-image:url(<?php echo $icon; ?>);"></div>
+                        <div class="copy green"><?php echo $copy; ?></div>
                     </div>
                     <?php endwhile ?>
                 <?php endif ?>
@@ -43,57 +75,41 @@ $eyebrow = get_sub_field('eyebrow');
                     <div class="form-wrapper box-shadow-over-white b-radius white-bkg">
                         
                         <?php if (get_sub_field('form_title')): ?>
-                            <h3 class="form-title"><?php get_sub_field('form_title')  ?></h3>
+                            <div class="h3 form-title dark-gray"><?php echo get_sub_field('form_title')  ?></div>
+                            <div class="fixed-underline pad-ul">
+                                <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" >
+                            </div>
                         <?php endif ?>
                         
-                        <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" class="pad-ul">
+                        <?php if (get_sub_field('form_image')): ?>
+                        <div class="form-image">
+                            <?php echo wp_get_attachment_image( get_sub_field('form_image'), 'full', false, array( "class" => "b-radius")); ?>
+                        </div>
+                        <?php endif ?>
                         
                         <div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> * <?php _translate('contact_us')  ?></div>
                         
-                        <script src="<?php echo get_stylesheet_directory_uri() ?>/forms2.min.js"></script>
-                        
-                        <?php
-                            $mkto_id = get_sub_field('marketo_form_id', 'option');
-                        ?>
-                        
                         <form id="mktoForm_<?php echo $mkto_id; ?>"></form>
-                        <script>
-                            MktoForms2.loadForm("//app-sj25.marketo.com", "320-CHP-056", <?php echo $mkto_id; ?>, function(form) {
-                                jQuery('form').removeClass().removeAttr('style');
-                                jQuery('.mktoForm').css('width', '100%');
-                                jQuery('.mktoGutter').remove();
-                                jQuery('.mktoClear').remove();
-                                jQuery('.mktoOffset').remove();
-                                jQuery('.mktoAsterix').remove();
-                                jQuery('.mktoLabel').css('width', '');
-                                jQuery('input').css('width', '');
-                                jQuery('.mktoButtonWrap').css('margin-left', '');
-                                jQuery('.mktoButton').addClass('button cta');
-                                jQuery('.mktoFieldDescriptor').css('margin-bottom', '')
-                                jQuery('.form-wrapper').fadeIn('400'),
-                                form.onSuccess(function(values, followUpUrl) {});
-                            });
-                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-
-    <?php if (!get_sub_field('video_id')): ?>
-    <div class="grid-x align-middle align-center video-area">
-        <div class="cell text-center box-shadow-over-white b-radius no-overflow video-container">
-            <script src="https://fast.wistia.com/embed/medias/<?php the_sub_field('video_id') ?>.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0px 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_<?php the_sub_field('video_id') ?> videoFoam=true  box-shadow-over-white b-radius" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
-        </div>
-    </div>
-    <?php endif ?>
 </section>
-
 <script>
-		$( document ).ready(function() {
-		    console.log( "video ready!" );
-		    // alert('booger');
-
-		});
+    MktoForms2.loadForm("//app-sj25.marketo.com", "320-CHP-056", <?php echo $mkto_id; ?>, function(form) {
+        jQuery('form').removeClass().removeAttr('style');
+        jQuery('.mktoForm').css('width', '100%');
+        jQuery('.mktoGutter').remove();
+        jQuery('.mktoClear').remove();
+        jQuery('.mktoOffset').remove();
+        jQuery('.mktoAsterix').remove();
+        jQuery('.mktoLabel').css('width', '');
+        jQuery('input').css('width', '');
+        jQuery('.mktoButtonWrap').css('margin-left', '');
+        jQuery('.mktoButton').addClass('button cta');
+        jQuery('.mktoFieldDescriptor').css('margin-bottom', '')
+        jQuery('.form-wrapper').fadeIn('400'),
+        form.onSuccess(function(values, followUpUrl) {});
+    });
 </script>
