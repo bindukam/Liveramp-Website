@@ -60,7 +60,9 @@ $theme_svg = $theme_images.'/svg';
                             <div class="h3 form-title dark-gray"><?php echo get_sub_field('form_title')  ?></div>
                         <?php endif ?>
                         
-                        <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" class="pad-ul">
+                        <div class="fixed-underline">
+                            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" >
+                        </div>
                         
                         <div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> * <?php _translate('contact_us')  ?></div>
                         

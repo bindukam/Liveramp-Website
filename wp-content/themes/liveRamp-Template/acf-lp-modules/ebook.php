@@ -76,7 +76,7 @@ $mkto_id = get_sub_field('marketo_form_id', 'option');
                         
                         <?php if (get_sub_field('form_title')): ?>
                             <div class="h3 form-title dark-gray"><?php echo get_sub_field('form_title')  ?></div>
-                            <div class="fixed-underline pad-ul">
+                            <div class="fixed-underline">
                                 <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" >
                             </div>
                         <?php endif ?>

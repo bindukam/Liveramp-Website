@@ -1,45 +1,32 @@
 <?php
-	$theme_uri = get_template_directory_uri();
-	$theme_images = $theme_uri.'/dist/assets/images';
-	$theme_svg = $theme_images.'/svg';
-	$style = "background-image:url('".$theme_svg."/wavelines-ctastrip-green.svg')";
-
-
- ?>
+    $theme_uri = get_template_directory_uri();
+    $theme_images = $theme_uri.'/dist/assets/images';
+    $theme_svg = $theme_images.'/svg';
+    $style = "background-image:url('".$theme_svg."/wavelines-ctastrip-green.svg')";
+?>
 
 <section class="offer_strip green-bkg relative <?php the_sub_field('width_toggle') ?> wave-graphic <?php if (get_sub_field('overlay')): echo 'overlay-me'; endif; ?>">
-
 	<div class="grid-container z-5-r">
-		<div class="grid-x align-middle align-right pad-1">
-			<div class="cell medium-6 text">
-				<h2 class="yellow">
-					<?php the_sub_field('title') ?>
-				</h2>
-				<div class="white">
-					<?php the_sub_field('description') ?>
-				</div>
-
-			</div>
-			<div class="cell medium-4 text-center">
+		<div class="grid-x align-middle">
+			<div class="cell medium-12 text text-center">
+                <?php if (get_sub_field('title')): ?>
+				<h2 class="green"><?php the_sub_field('title') ?></h2>
+                <?php endif ?>
+                <?php if (get_sub_field('description')): ?>
+				<h4 class="green"><?php the_sub_field('description') ?></h4>
+                <?php endif ?>
 				<?php
-
 					$url = get_sub_field('cta')['url'];
 					$title = get_sub_field('cta')['title'];
 					$target = get_sub_field('cta')['target'];
-
-				 ?>
+				?>
+                <?php if ($title): ?>
 				 <a href="<?php echo $url ?>" target="<?php echo $target ?>" class="button"><?php echo $title ?></a>
+                <?php endif ?>
 			</div>
 		</div>
 	</div>
-	<!-- <div class="bg-art align-middle">
-		<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/wavelines-ctastrip-green.svg" alt="" >
-	</div> -->
-
 </section>
-
 <?php if (get_sub_field('overlay')): ?>
-	<div class="footer-overlay">
-
-	</div>
+	<div class="footer-overlay"></div>
 <?php endif ?>

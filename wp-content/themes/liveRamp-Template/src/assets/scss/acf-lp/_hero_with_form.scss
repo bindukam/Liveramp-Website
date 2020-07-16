@@ -2,7 +2,7 @@
 
     .hero-with-form {
         overflow: hidden;
-        padding: 4rem 1rem;
+        padding: 0 1rem 4rem 1rem;
 
         .eyebrow {
             display: flex;
@@ -42,6 +42,17 @@
         }
 
         .form-cell {
+            .form-title {
+                line-height: 18px;
+            }
+
+            .fixed-underline {
+                margin: 0 0 15px 0;
+                svg {
+                    width: 75%;
+                }
+            }
+
             a {
                 color: inherit !important;
             }
@@ -136,12 +147,18 @@
             }
 
             .subheadline {
+                margin-top: 2rem;
+
                 @include breakpoint(large) {
                     margin-top: 3rem;
                 }
             }
             .copy {
-                padding: 2rem 0;
+                padding: 1rem 0;
+
+                @include breakpoint(large) {
+                    padding: 2rem 0;
+                }
             }
 
             .list-item {
@@ -150,6 +167,10 @@
                 padding: 20px 25px;
                 border-radius: 10px;
                 box-shadow: 0 5px 6px -4px rgba(0,0,0,.2);
+
+                .copy {
+                    padding: 0;
+                }
             }
         }
     }
