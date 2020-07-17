@@ -1434,9 +1434,7 @@
                                         "id": ""
                                     },
                                     "post_type": [
-                                        "resources",
-                                        "news",
-                                        "blog-post"
+                                        "page"
                                     ],
                                     "taxonomy": "",
                                     "allow_null": 0,
@@ -1475,5 +1473,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1594841027
+    "modified": 1594949595
 }

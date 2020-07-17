@@ -7,9 +7,9 @@ $theme_svg = $theme_images.'/svg';
 ?>
 
 <section class="hero-with-form primary-bkg">
-    <div class="grid-container green-bkg">
+    <div class="grid-container ">
         <div class="grid-x grid-margin-x align-justify">
-            <div class="cell">
+            <div class="cell green-bkg large-4">
                 <div class="header-logo">
                     <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><?php echo file_get_contents("$theme_svg/lr_logo.svg"); ?></a> 
                 </div>

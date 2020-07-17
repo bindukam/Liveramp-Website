@@ -92,11 +92,11 @@
 					}
 					else {
 						$icon = '<img src="/wp-content/uploads/2019/05/eBook-1.svg" alt="">';
-						$term_name = 'News';
-						$data_blank = 'data-blank="true"';
-						$news_bkg = 'news-bkg';
-						$url =$url = get_field('external_link', $ID);
-						$data_blank = 'data-blank="true"';
+						$term_name = 'eBook';
+						$data_blank = 'data-blank="false"';
+						$news_bkg = '';
+						$url = get_permalink($ID);
+						$data_blank = 'data-blank="false"';
 						$topics = 0;
 					}
 
@@ -113,8 +113,6 @@
 						$cell = 'medium-4 short';
 
 					}
-
-
 				?>
 
 					<!-- three row  -->

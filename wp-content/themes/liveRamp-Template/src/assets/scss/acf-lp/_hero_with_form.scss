@@ -76,18 +76,18 @@
             transform: scale(1);
 
             @include breakpoint(small only) {
-                background-position: 270% bottom;
+                background-position: 170% bottom;
                 background-size: 80%;
             }
 
             @include breakpoint(medium) {
-                background-position: 150% center;
-                background-size: 70%;
+                background-position: 140% bottom;
+                background-size: 55%;
             }
 
             @include breakpoint(large) {
-                background-position: 150% center;
-                background-size: 60%;
+                background-position: 120% center;
+                background-size: 40%;
             }
 
             @include breakpoint(xxlarge) {
@@ -170,6 +170,56 @@
 
                 .copy {
                     padding: 0;
+                }
+            }
+        }
+
+        &.with-image-block {
+            .headline {
+                border-bottom: 1px solid $dark-gray-40;
+                margin-bottom: 20px;
+                padding-bottom: 40px;
+            }
+            .subheadline {
+                padding-bottom: 10px;
+            }
+            .copy {
+                padding-bottom: 30px;
+            }
+
+            .form-cell {
+                text-align: center;
+
+                .form-wrapper {
+                    max-width: 550px;
+                    margin: auto;
+                    padding: 4rem;
+
+                    @include breakpoint(medium) {
+                        @include hard-shadow;
+                    }
+
+                    .form-image {
+                        width: 100%;
+                        border-radius: 16px;
+
+                        img {
+                            box-shadow: 0 5px 6px -4px rgba(0,0,0,.4);
+                        }
+                        @include breakpoint(medium) {
+                            @include bot-rt-shadow;
+                        }
+                    }
+
+                    .cta {
+                        margin: 20px auto 0 auto;
+                        width: 100%;
+                        text-align: center;
+                        a {
+                            width: auto;
+                            color: white !important;
+                        }
+                    }
                 }
             }
         }
