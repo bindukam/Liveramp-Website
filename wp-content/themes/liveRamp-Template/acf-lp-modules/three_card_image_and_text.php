@@ -38,82 +38,44 @@
 			<?php if (have_rows('cards')): ?>
 				<?php $i = 1; ?>
 			    <?php while(have_rows('cards')) : ?>
-			    <?php the_row(); ?>
-				<?php
-					 // assign $card to card object
-					$card = get_sub_field('card');
-					 // $ID is the post ID
-					$ID = $card->ID;
-					// get the feature image, title, and category term for the post
-					$image = get_the_post_thumbnail_url($ID,'full');
-					// if there is no image then use the default
-					if (!$image) {
-						$image = '/wp-content/uploads/2017/07/Whitepaper.png';
-					}
-					$title = $card->post_title;
-					
+                    <?php the_row(); ?>
+            <?php
+                        $card = get_sub_field('card');
+                        $ID = $card->ID;
+                        $title = $card->post_title;
+                        $card_image = get_field('card_image', $ID);
+                        $card_eyebrow_text = get_field('card_eyebrow_text', $ID);
+                        $card_eyebrow_icon = get_field('card_eyebrow_icon', $ID);
+                        $card_description = get_field('card_description', $ID);
 
-					if ($card->post_type == 'resources') {
-						$term = get_the_terms($ID, 'resources_categories');
-						$term_id_icon =  $term[0]->term_id;;
-						$term_name = $term[0]->name;
-						$data_blank = 'data-blank="true"';
-						$news_bkg = '';
-						$url = get_field('marketo', $ID);
+                        if (!$card_image) {
+                            $card_image = '/wp-content/uploads/2017/07/Whitepaper.png';
+                        }
+                        if (!$card_eyebrow_icon) {
+                            $card_eyebrow_icon = '/wp-content/uploads/2019/05/eBook-1.svg';
+                        }
 
-						// get resource type
-						$types = get_terms( array(
-						    'taxonomy' => 'resources_categories',
-						    'hide_empty' => true,
-						) );
+                        $term_name = 'eBook';
+                        $data_blank = 'data-blank="false"';
+                        $news_bkg = '';
+                        $url = get_permalink($ID);
+                        $data_blank = 'data-blank="false"';
 
-						foreach($types as $type) {
-						    if ($term_id_icon == $type->term_id) {
-						    	$icon_url = get_field('icon', 'category_' . $type->term_id . '' );
-						    	$icon = '<img src="'.$icon_url.'" class="icon">';
-						    }
-						}
+                        $icon = '<img src="'.$card_eyebrow_icon.'" alt="">';
+                        $style = "background-image:url('".$card_image."')";
 
-						// get resource topic 
-						$topics = get_the_terms( $ID, 'resources_topics' );
-						// var_dump($topics);
+                        if ($weighted) {
+                            if ($i == 1) {
+                                    $cell = 'medium-10';
+                                }
+                            else {
+                                $cell = 'medium-5 short';
+                            }				# code...
+                        } else {
+                            $cell = 'medium-4 short';
 
-
-					}
-					elseif ($card->post_type == 'blog-post') {
-						$icon = '<img src="/wp-content/uploads/2019/05/Document-1.svg" alt="">';
-						$term_name = 'Blog';
-						$data_blank = 'data-blank="false"';
-						$news_bkg = '';
-						$url = get_permalink($ID);
-						$data_blank = 'data-blank="false"';
-						$topics = get_the_terms( $ID, 'blog_categories' );
-
-					}
-					else {
-						$icon = '<img src="/wp-content/uploads/2019/05/eBook-1.svg" alt="">';
-						$term_name = 'eBook';
-						$data_blank = 'data-blank="false"';
-						$news_bkg = '';
-						$url = get_permalink($ID);
-						$data_blank = 'data-blank="false"';
-						$topics = 0;
-					}
-
-					$style = "background-image:url('".$image."')";
-
-					if ($weighted) {
-						if ($i == 1) {
-								$cell = 'medium-10';
-							}
-						else {
-							$cell = 'medium-5 short';
-						}				# code...
-					} else {
-						$cell = 'medium-4 short';
-
-					}
-				?>
+                        }
+            ?>
 
 					<!-- three row  -->
 					<div class="cell resource-card click-card b-radius box-shadow-over-white white-bkg hover <?php echo $cell ?> <?php echo $weighted; ?>" data-url='<?php echo $url ?>' <?php echo $data_blank; ?>>
@@ -161,18 +123,11 @@
 
 
 							<div>
-								<h4 class='title primary'><?php echo $title; ?></h4>
+								<h4 class='title'><?php echo $title; ?></h4>
 							</div>
-							<?php if ($topics): ?>
+							<?php if ($card_description): ?>
 								<div class="dark-slate flexo-bold topic">
-									<?php $i = 1;  ?>
-									<?php foreach ($topics as $key => $value): ?>
-										<?php 
-											$ret = ($i == 1 ? $value->name : '');
-											echo $ret;
-										 ?>
-										<?php ++$i ?>
-									<?php endforeach ?>
+                                    <?php echo $card_description; ?>
 								</div>
 							<?php endif ?>
 
