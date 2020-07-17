@@ -48,6 +48,9 @@
                         $card_eyebrow_icon = get_field('card_eyebrow_icon', $ID);
                         $card_description = get_field('card_description', $ID);
 
+                        if (!$card_eyebrow_text) {
+                            $card_eyebrow_text = 'eBook';
+                        }
                         if (!$card_image) {
                             $card_image = '/wp-content/uploads/2017/07/Whitepaper.png';
                         }
@@ -55,7 +58,6 @@
                             $card_eyebrow_icon = '/wp-content/uploads/2019/05/eBook-1.svg';
                         }
 
-                        $term_name = 'eBook';
                         $data_blank = 'data-blank="false"';
                         $news_bkg = '';
                         $url = get_permalink($ID);
@@ -115,7 +117,7 @@
 										<?php echo $icon ?>
 									</div>
 									<div class="cell auto orange">
-										<?php echo $term_name; ?>
+										<?php echo $card_eyebrow_text; ?>
 									</div>
 								</div>
 
