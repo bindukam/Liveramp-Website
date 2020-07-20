@@ -15,7 +15,7 @@ $mkto_id = get_sub_field('marketo_form_id', 'option');
                     <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><?php echo file_get_contents("$theme_svg/lr_logo.svg"); ?></a> 
                 </div>
                 <div class="cell eyebrow">
-                    <div class="icon" style="background-image:url(<?php echo get_sub_field('eyebrow_icon'); ?>);"></div>
+                    <div class="icon"><img src="<?php echo get_sub_field('eyebrow_icon'); ?>"></div>
                     <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>
                 </div>
                 <?php if (get_sub_field('title')): ?>
@@ -87,7 +87,7 @@ $mkto_id = get_sub_field('marketo_form_id', 'option');
                         </div>
                         <?php endif ?>
                         
-                        <div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> * <?php _translate('contact_us')  ?></div>
+                        <div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> * </div>
                         
                         <form id="mktoForm_<?php echo $mkto_id; ?>"></form>
                     </div>

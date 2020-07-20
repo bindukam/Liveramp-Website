@@ -4,6 +4,14 @@
         overflow: hidden;
         padding: 0 1rem 4rem 1rem;
 
+        @include breakpoint(small only) {
+            padding-bottom: 1rem;
+        }
+
+        @include breakpoint(medium only) {
+            padding-bottom: 2rem;
+        }
+
         .eyebrow {
             display: flex;
             padding-bottom: 8px;
@@ -15,6 +23,14 @@
                 width: 22px;
                 height: 22px;
                 margin-right: 6px;
+
+                svg {
+                    max-height: 22px;
+                    max-width: 22px;
+                    path {
+                        stroke: white !important;
+                    }
+                }
             }
         }
 
@@ -48,6 +64,7 @@
 
             .fixed-underline {
                 margin: 0 0 15px 0;
+
                 svg {
                     width: 75%;
                 }
@@ -106,7 +123,6 @@
             }
         }
 
-
         &.ebook-bottom-section {
             @include breakpoint(large) {
                 padding-top: 0;
@@ -115,7 +131,7 @@
             &:before {
                 background-image: none !important;
             }
-            
+
             .ebook-float {
                 min-height: 75px;
                 position: relative;
@@ -127,9 +143,11 @@
                 &:before {
                     background-image: none !important;
                 }
+
                 @include breakpoint(small) {
                     display: none;
                 }
+
                 @include breakpoint(large) {
                     display: inherit;
                 }
@@ -153,6 +171,7 @@
                     margin-top: 3rem;
                 }
             }
+
             .copy {
                 padding: 1rem 0;
 
@@ -180,9 +199,11 @@
                 margin-bottom: 20px;
                 padding-bottom: 40px;
             }
+
             .subheadline {
                 padding-bottom: 10px;
             }
+
             .copy {
                 padding-bottom: 30px;
             }
@@ -206,6 +227,7 @@
                         img {
                             box-shadow: 0 5px 6px -4px rgba(0,0,0,.4);
                         }
+
                         @include breakpoint(medium) {
                             @include bot-rt-shadow;
                         }
@@ -215,11 +237,91 @@
                         margin: 20px auto 0 auto;
                         width: 100%;
                         text-align: center;
+
                         a {
                             width: auto;
                             color: white !important;
                         }
                     }
+                }
+            }
+        }
+
+        &.media {
+
+            &:before {
+                content: '';
+                width: 100%;
+                position: absolute;
+                top: 50px;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-image: url(../images/svg/wavelines-green.svg) !important;
+                z-index: 0;
+                background-repeat: repeat-y;
+                transform: scale(-1);
+
+                @include breakpoint(small only) {
+                    display: none;
+                }
+
+                @include breakpoint(medium only) {
+                    display: none;
+                }
+
+                @include breakpoint(large) {
+                    background-position: -420px bottom;
+                    background-size: 68%;
+                }
+
+                @include breakpoint(xxlarge) {
+                    //background-position: -160px;
+                    //background-size: 35%;
+                }
+            }
+        }
+
+        &.media-top-section {
+        }
+
+        &.media-bottom-section {
+            &:before {
+                display: none;
+            }
+            .media-video {
+                @include breakpoint(small) {
+                    padding-top: 20px;
+                }
+
+                @include breakpoint(medium) {
+                    padding-top: 40px;
+                }
+
+                @include breakpoint(large) {
+                    margin-top: -350px;
+                    padding-top: 0;
+                }
+            }
+
+            .media-float {
+
+                &:before {
+                    top: 0;
+                }
+                min-height: 350px;
+                position: relative;
+                z-index: -1;
+                margin-left: -1rem;
+                margin-right: -1rem;
+                padding: 0;
+
+                @include breakpoint(small) {
+                    display: none;
+                }
+
+                @include breakpoint(large) {
+                    display: inherit;
                 }
             }
         }

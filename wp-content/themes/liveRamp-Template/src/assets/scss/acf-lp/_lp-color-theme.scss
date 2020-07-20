@@ -47,4 +47,52 @@
             }
         }
     }
+
+    #dark-blue-theme {
+        .hero-with-form.media {
+            &:before {
+                background-image: url(../../assets/images/svg/wavelines-db.svg);
+            }
+        }
+    }
+
+    #core-blue-theme {
+        .hero-with-form.media {
+            &:before {
+                background-image: url(../../assets/images/svg/wavelines-cb.svg);
+            }
+        }
+    }
+
+    #dark-gray-theme {
+        .hero-with-form.media {
+            &:before {
+                background-image: url(../../assets/images/svg/wavelines-dg.svg);
+            }
+        }
+    }
+
+    #medium-blue-theme {
+        .hero-with-form.media {
+            &:before {
+                background-image: url(../../assets/images/svg/wavelines-mb.svg);
+            }
+        }
+    }
+
+    #teal-theme {
+        .hero-with-form.media {
+            &:before {
+                background-image: url(../../assets/images/svg/wavelines-teal.svg);
+            }
+        }
+    }
+
+    #yellow-theme {
+        .hero-with-form.media {
+            &:before {
+                background-image: url(../../assets/images/svg/wavelines-yellow.svg);
+            }
+        }
+    }
 }

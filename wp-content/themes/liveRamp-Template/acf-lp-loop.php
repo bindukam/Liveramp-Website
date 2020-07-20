@@ -49,8 +49,8 @@
                 }
 
                 // Standard Media - Video and SlideShare
-                if($module_name == 'standard_media'){
-                    include ('acf-lp-modules/standard_medi.php');
+                if($module_name == 'media'){
+                    include ('acf-lp-modules/media.php');
                 }
 
             }

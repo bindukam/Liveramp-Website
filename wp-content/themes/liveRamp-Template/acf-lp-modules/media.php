@@ -6,10 +6,10 @@ $theme_svg = $theme_images.'/svg';
 
 ?>
 
-<section class="hero-with-form primary-bkg">
+<section class="hero-with-form primary-bkg media">
     <div class="grid-container ">
         <div class="grid-x grid-margin-x align-justify">
-            <div class="cell green-bkg large-4">
+            <div class="cell green-bkg large-4 small-6">
                 <div class="header-logo">
                     <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><?php echo file_get_contents("$theme_svg/lr_logo.svg"); ?></a> 
                 </div>
@@ -18,39 +18,25 @@ $theme_svg = $theme_images.'/svg';
     </div>
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-justify">
-            <div class="cell  large-6 content">
+            <div class="cell large-6 content">
                 <div class="cell eyebrow">
                     <div class="icon"><img src="<?php echo get_sub_field('eyebrow_icon'); ?>"></div>
                     <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>
                 </div>
                 <?php if (get_sub_field('title')): ?>
-                    <h1 class="green"><?php the_sub_field('title') ?></h1>
-                 <?php endif ?>
-                <?php if (get_sub_field('list_headline')): ?>
-                    <h4 class="green"><?php the_sub_field('list_headline') ?></h4>
-                 <?php endif ?>
-                <?php if (have_rows('list')): ?>
-                    <?php while(have_rows('list')) : ?>
-                    <?php the_row(); ?>
-                    <?php
-                        $icon = '';
-                        $copy = '';
-                        $card = get_sub_field('card');
-                        if (get_sub_field('icon')) {
-                            $icon = get_sub_field('icon');
-                        }
-                        if (get_sub_field('copy')) {
-                            $copy = get_sub_field('copy');
-                        }
-                    ?>
-                    <div class="cell list-item">
-                        <div class="icon" style="background-image:url(<?php echo $icon; ?>);"></div>
-                        <div class="copy green"><?php echo $copy; ?></div>
-                    </div>
-                    <?php endwhile ?>
+                    <h1 class="headline green"><?php the_sub_field('title') ?></h1>
                 <?php endif ?>
-
+                <?php if (get_sub_field('subheadline')): ?>
+                    <div class="h3 bold green subheadline"><?php the_sub_field('subheadline') ?></div>
+                <?php endif ?>
+                <?php if (get_sub_field('description')): ?>
+                    <div class="copy green"><?php the_sub_field('description') ?></div>
+                <?php endif ?>
             </div>
+            <?php
+                $mkto_id = get_sub_field('marketo_form_id', 'option');
+            ?>
+            <?php if ($mkto_id): ?>
             <div class="cell large-5 form-cell">
                 <div data-sticky-container>
 
@@ -64,13 +50,9 @@ $theme_svg = $theme_images.'/svg';
                             <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" >
                         </div>
                         
-                        <div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> * </div>
+                        <div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> *</div>
                         
                         <script src="<?php echo get_stylesheet_directory_uri() ?>/forms2.min.js"></script>
-                        
-                        <?php
-                            $mkto_id = get_sub_field('marketo_form_id', 'option');
-                        ?>
                         
                         <form id="mktoForm_<?php echo $mkto_id; ?>"></form>
                         <script>
@@ -93,6 +75,24 @@ $theme_svg = $theme_images.'/svg';
                     </div>
                 </div>
             </div>
+            <?php endif ?>
         </div>
     </div>
 </section>
+
+
+<?php
+    $video_id = get_sub_field('video_id');
+?>
+<?php if ($video_id): ?>
+<section class="hero-with-form media-bottom-section">
+    <div class="hero-with-form primary-bkg media media-float"></div>
+    <div class="grid-container media-video">
+        <div class="grid-x grid-margin-x align-justify">
+            <div class="cell ">
+				<script src="https://fast.wistia.com/embed/medias/<?php echo $video_id ?>.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0px 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_<?php echo $video_id; ?> videoFoam=true  box-shadow-over-white b-radius" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+<?php endif ?>

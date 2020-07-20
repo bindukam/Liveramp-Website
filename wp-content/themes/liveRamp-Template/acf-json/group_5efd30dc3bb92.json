@@ -899,7 +899,7 @@
                 },
                 "layout_5f0c9b59fcb9b": {
                     "key": "layout_5f0c9b59fcb9b",
-                    "name": "standard_media",
+                    "name": "media",
                     "label": "LP Standard Media",
                     "display": "row",
                     "sub_fields": [
@@ -924,9 +924,52 @@
                         },
                         {
                             "key": "field_5f0c9b59fcb9e",
-                            "label": "Eyebrow",
-                            "name": "eyebrow",
-                            "type": "select",
+                            "label": "Eyebrow Text",
+                            "name": "eyebrow_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f124370f7c3a",
+                            "label": "Eyebrow Icon",
+                            "name": "eyebrow_icon",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5f1242fff7c39",
+                            "label": "Media Type",
+                            "name": "media_type",
+                            "type": "radio",
                             "instructions": "",
                             "required": 1,
                             "conditional_logic": 0,
@@ -936,18 +979,15 @@
                                 "id": ""
                             },
                             "choices": {
-                                "slideshare": "SlideShare",
-                                "video": "Video"
+                                "video": "Video",
+                                "slideshare": "SlideShare"
                             },
-                            "default_value": [
-                                "video"
-                            ],
                             "allow_null": 0,
-                            "multiple": 0,
-                            "ui": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
                             "return_format": "value",
-                            "ajax": 0,
-                            "placeholder": ""
+                            "save_other_choice": 0
                         },
                         {
                             "key": "field_5f0c9c44fcba7",
@@ -959,7 +999,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5f0c9b59fcb9e",
+                                        "field": "field_5f1242fff7c39",
                                         "operator": "==",
                                         "value": "video"
                                     }
@@ -977,6 +1017,68 @@
                             "maxlength": ""
                         },
                         {
+                            "key": "field_5f12445af7c3b",
+                            "label": "Video Content Type",
+                            "name": "video_content_type",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f1242fff7c39",
+                                        "operator": "==",
+                                        "value": "video"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "webinar": "Webinar",
+                                "ondemand": "On-Demand"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "",
+                            "layout": "vertical",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
+                            "key": "field_5f1244acf7c3c",
+                            "label": "Select Webinar",
+                            "name": "select_webinar",
+                            "type": "post_object",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f12445af7c3b",
+                                        "operator": "==",
+                                        "value": "webinar"
+                                    }
+                                ]
+                            ],
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "post_type": [
+                                "page"
+                            ],
+                            "taxonomy": "",
+                            "allow_null": 0,
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
+                        },
+                        {
                             "key": "field_5f0c9c35fcba6",
                             "label": "SlideShare ID",
                             "name": "slideshare_id",
@@ -986,7 +1088,7 @@
                             "conditional_logic": [
                                 [
                                     {
-                                        "field": "field_5f0c9b59fcb9e",
+                                        "field": "field_5f1242fff7c39",
                                         "operator": "==",
                                         "value": "slideshare"
                                     }
@@ -1048,7 +1150,15 @@
                             "type": "text",
                             "instructions": "",
                             "required": 0,
-                            "conditional_logic": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f1242fff7c39",
+                                        "operator": "==",
+                                        "value": "slideshare"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -1066,8 +1176,16 @@
                             "name": "marketo_form_id",
                             "type": "text",
                             "instructions": "",
-                            "required": 1,
-                            "conditional_logic": 0,
+                            "required": 0,
+                            "conditional_logic": [
+                                [
+                                    {
+                                        "field": "field_5f1242fff7c39",
+                                        "operator": "==",
+                                        "value": "slideshare"
+                                    }
+                                ]
+                            ],
                             "wrapper": {
                                 "width": "",
                                 "class": "",
@@ -1474,5 +1592,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1595018816
+    "modified": 1595032813
 }
