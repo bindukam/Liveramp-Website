@@ -3,6 +3,25 @@
     "title": "LP Page Builder",
     "fields": [
         {
+            "key": "field_5f1740d261cfd",
+            "label": "Page Title",
+            "name": "page_title",
+            "type": "text",
+            "instructions": "This is to display in Browser tab or Browser window title.\r\nIf left blank, the Post title will be used instead.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5efd3490fb561",
             "label": "LP Modules",
             "name": "modules",
@@ -1592,5 +1611,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1595289419
+    "modified": 1595359513
 }
