@@ -82,17 +82,32 @@ $theme_svg = $theme_images.'/svg';
 
 
 <?php
+    $media_type = get_sub_field('media_type');
     $video_id = get_sub_field('video_id');
+    $ss = get_sub_field('slideshare_ss');
 ?>
-<?php if ($video_id): ?>
 <section class="hero-with-form media-bottom-section">
     <div class="hero-with-form primary-bkg media media-float"></div>
     <div class="grid-container media-video">
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell ">
-				<script src="https://fast.wistia.com/embed/medias/<?php echo $video_id ?>.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0px 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_<?php echo $video_id; ?> videoFoam=true  box-shadow-over-white b-radius" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+                <?php 
+                    if ($media_type == 'video') {
+                        if ($video_id) { 
+                ?>
+                        <script src="https://fast.wistia.com/embed/medias/<?php echo $video_id ?>.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0px 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_<?php echo $video_id; ?> videoFoam=true  box-shadow-over-white b-radius" style="height:100%;position:relative;width:100%">&nbsp;</div></div></div>
+                <?php   }
+                    } else {
+                        if ($ss) {
+                ?>
+                            <div class="ss-iframe-wrapper">
+                            <?php echo lrlp_slideshare($ss); ?>
+                            </div>
+                <?php 
+                        }
+                    }
+                ?>
             </div>
         </div>
     </div>
 </section>
-<?php endif ?>

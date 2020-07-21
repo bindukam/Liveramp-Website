@@ -1080,10 +1080,10 @@
                         },
                         {
                             "key": "field_5f0c9c35fcba6",
-                            "label": "SlideShare ID",
-                            "name": "slideshare_id",
+                            "label": "SlideShare Shortcode",
+                            "name": "slideshare_ss",
                             "type": "text",
-                            "instructions": "",
+                            "instructions": "A popup will appear above the slideshow. Copy the code from the field titled “WordPress Shortcode”. \r\nIt should look like this: <b>‘[slideshare id=…’<\/b>.",
                             "required": 1,
                             "conditional_logic": [
                                 [
@@ -1592,5 +1592,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1595032813
+    "modified": 1595289419
 }
