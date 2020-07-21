@@ -217,6 +217,13 @@
                     margin: auto;
                     padding: 4rem;
 
+                    @include breakpoint(small only) {
+                        padding: 1rem;
+                    }
+
+                    @include breakpoint(medium only) {
+                        padding: 2rem;
+                    }
                     @include breakpoint(medium) {
                         @include hard-shadow;
                     }
@@ -309,6 +316,7 @@
                 }
 
                 padding-top: 0;
+
                 @include breakpoint(small) {
                     margin-top: -125px;
                 }
@@ -338,6 +346,7 @@
                     &:before {
                         display: none;
                     }
+
                     min-height: 125px;
                 }
 
@@ -345,6 +354,7 @@
                     &:before {
                         display: none;
                     }
+
                     min-height: 200px;
                 }
 
@@ -352,6 +362,7 @@
                     &:before {
                         display: inherit;
                     }
+
                     min-height: 350px;
                 }
             }
