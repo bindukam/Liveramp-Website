@@ -708,4 +708,21 @@ function show_blog_author_name( $author_name ) {
  
 }
 /** "Add filter to change blog author name " code end*/
+
+ /** "Add filter to change engineering author name " code start*/
+add_filter( 'the_author', 'show_engineering_author_name', 10, 1 );
  
+function show_engineering_author_name( $author_name ) {
+	$post = get_post( $post );
+    if ( $post ) { 
+		if($post->post_type=='engineering'){
+		 $blog_author_data = get_field('blog_author',$post->ID);
+			if(isset($blog_author_data) && !empty($blog_author_data->post_title)){
+				return  $blog_author_data->post_title;
+			}
+		}
+	}
+	return  $author_name;
+ 
+}
+/** "Add filter to change engineering author name " code end*/

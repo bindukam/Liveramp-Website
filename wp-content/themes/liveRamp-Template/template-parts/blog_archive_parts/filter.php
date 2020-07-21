@@ -30,22 +30,38 @@
 						</div>
 						<div class="cell filter author-filter large-shrink">
 							<?php
-								if( $authors = get_users( array(
-										'orderby' => 'name',
-										'hide_empty' => 1,
-										// 'role'       => 'author'
-										 )
-									   )
-									):
+								//Fetch published custom-post-type Authors 
+								$pargs = array(
+									'post_type' => 'authors',
+									'post_status' => 'publish',
+									'orderby' => 'post_title',
+									'order' => 'ASC',
+									'posts_per_page'   => -1,
+								);
+								// The Query
+								$the_query = new WP_Query($pargs);
+								
+								if ( $the_query->have_posts() ) : 
+									while( $the_query->have_posts() ): $the_query->the_post();
+										$author_list[get_the_ID()] = get_the_title();		
+									endwhile;
+									wp_reset_postdata();
+								 
+								else : 
+									$author_list = array();  
+								endif;  
+								
+								if( !empty($author_list) ):
 
 									echo '<select name="author" data-default="Author" aria-label="Author"><option value="" hidden>Author</option>';
-									foreach ( $authors as $author ) :
-										$aid = $author->ID;
-										// WP_Query arguments
+									foreach($author_list as $authorID => $authorName):
+										
 										// WP_Query arguments
 										$args = array(
-											'post_type'              => array( 'blog-post' ),
-											'author'                 =>  $aid,
+											'post_type'                => array( 'blog-post' ),
+											'post_status'              =>  array( 'publish','acf-disabled','private' ),
+											'meta_key'                 =>  'blog_author',
+											'meta_value'               =>  $authorID,
 										);
 
 										// The Query
@@ -54,7 +70,7 @@
 										// The Loop
 										if ($check_author_query->have_posts()) {
 											// var_dump($author);
-											echo '<option value="' . $author->user_nicename . '">' . $author->display_name . '</option>'; // ID of the category as the value of an option
+											echo '<option value="' . $authorID . '">' . $authorName . '</option>'; // ID of the category as the value of an option
 										}
 
 										// Restore original Post Data

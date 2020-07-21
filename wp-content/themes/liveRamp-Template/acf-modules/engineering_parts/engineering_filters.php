@@ -2,31 +2,49 @@
 
 	<div class="grid-x grid-margin-y">
 			<div class="cell filter author-filter">
-				<label for="author">Authors </label>
+			<?php 
+			//Fetch published custom-post-type Authors 
+			$pargs = array(
+				'post_type' => 'authors',
+				'post_status' => 'publish',
+				'orderby' => 'post_title',
+				'order' => 'ASC',
+				'posts_per_page'   => -1,
+			);
+			// The Query
+			$the_query = new WP_Query($pargs);
+			
+			if ( $the_query->have_posts() ) : 
+				while( $the_query->have_posts() ): $the_query->the_post();
+					$author_list[get_the_ID()] = get_the_title();		
+				endwhile;
+				wp_reset_postdata();
+			 
+			else : 
+				$author_list = array();  
+			endif;  
+
+			?>
+				<label for="author" aria-label="Authors">Authors </label>
 				<?php
-					if( $authors = get_users( array(
-							'orderby' => 'name',
-							'hide_empty' => 1,
-							// 'role'       => 'author'
-							 )
-						   )
-						):
+					
+					if( !empty($author_list) ):
 
 						echo '<select name="authorfilter" id="authorfilter" data-default="Author"><option value="" hidden>Author</option>';
-						foreach ( $authors as $author ) :
-							$aid = $author->ID;
-							
+						foreach($author_list as $authorID => $authorName):
+
 							$args = array(
-								'post_type'              => array( 'engineering' ),
-								'author'                 =>  $aid,
+								'post_type'                => array( 'engineering' ),
+								'post_status'              =>  array( 'publish','acf-disabled','private' ),
+								'meta_key'                 =>  'blog_author',
+								'meta_value'               =>  $authorID,
 							);
 
 							// The Query
 							$check_author_query = new WP_Query( $args );
-
 							// The Loop
 							if ($check_author_query->have_posts()) {
-								echo '<option value="' . $author->ID . '">' . $author->display_name . '</option>'; // ID of the category as the value of an option
+								echo '<option value="' . $authorID . '">' . $authorName . '</option>'; // ID of the category as the value of an option
 							}
 
 							// Restore original Post Data
@@ -41,7 +59,7 @@
 			</div>
 
 			<div class="cell category-filter ">
-				<label for="category">Category </label>
+				<label for="category" aria-label="Category">Category </label>
 				<?php
 					if( $terms = get_terms( array(
 							'taxonomy' => 'engineering_categories',
@@ -61,7 +79,7 @@
 			</div>
 			
 			<div class="cell filter date-filter">
-				<label for="date_field">Date </label>
+				<label for="date_field" aria-label="Date">Date </label>
 				<?php
 					$current_yesr  = date("Y");
 					$already_selected_value = date("Y");
