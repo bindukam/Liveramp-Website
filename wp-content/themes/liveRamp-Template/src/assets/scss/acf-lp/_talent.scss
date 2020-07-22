@@ -6,6 +6,15 @@
         margin-bottom: 4rem;
         overflow: hidden;
 
+        @include breakpoint(small only) {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        @include breakpoint(medium only) {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
         h2.title {
             color: inherit !important;
         }
