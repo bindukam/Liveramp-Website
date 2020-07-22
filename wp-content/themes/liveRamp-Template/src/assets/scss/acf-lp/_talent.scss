@@ -1,0 +1,100 @@
+.page-template-page-lp {
+
+    .lp-talent {
+        position: relative;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        overflow: hidden;
+
+        h2.title {
+            color: inherit !important;
+        }
+
+        .quote {
+            padding: 20px 0 0 65px;
+            position: relative;
+
+            .quote-text {
+                color: #1D3564;
+                font-size: 1.5rem;
+                z-index: 1;
+                position: relative;
+            }
+
+            .quote-name {
+                color: $green;
+                padding: 20px 0 0 0;
+            }
+
+            .quote-logo {
+                img {
+                    max-width: 150px;
+                }
+            }
+
+            &:before {
+                content: '';
+                width: 84px;
+                height: 62px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-image: url(../images/quote.png);
+                background-repeat: no-repeat;
+                z-index: 0;
+            }
+        }
+
+        .fixed-underline {
+            margin: 0 0 15px 0;
+
+            #title-underline {
+                width: 75%;
+                .cls-1, .cls-2 {
+                    stroke: $green !important;
+                }
+            }
+        }
+
+        .list-headline {
+            margin: 4rem 0 0 0;
+            color: $green !important;
+
+            @include breakpoint(large) {
+                margin-top: 0;
+            }
+        }
+        .list-item {
+            display: flex;
+
+            .item-col {
+                flex: 0 1 auto;
+                margin: 0 0 20px 0;
+
+                .circle {
+                    display: block;
+                    filter: drop-shadow(6px 3px 0px $black-a20);
+                    justify-content: center;
+                    height: 75px;
+                    width: 100px;
+                }
+
+                .circle-image {
+                    clip-path: circle(36px at center);
+                    height: 100%;
+                    width: auto;
+                    max-width: unset;
+                    position: absolute;
+                }
+
+                .speaker-name {
+                    font-weight: bold;
+                }
+
+                img {
+                    max-width: 150px;
+                }
+            }
+        }
+    }
+}

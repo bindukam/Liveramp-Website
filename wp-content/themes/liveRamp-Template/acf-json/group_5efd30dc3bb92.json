@@ -361,7 +361,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "url",
+                                    "return_format": "id",
                                     "preview_size": "thumbnail",
                                     "library": "all",
                                     "min_width": "",
@@ -423,7 +423,7 @@
                                         "class": "",
                                         "id": ""
                                     },
-                                    "return_format": "url",
+                                    "return_format": "id",
                                     "preview_size": "medium",
                                     "library": "all",
                                     "min_width": "",
@@ -487,7 +487,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "url",
+                            "return_format": "id",
                             "preview_size": "medium",
                             "library": "all",
                             "min_width": "",
@@ -1611,5 +1611,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1595369359
+    "modified": 1595446755
 }
