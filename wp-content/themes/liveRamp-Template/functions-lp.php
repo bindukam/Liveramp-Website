@@ -31,7 +31,8 @@
             "hierarchical" => false,
             "rewrite" => "", array( "slug" => "landing-page", "with_front" => false ),
             "query_var" => true,
-            "supports" => array( "title", "editor", "excerpt", "custom-fields", "revisions", "color_theme" ),
+            'menu_icon' => '/wp-content/themes/liveRamp-Template/src/assets/images/website_icon.png',
+            "supports" => array( "title", "editor", "custom-fields", "revisions", "color_theme" ),
         );
 
         register_post_type( "lp", $args );
