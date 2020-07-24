@@ -10,6 +10,7 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
         }
+
         @include breakpoint(medium only) {
             margin-top: 2rem;
             margin-bottom: 2rem;
@@ -42,15 +43,14 @@
             }
 
             &:before {
-                content: '';
-                width: 84px;
-                height: 62px;
+                content: '\201c';
+                font-family: 'Flexo Bold';
+                color: var(--theme-primary-color);
+                font-size: 14rem;
                 position: absolute;
-                top: 0;
-                left: 0;
-                background-image: url(../images/quote.png);
-                background-repeat: no-repeat;
-                z-index: 0;
+                z-index: -1;
+                top: -70px;
+                left: -15px;
             }
         }
 
@@ -59,6 +59,7 @@
 
             #title-underline {
                 width: 75%;
+
                 .cls-1, .cls-2 {
                     stroke: $green !important;
                 }
@@ -73,6 +74,7 @@
                 margin-top: 0;
             }
         }
+
         .list-item {
             display: flex;
 
