@@ -41,10 +41,10 @@ if(have_rows('modules', $post_ID)){
                     $file_mime_type = $file['mime_type'];
                     $file_path = get_attached_file($file['ID']);
 
-                    echo "<h2>".dirname( __FILE__ )."</h2>";
-                    echo "<h2>".$file_name."</h2>";
-                    echo "<h2>".$file_mime_type."</h2>";
-                    echo "<h2>".$file_path."</h2>";
+                    //echo "<h2>".dirname( __FILE__ )."</h2>";
+                    //echo "<h2>".$file_name."</h2>";
+                    //echo "<h2>".$file_mime_type."</h2>";
+                    //echo "<h2>".$file_path."</h2>";
 
                     /*
                     header('Content-type: '.$file_mime_type);
@@ -59,6 +59,15 @@ if(have_rows('modules', $post_ID)){
                         print $buff;
                     }
                     */
+
+
+                    // Header content type
+                    header("Content-type: application/pdf");
+                    header("Content-Length: " . filesize($file_path));
+
+                    // Send the file to the browser.
+                    readfile($file_path);
+                    
                     exit;
                 }
             }
