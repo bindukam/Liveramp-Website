@@ -49,7 +49,7 @@ if(have_rows('modules', $post_ID)){
                     // Header content type
                     //header('Content-type: '.$file_mime_type);
                     //header("Content-Length: " . filesize($file_path));
-                    //readfile($file_path);
+                    readfile($file_path);
                     
                     exit;
                 }
