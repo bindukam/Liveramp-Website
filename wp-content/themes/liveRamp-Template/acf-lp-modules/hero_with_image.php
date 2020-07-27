@@ -4,6 +4,33 @@ $theme_uri = get_stylesheet_directory();
 $theme_images = $theme_uri.'/dist/assets/images';
 $theme_svg = $theme_images.'/svg';
 
+$cta_type = get_sub_field('cta_type');
+if($cta_type == 'none') {
+    $cta_text = '';
+    $cta_url = '';
+    $cta_target = '';
+} else if($cta_type == 'media') {
+    $cta_media_file = get_sub_field('cta_media_file');
+    $cta_text = get_sub_field('cta_text');
+    $cta_url = '?file';
+    $cta_target = '_blank';
+} else if($cta_type == 'page') {
+    $cta_text = get_sub_field('cta_text');
+    $cta_url = get_sub_field('cta_landing_page');
+    $cta_target = '';
+} else if($cta_type == 'url') {
+    $cta_text = get_sub_field('cta_url')['title'];
+    $cta_url = get_sub_field('cta_url')['url'];
+    $cta_target = get_sub_field('cta_url')['target'];
+}
+
+$gated_asset = get_sub_field('gated_asset');
+if($gated_asset) {
+    $parent_form_page = get_sub_field('parent_form_page');
+}
+
+$c = "d";
+
 ?>
 
 <section class="hero-with-form primary-bkg with-image-block">
@@ -35,14 +62,9 @@ $theme_svg = $theme_images.'/svg';
                         <div class="form-image">
                             <?php echo wp_get_attachment_image( get_sub_field('image'), 'full', false, array( "class" => "b-radius")); ?>
                         </div>
-                        <?php if (get_sub_field('cta')):
-
-                            $url = get_sub_field('cta')['url'];
-                            $title = get_sub_field('cta')['title'];
-                            $target = get_sub_field('cta')['target'];
-                        ?>
+                        <?php if ($cta_text !== '' && $cta_url !== ''): ?>
                             <div class="cta">
-                                <a href="<?php echo $url ?>" class="button text white cta" target="<?php echo $target ?>"><?php echo $title ?></a>
+                                <a href="<?php echo $cta_url ?>" class="button text white cta" target="<?php echo $cta_target ?>"><?php echo $cta_text?></a>
                             </div>
                         <?php endif ?>
                     </div>

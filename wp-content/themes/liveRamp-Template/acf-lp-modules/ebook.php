@@ -4,6 +4,35 @@ $theme_uri = get_stylesheet_directory();
 $theme_images = $theme_uri.'/dist/assets/images';
 $theme_svg = $theme_images.'/svg';
 $mkto_id = get_sub_field('marketo_form_id', 'option');
+
+$form_submit_landing_page = get_sub_field('form_submit_landing_page');
+
+$cta_type = get_sub_field('cta_type');
+if($cta_type == 'none') {
+    $cta_text = '';
+    $cta_url = '';
+    $cta_target = '';
+} else if($cta_type == 'media') {
+    $cta_media_file = get_sub_field('cta_media_file');
+    $cta_text = get_sub_field('cta_text');
+    $cta_url = '?file';
+    $cta_target = '_blank';
+} else if($cta_type == 'page') {
+    $cta_text = get_sub_field('cta_text');
+    $cta_url = get_sub_field('cta_landing_page');
+    $cta_target = '';
+} else if($cta_type == 'url') {
+    $cta_text = get_sub_field('cta_url')['title'];
+    $cta_url = get_sub_field('cta_url')['url'];
+    $cta_target = get_sub_field('cta_url')['target'];
+}
+
+$gated_asset = get_sub_field('gated_asset');
+if($gated_asset) {
+    $parent_form_page = get_sub_field('parent_form_page');
+}
+
+$c = "d";
 ?>
 
 <script src="<?php echo get_stylesheet_directory_uri() ?>/forms2.min.js"></script>
@@ -20,15 +49,12 @@ $mkto_id = get_sub_field('marketo_form_id', 'option');
                 </div>
                 <?php if (get_sub_field('title')): ?>
                     <h1 class="green"><?php the_sub_field('title') ?></h1>
-                 <?php endif ?>
-				<?php if (get_sub_field('cta')):
-
-					$url = get_sub_field('cta')['url'];
-					$title = get_sub_field('cta')['title'];
-					$target = get_sub_field('cta')['target'];
-				?>
-				<a href="<?php echo $url ?>" class="button cta" target="<?php echo $target ?>"><?php echo $title ?></a>
-				<?php endif ?>
+                <?php endif ?>
+                <?php if ($cta_text !== '' && $cta_url !== ''): ?>
+                    <div class="cta">
+                        <a href="<?php echo $cta_url ?>" class="button text white cta" target="<?php echo $cta_target ?>"><?php echo $cta_text?></a>
+                    </div>
+                <?php endif ?>
             </div>
         </div>
     </div>
@@ -40,10 +66,10 @@ $mkto_id = get_sub_field('marketo_form_id', 'option');
             <div class="cell  large-6 content">
                 <?php if (get_sub_field('subheadline')): ?>
                     <div class="h3 bold subheadline"><?php the_sub_field('subheadline') ?></div>
-                 <?php endif ?>
+                <?php endif ?>
                 <?php if (get_sub_field('description')): ?>
                     <div class="copy"><?php the_sub_field('description') ?></div>
-                 <?php endif ?>
+                <?php endif ?>
                 <?php if (get_sub_field('list_headline')): ?>
                     <h4 class="green"><?php the_sub_field('list_headline') ?></h4>
                 <?php endif ?>
@@ -90,26 +116,28 @@ $mkto_id = get_sub_field('marketo_form_id', 'option');
                         <div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> * </div>
                         
                         <form id="mktoForm_<?php echo $mkto_id; ?>"></form>
+                        <script>
+                            MktoForms2.loadForm("//app-sj25.marketo.com", "320-CHP-056", <?php echo $mkto_id; ?>, function(form) {
+                                jQuery('form').removeClass().removeAttr('style');
+                                jQuery('.mktoForm').css('width', '100%');
+                                jQuery('.mktoGutter').remove();
+                                jQuery('.mktoClear').remove();
+                                jQuery('.mktoOffset').remove();
+                                jQuery('.mktoAsterix').remove();
+                                jQuery('.mktoLabel').css('width', '');
+                                jQuery('input').css('width', '');
+                                jQuery('.mktoButtonWrap').css('margin-left', '');
+                                jQuery('.mktoButton').addClass('button cta');
+                                jQuery('.mktoFieldDescriptor').css('margin-bottom', '')
+                                jQuery('.form-wrapper').fadeIn('400'),
+                                form.onSuccess(function(values, followUpUrl) {});
+                            });
+                        </script>
+
+                        <a href="<?php echo $form_submit_landing_page; ?>">[TEMP LINK: Form submission will be redirected]</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<script>
-    MktoForms2.loadForm("//app-sj25.marketo.com", "320-CHP-056", <?php echo $mkto_id; ?>, function(form) {
-        jQuery('form').removeClass().removeAttr('style');
-        jQuery('.mktoForm').css('width', '100%');
-        jQuery('.mktoGutter').remove();
-        jQuery('.mktoClear').remove();
-        jQuery('.mktoOffset').remove();
-        jQuery('.mktoAsterix').remove();
-        jQuery('.mktoLabel').css('width', '');
-        jQuery('input').css('width', '');
-        jQuery('.mktoButtonWrap').css('margin-left', '');
-        jQuery('.mktoButton').addClass('button cta');
-        jQuery('.mktoFieldDescriptor').css('margin-bottom', '')
-        jQuery('.form-wrapper').fadeIn('400'),
-        form.onSuccess(function(values, followUpUrl) {});
-    });
-</script>

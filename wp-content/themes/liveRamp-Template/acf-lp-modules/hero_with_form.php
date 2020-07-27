@@ -4,6 +4,8 @@ $theme_uri = get_stylesheet_directory();
 $theme_images = $theme_uri.'/dist/assets/images';
 $theme_svg = $theme_images.'/svg';
 
+$form_submit_landing_page = get_sub_field('form_submit_landing_page');
+
 ?>
 
 <section class="hero-with-form primary-bkg">
@@ -90,6 +92,7 @@ $theme_svg = $theme_images.'/svg';
                                 form.onSuccess(function(values, followUpUrl) {});
                             });
                         </script>
+                        <a href="<?php echo $form_submit_landing_page; ?>">[TEMP LINK: Form submission will be redirected]</a>
                     </div>
                 </div>
             </div>
