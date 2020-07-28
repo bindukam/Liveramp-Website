@@ -5019,7 +5019,7 @@
                             "name": "gated_asset",
                             "type": "true_false",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
@@ -5324,7 +5324,7 @@
                             "name": "gated_asset",
                             "type": "true_false",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": [
                                 [
                                     {
@@ -5452,7 +5452,7 @@
                             "name": "gated_media",
                             "type": "true_false",
                             "instructions": "",
-                            "required": 1,
+                            "required": 0,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -6230,5 +6230,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1595882429
+    "modified": 1595960032
 }
