@@ -73,3 +73,23 @@
     }
     add_filter('wpseo_title','lrlp_custom_title', 10, 1);
     add_filter('pre_get_document_title','lrlp_custom_title');
+
+
+    function lrlp_load_scripts() {
+
+        global $wp_query;
+
+        wp_enqueue_script('jquery');
+
+        wp_register_script( 'lrlp_scripts', get_stylesheet_directory_uri() . '/acf-lp-modules/lp.js', array('jquery') );
+
+        wp_localize_script( 'lrlp_scripts', 'lrlp_scripts_params', array(
+            'posts' => json_encode( $wp_query->query_vars ), // everything about your loop is here
+            'current_page' => get_query_var( 'paged' ) ? get_query_var('paged') : 1,
+            'max_page' => $wp_query->max_num_pages
+        ) );
+
+        wp_enqueue_script( 'lrlp_scripts' );
+    }
+
+    add_action( 'wp_enqueue_scripts', 'lrlp_load_scripts' );
