@@ -18,30 +18,33 @@ $theme_svg = $theme_images.'/svg';
     </div>
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-justify">
-            <div class="cell large-6 content">
-                <div class="cell eyebrow">
-                    <div class="icon"><img src="<?php echo get_sub_field('eyebrow_icon'); ?>"></div>
-                    <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>
-                </div>
-                <?php if (get_sub_field('title')): ?>
-                    <h1 class="headline green"><?php the_sub_field('title') ?></h1>
-                <?php endif ?>
-                <?php if (get_sub_field('subheadline')): ?>
-                    <div class="h3 bold green subheadline"><?php the_sub_field('subheadline') ?></div>
-                <?php endif ?>
-                <?php if (get_sub_field('description')): ?>
-                    <div class="copy green"><?php the_sub_field('description') ?></div>
-                <?php endif ?>
+            <div class="cell large-5 form-cell">
+                        <div class="cell eyebrow">
+                            <div class="icon"><img src="<?php echo get_sub_field('eyebrow_icon'); ?>"></div>
+                            <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>
+                        </div>
+                        <?php if (get_sub_field('title')): ?>
+                            <h1 class="headline green"><?php the_sub_field('title') ?></h1>
+                        <?php endif ?>
+                        <?php if (get_sub_field('subheadline')): ?>
+                            <div class="h3 bold green subheadline"><?php the_sub_field('subheadline') ?></div>
+                        <?php endif ?>
+                        <?php if (get_sub_field('description')): ?>
+                            <div class="copy green"><?php the_sub_field('description') ?></div>
+                        <?php endif ?>
             </div>
-            <?php
-                $mkto_id = get_sub_field('marketo_form_id', 'option');
-            ?>
-            <?php
-                $gf_id = get_sub_field('gravity_form_id');
-                if($gf_id) {
-                    gravity_form($gf_id, false, false, false, null, true, 12);
-                }
-            ?>
+            <div class="cell large-5 form-cell">
+                <div data-sticky-container>
+                    <div class="form-wrapper box-shadow-over-white b-radius white-bkg">
+                        <?php
+                            $gf_id = get_sub_field('gravity_form_id');
+                            if($gf_id) {
+                                gravity_form($gf_id, false, false, false, null, true, 12);
+                            }
+                        ?>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>

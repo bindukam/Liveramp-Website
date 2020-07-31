@@ -68,8 +68,6 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
                         
                         <div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> * </div>
                         
-                        <script src="<?php echo get_stylesheet_directory_uri() ?>/forms2.min.js"></script>
-                        
                         <?php
                             $gf_id = get_sub_field('gravity_form_id');
                             if($gf_id) {

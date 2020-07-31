@@ -33,7 +33,6 @@ if($gated_asset) {
 }
 ?>
 
-<script src="<?php echo get_stylesheet_directory_uri() ?>/forms2.min.js"></script>
 <section class="hero-with-form primary-bkg ebook-top-section">
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-justify">

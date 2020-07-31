@@ -99,11 +99,6 @@ if(have_rows('modules', $post_ID)){
                 } elseif( $module_name == 'lp_media' ){ // Standard Media - Video and SlideShare
                     $gated_asset = get_sub_field('gated_asset');
                     if($gated_asset) {
-                        $parent_form_page = get_sub_field('parent_form_page');
-                        if($parent_form_page) {
-                            $parent_form_postID = $parent_form_page->ID;
-                            $parent_form_link = get_post_permalink($parent_form_postID);
-                        }
                         $redirect_parent_form = false;
                         if(isset($_COOKIE['lrlp_cookie'])) {
                             $IDs = explode (",", $_COOKIE['lrlp_cookie']);
