@@ -37,9 +37,7 @@
 
         register_post_type( "lp", $args );
     }
-
     add_action( 'init', 'lrlp_register_cpt_landingpages' );
-
 
 	function lrlp_slideshare ($shortcode){
 
@@ -74,7 +72,6 @@
     add_filter('wpseo_title','lrlp_custom_title', 10, 1);
     add_filter('pre_get_document_title','lrlp_custom_title');
 
-
     function lrlp_load_scripts() {
 
         global $wp_query;
@@ -91,5 +88,35 @@
 
         wp_enqueue_script( 'lrlp_scripts' );
     }
-
     add_action( 'wp_enqueue_scripts', 'lrlp_load_scripts' );
+
+    function lrlp_after_submission( $entry, $form ) {
+
+        $post_ID = get_the_ID();
+        $cookie_value = '';
+
+        if(isset($_COOKIE['lrlp_cookie'])) {
+            $ID_string = $_COOKIE['lrlp_cookie'];
+            $IDs = explode(',', $ID_string);
+            if(!in_array($post_ID, $IDs)) {
+                $comma = $ID_string != '' ? ',' : '';
+                $ID_string .= $comma . $post_ID;
+                $cookie_value = $ID_string;
+            }
+        } else {
+            $cookie_value = $post_ID;
+        }
+
+        if($cookie_value != '') {
+            $expire = time() + (7 * 24 * 60 * 60);
+            setcookie('lrlp_cookie', $cookie_value, $expire, '/');
+
+            $domain = $_SERVER["HTTP_HOST"];
+            if(false !== strpos( (string) $domain, '.liveramp.com')) {
+                setcookie('lrlp_cookie', $cookie_value, $expire, '/', '.liveramp.com');
+            } else {
+                setcookie('lrlp_cookie', $cookie_value, $expire, '/');
+            }
+        }
+    }
+    add_action( 'gform_after_submission', 'lrlp_after_submission', 10, 2 );

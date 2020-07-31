@@ -36,46 +36,12 @@ $theme_svg = $theme_images.'/svg';
             <?php
                 $mkto_id = get_sub_field('marketo_form_id', 'option');
             ?>
-            <?php if ($mkto_id): ?>
-            <div class="cell large-5 form-cell">
-                <div data-sticky-container>
-
-                    <div class="form-wrapper box-shadow-over-white b-radius white-bkg">
-                        
-                        <?php if (get_sub_field('form_title')): ?>
-                            <div class="h3 form-title dark-gray"><?php echo get_sub_field('form_title')  ?></div>
-                        <?php endif ?>
-                        
-                        <div class="fixed-underline">
-                            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" >
-                        </div>
-                        
-                        <div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> *</div>
-                        
-                        <script src="<?php echo get_stylesheet_directory_uri() ?>/forms2.min.js"></script>
-                        
-                        <form id="mktoForm_<?php echo $mkto_id; ?>"></form>
-                        <script>
-                            MktoForms2.loadForm("//app-sj25.marketo.com", "320-CHP-056", <?php echo $mkto_id; ?>, function(form) {
-                                jQuery('form').removeClass().removeAttr('style');
-                                jQuery('.mktoForm').css('width', '100%');
-                                jQuery('.mktoGutter').remove();
-                                jQuery('.mktoClear').remove();
-                                jQuery('.mktoOffset').remove();
-                                jQuery('.mktoAsterix').remove();
-                                jQuery('.mktoLabel').css('width', '');
-                                jQuery('input').css('width', '');
-                                jQuery('.mktoButtonWrap').css('margin-left', '');
-                                jQuery('.mktoButton').addClass('button cta');
-                                jQuery('.mktoFieldDescriptor').css('margin-bottom', '')
-                                jQuery('.form-wrapper').fadeIn('400'),
-                                form.onSuccess(function(values, followUpUrl) {});
-                            });
-                        </script>
-                    </div>
-                </div>
-            </div>
-            <?php endif ?>
+            <?php
+                $gf_id = get_sub_field('gravity_form_id');
+                if($gf_id) {
+                    gravity_form($gf_id, false, false, false, null, true, 12);
+                }
+            ?>
         </div>
     </div>
 </section>

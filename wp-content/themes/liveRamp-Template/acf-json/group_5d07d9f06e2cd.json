@@ -4541,8 +4541,8 @@
                         },
                         {
                             "key": "field_5f19c224095cb",
-                            "label": "Marketo Form ID",
-                            "name": "marketo_form_id",
+                            "label": "Gravity Form ID",
+                            "name": "gravity_form_id",
                             "type": "text",
                             "instructions": "",
                             "required": 1,
@@ -4836,8 +4836,8 @@
                         },
                         {
                             "key": "field_5f19c82c00dd0",
-                            "label": "Marketo Form ID",
-                            "name": "marketo_form_id",
+                            "label": "Gravity Form ID",
+                            "name": "gravity_form_id",
                             "type": "text",
                             "instructions": "",
                             "required": 1,
@@ -5044,7 +5044,7 @@
                             "key": "field_5f1f3b93a5201",
                             "label": "Parent Form Page",
                             "name": "parent_form_page",
-                            "type": "page_link",
+                            "type": "post_object",
                             "instructions": "",
                             "required": 1,
                             "conditional_logic": [
@@ -5066,8 +5066,9 @@
                             ],
                             "taxonomy": "",
                             "allow_null": 0,
-                            "allow_archives": 0,
-                            "multiple": 0
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
                         }
                     ],
                     "min": "",
@@ -5349,7 +5350,7 @@
                             "key": "field_5f1b6d4513691",
                             "label": "Parent Form Page",
                             "name": "parent_form_page",
-                            "type": "page_link",
+                            "type": "post_object",
                             "instructions": "Landing Page with Form requiring the user to fill out in case if user hasn't done it yet.",
                             "required": 1,
                             "conditional_logic": [
@@ -5371,8 +5372,9 @@
                             ],
                             "taxonomy": "",
                             "allow_null": 0,
-                            "allow_archives": 0,
-                            "multiple": 0
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
                         }
                     ],
                     "min": "",
@@ -5449,7 +5451,7 @@
                         {
                             "key": "field_5f1b6f76e2ad7",
                             "label": "Gated Media?",
-                            "name": "gated_media",
+                            "name": "gated_asset",
                             "type": "true_false",
                             "instructions": "",
                             "required": 0,
@@ -5469,7 +5471,7 @@
                             "key": "field_5f1b6fa1e2ad8",
                             "label": "Parent Form Page",
                             "name": "parent_form_page",
-                            "type": "page_link",
+                            "type": "post_object",
                             "instructions": "Landing Page with Form requiring the user to fill out in case if user hasn't done it yet.",
                             "required": 1,
                             "conditional_logic": [
@@ -5491,8 +5493,9 @@
                             ],
                             "taxonomy": "",
                             "allow_null": 0,
-                            "allow_archives": 0,
-                            "multiple": 0
+                            "multiple": 0,
+                            "return_format": "object",
+                            "ui": 1
                         },
                         {
                             "key": "field_5f19cd458b75a",
@@ -5639,8 +5642,8 @@
                         },
                         {
                             "key": "field_5f19cd2a8b752",
-                            "label": "Marketo Form ID",
-                            "name": "marketo_form_id",
+                            "label": "Gravity Form ID",
+                            "name": "gravity_form_id",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -6230,5 +6233,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1595960032
+    "modified": 1596150507
 }

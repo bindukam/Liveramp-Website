@@ -31,8 +31,6 @@ $gated_asset = get_sub_field('gated_asset');
 if($gated_asset) {
     $parent_form_page = get_sub_field('parent_form_page');
 }
-
-$c = "d";
 ?>
 
 <script src="<?php echo get_stylesheet_directory_uri() ?>/forms2.min.js"></script>
@@ -115,26 +113,12 @@ $c = "d";
                         
                         <div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> * </div>
                         
-                        <form id="mktoForm_<?php echo $mkto_id; ?>"></form>
-                        <script>
-                            MktoForms2.loadForm("//app-sj25.marketo.com", "320-CHP-056", <?php echo $mkto_id; ?>, function(form) {
-                                jQuery('form').removeClass().removeAttr('style');
-                                jQuery('.mktoForm').css('width', '100%');
-                                jQuery('.mktoGutter').remove();
-                                jQuery('.mktoClear').remove();
-                                jQuery('.mktoOffset').remove();
-                                jQuery('.mktoAsterix').remove();
-                                jQuery('.mktoLabel').css('width', '');
-                                jQuery('input').css('width', '');
-                                jQuery('.mktoButtonWrap').css('margin-left', '');
-                                jQuery('.mktoButton').addClass('button cta');
-                                jQuery('.mktoFieldDescriptor').css('margin-bottom', '')
-                                jQuery('.form-wrapper').fadeIn('400'),
-                                form.onSuccess(function(values, followUpUrl) {});
-                            });
-                        </script>
-
-                        <a href="<?php echo $form_submit_landing_page; ?>">[TEMP LINK: Form submission will be redirected]</a>
+                        <?php
+                            $gf_id = get_sub_field('gravity_form_id');
+                            if($gf_id) {
+                                gravity_form($gf_id, false, false, false, null, false, 12);
+                            }
+                        ?>
                     </div>
                 </div>
             </div>
