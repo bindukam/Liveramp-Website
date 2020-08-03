@@ -22,9 +22,9 @@ if(have_rows('modules', $post_ID)){
 
             if(!empty($_POST)){ // Gravity form just submitted successfully.
 
-                // Hero with Image Block 
+                // Hero with Image Block
                 // eBook (2nd variant design)
-                if( $module_name == 'lp_hero_with_form' || 
+                if( $module_name == 'lp_hero_with_form' ||
                     $module_name == 'lp_ebook' ){
                     $post_ID = get_the_ID();
                     $form_submit_landing_page = get_sub_field('form_submit_landing_page');
@@ -34,7 +34,7 @@ if(have_rows('modules', $post_ID)){
                     }
                 }
             } else {
-                
+
                 $parent_form_page = get_sub_field('parent_form_page');
                 $parent_form_postID = 0;
                 $parent_form_link = '';
@@ -45,14 +45,14 @@ if(have_rows('modules', $post_ID)){
                     $parent_form_link = get_post_permalink($parent_form_postID);
                 }
 
-                if( $module_name == 'lp_hero_with_image_block' || // Hero with Image Block 
+                if( $module_name == 'lp_hero_with_image_block' || // Hero with Image Block
                     $module_name == 'lp_ebook' ||                 // eBook (2nd variant design)
                     $module_name == 'lp_image_and_text' ) {       // Image and Text Module
 
                     $gated_asset = get_sub_field('gated_asset');
                     if( !$gated_asset ) {
                         $file_mode = 'PERMIT'; // non-gated asset is always file permit.
-                    } elseif( isset($_COOKIE['lrlp_cookie']) && $parent_form_postID > 0 ) {
+                    } elseif( array_key_exists('lrlp_cookie', $_COOKIE) && $parent_form_postID > 0 ) {
                         // for gated assets, always check to see cookie exists
                         $IDs = explode (",", $_COOKIE['lrlp_cookie']);
                         if(in_array($parent_form_postID, $IDs)) {

@@ -47,6 +47,21 @@
                 if($module_name == 'lp_media'){
                     include ('acf-lp-modules/media.php');
                 }
+
+                // Event Hero
+                if($module_name == 'lp_event_hero'){
+                    include ('acf-lp-modules/event_hero.php');
+                }
+
+                // Event Details
+                if($module_name == 'lp_event_details'){
+                    include ('acf-lp-modules/event_details.php');
+                }
+
+                // Event Form
+                if($module_name == 'lp_event_form'){
+                    include ('acf-lp-modules/event_form.php');
+                }
             }
         }
     }
