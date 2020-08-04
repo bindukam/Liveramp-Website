@@ -1,7 +1,96 @@
 .single-lp {
 
     .lp-event-hero {
-        background-color: green;
+        background-color: transparent;
+        min-height: 620px;
 
+        .hero-image {
+            margin-right: 0;
+            margin-left: 0;
+            max-width: 100%;
+            overflow: hidden;
+            height: auto;
+            width: 100%;
+            display: block;
+            position: absolute;
+            z-index: 1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            min-height: 300px;
+            @include breakpoint(medium) {
+                min-height: 580px;
+            }
+        }
+
+        .grid-container {
+            position: relative;
+            z-index: 2;
+
+            &.grid-bottom {
+                margin-top: 100px;
+
+                @include breakpoint(medium) {
+                    //min-height: 580px;
+                    //margin-top: 0;
+                    //margin-bottom: 40px;
+                }
+
+                .float-bottom {
+                    padding: 20px;
+                    margin: 0 -0.5rem;
+
+                    @include breakpoint(medium) {
+                        border-radius: 10px;
+                        position: relative;
+                        bottom: 0;
+                        left: 0;
+                        padding: 60px;
+                        margin: 20px;
+                    }
+
+                    .eyebrow {
+                        margin-bottom: 25px;
+                    }
+
+                    .sponsor {
+
+                        .icon {
+                            img {
+                                max-height: 50px;
+                            }
+                        }
+                    }
+
+                    .btn-row {
+                        a {
+                            //width: 100%;
+                            //text-align: center;
+                            //display: block;
+                        }
+                    }
+
+                    .content {
+                        .col {
+                            &:first-child {
+                                margin-bottom: 20px;
+                            }
+                        }
+                        @include breakpoint(large) {
+                            display: flex;
+
+                            .col {
+                                flex: 1;
+
+                                &:last-child {
+                                    padding-left: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }

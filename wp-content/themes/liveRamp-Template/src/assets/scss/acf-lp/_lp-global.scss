@@ -16,6 +16,37 @@
 
     .button {
         width: auto;
+        border-width: 3px;
+
+        &.solid-white {
+            border-color: $white;
+            background-color: $white;
+            color: $core-orange;
+
+            &:after {
+                background-image: url('../images/svg/arrow.svg');
+            }
+
+            &:hover {
+                background-color: lighten($white, 7%);
+            }
+        }
+
+        &.booth {
+
+            &:before {
+                background-image: url(../../assets/images/svg/location-marker.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+                width: 20px;
+                height: 19px;
+                display: block;
+                content: "";
+                opacity: 1;
+                margin: 0px 5px 0 0;
+            }
+        }
     }
 
     .form-cell {
@@ -26,7 +57,6 @@
             border: 3.5px solid $xlight-gray;
             // max-height: calc(100vh - 12em);
             // overflow-y: auto;
-
             .form-title {
                 margin: 0;
             }
@@ -36,7 +66,7 @@
             @media screen and (max-width: 1023px) {
                 top: 1px !important;
             }
-            
+
             @include breakpoint(medium down) {
                 position: relative;
             }
@@ -59,10 +89,9 @@
                 &:focus {
                     border-color: $slate;
                     -webkit-box-shadow: 0 0 0 $white;
-                            box-shadow: 0 0 0 $white;
+                    box-shadow: 0 0 0 $white;
                 }
             }
-            input
 
             label {
                 // width: 400px;
@@ -70,19 +99,20 @@
                 font-size: 1rem;
                 color: $dark-slate;
             }
+
             .mktoFieldWrap {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
                 -webkit-flex-flow: row wrap;
-                    -ms-flex-flow: row wrap;
-                        flex-flow: row wrap;
-                        @include breakpoint(small only) {
-                            flex-flow: column;
-                            align-items: initial;
-                            
-                        }
+                -ms-flex-flow: row wrap;
+                flex-flow: row wrap;
+
+                @include breakpoint(small only) {
+                    flex-flow: column;
+                    align-items: initial;
+                }
 
                 input,
                 select {
@@ -90,7 +120,7 @@
                 }
 
                 select {
-                    background-image : url(../../assets/images/arrow-down.svg);
+                    background-image: url(../../assets/images/arrow-down.svg);
                 }
 
                 textarea {
@@ -102,7 +132,6 @@
                     justify-self: flex-end;
                     width: 100%;
                     text-align: right;
-
                 }
 
                 .mktoErrorMsg {

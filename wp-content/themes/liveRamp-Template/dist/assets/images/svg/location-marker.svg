@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16.147" height="21.123" viewBox="0 0 16.147 21.123">
+  <g id="icon:_gps" data-name="icon: gps" transform="translate(1 1)">
+    <path id="Path_20954" data-name="Path 20954" d="M7.073,18.71q7.073-7.73,7.073-11.637A7.073,7.073,0,0,0,0,7.073Q0,10.317,4.876,16.2" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2"/>
+    <g id="Ellipse_717" data-name="Ellipse 717" transform="translate(3.406 3.668)" fill="none" stroke="#fff" stroke-width="2">
+      <circle cx="3.668" cy="3.668" r="3.668" stroke="none"/>
+      <circle cx="3.668" cy="3.668" r="2.668" fill="none"/>
+    </g>
+  </g>
+</svg>

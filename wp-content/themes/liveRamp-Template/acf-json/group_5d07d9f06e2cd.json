@@ -6195,7 +6195,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
+                            "return_format": "url",
                             "preview_size": "medium",
                             "library": "all",
                             "min_width": "",
@@ -6276,7 +6276,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
+                            "return_format": "url",
                             "preview_size": "medium",
                             "library": "all",
                             "min_width": "",
@@ -6326,10 +6326,10 @@
                             "delay": 0
                         },
                         {
-                            "key": "field_5f286ca20117d",
-                            "label": "CTA - Find our booth",
-                            "name": "cta_find_our_booth",
-                            "type": "link",
+                            "key": "field_5f2898ce5093c",
+                            "label": "Request a meeting?",
+                            "name": "request_meeting",
+                            "type": "true_false",
                             "instructions": "",
                             "required": 0,
                             "conditional_logic": 0,
@@ -6338,12 +6338,16 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array"
+                            "message": "Scrolls the page down to <b>LP Event Form<\/b> component.",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
                         },
                         {
-                            "key": "field_5f2877950117e",
-                            "label": "CTA - Request a meeting",
-                            "name": "cta_request_meeting",
+                            "key": "field_5f286ca20117d",
+                            "label": "CTA - Find our booth",
+                            "name": "cta_find_our_booth",
                             "type": "link",
                             "instructions": "",
                             "required": 0,
@@ -6893,5 +6897,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1596491778
+    "modified": 1596511743
 }
