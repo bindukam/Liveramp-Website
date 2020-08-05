@@ -1,7 +1,68 @@
 .single-lp {
 
     .lp-event-form {
-        background-color: red;
+        margin: 2rem 1rem 3rem;
 
+        .module {
+            background-color: $white;
+            border-radius: 1em;
+            box-shadow: 2px 2px 11px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-col {
+            background-color: $gray;
+            margin-left: 0;
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            position: relative;
+
+            background-position: center center;
+            background-size: cover;
+
+            @include breakpoint(medium down) {
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 1rem;
+                padding: 0;
+            }
+
+            .block {
+                border-radius: 1em;
+                padding: 40px;
+
+                position: absolute;
+                left: 40px;
+                bottom: 40px;
+                width: calc(100% - 80px);
+
+                @include breakpoint(medium down) {
+                    width: 100%;
+                    left: 0;
+                    bottom: 0;
+                    position: relative;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+            }
+        }
+
+        .right-col {    
+            min-height: 600px;
+            padding: 40px;
+            @include breakpoint(medium down) {
+                padding: 20px 40px;
+            }
+        }
+
+        &.overlay-me {
+            margin-bottom: 0;
+        }
+    }
+
+    .lp-form-footer-overlay {
+        min-height: 175px;
+        background: $dark-gray;
+        margin-top: -9rem;
+        position: relative;
+        z-index: -1;
     }
 }
