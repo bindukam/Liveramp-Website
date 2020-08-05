@@ -14,7 +14,7 @@ $eyebrow = get_sub_field('eyebrow');
             <div class="cell">
                 <?php if (get_sub_field('eyebrow_text')): ?>
                 <h3 class="eyebrow">
-                    <?php the_sub_field('eyebrow_text') ?>3
+                    <?php the_sub_field('eyebrow_text') ?>
                 </h3>
                 <?php endif ?>
             </div>
