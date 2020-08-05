@@ -6,12 +6,36 @@
                 background-image: url(../../assets/images/svg/diagonal-lines-core-db.svg);
             }
         }
+
+        .hero-with-form.media {
+            &:before {
+                background-image: url(../../assets/images/svg/wavelines-db.svg);
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-db.svg);
+            }
+        }
     }
 
     #core-blue-theme {
         .hero-with-form {
             &:before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-cb.svg);
+            }
+        }
+
+        .hero-with-form.media {
+            &:before {
+                background-image: url(../../assets/images/svg/wavelines-cb.svg);
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-cb.svg);
             }
         }
     }
@@ -22,12 +46,36 @@
                 background-image: url(../../assets/images/svg/diagonal-lines-core-dg.svg);
             }
         }
+
+        .hero-with-form.media {
+            &:before {
+                background-image: url(../../assets/images/svg/wavelines-dg.svg);
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-dg.svg);
+            }
+        }
     }
 
     #medium-blue-theme {
         .hero-with-form {
             &:before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-mb.svg);
+            }
+        }
+
+        .hero-with-form.media {
+            &:before {
+                background-image: url(../../assets/images/svg/wavelines-mb.svg);
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-mb.svg);
             }
         }
     }
@@ -38,6 +86,18 @@
                 background-image: url(../../assets/images/svg/diagonal-lines-core-teal.svg);
             }
         }
+
+        .hero-with-form.media {
+            &:before {
+                background-image: url(../../assets/images/svg/wavelines-teal.svg);
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-teal.svg);
+            }
+        }
     }
 
     #yellow-theme {
@@ -46,52 +106,16 @@
                 background-image: url(../../assets/images/svg/diagonal-lines-core-yellow.svg);
             }
         }
-    }
 
-    #dark-blue-theme {
-        .hero-with-form.media {
-            &:before {
-                background-image: url(../../assets/images/svg/wavelines-db.svg);
-            }
-        }
-    }
-
-    #core-blue-theme {
-        .hero-with-form.media {
-            &:before {
-                background-image: url(../../assets/images/svg/wavelines-cb.svg);
-            }
-        }
-    }
-
-    #dark-gray-theme {
-        .hero-with-form.media {
-            &:before {
-                background-image: url(../../assets/images/svg/wavelines-dg.svg);
-            }
-        }
-    }
-
-    #medium-blue-theme {
-        .hero-with-form.media {
-            &:before {
-                background-image: url(../../assets/images/svg/wavelines-mb.svg);
-            }
-        }
-    }
-
-    #teal-theme {
-        .hero-with-form.media {
-            &:before {
-                background-image: url(../../assets/images/svg/wavelines-teal.svg);
-            }
-        }
-    }
-
-    #yellow-theme {
         .hero-with-form.media {
             &:before {
                 background-image: url(../../assets/images/svg/wavelines-yellow.svg);
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-yellow.svg);
             }
         }
     }

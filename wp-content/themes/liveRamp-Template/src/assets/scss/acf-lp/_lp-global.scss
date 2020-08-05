@@ -150,4 +150,10 @@
             }
         }
     }
+    .show-med-down {
+        visibility: hidden;
+        @include breakpoint(medium down) {
+            visibility: visible;
+        }
+    }
 }

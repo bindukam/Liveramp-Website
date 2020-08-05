@@ -6408,6 +6408,44 @@
                             "ui_off_text": ""
                         },
                         {
+                            "key": "field_5f28824fc4798",
+                            "label": "Featured Event",
+                            "name": "featured_event",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "message": "",
+                            "default_value": 0,
+                            "ui": 1,
+                            "ui_on_text": "",
+                            "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5f28805ac478c",
+                            "label": "Eyebrow Text",
+                            "name": "eyebrow_text",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
                             "key": "field_5f2880a9c4795",
                             "label": "Event Date",
                             "name": "event_date",
@@ -6441,28 +6479,9 @@
                             "return_format": "g:i a"
                         },
                         {
-                            "key": "field_5f28824fc4798",
-                            "label": "Featured Event",
-                            "name": "featured_event",
-                            "type": "true_false",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "message": "",
-                            "default_value": 0,
-                            "ui": 1,
-                            "ui_on_text": "",
-                            "ui_off_text": ""
-                        },
-                        {
-                            "key": "field_5f28805ac478c",
-                            "label": "Eyebrow Text",
-                            "name": "eyebrow_text",
+                            "key": "field_5f29b3d587c2f",
+                            "label": "Event Location",
+                            "name": "event_location",
                             "type": "text",
                             "instructions": "",
                             "required": 0,
@@ -6529,7 +6548,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
+                            "return_format": "url",
                             "preview_size": "medium",
                             "library": "all",
                             "min_width": "",
@@ -6553,7 +6572,7 @@
                                 "class": "",
                                 "id": ""
                             },
-                            "return_format": "array",
+                            "return_format": "url",
                             "preview_size": "medium",
                             "library": "all",
                             "min_width": "",
@@ -6897,5 +6916,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1596511743
+    "modified": 1596570463
 }

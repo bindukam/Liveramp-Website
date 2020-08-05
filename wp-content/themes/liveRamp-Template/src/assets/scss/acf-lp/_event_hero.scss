@@ -4,6 +4,11 @@
         background-color: transparent;
         min-height: 620px;
 
+        .button {
+            min-width: 250px;
+            text-align: center;
+        }
+
         .hero-image {
             margin-right: 0;
             margin-left: 0;
@@ -46,8 +51,8 @@
                         position: relative;
                         bottom: 0;
                         left: 0;
-                        padding: 60px;
-                        margin: 20px;
+                        padding: 50px;
+                        margin: 20px 0;
                     }
 
                     .eyebrow {

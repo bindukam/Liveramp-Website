@@ -4,85 +4,139 @@ $eyebrow = get_sub_field('eyebrow');
 
 ?>
 
-<section class="lp-event-details pad-section">
+<section class="lp-event-details">
+    
+    <?php if (get_sub_field('top_divider_line')): ?>
+    <div class="divider-line"></div>
+    <?php endif ?>
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-justify">
-            <div class="cell  large-6 content">
-                <?php if (get_sub_field('title')): ?>
-                <h2 class="title">
-                    <?php the_sub_field('title') ?>
-                </h2>
-                <?php endif ?>
-                <?php if (get_sub_field('description')): ?>
-                <div class="desc">
-                    <?php the_sub_field('description') ?>
-                </div>
-                <?php endif ?>
-
-
-                <?php if (get_sub_field('testimonial_quote')): ?>
-                <div class="quote">
-                    <div class="quote-text">
-                        <?php the_sub_field('testimonial_quote') ?>&rdquo;
-                    </div>
-                    <?php if (get_sub_field('testimonial_name')): ?>
-                    <div class="quote-name">
-                        <?php the_sub_field('testimonial_name') ?>
-                    </div>
-                    <?php endif ?>
-                    <?php if (get_sub_field('testimonial_logo')): ?>
-                    <div class="quote-logo">
-                        <?php echo wp_get_attachment_image( get_sub_field('testimonial_logo'), 'full', '',array( "class" => "circle-image" ) ); ?>
-                    </div>
-                    <?php endif ?>
-                </div>
+            <div class="cell">
+                <?php if (get_sub_field('eyebrow_text')): ?>
+                <h3 class="eyebrow">
+                    <?php the_sub_field('eyebrow_text') ?>3
+                </h3>
                 <?php endif ?>
             </div>
-            <div class="cell large-5">
-                <?php if (get_sub_field('list_headline')): ?>
-                <h3 class="list-headline">
-                    <?php the_sub_field('list_headline') ?>
-                </h3>
-                <div class="fixed-underline">
-                    <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" >
-                </div>
-                <?php endif ?>
-                <?php if (have_rows('list')): ?>
-                <?php while(have_rows('list')) : ?>
-                <?php the_row(); ?>
+        </div>
+        <div class="grid-x grid-margin-x align-justify">
+            <div class="cell large-2 content">
                 <?php
-                        $headshot = '';
-                        $logo = '';
-                        $name = '';
-                        $job_title = '';
-                        if (get_sub_field('company_logo')) {
-                            $logo = get_sub_field('company_logo');
-                        }
-                        if (get_sub_field('name')) {
-                            $name = get_sub_field('name');
-                        }
-                        if (get_sub_field('job_title')) {
-                            $job_title = get_sub_field('job_title');
-                        }
+                $featured_date = '';
+                $featured_class = '';
+                if (get_sub_field('featured_event')) {
+                    $featured_class = ' featured primary-bkg ';
+                    $featured_date = ' featured-date ';
+                }
                 ?>
-                <div class="list-item">
-                    <div class="item-col">
-                        <div class="circle">
-                            <?php echo wp_get_attachment_image( get_sub_field('headshot'), 'full', false, array( "class" => "circle-image" ) ); ?>
-                        </div>
+                <?php
+                    if (get_sub_field('event_date')) {
+
+                        $date = get_sub_field('event_date');
+                        $m = date("M", strtotime($date));
+                        $d = date("d", strtotime($date));
+
+                ?>
+                <div class="date <?php echo $featured_date; ?>">
+                    <div class="month"><?php echo $m; ?></div>
+                    <div class="day"><?php echo $d; ?></div>
+                </div>
+
+                <div class="date-info show-med-down">
+                    <?php if (get_sub_field('event_time')): ?>
+                    <div class="green">
+                        <?php the_sub_field('event_time') ?>
                     </div>
-                    <div class="item-col">
-                        <div class="speaker-name">
-                            <?php echo $name; ?>
+                    <?php endif ?>
+                    <div class="green">
+                    <?php if (get_sub_field('event_location')): ?>
+                        <?php the_sub_field('event_location') ?>
+                    </div>
+                    <?php endif ?>
+                </div>
+
+                <?php } ?>
+                
+            </div>
+            <div class="cell  large-10 content">
+                <div class="event-block <?php echo $featured_class; ?>">
+                    <div class="col">
+                        <?php if (get_sub_field('featured_event')): ?>
+                        <div class="featured-title">
+                            Featured Event
                         </div>
-                        <div class="copy">
-                            <?php echo $job_title; ?>
+                        <?php endif ?>
+                        <?php if (get_sub_field('event_time')): ?>
+                        <div class="green show-for-large">
+                            <?php the_sub_field('event_time') ?>
                         </div>
-                        <?php echo wp_get_attachment_image( get_sub_field('company_logo'), 'full' ); ?>
+                        <?php endif ?>
+                        <div class="green show-for-large">
+                        <?php if (get_sub_field('event_location')): ?>
+                            <?php the_sub_field('event_location') ?>
+                        </div>
+                        <?php endif ?>
+
+                        <?php if (get_sub_field('title')): ?>
+                        <div class="title h3">
+                            <?php the_sub_field('title') ?>
+                        </div>
+                        <?php endif ?>
+                        <?php if (get_sub_field('sponsor_text') && get_sub_field('sponsor_logo')): ?>
+                        <div class="sponsor">
+                            <span><?php the_sub_field('sponsor_text') ?></span>
+                            <span class="icon"><img src="<?php the_sub_field('sponsor_logo') ?>" alt="<?php the_sub_field('sponsor_text') ?>" /></span>
+                        </div>
+                        <?php endif ?>
+                        <?php if (get_sub_field('event_image')): ?>
+                        <div class="event-image">
+                            <img src="<?php the_sub_field('event_image') ?>" title="<?php the_sub_field('title') ?>" />
+                        </div>
+                        <?php endif ?>
+                        <?php if (get_sub_field('description')): ?>
+                        <div class="desc">
+                            <?php the_sub_field('description') ?>
+                        </div>
+                        <?php endif ?>
+
+                        <?php if (get_sub_field('speakers_headline')): ?>
+                        <h3 class="list-headline">
+                            <?php the_sub_field('speakers_headline') ?>
+                        </h3>
+                        <?php endif ?>
+
+                        <?php 
+                        if (have_rows('speakers_list')) {
+                            while(have_rows('speakers_list')) {
+                                the_row();
+                                $speaker = '';
+                                if (get_sub_field('speaker')) {
+                                    $speaker = get_sub_field('speaker');
+                        ?>
+                                    <div class="speaker">
+                                        <?php echo $speaker; ?>
+                                    </div>
+                        <?php   }
+                            }
+                        }
+                        ?>
+
+                    </div>
+                    <div class="col">
+                        <?php if (get_sub_field('register')): ?>
+                        <div class="btn-row">
+                             <a href="#" class="button cta register">Register</a>
+                        </div>
+                        <?php endif ?>
+                        <?php if (get_sub_field('add_to_calendar')): ?>
+                        <div class="btn-row">
+                             <a href="#" class="button cta register">Add to calendar</a>
+                        </div>
+                        <?php endif ?>
                     </div>
                 </div>
-                <?php endwhile ?>
-                <?php endif ?>
+            </div>
+            <div class="cell large-5">
             </div>
         </div>
     </div>
