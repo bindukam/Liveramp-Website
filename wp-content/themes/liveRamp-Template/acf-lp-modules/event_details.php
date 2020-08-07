@@ -40,7 +40,7 @@ $eyebrow = get_sub_field('eyebrow');
                         $ampm = date("a", strtotime($date));
 
                 ?>
-                <div class="date <?php echo $featured_date; ?>">
+                <div class="date primary-bkg <?php echo $featured_date; ?>">
                     <div class="month"><?php echo $m; ?></div>
                     <div class="day"><?php echo $d; ?></div>
                 </div>
