@@ -7,5 +7,11 @@ jQuery(function($){ // use jQuery code inside this to avoid "$ is not defined" e
 			//alert('form submitted');
 
 		});
+
+        window.addeventasync = function(){
+            addeventatc.settings({
+				license: "aPbaeGjiczASXKbLwmPt66719"
+            });
+		};
 	}
 });
