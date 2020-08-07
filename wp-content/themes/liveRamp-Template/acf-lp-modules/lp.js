@@ -10,6 +10,7 @@ jQuery(function($){ // use jQuery code inside this to avoid "$ is not defined" e
 
         window.addeventasync = function(){
             addeventatc.settings({
+				//mouse: true,
 				license: "aPbaeGjiczASXKbLwmPt66719"
             });
 		};
