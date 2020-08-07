@@ -30,11 +30,14 @@ $eyebrow = get_sub_field('eyebrow');
                 }
                 ?>
                 <?php
-                    if (get_sub_field('event_date')) {
+                    if (get_sub_field('event_start')) {
 
-                        $date = get_sub_field('event_date');
+                        $date = get_sub_field('event_start');
                         $m = date("M", strtotime($date));
                         $d = date("d", strtotime($date));
+                        $hr = date("g", strtotime($date));
+                        $mn = date("i", strtotime($date));
+                        $ampm = date("a", strtotime($date));
 
                 ?>
                 <div class="date <?php echo $featured_date; ?>">
@@ -43,11 +46,9 @@ $eyebrow = get_sub_field('eyebrow');
                 </div>
 
                 <div class="date-info show-med-down">
-                    <?php if (get_sub_field('event_time')): ?>
                     <div class="green">
-                        <?php the_sub_field('event_time') ?>
+                        <?php echo $hr.':'.$min.' '.$ampm; ?>
                     </div>
-                    <?php endif ?>
                     <div class="green">
                     <?php if (get_sub_field('event_location')): ?>
                         <?php the_sub_field('event_location') ?>
@@ -130,8 +131,23 @@ $eyebrow = get_sub_field('eyebrow');
                         <?php endif ?>
                         <?php if (get_sub_field('add_to_calendar')): ?>
                         <div class="btn-row">
-                             <a href="#" class="button cta register">Add to calendar</a>
+                            <div title="Add to Calendar" class="addeventatc button">
+                                Add to Calendar
+                                <span class="start"><?php the_sub_field('event_start') ?></span>
+                                <span class="end"><?php the_sub_field('event_end') ?></span>
+                                <span class="timezone">America/Los_Angeles</span>
+                                <?php if (get_sub_field('title')) { ?>
+                                    <span class="title"><?php the_sub_field('title') ?></span>
+                                <?php } ?>
+                                <?php if (get_sub_field('description')) { ?>
+                                    <span class="description"><?php the_sub_field('description') ?></span>
+                                <?php } ?>
+                                <?php if (get_sub_field('event_location')) { ?>
+                                    <span class="location"><?php the_sub_field('event_location') ?></span>
+                                <?php } ?>
+                            </div>
                         </div>
+
                         <?php endif ?>
                     </div>
                 </div>

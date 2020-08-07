@@ -47,6 +47,52 @@
                 margin: 0px 5px 0 0;
             }
         }
+
+        &.addeventatc {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 0 1rem 0;
+            padding: .75em 2.5em;
+            border: 1px solid #DFE2E9;
+            border-radius: 2.5rem;
+            -webkit-appearance: none;
+            line-height: 1;
+            cursor: pointer;
+            color: $core-orange !important;
+            text-shadow: none !important;
+            box-shadow: none !important;
+
+            &:before {
+                content: "\002B";
+                opacity: 1;
+                height: .8rem;
+                width: .8rem;
+                margin-right: -.2em;
+                margin-left: .2em;
+                display: inline-block;
+                color: $core-orange !important;
+                color: black;
+                position: absolute;
+                left: 6px;
+                font-size: 30px;
+                top: 4px;
+                font-weight: normal;
+                transition: all 1s ease;
+            }
+
+            .addeventatc_icon {
+                display: none;
+            }
+
+            &:hover {
+                background-color: lighten($core-orange, 7%);
+                color: $white !important;
+
+                &:before {
+                    color: $white !important;
+                }
+            }
+        }
     }
 
     .form-cell {
@@ -54,6 +100,7 @@
         .form-wrapper {
             padding: 2rem;
             border: 3.5px solid $xlight-gray;
+
             .form-title {
                 margin: 0;
             }
@@ -147,8 +194,10 @@
             }
         }
     }
+
     .show-med-down {
         visibility: hidden;
+
         @include breakpoint(medium down) {
             visibility: visible;
         }

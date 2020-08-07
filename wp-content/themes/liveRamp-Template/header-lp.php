@@ -56,6 +56,9 @@
 
 		<script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=boxtwtjwrzcua9blxferxg" async="true"></script>
 
+		<!-- AddEvent Code  -->
+        <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+		<!-- End AddEvent Code -->
 	</head>
 
     <body <?php body_class(); ?>>

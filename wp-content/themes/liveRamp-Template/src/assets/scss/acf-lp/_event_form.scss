@@ -50,6 +50,7 @@
             padding: 40px;
             @include breakpoint(medium down) {
                 padding: 20px 40px;
+                min-height: 0;
             }
         }
 
