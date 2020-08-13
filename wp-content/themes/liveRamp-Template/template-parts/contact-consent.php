@@ -53,7 +53,9 @@
     </div>
 
     <!-- provided from mkto embedded script can call forms.min from marketo original link -->
-    <script src="<?php echo get_stylesheet_directory_uri() ?>/forms2.min.js"></script>
+    <script src="https://lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
+   
+
     <form id="mktoForm_<?php echo get_field('contact_form_id', 'option') ?>"></form>
 
     <!-- added this div with ID=mkto_consent to call the marketo form callback once the consent check is done-->
