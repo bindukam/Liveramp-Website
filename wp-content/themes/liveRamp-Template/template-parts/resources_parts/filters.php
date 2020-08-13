@@ -35,7 +35,7 @@
 									   )
 									):
 
-									echo '<select name="resources_audiences" data-default="Audiences"><option value="" disabled hidden>Audiences</option>';
+									echo '<select name="resources_audiences" data-default="Audiences"><option value="" hidden>Audiences</option>';
 									foreach ( $terms as $term ) :
 										echo '<option value="' . $term->slug . '">' . $term->name . '</option>'; // ID of the category as the value of an option
 									endforeach;

@@ -14,5 +14,3 @@
     jQuery('.mktoInstruction').hide();
     form.onSuccess(function(values, followUpUrl) {});
 });
-
- 

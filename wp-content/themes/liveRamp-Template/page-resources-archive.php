@@ -56,11 +56,11 @@ get_header(); ?>
 				type:filter.attr('method'), // POST
 				beforeSend:function(xhr){
 					filter.find('button').text('Processing...'); // changing the button label
-					console.log("resource send");
+					//console.log("resource send");
 				},
 				success:function(data){
-					console.log("resource success");
-					console.log(data);
+					//console.log("resource success");
+					//console.log(data);
 					$('.hide-for-filters').hide();
 					$('.resource_loadmore').hide();
 					filter.find('button').text('Apply filter'); // changing the button label back
@@ -97,7 +97,7 @@ get_header(); ?>
 				$this = $(this);
 				var data_default = $this.attr('data-default');
 				$this.text(data_default);
-				// console.log('data-defualt', data_default);
+				//console.log('data-defualt', data_default);
 
 			});
 		    return false;
@@ -105,8 +105,9 @@ get_header(); ?>
 
 		$('#reset').submit(function(){
 			event.preventDefault();
-			// alert('gotheem');
+
 			var filter = $('#reset');
+			
 			$.ajax({
 				url:filter.attr('action'),
 				data:filter.serialize(), // form data
@@ -125,6 +126,7 @@ get_header(); ?>
 					$('.new-card').hide().each(function(i) {
 						$(this).delay(100 * i).fadeIn(500).removeClass('new-card');
 					});
+					
 					// $('html, body').animate({scrollTop: $('#filter').offset().top -130 }, 800);
 					$('.click-card').click(function() {
 					  var url = $(this).data('url');
@@ -160,8 +162,8 @@ get_header(); ?>
 		    	var val = $(this).attr('data-term-id'),
 		    		name = $(this).text();
 		    	
-		    	// console.log('meta click', val, name);
-		    	// console.log(this);
+		    	// //console.log('meta click', val, name);
+		    	// //console.log(this);
 		    	$('#filter select[name="resources_topics"]').val(val).trigger('change');
 		    	$('.select-styled[data-name="resources_topics"]').text(name);
 		    	history.pushState(null, null, '?resources_topics='+val);	    		
@@ -171,18 +173,24 @@ get_header(); ?>
 		}
 
 		$( document ).ready(function() {
-		    console.log( " page history ready ready!" );
+		    //console.log( " page history ready ready!" );
 		   
 		   	
 		  metaClick();
 		   
 		    
 		    $('#filter').change(function(url){
+		    	console.clear();
+		    	console.log('filter', 'clicked');
 		    	var query = '';
 		    	var amp = '';
 		    	$('#filter select').each(function(index, el) {
 		    		var val = $(this).val();
 		    		var key = $(this).attr('name');
+		    		
+		    		console.log('val', val);
+		    		console.log('amp', amp);
+		    		
 		    		if (val) {
 		    			query = query+amp+key+'='+val;
 		    			amp = '&';
@@ -190,7 +198,7 @@ get_header(); ?>
 		    		
 		    	});
 				
-				// console.log(query);
+				// //console.log(query);
 				history.pushState(null, null, '?'+query);	    	
 			    	
 		    });
@@ -201,17 +209,17 @@ get_header(); ?>
 		    	$('.hide-for-filters').hide();
 		    	$('.reset-filters').fadeIn();
 		    	$('html, body').animate({scrollTop: $('.filter').offset().top -130 }, 800);	
-		    	// console.log('get');
+		    	// //console.log('get');
 		    	// var category = "<?php echo $_GET['blog_categories'] ?>",
 		    	// 	author = "<?php echo $_GET['author'] ?>",
 		    	// 	date = "<?php echo $_GET['date_field'] ?>"
 		    	// 	;
-		    	// console.log(window.location.search);
+		    	// //console.log(window.location.search);
 		    	const params = new URLSearchParams(window.location.search);  
 				const blog_categories = params.get("blog_categories");
 				const author = params.get("author");
 				const date_field = params.get("date_field");
-				// console.log(blog_categories, author);
+				// //console.log(blog_categories, author);
 				$('#filter1 select[name="author"]').val(author);
 				$('#filter1 select[name="blog_categories"]').val(blog_categories);
 				$('#filter1 select[name="date_field"]').val(date_field);
