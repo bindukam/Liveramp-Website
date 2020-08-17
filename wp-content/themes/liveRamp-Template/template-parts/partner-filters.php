@@ -1,7 +1,5 @@
 <?php
-    $feed_link = get_field('content_api_url','option');
-    //$feed_link = 'http://lrpartnerdev.wpengine.com/api/?lang=us';  
-    //$feed_link = 'http://lrpartnerdev.wpengine.com/api/?lang=au';  
+    $feed_link = get_field('content_api_url','option');  
     $data = json_decode(file_get_contents($feed_link));
 
     if (!$data) {
@@ -10,6 +8,11 @@
 
 ?>
 <?php //echo $feed_link; ?> 
+<style>
+.partners-archive .partner.elite:after {
+    content: '<?php echo _translate('elite'); ?>';
+}
+</style>
 <input type="search" value="" placeholder="Search the partner directory" id="search"/>
 <div class="search-container">
   <h4 class="margin-bottom-2"><?php _translate('filters') ?></h4>
@@ -29,7 +32,7 @@
       <div class="filter-group relative" id="<?php echo $filter->name; ?>" >
         <label name="<?php echo $filter->name; ?>"><?php echo $filter->display_name . $tooltip ; ?></label>
         <select name="<?php echo $filter->name; ?>" id="<?php echo $filter->tax_name; ?>" class="filter-dropdown ng-binding ng-scope" alt="<?php echo $filter->name; ?>">
-           <option value="any" selected>Any</option>
+           <option value="any" selected><?php _translate('any') ?></option>
             <?php
             $optionDump = $filter->items;
             foreach ($optionDump as $item) : ?>

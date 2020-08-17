@@ -80,7 +80,7 @@
 	        		</div>
 
 	        		<div class="cell shrink connect text-center">
-	        			Follow Us
+	        			<?php echo _translate('follow_us'); ?>
 	        			<div class="grid-x grid-margin-x small-up-4">
 	        				
 							<?php 
