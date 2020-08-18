@@ -7,10 +7,10 @@
     } 
 
 ?>
-<?php //echo $feed_link; ?> 
+<?php //echo "<pre>"; print_r($data); die; $feed_link; ?> 
 <style>
 .partners-archive .partner.elite:after {
-    content: '<?php echo _translate('elite'); ?>';
+    content: '<?php _translate('elite'); ?>';
 }
 </style>
 <input type="search" value="" placeholder="Search the partner directory" id="search"/>
