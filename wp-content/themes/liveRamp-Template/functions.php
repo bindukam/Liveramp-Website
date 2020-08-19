@@ -140,7 +140,7 @@ function wpbsearchform( $form ) {
 
     $form = '<div class="searchform-wrapper"><form role="search" method="get" id="searchform" action="' . home_url( '/' ) . '" >
     <i class="far fa-search"></i>
-    <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="Search" />
+    <input type="text" value="' . get_search_query() . '" name="s" id="s" placeholder="Search" aria-label="Search"/>
     </form>
     </div>';
 
@@ -708,4 +708,21 @@ function show_blog_author_name( $author_name ) {
  
 }
 /** "Add filter to change blog author name " code end*/
+
+ /** "Add filter to change engineering author name " code start*/
+add_filter( 'the_author', 'show_engineering_author_name', 10, 1 );
  
+function show_engineering_author_name( $author_name ) {
+	$post = get_post( $post );
+    if ( $post ) { 
+		if($post->post_type=='engineering'){
+		 $blog_author_data = get_field('blog_author',$post->ID);
+			if(isset($blog_author_data) && !empty($blog_author_data->post_title)){
+				return  $blog_author_data->post_title;
+			}
+		}
+	}
+	return  $author_name;
+ 
+}
+/** "Add filter to change engineering author name " code end*/
