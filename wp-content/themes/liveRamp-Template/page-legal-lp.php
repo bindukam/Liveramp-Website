@@ -51,6 +51,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
 	$('#click-open-popup_a, #click-open-popup_b').click(function () {
+		console.clear();
 		$.colorbox({ inline: true, width: '100%', href: '#mobile-popup', fixed: false, top: true });
 	});
 	
@@ -104,12 +105,12 @@ $(document).ready(function() {
 	</div>	
 </div>
 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/standalone-pages/assets/colorbox/example3/colorbox.css">
-<script src="<?php echo get_template_directory_uri() ?>/standalone-pages/assets/colorbox/jquery.colorbox.js"></script>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/colorbox/example3/colorbox.css">
+<script src="<?php echo get_template_directory_uri() ?>/colorbox/jquery.colorbox.js"></script>
 <script src="https://lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
 
 <div style="display:none">
-    <div id="mobile-popup">
+    <div id="mobile-popup" style="background-color: #73c06b">
 		<div class="marketo_form" >
 
 			<div class="form-intro">
