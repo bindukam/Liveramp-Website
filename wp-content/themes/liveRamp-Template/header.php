@@ -43,8 +43,6 @@
 
 		<?php wp_head(); ?>
 		
-		<!-- <link rel="stylesheet" type="text/css" href="<?php echo $theme_uri; ?>/dist/assets/js/slick.css"/> -->
-
 		<!-- CSS code -->
 		<style><?php the_field('css_code', 'option') ?></style>
 		<!-- End CSS code -->		
@@ -52,8 +50,6 @@
 		<!-- Bugherd Code  -->
 		<?php the_field('bugherd_code', 'option') ?>
 		<!-- End Bugherd Code -->
-
-		<script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=boxtwtjwrzcua9blxferxg" async="true"></script>
 
 	</head>
 <body <?php body_class(); ?>>
