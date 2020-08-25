@@ -34,16 +34,16 @@ get_header(); ?>
 		<div class="grid-x grid-padding-x align-top">
 			<div class="medium-5 cell content small-order-2 medium-order-1 big-first-p">
 				<h3 class="green title">
-					How can we help?
+					<?php _translate('404_line_1'); ?>
 				</h3>
 				<div class="no-lineheight pad-ul">
 				  <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="">
 			  </div>
-				The page you are looking for does not exist.
+				<?php _translate('404_line_2'); ?>
 
 				<?php $url = home_url(); ?>
-
-				<a href="<?php echo esc_url( $url ); ?>" class="button outline tag2" target="<?php echo $target ?>">Go Home</a>
+				<br>
+				<a href="<?php echo esc_url( $url ); ?>" class="button outline tag2" target="<?php echo $target ?>"><?php _translate('go_home'); ?></a>
 				
 			</div>
 			<div class="cell align-top medium-7 image-container small-order-1 medium-order-2">
