@@ -23,6 +23,16 @@
 		
 		<?php include ('library/hreflang.php') ?>
 
+		<?php 
+			$code_loop = get_field('code_loop', 'option'); 
+
+			//echo '<pre style="background-color:white">'.print_r($code_loop, 1).'</pre>';
+			foreach ($code_loop AS $code) {
+				echo "\n" . '<!-- '.strtoupper($code['title']).' -->';
+				echo "\n" . $code['code_block'] . "\n";
+			}
+		?>
+
 		<?php the_field('drift_code', 'option') ?>
 		
 		<?php the_field('async_drift_code', 'option') ?>
