@@ -42,7 +42,7 @@ get_header(); ?>
 				<?php _translate('404_line_2'); ?>
 
 				<?php $url = home_url(); ?>
-
+				<br>
 				<a href="<?php echo esc_url( $url ); ?>" class="button outline tag2" target="<?php echo $target ?>"><?php _translate('go_home'); ?></a>
 				
 			</div>
