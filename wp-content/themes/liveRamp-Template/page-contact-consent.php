@@ -14,7 +14,11 @@
 get_header(); ?> 
 
 <?php $pageid = get_the_ID(); ?>
+<style>
+	.mktoInstruction {display: none}
 
+
+</style>
 <div class="" id="contact-page">
 	<section class="breadcrumbs <?php the_sub_field('background_color'); ?> green-bkg" id="contact-breadcrumbs">
 		<div class="grid-container">

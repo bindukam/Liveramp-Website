@@ -9,7 +9,8 @@
     jQuery('input').css('width', '');
     jQuery('.mktoButtonWrap').css('margin-left', '');
     jQuery('.mktoButton').addClass('button cta');
-    jQuery('.mktoFieldDescriptor').css('margin-bottom', '')
-    jQuery('.form-wrapper').fadeIn('400'),
+    jQuery('.mktoFieldDescriptor').css('margin-bottom', '');
+    jQuery('.form-wrapper').fadeIn('400');
+    jQuery('.mktoInstruction').hide();
     form.onSuccess(function(values, followUpUrl) {});
 });
