@@ -33,10 +33,6 @@
 			}
 		?>
 
-		<?php the_field('drift_code', 'option') ?>
-		
-		<?php the_field('async_drift_code', 'option') ?>
-
 		<!-- VIMEO TRACKING CODE -->
 		<script type='text/javascript' defer='defer' src='<?php echo $theme_uri; ?>/dist/assets/js/10577812.js'></script>
 		<!-- END VIMEO TRACKING CODE -->
@@ -53,14 +49,6 @@
 
 		<?php wp_head(); ?>
 		
-		<!-- CSS code -->
-		<style><?php the_field('css_code', 'option') ?></style>
-		<!-- End CSS code -->		
-
-		<!-- Bugherd Code  -->
-		<?php the_field('bugherd_code', 'option') ?>
-		<!-- End Bugherd Code -->
-
 	</head>
 <body <?php body_class(); ?>>
 
