@@ -105,7 +105,9 @@ function engineering_filter_function(){
 		);
 
 	if( isset( $_POST['authorfilter'] ) && $_POST['authorfilter'] )
-		$args['author'] = $_POST['authorfilter'];
+		//$args['author'] = $_POST['authorfilter'];
+		$args['meta_key'] = 'blog_author';
+		$args['meta_value'] = $_POST['authorfilter'];
 
 	// author query set here
 	$args['post_status'] = 'publish';

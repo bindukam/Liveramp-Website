@@ -23,9 +23,15 @@
 		
 		<?php include ('library/hreflang.php') ?>
 
-		<?php the_field('drift_code', 'option') ?>
-		
-		<?php the_field('async_drift_code', 'option') ?>
+		<?php 
+			$code_loop = get_field('code_loop', 'option'); 
+
+			//echo '<pre style="background-color:white">'.print_r($code_loop, 1).'</pre>';
+			foreach ($code_loop AS $code) {
+				echo "\n" . '<!-- '.strtoupper($code['title']).' -->';
+				echo "\n" . $code['code_block'] . "\n";
+			}
+		?>
 
 		<!-- VIMEO TRACKING CODE -->
 		<script type='text/javascript' defer='defer' src='<?php echo $theme_uri; ?>/dist/assets/js/10577812.js'></script>
@@ -43,18 +49,6 @@
 
 		<?php wp_head(); ?>
 		
-		<!-- <link rel="stylesheet" type="text/css" href="<?php echo $theme_uri; ?>/dist/assets/js/slick.css"/> -->
-
-		<!-- CSS code -->
-		<style><?php the_field('css_code', 'option') ?></style>
-		<!-- End CSS code -->		
-
-		<!-- Bugherd Code  -->
-		<?php the_field('bugherd_code', 'option') ?>
-		<!-- End Bugherd Code -->
-
-		<script type="text/javascript" src="https://www.bugherd.com/sidebarv2.js?apikey=boxtwtjwrzcua9blxferxg" async="true"></script>
-
 	</head>
 <body <?php body_class(); ?>>
 

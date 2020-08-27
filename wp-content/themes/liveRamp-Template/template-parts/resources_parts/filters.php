@@ -16,7 +16,7 @@
 									   )
 									):
 
-									echo '<select name="resources_categories" data-default="Category"><option value="" hidden>Category</option>';
+									echo '<select name="resources_categories" data-default="Category" aria-label="Category"><option value="" hidden>Category</option>';
 									foreach ( $terms as $term ) :
 										echo '<option value="' . $term->slug . '">' . $term->name . '</option>'; // ID of the category as the value of an option
 									endforeach;
@@ -35,7 +35,7 @@
 									   )
 									):
 
-									echo '<select name="resources_audiences" data-default="Audiences"><option value="" disabled hidden>Audiences</option>';
+									echo '<select name="resources_audiences" data-default="Audiences"><option value="" hidden>Audiences</option>';
 									foreach ( $terms as $term ) :
 										echo '<option value="' . $term->slug . '">' . $term->name . '</option>'; // ID of the category as the value of an option
 									endforeach;
@@ -54,7 +54,7 @@
 									   )
 									):
 
-									echo '<select name="resources_topics" data-default="Topics"><option value="" hidden>Topics</option>';
+									echo '<select name="resources_topics" data-default="Topics" aria-label="Topics"><option value="" hidden>Topics</option>';
 									foreach ( $terms as $term ) :
 										echo '<option value="' . $term->slug . '">' . $term->name . '</option>'; // ID of the category as the value of an option
 									endforeach;
@@ -71,7 +71,7 @@
 							</svg>
 						</div>
 						<div class="cell large-3">
-							<input type="text" name="search_term" placeholder="Search" class="search">
+							<input type="text" name="search_term" placeholder="Search" class="search" aria-label="Search">
 							 <input type="hidden" name="action" value="resource_filter">
 						</div>
 

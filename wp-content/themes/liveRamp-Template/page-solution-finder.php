@@ -32,34 +32,49 @@ get_header();
 
 			<div>
 				<span>I am in</span>
-				<select name="role" id="role">
-					<?php $roles =  get_terms( 'role', array('hide_empty' => false) );
+				<select name="role" id="role" aria-label="Role">
+					<?php
+					$roles =  get_terms( 'role', array(
+									'hide_empty' => false,
+								) );
 					foreach ($roles as &$role) { ?>
 						<option value="<?php echo $role->slug; ?>"><?php echo $role->name; ?></option>
-					<?php } ?>
+					<?php	} ?>
 				</select>
 				
 				<span>looking to</span>
-				<select name="interest" id="interest">
-					<?php $interests =  get_terms( 'interest', array('hide_empty' => false) );
+				<select name="interest" id="interest" aria-label="Interest">
+					<?php
+					$interests =  get_terms( 'interest', array(
+									'hide_empty' => false,
+								) );
 					foreach ($interests as &$interest) { ?>
 						<option value="<?php echo $interest->slug; ?>">
 							<?php echo $interest->name; ?>
 						</option>
-					<?php }	?>
+					<?php
+					}
+					?>
 				</select>
 			</div>
 
 			
 			<div class="hide"> <!-- remove hide class to unhide sort-by filter -->
 				<span>sort by</span>
-				<select name="sort_by" id="sort_by">
-					<?php $sort_bys =  get_terms( 'sort_by', array('hide_empty' => false,'orderby' => 'slug','order' => 'ASC') );
+				<select name="sort_by" id="sort_by" aria-label="Sort By">
+					<?php
+					$sort_bys =  get_terms( 'sort_by', array(
+										'hide_empty' => false,
+										'orderby' => 'slug',
+										'order' => 'ASC'
+								) );
 					foreach ($sort_bys as &$sort_by) : ?>
 						<option value="<?php echo $sort_by->slug; ?>">
 							<?php echo $sort_by->name; ?>
 						</option>
-					<?php endforeach; ?>
+					<?php
+					endforeach;
+					?>
 				</select>
 			</div>
 
@@ -67,16 +82,21 @@ get_header();
 
 
 		</form>
-	      <div class="text-center margin-2">
-	         <button id="sf-submit" class="button outline down-arrow">Show Results</button>
-	      </div>
+      <div class="text-center margin-2">
+         <button id="sf-submit" class="button outline down-arrow">Show Results</button>
+      </div>
 
 
 		<div id="sf-response" class="hide">
+
+
          <?php
 
             // WP_Query arguments
-            $args = array('post_type' => array( 'use_cases' ), 'nopaging' => true);
+            $args = array(
+            	'post_type'              => array( 'use_cases' ),
+            	'nopaging'               => true,
+            );
 
             // The Query
             $query = new WP_Query( $args );
@@ -86,7 +106,7 @@ get_header();
             	while ( $query->have_posts() ) {
             		$query->the_post();
             		// do something
-                  	get_template_part( 'template-parts/blog_archive_parts/solution_card' );
+                  get_template_part( 'template-parts/blog_archive_parts/solution_card' );
             	}
             } else {
             	// no posts found
@@ -96,16 +116,14 @@ get_header();
             // Restore original Post Data
             wp_reset_postdata(); ?>
 		</div>
-      
       <div id="sf-results" class="hide">
          <!-- Intentionally empty div - container for results of filter -->
       </div>
-      
       <div  id="sf-showcase">
          <!-- Intentionally Empty div - container for shown results -->
       </div>
 
-	  <div class="text-center">
+		<div class="text-center">
          <div id="loadmore" class="hide button outline down-arrow">More posts</div>
       </div>
 	 </div> <!-- /grid-container -->
