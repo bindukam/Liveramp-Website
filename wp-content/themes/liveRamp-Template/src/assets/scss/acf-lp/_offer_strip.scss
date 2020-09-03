@@ -1,0 +1,18 @@
+.single-lp {
+
+    .offer_strip {
+
+        @include breakpoint(small only) {
+            margin: 0;
+            border-radius: 0;
+            background-size: 200px;
+            background-position: right 77vw top 10px;
+            padding-top: 55px;
+        }
+
+        @include breakpoint(medium only) {
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+}
