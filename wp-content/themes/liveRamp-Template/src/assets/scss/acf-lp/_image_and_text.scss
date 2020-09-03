@@ -23,10 +23,10 @@
         .image-container {
             display: flex;
             justify-content: flex-end;
-             @include breakpoint(small only) {
-                 justify-content: center;
-                 margin-bottom: 2rem;
-             }
+            @include breakpoint(medium down) {
+                justify-content: center;
+                margin-bottom: 2rem;
+            }
         }
 
         .image-area {
@@ -35,33 +35,23 @@
             left: .5rem;
             width: 80%;
             height: auto;
+            @include breakpoint(medium down) {
+                width: 100%;
+                left: 0;
+                text-align: center;
+            }
         }
 
         .b-radius {
             border-radius: 12px;
         }
 
-        @include breakpoint(medium) {
+        @include breakpoint(medium down) {
             p {
                 padding-right: 0;
             }
             .no-image p {
                 padding: 0;
-            }
-        }
-
-        .flipped {
-
-            .image-area:before {
-                left: -50%;
-            }
-
-            .image-area:after {
-                left: -40%;
-            }
-
-            .image-container {
-                justify-content: flex-start;
             }
         }
     }
