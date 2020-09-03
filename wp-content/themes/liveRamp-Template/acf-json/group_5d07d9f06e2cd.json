@@ -5953,11 +5953,11 @@
                         },
                         {
                             "key": "field_5f19cf7fc4832",
-                            "label": "Title",
+                            "label": "Headline",
                             "name": "title",
                             "type": "text",
                             "instructions": "",
-                            "required": 0,
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -5991,7 +5991,7 @@
                         },
                         {
                             "key": "field_5f19cf7fc4834",
-                            "label": "Width Toggle",
+                            "label": "Footer Overlay Toggle",
                             "name": "width_toggle",
                             "type": "radio",
                             "instructions": "Choose the width for this module.",
@@ -6008,10 +6008,10 @@
                             },
                             "allow_null": 0,
                             "other_choice": 0,
-                            "save_other_choice": 0,
                             "default_value": "",
                             "layout": "vertical",
-                            "return_format": "value"
+                            "return_format": "value",
+                            "save_other_choice": 0
                         },
                         {
                             "key": "field_5f19cf7fc4835",
@@ -6019,7 +6019,7 @@
                             "name": "cta",
                             "type": "link",
                             "instructions": "",
-                            "required": 0,
+                            "required": 1,
                             "conditional_logic": 0,
                             "wrapper": {
                                 "width": "",
@@ -6917,5 +6917,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1599163090
+    "modified": 1599167053
 }
