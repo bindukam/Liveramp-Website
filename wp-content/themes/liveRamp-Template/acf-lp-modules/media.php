@@ -31,18 +31,22 @@
                         <div class="copy green"><?php the_sub_field('description') ?></div>
                     <?php endif ?>
                 </div>
+                <?php
+                    $gf_id = get_sub_field('gravity_form_id');
+                    if($gf_id) {
+                ?>
                 <div class="cell large-5 form-cell">
                     <div data-sticky-container>
                         <div class="form-wrapper box-shadow-over-white b-radius white-bkg">
                             <?php
-                                $gf_id = get_sub_field('gravity_form_id');
-                                if($gf_id) {
-                                    gravity_form($gf_id, false, false, false, null, true, 12);
-                                }
+                                gravity_form($gf_id, false, false, false, null, true, 12);
                             ?>
                         </div>
                     </div>
                 </div>
+                <?php
+                    }
+                ?>
             </div>
         </div>
     </div>
