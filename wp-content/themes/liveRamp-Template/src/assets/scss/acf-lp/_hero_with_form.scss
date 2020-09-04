@@ -268,6 +268,8 @@
             }
 
             .media-wrapper {
+                position: relative;
+
                 @include breakpoint(small only) {
                     padding-left: 20px;
                     padding-right: 20px;
@@ -303,17 +305,17 @@
                     }
 
                     @include breakpoint(large) {
-                        bottom: 410px;
+                        bottom: 0px;
                     }
                 }
 
                 &.waveline::before {
-                        top: 38px;
-                        background-repeat: repeat-y;
-                        background-size: 700px;
-                        background-position: top left;
-                        transform: scale(-1);
-                        left: 230px;
+                    top: 38px;
+                    background-repeat: repeat-y;
+                    background-size: 700px;
+                    background-position: top left;
+                    transform: scale(-1);
+                    left: 230px;
                 }
                 &.swirl::before {
                     background-repeat: no-repeat;
@@ -361,6 +363,16 @@
                 @include breakpoint(large) {
                     margin-top: -320px;
                     padding-top: 30px;
+                }
+            }
+            &.slideshare {
+                .media-wrapper {
+                    padding-bottom: 30px;
+                }
+
+                .media-video {
+                    margin-top: 0px;
+
                 }
             }
         }

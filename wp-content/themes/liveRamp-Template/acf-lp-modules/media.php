@@ -3,7 +3,7 @@
     $video_id = get_sub_field('video_id');
     $ss = get_sub_field('slideshare_ss');
 ?>
-<section class="hero-with-form media-section">
+<section class="hero-with-form media-section <?php echo $media_type; ?>">
     <div class="media-wrapper primary-bkg <?php echo get_sub_field('background_pattern'); ?>">
         <div class="grid-container ">
             <div class="grid-x grid-margin-x align-justify">
