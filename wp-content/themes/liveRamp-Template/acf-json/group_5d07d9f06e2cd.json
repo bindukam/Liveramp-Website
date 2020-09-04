@@ -5406,6 +5406,55 @@
                             "ui_off_text": ""
                         },
                         {
+                            "key": "field_5f52951b0ee9f",
+                            "label": "Logo",
+                            "name": "logo",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
+                            "key": "field_5f529cd32efde",
+                            "label": "Background Pattern",
+                            "name": "background_pattern",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "waveline": "Wavelines",
+                                "circle": "Circles",
+                                "swirl": "Swirls"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "waveline",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
                             "key": "field_5f19cd2a8b74c",
                             "label": "Eyebrow Text",
                             "name": "eyebrow_text",
@@ -6917,5 +6966,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1599167053
+    "modified": 1599249844
 }

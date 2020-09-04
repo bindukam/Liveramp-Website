@@ -7,9 +7,20 @@
             }
         }
 
-        .hero-with-form.media {
+        .hero-with-form.media-section {
             &:before {
-                background-image: url(../../assets/images/svg/wavelines-db.svg);
+                display: none;
+            }
+            .media-wrapper {
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-db.svg);
+                }
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-dg.svg);
+                }
+                &.circle::before {
+                    background-image: url(../../assets/images/svg/corner-circle-lines-dg.svg);
+                }
             }
         }
 
@@ -27,9 +38,20 @@
             }
         }
 
-        .hero-with-form.media {
+        .hero-with-form.media-section {
             &:before {
-                background-image: url(../../assets/images/svg/wavelines-cb.svg);
+                display: none;
+            }
+            .media-wrapper {
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-cb.svg);
+                }
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-cb.svg);
+                }
+                &.circle::before {
+                    background-image: url(../../assets/images/svg/corner-circle-lines-cb.svg);
+                }
             }
         }
 
@@ -47,9 +69,20 @@
             }
         }
 
-        .hero-with-form.media {
+        .hero-with-form.media-section {
             &:before {
-                background-image: url(../../assets/images/svg/wavelines-dg.svg);
+                display: none;
+            }
+            .media-wrapper {
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-dg.svg);
+                }
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-dg.svg);
+                }
+                &.circle::before {
+                    background-image: url(../../assets/images/svg/corner-circle-lines-dg.svg);
+                }
             }
         }
 
@@ -67,9 +100,20 @@
             }
         }
 
-        .hero-with-form.media {
+        .hero-with-form.media-section {
             &:before {
-                background-image: url(../../assets/images/svg/wavelines-mb.svg);
+                display: none;
+            }
+            .media-wrapper {
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-mb.svg);
+                }
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-mb.svg);
+                }
+                &.circle::before {
+                    background-image: url(../../assets/images/svg/corner-circle-lines-mb.svg);
+                }
             }
         }
 
@@ -87,9 +131,20 @@
             }
         }
 
-        .hero-with-form.media {
+        .hero-with-form.media-section {
             &:before {
-                background-image: url(../../assets/images/svg/wavelines-teal.svg);
+                display: none;
+            }
+            .media-wrapper {
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-teal.svg);
+                }
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-teal.svg);
+                }
+                &.circle::before {
+                    background-image: url(../../assets/images/svg/corner-circle-lines-teal.svg);
+                }
             }
         }
 
@@ -107,9 +162,20 @@
             }
         }
 
-        .hero-with-form.media {
+        .hero-with-form.media-section {
             &:before {
-                background-image: url(../../assets/images/svg/wavelines-yellow.svg);
+                display: none;
+            }
+            .media-wrapper {
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-yellow.svg);
+                }
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-yellow.svg);
+                }
+                &.circle::before {
+                    background-image: url(../../assets/images/svg/corner-circle-lines-yellow.svg);
+                }
             }
         }
 

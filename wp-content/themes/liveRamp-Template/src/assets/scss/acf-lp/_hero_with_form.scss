@@ -224,6 +224,7 @@
                     @include breakpoint(medium only) {
                         padding: 2rem;
                     }
+
                     @include breakpoint(medium) {
                         @include hard-shadow;
                     }
@@ -255,47 +256,73 @@
             }
         }
 
-        &.media {
+        &.media-section {
+            padding: 0 0 4rem 0;
+
+            @include breakpoint(small) {
+                padding-bottom: 30px;
+            }
 
             &:before {
-                content: '';
-                width: 100%;
-                position: absolute;
-                top: 50px;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-image: url(../images/svg/wavelines-green.svg) !important;
-                z-index: 0;
-                background-repeat: repeat-y;
-                transform: scale(-1);
+                display: none;
+            }
 
+            .media-wrapper {
                 @include breakpoint(small only) {
-                    display: none;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 125px;
                 }
 
-                @include breakpoint(medium only) {
-                    display: none;
+                @include breakpoint(medium) {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-bottom: 200px;
                 }
 
                 @include breakpoint(large) {
-                    background-position: -420px bottom;
-                    background-size: 68%;
+                    padding-bottom: 350px;
                 }
 
-                @include breakpoint(xxlarge) {
-                    //background-position: -160px;
-                    //background-size: 35%;
+                &:before {
+                    content: '';
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 0;
+                    top: 0;
+
+                    @include breakpoint(small only) {
+                        display: none;
+                    }
+
+                    @include breakpoint(medium only) {
+                        display: none;
+                    }
+
+                    @include breakpoint(large) {
+                        bottom: 410px;
+                    }
                 }
-            }
-        }
 
-        &.media-top-section {
-        }
-
-        &.media-bottom-section {
-            &:before {
-                display: none;
+                &.waveline::before {
+                        top: 38px;
+                        background-repeat: repeat-y;
+                        background-size: 700px;
+                        background-position: top left;
+                        transform: scale(-1);
+                        left: 230px;
+                }
+                &.swirl::before {
+                    background-repeat: no-repeat;
+                    background-position: 106% center;
+                }
+                &.circle::before {
+                    background-repeat: no-repeat;
+                    background-position: 106% center;
+                }
             }
 
             .media-video {
@@ -317,53 +344,23 @@
 
                 padding-top: 0;
 
-                @include breakpoint(small) {
+                @include breakpoint(small only) {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 20px;
                     margin-top: -125px;
                 }
 
                 @include breakpoint(medium) {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 20px;
                     margin-top: -200px;
                 }
 
                 @include breakpoint(large) {
-                    margin-top: -350px;
-                }
-            }
-
-            .media-float {
-
-                &:before {
-                    top: 0;
-                }
-
-                position: relative;
-                z-index: -1;
-                margin-left: -1rem;
-                margin-right: -1rem;
-                padding: 0;
-
-                @include breakpoint(small) {
-                    &:before {
-                        display: none;
-                    }
-
-                    min-height: 125px;
-                }
-
-                @include breakpoint(medium) {
-                    &:before {
-                        display: none;
-                    }
-
-                    min-height: 200px;
-                }
-
-                @include breakpoint(large) {
-                    &:before {
-                        display: inherit;
-                    }
-
-                    min-height: 350px;
+                    margin-top: -320px;
+                    padding-top: 30px;
                 }
             }
         }
