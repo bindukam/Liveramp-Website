@@ -1,9 +1,5 @@
 <?php
 
-$theme_uri = get_stylesheet_directory();
-$theme_images = $theme_uri.'/dist/assets/images';
-$theme_svg = $theme_images.'/svg';
-
 $cta_type = get_sub_field('cta_type');
 if($cta_type == 'none') {
     $cta_text = '';
@@ -33,12 +29,12 @@ $c = "d";
 
 ?>
 
-<section class="hero-with-form primary-bkg with-image-block">
+<section class="hero-with-form primary-bkg with-image-block <?php echo get_sub_field('background_pattern'); ?>"">
     <div class="grid-container ">
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell green-bkg large-4">
                 <div class="header-logo">
-                    <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><?php echo file_get_contents("$theme_svg/lr_logo.svg"); ?></a> 
+                    <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><img src="<?php echo get_sub_field('logo'); ?>"></a> 
                 </div>
             </div>
         </div>
@@ -47,7 +43,7 @@ $c = "d";
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell large-4 content">
                 <?php if (get_sub_field('title')): ?>
-                    <h1 class="headline green"><?php the_sub_field('title') ?></h1>
+                    <h1 class="headline green bar-<?php the_sub_field('horizontal_bar') ?>"><?php the_sub_field('title') ?></h1>
                 <?php endif ?>
                 <?php if (get_sub_field('subheadline')): ?>
                     <div class="h3 bold green subheadline"><?php the_sub_field('subheadline') ?></div>

@@ -5,6 +5,15 @@
             &:before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-db.svg);
             }
+            &.waveline::before {
+                background-image: url(../../assets/images/svg/wavelines-db.svg);
+            }
+            &.swirl::before {
+                background-image: url(../../assets/images/svg/swirl-right-dg.svg);
+            }
+            &.radial::before {
+                background-image: url(../../assets/images/svg/corner-circle-lines-dg.svg);
+            }
         }
 
         .hero-with-form.media-section {
@@ -18,7 +27,7 @@
                 &.swirl::before {
                     background-image: url(../../assets/images/svg/swirl-right-dg.svg);
                 }
-                &.circle::before {
+                &.radial::before {
                     background-image: url(../../assets/images/svg/corner-circle-lines-dg.svg);
                 }
             }
@@ -36,6 +45,15 @@
             &:before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-cb.svg);
             }
+            &.waveline::before {
+                background-image: url(../../assets/images/svg/wavelines-cb.svg);
+            }
+            &.swirl::before {
+                background-image: url(../../assets/images/svg/swirl-right-cb.svg);
+            }
+            &.radial::before {
+                background-image: url(../../assets/images/svg/corner-circle-lines-cb.svg);
+            }
         }
 
         .hero-with-form.media-section {
@@ -49,7 +67,7 @@
                 &.swirl::before {
                     background-image: url(../../assets/images/svg/swirl-right-cb.svg);
                 }
-                &.circle::before {
+                &.radial::before {
                     background-image: url(../../assets/images/svg/corner-circle-lines-cb.svg);
                 }
             }
@@ -80,7 +98,7 @@
                 &.swirl::before {
                     background-image: url(../../assets/images/svg/swirl-right-dg.svg);
                 }
-                &.circle::before {
+                &.radial::before {
                     background-image: url(../../assets/images/svg/corner-circle-lines-dg.svg);
                 }
             }
@@ -111,7 +129,7 @@
                 &.swirl::before {
                     background-image: url(../../assets/images/svg/swirl-right-mb.svg);
                 }
-                &.circle::before {
+                &.radial::before {
                     background-image: url(../../assets/images/svg/corner-circle-lines-mb.svg);
                 }
             }
@@ -142,7 +160,7 @@
                 &.swirl::before {
                     background-image: url(../../assets/images/svg/swirl-right-teal.svg);
                 }
-                &.circle::before {
+                &.radial::before {
                     background-image: url(../../assets/images/svg/corner-circle-lines-teal.svg);
                 }
             }
@@ -173,7 +191,7 @@
                 &.swirl::before {
                     background-image: url(../../assets/images/svg/swirl-right-yellow.svg);
                 }
-                &.circle::before {
+                &.radial::before {
                     background-image: url(../../assets/images/svg/corner-circle-lines-yellow.svg);
                 }
             }

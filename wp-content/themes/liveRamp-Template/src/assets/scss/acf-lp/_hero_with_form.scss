@@ -85,33 +85,39 @@
             content: '';
             width: 100%;
             position: absolute;
-            top: 0;
             left: 0;
+            right: 0;
             bottom: 0;
-            background-image: url(../images/svg/diagonal-lines-core-green.svg);
             z-index: 0;
-            background-repeat: no-repeat;
-            transform: scale(1);
+            top: 0;
 
             @include breakpoint(small only) {
-                background-position: 170% bottom;
-                background-size: 80%;
+                display: none;
             }
 
-            @include breakpoint(medium) {
-                background-position: 140% bottom;
-                background-size: 55%;
+            @include breakpoint(medium only) {
+                display: none;
             }
 
             @include breakpoint(large) {
-                background-position: 120% center;
-                background-size: 40%;
+                bottom: 0px;
             }
-
-            @include breakpoint(xxlarge) {
-                background-position: bottom right;
-                background-size: 50%;
-            }
+        }
+        &.waveline::before {
+            top: 0;
+            background-repeat: repeat-y;
+            background-size: 700px;
+            background-position: top left;
+            transform: scale(-1);
+            left: 230px;
+        }
+        &.swirl::before {
+            background-repeat: no-repeat;
+            background-position: 106% center;
+        }
+        &.radial::before {
+            background-repeat: no-repeat;
+            background-position: 106% center;
         }
 
         &.ebook-top-section {
@@ -196,9 +202,14 @@
 
         &.with-image-block {
             .headline {
-                border-bottom: 1px solid $dark-gray-40;
-                margin-bottom: 20px;
-                padding-bottom: 40px;
+                &.bar-hide {
+                    margin-bottom: 50px;
+                }
+                &.bar-visible {
+                    border-bottom: 1px solid $dark-gray-40;
+                    margin-bottom: 20px;
+                    padding-bottom: 40px;
+                }
             }
 
             .subheadline {
@@ -286,45 +297,7 @@
                     padding-bottom: 350px;
                 }
 
-                &:before {
-                    content: '';
-                    width: 100%;
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    z-index: 0;
-                    top: 0;
 
-                    @include breakpoint(small only) {
-                        display: none;
-                    }
-
-                    @include breakpoint(medium only) {
-                        display: none;
-                    }
-
-                    @include breakpoint(large) {
-                        bottom: 0px;
-                    }
-                }
-
-                &.waveline::before {
-                    top: 38px;
-                    background-repeat: repeat-y;
-                    background-size: 700px;
-                    background-position: top left;
-                    transform: scale(-1);
-                    left: 230px;
-                }
-                &.swirl::before {
-                    background-repeat: no-repeat;
-                    background-position: 106% center;
-                }
-                &.circle::before {
-                    background-repeat: no-repeat;
-                    background-position: 106% center;
-                }
             }
 
             .media-video {

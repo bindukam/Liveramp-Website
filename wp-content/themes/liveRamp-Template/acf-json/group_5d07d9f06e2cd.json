@@ -5100,6 +5100,30 @@
                             "ui_off_text": ""
                         },
                         {
+                            "key": "field_5f59b58215839",
+                            "label": "Logo",
+                            "name": "logo",
+                            "type": "image",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "url",
+                            "preview_size": "medium",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": ""
+                        },
+                        {
                             "key": "field_5f19c72d00db6",
                             "label": "Title",
                             "name": "title",
@@ -5117,6 +5141,30 @@
                             "prepend": "",
                             "append": "",
                             "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f59b5ef1583a",
+                            "label": "Horizontal Bar",
+                            "name": "horizontal_bar",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "visible": "Visible",
+                                "hide": "Hide"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "visible",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
                         },
                         {
                             "key": "field_5f19c75700dc1",
@@ -5155,6 +5203,31 @@
                             "toolbar": "full",
                             "media_upload": 1,
                             "delay": 0
+                        },
+                        {
+                            "key": "field_5f59b7de1583b",
+                            "label": "Background Pattern",
+                            "name": "background_pattern",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "waveline": "Wavelines",
+                                "radial": "Radial",
+                                "swirl": "Swirls"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "waveline",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
                         },
                         {
                             "key": "field_5f19c77400dc2",
@@ -5444,7 +5517,7 @@
                             },
                             "choices": {
                                 "waveline": "Wavelines",
-                                "circle": "Circles",
+                                "radial": "Radial",
                                 "swirl": "Swirls"
                             },
                             "allow_null": 0,
@@ -6966,5 +7039,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1599249844
+    "modified": 1599757482
 }
