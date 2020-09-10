@@ -8,7 +8,7 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
 
 ?>
 
-<section class="hero-with-form primary-bkg">
+<section class="hero-with-form primary-bkg <?php echo get_sub_field('background_pattern'); ?>"">
     <div class="grid-container ">
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell green-bkg large-4">

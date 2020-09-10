@@ -4376,6 +4376,32 @@
                             "ui_off_text": ""
                         },
                         {
+                            "key": "field_5f5a98835beed",
+                            "label": "Background Pattern",
+                            "name": "background_pattern",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "waveline": "Wavelines",
+                                "radial": "Radial",
+                                "swirl": "Swirls",
+                                "diagonal": "Diagonal Lines"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "waveline",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
+                        },
+                        {
                             "key": "field_5f19c1ca095c7",
                             "label": "Eyebrow Text",
                             "name": "eyebrow_text",
@@ -4607,6 +4633,32 @@
                             "ui": 1,
                             "ui_on_text": "",
                             "ui_off_text": ""
+                        },
+                        {
+                            "key": "field_5f5a98925beee",
+                            "label": "Background Pattern",
+                            "name": "background_pattern",
+                            "type": "radio",
+                            "instructions": "",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "choices": {
+                                "waveline": "Wavelines",
+                                "radial": "Radial",
+                                "swirl": "Swirls",
+                                "diagonal": "Diagonal Lines"
+                            },
+                            "allow_null": 0,
+                            "other_choice": 0,
+                            "default_value": "waveline",
+                            "layout": "horizontal",
+                            "return_format": "value",
+                            "save_other_choice": 0
                         },
                         {
                             "key": "field_5f19c7e500dc6",
@@ -7041,5 +7093,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1599765067
+    "modified": 1599772919
 }

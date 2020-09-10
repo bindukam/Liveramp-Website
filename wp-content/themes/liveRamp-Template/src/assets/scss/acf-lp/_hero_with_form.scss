@@ -106,6 +106,7 @@
                 bottom: 0px;
             }
         }
+
         &.waveline::before {
             top: 0;
             background-repeat: repeat-y;
@@ -114,10 +115,12 @@
             transform: scale(-1);
             left: 230px;
         }
+
         &.swirl::before {
             background-repeat: no-repeat;
             background-position: 106% center;
         }
+
         &.radial::before {
             background-repeat: no-repeat;
             background-position: 106% center;
@@ -208,6 +211,7 @@
                 &.bar-hide {
                     margin-bottom: 50px;
                 }
+
                 &.bar-visible {
                     border-bottom: 1px solid $dark-gray-40;
                     margin-bottom: 20px;
@@ -300,7 +304,47 @@
                     padding-bottom: 350px;
                 }
 
+                &:before {
+                    content: '';
+                    width: 100%;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    z-index: 0;
+                    top: 0;
 
+                    @include breakpoint(small only) {
+                        display: none;
+                    }
+
+                    @include breakpoint(medium only) {
+                        display: none;
+                    }
+
+                    @include breakpoint(large) {
+                        bottom: 0px;
+                    }
+                }
+
+                &.waveline::before {
+                    top: 38px;
+                    background-repeat: repeat-y;
+                    background-size: 700px;
+                    background-position: top left;
+                    transform: scale(-1);
+                    left: 230px;
+                }
+
+                &.swirl::before {
+                    background-repeat: no-repeat;
+                    background-position: 106% center;
+                }
+
+                &.circle::before {
+                    background-repeat: no-repeat;
+                    background-position: 106% center;
+                }
             }
 
             .media-video {
@@ -341,6 +385,7 @@
                     padding-top: 30px;
                 }
             }
+
             &.slideshare {
                 .media-wrapper {
                     padding-bottom: 30px;
@@ -348,7 +393,6 @@
 
                 .media-video {
                     margin-top: 0px;
-
                 }
             }
         }

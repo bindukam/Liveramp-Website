@@ -33,7 +33,7 @@ if($gated_asset) {
 }
 ?>
 
-<section class="hero-with-form primary-bkg ebook-top-section">
+<section class="hero-with-form primary-bkg ebook-top-section <?php echo get_sub_field('background_pattern'); ?>"">
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell  large-6 content">
