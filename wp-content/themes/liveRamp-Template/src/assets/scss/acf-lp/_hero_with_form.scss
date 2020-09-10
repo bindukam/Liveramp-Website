@@ -81,7 +81,7 @@
             position: relative;
         }
 
-        &:before {
+        &:before, &.diagonal::before {
             content: '';
             width: 100%;
             position: absolute;
@@ -90,6 +90,9 @@
             bottom: 0;
             z-index: 0;
             top: 0;
+            background-repeat: repeat-y;
+            background-position: 106% center;
+            background-size: 400px;
 
             @include breakpoint(small only) {
                 display: none;
@@ -118,11 +121,6 @@
         &.radial::before {
             background-repeat: no-repeat;
             background-position: 106% center;
-        }
-        &.diagonal::before {
-            background-repeat: repeat-y;
-            background-position: 106% center;
-            background-size: 400px;
         }
 
         &.ebook-top-section {
