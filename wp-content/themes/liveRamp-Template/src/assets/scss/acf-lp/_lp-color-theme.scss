@@ -1,5 +1,48 @@
 ﻿.single-lp {
 
+    #green-theme {
+        .hero-with-form {
+            &:before, &.diagonal::before {
+                background-image: url(../../assets/images/svg/diagonal-lines-core-green.svg);
+            }
+            &.waveline::before {
+                background-image: url(../../assets/images/svg/wavelines-green.svg);
+            }
+            &.swirl::before {
+                background-image: url(../../assets/images/svg/swirl-right-green.svg);
+            }
+            &.radial::before {
+                background-image: url(../../assets/images/svg/corner-circle-lines-green.svg);
+            }
+        }
+
+        .hero-with-form.media-section {
+            &:before {
+                display: none;
+            }
+            .media-wrapper {
+                &:before, &.diagonal::before {
+                    background-image: url(../../assets/images/svg/diagonal-lines-core-green.svg);
+                }
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-green.svg);
+                }
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-green.svg);
+                }
+                &.radial::before {
+                    background-image: url(../../assets/images/svg/corner-circle-lines-green.svg);
+                }
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-green.svg);
+            }
+        }
+    }
+
     #dark-blue-theme {
         .hero-with-form {
             &:before, &.diagonal::before {
