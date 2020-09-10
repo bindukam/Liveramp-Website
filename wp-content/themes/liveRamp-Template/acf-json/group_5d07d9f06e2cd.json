@@ -5220,7 +5220,8 @@
                             "choices": {
                                 "waveline": "Wavelines",
                                 "radial": "Radial",
-                                "swirl": "Swirls"
+                                "swirl": "Swirls",
+                                "diagonal": "Diagonal Lines"
                             },
                             "allow_null": 0,
                             "other_choice": 0,
@@ -5518,7 +5519,8 @@
                             "choices": {
                                 "waveline": "Wavelines",
                                 "radial": "Radial",
-                                "swirl": "Swirls"
+                                "swirl": "Swirls",
+                                "diagonal": "Diagonal Lines"
                             },
                             "allow_null": 0,
                             "other_choice": 0,
@@ -7039,5 +7041,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1599757482
+    "modified": 1599765067
 }

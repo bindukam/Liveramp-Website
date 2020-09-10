@@ -119,6 +119,11 @@
             background-repeat: no-repeat;
             background-position: 106% center;
         }
+        &.diagonal::before {
+            background-repeat: repeat-y;
+            background-position: 106% center;
+            background-size: 400px;
+        }
 
         &.ebook-top-section {
             @include breakpoint(large) {

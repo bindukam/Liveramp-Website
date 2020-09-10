@@ -2,7 +2,7 @@
 
     #dark-blue-theme {
         .hero-with-form {
-            &:before {
+            &:before, &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-db.svg);
             }
             &.waveline::before {
@@ -42,7 +42,7 @@
 
     #core-blue-theme {
         .hero-with-form {
-            &:before {
+            &:before, &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-cb.svg);
             }
             &.waveline::before {
@@ -82,7 +82,7 @@
 
     #dark-gray-theme {
         .hero-with-form {
-            &:before {
+            &:before, &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-dg.svg);
             }
         }
@@ -113,13 +113,13 @@
 
     #medium-blue-theme {
         .hero-with-form {
-            &:before {
+            &:before, &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-mb.svg);
             }
         }
 
         .hero-with-form.media-section {
-            &:before {
+            &:before, &.diagonal::before {
                 display: none;
             }
             .media-wrapper {
@@ -144,7 +144,7 @@
 
     #teal-theme {
         .hero-with-form {
-            &:before {
+            &:before, &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-teal.svg);
             }
         }
@@ -175,7 +175,7 @@
 
     #yellow-theme {
         .hero-with-form {
-            &:before {
+            &:before, &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-yellow.svg);
             }
         }
