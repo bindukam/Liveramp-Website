@@ -328,7 +328,7 @@
                 }
 
                 &.waveline::before {
-                    top: 38px;
+                    top: 0;
                     background-repeat: repeat-y;
                     background-size: 700px;
                     background-position: top left;
@@ -341,7 +341,7 @@
                     background-position: 106% center;
                 }
 
-                &.circle::before {
+                &.radial::before {
                     background-repeat: no-repeat;
                     background-position: 106% center;
                 }
