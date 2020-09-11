@@ -62,6 +62,17 @@
                 if($module_name == 'lp_event_form'){
                     include ('acf-lp-modules/event_form.php');
                 }
+
+                // Three Cards with Image/Text
+                if($module_name == 'lp_three_card_image_and_text'){
+                    include ('acf-lp-modules/three_card_image_and_text.php');
+                }
+
+                // Carousel: Right Justified Quote / High Impact Statement Module
+                if($module_name == 'carousel-quote-impact-stmt'){
+                  include ('acf-modules/carousel-quote-impact-stmt.php');
+                }
+
             }
         }
     }
