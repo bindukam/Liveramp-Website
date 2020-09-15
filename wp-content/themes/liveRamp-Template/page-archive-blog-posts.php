@@ -63,15 +63,11 @@ get_template_part( 'template-parts/blog_archive_parts/post_continue' ); ?>
 	    	event.preventDefault();
 	    	resetStyled();
 	    	$this = $(this);
-	    	var val = $this.attr('data-author-id'),
-	    		name = $this.text();
-
-			if ($this.attr('data-author-name')) {
-				name = $this.attr('data-author-name');
-			};
+	    	let authval = $this.attr('data-author-id'),
+	    		authname = $this.attr('data-author-name');
 	    	
-	    	$('#filter1 select[name="author"]').val(val).trigger('change');
-	    	$('.select-styled[data-name="author"]').text(name);
+	    	$('#filter1 select[name="cus_author"]').val(authval).trigger('change');
+	    	$('.select-styled[data-name="cus_author"]').text(authname);
 	    	// $('#filter2 select[name="author_name"]').val(val).trigger('change');
 	    	// console.log('author click', val, name);
 	    	
@@ -154,9 +150,10 @@ get_template_part( 'template-parts/blog_archive_parts/post_continue' ); ?>
     }
 
     $( document ).ready(function() {
-	    console.log( "author ready!" );
+	    //console.log( "author ready!" );
 	    authorName();
 		metaClick();
+		
 	    
 	});
 
@@ -262,8 +259,6 @@ get_template_part( 'template-parts/blog_archive_parts/post_continue' ); ?>
 
 
 		$( document ).ready(function() {
-		    console.log( " page history ready ready!" );
-		   
 		    
 		    $('#filter1').change(function(url){
 		    	var query = '';
@@ -297,10 +292,14 @@ get_template_part( 'template-parts/blog_archive_parts/post_continue' ); ?>
 		    	console.log(window.location.search);
 		    	const params = new URLSearchParams(window.location.search);  
 				const blog_categories = params.get("blog_categories");
-				const author = params.get("author");
+				const author = params.get("cus_author");
 				const date_field = params.get("date_field");
 				console.log(blog_categories, author);
-				$('#filter1 select[name="author"]').val(author);
+				$('#filter1 select[name="cus_author"]').val(author);
+				
+				let authname = $("#filter1 select[name='cus_author'] option[value='"+author+"']").text();
+				$('.select-styled[data-name="cus_author"]').text(authname);
+				
 				$('#filter1 select[name="blog_categories"]').val(blog_categories);
 				$('#filter1 select[name="date_field"]').val(date_field);
 
