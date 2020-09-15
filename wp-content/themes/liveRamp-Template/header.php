@@ -23,6 +23,7 @@
 		
 		<?php include ('library/hreflang.php') ?>
 
+		<!-------------------- LOCAL CODE SPECIFIC TO LOCATION -------------------->
 		<?php 
 			$code_loop = get_field('code_loop', 'option'); 
 
@@ -32,6 +33,10 @@
 				echo "\n" . $code['code_block'] . "\n";
 			}
 		?>
+		
+		<!-------------------- END LOCAL CODE SPECIFIC TO LOCATION -------------------->
+
+		<!-------------------- GLOBAL CODE -------------------->
 
 		<!-- VIMEO TRACKING CODE -->
 		<script type='text/javascript' defer='defer' src='<?php echo $theme_uri; ?>/dist/assets/js/10577812.js'></script>
@@ -43,6 +48,9 @@
 
 		<!-- wistia script  -->
 		<script type='text/javascript' charset="ISO-8859-1" src="<?php echo $theme_uri; ?>/dist/assets/js/E-v1.js" async></script>
+
+		<!-------------------- END GLOBAL CODE -------------------->
+
 
 		<!-- iframe resizer  -->
 		<style>	.ubermenu  svg.ubermenu-image {	max-width: 1em; } </style>
