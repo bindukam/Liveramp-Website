@@ -32,7 +32,7 @@
             "rewrite" => "", array( "slug" => "landing-page", "with_front" => false ),
             "query_var" => true,
             'menu_icon' => '/wp-content/themes/liveRamp-Template/src/assets/images/website_icon.png',
-            "supports" => array( "title", "editor", "custom-fields", "revisions", "color_theme" ),
+            "supports" => array( "title", "excerpt", "thumbnail", "editor", "custom-fields", "revisions", "color_theme" ),
         );
 
         register_post_type( "lp", $args );

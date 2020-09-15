@@ -73,6 +73,12 @@
                   include ('acf-modules/carousel-quote-impact-stmt.php');
                 }
 
+                // Resource : 3 Card Image and Text
+                if(get_row_layout()=='resource_3_card_image_and_text'){
+                  include ('acf-modules/resource_3_card_image_and_text.php');
+                }
+
+
             }
         }
     }
