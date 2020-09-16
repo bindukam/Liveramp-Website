@@ -148,6 +148,20 @@
                 background-image: none !important;
             }
 
+            @include breakpoint(medium down) {
+                .col-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    .col-order-1 {
+                        order: 1;
+                        margin-top: -75px;
+                    }
+                    .col-order-2 {
+                        order: 2;
+                    }
+                }
+            }
+
             .ebook-float {
                 min-height: 75px;
                 position: relative;
@@ -162,7 +176,7 @@
                 }
 
                 @include breakpoint(small) {
-                    display: none;
+                    //display: none;
                 }
 
                 @include breakpoint(large) {

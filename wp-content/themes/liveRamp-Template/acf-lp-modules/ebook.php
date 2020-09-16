@@ -70,8 +70,8 @@ $background_image = get_sub_field('background_image');
 <section class="hero-with-form ebook-bottom-section">
     <div class="hero-with-form primary-bkg ebook-float <?php echo $background_image ? 'right-space' : '';  ?>"></div>
     <div class="grid-container">
-        <div class="grid-x grid-margin-x align-justify">
-            <div class="cell  large-6 content">
+        <div class="grid-x grid-margin-x align-justify col-wrapper">
+            <div class="cell  large-6 content col-order-2">
                 <?php if (get_sub_field('subheadline')): ?>
                     <div class="h3 bold subheadline"><?php the_sub_field('subheadline') ?></div>
                 <?php endif ?>
@@ -120,7 +120,7 @@ $background_image = get_sub_field('background_image');
                     </div>
                 <?php endif ?>
             </div>
-            <div class="cell large-5 form-cell">
+            <div class="cell large-5 form-cell col-order-1">
                 <div data-sticky-container>
 
                     <div class="form-wrapper box-shadow-over-white b-radius white-bkg">

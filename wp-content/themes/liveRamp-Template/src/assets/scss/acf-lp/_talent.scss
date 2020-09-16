@@ -70,6 +70,10 @@
             margin: 4rem 0 0 0;
             color: $green !important;
 
+            @include breakpoint(medium down) {
+                margin: 1rem 0 0 0;
+            }
+
             @include breakpoint(large) {
                 margin-top: 0;
             }
