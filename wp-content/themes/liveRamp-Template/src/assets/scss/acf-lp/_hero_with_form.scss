@@ -149,12 +149,13 @@
             }
 
             @include breakpoint(medium down) {
+
                 .col-wrapper {
                     display: flex;
                     flex-direction: column;
                     .col-order-1 {
                         order: 1;
-                        margin-top: -75px;
+                        margin-top: -70px;
                     }
                     .col-order-2 {
                         order: 2;
