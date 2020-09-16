@@ -429,9 +429,6 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
         z-index: 1;
 
         @include breakpoint(large) {
@@ -444,6 +441,9 @@
             height: 100%;
             width: 100%;
             clip-path: url(#myClip);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
     }
 }

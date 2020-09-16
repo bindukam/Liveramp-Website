@@ -54,9 +54,9 @@ $background_image = get_sub_field('background_image');
         </div>
     </div>
 </section>
-<?php if ($background_image !== ''): ?>
+<?php if ($background_image): ?>
     <div id="ebook-bk-image">
-        <img src="<?php echo $background_image; ?>" alt="" class="clip-svg" />
+        <div class="clip-svg" style="background-image:url(<?php echo $background_image; ?>);"></div>
 
         <svg width="0" height="0">
             <defs>
@@ -68,7 +68,7 @@ $background_image = get_sub_field('background_image');
     </div>
 <?php endif ?>
 <section class="hero-with-form ebook-bottom-section">
-    <div class="hero-with-form primary-bkg ebook-float <?php echo $background_image !== '' ? 'right-space' : '';  ?>"></div>
+    <div class="hero-with-form primary-bkg ebook-float <?php echo $background_image ? 'right-space' : '';  ?>"></div>
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell  large-6 content">
