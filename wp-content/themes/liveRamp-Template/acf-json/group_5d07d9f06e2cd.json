@@ -6893,6 +6893,59 @@
                             "delay": 0
                         },
                         {
+                            "key": "field_5f626712f2762",
+                            "label": "Video ID",
+                            "name": "video_id",
+                            "type": "text",
+                            "instructions": "Wistaa Video ID (optional)",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f6267adf2763",
+                            "label": "Video Caption",
+                            "name": "video_caption",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        },
+                        {
+                            "key": "field_5f286ca20117d",
+                            "label": "CTA - Find our booth",
+                            "name": "cta_find_our_booth",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "return_format": "array"
+                        },
+                        {
                             "key": "field_5f2898ce5093c",
                             "label": "Request a meeting?",
                             "name": "request_meeting",
@@ -6910,21 +6963,6 @@
                             "ui": 1,
                             "ui_on_text": "",
                             "ui_off_text": ""
-                        },
-                        {
-                            "key": "field_5f286ca20117d",
-                            "label": "CTA - Find our booth",
-                            "name": "cta_find_our_booth",
-                            "type": "link",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "return_format": "array"
                         }
                     ],
                     "min": "",
@@ -7484,5 +7522,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1600219475
+    "modified": 1600284675
 }

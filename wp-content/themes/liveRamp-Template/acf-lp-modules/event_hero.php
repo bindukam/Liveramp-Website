@@ -1,5 +1,7 @@
 <?php
 $hero_image = get_sub_field('hero_image');
+$video_id = get_sub_field('video_id');
+//$video_id = "";
 ?>
 
 <section class="lp-event-hero">
@@ -22,21 +24,43 @@ $hero_image = get_sub_field('hero_image');
                         <?php the_sub_field('eyebrow_text') ?>
                     </div>
                     <?php endif ?>
-                    <div class="content">
-                        <div class="col">
-                            <?php if (get_sub_field('title')): ?>
+
+                    <?php if (!empty($video_id)): ?>
+                        <?php if (get_sub_field('title')): ?>
                             <h1 class="headline green">
                                 <?php the_sub_field('title') ?>
                             </h1>
-                            <?php endif ?>
                             <?php if (get_sub_field('sponsor_text') && get_sub_field('sponsor_logo')): ?>
                             <div class="sponsor green">
                                 <span><?php the_sub_field('sponsor_text') ?></span>
                                 <span class="icon"><img src="<?php the_sub_field('sponsor_logo') ?>" alt="<?php the_sub_field('sponsor_text') ?>" /></span>
                             </div>
                             <?php endif ?>
-                        </div>
+                        <?php endif ?>
+
+                    <div class="content">
                         <div class="col">
+                    <?php endif ?>
+
+                    <?php if (empty($video_id)): ?>
+                        <div class="content">
+                            <div class="col">
+                                <?php if (get_sub_field('title')): ?>
+                                <h1 class="headline green">
+                                    <?php the_sub_field('title') ?>
+                                </h1>
+                                <?php endif ?>
+                                <?php if (get_sub_field('sponsor_text') && get_sub_field('sponsor_logo')): ?>
+                                <div class="sponsor green">
+                                    <span><?php the_sub_field('sponsor_text') ?></span>
+                                    <span class="icon"><img src="<?php the_sub_field('sponsor_logo') ?>" alt="<?php the_sub_field('sponsor_text') ?>" /></span>
+                                </div>
+                                <?php endif ?>
+                            </div>
+                        <div class="col">
+                    <?php endif ?>
+
+
                             <?php if (get_sub_field('subheadline')): ?>
                             <div class="h3 bold green subheadline">
                                 <?php the_sub_field('subheadline') ?>
@@ -61,6 +85,18 @@ $hero_image = get_sub_field('hero_image');
                                  <a href="#" class="button cta solid-white register">Request a meeting</a>
                             </div>
                             <?php endif ?>
+                    <?php if (!empty($video_id)): ?>
+                        </div>
+                        <div class="col col-video">
+                            <script src="https://fast.wistia.com/embed/medias/<?php echo $video_id ?>.jsonp" async></script>
+                            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+                            <div class="wistia_embed wistia_async_<?php echo $video_id ?> popover=true popoverAnimateThumbnail=true">&nbsp;</div>
+                            <?php if (get_sub_field('video_caption')): ?>
+                            <div class="caption green">
+                                <?php the_sub_field('video_caption') ?>
+                            </div>
+                            <?php endif ?>
+                    <?php endif ?>
                         </div>
                     </div>
                 </div>
