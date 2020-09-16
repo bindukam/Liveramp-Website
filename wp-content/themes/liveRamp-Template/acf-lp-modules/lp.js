@@ -15,12 +15,13 @@ jQuery(function($){ // use jQuery code inside this to avoid "$ is not defined" e
 		};
 
         if( ($('.lp-event-hero').length || $('.lp-event-details').length) && $('.lp-event-form').length ) {
-			$(".button.register").click(function () {
+			$(".button.register").click(function (e) {
+				e.preventDefault();
 				$([document.documentElement, document.body]).animate({
 					scrollTop: $('.lp-event-form').offset().top
 				}, 900);
+				return false;
 			});
-
         }
 	}
 });
