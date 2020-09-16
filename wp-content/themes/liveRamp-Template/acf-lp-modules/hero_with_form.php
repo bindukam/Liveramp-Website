@@ -1,9 +1,5 @@
 <?php
 
-$theme_uri = get_stylesheet_directory();
-$theme_images = $theme_uri.'/dist/assets/images';
-$theme_svg = $theme_images.'/svg';
-
 $form_submit_landing_page = get_sub_field('form_submit_landing_page');
 
 ?>
@@ -13,7 +9,7 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell green-bkg large-4">
                 <div class="header-logo">
-                    <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><?php echo file_get_contents("$theme_svg/lr_logo.svg"); ?></a> 
+                    <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><img src="<?php echo get_sub_field('logo'); ?>"></a> 
                 </div>
             </div>
         </div>
@@ -22,7 +18,7 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell  large-6 content">
                 <div class="cell eyebrow">
-                    <div class="icon"><img src="<?php echo get_sub_field('eyebrow_icon'); ?>"></div>
+                    <div class="icon" style="background-image: url(<?php echo get_sub_field('eyebrow_icon'); ?>);"></div>
                     <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>
                 </div>
                 <?php if (get_sub_field('title')): ?>

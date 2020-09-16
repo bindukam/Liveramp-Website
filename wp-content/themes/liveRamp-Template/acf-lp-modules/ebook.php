@@ -1,8 +1,5 @@
 <?php
 
-$theme_uri = get_stylesheet_directory();
-$theme_images = $theme_uri.'/dist/assets/images';
-$theme_svg = $theme_images.'/svg';
 $mkto_id = get_sub_field('marketo_form_id', 'option');
 
 $form_submit_landing_page = get_sub_field('form_submit_landing_page');
@@ -31,6 +28,7 @@ $gated_asset = get_sub_field('gated_asset');
 if($gated_asset) {
     $parent_form_page = get_sub_field('parent_form_page');
 }
+$background_image = get_sub_field('background_image');
 ?>
 
 <section class="hero-with-form primary-bkg ebook-top-section <?php echo get_sub_field('background_pattern'); ?>"">
@@ -38,10 +36,10 @@ if($gated_asset) {
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell  large-6 content">
                 <div class="header-logo">
-                    <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><?php echo file_get_contents("$theme_svg/lr_logo.svg"); ?></a> 
+                    <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><img src="<?php echo get_sub_field('logo'); ?>"></a> 
                 </div>
                 <div class="cell eyebrow">
-                    <div class="icon"><img src="<?php echo get_sub_field('eyebrow_icon'); ?>"></div>
+                    <div class="icon" style="background-image:url(<?php echo get_sub_field('eyebrow_icon'); ?>);"></div>
                     <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>
                 </div>
                 <?php if (get_sub_field('title')): ?>
@@ -56,8 +54,21 @@ if($gated_asset) {
         </div>
     </div>
 </section>
+<?php if ($background_image !== ''): ?>
+    <div id="ebook-bk-image">
+        <img src="<?php echo $background_image; ?>" alt="" class="clip-svg" />
+
+        <svg width="0" height="0">
+            <defs>
+                <clippath id="myClip">
+                    <circle cx="280" cy="120" r="270"></circle>
+                </clippath>
+            </defs>
+        </svg>
+    </div>
+<?php endif ?>
 <section class="hero-with-form ebook-bottom-section">
-    <div class="hero-with-form primary-bkg ebook-float"></div>
+    <div class="hero-with-form primary-bkg ebook-float <?php echo $background_image !== '' ? 'right-space' : '';  ?>"></div>
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell  large-6 content">
@@ -68,7 +79,7 @@ if($gated_asset) {
                     <div class="copy"><?php the_sub_field('description') ?></div>
                 <?php endif ?>
                 <?php if (get_sub_field('list_headline')): ?>
-                    <h4 class="green"><?php the_sub_field('list_headline') ?></h4>
+                    <h4><?php the_sub_field('list_headline') ?></h4>
                 <?php endif ?>
                 <?php if (have_rows('list')): ?>
                     <?php while(have_rows('list')) : ?>
@@ -84,13 +95,30 @@ if($gated_asset) {
                             $copy = get_sub_field('copy');
                         }
                     ?>
-                    <div class="cell list-item green-bkg">
-                        <div class="icon" style="background-image:url(<?php echo $icon; ?>);"></div>
-                        <div class="copy green"><?php echo $copy; ?></div>
+                    <div class="cell list-item">
+                        <div class="copy"><?php echo $copy; ?></div>
                     </div>
                     <?php endwhile ?>
                 <?php endif ?>
-
+                <?php if (get_sub_field('testimonial_quote')): ?>
+                    <div class="lp-talent">
+                        <div class="quote">
+                            <div class="quote-text">
+                                <?php the_sub_field('testimonial_quote') ?>&rdquo;
+                            </div>
+                            <?php if (get_sub_field('testimonial_name')): ?>
+                            <div class="quote-name">
+                                <?php the_sub_field('testimonial_name') ?>
+                            </div>
+                            <?php endif ?>
+                            <?php if (get_sub_field('testimonial_logo')): ?>
+                            <div class="quote-logo">
+                                <?php echo wp_get_attachment_image( get_sub_field('testimonial_logo'), 'full', '',array( "class" => "circle-image" ) ); ?>
+                            </div>
+                            <?php endif ?>
+                        </div>
+                    </div>
+                <?php endif ?>
             </div>
             <div class="cell large-5 form-cell">
                 <div data-sticky-container>
@@ -119,6 +147,52 @@ if($gated_asset) {
                             }
                         ?>
                     </div>
+                </div>
+                <div class="lp-talent">
+                    <?php if (get_sub_field('talent_headline')): ?>
+                        <h3 class="list-headline">
+                            <?php the_sub_field('talent_headline') ?>
+                        </h3>
+                        <div class="fixed-underline">
+                            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" >
+                        </div>
+                    <?php endif ?>
+                    <?php if (have_rows('talent_list')): ?>
+                        <?php while(have_rows('talent_list')) : ?>
+                        <?php the_row(); ?>
+                        <?php
+                                $headshot = '';
+                                $logo = '';
+                                $name = '';
+                                $job_title = '';
+                                if (get_sub_field('company_logo')) {
+                                    $logo = get_sub_field('company_logo');
+                                }
+                                if (get_sub_field('name')) {
+                                    $name = get_sub_field('name');
+                                }
+                                if (get_sub_field('job_title')) {
+                                    $job_title = get_sub_field('job_title');
+                                }
+                        ?>
+                        <div class="list-item">
+                            <div class="item-col">
+                                <div class="circle">
+                                    <?php echo wp_get_attachment_image( get_sub_field('headshot'), 'full', false, array( "class" => "circle-image" ) ); ?>
+                                </div>
+                            </div>
+                            <div class="item-col">
+                                <div class="speaker-name">
+                                    <?php echo $name; ?>
+                                </div>
+                                <div class="copy">
+                                    <?php echo $job_title; ?>
+                                </div>
+                                <?php echo wp_get_attachment_image( get_sub_field('company_logo'), 'full' ); ?>
+                            </div>
+                        </div>
+                        <?php endwhile ?>
+                    <?php endif ?>
                 </div>
             </div>
         </div>

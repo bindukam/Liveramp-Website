@@ -137,6 +137,9 @@
         }
 
         &.ebook-bottom-section {
+            position: relative;
+            z-index: 2;
+
             @include breakpoint(large) {
                 padding-top: 0;
             }
@@ -153,6 +156,7 @@
                 margin-right: -1rem;
                 padding: 0;
 
+
                 &:before {
                     background-image: none !important;
                 }
@@ -163,6 +167,16 @@
 
                 @include breakpoint(large) {
                     display: inherit;
+
+                    &.right-space {
+                        margin-right: 11rem;
+                    }
+                }
+
+                @include breakpoint(xlarge) {
+                    &.right-space {
+                        margin-right: 24rem;
+                    }
                 }
             }
 
@@ -194,13 +208,25 @@
             }
 
             .list-item {
+                margin: 0;
+                padding: 12px 5px 12px 30px;
                 border-bottom: none;
-                margin: 22px 0;
-                padding: 20px 25px;
-                border-radius: 10px;
-                box-shadow: 0 5px 6px -4px rgba(0,0,0,.2);
 
                 .copy {
+                    position: relative;
+
+                    &:before {
+                        content: " ";
+                        background-color: $green;
+                        position: absolute;
+                        height: 7px;
+                        width: 7px;
+                        display: block;
+                        border-radius: 10px;
+                        left: -27px;
+                        top: 7px;
+                    }
+
                     padding: 0;
                 }
             }
@@ -395,6 +421,29 @@
                     margin-top: 0px;
                 }
             }
+        }
+    }
+
+    #ebook-bk-image {
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 1;
+
+        @include breakpoint(large) {
+            display: block;
+            height: 333px;
+            width: 333px;
+        }
+
+        .clip-svg {
+            height: 100%;
+            width: 100%;
+            clip-path: url(#myClip);
         }
     }
 }

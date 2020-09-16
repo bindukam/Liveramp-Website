@@ -1,8 +1,4 @@
 <?php
-$theme_uri = get_stylesheet_directory();
-$theme_images = $theme_uri.'/dist/assets/images';
-$theme_svg = $theme_images.'/svg';
-
 $hero_image = get_sub_field('hero_image');
 ?>
 
@@ -12,7 +8,7 @@ $hero_image = get_sub_field('hero_image');
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell large-4">
                 <div class="header-logo">
-                    <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><?php echo file_get_contents("$theme_svg/lr_logo.svg"); ?></a> 
+                    <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><img src="<?php echo get_sub_field('logo'); ?>"></a> 
                 </div>
             </div>
         </div>
