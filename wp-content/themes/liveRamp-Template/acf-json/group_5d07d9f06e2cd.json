@@ -4353,7 +4353,7 @@
                 "layout_5f19c191095c5": {
                     "key": "layout_5f19c191095c5",
                     "name": "lp_hero_with_form",
-                    "label": "LP Hero with Form",
+                    "label": "LP Tall Banner Hero",
                     "display": "row",
                     "sub_fields": [
                         {
@@ -4636,7 +4636,7 @@
                 "layout_5f19c7e500dc4": {
                     "key": "layout_5f19c7e500dc4",
                     "name": "lp_ebook",
-                    "label": "LP eBook",
+                    "label": "LP Short Banner Hero",
                     "display": "row",
                     "sub_fields": [
                         {
@@ -7522,5 +7522,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1600284675
+    "modified": 1600303384
 }
