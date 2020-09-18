@@ -86,12 +86,14 @@
                 flex: 0 1 auto;
                 margin: 0 0 20px 0;
 
+
                 .circle {
                     display: block;
                     filter: drop-shadow(6px 3px 0px $black-a20);
                     justify-content: center;
                     height: 75px;
                     width: 100px;
+                    position: relative;
                 }
 
                 .circle-image {
