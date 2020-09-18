@@ -89,7 +89,7 @@
 
                 .circle {
                     display: block;
-                    filter: drop-shadow(6px 3px 0px $black-a20);
+                    //filter: drop-shadow(6px 3px 0px $black-a20);
                     justify-content: center;
                     height: 75px;
                     width: 100px;
@@ -98,7 +98,7 @@
                 }
 
                 .circle-image {
-                    clip-path: circle(36px at center);
+                    //clip-path: circle(36px at center);
                     height: 100%;
                     width: auto;
                     max-width: unset;
