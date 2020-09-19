@@ -86,31 +86,20 @@
                 flex: 0 1 auto;
                 margin: 0 0 20px 0;
 
-                &::first-child {
-                    background-color: yellow;
-                }
-                &::last-child {
-                    background-color: red;
-                }
-
                 .circle {
                     display: block;
-                    //filter: drop-shadow(6px 3px 0px $black-a20);
+                    filter: drop-shadow(6px 3px 0px $black-a20);
                     justify-content: center;
                     height: 75px;
                     width: 100px;
-                    position: relative;
-                    background-color: green;
                 }
 
                 .circle-image {
-                    //clip-path: circle(36px at center);
+                    clip-path: circle(36px at center);
                     height: 100%;
                     width: auto;
                     max-width: unset;
                     position: absolute;
-                    display: block;
-                    border: 3px blue solid;
                 }
 
                 .speaker-name {
