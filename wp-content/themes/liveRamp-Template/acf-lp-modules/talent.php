@@ -67,14 +67,14 @@ $eyebrow = get_sub_field('eyebrow');
                 ?>
                 <div class="list-item">
                     <div class="item-col">
-                        before
+                        BEFORE
                         <div class="circle">
                             <?php echo wp_get_attachment_image( get_sub_field('headshot'), 'full', false, array( "class" => "circle-image" ) ); ?>
                         </div>
-                        after
+                        AFTER
                     </div>
                     <div class="item-col">
-                        before
+                        BEFORE
                         <div class="speaker-name">
                             <?php echo $name; ?>
                         </div>
@@ -82,7 +82,7 @@ $eyebrow = get_sub_field('eyebrow');
                             <?php echo $job_title; ?>
                         </div>
                         <?php echo wp_get_attachment_image( get_sub_field('company_logo'), 'full' ); ?>
-                        after
+                        AFTER
                     </div>
                 </div>
                 <?php endwhile ?>
