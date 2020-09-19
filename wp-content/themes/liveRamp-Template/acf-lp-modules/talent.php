@@ -67,11 +67,11 @@ $eyebrow = get_sub_field('eyebrow');
                 ?>
                 <div class="list-item">
                     <div class="item-col">
-                        BEFORE
+                        11BEFORE
                         <div class="circle">
                             <?php echo wp_get_attachment_image( get_sub_field('headshot'), 'full', false, array( "class" => "circle-image" ) ); ?>
                         </div>
-                        AFTER
+                        11AFTER
                     </div>
                     <div class="item-col">
                         BEFORE
