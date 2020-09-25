@@ -1,11 +1,12 @@
 <?php
 $partner_url = get_query_var('partner'); // Checks to see if there is a single partner slug in the URL e.g. liveramp.com/partners/{ partner-slug }
-
 // It's a single partner page
 if( $api_url = get_field('single_partner_api_url', 'options') )
 {
+   //http://lrpartnerdev.wpengine.com/wp-json/acf/?lang=us
    $theurl = $api_url.'/wp-json/wp/v2/partner/?slug=' . $partner_url . '/&_embed=true';
-   $data = json_decode(file_get_contents($theurl));
+   $data = json_decode(file_get_contents($theurl)); // echo $theurl."<br>"; echo '<pre style="background-color:white">'.print_r($data, 1).'</pre>';
+ 
 
    // get the id pf the partner
    $partner_id = $data[0]->id;
@@ -24,8 +25,9 @@ if( $api_url = get_field('single_partner_api_url', 'options') )
    $imgData = $data[0]->acf->image_url->url; // 4.27.20 - replacement
    $urlData = $data[0]->acf->external_url;
 
-
-   $datafilters = json_decode(file_get_contents('https://partners.liveramp.com/api/?lang=us'));
+   $feed_link = get_field('content_api_url','option');  
+   $datafilters = json_decode(file_get_contents($feed_link));
+   //$datafilters = json_decode(file_get_contents('https://partners.liveramp.com/api/?lang=us'));
    $filters = $datafilters->filters;
    $categorytool = '<div class="tooltips"><span class="tooltip-toggle">i</span><span class="tooltip-content">' . $filters[0]->tooltip . '</span></div>';
    // $regiontool = $filters[1]->tooltip;
@@ -292,7 +294,8 @@ if( $api_url = get_field('single_partner_api_url', 'options') )
 	<div class="grid-container z-5-r">
 		<div class="grid-x align-middle align-center pad-1">
 			<div class="cell medium-4 text-center">
-				 <a href="/contact?ref=<?php echo $partner_url ?>" target="_blank" class="button"><?php _translate('get_in_touch')  ?></a>
+			<?php $partner_page_acf_data = get_field('content_standard_image_and_text_module');  ?>
+				 <a href="<?php echo $partner_page_acf_data['cta']['url'].'?ref='.$partner_url; ?>" target="_blank" class="button"><?php _translate('get_in_touch')  ?></a>
 			</div>
 		</div>
 	</div>

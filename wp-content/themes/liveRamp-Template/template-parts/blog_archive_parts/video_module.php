@@ -164,32 +164,30 @@
 				<div class="author-list">
 					<h4>Featured Authors</h4>
 					<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="underline">
-					 <?php if (have_rows('authors')): ?>
+					 <?php $featured_authors = get_field_object('authors');
+							$featured_author_choices = $featured_authors['value']; 
+							
+						// echo "-<pre>"; print_r($featured_author_choices); echo "-END-<pre>"; 
+
+
+					 //$featured_authors = get_field_object( 'authors' );  echo "<pre>"; print_r($ASfield);
+					 if (!empty($featured_author_choices) && count($featured_author_choices) > 0): ?>
 					 	
 
-					     <?php while(have_rows('authors')) : ?>
-					     <?php the_row(); ?>
-					     	<?php $author = get_sub_field('author'); ?>
-					     	<?php  
-					     		
-					     		//var_dump($author); 
-
-					     		$user_id = 'user_'.$author['ID'];
-					     		// echo $user_id;
-					     		$headshot = get_field('headshot', $user_id);
-
+					     <?php foreach($featured_author_choices as $ft_author) : 
+								$ft_author_post_id = $ft_author['author']->ID;
+								$ft_display_name = $ft_author['author']->post_title;
 					     	?>
-
-					     	
-
-					     	<div class="author-name" data-author-id="<?php echo $author['user_nicename']; ?>" data-author-name="<?php echo $author['display_name'] ?>">
+							
+					     	<div class="author-name" data-author-id="<?php echo $ft_author_post_id; ?>" data-author-name="<?php echo $ft_display_name; ?>">
 
 					     		<div class="grid-x align-middle author">
 					     			<div class="cell shrink headshot-cell">
 					     				<div class="headshot text-center">
-					     					<?php if ($headshot): ?>
-					     						<img src="<?php echo $headshot ?>" alt="<?php echo $author['display_name'] ?>" class="headshot_image">
-					     					<?php else: ?>
+					     					<?php if ( has_post_thumbnail( $ft_author_post_id ) ):  
+												 	echo get_the_post_thumbnail( $ft_author_post_id, 'thumbnail', array( 'class' => 'headshot_image' , 'alt' => $ft_display_name) );
+												else: 
+											?>
 					     						<i class="fal fa-3x fa-user-circle"></i>	
 					     					<?php endif ?>
 					     					
@@ -197,7 +195,7 @@
 					     				</div>
 					     			</div>
 					     			<div class="cell auto content">
-					     				<div class="name"><?php echo $author['display_name'] ?></div>
+					     				<div class="name"><?php echo $ft_display_name; ?></div>
 					     				<div class="see-stories">See Author Posts</div>
 
 					     			</div>
@@ -205,7 +203,7 @@
 
 					     	</div>
 
-					     <?php endwhile ?>
+					     <?php endforeach ?>
 					     
 					 <?php endif ?>
 				</div>

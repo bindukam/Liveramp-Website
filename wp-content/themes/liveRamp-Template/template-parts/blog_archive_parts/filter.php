@@ -53,7 +53,7 @@
 								
 								if( !empty($author_list) ):
 
-									echo '<select name="author" data-default="Author" aria-label="Author"><option value="" hidden>Author</option>';
+									echo '<select name="cus_author" data-default="Author" aria-label="Author"><option value="" hidden>Author</option>';
 									foreach($author_list as $authorID => $authorName):
 										
 										// WP_Query arguments

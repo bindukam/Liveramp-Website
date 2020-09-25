@@ -82,8 +82,10 @@
 										)
 									);
 
-								if( isset( $_GET['author'] ) && $_GET['author'] )
-									$args['author_name'] = $_GET['author'];
+								if( isset( $_GET['cus_author'] ) && $_GET['cus_author'] )
+									//$args['author_name'] = $_GET['cus_author'];
+									$args['meta_key'] = 'blog_author';
+									$args['meta_value'] = $_GET['cus_author'];
 							}
 
 							// The Query
