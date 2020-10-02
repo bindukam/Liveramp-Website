@@ -2,8 +2,8 @@
 <section class="hero-split-img-right">
 	<div class="grid-container">
 		<div class="grid-x">
-			<div class="cell large-8" style="background-color: red; height: 150px"></div>
-			<div class="cell large-4" style="background-color: green; height: 150px"></div>
+			<div class="cell large-8" style="background-color: red; height: 150px">Left</div>
+			<div class="cell large-4" style="background-color: green; height: 150px">Right</div>
 		</div>
 	</div>
 </section>	
