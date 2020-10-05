@@ -46,7 +46,7 @@ $c = "d";
                     <h1 class="headline green bar-<?php the_sub_field('horizontal_bar') ?>"><?php the_sub_field('title') ?></h1>
                 <?php endif ?>
                 <?php if (get_sub_field('subheadline')): ?>
-                    <div class="h3 bold green subheadline"><?php the_sub_field('subheadline') ?></div>
+                    <div class="h2 bold green subheadline"><?php the_sub_field('subheadline') ?></div>
                 <?php endif ?>
                 <?php if (get_sub_field('description')): ?>
                     <div class="copy green"><?php the_sub_field('description') ?></div>

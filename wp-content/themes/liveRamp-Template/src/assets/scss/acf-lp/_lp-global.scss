@@ -2,6 +2,11 @@
 
     $placeholder: #9CB6CB;
 
+    h2, .h2 {
+        font-size: 2rem;
+    }
+
+    font-family: $header-font-family;
     #wpadminbar {
         position: fixed !important;
     }

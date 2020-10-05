@@ -73,7 +73,7 @@ $background_image = get_sub_field('background_image');
         <div class="grid-x grid-margin-x align-justify col-wrapper">
             <div class="cell  large-6 content col-order-2">
                 <?php if (get_sub_field('subheadline')): ?>
-                    <div class="h3 bold subheadline"><?php the_sub_field('subheadline') ?></div>
+                    <div class="h2 bold subheadline"><?php the_sub_field('subheadline') ?></div>
                 <?php endif ?>
                 <?php if (get_sub_field('description')): ?>
                     <div class="copy"><?php the_sub_field('description') ?></div>
