@@ -38,6 +38,8 @@
             margin-bottom: 0;
             padding: 0 0 10px 0;
 
+            a { width: 45px; }
+
             @include breakpoint(medium down) {
                 margin: auto;
             }
