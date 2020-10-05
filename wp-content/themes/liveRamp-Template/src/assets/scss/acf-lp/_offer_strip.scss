@@ -19,4 +19,10 @@
             padding-left: 20px;
         }
     }
+
+    .footer-overlay {
+        @include breakpoint(medium down) {
+            display: none;
+        }
+    }
 }
