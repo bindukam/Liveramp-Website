@@ -23,5 +23,12 @@ jQuery(function($){ // use jQuery code inside this to avoid "$ is not defined" e
 				return false;
 			});
         }
+
+		var lblCountry = $("label:contains('Country')");
+        if( lblCountry.length ) {
+			var select = lblCountry.parent().find('.select-styled');
+			select.attr('data-id', 'United States');
+			select.text('United States');
+        }
 	}
 });
