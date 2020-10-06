@@ -21,7 +21,7 @@
         }
 
         .quote {
-            padding: 20px 0 0 65px;
+            padding: 20px 0 0 85px;
             position: relative;
 
             .quote-text {
@@ -51,6 +51,15 @@
                 z-index: -1;
                 top: -70px;
                 left: -7px;
+            }
+
+            @include breakpoint(small only) {
+                padding-left: 57px;
+                &:before {
+                    font-size: 10rem;
+                    top: -50px;
+                    left: -7px;
+                }
             }
         }
 
