@@ -2,12 +2,15 @@
 /**
  * Template Name: New Module Test Page
 */
- ?>
+?>
 
 <?php get_header(); ?>
 
 <?php include ('acf-modules/hero_text_left_image_right.php'); ?>
 
 <?php include ('acf-modules/written_story_centered.php'); ?>
+
+<?php include ('acf-modules/icon_line_title.php'); ?>
+
 
 <?php get_footer(); ?>
