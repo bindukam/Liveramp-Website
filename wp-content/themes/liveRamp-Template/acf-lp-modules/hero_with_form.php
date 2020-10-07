@@ -42,7 +42,7 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
                         }
                     ?>
                     <div class="cell list-item">
-                        <div class="icon" style="background-image:url(<?php echo $icon; ?>);"></div>
+                        <div class="icon"><img src="<?php echo $icon; ?>" /></div>
                         <div class="copy green"><?php echo $copy; ?></div>
                     </div>
                     <?php endwhile ?>
