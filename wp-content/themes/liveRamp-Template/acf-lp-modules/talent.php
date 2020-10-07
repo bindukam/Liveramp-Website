@@ -67,9 +67,7 @@ $eyebrow = get_sub_field('eyebrow');
                 ?>
                 <div class="list-item">
                     <div class="item-col">
-                        <div class="circle">
-                            <img class="circle-image" src="<?php echo get_sub_field('headshot'); ?>" />
-                        </div>
+                        <div class="circle">x<img class="circle-image" src="<?php echo get_sub_field('headshot'); ?>" />x</div>
                     </div>
                     <div class="item-col">
                         <div class="speaker-name">
