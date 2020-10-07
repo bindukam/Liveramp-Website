@@ -32,7 +32,7 @@ $eyebrow = get_sub_field('eyebrow');
                     <?php endif ?>
                     <?php if (get_sub_field('testimonial_logo')): ?>
                     <div class="quote-logo">
-                        <?php echo wp_get_attachment_image( get_sub_field('testimonial_logo'), 'full', '',array( "class" => "circle-image" ) ); ?>
+                        <?php echo wp_get_attachment_image( get_sub_field('testimonial_logo'), 'full'); ?>
                     </div>
                     <?php endif ?>
                 </div>

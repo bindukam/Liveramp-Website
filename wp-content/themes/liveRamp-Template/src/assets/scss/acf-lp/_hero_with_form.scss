@@ -239,6 +239,12 @@
                     }
 
                     padding: 0;
+
+                    &.no-dot {
+                        &:before {
+                            display: none;
+                        }
+                    }
                 }
             }
         }

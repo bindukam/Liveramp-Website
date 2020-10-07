@@ -113,7 +113,7 @@ $background_image = get_sub_field('background_image');
                             <?php endif ?>
                             <?php if (get_sub_field('testimonial_logo')): ?>
                             <div class="quote-logo">
-                                <?php echo wp_get_attachment_image( get_sub_field('testimonial_logo'), 'full', '',array( "class" => "circle-image" ) ); ?>
+                                <?php echo wp_get_attachment_image( get_sub_field('testimonial_logo'), 'full'); ?>
                             </div>
                             <?php endif ?>
                         </div>
@@ -178,14 +178,14 @@ $background_image = get_sub_field('background_image');
                         <div class="list-item">
                             <div class="item-col">
                                 <div class="circle">
-                                    <?php echo wp_get_attachment_image( get_sub_field('headshot'), 'full', false, array( "class" => "circle-image" ) ); ?>
+                                    <div class="circle"><img class="circle-image" src="<?php echo get_sub_field('headshot'); ?>" /></div>
                                 </div>
                             </div>
                             <div class="item-col">
                                 <div class="speaker-name">
                                     <?php echo $name; ?>
                                 </div>
-                                <div class="copy">
+                                <div class="copy no-dot">
                                     <?php echo $job_title; ?>
                                 </div>
                                 <?php echo wp_get_attachment_image( get_sub_field('company_logo'), 'full' ); ?>
