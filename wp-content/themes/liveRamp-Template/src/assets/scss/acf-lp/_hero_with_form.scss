@@ -17,18 +17,18 @@
             padding-bottom: 8px;
 
             .icon {
-                background-position: center;
-                background-size: contain;
-                background-repeat: no-repeat;
                 width: 22px;
                 height: 22px;
                 margin-right: 6px;
 
+                img {
+                    max-height: 22px;
+                }
                 svg {
                     max-height: 22px;
                     max-width: 22px;
 
-                    path {
+                    .st0, path {
                         stroke: white !important;
                     }
                 }

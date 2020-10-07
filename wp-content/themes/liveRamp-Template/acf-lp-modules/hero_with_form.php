@@ -18,7 +18,7 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell  large-6 content">
                 <div class="cell eyebrow">
-                    <div class="icon" style="background-image: url(<?php echo get_sub_field('eyebrow_icon'); ?>);"></div>
+                    <div class="icon"><img src="<?php echo get_sub_field('eyebrow_icon'); ?>" /></div>
                     <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>
                 </div>
                 <?php if (get_sub_field('title')): ?>
