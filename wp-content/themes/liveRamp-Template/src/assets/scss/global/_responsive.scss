@@ -22,6 +22,12 @@
             @content;
         }
     }
+    
+    @else if $media==vsm {
+        @media only screen and (max-width: 500px) {
+            @content;
+        }
+    }
 }
 
 // @include respond-to(lg) {

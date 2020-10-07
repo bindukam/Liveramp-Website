@@ -1,13 +1,5 @@
 <!-- new092920 -->
-<section class="hero-split-img-right">
-	<div class="grid-container">
-		<div class="grid-x">
-			<div class="cell large-8" style="background-color: red; height: 150px">Left</div>
-			<div class="cell large-4" style="background-color: green; height: 150px">Right</div>
-		</div>
-	</div>
-</section>	
-<section class="hero-split-img-right medium-blue-bkg">
+<section class="hero_text_left_image_right medium-blue-bkg">
 	<div class="grid-container">
 		<div class="grid-x">
 			<div class="cell large-8 split-text">
