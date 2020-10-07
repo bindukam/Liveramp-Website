@@ -67,9 +67,7 @@ $eyebrow = get_sub_field('eyebrow');
                 ?>
                 <div class="list-item">
                     <div class="item-col">
-                        <div class="circle">
-                            <?php echo wp_get_attachment_image( get_sub_field('headshot'), 'full', false, array( "class" => "circle-image" ) ); ?>
-                        </div>
+                            <img src="<?php echo get_sub_field('headshot'); ?>" />
                     </div>
                     <div class="item-col">
                         <div class="speaker-name">
