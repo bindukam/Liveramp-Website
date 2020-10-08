@@ -25,7 +25,7 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
                     <h1 class="green"><?php the_sub_field('title') ?></h1>
                  <?php endif ?>
                 <?php if (get_sub_field('list_headline')): ?>
-                    <h4 class="green"><?php the_sub_field('list_headline') ?></h4>
+                    <h4 class="sub-title green"><?php the_sub_field('list_headline') ?></h4>
                  <?php endif ?>
                 <?php if (have_rows('list')): ?>
                     <?php while(have_rows('list')) : ?>
