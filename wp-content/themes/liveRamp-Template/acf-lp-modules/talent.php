@@ -76,7 +76,9 @@ $eyebrow = get_sub_field('eyebrow');
                         <div class="copy">
                             <?php echo $job_title; ?>
                         </div>
-                        <?php echo wp_get_attachment_image( get_sub_field('company_logo'), 'full' ); ?>
+                        <div class="logo">
+                            <?php echo wp_get_attachment_image( get_sub_field('company_logo'), 'full' ); ?>
+                        </div>
                     </div>
                 </div>
                 <?php endwhile ?>

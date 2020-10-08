@@ -38,7 +38,11 @@
 
             .quote-logo {
                 img {
+                    max-height: 50px;
                     max-width: 150px;
+                    height: auto;
+                    width: auto;
+                    display: block;
                 }
             }
 
@@ -55,6 +59,7 @@
 
             @include breakpoint(small only) {
                 padding-left: 57px;
+
                 &:before {
                     font-size: 10rem;
                     top: -50px;
@@ -114,8 +119,14 @@
                     font-weight: bold;
                 }
 
-                img {
-                    max-width: 150px;
+                .logo {
+                    img {
+                        max-height: 50px;
+                        max-width: 150px;
+                        height: auto;
+                        width: auto;
+                        display: block;
+                    }
                 }
             }
         }
