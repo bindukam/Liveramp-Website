@@ -137,7 +137,7 @@
 					$('#video-title').text(video.name());
 					$('.w-chrome').css('border-radius', '12px');
 					$('.w-video-wrapper.w-css-reset').parent().css('border-radius', '12px');
-					$('.wistia_embed_initialized').removeAttr('style');
+					//$('.wistia_embed_initialized').removeAttr('style');
 					$(".replace-video").click(function() {
 						var next_video = $(this).attr('data-video-id');
 						var $up_next = '#'+$(this).attr('data-next-up');
