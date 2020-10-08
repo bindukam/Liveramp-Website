@@ -245,7 +245,7 @@
 
                     &:before {
                         content: " ";
-                        background-color: $green;
+                        background-color: var(--theme-primary-color)!important;
                         position: absolute;
                         height: 7px;
                         width: 7px;

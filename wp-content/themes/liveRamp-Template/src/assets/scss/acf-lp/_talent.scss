@@ -20,6 +20,22 @@
             color: inherit !important;
         }
 
+        .desc {
+
+            ul {
+                list-style: none; 
+
+                li::before {
+                    content: "\2022";
+                    color: var(--theme-primary-color);
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            }
+        }
+
         .quote {
             padding: 20px 0 0 85px;
             position: relative;
