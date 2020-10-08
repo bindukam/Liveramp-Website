@@ -9,19 +9,24 @@ $fa-font-path:"../../../node_modules/@fortawesome/fontawesome-pro/webfonts";
 // FONT FACES
 
 .flexo-bold {
-  font-family: 'Flexo Bold';
+  font-family: 'Flexo Bold', sans-serif;
+  font-weight: 700;
 }
 
 .flexo-medium {
-  font-family: 'Flexo Medium';
+  font-family: 'Flexo Medium', sans-serif;
+  font-weight: 600;
 }
 
 .flexo-regular {
-  font-family: 'Flexo';
+  font-family: 'Flexo', sans-serif;
+  font-weight: 400;
 }
 
 .flexo-demi {
-  font-family: 'Flexo Demi';
+  font-family: 'Flexo Demi', sans-serif;
+  font-weight: 300;
+
 }
 
 // HEADINGS
@@ -31,7 +36,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Flexo Bold';
+  font-family: 'Flexo Bold', sans-serif;
 }
 body h1 {
   text-transform: unset;
@@ -49,7 +54,7 @@ h3 {
 h4 {
   line-height: 1.375em;
   font-weight: 700;
-  font-family: 'Flexo Bold';
+  font-family: 'Flexo Bold', sans-serif;
 }
 
 h5 {
