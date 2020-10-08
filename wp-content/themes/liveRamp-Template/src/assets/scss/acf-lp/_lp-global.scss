@@ -128,8 +128,8 @@
 
         form {
             a {
-                color: #fa8d28 !important;
-                text-decoration: none !important;
+                color: unset !important;
+                text-decoration: underline;
             }
 
             input:not([type="submit"]),
@@ -170,60 +170,29 @@
                 border-radius: 24px;
             }
 
-            label {
-                // width: 400px;
+            .gfield_label, label {
                 white-space: nowrap;
-                font-size: 1rem;
+                font-size: 16px;
                 color: $placeholder;
+                font-family: 'Flexo';
+                font-weight: 400;
             }
 
-            .mktoFieldWrap {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                -webkit-flex-flow: row wrap;
-                -ms-flex-flow: row wrap;
-                flex-flow: row wrap;
-
-                @include breakpoint(small only) {
-                    flex-flow: column;
-                    align-items: initial;
-                }
-
-                input,
-                select {
-                    flex-basis: 60%;
-                }
-
-                select {
-                    background-image: url(../../assets/images/arrow-down.svg);
-                }
-
-                textarea {
-                    flex-basis: 100%;
-                    margin-top: 1rem;
-                }
-
-                .mktoError {
-                    justify-self: flex-end;
-                    width: 100%;
-                    text-align: right;
-                }
-
-                .mktoErrorMsg {
-                    color: $core-orange;
-                }
+            .gfield_required {
+                display: none;
             }
 
-            .mktoButtonRow {
-                display: flex;
-                flex-direction: row;
-                justify-content: center;
+            .select {
+                width: 100% !important;
+            }
 
-                button.mktoButton.button.cta {
-                    border-radius: 20px;
-                }
+            .select-styled {
+                box-shadow: none;
+                border-radius: 4px;
+                border-color: rgba(86,86,91,.31);
+                background-color: rgba(237,243,237,.18);
+                color: #56565b;
+                padding: 0px 10px !important;
             }
 
             div .ginput_container {
