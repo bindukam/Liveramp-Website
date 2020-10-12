@@ -1,0 +1,114 @@
+.carded_2_up_landscape {
+
+    padding-bottom: 3rem;
+    overflow: hidden;
+
+    .intro {
+    	padding-bottom:20px;
+        .lsh-intro_icon {
+            display: flex;
+            width: 60px;
+            height: 60px;
+            margin-right: auto;
+            margin-bottom: 2em;
+            margin-left: auto;
+            justify-content: center;
+            align-items: center;
+            border-style: solid;
+            border-width: 3px;
+            border-color: #00a8e1;
+            border-radius: 50%;
+
+            img.icon_what-is-data-connectivity {
+                width: 32px;
+                border: 0;
+                max-width: 100%;
+                vertical-align: middle;
+                display: inline-block;
+                display: inline-block;
+                vertical-align: middle;
+                max-width: 100%;
+                height: auto;
+                -ms-interpolation-mode: bicubic;
+            }
+        }
+
+        .intro_icon_divider {
+            display: flex;
+            height: 3px;
+            margin-right: auto;
+            margin-bottom: 2em;
+            margin-left: auto;
+            justify-content: center;
+            align-items: stretch;
+            width: 60px;
+
+            .icon-divider--item {
+                width: 50%;
+                padding-bottom: 0;
+
+                &.divider--orange {
+                    background-color: #fa8d28;
+                }
+
+                &.divider--orange-tint {
+                    background-color: rgba(250, 141, 40, .5);
+                }
+            }
+        }
+    }
+
+    .cards {
+        .card4 {
+            border-radius: $b-radius;
+            color:white !important;
+
+            .small-separator {
+                margin: 2.4rem 0 1rem;
+            }
+
+            .title {
+                font-size: 1.5rem;
+                margin-top: 1.75rem;
+                margin-bottom: 1rem;
+                color:#fff !important;
+            }
+
+            .icon {
+                margin-top: 1.5rem;
+            }
+
+            .icon-wrap {
+                border-radius: $b-radius 0 0 $b-radius;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+
+                justify-content: space-between;
+                border-radius: $b-radius $b-radius;
+                background: $medium-blue;
+                padding: 1rem 1.5rem;
+
+                .text {
+                    margin-bottom: 1rem;
+					.card_title-divider {
+					    width: 50px;
+					    height: 2px;
+					    margin-bottom: 2em;
+					    &.divider--orange {
+					    	background-color: #fa8d28;
+						}
+					}
+                }
+
+                @include breakpoint(small only) {
+                    box-shadow: inset 0px -12px 12px -12px rgba(0, 0, 0, 0.1), 0px 0px 0px 0px rgba(0, 0, 0, 0.1), inset 12px 12px 12px -12px rgba(0, 0, 0, 0.1), inset -12px 0px 12px -12px rgba(0, 0, 0, 0.1);
+                }
+            }
+        }
+
+
+    }
+}

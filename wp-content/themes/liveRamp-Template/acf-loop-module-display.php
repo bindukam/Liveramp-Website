@@ -1,6 +1,6 @@
 <?php
   function layout_title ($title) {
-    echo '<h4 style="background-color:red; color:white; text-align:center; padding:0; margin:0">'.$title.'</h4>';
+    echo '<h4 style="background-color:#eee; color:#ccc; text-align:center; padding:0; margin:0">'.$title.'</h4>';
   }
   
   if(!isset($pageid)){
