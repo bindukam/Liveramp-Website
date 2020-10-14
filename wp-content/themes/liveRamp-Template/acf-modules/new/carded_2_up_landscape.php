@@ -1,8 +1,9 @@
+<!-- new092920 -->
 <section class="carded_2_up_landscape pad-section pale-blue-bkg">
 
 	<div class="grid-container">
 
-		<div class="grid-x grid-margin-x grid-margin-y title-cell align-center intro">
+		<div class="grid-x intro">
 
 			<?php if (1||(get_sub_field('title')) || (get_sub_field('description'))): ?>
 				<div class="cell medium-9 small-12 text-center">
@@ -23,7 +24,7 @@
 
 		</div>
 
-		<div class="grid-x grid-margin-x grid-margin-y small-up-1 medium-up-2 mobile-module-slider relative align-center cards" data-equalizer='foo'>
+		<div class="grid-x cards">
 			<?php $xx=0;if (1||have_rows('cards')): ?>
 			    <?php while(++$xx<3 || have_rows('cards')) : ?>
 			    <?php the_row(); ?>

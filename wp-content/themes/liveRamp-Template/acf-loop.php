@@ -101,6 +101,11 @@
           include ('acf-modules/hero_centered_text.php');
         }
 
+        // Hero: Text left Image Right
+        if(get_row_layout()=='hero_text_left_image_right'){
+          include ('acf-modules/hero_text_left_image_right.php');
+        }
+
         // Gallery Icon Grid
         if(get_row_layout()=='gallery_icon_grid'){
           include ('acf-modules/gallery_icon_grid.php');

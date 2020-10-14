@@ -1,0 +1,83 @@
+.high_impact_quote {
+
+    .grid-x {
+        align-items: center;
+        min-height: 750px;
+        grid-row-gap: 16px;
+        display: grid;
+        grid-template-columns: 1fr minmax(200px, 1000px) 1fr;
+        grid-auto-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 1.75em;
+
+        .quote-pattern--radial--large {
+            position: static;
+            left: -25%;
+            top: 0;
+            right: auto;
+            bottom: 0;
+            max-width: 700px;
+            margin-left: -350px;
+            align-self: center;
+            flex: 1;
+            align-self: stretch;
+        }        
+
+        .quote-bg-text {
+            align-self: center;
+            grid-column-end: span 1;
+            grid-column-start: span 1;
+            grid-row-end: span 1;
+            grid-row-start: span 1;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            right: 0;
+
+            .quote-bg-text_inner {
+
+                align-self: center;
+
+                .quote-bg-text_item {
+                    color: rgba(234, 244, 249, .7);
+                    font-size: 9rem;
+                    line-height: 7.2rem;
+                    font-weight: 700;
+                    letter-spacing: -.05em;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .quote-container {
+            justify-self: center;
+            align-self: center;
+            max-width: 900px;
+            position: relative;
+            margin-right: 0;
+            margin-left: 0;
+            padding-left: 1.5rem;
+
+            .txt-with-divider {
+                display: flex;
+                width: 60px;
+                height: 3px;
+                margin-bottom: 1em;
+                margin-left: 0;
+                justify-content: center;
+                align-items: stretch;
+                margin-right: 0;
+                .txt-with-divider--item {
+                    width: 100%;
+                    padding-bottom: 0;
+                    &.divider--light-blue {
+                        background-color: #8dc8e8;
+                    }
+                }
+            }
+        }
+    }
+}
