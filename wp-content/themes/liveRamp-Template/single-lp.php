@@ -27,7 +27,9 @@ if(have_rows('modules', $post_ID)){
                 if( $module_name == 'lp_hero_with_form' ||
                     $module_name == 'lp_ebook' ){
                     $post_ID = get_the_ID();
-                    $form_submit_landing_page = get_sub_field('form_submit_landing_page');
+                    $query_params = $_SERVER['QUERY_STRING'];
+                    $query_params = $query_params != '' ? '?'.$query_params : '';
+                    $form_submit_landing_page = get_sub_field('form_submit_landing_page').$query_params;
                     if($form_submit_landing_page) {
                         header("Location: ".$form_submit_landing_page); // Redirect to next page after form submission
                         exit();
