@@ -73,6 +73,12 @@ if(have_rows('modules', $post_ID)){
                                 $file_mime_type = $file['mime_type'];
                                 $file_path = get_attached_file($file['ID']);
 
+                                echo $file_path;
+                                $handle = fopen($file_path, 'rb');
+                                echo "<br/>";
+                                echo $handle;
+
+                                /*
                                 header('Content-type: '.$file_mime_type);
                                 header('Content-Length: ' . filesize($file_path));
                                 $handle = fopen($file_path, 'rb');
@@ -84,6 +90,7 @@ if(have_rows('modules', $post_ID)){
                                     flush();
                                 }
                                 fclose($handle);
+                                */
                                 exit;
 
                             } else {
