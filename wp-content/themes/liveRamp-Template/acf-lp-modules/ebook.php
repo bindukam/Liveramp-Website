@@ -15,8 +15,10 @@ if($cta_type == 'none') {
     $cta_url = '?file';
     $cta_target = '_blank';
 } else if($cta_type == 'page') {
+    $query_params = $_SERVER['QUERY_STRING'];
+    $query_params = $query_params != '' ? '?'.$query_params : '';
     $cta_text = get_sub_field('cta_text');
-    $cta_url = get_sub_field('cta_landing_page');
+    $cta_url = get_sub_field('cta_landing_page').$query_params;
     $cta_target = '';
 } else if($cta_type == 'url') {
     $cta_text = get_sub_field('cta_url')['title'];
@@ -39,7 +41,7 @@ $background_image = get_sub_field('background_image');
                     <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><img src="<?php echo get_sub_field('logo'); ?>"></a> 
                 </div>
                 <div class="cell eyebrow">
-                    <div class="icon" style="background-image:url(<?php echo get_sub_field('eyebrow_icon'); ?>);"></div>
+                    <div class="icon"><img src="<?php echo get_sub_field('eyebrow_icon'); ?>" /></div>
                     <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>
                 </div>
                 <?php if (get_sub_field('title')): ?>
@@ -73,7 +75,7 @@ $background_image = get_sub_field('background_image');
         <div class="grid-x grid-margin-x align-justify col-wrapper">
             <div class="cell  large-6 content col-order-2">
                 <?php if (get_sub_field('subheadline')): ?>
-                    <div class="h3 bold subheadline"><?php the_sub_field('subheadline') ?></div>
+                    <div class="h2 bold subheadline"><?php the_sub_field('subheadline') ?></div>
                 <?php endif ?>
                 <?php if (get_sub_field('description')): ?>
                     <div class="copy"><?php the_sub_field('description') ?></div>
@@ -113,7 +115,7 @@ $background_image = get_sub_field('background_image');
                             <?php endif ?>
                             <?php if (get_sub_field('testimonial_logo')): ?>
                             <div class="quote-logo">
-                                <?php echo wp_get_attachment_image( get_sub_field('testimonial_logo'), 'full', '',array( "class" => "circle-image" ) ); ?>
+                                <?php echo wp_get_attachment_image( get_sub_field('testimonial_logo'), 'full'); ?>
                             </div>
                             <?php endif ?>
                         </div>
@@ -178,17 +180,19 @@ $background_image = get_sub_field('background_image');
                         <div class="list-item">
                             <div class="item-col">
                                 <div class="circle">
-                                    <?php echo wp_get_attachment_image( get_sub_field('headshot'), 'full', false, array( "class" => "circle-image" ) ); ?>
+                                    <div class="circle"><img class="circle-image" src="<?php echo get_sub_field('headshot'); ?>" /></div>
                                 </div>
                             </div>
                             <div class="item-col">
                                 <div class="speaker-name">
                                     <?php echo $name; ?>
                                 </div>
-                                <div class="copy">
+                                <div class="copy no-dot">
                                     <?php echo $job_title; ?>
                                 </div>
-                                <?php echo wp_get_attachment_image( get_sub_field('company_logo'), 'full' ); ?>
+                                <div class="logo">
+                                    <?php echo wp_get_attachment_image( get_sub_field('company_logo'), 'full' ); ?>
+                                </div>
                             </div>
                         </div>
                         <?php endwhile ?>

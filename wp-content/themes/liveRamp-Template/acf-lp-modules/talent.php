@@ -32,7 +32,7 @@ $eyebrow = get_sub_field('eyebrow');
                     <?php endif ?>
                     <?php if (get_sub_field('testimonial_logo')): ?>
                     <div class="quote-logo">
-                        <?php echo wp_get_attachment_image( get_sub_field('testimonial_logo'), 'full', '',array( "class" => "circle-image" ) ); ?>
+                        <?php echo wp_get_attachment_image( get_sub_field('testimonial_logo'), 'full'); ?>
                     </div>
                     <?php endif ?>
                 </div>
@@ -67,9 +67,7 @@ $eyebrow = get_sub_field('eyebrow');
                 ?>
                 <div class="list-item">
                     <div class="item-col">
-                        <div class="circle">
-                            <?php echo wp_get_attachment_image( get_sub_field('headshot'), 'full', false, array( "class" => "circle-image" ) ); ?>
-                        </div>
+                        <div class="circle"><img class="circle-image" src="<?php echo get_sub_field('headshot'); ?>" /></div>
                     </div>
                     <div class="item-col">
                         <div class="speaker-name">
@@ -78,7 +76,9 @@ $eyebrow = get_sub_field('eyebrow');
                         <div class="copy">
                             <?php echo $job_title; ?>
                         </div>
-                        <?php echo wp_get_attachment_image( get_sub_field('company_logo'), 'full' ); ?>
+                        <div class="logo">
+                            <?php echo wp_get_attachment_image( get_sub_field('company_logo'), 'full' ); ?>
+                        </div>
                     </div>
                 </div>
                 <?php endwhile ?>

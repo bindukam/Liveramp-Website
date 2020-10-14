@@ -9,10 +9,13 @@ if($cta_type == 'none') {
     $cta_media_file = get_sub_field('cta_media_file');
     $cta_text = get_sub_field('cta_text');
     $cta_url = '?file';
-    $cta_target = '_blank';
+    $cta_target = '';
+    //$cta_target = '_blank';
 } else if($cta_type == 'page') {
+    $query_params = $_SERVER['QUERY_STRING'];
+    $query_params = $query_params != '' ? '?'.$query_params : '';
     $cta_text = get_sub_field('cta_text');
-    $cta_url = get_sub_field('cta_landing_page');
+    $cta_url = get_sub_field('cta_landing_page').$query_params;
     $cta_target = '';
 } else if($cta_type == 'url') {
     $cta_text = get_sub_field('cta_url')['title'];
@@ -29,7 +32,7 @@ $c = "d";
 
 ?>
 
-<section class="hero-with-form primary-bkg with-image-block <?php echo get_sub_field('background_pattern'); ?>"">
+<section class="hero-with-form primary-bkg with-image-block <?php echo get_sub_field('background_pattern'); ?>">
     <div class="grid-container ">
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell green-bkg large-4">
@@ -46,7 +49,7 @@ $c = "d";
                     <h1 class="headline green bar-<?php the_sub_field('horizontal_bar') ?>"><?php the_sub_field('title') ?></h1>
                 <?php endif ?>
                 <?php if (get_sub_field('subheadline')): ?>
-                    <div class="h3 bold green subheadline"><?php the_sub_field('subheadline') ?></div>
+                    <div class="h2 bold green subheadline"><?php the_sub_field('subheadline') ?></div>
                 <?php endif ?>
                 <?php if (get_sub_field('description')): ?>
                     <div class="copy green"><?php the_sub_field('description') ?></div>
@@ -60,7 +63,7 @@ $c = "d";
                         </div>
                         <?php if ($cta_text !== '' && $cta_url !== ''): ?>
                             <div class="cta">
-                                <a href="<?php echo $cta_url ?>" class="button text white cta" target="<?php echo $cta_target ?>"><?php echo $cta_text?></a>
+                                <a href="<?php echo $cta_url ?>" class="button text white cta" target="<?php echo $cta_target ?>" id="downloadhere"><?php echo $cta_text?></a>
                             </div>
                         <?php endif ?>
                     </div>
