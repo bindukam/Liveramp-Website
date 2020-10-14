@@ -68,6 +68,7 @@ if(have_rows('modules', $post_ID)){
                             if($file_mode == 'PERMIT') {
 
                                 // display asset content
+                                // display asset content
                                 $file = $cta_media_file;
                                 $file_name = $file['filename'];
                                 $file_mime_type = $file['mime_type'];
