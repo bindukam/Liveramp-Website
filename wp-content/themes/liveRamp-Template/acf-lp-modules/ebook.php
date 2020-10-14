@@ -15,8 +15,10 @@ if($cta_type == 'none') {
     $cta_url = '?file';
     $cta_target = '_blank';
 } else if($cta_type == 'page') {
+    $query_params = $_SERVER['QUERY_STRING'];
+    $query_params = $query_params != '' ? '?'.$query_params : '';
     $cta_text = get_sub_field('cta_text');
-    $cta_url = get_sub_field('cta_landing_page');
+    $cta_url = get_sub_field('cta_landing_page').$query_params;
     $cta_target = '';
 } else if($cta_type == 'url') {
     $cta_text = get_sub_field('cta_url')['title'];
