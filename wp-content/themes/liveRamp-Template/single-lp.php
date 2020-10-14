@@ -74,43 +74,21 @@ if(have_rows('modules', $post_ID)){
                                 $file_mime_type = $file['mime_type'];
                                 $file_path = get_attached_file($file['ID']);
 
-                                /*
-                                header("Content-type: application/pdf");
-                                header("Content-Disposition: inline; filename=".$file_name);
-                                @readfile($file_path);
-                                */
-
-
-                                /*
-                                header('Content-type: '.$file_mime_type);
-                                header('Content-Length: ' . filesize($file_path));
-                                $handle = fopen($file_path, 'rb');
-                                $buffer = '';
-                                while (!feof($handle)) {
-                                    $buffer = fread($handle, 4096);
-                                    echo $buffer;
-                                    ob_flush();
-                                    flush();
+                                if(file_exists($file_path)) {
+                                    header('Content-Description: File Transfer');
+                                    header('Content-Type: application/octet-stream');
+                                    header('Content-Disposition: attachment; filename="'.basename($file_path).'"');
+                                    header('Expires: 0');
+                                    header('Cache-Control: must-revalidate');
+                                    header('Pragma: public');
+                                    header('Content-Length: ' . filesize($file_path));
+                                    flush(); // Flush system output buffer
+                                    readfile($file_path);
+                                    exit();
+                                } else {
+                                    http_response_code(404);
+                                    exit();
                                 }
-                                fclose($handle);
-                                */
-
-                                $fp = fopen($file_path, "r") ;
-
-                                header("Cache-Control: maxage=1");
-                                header("Pragma: public");
-                                header("Content-type: application/pdf");
-                                header("Content-Disposition: inline; filename=".$file_name."");
-                                header("Content-Description: PHP Generated Data");
-                                header("Content-Transfer-Encoding: binary");
-                                header('Content-Length:' . filesize($file_path));
-                                ob_clean();
-                                flush();
-                                while (!feof($fp)) {
-                                    $buff = fread($fp, 1024);
-                                    print $buff;
-                                }
-                                exit;
 
                             } else {
                                 // not permitted, redirect to parent form page

@@ -9,7 +9,8 @@ if($cta_type == 'none') {
     $cta_media_file = get_sub_field('cta_media_file');
     $cta_text = get_sub_field('cta_text');
     $cta_url = '?file';
-    $cta_target = '_blank';
+    $cta_target = '';
+    //$cta_target = '_blank';
 } else if($cta_type == 'page') {
     $cta_text = get_sub_field('cta_text');
     $cta_url = get_sub_field('cta_landing_page');
