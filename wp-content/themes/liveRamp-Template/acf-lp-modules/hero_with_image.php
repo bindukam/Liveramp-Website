@@ -32,7 +32,7 @@ $c = "d";
 
 ?>
 
-<section class="hero-with-form primary-bkg with-image-block <?php echo get_sub_field('background_pattern'); ?>"">
+<section class="hero-with-form primary-bkg with-image-block <?php echo get_sub_field('background_pattern'); ?>">
     <div class="grid-container ">
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell green-bkg large-4">
@@ -63,7 +63,7 @@ $c = "d";
                         </div>
                         <?php if ($cta_text !== '' && $cta_url !== ''): ?>
                             <div class="cta">
-                                <a href="<?php echo $cta_url ?>" class="button text white cta" target="<?php echo $cta_target ?>"><?php echo $cta_text?></a>
+                                <a href="<?php echo $cta_url ?>" class="button text white cta" target="<?php echo $cta_target ?>" id="downloadhere"><?php echo $cta_text?></a>
                             </div>
                         <?php endif ?>
                     </div>

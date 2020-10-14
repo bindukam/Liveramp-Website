@@ -68,24 +68,31 @@ if(have_rows('modules', $post_ID)){
                         $cta_media_file = get_sub_field('cta_media_file');
                         if(isset($_GET['file']) && $cta_media_file ) {
                             if($file_mode == 'PERMIT') {
-
-                                // display asset content
                                 // display asset content
                                 $file = $cta_media_file;
                                 $file_name = $file['filename'];
                                 $file_mime_type = $file['mime_type'];
                                 $file_path = get_attached_file($file['ID']);
-//echo $file_path;exit;
                                 if(file_exists($file_path)) {
-                                    header('Content-Description: File Transfer');
-                                    header('Content-Type: application/octet-stream');
-                                    header('Content-Disposition: attachment; filename="'.basename($file_path).'"');
-                                    header('Expires: 0');
-                                    header('Cache-Control: must-revalidate');
-                                    header('Pragma: public');
-                                    header('Content-Length: ' . filesize($file_path));
-                                    flush(); // Flush system output buffer
-                                    readfile($file_path);
+                                    ?>
+                                    <script>
+                                        document.addEventListener('DOMContentLoaded', function(event) {
+                                            document.getElementById('downloadhere').href="<?php echo $cta_media_file['url'] ?>";
+                                            //document.getElementById('downloadhere').setAttribute('target','_blank');
+                                            document.getElementById('downloadhere').click();
+                                        })
+                                    </script>
+                                    <?php
+
+                                    // header('Content-Description: File Transfer');
+                                    // header('Content-Type: application/octet-stream');
+                                    // header('Content-Disposition: attachment; filename="'.basename($file_path).'"');
+                                    // header('Expires: 0');
+                                    // header('Cache-Control: must-revalidate');
+                                    // header('Pragma: public');
+                                    // header('Content-Length: ' . filesize($file_path));
+                                    // flush(); // Flush system output buffer
+                                    // readfile($file_path);
                                     //exit();//   stops download too early
                                 } else {
                                     http_response_code(404);
