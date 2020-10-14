@@ -75,7 +75,7 @@ if(have_rows('modules', $post_ID)){
                                 $file_name = $file['filename'];
                                 $file_mime_type = $file['mime_type'];
                                 $file_path = get_attached_file($file['ID']);
-
+//echo $file_path;exit;
                                 if(file_exists($file_path)) {
                                     header('Content-Description: File Transfer');
                                     header('Content-Type: application/octet-stream');
@@ -86,7 +86,7 @@ if(have_rows('modules', $post_ID)){
                                     header('Content-Length: ' . filesize($file_path));
                                     flush(); // Flush system output buffer
                                     readfile($file_path);
-                                    exit();
+                                    //exit();//   stops download too early
                                 } else {
                                     http_response_code(404);
                                     exit();
