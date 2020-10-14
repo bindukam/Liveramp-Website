@@ -74,17 +74,10 @@ if(have_rows('modules', $post_ID)){
                                 $file_mime_type = $file['mime_type'];
                                 $file_path = get_attached_file($file['ID']);
 
-                                header('Content-type: '.$file_mime_type);
-                                header('Content-Length: ' . filesize($file_path));
-                                $handle = fopen($file_path, 'rb');
-                                $buffer = '';
-                                while (!feof($handle)) {
-                                    $buffer = fread($handle, 4096);
-                                    echo $buffer;
-                                    ob_flush();
-                                    flush();
-                                }
-                                fclose($handle);
+                                header("Content-type: application/pdf");
+                                header("Content-Disposition: inline; filename=".$file_name);
+                                @readfile($file_path);
+
                                 exit;
 
                             } else {
