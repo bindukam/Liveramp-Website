@@ -90,12 +90,23 @@
 						$topics = get_the_terms( $ID, 'blog_categories' );
 
 					}
+					elseif ($card->post_type == 'lp') {
+						$icon = '<img src="/wp-content/uploads/2019/05/Document-1.svg" alt="">';
+						$term_name = 'Landing Pages';
+						$data_blank = 'data-blank="false"';
+						$news_bkg = '';
+						$url = get_permalink($ID);
+						$data_blank = 'data-blank="false"';
+						$topics = 0;
+						$excerpt = get_the_excerpt($ID);
+
+					}
 					else {
 						$icon = '<img src="/wp-content/uploads/2019/05/eBook-1.svg" alt="">';
 						$term_name = 'News';
 						$data_blank = 'data-blank="true"';
 						$news_bkg = 'news-bkg';
-						$url =$url = get_field('external_link', $ID);
+						$url = get_field('external_link', $ID);
 						$data_blank = 'data-blank="true"';
 						$topics = 0;
 					}
@@ -175,6 +186,13 @@
 										 ?>
 										<?php ++$i ?>
 									<?php endforeach ?>
+								</div>
+							<?php endif ?>
+							<?php if ($excerpt): ?>
+								<div class="dark-slate excerpt">
+                                    <?php 
+                                        echo $excerpt;
+                                    ?>
 								</div>
 							<?php endif ?>
 

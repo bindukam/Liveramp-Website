@@ -1,0 +1,347 @@
+﻿.single-lp {
+
+    #green-theme {
+        .hero-with-form {
+            &:before, &.diagonal::before {
+                background-image: url(../../assets/images/svg/diagonal-lines-core-green.svg);
+            }
+
+            &.waveline::before {
+                background-image: url(../../assets/images/svg/wavelines-green.svg);
+            }
+
+            &.swirl::before {
+                background-image: url(../../assets/images/svg/swirl-right-green.svg);
+            }
+
+            &.radial::before {
+                background-image: url(../../assets/images/svg/radial-pattern-green.svg);
+            }
+        }
+
+        .hero-with-form.media-section {
+            &:before {
+                display: none;
+            }
+
+            .media-wrapper {
+                &:before, &.diagonal::before {
+                    background-image: url(../../assets/images/svg/diagonal-lines-core-green.svg);
+                }
+
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-green.svg);
+                }
+
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-green.svg);
+                }
+
+                &.radial::before {
+                    background-image: url(../../assets/images/svg/radial-pattern-green.svg);
+                }
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-green.svg);
+            }
+        }
+
+        .hero-with-form .form-cell .fixed-underline,
+        .resource_3_card_image_and_text .title-cell {
+            .title-cell {
+                svg {
+                    path {
+                        stroke: $green !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #dark-blue-theme {
+        .hero-with-form {
+            &:before, &.diagonal::before {
+                background-image: url(../../assets/images/svg/diagonal-lines-core-db.svg);
+            }
+
+            &.waveline::before {
+                background-image: url(../../assets/images/svg/wavelines-db.svg);
+            }
+
+            &.swirl::before {
+                background-image: url(../../assets/images/svg/swirl-right-dg.svg);
+            }
+
+            &.radial::before {
+                background-image: url(../../assets/images/svg/radial-pattern-db.svg);
+            }
+        }
+
+        .hero-with-form.media-section {
+            &:before {
+                display: none;
+            }
+
+            .media-wrapper {
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-db.svg);
+                }
+
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-dg.svg);
+                }
+
+                &.radial::before {
+                    background-image: url(../../assets/images/svg/radial-pattern-db.svg);
+                }
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-db.svg);
+            }
+        }
+
+        .hero-with-form .form-cell .fixed-underline,
+        .resource_3_card_image_and_text .title-cell {
+            .title-cell {
+                svg {
+                    path {
+                        stroke: $dark-blue !important;
+                    }
+                }
+            }
+        }
+    }
+
+    #core-blue-theme {
+        .hero-with-form {
+            &:before, &.diagonal::before {
+                background-image: url(../../assets/images/svg/diagonal-lines-core-cb.svg);
+            }
+
+            &.waveline::before {
+                background-image: url(../../assets/images/svg/wavelines-cb.svg);
+            }
+
+            &.swirl::before {
+                background-image: url(../../assets/images/svg/swirl-right-cb.svg);
+            }
+
+            &.radial::before {
+                background-image: url(../../assets/images/svg/radial-pattern-cb.svg);
+            }
+        }
+
+        .hero-with-form.media-section {
+            &:before {
+                display: none;
+            }
+
+            .media-wrapper {
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-cb.svg);
+                }
+
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-cb.svg);
+                }
+
+                &.radial::before {
+                    background-image: url(../../assets/images/svg/radial-pattern-cb.svg);
+                }
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-cb.svg);
+            }
+        }
+
+        .hero-with-form .form-cell .fixed-underline,
+        .resource_3_card_image_and_text .title-cell {
+            svg {
+                path {
+                    stroke: $core-blue !important;
+                }
+            }
+        }
+    }
+
+    #dark-gray-theme {
+        .hero-with-form {
+            &:before, &.diagonal::before {
+                background-image: url(../../assets/images/svg/diagonal-lines-core-dg.svg);
+            }
+        }
+
+        .hero-with-form.media-section {
+            &:before {
+                display: none;
+            }
+
+            .media-wrapper {
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-dg.svg);
+                }
+
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-dg.svg);
+                }
+
+                &.radial::before {
+                    background-image: url(../../assets/images/svg/radial-pattern-dg.svg);
+                }
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-dg.svg);
+            }
+        }
+
+        .hero-with-form .form-cell .fixed-underline,
+        .resource_3_card_image_and_text .title-cell {
+            svg {
+                path {
+                    stroke: $dark-gray !important;
+                }
+            }
+        }
+    }
+
+    #medium-blue-theme {
+        .hero-with-form {
+            &:before, &.diagonal::before {
+                background-image: url(../../assets/images/svg/diagonal-lines-core-mb.svg);
+            }
+        }
+
+        .hero-with-form.media-section {
+            &:before, &.diagonal::before {
+                display: none;
+            }
+
+            .media-wrapper {
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-mb.svg);
+                }
+
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-mb.svg);
+                }
+
+                &.radial::before {
+                    background-image: url(../../assets/images/svg/radial-pattern-mb.svg);
+                }
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-mb.svg);
+            }
+        }
+
+        .hero-with-form .form-cell .fixed-underline,
+        .resource_3_card_image_and_text .title-cell {
+            svg {
+                path {
+                    stroke: $medium-blue !important;
+                }
+            }
+        }
+    }
+
+    #teal-theme {
+        .hero-with-form {
+            &:before, &.diagonal::before {
+                background-image: url(../../assets/images/svg/diagonal-lines-core-teal.svg);
+            }
+        }
+
+        .hero-with-form.media-section {
+            &:before {
+                display: none;
+            }
+
+            .media-wrapper {
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-teal.svg);
+                }
+
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-teal.svg);
+                }
+
+                &.radial::before {
+                    background-image: url(../../assets/images/svg/radial-pattern-teal.svg);
+                }
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-teal.svg);
+            }
+        }
+
+        .hero-with-form .form-cell .fixed-underline,
+        .resource_3_card_image_and_text .title-cell {
+            svg {
+                path {
+                    stroke: $teal !important;
+                }
+            }
+        }
+    }
+
+    #yellow-theme {
+        .hero-with-form {
+            &:before, &.diagonal::before {
+                background-image: url(../../assets/images/svg/diagonal-lines-core-yellow.svg);
+            }
+        }
+
+        .hero-with-form.media-section {
+            &:before {
+                display: none;
+            }
+
+            .media-wrapper {
+                &.waveline::before {
+                    background-image: url(../../assets/images/svg/wavelines-yellow.svg);
+                }
+
+                &.swirl::before {
+                    background-image: url(../../assets/images/svg/swirl-right-yellow.svg);
+                }
+
+                &.radial::before {
+                    background-image: url(../../assets/images/svg/radial-pattern-yellow.svg);
+                }
+            }
+        }
+
+        .lp-event-details {
+            .featured:before {
+                background-image: url(../../assets/images/svg/swirl-right-yellow.svg);
+            }
+        }
+
+        .hero-with-form .form-cell .fixed-underline,
+        .resource_3_card_image_and_text .title-cell {
+            svg {
+                path {
+                    stroke: $yellow !important;
+                }
+            }
+        }
+    }
+}

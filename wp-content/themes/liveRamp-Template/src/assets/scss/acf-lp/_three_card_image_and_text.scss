@@ -1,0 +1,36 @@
+.single-lp {
+
+    .resource_3_card_image_and_text {
+
+        margin-bottom: 0;
+
+        .card-cell {
+            padding: 0 20px;
+
+            @include breakpoint(small only) {
+                margin-bottom: 30px;
+            }
+
+            @include breakpoint(medium only) {
+                margin-bottom: 10px;
+            }
+
+            .image {
+                display: block;
+                height: 125px;
+                width: 100%;
+                background-position: center center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            
+            h4 {
+                font-family: 'Flexo';
+            }
+
+            .content {
+                text-align: center;
+            }
+        }
+    }
+}

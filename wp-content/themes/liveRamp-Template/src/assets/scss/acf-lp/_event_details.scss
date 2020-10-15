@@ -1,0 +1,196 @@
+.single-lp {
+
+    .lp-event-details {
+
+        .divider-line {
+            background-color: #D0D0D0;
+            height: 1px;
+            width: 100%;
+            display: block;
+            margin: 20px 0;
+        }
+
+        .button {
+            min-width: 250px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .eyebrow {
+            margin: 30px 0;
+
+            @include breakpoint(medium only) {
+                padding-left: 40px;
+            }
+
+            @include breakpoint(small only) {
+                padding-left: 20px;
+            }
+        }
+
+        //var(--theme-primary-color);
+        .date {
+            text-align: center;
+            margin: 0;
+            border-radius: 10px;
+            height: 72px;
+            width: 72px;
+            padding: 15px;
+            box-shadow: 8px 8px 1px 0 var(--theme-faded-color);
+
+            @include breakpoint(medium down) {
+                margin: 0 20px 0px 40px;
+                float: left;
+                border-top-width: 8px;
+                height: 58px;
+                width: 58px;
+                padding: 7px;
+            }
+
+            @include breakpoint(small only) {
+                margin-left: 20px;
+            }
+
+            &.featured-date {
+                margin-bottom: 20px;
+            }
+
+            .month {
+                text-transform: uppercase;
+                font-size: 16px;
+                line-height: 16px;
+                font-weight: bold;
+                color: $white;
+
+                @include breakpoint(medium down) {
+                    font-size: 13px;
+                    line-height: 13px;
+                }
+            }
+
+            .day {
+                font-size: 32px;
+                line-height: 32px;
+                font-weight: bold;
+                color: $white;
+
+                @include breakpoint(medium down) {
+                    font-size: 26px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        .date-info {
+            float: left;
+        }
+
+        .h3.title {
+            padding: 20px 0 0 0;
+            font-weight: bold;
+
+            @include breakpoint(medium down) {
+                padding: 0;
+            }
+        }
+
+        .sponsor {
+
+            .icon {
+                img {
+                    max-height: 50px;
+                }
+            }
+        }
+
+        .event-image {
+            padding: 0 0 20px 0;
+
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .speaker {
+            padding: 10px 0;
+            border-bottom: 1px solid #D0D0D0;
+            width: 100%;
+
+            &:last-child {
+                border-bottom: none;
+                margin-bottom: 20px;
+            }
+        }
+
+        .featured {
+            color: $white;
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 40px;
+            padding: 50px;
+
+            @include breakpoint(medium down) {
+                padding: 30px;
+            }
+
+            @include breakpoint(small only) {
+                border-radius: 0;
+                margin-left: -0.5rem;
+                margin-right: -0.5rem;
+            }
+
+            &:before {
+                content: '';
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                background-image: url(../images/svg/swirl-right-green.svg);
+                z-index: 0;
+                background-repeat: no-repeat;
+
+                @include breakpoint(small only) {
+                    background-position: 350px 400px;
+                }
+
+                @include breakpoint(medium) {
+                    background-position: 450px 450px;
+                }
+
+                @include breakpoint(large) {
+                    background-position: 200% 250px;
+                }
+            }
+        }
+
+        .event-block {
+
+            @include breakpoint(medium only) {
+                padding: 20px 40px;
+            }
+
+            @include breakpoint(small only) {
+                padding: 20px;
+            }
+
+            .col {
+                z-index: 2;
+                position: relative;
+            }
+
+            @include breakpoint(large) {
+                display: flex;
+
+                .col {
+                    flex: 0 1 auto;
+
+                    &:first-child {
+                        padding-right: 75px;
+                    }
+                }
+            }
+        }
+    }
+}

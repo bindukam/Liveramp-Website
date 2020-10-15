@@ -85,6 +85,8 @@ require_once( 'library/loadmore/news.php' );
 
 require_once( 'library/loadmore/testimonials.php' );
 
+// Load Landing Pages Functions - functions-lp.php
+require_once( 'functions-lp.php' );
 
 if( function_exists('acf_add_options_page') ) {
 
@@ -332,7 +334,7 @@ function cptui_register_my_taxes() {
 		"rest_controller_class" => "WP_REST_Terms_Controller",
 		"show_in_quick_edit" => false,
 		);
-	register_taxonomy( "color_theme", array( "page" ), $args );
+	register_taxonomy( "color_theme", array( "page", "lp" ), $args );
 
 	/**
 	 * Taxonomy: Roles.
