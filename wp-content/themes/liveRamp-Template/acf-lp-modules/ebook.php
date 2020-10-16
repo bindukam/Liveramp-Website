@@ -149,6 +149,35 @@ $background_image = get_sub_field('background_image');
                             }
                         ?>
                     </div>
+
+                    <script src="//app-sj25.marketo.com/js/forms2/js/forms2.min.js"></script>
+                    <form id="mktoForm_4316" style="display:none;"></form>
+                    <script type="text/javascript">
+                        MktoForms2.loadForm("//app-sj25.marketo.com", "320-CHP-056", 4316);
+                        $(document).on('submit', '.form-wrapper form', function (e) {
+                            firstname = $('#input_2_3').val();
+                            lastname = $('#input_2_4').val();
+                            email = $('#input_2_5').val();
+                            company = $('#input_2_6').val();
+                            title = $('#input_2_7').val();
+                            country = $('#input_2_9').val();
+                            
+                            MktoForms2.whenReady(function(form){
+                                form.onSuccess(function(values, followUpUrl) {
+                                    return false;
+                                });
+                                form.addHiddenFields({
+                                   "Email": email,
+                                   "FirstName": firstname,
+                                   "LastName": lastname,
+                                   "Company": company,
+                                   "Title": title,
+                                   "Country": country,
+                                });
+                                form.submit();
+                            });
+                        });
+                    </script>
                 </div>
                 <div class="lp-talent">
                     <?php if (get_sub_field('talent_headline')): ?>
