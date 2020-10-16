@@ -92,6 +92,49 @@
 
     function lrlp_after_submission( $entry, $form ) {
 
+        foreach ($form[fields] as &$field) {
+            $id = $field->id;
+            $value = $entry[$id];
+            switch($id) {
+                case 3:
+                    $firstname = $value;
+                    break;
+                case 4:
+                    $lastname = $value;
+                    break;
+                case 5:
+                    $email = $value;
+                    break;
+                case 6:
+                    $company = $value;
+                    break;
+                case 7:
+                    $title = $value;
+                    break;
+                case 9:
+                    $country = $value;
+                    break;
+            }
+        }
+
+        echo '<script src="//app-sj25.marketo.com/js/forms2/js/forms2.min.js"></script>';
+        echo '<form id="mktoForm_4316" style="display:none;"></form>';
+        echo '<script>MktoForms2.loadForm("//app-sj25.marketo.com", "320-CHP-056", 4316);</script>';
+        echo '<script type="text/javascript">        ',
+             'MktoForms2.whenReady(function(form){   ',
+             '   form.addHiddenFields({                 ',
+             '      "Email": "'.$email.'",              ',
+             '      "FirstName": "'.$firstname.'",      ',
+             '      "LastName": "'.$lastname.'",        ',
+             '      "Company": "'.$company.'",          ',
+             '      "Title": "'.$title.'",              ',
+             '      "Country": "'.$country.'",          ',
+             '   });                                    ',
+             '   form.submit();                       ',
+             '});                                    ',
+             '</script>';
+
+
         $post_ID = get_the_ID();
         $cookie_value = '';
 
