@@ -24,9 +24,20 @@
 
 		<?php include ('library/hreflang.php') ?>
 
-		<?php the_field('drift_code', 'option') ?>
+		<!-------------------- LOCAL CODE SPECIFIC TO LOCATION -------------------->
+		<?php 
+			$code_loop = get_field('code_loop', 'option'); 
+
+			//echo '<pre style="background-color:white">'.print_r($code_loop, 1).'</pre>';
+			foreach ($code_loop AS $code) {
+				echo "\n" . '<!-- '.strtoupper($code['title']).' -->';
+				echo "\n" . $code['code_block'] . "\n";
+			}
+		?>
 		
-		<?php the_field('async_drift_code', 'option') ?>
+		<!-------------------- END LOCAL CODE SPECIFIC TO LOCATION -------------------->
+
+		<!-------------------- GLOBAL CODE -------------------->
 
 		<!-- VIMEO TRACKING CODE -->
 		<script type='text/javascript' defer='defer' src='<?php echo $theme_uri; ?>/dist/assets/js/10577812.js'></script>
@@ -38,6 +49,9 @@
 
 		<!-- wistia script  -->
 		<script type='text/javascript' charset="ISO-8859-1" src="<?php echo $theme_uri; ?>/dist/assets/js/E-v1.js" async></script>
+
+		<!-------------------- END GLOBAL CODE -------------------->
+
 
 		<!-- iframe resizer  -->
 		<style>	.ubermenu  svg.ubermenu-image {	max-width: 1em; } </style>
