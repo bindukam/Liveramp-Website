@@ -156,6 +156,11 @@ $background_image = get_sub_field('background_image');
                         MktoForms2.loadForm("//app-sj25.marketo.com", "320-CHP-056", 4316);
 
                         document.getElementsByClassName("liveramp-form")[0].onsubmit = function() {
+
+                            jQuery(function($){
+                                $(this).find('input[type="submit"]').addClass('disabled button-disabled').attr('disabled', 'disabled');
+                            });
+
                             firstname = $('#input_2_3').val();
                             lastname = $('#input_2_4').val();
                             email = $('#input_2_5').val();
@@ -179,7 +184,7 @@ $background_image = get_sub_field('background_image');
                             });
                             setTimeout(function () {
                                 document.getElementsByClassName("liveramp-form")[0].submit();
-                            }, 2000);
+                            }, 1000);
                             return false;
                         }
                     </script>
