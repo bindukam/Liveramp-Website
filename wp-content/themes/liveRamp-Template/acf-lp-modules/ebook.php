@@ -15,8 +15,10 @@ if($cta_type == 'none') {
     $cta_url = '?file';
     $cta_target = '_blank';
 } else if($cta_type == 'page') {
+    $query_params = $_SERVER['QUERY_STRING'];
+    $query_params = $query_params != '' ? '?'.$query_params : '';
     $cta_text = get_sub_field('cta_text');
-    $cta_url = get_sub_field('cta_landing_page');
+    $cta_url = get_sub_field('cta_landing_page').$query_params;
     $cta_target = '';
 } else if($cta_type == 'url') {
     $cta_text = get_sub_field('cta_url')['title'];
@@ -39,7 +41,7 @@ $background_image = get_sub_field('background_image');
                     <a href="<?php echo site_url(); ?>" rel="nofollow" aria-label="<?php bloginfo( 'name' ); ?>"><img src="<?php echo get_sub_field('logo'); ?>"></a> 
                 </div>
                 <div class="cell eyebrow">
-                    <div class="icon" style="background-image:url(<?php echo get_sub_field('eyebrow_icon'); ?>);"></div>
+                    <div class="icon"><img src="<?php echo get_sub_field('eyebrow_icon'); ?>" /></div>
                     <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>
                 </div>
                 <?php if (get_sub_field('title')): ?>
@@ -73,7 +75,7 @@ $background_image = get_sub_field('background_image');
         <div class="grid-x grid-margin-x align-justify col-wrapper">
             <div class="cell  large-6 content col-order-2">
                 <?php if (get_sub_field('subheadline')): ?>
-                    <div class="h3 bold subheadline"><?php the_sub_field('subheadline') ?></div>
+                    <div class="h2 bold subheadline"><?php the_sub_field('subheadline') ?></div>
                 <?php endif ?>
                 <?php if (get_sub_field('description')): ?>
                     <div class="copy"><?php the_sub_field('description') ?></div>
@@ -113,7 +115,7 @@ $background_image = get_sub_field('background_image');
                             <?php endif ?>
                             <?php if (get_sub_field('testimonial_logo')): ?>
                             <div class="quote-logo">
-                                <?php echo wp_get_attachment_image( get_sub_field('testimonial_logo'), 'full', '',array( "class" => "circle-image" ) ); ?>
+                                <?php echo wp_get_attachment_image( get_sub_field('testimonial_logo'), 'full'); ?>
                             </div>
                             <?php endif ?>
                         </div>
@@ -147,6 +149,45 @@ $background_image = get_sub_field('background_image');
                             }
                         ?>
                     </div>
+
+                    <script src="//app-sj25.marketo.com/js/forms2/js/forms2.min.js"></script>
+                    <form id="mktoForm_4316" style="display:none;"></form>
+                    <script type="text/javascript">
+                        MktoForms2.loadForm("//app-sj25.marketo.com", "320-CHP-056", 4316);
+
+                        document.getElementsByClassName("liveramp-form")[0].onsubmit = function() {
+
+                            jQuery(function($){
+                                $(this).find('input[type="submit"]').addClass('disabled button-disabled').attr('disabled', 'disabled');
+                            });
+
+                            firstname = $('#input_2_3').val();
+                            lastname = $('#input_2_4').val();
+                            email = $('#input_2_5').val();
+                            company = $('#input_2_6').val();
+                            title = $('#input_2_7').val();
+                            country = $('#input_2_9').val();
+                            
+                            MktoForms2.whenReady(function(form){
+                                form.onSuccess(function(values, followUpUrl) {
+                                    return false;
+                                });
+                                form.addHiddenFields({
+                                   "Email": email,
+                                   "FirstName": firstname,
+                                   "LastName": lastname,
+                                   "Company": company,
+                                   "Title": title,
+                                   "Country": country,
+                                });
+                                form.submit();
+                            });
+                            setTimeout(function () {
+                                document.getElementsByClassName("liveramp-form")[0].submit();
+                            }, 1000);
+                            return false;
+                        }
+                    </script>
                 </div>
                 <div class="lp-talent">
                     <?php if (get_sub_field('talent_headline')): ?>
@@ -178,17 +219,19 @@ $background_image = get_sub_field('background_image');
                         <div class="list-item">
                             <div class="item-col">
                                 <div class="circle">
-                                    <?php echo wp_get_attachment_image( get_sub_field('headshot'), 'full', false, array( "class" => "circle-image" ) ); ?>
+                                    <div class="circle"><img class="circle-image" src="<?php echo get_sub_field('headshot'); ?>" /></div>
                                 </div>
                             </div>
                             <div class="item-col">
                                 <div class="speaker-name">
                                     <?php echo $name; ?>
                                 </div>
-                                <div class="copy">
+                                <div class="copy no-dot">
                                     <?php echo $job_title; ?>
                                 </div>
-                                <?php echo wp_get_attachment_image( get_sub_field('company_logo'), 'full' ); ?>
+                                <div class="logo">
+                                    <?php echo wp_get_attachment_image( get_sub_field('company_logo'), 'full' ); ?>
+                                </div>
                             </div>
                         </div>
                         <?php endwhile ?>

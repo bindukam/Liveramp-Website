@@ -20,8 +20,24 @@
             color: inherit !important;
         }
 
+        .desc {
+
+            ul {
+                list-style: none; 
+
+                li::before {
+                    content: "\2022";
+                    color: var(--theme-primary-color);
+                    font-weight: bold;
+                    display: inline-block;
+                    width: 1em;
+                    margin-left: -1em;
+                }
+            }
+        }
+
         .quote {
-            padding: 20px 0 0 65px;
+            padding: 20px 0 0 85px;
             position: relative;
 
             .quote-text {
@@ -38,7 +54,11 @@
 
             .quote-logo {
                 img {
+                    max-height: 50px;
                     max-width: 150px;
+                    height: auto;
+                    width: auto;
+                    display: block;
                 }
             }
 
@@ -51,6 +71,16 @@
                 z-index: -1;
                 top: -70px;
                 left: -7px;
+            }
+
+            @include breakpoint(small only) {
+                padding-left: 57px;
+
+                &:before {
+                    font-size: 10rem;
+                    top: -50px;
+                    left: -7px;
+                }
             }
         }
 
@@ -95,19 +125,24 @@
                 }
 
                 .circle-image {
-                    clip-path: circle(36px at center);
-                    height: 100%;
-                    width: auto;
+                    clip-path: circle(38px at center);
+                    height: 76px;
+                    width: 76px;
                     max-width: unset;
-                    position: absolute;
                 }
 
                 .speaker-name {
                     font-weight: bold;
                 }
 
-                img {
-                    max-width: 150px;
+                .logo {
+                    img {
+                        max-height: 50px;
+                        max-width: 150px;
+                        height: auto;
+                        width: auto;
+                        display: block;
+                    }
                 }
             }
         }

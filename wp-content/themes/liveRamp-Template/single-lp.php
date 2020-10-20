@@ -27,7 +27,9 @@ if(have_rows('modules', $post_ID)){
                 if( $module_name == 'lp_hero_with_form' ||
                     $module_name == 'lp_ebook' ){
                     $post_ID = get_the_ID();
-                    $form_submit_landing_page = get_sub_field('form_submit_landing_page');
+                    $query_params = $_SERVER['QUERY_STRING'];
+                    $query_params = $query_params != '' ? '?'.$query_params : '';
+                    $form_submit_landing_page = get_sub_field('form_submit_landing_page').$query_params;
                     if($form_submit_landing_page) {
                         header("Location: ".$form_submit_landing_page); // Redirect to next page after form submission
                         exit();
@@ -66,25 +68,36 @@ if(have_rows('modules', $post_ID)){
                         $cta_media_file = get_sub_field('cta_media_file');
                         if(isset($_GET['file']) && $cta_media_file ) {
                             if($file_mode == 'PERMIT') {
-
                                 // display asset content
                                 $file = $cta_media_file;
                                 $file_name = $file['filename'];
                                 $file_mime_type = $file['mime_type'];
                                 $file_path = get_attached_file($file['ID']);
+                                if(file_exists($file_path)) {
+                                    ?>
+                                    <script>
+                                        document.addEventListener('DOMContentLoaded', function(event) {
+                                            document.getElementById('downloadhere').href="<?php echo $cta_media_file['url'] ?>";
+                                            //document.getElementById('downloadhere').setAttribute('target','_blank');
+                                            document.getElementById('downloadhere').click();
+                                        })
+                                    </script>
+                                    <?php
 
-                                header('Content-type: '.$file_mime_type);
-                                header('Content-Length: ' . filesize($file_path));
-                                $handle = fopen($file_path, 'rb');
-                                $buffer = '';
-                                while (!feof($handle)) {
-                                    $buffer = fread($handle, 4096);
-                                    echo $buffer;
-                                    ob_flush();
-                                    flush();
+                                    // header('Content-Description: File Transfer');
+                                    // header('Content-Type: application/octet-stream');
+                                    // header('Content-Disposition: attachment; filename="'.basename($file_path).'"');
+                                    // header('Expires: 0');
+                                    // header('Cache-Control: must-revalidate');
+                                    // header('Pragma: public');
+                                    // header('Content-Length: ' . filesize($file_path));
+                                    // flush(); // Flush system output buffer
+                                    // readfile($file_path);
+                                    //exit();//   stops download too early
+                                } else {
+                                    http_response_code(404);
+                                    exit();
                                 }
-                                fclose($handle);
-                                exit;
 
                             } else {
                                 // not permitted, redirect to parent form page

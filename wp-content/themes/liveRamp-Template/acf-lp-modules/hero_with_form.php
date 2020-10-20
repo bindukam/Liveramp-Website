@@ -18,14 +18,14 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell  large-6 content">
                 <div class="cell eyebrow">
-                    <div class="icon" style="background-image: url(<?php echo get_sub_field('eyebrow_icon'); ?>);"></div>
+                    <div class="icon"><img src="<?php echo get_sub_field('eyebrow_icon'); ?>" /></div>
                     <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>
                 </div>
                 <?php if (get_sub_field('title')): ?>
                     <h1 class="green"><?php the_sub_field('title') ?></h1>
                  <?php endif ?>
                 <?php if (get_sub_field('list_headline')): ?>
-                    <h4 class="green"><?php the_sub_field('list_headline') ?></h4>
+                    <h4 class="sub-title green"><?php the_sub_field('list_headline') ?></h4>
                  <?php endif ?>
                 <?php if (have_rows('list')): ?>
                     <?php while(have_rows('list')) : ?>
@@ -42,7 +42,7 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
                         }
                     ?>
                     <div class="cell list-item">
-                        <div class="icon" style="background-image:url(<?php echo $icon; ?>);"></div>
+                        <div class="icon"><img src="<?php echo $icon; ?>" /></div>
                         <div class="copy green"><?php echo $copy; ?></div>
                     </div>
                     <?php endwhile ?>
