@@ -3,7 +3,7 @@
 	<div class="grid-container">
 		<div class="grid-x">
 			<div class="cell large-8 split-text margin-2">
-				<img src="<?php the_sub_field('module_icon') ?>">
+				<img src="<?php the_sub_field('icon_image') ?>">
 				<h1><?php the_sub_field('title') ?></h1>
 				<?php $list_items = get_sub_field('list_items') ?>
 				<ul>
