@@ -106,6 +106,11 @@
           include ('acf-modules/hero_text_left_image_right.php');
         }
 
+        // Written Story Centered
+        if(get_row_layout()=='written_story_centered'){
+          include ('acf-modules/written_story_centered.php');
+        }
+
         // Gallery Icon Grid
         if(get_row_layout()=='gallery_icon_grid'){
           include ('acf-modules/gallery_icon_grid.php');
