@@ -106,11 +106,6 @@
           include ('acf-modules/hero_text_left_image_right.php');
         }
 
-        // Written Story Centered
-        if(get_row_layout()=='written_story_centered'){
-          include ('acf-modules/written_story_centered.php');
-        }
-
         // Gallery Icon Grid
         if(get_row_layout()=='gallery_icon_grid'){
           include ('acf-modules/gallery_icon_grid.php');
@@ -189,11 +184,20 @@
           include ('acf-modules/testimonials_archive.php');
         }
 
-         // Video Hero
+        // Video Hero
         if(get_row_layout()=='video_hero'){
           include ('acf-modules/video_hero.php');
         }
-
+        
+        // Written Story Centered
+        if(get_row_layout()=='written_story_centered'){
+          include ('acf-modules/written_story_centered.php');
+        }
+        
+        // Carded 2 Up Landscape
+        if(get_row_layout()=='carded_2_up_landscape'){
+          include ('acf-modules/carded_2_up_landscape.php');
+        }
 
       }
     }
