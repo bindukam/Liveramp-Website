@@ -12,4 +12,4 @@ MktoForms2.loadForm("//lp.liveramp.com/", "320-CHP-056", 4045, function(form) {
     jQuery('.mktoFieldDescriptor').css('margin-bottom', '')
     jQuery('.form-wrapper').fadeIn('400'),
     form.onSuccess(function(values, followUpUrl) {});
-});
+}); 
