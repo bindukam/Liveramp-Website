@@ -1,7 +1,9 @@
 .card-intro {
 
     padding-bottom:39px;
-    
+    max-width:700px;
+    margin:auto;
+
     .intro_icon {
         display: flex;
         width: 60px;
@@ -15,6 +17,13 @@
         border-width: 3px;
         border-color: #00a8e1;
         border-radius: 50%;
+        
+        @include respond-to(sm) {
+            padding:0;
+            margin-right:0;
+            margin-left:0;
+
+        }
 
         img {
             width: 32px;
@@ -36,6 +45,12 @@
         justify-content: center;
         align-items: stretch;
         width: 60px;
+        
+        @include respond-to(sm) {
+            margin-right:0;
+            margin-left:0;
+            margin-bottom: 1.6em;
+        }
 
         .icon-divider-item {
             width: 50%;
@@ -52,7 +67,29 @@
     }
 
     .intro_title {
-    	 text-align: center;
+        
+        text-align: center;
+        
+        @include respond-to(sm) {
+            text-align: left;
+        }
+
+        h2 {
+            color: #004ba5 !important
+        }
     }
+
+    .intro_text {
+        
+        text-align: center;
+
+        @include respond-to(sm) {
+            text-align: left;
+        }
+
+        font-size: 1.125rem;
+        color: #00a8e1;    
+    }
+
 
 }

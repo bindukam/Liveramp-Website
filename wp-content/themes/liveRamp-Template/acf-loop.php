@@ -198,6 +198,11 @@
         if(get_row_layout()=='carded_2_up_landscape'){
           include ('acf-modules/carded_2_up_landscape.php');
         }
+        
+        // Carded White Bg Icon Text
+        if(get_row_layout()=='carded_white_bg_icon_text'){
+          include ('acf-modules/carded_white_bg_icon_text.php');
+        }
 
       }
     }

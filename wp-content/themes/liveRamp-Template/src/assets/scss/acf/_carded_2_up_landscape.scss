@@ -5,8 +5,12 @@
 
     .cards {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; 
         grid-gap: 33px;
+
+         @include respond-to(vsm) {
+            grid-template-columns: 1fr; 
+        }
 
         .carded_2_up_card {
             border-radius: 16px;
@@ -26,12 +30,12 @@
                 margin-bottom: 2em;
 
                 &.divider--orange {
-                    background-color: #fa8d28;
+                    background-color: #fa8d28; 
                 }
             }
 
             .text {
-                margin-bottom: 1.2rem;
+                margin-bottom: 1.2rem;   
             }
         }
     }

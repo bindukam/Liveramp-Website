@@ -3,7 +3,7 @@
 	<div class="cell">
 		
 		<div class="intro_icon">
-			<img src="<?php echo get_sub_field('title_icon') ?>">
+			<img src="<?php echo get_sub_field('intro_title_icon') ?>">
 		</div>
 		
 		<div class="intro_divider">
@@ -12,8 +12,14 @@
 		</div>
 		
 		<div class="intro_title">
-			<h2><?php echo get_sub_field('title') ?></h2>
+			<h2><?php echo get_sub_field('intro_title') ?></h2>
 		</div>
+	
+		<?php if (get_sub_field('intro_text')): ?>
+			<div class="intro_text">
+				<?php echo get_sub_field('intro_text') ?>
+			</div>
+		<?php endif ?>
 	
 	</div>
 
