@@ -1,15 +1,11 @@
 .offer_strip_updated {
 
 	margin: 2rem 1rem 3rem;
-	-webkit-border-radius: $b-radius;
-	        border-radius: $b-radius;
+	border-radius: $b-radius;
 	background-repeat: no-repeat;
 	background-size: 0px;
 	overflow: hidden;
 	background-position: right 81vw center;
-	// @include breakpoint(xlarge) {
-	// 	background-position: left center;
-	// }
 
 	&.overlay-me {
 		margin-bottom: 0; 
@@ -35,7 +31,7 @@
 	}
 
 
-	@include breakpoint(medium) {
+	@include breakpoint(large) {
 		// padding: 4rem 0;
 		margin: 1rem 0 3rem;
 		-webkit-border-radius: 0;
@@ -51,7 +47,7 @@
 		}
 	}
 
-	@include breakpoint(small only) {
+	@include breakpoint(large only) {
 		h2 {
 			font-size: 1.625rem;
 		}
@@ -68,7 +64,7 @@
 	.text-center {
 		padding-top: 30px;
 
-		@include breakpoint(medium) {
+		@include breakpoint(large) {
 			padding-top: 0;
 		}
 	}

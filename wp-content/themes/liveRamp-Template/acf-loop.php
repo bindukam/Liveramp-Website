@@ -32,10 +32,16 @@
           include ('acf-modules/offer_strip.php'); 
         }
 
+        // Offer Strip Updated
+        if(get_row_layout()=='offer_strip_updated'){
+          include ('acf-modules/offer_strip_updated.php'); 
+        }
+        
         // Offer Strip with Image
         if(get_row_layout()=='offer_strip_with_image'){
           include ('acf-modules/offer_strip_with_image.php'); 
         }
+        
         // 3 CTAs
         if(get_row_layout()=='three_ctas'){
           include ('acf-modules/three_ctas.php'); 
@@ -121,7 +127,6 @@
           include ('acf-modules/breadcrumbs.php');
         }
 
-
         // Standard Video
         if(get_row_layout()=='standard_video'){
           include ('acf-modules/standard_video.php');
@@ -146,7 +151,6 @@
         if(get_row_layout()=='simple_header'){
           include ('acf-modules/simple_header.php');
         }
-
 
        // Tabbed: Adjustable padding
        if(get_row_layout()=='adjustable_padding'){
@@ -202,6 +206,16 @@
         // Carded White Bg Icon Text
         if(get_row_layout()=='carded_white_bg_icon_text'){
           include ('acf-modules/carded_white_bg_icon_text.php');
+        }
+        
+        // Carded White Bg Icon Text
+        if(get_row_layout()=='icon_text_left_right'){
+          include ('acf-modules/icon_text_left_right.php');
+        }
+
+        // High Impact Quote
+        if(get_row_layout()=='high_impact_quote'){
+          include ('acf-modules/high_impact_quote.php');
         }
 
       }
