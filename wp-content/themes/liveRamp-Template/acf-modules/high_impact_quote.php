@@ -19,7 +19,7 @@
                 <div class="txt-with-divider">
                     <div class="txt-with-divider--item divider--light-blue"></div>
                 </div>
-                <h5 class="quote-caption lsh-quote-caption"><?php the_sub_field('credit') ?></h5>
+                <h5 class="quote-caption"><?php the_sub_field('credit') ?></h5>
             </div>
         </div>
     </div>

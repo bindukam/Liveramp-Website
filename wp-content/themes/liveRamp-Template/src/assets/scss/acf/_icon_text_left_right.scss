@@ -4,48 +4,67 @@
         justify-content: center;
         flex-wrap: nowrap;
         align-items: center;
-        
-        @include respond-to(sm) {
-            display:block;
-            margin-bottom:75px;
-        }
-        
 
+        @include respond-to(sm) {
+            display: block;
+        }
 
         //left right alternator
         &:nth-child(odd) {
-            .image-container {order:2}
-            .text-container {order:1}
+            .image-container {
+                order: 2
+            }
+
+            .text-container {
+                order: 1
+            }
+
             @include respond-to(sm) {
-                .image-container {order:1}
-                .text-container {order:2}
+                .image-container {
+                    order: 1
+                }
+
+                .text-container {
+                    order: 2
+                }
             }
         }
-        
+
         .cell {
             padding-right: 1em;
             padding-left: 1em;
 
             &.image-container {
-                display:block;
-                width:50%;
-                
+                display: block;
+                width: 50%;
+
                 @include respond-to(sm) {
-                    width:100%;
+                    width: 100%;
                 }
 
-                img {max-width:100%}
-                @include respond-to(sm) {
-                    img {max-width:80%; margin:auto;display:block}
+                img {
+                    max-width: 100%;
+                    
+                    @include respond-to(sm) {
+                        max-width: 64%;
+                        margin: auto;
+                        display: block;
+                    }
+                    
+                    @include respond-to(vsm) {
+                        max-width: 100%;
+                    }
+
                 }
 
             }
 
             &.text-container {
-                width:50%;
-                
+                width: 50%;
+
                 @include respond-to(sm) {
-                    width:100%;
+                    width: 100%;
+                    padding-top:30px;
                 }
 
                 .title {

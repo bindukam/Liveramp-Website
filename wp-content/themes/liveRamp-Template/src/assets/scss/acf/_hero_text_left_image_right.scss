@@ -1,20 +1,26 @@
 .hero_text_left_image_right {
 
     .grid-x {
+        height:650px;
 
         @include respond-to(sm) {
             flex-direction: column-reverse;
+            height:auto;
         }
     
         .cell {
-            margin-bottom: 100px;
-            &.split-text {
+            
+            @include fluid('margin-bottom', 0, 100);
 
+            &.split-text { 
+                padding-top:55px;
+                
                 @include respond-to(sm) {
                     align-items: center;
                     display: flex;
                     flex-direction: column;
                     text-align: center;
+                    padding-bottom:40px;
                 }
 
                 &>img {
@@ -32,6 +38,21 @@
                     max-width: 500px;
                     margin-bottom: 3rem;
                     @include fluid('font-size', 40, 60);
+                }
+
+                p.description {
+                    font-size: 1.125rem;
+                    color: white;
+                    margin: 0;
+                    padding-left: 0;
+                    max-width:100%;
+                    padding-right:100px;
+
+                    @include respond-to(sm) {
+                        text-align:center;
+                        padding-right:0;
+                        max-width: 80%;
+                    }
                 }
 
                 ul {

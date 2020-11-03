@@ -3,16 +3,16 @@
 <section class="offer_strip_updated medium-blue-bkg relative round overlay-me entrance-anim <?php the_sub_field('width_toggle') ?> wave-graphic <?php if (get_sub_field('overlay')): echo 'overlay-me'; endif; ?>">
 
 	<div class="grid-container z-5-r">
-		<div class="grid-x align-middle align-right pad-1">
+		<div class="grid-x align-middle align-right content-area">
 			<div class="cell large-6 medium-12 text">
-				<h2 class="yellow">
+				<h2>
 					<?php the_sub_field('title') ?>
 				</h2>
-				<div class="white">
+				<div>
 					<?php the_sub_field('description') ?>
 				</div>
 			</div>
-			<div class="cell large-4 medium-12 text-center">
+			<div class="cell large-4 medium-12 button-area">
 				<?php
 
 					$url = get_sub_field('cta')['url'];
