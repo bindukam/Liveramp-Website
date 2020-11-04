@@ -4,8 +4,14 @@ Template Name: Partners Archive
 */
 
 $partner_url = get_query_var('partner'); // Checks to see if there is a single partner slug in the URL e.g. liveramp.com/partners/{ partner-slug }
-
 get_header();
+
+/** Headers to clear cache on this page **/
+header("Expires: Tue, 01 Jan 2000 00:00:00 GMT");
+header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Cache-Control: post-check=0, pre-check=0", false);
+header("Pragma: no-cache");
 
 if( !empty($partner_url) ) { // It's the single partner page
 
