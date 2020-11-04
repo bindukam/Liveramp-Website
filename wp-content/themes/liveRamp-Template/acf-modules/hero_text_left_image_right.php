@@ -1,8 +1,8 @@
 <!-- new092920 -->
-<section class="hero_text_left_image_right medium-blue-bkg">
+<section class="hero_text_left_image_right green-bkg">
 	<div class="grid-container">
 		<div class="grid-x">
-			<div class="cell large-8 split-text">
+			<div class="cell large-8 split-text green">
 				
 				<img src="<?php the_sub_field('icon_image') ?>">
 				
@@ -14,7 +14,7 @@
 
 				        if ( get_row_layout() == 'text_block' ) :
 				            
-				           ?><p class="description"><?php echo get_sub_field('description'); ?></p><?php
+				           ?><p class="description green"><?php echo get_sub_field('description'); ?></p><?php
 				        
 				        elseif ( get_row_layout() == 'icon_bullet_list' ): 
 							
@@ -24,7 +24,7 @@
 								<?php foreach ($list_items as $list_item): ?>
 									<li>
 										<img src="<?php echo $list_item['icon'] ?>">
-										<p><?php echo $list_item['item'] ?></p>
+										<p class="green"><?php echo $list_item['item'] ?></p>
 									</li>
 								<?php endforeach ?>
 							</ul>

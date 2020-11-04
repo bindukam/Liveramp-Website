@@ -8,15 +8,15 @@
 		<div class="grid-x cards">
 			<?php if (have_rows('cards')): ?>
 			    <?php while(have_rows('cards')) : the_row(); ?>
-			    		<div class="carded_2_up_card medium-blue-bkg">
+			    		<div class="carded_2_up_card green-bkg">
 		    				
-		    				<div class="title">
-		    					<h3 class='title'><?php the_sub_field('title') ?></h3>
+		    				<div class="title white">
+		    					<h3><?php the_sub_field('title') ?></h3>
 		    				</div>
 
 	    					<div class="card_title-divider divider--orange"></div>
 
-		    				<div class="text">
+		    				<div class="text white">
 		    					<?php the_sub_field('text') ?>
 		    				</div>
 
@@ -26,7 +26,7 @@
 	    						$target = get_sub_field('cta')['target'];
 	    					 ?>
 		    				<div class="cta">
-		    					 <a href="<?php echo $url ?>" class="button" target="<?php echo $target ?>"><?php echo $title ?></a>
+		    					 <a href="<?php echo $url ?>" class="button button-white" target="<?php echo $target ?>"><?php echo $title ?></a>
 		    				</div>
 		    			</div>
 			    <?php endwhile ?>

@@ -14,7 +14,7 @@
             </div>
             <div class="quote-container">
                 <blockquote class="wbf-block-quote">
-                    <p><?php the_sub_field('main_quote') ?></p>
+                    <p class="green"><?php the_sub_field('main_quote') ?></p>
                 </blockquote>
                 <div class="txt-with-divider">
                     <div class="txt-with-divider--item divider--light-blue"></div>

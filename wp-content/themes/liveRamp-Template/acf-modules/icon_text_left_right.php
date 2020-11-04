@@ -14,7 +14,7 @@
 						
 						<div class="cell text-container">
 							
-							<div class="title">
+							<div class="title green">
 								<h3><?php the_sub_field('title') ?></h3>
 							</div>
 							

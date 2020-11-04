@@ -11,7 +11,7 @@
 			<div class="icon-divider-item divider-orange-tint"></div>
 		</div>
 		
-		<div class="intro_title">
+		<div class="intro_title green">
 			<h2><?php echo get_sub_field('intro_title') ?></h2>
 		</div>
 	

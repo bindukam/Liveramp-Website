@@ -12,7 +12,7 @@
                             <div class="cards_item_inner">
                                 <div class="card_icon-container"><img loading="lazy" src=" <?php the_sub_field('icon') ?>" width="32" height="" alt="" class="card_icon--large"></div>
                                 <div class="card_title-divider-container">
-                                    <h4 class="card_title lsh-card_title"><?php the_sub_field('title') ?></h4>
+                                    <h4 class="card_title lsh-card_title green"><?php the_sub_field('title') ?></h4>
                                     <div class="card_title-divider divider--orange"></div>
                                 </div>
                                 <p class="card_text">
