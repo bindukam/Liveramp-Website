@@ -85,6 +85,8 @@ require_once( 'library/loadmore/news.php' );
 
 require_once( 'library/loadmore/testimonials.php' );
 
+require_once( 'functions-lp.php' );
+
 
 if( function_exists('acf_add_options_page') ) {
 
