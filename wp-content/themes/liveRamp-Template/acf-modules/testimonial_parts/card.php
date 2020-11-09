@@ -35,7 +35,8 @@
 
  		}
  	}
-
+	
+	$remove_play_icon = get_field( "remove_play_icon_on_tile" );
   ?>
 
 <div class="cell post-card click-card <?php echo $new_card ?>" data-url="<?php the_field('marketo'); ?>" data-blank='true'>
@@ -49,10 +50,12 @@
 			<div class="border">
 				<?php echo file_get_contents(get_template_directory_uri().'/dist/assets/images/svg/rectangle-border.svg'); ?>
 			</div>
-			<?php if ($video_play): ?>
-				<div class="play-button">
-					<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/play-arrow.svg" alt="play icon">	
-				</div>
+			<?php if (!$remove_play_icon): ?>
+				<?php if ($video_play): ?>
+					<div class="play-button">
+						<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/play-arrow.svg" alt="play icon">	
+					</div>
+				<?php endif ?>
 			<?php endif ?>
 			
 	</div>

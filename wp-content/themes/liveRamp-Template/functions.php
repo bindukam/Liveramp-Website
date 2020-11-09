@@ -85,8 +85,8 @@ require_once( 'library/loadmore/news.php' );
 
 require_once( 'library/loadmore/testimonials.php' );
 
-// Load Landing Pages Functions - functions-lp.php
 require_once( 'functions-lp.php' );
+
 
 if( function_exists('acf_add_options_page') ) {
 
@@ -334,7 +334,7 @@ function cptui_register_my_taxes() {
 		"rest_controller_class" => "WP_REST_Terms_Controller",
 		"show_in_quick_edit" => false,
 		);
-	register_taxonomy( "color_theme", array( "page", "lp" ), $args );
+	register_taxonomy( "color_theme", array( "page", "use_cases" ), $args );
 
 	/**
 	 * Taxonomy: Roles.
@@ -728,3 +728,57 @@ function show_engineering_author_name( $author_name ) {
  
 }
 /** "Add filter to change engineering author name " code end*/
+
+
+/** Add filter to remove authors with no published blog-post from "Featured Authors" List [ Blog Page ] " code START ***/
+add_filter('acf/fields/post_object/result/key=field_5cc8ace1a1859', 'filter_acf_fields_post_object_result_key_key', 10, 4);
+function filter_acf_fields_post_object_result_key_key( $text, $post, $field, $post_id ) {
+	if($post->post_type == 'authors'){
+		$args = array(
+			'post_type'     => 'blog-post',
+			'post_status'   => 'publish',
+			'meta_key'      => 'blog_author',
+			'meta_value'    => $post->ID,
+		);
+		
+		// query
+		$query = new WP_Query( $args );
+		if ( $query->have_posts() ) {
+			return $text;
+		}
+	}
+}
+/** Add filter to remove authors with no published blog-post from "Featured Authors" List [ Blog Page ] " code END ***/
+
+
+/** clear WPEngine purge cache on ACF field update  " code START ***/
+add_action('acf/save_post', 'clear_wpe_purge');
+function clear_wpe_purge() {  
+	if (function_exists('is_wpe')) {
+		ob_start();
+		WpeCommon::purge_memcached();
+		WpeCommon::clear_maxcdn_cache();
+		WpeCommon::purge_varnish_cache();  // refresh our own cache (after CDN purge, in case that needed to clear before we access new content)
+		ob_end_clean();
+	}
+}
+
+/** clear WPEngine purge cache on ACF field update  " code END ***/
+
+/** Add filter to update breadcrumb link protocol  " code START ***/
+add_filter( 'wpseo_breadcrumb_links', 'custom_woocommerce_breadcrumbs' );
+function custom_woocommerce_breadcrumbs( $output ) {
+	  if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on')   
+         $protocol = "https://";   
+    else  
+         $protocol = "http://";   
+   
+     foreach( $output as $key => $urls){
+		if(strpos($urls['url'], 'http://') !== false){
+			$updated_url = str_replace('http://',$protocol,$urls['url']);
+			$output[$key]['url'] = $updated_url;
+		}
+	 }
+	 return $output;
+}
+/** Add filter to update breadcrumb link protocol  " code END ***/

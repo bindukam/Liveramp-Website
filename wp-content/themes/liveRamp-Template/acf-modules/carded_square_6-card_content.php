@@ -38,6 +38,16 @@
 				    			<div class="white">
 				    				<?php the_sub_field('content') ?>
 				    			</div>
+											<?php if (get_sub_field('cta')): ?>
+			    			<div class="cell small-2 cta margin-top-1">
+			    				<?php
+			    					$url = get_sub_field('cta')['url'];
+			    					$title = get_sub_field('cta')['title'];
+			    					$target = get_sub_field('cta')['target'];
+			    				 ?>
+			    				 <a href="<?php echo $url ?>" class="button outline <?php echo $button ?> no-overflow" target="<?php echo $target ?>"><?php echo $title ?></a>
+			    			</div>
+						<?php endif; ?>
 				    		</div>
 				    	</div>
 				    <?php endwhile ?>

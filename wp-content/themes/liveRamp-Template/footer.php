@@ -113,8 +113,119 @@
 <?php endif; ?>
 
 <?php wp_footer(); ?>
-
-<?php ?>
+<script>
+	$(document).ready(function(){
+		 // Carded: Multi-Colored Content Cards ( Accessiblity fix )
+		 $('[id^=slick-slide]').attr('tabindex','0'); 
+		 $('[id^=slick-slide] .cell a').attr('tabindex','0');
+		 $('h2').attr('tabindex','0');
+		// $('#sf-showcase .solution-card').attr('tabindex','0');
+		// $('#sf-showcase .solution-card .card-cta > button').attr('tabindex','0');
+		 
+		 // Carded Square 6-Card Content ( Accessiblity fix )
+		 $('[id^=slick-slide]').find('a.button').attr('tabindex','0'); 
+		 
+		 //Tabbed: Expanded Left Justified Vertical Tab Module ( Accessiblity fix )
+		 /*  $('.tabs-panel').find('a.button').on('focusout', function(e){ console.log('Focusout Loop');
+			var buttonElem =  $(this);
+			 buttonElem.attr('tabindex',-1);
+			 console.log('focusout elem txt: '+buttonElem.text()); 
+		  });   */ 
+		  // returns true if the element or one of its parents has the class classname
+function hasSomeParentTheClass(element, classname) {
+	
+    if (element){
+		if (element.className !== undefined && element.className !=='' ){
+			if (element.className.split(' ').indexOf(classname)>=0) return true;
+		}
+	}
+    return element.parentNode && hasSomeParentTheClass(element.parentNode, classname);
+}
+			 $(window).keyup(function (e) {
+				let ecode = (e.keyCode ? e.keyCode : e.which); 
+				if (ecode == 9) {
+					// console.log(e.target);
+					// console.log(hasSomeParentTheClass(e.target, 'tabs-panel'));
+					
+					if(hasSomeParentTheClass(e.target, 'tabs-panel')){
+						e.stopPropagation();
+						console.log($(e.target).parents().find('.tabs-panel'));
+						let tabbedElemID = $(e.target).parents().find('.tabs-panel').attr('id');
+						$('a[href="#'+tabbedElemID+'"]').parent().next().focus();
+					}/* 
+					 $('.tabs-panel').find('a.button').on('focus', function(e){ 
+						let buttonElem =  $(this);
+						buttonElem.attr('tabindex',-1);   console.log('Elem: '+buttonElem.text()+' in focus');
+						
+						let tabbedElemID = buttonElem.closest('.tabs-panel').attr('id');
+						let linksToTabbedSection = $('a[href="#'+tabbedElemID+'"]');
+						
+						let curLiIndex = $('ul.tabs li.is-active').index(); 
+						let nextLiIndex = curLiIndex + 1 ;
+						console.log( 'curLiIndex '+curLiIndex );
+						console.log( 'nextLiIndex '+nextLiIndex );
+						//$('ul.tabs li').eq( nextLiIndex ).attr('tabindex',nextLiIndex); 
+						$('ul.tabs li').eq( nextLiIndex ).click();
+					 });  
+					
+					 
+					 $('.platform-footer').find('a').on('focus', function(e){   console.log('Elem footer Focusout');
+						 $('.tabs-panel').find('a.button').attr('tabindex',0); 
+					  }); */
+				}
+			});  
+		  // console.log('nxt elem'+$( '.tabbed_expanded_left_justified_vertical_tab_module' ).next().html());
+		 /* $('.tabs-panel').find('a.button').on('focusout', function(e){ console.log('Focusout Loop');
+			let buttonElem =  $(this);
+			buttonElem.attr('tabindex',-1); 
+			 $(window).keyup(function (e) {
+				let ecode = (e.keyCode ? e.keyCode : e.which); 
+				if (ecode == 9) { console.log('focusout elem txt: '+buttonElem.text()); console.log('focusout elem htm: '+buttonElem.html());
+				   let tabbedElemID = buttonElem.closest('.tabs-panel').attr('id');
+				   let linksToTabbedSection = $('a[href="#'+tabbedElemID+'"]');
+				   
+				 
+				   var curLiIndex = $('ul.tabs li.is-active').index(); 
+				   let nextLiIndex = curLiIndex + 1 ;
+				  //  console.log( 'curLiIndex '+curLiIndex );
+				  // console.log( 'tabindex set fro next '+nextLiIndex );
+				   
+				   $('ul.tabs li').eq( nextLiIndex ).find('a').attr('tabindex',nextLiIndex); 
+				   $('ul.tabs li').eq( nextLiIndex ).find('a').focus();
+				   $('ul.tabs li').eq( nextLiIndex ).find('a').attr('tabindex',-1); 
+				
+				   $('ul.tabs li').eq( nextLiIndex ).click();
+				  // console.log( 'curLiIndex clicked = '+nextLiIndex );
+				  $('div.is-active').find('a.button').attr('tabindex',nextLiIndex++); 
+				 //  linksToTabbedSection.closest('li').next().find('a').focus();
+				 //  linksToTabbedSection.closest('li').click();
+				}
+			});
+		});   */
+		/*  $('ul.tabs').on('focusout', function(e){
+			 $(window).keyup(function (e) {
+				let ecode = (e.keyCode ? e.keyCode : e.which); 
+				if (ecode == 9) {
+					liElem.find('a').attr('tabindex','-1'); 
+				}
+			});
+		 });  */
+		/* $('ul.tabs li.is-active').on('focusout', function(e){
+			var liElem =  $(this);
+			var curLiIndex = liElem.index(); // alert(  curLiIndex); 
+			
+			$(window).keyup(function (e) {
+				let ecode = (e.keyCode ? e.keyCode : e.which); 
+				if (ecode == 9) {
+					liElem.find('a').attr('tabindex','-1'); 
+					// alert(  curLiIndex + 1); 
+					 $('ul.tabs li').eq( curLiIndex + 1 ).find('a').attr('tabindex',curLiIndex + 1); 
+				}
+			});
+		}); */
+	});
+	
+</script>
 
 </body>
 </html>
