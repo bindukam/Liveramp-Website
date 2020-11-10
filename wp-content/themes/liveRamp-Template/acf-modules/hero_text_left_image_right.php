@@ -4,7 +4,7 @@
 		<div class="grid-x">
 			<div class="cell large-8 split-text green">
 				
-				<img src="<?php the_sub_field('icon_image') ?>">
+				<div class="icon"><img src="<?php the_sub_field('icon_image') ?>"></div>
 				
 				<h1><?php the_sub_field('title') ?></h1>
 				

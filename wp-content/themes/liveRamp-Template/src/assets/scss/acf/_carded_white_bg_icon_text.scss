@@ -68,20 +68,18 @@
                     
                     .card_icon--large {
                         width: 50px;
-                        border: 0;
-                        max-width: 100%;
-                        vertical-align: middle;
-                        display: inline-block;
-                        height: auto;
                     }
                 } 
                 
                 .card_title-divider-container {
                     
                     .card_title {
-                        font-family: Flexo,sans-serif;
+                        font-family: Flexo, sans-serif;
                         font-weight: 600;
                         font-size: 1.5rem;
+                        letter-spacing: -.03em;
+                        line-height: 31.2px;
+                        margin-bottom: 16px;
                     }
                     
                     .card_title-divider {
@@ -96,13 +94,15 @@
                 }
 
                 .card_text {
-                    margin-bottom: 2rem;
+                    margin-bottom: 32px;
                     font-size: 1rem;
                     margin-top: 0;
                     margin-bottom: 1rem;
                     line-height: 1.6;
                     text-rendering: optimizeLegibility;
                     color: #7a97ab;
+                    font-weight: 500;
+                    font-family: Flexo, sans-serif;
                 }
             }
         }
