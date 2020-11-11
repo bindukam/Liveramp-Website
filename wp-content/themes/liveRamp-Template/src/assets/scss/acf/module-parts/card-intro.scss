@@ -1,8 +1,5 @@
 .card-intro {
 
-    padding-bottom:60px; 
-    padding-top:39px;
-
     max-width:700px; 
     margin:auto;
 
@@ -19,6 +16,8 @@
         border-width: 3px;
         border-color: #00a8e1;
         border-radius: 50%;
+        font-weight: 500;
+        text-align: center;
         
         @include respond-to(sm) {
             padding:0;
@@ -57,6 +56,8 @@
         .icon-divider-item {
             width: 50%;
             padding-bottom: 0;
+            font-weight: 500;
+            text-align: center;
 
             &.divider-orange {
                 background-color: #fa8d28;
@@ -78,19 +79,25 @@
 
         h2 {
             font-size: 2.5rem;
-            line-height: 1.25em;
+            line-height: 44px;
+            font-weight: 700;
+            letter-spacing: -.04em;
+            margin-bottom:16px;
         }
     }
 
     .intro_text {
         
         text-align: center;
+        font-family: Flexo, "Flexo Medium", -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        font-size: 1.125rem;
+        line-height: 28.8px;
 
         @include respond-to(sm) {
             text-align: left;
         }
 
-        font-size: 1.125rem;
     }
 
 

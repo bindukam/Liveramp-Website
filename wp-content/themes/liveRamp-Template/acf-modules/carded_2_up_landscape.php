@@ -10,24 +10,30 @@
 			    <?php while(have_rows('cards')) : the_row(); ?>
 			    		<div class="carded_2_up_card green-bkg">
 		    				
-		    				<div class="title white">
-		    					<h3><?php the_sub_field('title') ?></h3>
+		    				<div class="upper-content">
+			    				<div class="title white">
+			    					<h3><?php the_sub_field('title') ?></h3>
+			    				</div>
+
+		    					<div class="card_title-divider divider--orange"></div>
+
+			    				<div class="text white">
+			    					<?php the_sub_field('text') ?>
+			    				</div>
+		    				</div>
+		    				
+		    				<div class="lower-content">
+		    					<?php
+		    						$url = get_sub_field('cta')['url'];
+		    						$title = get_sub_field('cta')['title'];
+		    						$target = get_sub_field('cta')['target'];
+		    					 ?>
+			    				<div class="cta">
+			    					 <a href="<?php echo $url ?>" class="button button-white" target="<?php echo $target ?>"><?php echo $title ?></a>
+			    				</div>
 		    				</div>
 
-	    					<div class="card_title-divider divider--orange"></div>
 
-		    				<div class="text white">
-		    					<?php the_sub_field('text') ?>
-		    				</div>
-
-	    					<?php
-	    						$url = get_sub_field('cta')['url'];
-	    						$title = get_sub_field('cta')['title'];
-	    						$target = get_sub_field('cta')['target'];
-	    					 ?>
-		    				<div class="cta">
-		    					 <a href="<?php echo $url ?>" class="button button-white" target="<?php echo $target ?>"><?php echo $title ?></a>
-		    				</div>
 		    			</div>
 			    <?php endwhile ?>
 			<?php endif ?>

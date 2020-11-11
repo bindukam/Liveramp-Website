@@ -5,7 +5,7 @@
 			
 			<h1 class="written_title green"><?php the_sub_field('title') ?></h1>
 			
-			<div class="written_content">
+			<div class="written_content green">
 				<?php the_sub_field('main_content') ?>
 			</div>
 		</div>

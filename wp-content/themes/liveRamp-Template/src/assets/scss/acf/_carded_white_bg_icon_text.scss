@@ -9,7 +9,7 @@
         margin-bottom: 0;
         margin-left: -1em;
         padding-top: 2em;
-        padding-left: 0;
+        padding-left: 32px;
         list-style-type: none;
         justify-content: flex-start;
         flex-wrap: wrap;
@@ -65,6 +65,7 @@
                     align-items: center;
                     border-radius: 50%;
                     background-color: transparent;
+                    font-weight: 500;
                     
                     .card_icon--large {
                         width: 50px;
@@ -85,8 +86,10 @@
                     .card_title-divider {
                         width: 50px;
                         height: 2px;
-                        margin-bottom: 2em;
+                        margin-bottom: 32px;
                         background-color: #f9e547;
+                        font-weight: 600;
+
                         &.card_title-divider.divider--orange {
                             background-color: #fa8d28;
                         }
@@ -97,7 +100,6 @@
                     margin-bottom: 32px;
                     font-size: 1rem;
                     margin-top: 0;
-                    margin-bottom: 1rem;
                     line-height: 1.6;
                     text-rendering: optimizeLegibility;
                     color: #7a97ab;

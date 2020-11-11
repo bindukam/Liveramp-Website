@@ -10,13 +10,32 @@
         }
 
         //left right alternator
-        &:nth-child(odd) {
+        &.odd {
             .image-container {
                 order: 2
             }
 
             .text-container {
                 order: 1
+            }
+
+            @include respond-to(sm) {
+                .image-container {
+                    order: 1
+                }
+
+                .text-container {
+                    order: 2
+                }
+            }
+        }
+        &.even {
+            .image-container {
+                order: 1
+            }
+
+            .text-container {
+                order: 2
             }
 
             @include respond-to(sm) {
@@ -74,6 +93,7 @@
                         font-size: 2.125em;
                         line-height: 1.2;
                         font-weight: 600;
+                        letter-spacing: -.03em;
                     }
                 }
 

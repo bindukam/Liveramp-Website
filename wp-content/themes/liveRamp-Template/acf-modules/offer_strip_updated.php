@@ -25,3 +25,9 @@
 	</div>
 
 </section>
+
+<?php if (get_sub_field('overlay')): ?>
+	<div class="footer-overlay">
+
+	</div>
+<?php endif ?>

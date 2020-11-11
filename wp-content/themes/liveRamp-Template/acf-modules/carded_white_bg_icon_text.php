@@ -4,7 +4,7 @@
         
         <?php include ('modules-parts/card-intro.php') ?>
 
-        <div class="grid-x cards">
+        <div class="grid-x">
             <ul role="list" class="cards">
                 <?php if (have_rows('cards')): ?>
                     <?php while(have_rows('cards')) : the_row(); ?>

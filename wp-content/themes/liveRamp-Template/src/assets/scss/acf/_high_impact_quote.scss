@@ -1,7 +1,7 @@
 .high_impact_quote {
+    padding-top:64px;
 
     .grid-x {
-        align-items: center;
         min-height: 750px;
         grid-row-gap: 16px;
         display: grid;
@@ -28,7 +28,7 @@
         }
 
         .quote-bg-text {
-            align-self: center;
+            align-items: center;
             grid-column-end: span 1;
             grid-column-start: span 1;
             grid-row-end: span 1;
@@ -40,6 +40,7 @@
             display: flex;
             align-items: center;
             right: 0;
+            height:100%;
 
             .quote-bg-text_inner {
 
@@ -89,19 +90,33 @@
                 margin-top: 1.5rem;
                 margin-bottom: 1rem;
                 color: #00a8e1;
-                line-height: 1.3;                
+                line-height: 26px; 
+                font-size:20px;
+                font-weight: 600;
+                font-family:"Flexo Bold", sans-serif;
+                letter-spacing: -.06px;
+
             }
 
             blockquote.wbf-block-quote {
                 border-left: 0;
-                padding-left: 0;
+                font-weight: 700;
+                line-height: 70.4px;
+                letter-spacing: -3.2px;
+                margin-left: -24px;
+                padding-left:24px;
+                padding-right:0;
+                font-size:64px;
+                font-weight: 700;
+                font-family: "Flexo Bold",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+                
+
                 p {
                     margin-bottom: 1rem;
                     margin-left: -1.5rem;
                     padding: 0 0 0 1.5rem;
                     border-left-style: none;
                     background-image: linear-gradient(45deg, #004ba5, #00a8e1);
-                    font-size: 3.25rem;
                     line-height: 1.1;
                     font-weight: 700;
                     letter-spacing: -.05em;
@@ -109,6 +124,8 @@
                     -webkit-background-clip: text;
                     background-clip: text;
                     -webkit-text-fill-color: transparent;
+                    font-family: "Flexo Bold",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+
                     border-left: 0;
                 }            
                 @media screen and (min-width: 1280px) {
