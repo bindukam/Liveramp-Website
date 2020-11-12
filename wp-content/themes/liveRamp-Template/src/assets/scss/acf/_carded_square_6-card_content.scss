@@ -34,6 +34,9 @@
 		.card {
 			padding: 1.5rem;
 			margin-bottom: 2rem;
+			& > :last-child { 
+				margin-top: auto;
+			}
 			.icon {
 				 height: 55px;
 			    max-width: 55px;

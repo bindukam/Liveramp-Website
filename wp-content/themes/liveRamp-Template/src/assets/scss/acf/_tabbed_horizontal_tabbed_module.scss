@@ -1,7 +1,5 @@
 .tabbed_horizontal_tabbed_module {
 	position: relative;
-
-
 	.tab-wrapper {
 
 		.tabs,
@@ -49,7 +47,10 @@
 
 				
 			}
-
+			a[aria-selected='true'] {	
+				background: var(--theme-primary-color);	
+    				color: var(--theme-contrast-color);	
+			}	
 			border-radius: 12px;
 
 		}
