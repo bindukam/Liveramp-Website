@@ -162,5 +162,18 @@
 // Third Party
 @import "third-party/slick";
 
-// Landing Page ACF Modules
-@import "acf-lp/app";
+// LP Landing Page ACF Modules
+@charset 'utf-8';
+
+@import 'acf-lp/lp-global';
+@import 'acf-lp/lp-color-theme';
+@import 'acf-lp/hero_with_form';
+@import 'acf-lp/footer';
+@import 'acf-lp/image_and_text';
+@import 'acf-lp/talent';
+@import 'acf-lp/three_card_image_and_text';
+@import 'acf-lp/event_details';
+@import 'acf-lp/event_hero';
+@import 'acf-lp/event_form';
+@import 'acf-lp/offer_strip';
+
