@@ -1,7 +1,7 @@
 <!-- new092920 -->
-<section class="written-story-centered">
+<section class="written-story-centered pad-section">
 	<div class="grid-container">
-		<div class="written-story-container green-bkg">
+		<div class="written-story-container green-faded">
 			
 			<h1 class="written_title green"><?php the_sub_field('title') ?></h1>
 			

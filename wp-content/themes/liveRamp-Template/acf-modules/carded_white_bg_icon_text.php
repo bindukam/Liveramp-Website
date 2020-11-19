@@ -1,5 +1,5 @@
 <!-- new092920 -->
-<section class="carded_white_bg_icon_text">
+<section class="carded_white_bg_icon_text pad-section">
     <div class="grid-container">
         
         <?php include ('modules-parts/card-intro.php') ?>

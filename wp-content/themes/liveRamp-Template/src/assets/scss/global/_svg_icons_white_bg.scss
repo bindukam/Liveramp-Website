@@ -1,0 +1,101 @@
+@mixin svg-icons-white-bg ($module) {
+
+    //Core Blue
+    #core-blue-theme .#{$module} #c1 * {
+        fill: transparent;
+        stroke: var(--theme-primary-color);
+        stroke-width: 6;
+        display: block;
+    }
+    #core-blue-theme .#{$module} #c2 * {
+        fill: transparent;
+        stroke: var(--theme-variant-color);
+        stroke-width: 6;
+        display: block;
+    }
+
+    //Dark Blue
+    #dark-blue-theme .#{$module} #c1 * {
+        fill: transparent;
+        stroke: var(--theme-primary-color);
+        stroke-width: 6;
+        display: block;
+    }
+    #dark-blue-theme .#{$module} #c2 * {
+        fill: transparent;
+        stroke: var(--theme-accent-color);
+        stroke-width: 6;
+        display: block;
+    }
+
+    //Dark Gray
+    #dark-gray-theme .#{$module} #c1 * {
+        fill: transparent;
+        stroke: var(--theme-primary-color);
+        stroke-width: 6;
+        display: block;
+    }
+    #dark-gray-theme .#{$module} #c2 * {
+        fill: transparent;
+        stroke: var(--theme-variant-color);
+        stroke-width: 6;
+        display: block;
+    }
+
+    //Green
+    #green-theme .#{$module} #c1 * {
+        fill: transparent;
+        stroke: var(--theme-primary-color);
+        stroke-width: 6;
+        display: block;
+    }
+    #green-theme .#{$module} #c2 * {
+        fill: transparent;
+        stroke: var(--theme-variant-color);
+        stroke-width: 6;
+        display: block;
+    }
+
+    //Medium Blue
+    #medium-blue-theme .#{$module} #c1 * {
+        fill: transparent;
+        stroke: var(--theme-primary-color);
+        stroke-width: 6;
+        display: block;
+    }
+    #medium-blue-theme .#{$module} #c2 * {
+        fill: transparent;
+        stroke: var(--theme-accent-color);
+        stroke-width: 6;
+        display: block;
+    }
+
+    //Teal
+    #teal-theme .#{$module} #c1 * {
+        fill: transparent;
+        stroke: var(--theme-primary-color);
+        stroke-width: 6;
+        display: block;
+    }
+    #teal-theme .#{$module} #c2 * {
+        fill: transparent;
+        stroke: var(--theme-variant-color);
+        stroke-width: 6;
+        display: block;
+    }
+
+    //Yellow
+    #yellow-theme .#{$module} #c1 * {
+        fill: transparent;
+        stroke: var(--theme-primary-color);
+        stroke-width: 6;
+        display: block;
+    }
+    
+    #yellow-theme .#{$module} #c2 * {
+        fill: transparent;
+        stroke: var(--theme-accent-color);
+        stroke-width: 6;
+        display: block;
+    }
+}

@@ -1,10 +1,10 @@
 <!-- new092920 -->
-<section class="high_impact_quote">
+<section class="high_impact_quote pad-section">
     <div class="grid-container full">
         <div class="grid-x">
             <div class="quote-bg-text">
                 <div class="quote-bg-text_inner">
-                    <div class="quote-bg-text_item">
+                    <div class="quote-bg-text_item green-faded-text">
                     	<?php the_sub_field('background_quote') ?>
 					</div>
 				</div>
@@ -13,13 +13,13 @@
             	<?php include ('modules-parts/high-impact-quote-svg.php') ?>
             </div>
             <div class="quote-container">
-                <blockquote class="wbf-block-quote">
-                    <p class="green"><?php the_sub_field('main_quote') ?></p>
+                <blockquote class="wbf-block-quote green">
+                    <?php the_sub_field('main_quote') ?>
                 </blockquote>
                 <div class="txt-with-divider">
                     <div class="txt-with-divider--item divider--light-blue"></div>
                 </div>
-                <h5 class="quote-caption"><?php the_sub_field('credit') ?></h5>
+                <h5 class="quote-caption green-accent-text"><?php the_sub_field('credit') ?></h5>
             </div>
         </div>
     </div>

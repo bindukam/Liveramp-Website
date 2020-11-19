@@ -1,6 +1,5 @@
 .carded_white_bg_icon_text {
 
-    padding: 64px 0;
     overflow: hidden;
 
     .cards {
@@ -110,4 +109,12 @@
         }
     }
 }
+
+@include svg-icons-white-bg (carded_white_bg_icon_text);
+
+
+
+
+
+
 

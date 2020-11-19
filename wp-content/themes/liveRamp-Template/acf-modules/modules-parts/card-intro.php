@@ -2,7 +2,7 @@
 
 	<div class="cell">
 		
-		<div class="intro_icon">
+		<div class="intro_icon green-border">
 			<img src="<?php echo get_sub_field('intro_title_icon') ?>">
 		</div>
 		

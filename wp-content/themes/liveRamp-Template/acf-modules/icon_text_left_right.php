@@ -1,5 +1,5 @@
 <!-- new092920 -->
-<section class="icon_text_left_right">
+<section class="icon_text_left_right pad-section">
 	
 	<div class="grid-container">
 		

@@ -1,5 +1,5 @@
 <!-- new092920 -->
-<section class="carded_2_up_landscape pale-blue-bkg">
+<section class="carded_2_up_landscape pale-blue-bkg pad-section">
 
 	<div class="grid-container">
 
@@ -26,10 +26,11 @@
 		    					<?php
 		    						$url = get_sub_field('cta')['url'];
 		    						$title = get_sub_field('cta')['title'];
+
 		    						$target = get_sub_field('cta')['target'];
 		    					 ?>
 			    				<div class="cta">
-			    					 <a href="<?php echo $url ?>" class="button button-white" target="<?php echo $target ?>"><?php echo $title ?></a>
+			    					 <a href="<?php echo $url ?>" class="button outline whiteoutline" target="<?php echo $target ?>"><?php echo $title ?></a>
 			    				</div>
 		    				</div>
 

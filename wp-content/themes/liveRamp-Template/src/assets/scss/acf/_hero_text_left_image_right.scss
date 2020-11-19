@@ -82,9 +82,15 @@
 
                         img {
                             width: 30px;
+                            height: 30px;
                             margin-right: 10px;
                         }
 
+                        svg {
+                            width: 30px;
+                            height: 30px;
+                            margin-right: 10px;
+                        }
                         p {
                             font-size: 1.125rem;
                             margin: 0;
@@ -125,3 +131,6 @@
         }
     }
 }
+
+//@include svg-icons-white-bg (hero_text_left_image_right, blueback); 
+

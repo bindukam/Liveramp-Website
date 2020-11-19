@@ -1,5 +1,4 @@
 <!-- new092920 -->
-
 <section class="offer_strip_updated green-bkg relative round overlay-me entrance-anim <?php the_sub_field('width_toggle') ?> wave-graphic <?php if (get_sub_field('overlay')): echo 'overlay-me'; endif; ?>">
 
 	<div class="grid-container z-5-r">
@@ -19,7 +18,7 @@
 					$title = get_sub_field('cta')['title'];
 					$target = get_sub_field('cta')['target'];
 				 ?>
-				 <a href="<?php echo $url ?>" target="<?php echo $target ?>" class="button button-white"><?php echo $title ?>Hello again stranger</a>
+				 <a href="<?php echo $url ?>" target="<?php echo $target ?>" class="button outline whiteoutline"><?php echo $title ?></a>
 			</div>
 		</div>
 	</div>

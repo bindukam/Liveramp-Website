@@ -40,6 +40,11 @@
 		stroke-width: 6;
 		display: block;
 	}
+	.green-border {
+		border-color: $primary-color;
+	}
+	
+
 	.green-bkg,
 	.primary-bkg {
 		background-color: $primary-color;
@@ -65,9 +70,17 @@
 
 		}
 	}
+	.green-accent-text {
+		color: $accent-color;
+	}
+	.green-faded-text {
+		color: $faded-color;
+	}
+	
 	.green-bg-box-before::before,
 	.green-bg-box,
-	.green-20-bkg {
+	.green-20-bkg,
+	.green-faded {
 		background-color: $faded-color;
 	}
 	.button-white {
