@@ -2,7 +2,7 @@
     <style type="text/css">
     .st0 {
         fill: none;
-        stroke: #09A8AB;
+        stroke: #66CBEC;
         stroke-width: 3;
         stroke-miterlimit: 10;
     }
@@ -171,7 +171,7 @@
     .st21 {
         opacity: 0.5;
         fill: none;
-        stroke: #09A8AB;
+        stroke: #66CBEC;
         stroke-width: 1.8734;
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -230,7 +230,7 @@
     .st28 {
         opacity: 0.5;
         fill: none;
-        stroke: #09A8AB;
+        stroke: #66CBEC;
         stroke-width: 2.0343;
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -409,7 +409,7 @@
     .st54 {
         opacity: 0.5;
         fill: none;
-        stroke: #09A8AB;
+        stroke: #66CBEC;
         stroke-width: 1.6385;
         stroke-miterlimit: 10;
     }
@@ -443,7 +443,7 @@
 
     .st58 {
         fill: none;
-        stroke: #09A8AB;
+        stroke: #66CBEC;
         stroke-width: 1.6385;
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -2751,7 +2751,7 @@
 
     .st570 {
         fill: none;
-        stroke: #09A8AB;
+        stroke: #0057B8;
         stroke-width: 6;
         stroke-linecap: round;
         stroke-miterlimit: 10;
@@ -2759,8 +2759,8 @@
 
     .st571 {
         fill: none;
-        stroke: #E5F6F7;
-        stroke-width: 8;
+        stroke: #8DC8E8;
+        stroke-width: 6;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-miterlimit: 10;
@@ -2768,7 +2768,7 @@
 
     .st572 {
         fill: none;
-        stroke: #A1A1A3;
+        stroke: #F68D2E;
         stroke-width: 6;
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -2777,7 +2777,7 @@
 
     .st573 {
         fill: none;
-        stroke: #fefefe;
+        stroke: #FAC696;
         stroke-width: 6;
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -2786,7 +2786,7 @@
 
     .st574 {
         fill: none;
-        stroke: #FAE164;
+        stroke: #D1E9F6;
         stroke-width: 6;
         stroke-linecap: round;
         stroke-miterlimit: 10;
@@ -2794,7 +2794,7 @@
 
     .st575 {
         fill: none;
-        stroke: #0F3264;
+        stroke: #D1E9F6;
         stroke-width: 6;
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -2803,7 +2803,7 @@
 
     .st576 {
         fill: none;
-        stroke: #E5F6F7;
+        stroke: #99DDF3;
         stroke-width: 6;
         stroke-linecap: round;
         stroke-linejoin: round;
@@ -2812,7 +2812,7 @@
 
     .st577 {
         fill: none;
-        stroke: #A1A1A3;
+        stroke: #8DC8E8;
         stroke-linecap: round;
         stroke-linejoin: round;
         stroke-miterlimit: 10;

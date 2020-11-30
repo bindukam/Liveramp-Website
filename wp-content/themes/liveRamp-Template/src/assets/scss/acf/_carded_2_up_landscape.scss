@@ -1,43 +1,70 @@
 .carded_2_up_landscape {
-
     overflow: hidden;
-    padding-top:65px;
+    padding-top: 65px;
+    margin-bottom: 290px;
+    overflow: visible;
 
-    .cards {
-        display: grid;
-        grid-template-columns: 1fr 1fr; 
-        grid-gap: 33px;
+    .grid-container {
+        position: relative;
+        z-index: 10000;
+        margin-bottom: -200px;
 
-         @include respond-to(vsm) {
-            grid-template-columns: 1fr; 
+        .swirly-thingy {
+            position: absolute;
+            width: 100%;
+            bottom: -100px;
+            z-index: 1000;
+
+            .box {
+                margin: auto;
+                width: 480px;
+                height: 150px;
+            }
         }
 
-        .carded_2_up_card {
-            border-radius: 16px;
-            box-shadow: 0 0 12px 0 rgba(0, 0, 0, .1);
-            padding: 32px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
 
-            .title {
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
+        .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 33px;
+            position: relative;
+            z-index: 5000;
+
+            @include respond-to(vsm) {
+                grid-template-columns: 1fr;
             }
-            
-            .card_title-divider {
-                width: 50px;
-                height: 2px;
-                margin-bottom: 2em;
 
-                &.divider--orange {
-                    background-color: #fa8d28; 
+            .carded_2_up_card {
+                border-radius: 16px;
+                box-shadow: 0 0 12px 0 rgba(0, 0, 0, .1);
+                padding: 32px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .title {
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
                 }
-            }
 
-            .text {
-                margin-bottom: 1.2rem;   
+                .card_title-divider {
+                    width: 50px;
+                    height: 2px;
+                    margin-bottom: 2em;
+
+                    &.divider--orange {
+                        background-color: #fa8d28;
+                    }
+                }
+
+                .text {
+                    margin-bottom: 1.2rem;
+                }
             }
         }
     }
+}
+
+#teal-theme .carded_2_up_landscape .card-intro #c1 * {
+    stroke-width: 10px;
 }

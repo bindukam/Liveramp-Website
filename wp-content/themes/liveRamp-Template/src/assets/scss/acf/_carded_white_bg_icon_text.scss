@@ -1,6 +1,14 @@
 .carded_white_bg_icon_text {
 
     overflow: hidden;
+    
+    #c1 * {
+        stroke-width: 8 !important;
+    }
+
+    #c2 * {
+        stroke-width: 8 !important;
+    }
 
     .cards {
         display: flex;
@@ -110,7 +118,7 @@
     }
 }
 
-@include svg-icons-white-bg (carded_white_bg_icon_text);
+@include svg-icons-white-bg (carded_white_bg_icon_text, 8);
 
 
 

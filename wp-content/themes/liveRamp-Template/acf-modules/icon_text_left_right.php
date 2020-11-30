@@ -20,7 +20,7 @@
 						</div>
 						
 						<div class="txt-with-divider">
-							<div class="txt-with-divider--item divider--orange"></div>
+							<div class="txt-with-divider--item divider--orange green-lines"></div>
 						</div>
 						
 						<div class="text">

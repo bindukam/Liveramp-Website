@@ -13,13 +13,13 @@
             	<?php include ('modules-parts/high-impact-quote-svg.php') ?>
             </div>
             <div class="quote-container">
-                <blockquote class="wbf-block-quote green">
+                <blockquote class="wbf-block-quote green gradient-text">
                     <?php the_sub_field('main_quote') ?>
                 </blockquote>
                 <div class="txt-with-divider">
                     <div class="txt-with-divider--item divider--light-blue"></div>
                 </div>
-                <h5 class="quote-caption green-accent-text"><?php the_sub_field('credit') ?></h5>
+                <h5 class="quote-caption green-variant-text-2"><?php the_sub_field('credit') ?></h5>
             </div>
         </div>
     </div>

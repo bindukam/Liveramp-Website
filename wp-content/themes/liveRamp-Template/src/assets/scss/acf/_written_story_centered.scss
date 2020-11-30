@@ -11,7 +11,7 @@
         height: 100%;
         margin-top: -70px;
         //margin-bottom: 70px;
-        background-image: url(/temp.svg);
+        background-image: url(/wp-content/themes/liveRamp-Template/dist/assets/images/swirl.svg);
         background-position: 50% 100%;
         background-size: 300px;
         background-repeat: no-repeat;
@@ -26,14 +26,25 @@
         list-style-type: none;
         padding-bottom: 80px;
 
-        .written_title {
-            font-size: 40px;
-            font-weight: 400;
-            padding-bottom:20px;
-        }
+        .text-area {
+            max-width: 880px;
+            margin:auto;
+            // background-image: -webkit-gradient(linear,left top,left bottom,from(#004ba5),to(#00a8e1));
+            // -webkit-text-fill-color: transparent;
+            // -webkit-background-clip: text;
 
-        .written_content {
-        }
+            .written_title {
+                font-size: 40px;
+                font-weight: 400;
+                padding-bottom:20px;
+            }
 
+            .written_content * {
+                font-family: flexo, sans-serif;
+                font-weight: 600;
+                font-size: 1.75rem;
+                letter-spacing: -.05rem;
+            }
+        }
     }
 }

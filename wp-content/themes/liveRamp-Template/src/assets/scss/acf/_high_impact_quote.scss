@@ -1,13 +1,20 @@
 .high_impact_quote {
 
+    @include fluid('padding-top', 40, 100);
+    @include fluid('padding-bottom', 40, 100);
+   
+
     .grid-x {
-        min-height: 750px;
         grid-row-gap: 16px;
         display: grid;
         grid-template-columns: 1fr minmax(200px, 1000px) 1fr;
         grid-auto-columns: 1fr;
         grid-template-rows: auto;
         grid-column-gap: 1.75em;
+        @include respond-to(sm) {
+            grid-column-gap: 0;
+        }
+
 
         @include respond-to(sm) {
             min-height: 430px;
@@ -33,12 +40,12 @@
             grid-row-end: span 1;
             grid-row-start: span 1;
             position: absolute;
+            right: 0;
             left: 50%;
             top: 0;
             bottom: 0;
             display: flex;
             align-items: center;
-            right: 0;
             height:100%;
 
             .quote-bg-text_inner {
@@ -47,6 +54,8 @@
 
                 .quote-bg-text_item {
                     font-size: 9rem;
+                    @include fluid('font-size', 112, 114);
+
                     line-height: 7.2rem;
                     font-weight: 700;
                     letter-spacing: -.05em;
@@ -63,6 +72,11 @@
             margin-right: 0;
             margin-left: 0;
             padding-left: 1.5rem;
+            
+            @include respond-to(sm) {
+                padding-left: 0;
+            }
+
 
             .txt-with-divider {
                 display: flex;
@@ -104,41 +118,17 @@
                 margin-left: -24px;
                 padding-left:24px;
                 padding-right:0;
-                font-size:64px;
                 font-weight: 700;
                 font-family: "Flexo Bold",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
                 
+                @include fluid('font-size', 40, 64);
+                @include fluid('line-height', 47, 70);
+                @include fluid('margin-left', 0, -24);
+                @include fluid('padding-left', 0, 24);
 
-                p {
-                    margin-bottom: 1rem;
-                    margin-left: -1.5rem;
-                    padding: 0 0 0 1.5rem;
-                    border-left-style: none;
-                    background-image: linear-gradient(45deg, #004ba5, #00a8e1);
-                    line-height: 1.1;
-                    font-weight: 700;
-                    letter-spacing: -.05em;
-                    text-indent: 0;
-                    -webkit-background-clip: text;
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    font-family: "Flexo Bold",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 
-                    border-left: 0;
-                }            
-                @media screen and (min-width: 1280px) {
-                    p {
-                        margin-bottom: 1rem;
-                        font-size: 3.5rem;
-                    }
-                }
-
-                @media screen and (min-width: 1440px) {
-                    p {
-                        font-size: 4rem;
-                    }
-                }
             }
         }
     }
 }
+@include svg-icons-white-bg (high_impact_quote, 6);

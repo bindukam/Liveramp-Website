@@ -1,119 +1,172 @@
-@mixin color-theme($primary-color, $faded-color, $variant-color, $contrast-color, $accent-color, $mixin-color, $mixin2-color ) {
+@mixin color-theme($primary-color, $faded-color, $variant-color, $contrast-color, $accent-color, $mixin-color, $mixin2-color, $variant-color2:$variant-color) {
 
-	.primary,
-	.green,
-	h1,
-	h2,
-	h3 {
-		color: $primary-color;
-	}
-	&.color-theme {
-		overflow: hidden;
-		.white {
-			color: $contrast-color;
-		}
-		.yellow,
-		.accent {
-			color: var(--theme-accent-color);
-		}
-	}
-	#title-underline,
-	#title-underline2
-	 {
-		.cls-1,
-		.cls-2 {
-			stroke: $accent-color;
-		}
-		.cls-1 {
-			opacity: .5;
-		}
-	}
-	#c1 * {
-		stroke: $accent-color;
-		display: block;
-		fill: transparent;
-		stroke-width: 6;
-	}
-	#c2 * {
-		fill: transparent;
-		stroke: $contrast-color;
-		stroke-width: 6;
-		display: block;
-	}
-	.green-border {
-		border-color: $primary-color;
-	}
-	
+    .primary,
+    .green,
+    h1,
+    h2,
+    h3 {
+        color: $primary-color;
+    }
 
-	.green-bkg,
-	.primary-bkg {
-		background-color: $primary-color;
-	}
-	.green-bkg,
-	.primary-bkg,
-	.white {
-		.primary,
-		.green,
-		h1,
-		h2,
-		h3,
-		a:not(.button) {
-			 color: $contrast-color;
-		}
-		a {
-			text-decoration: underline;
-		}
-		a.breadcrumb,
-		a.bold,
-		a.button {
-			text-decoration: none;
+    &.color-theme {
+        overflow: hidden;
 
-		}
-	}
-	.green-accent-text {
-		color: $accent-color;
-	}
-	.green-faded-text {
-		color: $faded-color;
-	}
-	
-	.green-bg-box-before::before,
-	.green-bg-box,
-	.green-20-bkg,
-	.green-faded {
-		background-color: $faded-color;
-	}
-	.button-white {
-		background-color: $primary-color;
-	}
-	.core-blue {
-		color: $core-blue;
-	}
-	.tabbed_expanded_left_justified_vertical_tab_module {
-		.tabs-panel,
-		.accordion-item {
-			#c1 *,
-			#c2 * {
-				stroke: var(--theme-primary-color);
-			}
-		}
-		.alternate-layout .tabs-title,
-		.alternate-layout .accordion-title {
-			#c1 *,
-			#c2 * {
-				stroke: #90C9E5;
-			}
-		}
-		.tabs-title,
-		.alternate-layout .tabs-title.is-active {
-			#c1 *,
-			#c2 * {
-				stroke: var(--theme-contrast-color)
-			}
-		}
-	}
+        .white {
+            color: $contrast-color;
+        }
+
+        .yellow,
+        .accent {
+            color: var(--theme-accent-color);
+        }
+    }
+
+    #title-underline,
+    #title-underline2 {
+
+        .cls-1,
+        .cls-2 {
+            stroke: $accent-color;
+        }
+
+        .cls-1 {
+            opacity: .5;
+        }
+    }
+
+    #c1 * {
+        stroke: $accent-color;
+        display: block;
+        fill: transparent;
+    }
+
+    #c2 * {
+        fill: transparent;
+        stroke: $contrast-color;
+        display: block;
+    }
+
+    #cls-1 * {
+        stroke: $accent-color;
+        display: block;
+        fill: transparent;
+        stroke-width: 6;
+    }
+
+    #cls-2 * {
+        fill: transparent;
+        stroke: $contrast-color;
+        stroke-width: 6;
+        display: block;
+    }
+
+    .green-border {
+        border-color: $primary-color;
+    }
+
+    .green-bkg,
+    .primary-bkg {
+        background-color: $primary-color;
+    }
+
+    .green-bkg,
+    .primary-bkg,
+    .white {
+
+        .primary,
+        .green,
+        h1,
+        h2,
+        h3,
+        a:not(.button) {
+            color: $contrast-color;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+
+        a.breadcrumb,
+        a.bold,
+        a.button {
+            text-decoration: none;
+
+        }
+    }
+
+    .green-accent-text {
+        color: $accent-color;
+    }
+
+    .green-variant-text-2 {
+        color: $variant-color2;
+    }
+
+    .green-faded-text {
+        color: $faded-color;
+    }
+
+    .green-bg-box-before::before,
+    .green-bg-box,
+    .green-20-bkg,
+    .green-faded {
+        background-color: $faded-color;
+    }
+
+    .button-white {
+        background-color: $primary-color;
+    }
+
+    .green-lines {
+        background-color: $accent-color;
+    }
+    .green-lines-alt {
+        background-color: $primary-color;
+    }
+    .core-blue {
+        color: $core-blue;
+    }
+
+    .gradient-text {
+        background-image: -webkit-gradient(linear,left top,left bottom,from($variant-color),to($primary-color));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+
+
+    .tabbed_expanded_left_justified_vertical_tab_module {
+
+        .tabs-panel,
+        .accordion-item {
+
+            #c1 *,
+            #c2 * {
+                stroke: var(--theme-primary-color);
+            }
+        }
+
+        .alternate-layout .tabs-title,
+        .alternate-layout .accordion-title {
+
+            #c1 *,
+            #c2 * {
+                stroke: #90C9E5;
+            }
+        }
+
+        .tabs-title,
+        .alternate-layout .tabs-title.is-active {
+
+            #c1 *,
+            #c2 * {
+                stroke: var(--theme-contrast-color)
+            }
+        }
+    }
 
 }
+
 @import "global/yellow_theme";
 @import "global/dark_blue_theme";
 @import "global/medium_blue_theme";

@@ -1,91 +1,109 @@
-
 @mixin teal-mix {
-	@include color-theme($teal, #E5F6F7, #1D3564, $white, $yellow, $gray, $core-orange);
+    @include color-theme($teal, #E5F6F7, #1D3564, $white, $yellow, $gray, $core-orange, #0F3264);
 }
+
 #teal-theme {
-	@include teal-mix;
-	--theme-primary-color: #09A8AB;
-	--theme-faded-color: #E5F6F7;
-	--theme-variant-color: #A1A1A3;
-	--theme-contrast-color: #fefefe;
-	--theme-accent-color: #FAE164;
+    @include teal-mix;
+    --theme-primary-color: #09A8AB;
+    --theme-faded-color: #E5F6F7;
+    --theme-faded2-color: #fbf0ba;
+    --theme-variant-color: #A1A1A3;
+    --theme-contrast-color: #fefefe;
+    --theme-accent-color: #FAE164;
+    --theme-variant2-color: #0F3264;
 
-	.split-lines {
-		background-image: url(../../assets/images/svg/spilt-teal.svg);
-	}
-	.waves-bkg,
-	.bottom-wave {
-		background-image: url(../../assets/images/svg/wave-teal.svg);
-	}
-	.waves {
-		background-image: url('../../assets/images/svg/wavelines-ctastrip-oncolor-teal.svg');
-	}
-	.wave {
-		background-image: url(../../assets/images/svg/leadership-wave-teal.svg);
-	}
-	.wysiwyg-hero,
-	.bottomwave {
-	   background-image: url(../../assets/images/svg/wavelines-teal.svg);
-	}
- 	.carousel-quote-impact-stmt {
-	   .circle-wrapper {
-	 		background-image: url('../../assets/images/svg/circle-lines-teal.svg');
-		}
-	}
-	.team-modal {
-		.photo-wrapper {
-	 		background-image: url('../../assets/images/svg/circle-lines-teal.svg');
-		}
-	}
-	.diagonal-lines {
-		background-image: url('../../assets/images/svg/diagonal-lines-core-teal.svg');
-	}
-	.wave-graphic {
-		background-image: url('../../assets/images/svg/wavelines-ctastrip-oncolor-teal.svg');
-	}
-	.content_standard_image_and_text_module {
-		 .image-area:after {
-		background-image: url('../../assets/images/svg/wavelines-teal.svg');
-		}
-	}
-	.tabbed_expanded_left_justified_vertical_tab_module {
-	  .icon-wrapper {
-		    background-image: url(../../assets/images/svg/corner-circle-lines-teal.svg);
-		 }
-	 }
- 	.resource_3_card_image_and_text {
+    .intro_divider .green-faded2 {
+        background-color: var(--theme-faded2-color);
+    }
 
-		@include breakpoint(medium) {
-			.resource-card.weighted:first-child {
- 			background-image: url(../../assets/images/svg/leadership-wave-teal.svg);
-			}
-		}
- 	}
+    .split-lines {
+        background-image: url(../../assets/images/svg/spilt-teal.svg);
+    }
 
- 	.tabbed_detailed_use_case {
-		.bg-art {
-		   &:before{
-			   background-image: url('../../assets/images/svg/teal-rect.svg');
+    .waves-bkg,
+    .bottom-wave {
+        background-image: url(../../assets/images/svg/wave-teal.svg);
+    }
 
-		   }
-		   &:after{
-			   background-image: url('../../assets/images/svg/wavelines-teal.svg');
+    .waves {
+        background-image: url('../../assets/images/svg/wavelines-ctastrip-oncolor-teal.svg');
+    }
 
-		   }
-		}
-	 }
-	 
-	.hero_simple_text::before {
-		background-image: url(../../assets/images/svg/wavelines-teal.svg);
-	
-}
+    .wave {
+        background-image: url(../../assets/images/svg/leadership-wave-teal.svg);
+    }
 
- 	.carded_square_6-card_content {
- 		&.side-curls {
- 			@include breakpoint(large) {
- 				background-image: url(../../assets/images/svg/swirl-left-teal.svg), url(../../assets/images/svg/swirl-right-teal.svg); // replace me
- 				
- 			}
- 		}
- 	}
+    .wysiwyg-hero,
+    .bottomwave {
+        background-image: url(../../assets/images/svg/wavelines-teal.svg);
+    }
+
+    .carousel-quote-impact-stmt {
+        .circle-wrapper {
+            background-image: url('../../assets/images/svg/circle-lines-teal.svg');
+        }
+    }
+
+    .team-modal {
+        .photo-wrapper {
+            background-image: url('../../assets/images/svg/circle-lines-teal.svg');
+        }
+    }
+
+    .diagonal-lines {
+        background-image: url('../../assets/images/svg/diagonal-lines-core-teal.svg');
+    }
+
+    .wave-graphic {
+        background-image: url('../../assets/images/svg/wavelines-ctastrip-oncolor-teal.svg');
+    }
+
+    .content_standard_image_and_text_module {
+        .image-area:after {
+            background-image: url('../../assets/images/svg/wavelines-teal.svg');
+        }
+    }
+
+    .tabbed_expanded_left_justified_vertical_tab_module {
+        .icon-wrapper {
+            background-image: url(../../assets/images/svg/corner-circle-lines-teal.svg);
+        }
+    }
+
+    .resource_3_card_image_and_text {
+
+        @include breakpoint(medium) {
+            .resource-card.weighted:first-child {
+                background-image: url(../../assets/images/svg/leadership-wave-teal.svg);
+            }
+        }
+    }
+
+    .tabbed_detailed_use_case {
+        .bg-art {
+            &:before {
+                background-image: url('../../assets/images/svg/teal-rect.svg');
+
+            }
+
+            &:after {
+                background-image: url('../../assets/images/svg/wavelines-teal.svg');
+
+            }
+        }
+    }
+
+    .hero_simple_text::before {
+        background-image: url(../../assets/images/svg/wavelines-teal.svg);
+
+    }
+
+    .carded_square_6-card_content {
+        &.side-curls {
+            @include breakpoint(large) {
+                background-image: url(../../assets/images/svg/swirl-left-teal.svg), url(../../assets/images/svg/swirl-right-teal.svg); // replace me
+
+            }
+        }
+    }
 }

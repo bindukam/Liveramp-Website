@@ -17,6 +17,11 @@
           include ('acf-modules/multi_colored_content_cards.php');
         }
 
+        // Carded: Multi-Colored Content Cards
+        if(get_row_layout()=='multi_colored_content_cards_plus_title'){
+          include ('acf-modules/multi_colored_content_cards_plus_title.php');
+        }
+
         // Carded: 4-Card Grid
         if(get_row_layout()=='carded_4_card_grid'){
           include ('acf-modules/carded_4_card_grid.php');

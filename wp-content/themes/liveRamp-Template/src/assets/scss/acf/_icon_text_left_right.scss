@@ -6,7 +6,7 @@
         align-items: center;
         padding-top:25px;
 
-        @include respond-to(sm) {
+        @include respond-to(csm_768) {
             display: block;
         }
 
@@ -20,7 +20,7 @@
                 order: 1
             }
 
-            @include respond-to(sm) {
+            @include respond-to(csm_768) {
                 .image-container {
                     order: 1
                 }
@@ -39,7 +39,7 @@
                 order: 2
             }
 
-            @include respond-to(sm) {
+            @include respond-to(csm_768) {
                 .image-container {
                     order: 1
                 }
@@ -58,14 +58,14 @@
                 display: block;
                 width: 50%;
 
-                @include respond-to(sm) {
+                @include respond-to(csm_768) {
                     width: 100%;
                 }
 
                 img {
                     max-width: 100%;
                     
-                    @include respond-to(sm) {
+                    @include respond-to(csm_768) {
                         max-width: 64%;
                         margin: auto;
                         display: block;
@@ -82,7 +82,7 @@
             &.text-container {
                 width: 50%;
 
-                @include respond-to(sm) {
+                @include respond-to(csm_768) {
                     width: 100%;
                     padding-top:30px;
                 }

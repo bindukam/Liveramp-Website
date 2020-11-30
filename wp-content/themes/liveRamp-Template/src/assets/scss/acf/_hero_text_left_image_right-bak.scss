@@ -3,7 +3,7 @@
     .grid-x {
         min-height:650px;
 
-        @include respond-to(csm_992) {
+        @include respond-to(sm) {
             flex-direction: column-reverse;
             height:auto;
         }
@@ -14,23 +14,15 @@
 
             &.split-text { 
                 padding-top:55px;
-                width:66.667%;
-                flex: 0 0 auto;
                 
-                @include respond-to(csm_992) {
+                @include respond-to(sm) {
                     align-items: center;
                     display: flex;
                     flex-direction: column;
                     text-align: center;
                     padding-bottom:40px;
-                    width:100%;
-                    padding-top:0;
                 }
 
-                @include respond-to(vsm) {
-                    padding-top:55px;
-                }
-                
                 .iconn {
                     margin-bottom: 30px;
                     width: 80px;
@@ -75,7 +67,7 @@
                     &.Columns {grid-template-columns:1fr 1fr;}
                     &.List {grid-template-columns:1fr;}
 
-                    @include respond-to(csm_992) {
+                    @include respond-to(sm) {
                         margin-left:0;
                         width:auto;
                         grid-template-columns:1fr;
@@ -88,7 +80,7 @@
                         align-items: center;
                         order: 0;
 
-                        @include respond-to(csm_992) {
+                        @include respond-to(sm) {
                             margin-left:0;
                             padding-right: .5rem;
                             padding-left: .5rem;
@@ -106,7 +98,7 @@
                             margin: 0;
                             padding-left: 10px;
                             flex-grow: 1;
-                            @include respond-to(csm_992) {
+                            @include respond-to(sm) {
                                 padding-top:5px;
                             }
                         }
@@ -115,20 +107,13 @@
             }
 
             &.split-image {
-                width: 33.33333%;
-                flex: 0 0 auto;
-
-                @include respond-to(csm_992) {
-                    width: 100%;
-                }
-
                 .img-area {
                     position: absolute;
                     left: 59%;
                     padding-left: 16px;
                     height: 100%;
 
-                    @include respond-to(csm_992) {
+                    @include respond-to(sm) {
                         position: static;
                         left: 0;
                         padding-left: 0;
@@ -137,7 +122,7 @@
                     img {
                         height: 100%;
                         object-fit: cover;
-                        @include respond-to(csm_992) {
+                        @include respond-to(sm) {
                             position: static;
                             width:100%;
                         }

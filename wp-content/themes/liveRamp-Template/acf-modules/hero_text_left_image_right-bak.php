@@ -2,7 +2,7 @@
 <section class="hero_text_left_image_right green-bkg">
 	<div class="grid-container">
 		<div class="grid-x">
-			<div class="cell split-text green">
+			<div class="cell large-8 split-text green">
 				
 				<div class="iconn"><img src="<?php the_sub_field('icon_image') ?>"></div>
 				
@@ -35,7 +35,7 @@
 
 			</div>
 			
-			<div class="cell split-image">
+			<div class="cell large-4 split-image">
 				<div class="img-area">
 					<img src="<?php the_sub_field('hero_image') ?>">
 				</div>

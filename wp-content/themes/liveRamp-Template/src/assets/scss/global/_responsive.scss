@@ -16,7 +16,19 @@
             @content;
         }
     }
+    
+    @else if $media==csm_992 {
+        @media only screen and (max-width: 992px) { 
+            @content;
+        }
+    }
 
+    @else if $media==csm_768 {
+        @media only screen and (max-width: 768px) { 
+            @content;
+        }
+    }
+    
     @else if $media==vsm {
         @media only screen and (max-width: 640px) { 
             @content;

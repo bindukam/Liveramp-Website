@@ -7,8 +7,8 @@
 		</div>
 		
 		<div class="intro_divider">
-			<div class="icon-divider-item divider-orange"></div>
-			<div class="icon-divider-item divider-orange-tint"></div>
+			<div class="icon-divider-item divider-orange-tint green-lines"></div>
+			<div class="icon-divider-item divider-orange green-faded2"></div>
 		</div>
 		
 		<div class="intro_title green">

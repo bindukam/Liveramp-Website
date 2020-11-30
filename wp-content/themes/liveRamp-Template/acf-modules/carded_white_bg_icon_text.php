@@ -13,7 +13,7 @@
                                 <div class="card_icon-container"><img loading="lazy" src=" <?php the_sub_field('icon') ?>" class="card_icon--large"></div>
                                 <div class="card_title-divider-container">
                                     <h4 class="card_title lsh-card_title green"><?php the_sub_field('title') ?></h4>
-                                    <div class="card_title-divider divider--orange"></div>
+                                    <div class="card_title-divider divider--orange green-lines"></div>
                                 </div>
                                 <p class="card_text">
                                     <?php the_sub_field('text') ?>
