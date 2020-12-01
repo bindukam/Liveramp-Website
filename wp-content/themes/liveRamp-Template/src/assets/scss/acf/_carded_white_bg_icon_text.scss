@@ -1,5 +1,5 @@
 .carded_white_bg_icon_text {
-
+    
     overflow: hidden;
     
     #c1 * {
@@ -21,20 +21,17 @@
         justify-content: flex-start;
         flex-wrap: wrap;
         
-        @include respond-to(md) {
-            padding:0 30px;
+        @include respond-to(csm_992) {
+            padding:0;
             margin-right: 0;
             margin-left: 0;
 
         }
         
-        @include respond-to(sm) {
+        @include respond-to(csm_480) {
             padding:0;
         }
-        @include respond-to(vsm) {
-            background-color: red;
-        }
-      
+       
         .cards_item {
             margin-bottom: 1em;
             flex-direction: column;
@@ -44,11 +41,17 @@
             margin-bottom: 3em;
             flex: 0 33.333%;
 
-            @include respond-to(md) {
+            @include respond-to(csm_992) {
                 flex: 0 50%;
+                &:nth-child(odd) {
+                    padding-right: 15px;
+                }
+                &:nth-child(even) {
+                    padding-left: 15px;
+                }
             }
             
-            @include respond-to(sm) {
+            @include respond-to(csm_480) {
                 flex: 0 100%;
                 margin-bottom: .5em;
             }
@@ -61,7 +64,7 @@
                 flex-direction: column;
                 justify-content: flex-start;
             
-                @include respond-to(sm) {
+                @include respond-to(csm_992) {
                     margin-right: 0;
                     margin-left: 0;
                 }

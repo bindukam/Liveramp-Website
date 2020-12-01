@@ -15,10 +15,18 @@
             color: $contrast-color;
         }
 
-        .yellow,
-        .accent {
+        .yellow, .accent {
             color: var(--theme-accent-color);
         }
+    }
+
+    #swirl_kd {
+        .kd44{stroke:$primary-color;}
+        .kd45{stroke:$faded-color;}
+        .kd46{stroke:$variant-color;}
+        .kd47{stroke:$mixin-color;}
+        .kd48{stroke:$accent-color;}
+        .kd49{stroke:$variant-color2;}
     }
 
     #title-underline,
