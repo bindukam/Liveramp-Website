@@ -12,11 +12,22 @@
     --theme-accent-color: #FAE164;
     --theme-variant2-color: #0F3264;
 
+    .gradient-text {
+        background-image: -webkit-gradient(linear,left top,left bottom,from(var(--theme-primary-color)),to(var(--theme-variant-color)));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .intro_divider .green-lines {
+        background-color: var(--theme-accent-color);
+    }
+
     .intro_divider .green-faded2 {
         background-color: var(--theme-faded2-color);
     }
 
-    .split-lines {
+   
+   .split-lines {
         background-image: url(../../assets/images/svg/spilt-teal.svg);
     }
 

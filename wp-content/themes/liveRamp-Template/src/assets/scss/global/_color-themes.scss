@@ -127,12 +127,6 @@
         color: $core-blue;
     }
 
-    .gradient-text {
-        background-image: -webkit-gradient(linear,left top,left bottom,from($variant-color),to($primary-color));
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-    }
-
 
 
     .tabbed_expanded_left_justified_vertical_tab_module {

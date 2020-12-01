@@ -10,13 +10,26 @@
     --theme-contrast-color: #fefefe;
     --theme-accent-color: #FAE164;
 
+    .gradient-text {
+        background-image: -webkit-gradient(linear,left top,left bottom,from(var(--theme-primary-color)),to(var(--theme-variant-color)));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+    .intro_divider .green-lines {
+        background-color: var(--theme-primary-color);
+    }
+
+    .intro_divider .green-faded2 {
+        background-color: var(--theme-variant-color);
+    }
 
     .primary,
     .green,
     h1,
     h2,
     h3 {
-        color: $green;
+        color: var(--theme-primary-color)
     }
 
 

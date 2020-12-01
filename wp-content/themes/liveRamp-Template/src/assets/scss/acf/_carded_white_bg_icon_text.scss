@@ -31,7 +31,10 @@
         @include respond-to(sm) {
             padding:0;
         }
-       
+        @include respond-to(vsm) {
+            background-color: red;
+        }
+      
         .cards_item {
             margin-bottom: 1em;
             flex-direction: column;

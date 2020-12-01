@@ -12,6 +12,16 @@
 	--theme-mixin-color: #9D9DA3;
 	--theme-mixin2-color:  #FEF6D1;
 }
+
+#green-theme .intro_divider .green-lines {
+    background-color: var(--theme-primary-color);
+}
+
+#green-theme .intro_divider .green-faded2 {
+    background-color: var(--theme-variant-color);
+}
+
+   
 #green-theme,
 #-theme {
 	@include green-mix;
@@ -25,3 +35,10 @@
     background-image: url("../../assets/images/svg/wavelines-ctastrip-oncolor-green.svg");
 
 }
+
+#green-theme .gradient-text {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(var(--theme-primary-color)),to(var(--theme-variant-color)));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+

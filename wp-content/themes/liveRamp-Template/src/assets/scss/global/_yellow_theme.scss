@@ -9,6 +9,22 @@
 	--theme-variant-color:  #FCF2C0;
 	--theme-contrast-color: #323232;
 	--theme-accent-color: #00A8E1;
+	
+    .gradient-text {
+        background-image: -webkit-gradient(linear,left top,left bottom,from(var(--theme-contrast-color)),to(var(--theme-variant-color)));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+
+	.intro_divider .green-lines {
+	    background-color: var(--theme-primary-color);
+	}
+
+	.intro_divider .green-faded2 {
+	    background-color: var(--theme-variant-color);
+	}
+
+
 	.hero_customer_quote_carousel {
 		.quote, .name {
 			color: var(--theme-contrast-color);
