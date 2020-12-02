@@ -1,5 +1,6 @@
 <!-- new092920 -->
 <section class="written-story-centered pad-section">
+	<div class="img-svg"><img src="/wp-content/themes/liveRamp-Template/dist/assets/images/swirl.svg"></div>
 	<div class="grid-container">
 		<div class="written-story-container green-faded">
 			

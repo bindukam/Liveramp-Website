@@ -43,6 +43,7 @@
 
             @include respond-to(csm_992) {
                 flex: 0 50%;
+                
                 &:nth-child(odd) {
                     padding-right: 15px;
                 }
@@ -54,6 +55,14 @@
             @include respond-to(csm_480) {
                 flex: 0 100%;
                 margin-bottom: .5em;
+
+                &:nth-child(odd) {
+                    padding-right: 0;
+                }
+                
+                &:nth-child(even) {
+                    padding-left: 0;
+                }
             }
             
             .cards_item_inner {

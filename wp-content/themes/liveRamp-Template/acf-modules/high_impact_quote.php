@@ -13,7 +13,7 @@
             	<?php include ('modules-parts/high-impact-quote-svg.php') ?>
             </div>
             <div class="quote-container">
-                <blockquote class="wbf-block-quote green gradient-text">
+                <blockquote class="wbf-block-quote green gradient-text left-right">
                     <?php the_sub_field('main_quote') ?>
                 </blockquote>
                 <div class="txt-with-divider">
