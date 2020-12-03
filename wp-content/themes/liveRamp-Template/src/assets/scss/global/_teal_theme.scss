@@ -13,12 +13,12 @@
     --theme-variant2-color: #0F3264;
 
     .gradient-text {
-        background-image: -webkit-gradient(linear,left top,left bottom,from(var(--theme-primary-color)),to(var(--theme-variant-color)));
+        background-image: -webkit-gradient(linear,left top,left bottom,from(#09a8ab),to(#0f3264));
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         &.left-right {
-            background-image: linear-gradient(45deg,var(--theme-primary-color),var(--theme-variant-color));
-        }
+            background-image: linear-gradient(45deg,#09a8ab,#0f3264);
+        } 
     }
 
     .intro_divider .green-lines {
