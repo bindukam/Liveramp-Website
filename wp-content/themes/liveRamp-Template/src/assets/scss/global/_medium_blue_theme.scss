@@ -10,6 +10,91 @@
     --theme-contrast-color: #fefefe;
     --theme-accent-color: #00A8E1;
 
+    #written-story {
+        .line1 {stroke:#004ba5}
+        .line2 {stroke:#f68d2e}
+        .line3 {stroke:#a8dbf0}
+        .line4 {stroke:#daeaf6}
+        .line5 {stroke:#a8dbf0}
+        .line6 {stroke:#0f3264}
+        .line7 {stroke:#f68d2e}
+        .line8 {stroke:#a8dbf0}
+        .line9 {stroke:#daeaf6}
+    }  
+
+    #swirl-kd {
+        .line1 {stroke:#f68d2e}
+        .line2 {stroke:#004ba5}
+        .line3 {stroke:#f4d3b0}
+        .line4 {stroke:#a8dbf0}
+        .line5 {stroke:#d5e8f4}
+        .line6 {stroke:#00a8e1}
+        .line7 {stroke:#a8dbf0}
+        .line8 {stroke:#a8dbf0}
+        .line9 {stroke:#f68d2e}
+        .line10 {stroke:#f4d3b0}
+    }  
+    
+    #high-impact-quote {        
+        .color1 {
+            stroke: #8dc8e8;
+        }
+        
+        .color2 {
+            stroke: #daeaf6;
+        }
+        
+        .color3 {
+            stroke: #f3c89d;
+        }
+        
+        .color4 {
+            stroke: #f68d2e;
+        }
+        
+        .color5 {
+            stroke: #004ba5;
+        }
+
+        .color6 {
+            stroke: #daeaf6;
+        }
+        .color7 {
+            stroke: #8dc8e8;
+        }
+
+    }
+    
+    $grey-wl:#9db6cb;
+    $blue-wl:#00a8e1;
+    $orange-wl:#f68d2e;
+    $white-wl:#ffffff;
+    
+    #wavelines-all-colors {
+        .line1 {stroke:$grey-wl;}
+        .line2 {stroke:$grey-wl;}
+        .line3 {stroke:$blue-wl;}
+        .line4 {stroke:$white-wl;}
+        .line5 {stroke:$white-wl;}
+        .line6 {stroke:$white-wl;}
+        .line7 {stroke:$blue-wl;}
+        .line8 {stroke:$orange-wl;}
+        .line9 {stroke:$white-wl;}
+        .line10 {stroke:$grey-wl;}
+        .line11 {stroke:$grey-wl;}
+        .line12 {stroke:$white-wl;}
+        .line13 {stroke:$grey-wl;}
+        .line14 {stroke:$orange-wl;}
+        .line15 {stroke:$white-wl;}
+        .line16 {stroke:$blue-wl;}
+        .line17 {stroke:$white-wl;}
+        .line18 {stroke:$blue-wl;}
+        .line19 {stroke:$white-wl;}
+    }
+
+    
+
+
     .gradient-text {
         background-image: -webkit-gradient(linear, left top, left bottom, from(#004ba5), to(#00a8e1));
         -webkit-text-fill-color: transparent;

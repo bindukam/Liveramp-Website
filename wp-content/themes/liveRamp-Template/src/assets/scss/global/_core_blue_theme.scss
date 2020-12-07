@@ -10,6 +10,91 @@
 	--theme-contrast-color: #fefefe;
 	--theme-accent-color: #FAE164;
 
+    #written-story {
+        .line1 {stroke:#004ba5}
+        .line2 {stroke:#FAE164}
+        .line3 {stroke:#a8dbf0}
+        .line4 {stroke:#daeaf6}
+        .line5 {stroke:#a8dbf0}
+        .line6 {stroke:#0f3264}
+        .line7 {stroke:#FAE164}
+        .line8 {stroke:#8dc8e8}
+        .line9 {stroke:#daeaf6}
+    }  
+    
+    #swirl-kd {
+        .line1 {stroke:#FAE164}
+        .line2 {stroke:#004ba5}
+        .line3 {stroke:#fcf5bc}
+        .line4 {stroke:#daeaf6}
+        .line5 {stroke:#daeaf6}
+        .line6 {stroke:#004ba5}
+        .line7 {stroke:#8dc8e8}
+        .line8 {stroke:#8dc8e8}
+        .line9 {stroke:#FAE164}
+        .line10 {stroke:#fcf5bc}
+    }  
+    
+    #high-impact-quote {        
+	    .color1 {
+	        stroke: #8dc8e8;
+	    }
+	    
+	    .color2 {
+	        stroke: #daeaf6;
+	    }
+	    
+	    .color3 {
+	        stroke: #fcf5bc;
+	    }
+	    
+	    .color4 {
+	        stroke: #FAE164;
+	    }
+	    
+	    .color5 {
+	        stroke: #004ba5;
+	    }
+
+	    .color6 {
+	        stroke: #daeaf6;
+	    }
+	    .color7 {
+	        stroke: #8dc8e8;
+	    }
+
+    }
+    
+	$lightblue-wl:#8dc8e8;
+	$yellow-wl:#fae164;
+	$blue-wl:#004ba5;
+	$white-wl:#ffffff;
+	$backblue-wl:#00a8e1;
+	
+	#wavelines-all-colors {
+		.line1 {stroke:$lightblue-wl;}
+		.line2 {stroke:$blue-wl;}
+		.line3 {stroke:$backblue-wl;}
+		.line4 {stroke:$white-wl;}
+		.line5 {stroke:$blue-wl;}
+		.line6 {stroke:$lightblue-wl;}
+		.line7 {stroke:$backblue-wl;}
+		.line8 {stroke:$yellow-wl;}
+		.line9 {stroke:$white-wl;}
+		.line10 {stroke:$lightblue-wl;}
+		.line11 {stroke:$blue-wl;}
+		.line12 {stroke:$white-wl;}
+		.line13 {stroke:$lightblue-wl;}
+		.line14 {stroke:$yellow-wl;}
+		.line15 {stroke:$white-wl;}
+		.line16 {stroke:$backblue-wl;}
+		.line17 {stroke:$blue-wl;}
+		.line18 {stroke:$backblue-wl;}
+		.line19 {stroke:$white-wl;}
+	}
+
+
+
     .gradient-text {
         background-image: -webkit-gradient(linear,left top,left bottom,from(#00a8e1),to(#004ba5));
         -webkit-text-fill-color: transparent;

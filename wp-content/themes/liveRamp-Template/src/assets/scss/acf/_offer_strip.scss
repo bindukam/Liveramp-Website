@@ -34,6 +34,9 @@
 		padding: 2rem 0;
 	}
 
+	h2 {
+		color:#fff;
+	}
 
 	@include breakpoint(medium) {
 		// padding: 4rem 0;
@@ -62,7 +65,23 @@
 
 	.bg-art {
 		width: 350px;
-		left: -10em;
+		left: -6em;
+		
+		@include respond-to(lg) {
+		    left: -10em;
+		}
+
+		@include respond-to(md) {
+		    left: -12em;
+		}
+
+		@include respond-to(sm) {
+		    left: -14em;
+		}
+
+		@include respond-to(vsm) {
+		    display:none;
+		}
 	}
 	
 	.text-center {

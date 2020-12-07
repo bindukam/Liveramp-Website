@@ -79,7 +79,15 @@
                         padding-right:20px;
                         margin-left:0;
 
-                        &.Columns {grid-template-columns:1fr 1fr;}
+                        &.Columns {
+                            grid-template-columns:1fr 1fr;
+                            
+                            @include respond-to(csm_480) {
+                                grid-template-columns:1fr;
+                            }
+
+
+                        }
                         &.List {grid-template-columns:1fr;}
 
                         @include respond-to(csm_992) {

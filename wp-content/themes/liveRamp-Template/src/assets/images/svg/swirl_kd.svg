@@ -918,27 +918,33 @@
 	.st894{fill:none;stroke:#CAD6DE;stroke-width:1.1083;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st895{display:none;}
 	
-	.kd44{fill:none;stroke:#09A8AB;stroke-width:7.0895;stroke-linecap:round;stroke-miterlimit:10;}
-	.kd45{fill:none;stroke:#E5F6F7;stroke-width:7.0895;stroke-linecap:round;stroke-miterlimit:10;}
-	.kd46{fill:none;stroke:#fbf0ba;stroke-width:7.0895;stroke-linecap:round;stroke-miterlimit:10;}
-	.kd47{fill:none;stroke:#A1A1A3;stroke-width:7.0895;stroke-linecap:round;stroke-miterlimit:10;}
-	.kd48{fill:none;stroke:#fefefe;stroke-width:7.0895;stroke-linecap:round;stroke-miterlimit:10;}
-	.kd49{fill:none;stroke:#FAE164;stroke-width:7.0895;stroke-linecap:round;stroke-miterlimit:10;}
-	
+	#swirl-kd path {fill:none;stroke-width:7.0895;stroke-linecap:round;stroke-miterlimit:10;}
+
 
 </style>
-<g id="swirl_kd">
+<g id="swirl-kd">
 	<g>
-		<path class="kd44" d="M226.3,20.6c-14.4-3.2-30.7-5.3-49.6-5.8c-24.6-0.6-45,1.6-62.6,5.8"/>
-		<path class="kd45" d="M368.9,98.9C324.6,78.2,298.5,46,250,28"/>
-		<path class="kd46" d="M391.3,106.5c17.9,5.6,38.7,9.3,64.3,10c88.2,2.4,121.9-33.9,169.4-60.4"/>
-		<path class="kd47" d="M15,127c24.4-14.8,46.2-31.4,75.3-42.8"/>
-		<path class="kd48" d="M170.8,70.9c2,0,3.9,0,6,0.1c24.2,0.6,44.2,3.8,61.4,8.8"/>
-		<path class="kd49" d="M114,78.2c10-2.8,20.9-4.8,33-5.9"/>
-		<path class="kd47" d="M508.8,168.7c-15.4,3-32.9,4.5-53.3,4c-104.8-2.8-130.5-55.7-194.9-84.1"/>
-		<path class="kd47" d="M135.2,129.9c-55,7.2-84.8,32.2-120.2,53.2"/>
-		<path class="kd46" d="M357,205.3c-30.6-16.7-53.4-38.3-84.5-54.6"/>
-		<path class="kd44" d="M158.9,127.2c5.7-0.2,11.5-0.2,17.7-0.1c30,0.8,53.6,5.8,73.4,13.2"/>
+		<!-- line 1 -->
+		<path class="line1" d="M226.3,20.6c-14.4-3.2-30.7-5.3-49.6-5.8c-24.6-0.6-45,1.6-62.6,5.8" />
+		<!-- line 2 -->
+		<path class="line2" d="M368.9,98.9C324.6,78.2,298.5,46,250,28" />
+		<path class="line2" d="M368.9,98.9C324.6,78.2,298.5,46,250,28" />
+		<!-- line 3 -->
+		<path class="line3" d="M391.3,106.5c17.9,5.6,38.7,9.3,64.3,10c88.2,2.4,121.9-33.9,169.4-60.4" />
+		<!-- line 4 -->
+		<path class="line4" d="M15,127c24.4-14.8,46.2-31.4,75.3-42.8" />
+		<!-- line 5 -->
+		<path class="line5" d="M114,78.2c10-2.8,20.9-4.8,33-5.9" />
+		<!-- line 6 -->
+		<path class="line6" d="M170.8,70.9c2,0,3.9,0,6,0.1c24.2,0.6,44.2,3.8,61.4,8.8" />
+		<!-- line 7 -->
+		<path class="line7" d="M508.8,168.7c-15.4,3-32.9,4.5-53.3,4c-104.8-2.8-130.5-55.7-194.9-84.1" />
+		<!-- line 8 -->
+		<path class="line8" d="M135.2,129.9c-55,7.2-84.8,32.2-120.2,53.2" />
+		<!-- line 9 -->
+		<path class="line9" d="M158.9,127.2c5.7-0.2,11.5-0.2,17.7-0.1c30,0.8,53.6,5.8,73.4,13.2" />
+		<!-- line 10 -->
+		<path class="line10" d="M357,205.3c-30.6-16.7-53.4-38.3-84.5-54.6" />
 	</g>
 </g>
 <g id="Border">
