@@ -4,7 +4,7 @@
 
 	.ubermenu {
 
-		&.ubermenu-bar-align-right {
+		&.ubermenu-bar-align-right { 
 			float: unset;
 			@include breakpoint(large) {
 				float: right;

@@ -37,6 +37,9 @@
 	h2 {
 		color:#fff;
 	}
+	p {
+		margin-bottom: 0;
+	}
 
 	@include breakpoint(medium) {
 		// padding: 4rem 0;

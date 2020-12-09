@@ -13,6 +13,97 @@
 	--theme-mixin2-color:  #FEF6D1;
 }
 
+#written-story {
+    .line1 {stroke:#0f3264} 
+    .line2 {stroke:#fae164}
+    .line3 {stroke:#aadadc}
+    .line4 {stroke:#d5e8f4}
+    .line5 {stroke:#09a8ab}
+    .line6 {stroke:#0f3264}
+    .line7 {stroke:#fae164}
+    .line8 {stroke:#8dc8e8}
+    .line9 {stroke:#d5e8f4}
+}  
+
+#swirl-kd {
+    .line1 {stroke:#FAE164}
+    .line2 {stroke:#0f3264}
+    .line3 {stroke:#fcf5bc}
+    .line4 {stroke:#aadadc}
+    .line5 {stroke:#d5e8f4}
+    .line6 {stroke:#09a8ab}
+    .line7 {stroke:#aadadc}
+    .line8 {stroke:#8dc8e8}
+    .line9 {stroke:#FAE164}
+    .line10 {stroke:#fcf5bc}
+}  
+
+#high-impact-quote {        
+    .color1 {
+        stroke: #09a8ab;
+    }
+    
+    .color2 {
+        stroke: #aadadc;
+    }
+    
+    .color3 {
+        stroke: #fcf5bc;
+    }
+    
+    .color4 {
+        stroke: #fae164;
+    }
+    
+    .color5 {
+        stroke: #0f3264;
+    }
+
+    .color6 {
+        stroke: #aadadc;
+    }
+    .color7 {
+        stroke: #8dc8e8;
+    }
+
+}
+
+$yellow-wl:#fae164;//yellow
+$blue-wl:#0f3264;//blue
+$white-wl:#ffffff;//white
+
+#wavelines-all-colors {
+    .line1 {stroke:$white-wl;}
+    .line2 {stroke:$white-wl;}
+    .line3 {stroke:$white-wl;}
+    .line4 {stroke:$yellow-wl;}
+    .line5 {stroke:$white-wl;}
+    .line6 {stroke:$blue-wl;}
+    .line7 {stroke:$white-wl;}
+    .line8 {stroke:$white-wl;}
+    .line9 {stroke:$yellow-wl;}
+    .line10 {stroke:$white-wl;}
+    .line11 {stroke:$white-wl;}
+    .line12 {stroke:$yellow-wl;}
+    .line13 {stroke:$white-wl;}
+    .line14 {stroke:$blue-wl;}
+    .line15 {stroke:$white-wl;}
+    .line16 {stroke:$white-wl;}
+    .line17 {stroke:$blue-wl;}
+    .line18 {stroke:$white-wl;}
+    .line19 {stroke:$yellow-wl;}
+}
+
+.gradient-text {
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#09a8ab),to(#0f3264));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    &.left-right {
+        background-image: linear-gradient(45deg,#09a8ab,#0f3264);
+    } 
+}
+
+
 #green-theme .intro_divider .green-lines {
     background-color: var(--theme-primary-color);
 }
@@ -31,9 +122,7 @@
 	background-image: url('../../assets/images/svg/diagonal-lines-core-green.svg');
 }
 .wave-graphic {
-
     background-image: url("../../assets/images/svg/wavelines-ctastrip-oncolor-green.svg");
-
 }
 
 #green-theme .gradient-text {
@@ -49,4 +138,8 @@
 #green-theme.new-home-page-theme {
 	h1 {color:#003358 !important}
     h2 {color:#003358 !important}
+}
+
+#green-theme.new-home-page-theme .offer_strip {
+    h2 {color:#fff !important}
 }
