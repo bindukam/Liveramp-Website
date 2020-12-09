@@ -141,5 +141,4 @@
    }
    ?>
 
-
-   <div id="<?php echo $thecolortheme; ?>-theme" class="color-theme">
+   <div id="<?php echo $thecolortheme; ?>-theme" class="color-theme <?php if ($post->ID == 1033952){ echo 'new-home-page-theme'; } ?>">

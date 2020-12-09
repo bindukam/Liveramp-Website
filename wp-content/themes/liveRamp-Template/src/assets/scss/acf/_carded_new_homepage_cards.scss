@@ -1,0 +1,100 @@
+.carded_new_homepage_cards {
+    padding-top: 50px;
+
+    .title {
+
+        .title-cell {
+            h2 {
+                font-size: 40px;
+                color: #003358 !important;
+            }
+
+            .description {
+                padding-top: 25px;
+                margin: auto;
+                max-width: 900px;
+                font-size: 20px;
+                font-weight: 300;
+                font-family: flexo
+            }
+        }
+    }
+
+
+    #new-home-cards {
+        justify-content: center;
+        padding-top: 10px;
+
+        .cell {
+            max-width: 322px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+			@include respond-to(csm_768) { 
+            	max-width: 280px;
+			}
+			            
+
+			@include respond-to(vsm) {
+			    max-width: 90%;
+			}
+
+			@include respond-to(csm_480) {
+			    max-width: 100%;
+			}
+
+            .icon {
+                width: 100%;
+                height: 130px;
+                display: flex;
+                justify-content: center;
+                align-items: flex-start;
+
+                svg * {
+                    stroke: #7ECB6F !important;
+                    stroke-width: 5px;
+                }
+
+                img, svg {
+                    max-width: 106px;
+                    max-height: 106px;
+                    width: 100%;
+                }
+            }
+
+            .text {
+                text-align: center;
+                width: 225px;
+                margin: auto;
+
+	            @include respond-to(vsm) {
+				    width:80%;
+				    padding-right:15px;
+				    padding-left:15px;
+				}
+	            
+	            @include respond-to(csm_480) {
+				    width:100%;
+				}
+                
+                h3 {
+                    color: #003358;
+                    font-size: 28px;
+                    line-height: 32px;
+                    font-weight: bold;
+                    padding-bottom: 15px;
+                }
+
+                p {
+                    color: #55555A;
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: 300;
+                    letter-spacing: 0px;
+                    font-family: flexo;
+                    padding-bottom: 15px;
+                }
+            }
+        }
+    }
+}
