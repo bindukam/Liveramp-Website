@@ -7,11 +7,16 @@
             padding-right:0;
         }
 
+        @include respond-to(csm_480) {
+            padding-left:16px;
+            padding-right:16px;
+        }
         .grid-x {
             min-height:650px;
 
             @include respond-to(csm_992) {
                 flex-direction: column-reverse;
+                min-height:0;
                 height:auto;
             }
         
@@ -25,17 +30,21 @@
                     flex: 0 0 auto;
                     
                     @include respond-to(csm_992) {
+                        padding-top:0;
                         align-items: center;
                         display: flex;
                         flex-direction: column;
                         text-align: center;
                         padding-bottom:40px;
                         width:100%;
-                        padding-top:0;
                     }
 
-                    @include respond-to(vsm) {
+                    @include respond-to(csm_768) {
                         padding-top:55px;
+                    }
+                    
+                    @include respond-to(csm_480) {
+                        align-items: flex-start;
                     }
                     
                     .iconn {
@@ -52,7 +61,12 @@
                         letter-spacing: -.05em;
                         max-width: 500px;
                         margin-bottom: 3rem;
-                        @include fluid('font-size', 40, 60);
+                        @include fluid('font-size', 48, 60);
+                        @include respond-to(csm_480) {
+                            align-items: flex-start;
+                            text-align: left;
+                        }
+
                     }
 
                     p.description {
@@ -73,21 +87,29 @@
                         
                         display: grid;
                         margin-bottom: 0;
-                        padding-left: 0;
+                        margin-left:0;
                         list-style-type: none;
                         width:90%;
-                        padding-right:20px;
-                        margin-left:0;
 
                         &.Columns {
                             grid-template-columns:1fr 1fr;
                             
-                            @include respond-to(csm_480) {
-                                grid-template-columns:1fr;
+                            @include respond-to(csm_992) {
+                                grid-template-columns:1fr 1fr 1fr 1fr;
                             }
 
+                            @include respond-to(csm_768) {
+                                grid-template-columns:1fr 1fr;
+                            }
+                            
+                            @include respond-to(csm_480) {
+                                grid-template-columns:1fr;
+                                margin-left: 20px;
+                                width:100%;
+                            }
 
                         }
+                        
                         &.List {grid-template-columns:1fr;}
 
                         @include respond-to(csm_992) {
@@ -104,25 +126,51 @@
                             order: 0;
 
                             @include respond-to(csm_992) {
+                                display: flex;
+                                justify-content:center;
+                                flex-direction: column;
                                 margin-left:0;
                                 padding-right: .5rem;
                                 padding-left: .5rem;
+                            }
+                            
+                            @include respond-to(csm_480) {
+                                display: grid;
+                                grid-template-columns:30px 1fr;
+                                padding-right: 20px;
+                                padding-left: 0;
                             }
 
                             .list-icon {
                                 width: 30px;
                                 margin-right: 10px;
+                                display: flex;
+                                align-items:center;
+                                svg {
+                                    width:30px; 
+                                    height:30px; 
+                                    .cls-1 {stroke-width: 11px !important;}
+                                }
+                                
+                                @include respond-to(csm_992) {
+                                    margin-right:0;
+                                }
+
                             }
 
                             p {
                                 font-size: 1.125rem;
                                 text-align: left;
-
                                 margin: 0;
-                                padding-left: 10px;
+                                padding-left: 5px;
                                 flex-grow: 1;
+                                
                                 @include respond-to(csm_992) {
                                     padding-top:5px;
+                                    text-align: center;
+                                }
+                                @include respond-to(csm_480) {
+                                    text-align: left;
                                 }
                             }
                         }
@@ -137,6 +185,10 @@
                         width: 100%;
                     }
 
+                     @include respond-to(csm_768) {
+                        display:none;
+                    }
+                    
                     .img-area {
                         position: absolute;
                         left: 59%;
@@ -168,8 +220,4 @@
 
 }
 @include svg-icons-white-bg (hero_text_left_image_right, 6, darkback); 
-
-#teal-theme .hero_text_left_image_right li #c1  * {
-    stroke-width: 10px;
-}
 

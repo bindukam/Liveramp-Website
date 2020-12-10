@@ -33,7 +33,8 @@
 						<div class="text">
 							<h3><?php echo get_sub_field ('title') ?></h3>
 							<p><?php echo get_sub_field ('text') ?></p>
-							<a href="https://lrmultidevelop.wpengine.com/our-platform/security-privacy/" class="bm-cta">Read More ></a>
+							<?php $link = get_sub_field ('link') ?>
+							<a href="<?php echo $link['url'] ?>" target="<?php echo $link['target'] ?>" class="bm-cta"><?php echo $link['title'] ?></a>
 						</div>
 					</div>
 					<?php ++$i; ?>

@@ -80,7 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:5px 25px;
+    padding:8px 25px;
 
     h4#news-ticker-text {
         font-family: flexo;
@@ -90,6 +90,11 @@
         margin: 0;
         padding: 0;
         @include fluid('font-size', 14, 16);
+
+        @include respond-to(csm_768) {
+            text-align: center;
+        }
+
 
         a {
             font-weight: bold;
