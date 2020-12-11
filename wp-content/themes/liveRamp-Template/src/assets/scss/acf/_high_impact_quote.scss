@@ -1,8 +1,28 @@
 .high_impact_quote {
 
-    @include fluid('padding-top', 40, 100);
-    @include fluid('padding-bottom', 40, 100);
+    padding-top: 50px;
+    padding-bottom:0;
+    
+    // @include respond-to(lg) {
+    //     padding-top: 50px;
+    //     padding-bottom:50px;
+    // }
+
+    // @include respond-to(md) {
+    //     -background-color: green;
+    // }
+
+    @include respond-to(sm) {
+        padding-top: 100px;
+        padding-bottom:0;
+    }
+
+    @include respond-to(vsm) {
+        -background-color: pink;
+    }
+    
    
+
 
     .grid-x {
         grid-row-gap: 16px;
@@ -31,6 +51,13 @@
             align-self: center;
             flex: 1;
             align-self: stretch;
+
+            svg {
+                @include respond-to(csm_480) {
+                    display: none;
+                } 
+            }
+
         }
 
         .quote-bg-text {
@@ -47,6 +74,11 @@
             display: flex;
             align-items: center;
             height:100%;
+
+            @include respond-to(csm_480) {
+                display: none;
+            } 
+
 
             .quote-bg-text_inner {
 
