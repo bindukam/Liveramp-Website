@@ -19,17 +19,15 @@
 	}	
 	
 	.title-cell {
-		max-width: 700px;
-		margin:auto;
 
 		
 		h2 {
 			font-size: 2.375rem;
-			line-height: 44px;
+			line-height: 2.75rem;
 			font-weight: 700;
 
 			@include breakpoint(small only) {
-				font-size: 2.375rem;
+							    line-height: 2.75rem; 
 			line-height: 44px;
 			}
 			
@@ -41,7 +39,7 @@
 			
 			@include breakpoint(xxlarge) {
 				font-size: 2.25rem;
-				line-height: 44px;
+				line-height: 1.25rem;
 			}	
 
 		}
