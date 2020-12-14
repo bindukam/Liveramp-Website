@@ -22,30 +22,8 @@
 <section class="multi_colored_content_cards pad-section <?php echo 'id-' . $counter;?>" style="padding-bottom:55px">
 
 	<div class="grid-container content">
-		<div class="grid-x grid-margin-x grid-margin-y margin-bottom-1">
-
-			<?php if ((get_sub_field('title')) || (get_sub_field('description'))): ?>
-				
-				<div class="cell small-12 text-center title-cell">
-					
-					<?php if (get_sub_field('title')): ?>
-					    <h2 class="green"><?php the_sub_field('title') ?></h2>
-						<div class="pad-ul no-lineheight">
-							<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="">
-						</div>
-					<?php endif ?>
-					
-					<div class="big-first-p">
-						<?php if (get_sub_field('description')): ?>
-							<?php the_sub_field('description'); ?>
-						<?php endif ?>
-					</div>
-
-				</div>
-			
-			<?php endif ?>
-
-		</div>
+		
+		<?php include ('modules-parts/card-intro.php') ?>
 
 		<div class="grid-x grid-margin-x grid-margin-y small-up-1 medium-up-2 large-up-4 align-center mobile-module-slider relative green-bg-box-before margin-bottom-2" data-equalizer="mc-cards-<?php echo $counter ?>">
 
