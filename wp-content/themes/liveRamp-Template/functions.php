@@ -781,4 +781,11 @@ function custom_woocommerce_breadcrumbs( $output ) {
 	 }
 	 return $output;
 }
+
+function create_unique_id ($str) {
+	$new_str = preg_replace("/[^A-Za-z0-9 ]/", '', $str);
+	$new_str = strtolower($new_str);
+	$new_str = str_replace(' ', '-', $new_str);
+	return $new_str;
+}
 /** Add filter to update breadcrumb link protocol  " code END ***/
