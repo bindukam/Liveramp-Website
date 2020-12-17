@@ -56,6 +56,8 @@
 		<style>	.ubermenu  svg.ubermenu-image {	max-width: 1em; } </style>
 
 		<?php wp_head(); ?>
+
+		<link rel="stylesheet" href="<?php echo $theme_uri; ?>/standalone-css-newhomepage.css">
 		
 	</head>
 <body <?php body_class(); ?>>
