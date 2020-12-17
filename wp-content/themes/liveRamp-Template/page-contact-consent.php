@@ -52,11 +52,11 @@ get_header(); ?>
 
 						<div class="form-wrapper box-shadow-over-white b-radius white-bkg">
 							
-							<h3 class="form-title">Contact Us</h3>
+							<h3 class="form-title"><?php _translate('contact_us') ?></h3>
 							
 							<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/title-underline.svg" alt="" class="pad-ul">
 							
-							<div class="caption dark-slate margin-bottom-1">All fields required * </div>
+							<div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required') ?> *</div>
 							
 							<?php get_template_part( 'template-parts/contact-consent', 'none' ); ?>			
 

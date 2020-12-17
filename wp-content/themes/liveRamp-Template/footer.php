@@ -229,7 +229,7 @@ function hasSomeParentTheClass(element, classname) {
 <script>
 $(document).ready(function(){
 	if (location.hash) {
-		$([document.documentElement, document.body]).animate({scrollTop: $("#liveramp-university-education-hub").offset().top-130}, 2000);
+		$([document.documentElement, document.body]).animate({scrollTop: $("#liveramp-university-education-hub").offset().top-150}, 2000);
 	}
 });
 </script>

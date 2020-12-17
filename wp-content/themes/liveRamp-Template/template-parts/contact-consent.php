@@ -48,7 +48,7 @@
     
     <!-- Button div -->
     <div id="consent_panel" class="consent_panel_css">
-        <p>Contact form not showing? You may need to update your consent preferences. Click “Accept” to give consent and enable the form.</p> 
+        <p><?php _translate('contact_form_not_showing') ?></p> 
         <button id="mkto_btn" class="consent_Btn mktoButton button cta" onclick="accept__mkto();">Accept</button>
     </div>
 
