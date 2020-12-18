@@ -54,7 +54,6 @@
 
 		<!-- iframe resizer  -->
 		<style>	.ubermenu  svg.ubermenu-image {	max-width: 1em; } </style>
-		<link rel="stylesheet" href="<?php echo $theme_uri; ?>/temp_app_current_live.min.css">
 
 		<?php wp_head(); ?>
 		
