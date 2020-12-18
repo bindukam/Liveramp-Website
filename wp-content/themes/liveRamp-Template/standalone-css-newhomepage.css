@@ -2132,9 +2132,6 @@ button,input,optgroup,select,textarea {
     background-image: url(../images/svg/diagonal-lines-core-yellow.svg)
 }
 
-#yellow-theme .wave-graphic {
-    background-image: url(../images/svg/wavelines-ctastrip-yellow.svg)
-}
 
 #yellow-theme .button-white {
     border-color: var(--theme-accent-color);
@@ -2605,9 +2602,6 @@ button,input,optgroup,select,textarea {
     background-image: url(../images/svg/diagonal-lines-core-db.svg)
 }
 
-#dark-blue-theme .wave-graphic {
-    background-image: url(../images/svg/wavelines-ctastrip-db.svg)
-}
 
 #dark-blue-theme .content_standard_image_and_text_module .image-area:after {
     background-image: url(../images/svg/wavelines-db.svg)
@@ -3024,10 +3018,6 @@ button,input,optgroup,select,textarea {
     background-image: url(../images/svg/diagonal-lines-core-mb.svg)
 }
 
-#medium-blue-theme .wave-graphic {
-    background-image: url(../images/svg/wavelines-ctastrip-mb.svg)
-}
-
 #medium-blue-theme .content_standard_image_and_text_module .image-area:after {
     background-image: url(../images/svg/wavelines-mb.svg)
 }
@@ -3438,9 +3428,6 @@ button,input,optgroup,select,textarea {
     background-image: url(../images/svg/diagonal-lines-core-cb.svg)
 }
 
-#core-blue-theme .wave-graphic {
-    background-image: url(../images/svg/wavelines-ctastrip-oncolor-cb.svg)
-}
 
 #core-blue-theme .content_standard_image_and_text_module .image-area:after {
     background-image: url(../images/svg/wavelines-cb.svg)
@@ -3669,9 +3656,6 @@ button,input,optgroup,select,textarea {
     background-image: url(../images/svg/diagonal-lines-core-dg.svg)
 }
 
-#dark-gray-theme .wave-graphic {
-    background-image: url(../images/svg/wavelines-ctastrip-dg.svg)
-}
 
 #dark-gray-theme .content_standard_image_and_text_module .image-area:after {
     background-image: url(../images/svg/wavelines-dg.svg)
@@ -4112,10 +4096,6 @@ button,input,optgroup,select,textarea {
     background-image: url(../images/svg/diagonal-lines-core-teal.svg)
 }
 
-#teal-theme .wave-graphic {
-    background-image: url(../images/svg/wavelines-ctastrip-oncolor-teal.svg)
-}
-
 #teal-theme .content_standard_image_and_text_module .image-area:after {
     background-image: url(../images/svg/wavelines-teal.svg)
 }
@@ -4489,10 +4469,6 @@ button,input,optgroup,select,textarea {
 
 .diagonal-lines {
     background-image: url(../images/svg/diagonal-lines-core-green.svg)
-}
-
-.wave-graphic {
-    background-image: url(../images/svg/wavelines-ctastrip-oncolor-green.svg)
 }
 
 #green-theme .gradient-text {

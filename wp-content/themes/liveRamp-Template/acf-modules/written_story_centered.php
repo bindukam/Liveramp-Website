@@ -1,6 +1,6 @@
 <!-- new092920 -->
 <section class="written-story-centered pad-section">
-	<div class="img-svg"><img src="/wp-content/themes/liveRamp-Template/dist/assets/images/swirl.svg"></div>
+	<div class="img-svg"><img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/swirl-written-story.svg"></div>
 	<div class="grid-container">
 		<div class="written-story-container green-faded">
 			

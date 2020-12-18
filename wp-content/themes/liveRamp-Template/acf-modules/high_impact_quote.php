@@ -10,7 +10,7 @@
 				</div>
             </div>
             <div class="quote-pattern--radial--large">
-            	<img src="/wp-content/themes/liveRamp-Template/dist/assets/images/svg/high-impact-quote.svg"> 
+            	<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/high-impact-quote.svg"> 
             </div>
             <div class="quote-container">
                 <blockquote class="wbf-block-quote green gradient-text left-right">

@@ -24,7 +24,7 @@
 		</div>
 	</div>
 	<div class="bg-art align-middle">
-		<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/wavelines-ctastrip-all-colors.svg" alt="" >
+		<img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/svg/wavelines-offerstrip.svg" alt="">
 	</div>
 
 </section>
