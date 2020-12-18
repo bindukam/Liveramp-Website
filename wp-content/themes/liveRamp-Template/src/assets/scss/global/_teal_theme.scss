@@ -41,7 +41,10 @@
 		background-image: url('../../assets/images/svg/diagonal-lines-core-teal.svg');
 	}
 	.wave-graphic {
-		background-image: url('../../assets/images/svg/wavelines-ctastrip-oncolor-teal.svg');
+		background-image: none;
+		@include breakpoint(medium) {
+			background-image: url('../../assets/images/svg/wavelines-ctastrip-oncolor-teal.svg');
+		}
 	}
 	.content_standard_image_and_text_module {
 		 .image-area:after {

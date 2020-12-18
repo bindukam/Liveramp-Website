@@ -16,7 +16,7 @@
         </div>
         <div class="grid-container">
             <div class="grid-x grid-margin-x align-justify">
-                <div class="cell large-5 form-cell">
+                <div class="cell large-lp-5 form-cell 11">
                     <div class="cell eyebrow">
                         <div class="icon"><img src="<?php echo get_sub_field('eyebrow_icon'); ?>" /></div>
                         <div class="copy green"><?php echo get_sub_field('eyebrow_text'); ?></div>

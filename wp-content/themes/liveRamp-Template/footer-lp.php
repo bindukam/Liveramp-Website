@@ -49,6 +49,17 @@
 <?php wp_footer(); ?>
 
 <?php ?>
-
+<style>
+@media (max-width: 1200px){
+.single-lp .hero-with-form.bg-with-pattern-cls #ebook-bk-image{ 
+	height: 580px !important;
+	width: 530px;	
+}
+.single-lp .hero-with-form.bg-with-pattern-cls::before{
+	background-position: top 0 right 150px!important;
+}
+.single-lp .hero-with-form.waveline::before{background-position: top 0 right 470px!important;}
+}
+</style>
 </body>
 </html>

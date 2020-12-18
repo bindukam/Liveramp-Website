@@ -102,8 +102,7 @@
 
 								}
 
-							}
-							else {
+							} else {
 								// no posts found
 							}
 
@@ -112,7 +111,10 @@
 
 
 						 ?>
-					<?php endif ?>
+					<?php else:
+							
+					endif; 
+					?>
 					
 				</div>
 			</div>

@@ -170,7 +170,31 @@
 						  ?>
 
 							
-					<?php endif ?>
+					<?php else : 
+								$args = array(
+						 			'orderby' => 'date', // we will sort posts by date
+						 			// 'order'	=> $_GET['date'], // ASC or DESC
+						 			'posts_per_page'         => 100,
+						 			'post_type'              => array( 'resources' ),
+
+						 		);
+								$saved_resource_query = new WP_Query( $args );
+
+						 		if( $saved_resource_query->have_posts() ) :
+						 			while( $saved_resource_query->have_posts() ): $saved_resource_query->the_post();
+						 				$new_card = 'new-card'; 
+						 				// var_dump(the_post());
+						 				// get_template_part( 'post_card' );
+						 				include 'post_card.php';
+						 				// the_title( '', '', true );
+						 			endwhile;
+						 			// wp_reset_postdata();
+						 		else :
+						 			echo '<div class="flex-c margin-2 full-width"><h4>No posts found</h4></div>';
+
+						 		endif;
+						 		// wp_reset_postdata();	
+					endif ?>
 
 				</div>
 			</div>

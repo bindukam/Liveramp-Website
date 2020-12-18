@@ -2,7 +2,7 @@
 
     #green-theme {
         .hero-with-form {
-            &:before, &.diagonal::before {
+            &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-green.svg);
             }
 
@@ -59,11 +59,20 @@
                 }
             }
         }
+        #c1 * {
+            stroke: $white;
+        }
+        #c2 * {
+            stroke:  var(--theme-accent-color) !important;
+        }
     }
 
     #dark-blue-theme {
         .hero-with-form {
-            &:before, &.diagonal::before {
+            .lp-talent .quote:before{
+                color: var(--theme-accent-color)
+            }
+            &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-db.svg);
             }
 
@@ -72,7 +81,7 @@
             }
 
             &.swirl::before {
-                background-image: url(../../assets/images/svg/swirl-right-dg.svg);
+                background-image: url(../../assets/images/svg/swirl-right-dg.svg)
             }
 
             &.radial::before {
@@ -86,6 +95,9 @@
             }
 
             .media-wrapper {
+                &:before, &.diagonal::before {
+                    background-image: url(../../assets/images/svg/diagonal-lines-core-db.svg);
+                }
                 &.waveline::before {
                     background-image: url(../../assets/images/svg/wavelines-db.svg);
                 }
@@ -116,11 +128,17 @@
                 }
             }
         }
+        #c1 * {
+            stroke: $white;
+        }
+        #c2 * {
+            stroke:  var(--theme-accent-color) !important;
+        }
     }
 
     #core-blue-theme {
         .hero-with-form {
-            &:before, &.diagonal::before {
+            &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-cb.svg);
             }
 
@@ -143,6 +161,9 @@
             }
 
             .media-wrapper {
+                &:before, &.diagonal::before {
+                    background-image: url(../../assets/images/svg/diagonal-lines-core-cb.svg);
+                }
                 &.waveline::before {
                     background-image: url(../../assets/images/svg/wavelines-cb.svg);
                 }
@@ -171,12 +192,32 @@
                 }
             }
         }
+        #c1 * {
+            stroke: $white;
+        }
+        #c2 * {
+            stroke:  var(--theme-accent-color) !important;
+        }
     }
 
     #dark-gray-theme {
         .hero-with-form {
-            &:before, &.diagonal::before {
+            .lp-talent .quote:before{
+                color: #73c06b;
+            }
+            &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-dg.svg);
+            }
+            &.waveline::before {
+                background-image: url(../../assets/images/svg/wavelines-green.svg);
+            }
+
+            &.swirl::before {
+                background-image: url(../../assets/images/svg/swirl-right-green.svg);
+            }
+
+            &.radial::before {
+                background-image: url(../../assets/images/svg/radial-pattern-green.svg);
             }
         }
 
@@ -186,6 +227,9 @@
             }
 
             .media-wrapper {
+                &:before, &.diagonal::before {
+                    background-image: url(../../assets/images/svg/diagonal-lines-core-dg.svg);
+                }
                 &.waveline::before {
                     background-image: url(../../assets/images/svg/wavelines-dg.svg);
                 }
@@ -214,12 +258,29 @@
                 }
             }
         }
+        #c1 * {
+            stroke: $white;
+        }
+        #c2 * {
+            stroke:  var(--theme-accent-color) !important;
+        }
     }
 
     #medium-blue-theme {
         .hero-with-form {
-            &:before, &.diagonal::before {
+            &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-mb.svg);
+            }
+            &.waveline::before {
+                background-image: url(../../assets/images/svg/wavelines-green.svg);
+            }
+
+            &.swirl::before {
+                background-image: url(../../assets/images/svg/swirl-right-green.svg);
+            }
+
+            &.radial::before {
+                background-image: url(../../assets/images/svg/radial-pattern-green.svg);
             }
         }
 
@@ -229,6 +290,9 @@
             }
 
             .media-wrapper {
+                &:before, &.diagonal::before {
+                    background-image: url(../../assets/images/svg/diagonal-lines-core-mb.svg);
+                }
                 &.waveline::before {
                     background-image: url(../../assets/images/svg/wavelines-mb.svg);
                 }
@@ -257,12 +321,29 @@
                 }
             }
         }
+        #c1 * {
+            stroke: $white;
+        }
+        #c2 * {
+            stroke:  var(--theme-accent-color) !important;
+        }
     }
 
     #teal-theme {
         .hero-with-form {
-            &:before, &.diagonal::before {
+            &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-teal.svg);
+            }
+            &.waveline::before {
+                background-image: url(../../assets/images/svg/wavelines-green.svg);
+            }
+
+            &.swirl::before {
+                background-image: url(../../assets/images/svg/swirl-right-green.svg);
+            }
+
+            &.radial::before {
+                background-image: url(../../assets/images/svg/radial-pattern-green.svg);
             }
         }
 
@@ -272,6 +353,9 @@
             }
 
             .media-wrapper {
+                &:before, &.diagonal::before {
+                    background-image: url(../../assets/images/svg/diagonal-lines-core-teal.svg);
+                }
                 &.waveline::before {
                     background-image: url(../../assets/images/svg/wavelines-teal.svg);
                 }
@@ -300,12 +384,29 @@
                 }
             }
         }
+        #c1 * {
+            stroke: $white;
+        }
+        #c2 * {
+            stroke:  var(--theme-accent-color) !important;
+        }
     }
 
     #yellow-theme {
         .hero-with-form {
-            &:before, &.diagonal::before {
+            &.diagonal::before {
                 background-image: url(../../assets/images/svg/diagonal-lines-core-yellow.svg);
+            }
+            &.waveline::before {
+                background-image: url(../../assets/images/svg/wavelines-yellow.svg);
+            }
+
+            &.swirl::before {
+                background-image: url(../../assets/images/svg/swirl-right-yellow.svg);
+            }
+
+            &.radial::before {
+                background-image: url(../../assets/images/svg/radial-pattern-yellow.svg);
             }
         }
 
@@ -315,6 +416,9 @@
             }
 
             .media-wrapper {
+                &:before, &.diagonal::before {
+                    background-image: url(../../assets/images/svg/diagonal-lines-core-yellow.svg);
+                }
                 &.waveline::before {
                     background-image: url(../../assets/images/svg/wavelines-yellow.svg);
                 }
@@ -343,5 +447,12 @@
                 }
             }
         }
+        #c1 * {
+            stroke: $white;
+        }
+        #c2 * {
+            stroke:  var(--theme-accent-color) !important;
+        }
+        
     }
 }

@@ -1,3 +1,4 @@
+
 <?php
 
 $mkto_id = get_sub_field('marketo_form_id', 'option');
@@ -31,9 +32,14 @@ if($gated_asset) {
     $parent_form_page = get_sub_field('parent_form_page');
 }
 $background_image = get_sub_field('background_image');
+//$bg_with_pattern_cls = 'bg-with-pattern-cls'; 
+//if(get_sub_field('background_pattern') && $background_image){
+if($background_image){
+	$bg_with_pattern_cls = 'bg-with-pattern-cls'; 
+}
 ?>
 
-<section class="hero-with-form primary-bkg ebook-top-section <?php echo get_sub_field('background_pattern'); ?>"">
+<section class="hero-with-form primary-bkg ebook-top-section <?php echo get_sub_field('background_pattern'); ?> <?php echo $bg_with_pattern_cls ? $bg_with_pattern_cls : '';  ?>">
     <div class="grid-container">
         <div class="grid-x grid-margin-x align-justify">
             <div class="cell  large-6 content">
@@ -55,20 +61,24 @@ $background_image = get_sub_field('background_image');
             </div>
         </div>
     </div>
-</section>
-<?php if ($background_image): ?>
+    <?php if ($background_image): ?>
     <div id="ebook-bk-image">
-        <div class="clip-svg" style="background-image:url(<?php echo $background_image; ?>);"></div>
-
-        <svg width="0" height="0">
+		<!-- <img class="rnd-img" src="<?php //echo $background_image; ?>" /> -->
+       <div class="clip-svg" style="background-image:url(<?php echo $background_image; ?>);"></div>
+       <!-- <svg width="0" height="0">
             <defs>
                 <clippath id="myClip">
                     <circle cx="280" cy="120" r="270"></circle>
                 </clippath>
             </defs>
-        </svg>
+        </svg>-->
     </div>
-<?php endif ?>
+	<?php elseif (get_sub_field('svg_illustration_image')): ?>
+	<div id="svg-bk-image">
+		<img class="svg-img" src="<?php echo get_sub_field('svg_illustration_image'); ?>" /> 	
+	</div>
+    <?php endif; ?>
+</section>
 <section class="hero-with-form ebook-bottom-section">
     <div class="hero-with-form primary-bkg ebook-float <?php echo $background_image ? 'right-space' : '';  ?>"></div>
     <div class="grid-container">
@@ -145,15 +155,35 @@ $background_image = get_sub_field('background_image');
                         <?php
                             $gf_id = get_sub_field('gravity_form_id');
                             if($gf_id) {
-                                gravity_form($gf_id, false, false, false, null, false, 12);
+                               // gravity_form($gf_id, false, false, false, null, false, 12);
                             }
                         ?>
-                    </div>
+                        <script src="//lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
+						<form id="mktoForm_4364"></form>
+						<script type="text/javascript">
+                        MktoForms2.loadForm("//lp.liveramp.com", "320-CHP-056", 4364, function(form) {
+							jQuery('form').removeClass().removeAttr('style');
+							jQuery('.mktoForm').css('width', '100%');
+							jQuery('.mktoGutter').remove();
+							jQuery('.mktoClear').remove();
+							jQuery('.mktoOffset').remove();
+							jQuery('.mktoAsterix').remove();
+							jQuery('.mktoLabel').css('width', '');
+							jQuery('input').css('width', '');
+							jQuery('.mktoButtonWrap').css('margin-left', '');
+							jQuery('.mktoButton').addClass('button cta');
+							jQuery('.mktoFieldDescriptor').css('margin-bottom', '');
+							jQuery('.mktoHtmlText.mktoHasWidth').css('width', '');
 
-                    <script src="//app-sj25.marketo.com/js/forms2/js/forms2.min.js"></script>
+							//jQuery('.form-wrapper').fadeIn('400'),
+							form.onSuccess(function(values, followUpUrl) {});
+						});
+						</script>
+					</div>
+                   <!-- <script src="//lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
                     <form id="mktoForm_4316" style="display:none;"></form>
                     <script type="text/javascript">
-                        MktoForms2.loadForm("//app-sj25.marketo.com", "320-CHP-056", 4316);
+                        MktoForms2.loadForm("//lp.liveramp.com", "320-CHP-056", 4316);
 
                         document.getElementsByClassName("liveramp-form")[0].onsubmit = function() {
 
@@ -187,7 +217,7 @@ $background_image = get_sub_field('background_image');
                             }, 1000);
                             return false;
                         }
-                    </script>
+                    </script>-->
                 </div>
                 <div class="lp-talent">
                     <?php if (get_sub_field('talent_headline')): ?>

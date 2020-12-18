@@ -123,11 +123,12 @@
 }
 
 #teal-theme .wave-graphic {
-	
+	background-image: none;
 	@include breakpoint(small) {
 	}
 	
 	@include breakpoint(medium) {
+		background-image: url('../../assets/images/svg/wavelines-ctastrip-oncolor-teal.svg');
 	}	
 	
 	@include breakpoint(large) {

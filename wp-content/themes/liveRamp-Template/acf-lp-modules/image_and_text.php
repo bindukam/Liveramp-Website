@@ -43,7 +43,7 @@
 				<a href="<?php echo $url ?>" class="button cta outline tag2" target="<?php echo $target ?>"><?php echo $title ?></a>
 				<?php endif ?>
 			</div>
-			<div class="large-6 cell align-top image-container small-order-2 medium-order-2 <?php echo $hide ?>">
+			<div class="large-6 cell align-top image-container small-order-2 medium-order-2 flat-wave-pattern <?php echo $hide ?>">
 				<div class="image-area">
                     <?php echo wp_get_attachment_image( get_sub_field('image'), 'full', false, array( "class" => "b-radius tab-image" ) ); ?>
 				</div>

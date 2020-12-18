@@ -136,6 +136,7 @@ get_template_part( 'template-parts/blog_archive_parts/post_continue' ); ?>
     		},
     		success:function(data){
     			
+    			$('.hide-for-reset').show();
     			$('.hide-for-filters').hide();
     			$('.misha_loadmore').hide();
     			filter.find('button').text('Apply filter'); // changing the button label back
@@ -287,30 +288,35 @@ get_template_part( 'template-parts/blog_archive_parts/post_continue' ); ?>
 
 
 		    // check for $_GET parameter 
-		    if (window.location.search) {
-		    	$('.hide-for-filters').hide();
-		    	$('.reset-filters').fadeIn();
-		    	$('html, body').animate({scrollTop: $('.filter').offset().top -130 }, 800);	
-		    	// console.log('get');
-		    	// var category = "<?php echo $_GET['blog_categories'] ?>",
-		    	// 	author = "<?php echo $_GET['author'] ?>",
-		    	// 	date = "<?php echo $_GET['date_field'] ?>"
-		    	// 	;
-		    	console.log(window.location.search);
-		    	const params = new URLSearchParams(window.location.search);  
+		    if (window.location.search) { 
+			
+				const params = new URLSearchParams(window.location.search);  
 				const blog_categories = params.get("blog_categories");
 				const author = params.get("cus_author");
 				const date_field = params.get("date_field");
-				console.log(blog_categories, author);
-				$('#filter1 select[name="cus_author"]').val(author);
 				
-				let authname = $("#filter1 select[name='cus_author'] option[value='"+author+"']").text();
-				$('.select-styled[data-name="cus_author"]').text(authname);
-				
-				$('#filter1 select[name="blog_categories"]').val(blog_categories);
-				$('#filter1 select[name="date_field"]').val(date_field);
-
-
+				if(blog_categories || author || date_field){
+					$('.hide-for-filters').hide();
+					$('.reset-filters').fadeIn();
+					$('html, body').animate({scrollTop: $('.filter').offset().top -130 }, 800);	
+					// console.log('get');
+					// var category = "<?php echo $_GET['blog_categories'] ?>",
+					// 	author = "<?php echo $_GET['author'] ?>",
+					// 	date = "<?php echo $_GET['date_field'] ?>"
+					// 	;
+					//console.log(window.location.search);
+					
+					//console.log(blog_categories, author);
+					$('#filter1 select[name="cus_author"]').val(author);
+					
+					let authname = $("#filter1 select[name='cus_author'] option[value='"+author+"']").text();
+					$('.select-styled[data-name="cus_author"]').text(authname);
+					
+					$('#filter1 select[name="blog_categories"]').val(blog_categories);
+					$('#filter1 select[name="date_field"]').val(date_field);
+				}else{
+					$('.hide-for-reset').hide();
+				}
 
 		    };
 

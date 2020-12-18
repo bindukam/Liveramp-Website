@@ -77,8 +77,7 @@
 			'order'	=> $_GET['date'], // ASC or DESC
 			'posts_per_page'         => 100,
 			'post_type'              => array( 'blog-post' ),
-
-
+			'post_status'            => array( 'publish','acf-disabled','private' )
 		);
 		
 		if( isset( $_GET['posts_per_page'] ) && $_GET['posts_per_page'] )
@@ -110,7 +109,7 @@
 		// author query set here
 
 
-		$wp_query = new WP_Query( $args );
+		$wp_query = new WP_Query( $args ); 
 		if( $wp_query->have_posts() ) :
 
 			while( $wp_query->have_posts() ): $wp_query->the_post();

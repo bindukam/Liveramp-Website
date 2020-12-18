@@ -9,6 +9,7 @@
 
         h2.title {
             color: inherit !important;
+            font-size: 1.75rem;
         }
 
         .button {
@@ -27,6 +28,16 @@
                 justify-content: center;
                 margin-bottom: 2rem;
             }
+            &.flat-wave-pattern{
+                background-image: url(../images/svg/wave-teal.svg);
+                background-position: left bottom;
+                background-size: 100% auto;
+                padding-bottom: 145px;
+                background-repeat: no-repeat;
+                @include breakpoint(medium down){
+                    padding-bottom: 100px;
+                }
+            }
         }
 
         .image-area {
@@ -35,7 +46,12 @@
             left: .5rem;
             width: 80%;
             height: auto;
-            @include breakpoint(medium down) {
+            @include breakpoint(large down){
+                width: 500px;
+                left: 0;
+                text-align: center;
+            }
+            @include breakpoint(large){
                 width: 100%;
                 left: 0;
                 text-align: center;

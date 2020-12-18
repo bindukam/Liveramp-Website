@@ -1,7 +1,6 @@
 <?php // RESOURECE LOAD MORE BUTTON
 // resource load more
 function resource_load_more_scripts() {
-
 	global $wp_query;
 
 	// In most cases it is already included on the page and this line can be removed
@@ -20,7 +19,7 @@ function resource_load_more_scripts() {
 		'max_page' => $wp_query->max_num_pages
 	) );
 
- 	wp_enqueue_script( 'resource_loadmore' );
+ 	wp_enqueue_script( 'resource_loadmore' ); 
 }
 
 add_action( 'wp_enqueue_scripts', 'resource_load_more_scripts' );
@@ -37,7 +36,7 @@ function resource_loadmore_ajax_handler(){
 
 	// it is always better to use WP_Query but not here
 	query_posts( $args );
-
+	
 	if( have_posts() ) :
 
 		// run the loop
@@ -77,7 +76,7 @@ function resource_filter_function(){
 		// 'order'	=> $_GET['date'], // ASC or DESC
 		'posts_per_page'         => 100,
 		'post_type'              => array( 'resources' ),
-
+		'post_status'            => array( 'publish','acf-disabled','private' ),
 	);
 
 	if( isset( $_GET['posts_per_page'] ) && $_GET['posts_per_page'] )
@@ -125,7 +124,7 @@ function resource_filter_function(){
 
 	$wp_query = new WP_Query( $args );
 
-	// var_dump($args);
+	//var_dump($args);
 
 	if( $wp_query->have_posts() ) :
 		while( $wp_query->have_posts() ): $wp_query->the_post();
