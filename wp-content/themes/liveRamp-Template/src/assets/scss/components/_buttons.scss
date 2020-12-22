@@ -89,7 +89,7 @@
 		}
 	}
 	&.down-arrow::after {
-    transform: rotate(90deg) translate(-3px, -5px);
+    	transform: rotate(90deg) translate(-3px, -5px);
 	}
 
 	&.down-arrow:hover:after {
@@ -145,7 +145,7 @@
 		font-size: 1rem;
 		font-family: 'Flexo Bold';
 		min-width: 12em;
-		width: 12em;
+		width: auto;
 		white-space: nowrap;
 		margin-top: 0.5rem;
 	}

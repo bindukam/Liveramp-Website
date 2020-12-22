@@ -335,7 +335,7 @@ function cptui_register_my_taxes() {
 		"rest_controller_class" => "WP_REST_Terms_Controller",
 		"show_in_quick_edit" => false,
 		);
-	register_taxonomy( "color_theme", array( "page",  "lp", "use_cases" ), $args );
+	register_taxonomy( "color_theme", array( "page", "use_cases", "lp" ), $args );
 
 	/**
 	 * Taxonomy: Roles.

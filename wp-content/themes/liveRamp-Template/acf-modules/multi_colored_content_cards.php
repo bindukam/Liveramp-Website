@@ -5,7 +5,7 @@
 	$counter += 1;
 ?>
 
-<?php if (get_sub_field('background_image')) { ?>
+<?php if (get_sub_field('background_image')) { ?> 
 <style>
 	#teal-theme .green-bg-box-before::before {
 	    background-image: url(<?php echo get_sub_field('background_image') ?>);

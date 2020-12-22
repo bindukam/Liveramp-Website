@@ -80,6 +80,7 @@
 @import "global/helpers";
 @import "global/animations";
 @import "global/responsive"; 
+@import "global/svg_icons_white_bg"; 
 
 // Modules
 @import "modules/navigation"; 
@@ -123,6 +124,8 @@
 // ACF Modules
 @import "acf/hero";
 @import "acf/multi_colored_content_cards";
+@import "acf/multi_colored_content_cards_title_icon";
+@import "acf/multi_colored_content_cards_plus_title";
 @import "acf/carded_4_card_grid";
 @import "acf/tabbed_horizontal_tabbed_module";
 @import "acf/offer_strip";
@@ -152,6 +155,20 @@
 @import "acf/blog-subscribe";
 @import "acf/homepage_video";
 @import "acf/testimonial";
+@import "acf/hero_text_left_image_right";
+@import "acf/written_story_centered";
+@import "acf/carded_2_up_landscape"; 
+@import "acf/carded_white_bg_icon_text";
+@import "acf/icon_text_left_right";
+@import "acf/offer_strip_updated";
+@import "acf/high_impact_quote";
+@import "acf/hero_new_home_page";
+@import "acf/carded_new_homepage_cards";
+
+//Module parts
+@import "acf/module-parts/card-intro"; 
+
+// New
 
 // Forms
 @import "components/forms";

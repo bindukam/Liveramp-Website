@@ -33,12 +33,13 @@ function lvrmp_posts_register() {
 		'supports' => array('title', 'editor', 'thumbnail', 'author'),
 		'rewrite' => true,
 		'show_in_nav_menus' => true,
+		'public' => true,
+		'show_in_rest' => true
 	);
-
-
 
 	register_post_type('news' , $args);
 
+	
 	$labels = array(
 		'name' => _x('Blog', 'post type general name'),
 		'singular_name' => _x('Blog', 'post type singular name'),
@@ -64,12 +65,10 @@ function lvrmp_posts_register() {
 		'has_archive' => false,
 		'menu_position' => null,
 		'supports' => array('title', 'editor', 'thumbnail','author', 'comments'),
-
 		'rewrite' => array( 'slug' => 'blog', 'with_front' => true ),
-
-		// 'rewrite' => array( "slug" => "blog", 'with_front' => false ),
-
 		'show_in_nav_menus' => true,
+		'public' => true,
+		'show_in_rest' => true
 	);
 
 	register_post_type('blog-post' , $args);
@@ -132,6 +131,8 @@ function lvrmp_posts_register() {
 		'supports' => array('title', 'editor', 'thumbnail', 'author'),
 		'rewrite' => true,
 		'show_in_nav_menus' => true,
+		'public' => true,
+		'show_in_rest' => true
 	);
 
 	register_post_type('resources' , $args);

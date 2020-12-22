@@ -50,6 +50,7 @@ $slate: #DBE4EC;
 $dark-slate: #9CB6CB;
 $blue-slate: #7D9FB8;
 $teal: #09A8AB;
+$pale-blue :#EAF4F9;
 
 
 $black-a20: rgba(0,0,0,.1);
@@ -271,6 +272,9 @@ $shiftnav-title: #191818;
 }
 .core-blue-20-bkg {
 	background-color: $core-blue-20;
+}
+.pale-blue-bkg {
+	background-color: $pale-blue;
 }
 
 

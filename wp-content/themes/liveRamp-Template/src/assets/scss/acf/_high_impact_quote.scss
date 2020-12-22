@@ -1,0 +1,166 @@
+.high_impact_quote {
+
+    padding-top: 50px;
+    padding-bottom:0;
+    
+    // @include respond-to(lg) {
+    //     padding-top: 50px;
+    //     padding-bottom:50px;
+    // }
+
+    // @include respond-to(md) {
+    //     -background-color: green;
+    // }
+
+    @include respond-to(sm) {
+        padding-top: 100px;
+        padding-bottom:0;
+    }
+
+    @include respond-to(vsm) {
+        -background-color: pink;
+    }
+    
+   
+
+
+    .grid-x {
+        grid-row-gap: 16px;
+        display: grid;
+        grid-template-columns: 1fr minmax(200px, 1000px) 1fr;
+        grid-auto-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 1.75em;
+        @include respond-to(sm) {
+            grid-column-gap: 0;
+        }
+
+
+        @include respond-to(sm) {
+            min-height: 430px;
+        }
+
+        .quote-pattern--radial--large {
+            position: static;
+            left: -25%;
+            top: 0;
+            right: auto;
+            bottom: 0;
+            max-width: 700px;
+            margin-left: -350px;
+            align-self: center;
+            flex: 1;
+            align-self: stretch;
+
+            svg {
+                @include respond-to(csm_480) {
+                    display: none;
+                } 
+            }
+
+        }
+
+        .quote-bg-text {
+            align-items: center;
+            grid-column-end: span 1;
+            grid-column-start: span 1;
+            grid-row-end: span 1;
+            grid-row-start: span 1;
+            position: absolute;
+            right: 0;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            height:100%;
+
+            @include respond-to(csm_480) {
+                display: none;
+            } 
+
+
+            .quote-bg-text_inner {
+
+                align-self: center;
+
+                .quote-bg-text_item {
+                    font-size: 9rem;
+                    @include fluid('font-size', 112, 114);
+
+                    line-height: 7.2rem;
+                    font-weight: 700;
+                    letter-spacing: -.05em;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        .quote-container {
+            justify-self: center;
+            align-self: center;
+            max-width: 900px;
+            position: relative;
+            margin-right: 0;
+            margin-left: 0;
+            padding-left: 1.5rem;
+            
+            @include respond-to(sm) {
+                padding-left: 0;
+            }
+
+
+            .txt-with-divider {
+                display: flex;
+                width: 60px;
+                height: 3px;
+                margin-bottom: 1em;
+                margin-left: 0;
+                justify-content: center;
+                align-items: stretch;
+                margin-right: 0;
+
+                .txt-with-divider--item {
+                    width: 100%;
+                    padding-bottom: 0;
+
+                    &.divider--light-blue {
+                        background-color: #8dc8e8;
+                    }
+                }
+            }
+
+            .quote-caption {
+                margin-top: 1.5rem;
+                margin-bottom: 1rem;
+                color: #00a8e1;
+                line-height: 26px; 
+                font-size:20px;
+                font-weight: 600;
+                font-family:"Flexo Bold", sans-serif;
+                letter-spacing: -.06px;
+
+            }
+
+            blockquote.wbf-block-quote {
+                border-left: 0;
+                font-weight: 700;
+                line-height: 70.4px;
+                letter-spacing: -3.2px;
+                margin-left: -24px;
+                padding-left:24px;
+                padding-right:0;
+                font-weight: 700;
+                font-family: "Flexo Bold",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+                
+                @include fluid('font-size', 40, 64);
+                @include fluid('line-height', 47, 70);
+                @include fluid('margin-left', 0, -24);
+                @include fluid('padding-left', 0, 24);
+
+
+            }
+        }
+    }
+}
+@include svg-icons-white-bg (high_impact_quote, 6);

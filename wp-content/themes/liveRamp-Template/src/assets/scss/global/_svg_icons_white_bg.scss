@@ -1,0 +1,349 @@
+@mixin svg-icons-white-bg ($module, $stroke-width:2, $circle: lightback, ) {
+
+    
+    /**************** Core Blue ******************/
+    #core-blue-theme .#{$module} {
+        
+        @if $circle == darkback { 
+
+            #c1 * {
+                stroke: var(--theme-variant-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: white;
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-variant-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: white;
+                stroke-width: $stroke-width;
+            }
+        
+        } @else {
+        
+            #c1 * {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: var(--theme-variant-color);
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: var(--theme-variant-color);
+                stroke-width: $stroke-width;
+            }
+        }
+    }
+    
+    /**************** Dark Blue ******************/
+    #dark-blue-theme .#{$module} {
+        
+        @if $circle == darkback { 
+
+            #c1 * {
+                stroke: var(--theme-accent-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: white;
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-accent-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: white;
+                stroke-width: $stroke-width;
+            }
+        
+        } @else {
+        
+            #c1 * {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: var(--theme-accent-color);
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: var(--theme-accent-color);
+                stroke-width: $stroke-width;
+            }
+        }
+    }
+
+    
+    /**************** Dark Gray******************/
+    #dark-gray-theme .#{$module} {
+        
+        @if $circle == darkback { 
+
+            #c1 * {
+                stroke: var(--theme-variant-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: white;
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-variant-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: white;
+                stroke-width: $stroke-width;
+            }
+        
+        } @else {
+        
+            #c1 * {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: var(--theme-variant-color);
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: var(--theme-variant-color);
+                stroke-width: $stroke-width;
+            }
+        }
+    }
+    
+
+    /**************** Green ******************/
+    #green-theme .#{$module} {
+        
+        @if $circle == darkback { 
+
+            #c1 * {
+                stroke: var(--theme-variant-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: white;
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-variant-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: white;
+                stroke-width: $stroke-width;
+            }
+        
+        } @else {
+        
+            #c1 * {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: var(--theme-variant-color);
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: var(--theme-variant-color);
+                stroke-width: $stroke-width;
+            }
+        }
+    }
+
+
+    /**************** Medium Blue ******************/
+    #medium-blue-theme .#{$module} {
+        
+        @if $circle == darkback { 
+
+            #c1 * {
+                stroke: var(--theme-accent-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: white;
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-accent-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: white;
+                stroke-width: $stroke-width;
+            }
+        
+        } @else {
+        
+            #c1 * {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: var(--theme-accent-color);
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: var(--theme-accent-color);
+                stroke-width: $stroke-width;
+            }
+        }
+    }
+
+    /**************** Teal ******************/
+    #teal-theme .#{$module} {
+        
+        @if $circle == darkback { 
+
+            #c1 * {
+                stroke: #F9E547;
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: var(--theme-contrast-color);
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: #F9E547;
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: var(--theme-contrast-color);
+                stroke-width: $stroke-width;
+            }
+        
+        } @else {
+        
+            #c1 * {
+                stroke: var(--theme-variant2-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: var(--theme-variant2-color);
+                stroke-width: $stroke-width;
+            }
+        }
+    }
+
+    /**************** Yellow ******************/
+    #yellow-theme .#{$module} {
+        
+        @if $circle == darkback { 
+
+            #c1 * {
+                stroke: var(--theme-accent-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: white;
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-accent-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: white;
+                stroke-width: $stroke-width;
+            }
+        
+        } @else {
+        
+            #c1 * {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+            
+            #c2 * {
+                stroke: var(--theme-accent-color);
+                stroke-width: $stroke-width;
+            }
+        
+            .cls-1 {
+                stroke: var(--theme-primary-color);
+                stroke-width: $stroke-width;
+            }
+
+            .cls-2 {
+                stroke: var(--theme-accent-color);
+                stroke-width: $stroke-width;
+            }
+        }
+    }
+}

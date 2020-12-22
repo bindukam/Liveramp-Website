@@ -1,147 +1,183 @@
-
 @mixin dark-gray-mix {
-	@include color-theme($dark-gray, #F0F8EF, $dark-gray-40, $white, $yellow, $gray, $core-orange);
+    @include color-theme($dark-gray, #F0F8EF, $dark-gray-40, $white, $yellow, $gray, $core-orange);
 }
+
 #dark-gray-theme {
-	@include dark-gray-mix;
-	--theme-primary-color: #323232;
-	--theme-faded-color: #F0F8EF;
-	--theme-variant-color: #A1A1A3;
-	--theme-contrast-color: #fefefe;
-	--theme-accent-color: #FAE164;
+    @include dark-gray-mix;
+    --theme-primary-color: #323232;
+    --theme-faded-color: #F0F8EF;
+    --theme-variant-color: #A1A1A3;
+    --theme-contrast-color: #fefefe;
+    --theme-accent-color: #FAE164;
+
+    .gradient-text {
+        background-image: -webkit-gradient(linear,left top,left bottom,from(var(--theme-primary-color)),to(var(--theme-variant-color)));
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        &.left-right {
+            background-image: linear-gradient(45deg,var(--theme-primary-color),var(--theme-variant-color));
+        }
+    }
+
+    .intro_divider .green-lines {
+        background-color: var(--theme-primary-color);
+    }
+
+    .intro_divider .green-faded2 {
+        background-color: var(--theme-variant-color);
+    }
+
+    .primary,
+    .green,
+    h1,
+    h2,
+    h3 {
+        color: var(--theme-primary-color)
+    }
 
 
-	.primary,
-	.green,
-	h1,
-	h2,
-	h3 {
-		color: $green;
-	}
+    .split-lines {
+        background-image: url(../../assets/images/svg/spilt-dg.svg);
+    }
 
+    .waves-bkg,
+    .bottom-wave {
+        background-image: url(../../assets/images/svg/wave-dg.svg);
+    }
 
-	.split-lines {
-		background-image: url(../../assets/images/svg/spilt-dg.svg);
-	}
-	.waves-bkg,
-	.bottom-wave {
-		background-image: url(../../assets/images/svg/wave-dg.svg);
-	}
-	.waves {
-		background-image: url(../../assets/images/svg/wavelines-dg.svg);
-	}
-	.wave {
-		background-image: url(../../assets/images/svg/leadership-wave-dg.svg);
-	}
-	.wysiwyg-hero,
-.bottomwave {
-	   background-image: url(../../assets/images/svg/wavelines-dg.svg);
-	}
- 	.carousel-quote-impact-stmt {
-	   .circle-wrapper {
-	 		background-image: url('../../assets/images/svg/circle-lines-dg.svg');
-		}
-	}
-	.team-modal {
-		.photo-wrapper {
-	 		background-image: url('../../assets/images/svg/circle-lines-dg.svg');
-		}
-	}
-	.diagonal-lines {
-		background-image: url('../../assets/images/svg/diagonal-lines-core-dg.svg');
-	}
-	.wave-graphic {
+    .waves {
+        background-image: url(../../assets/images/svg/wavelines-dg.svg);
+    }
+
+    .wave {
+        background-image: url(../../assets/images/svg/leadership-wave-dg.svg);
+    }
+
+    .wysiwyg-hero,
+    .bottomwave {
+        background-image: url(../../assets/images/svg/wavelines-dg.svg);
+    }
+
+    .carousel-quote-impact-stmt {
+        .circle-wrapper {
+            background-image: url('../../assets/images/svg/circle-lines-dg.svg');
+        }
+    }
+
+    .team-modal {
+        .photo-wrapper {
+            background-image: url('../../assets/images/svg/circle-lines-dg.svg');
+        }
+    }
+
+    .diagonal-lines {
+        background-image: url('../../assets/images/svg/diagonal-lines-core-dg.svg');
+    }
+
+    .wave-graphic {
 		background-image: none;
 		@include breakpoint(medium) {
 			background-image: url('../../assets/images/svg/wavelines-ctastrip-dg.svg');
 		}
 	}
-	.content_standard_image_and_text_module {
-		 .image-area:after {
-		background-image: url('../../assets/images/svg/wavelines-dg.svg');
-		}
-	}
-	.carousel .quote p::before {
-		color: $green;
-	}
-	.resource_3_card_image_and_text {
 
-		@include breakpoint(medium) {
-			.resource-card.weighted:first-child {
-				background-image: url(../../assets/images/svg/leadership-wave-dg.svg);
-			}
-		}
-	}
-	.tabbed_expanded_left_justified_vertical_tab_module {
-	  .icon-wrapper {
-		    background-image: url(../../assets/images/svg/corner-circle-lines-dg.svg);
-		 }
-		.tabs-title {
-			.text, .arrow {
-		    	color: $white;
-			}
-			&.is-active {
-				.text, .arrow {
-				   color: $green;
-				}
-			}
-		}
-		.panel-wrapper {
-			.icon {
-				* {
-					stroke: $green;
-				}
-			}
-		}
-		.alternate-layout {
-			.tabs-title {
-				.text, .arrow {
-			    	color: $core-blue;
-				}
-				&.is-active {
-					.text, .arrow {
-					   color: $green;
-					}
-				}
-			}
+    .content_standard_image_and_text_module {
+        .image-area:after {
+            background-image: url('../../assets/images/svg/wavelines-dg.svg');
+        }
+    }
 
-		}
-	}
-	#c2 * {
-		stroke: $white;
-	}
-	.offer_strip.green-bkg {
-		background-color: $dark-gray;
-		
-		.button {
-			color: $core-orange;
-		}
-	}
+    .carousel .quote p::before {
+        color: $green;
+    }
 
-	.tabbed_detailed_use_case {
-		.bg-art {
-		   &:before{
-			   background-image: url('../../assets/images/svg/dg-rect.svg');
+    .resource_3_card_image_and_text {
 
-		   }
-		   &:after{
-			   background-image: url('../../assets/images/svg/wavelines-dg.svg');
+        @include breakpoint(medium) {
+            .resource-card.weighted:first-child {
+                background-image: url(../../assets/images/svg/leadership-wave-dg.svg);
+            }
+        }
+    }
 
-		   }
-		}
-	}
+    .tabbed_expanded_left_justified_vertical_tab_module {
+        .icon-wrapper {
+            background-image: url(../../assets/images/svg/corner-circle-lines-dg.svg);
+        }
 
-	.hero_simple_text::before {
-			background-image: url(../../assets/images/svg/wavelines-dg.svg);
-		
-	}
+        .tabs-title {
+            .text, .arrow {
+                color: $white;
+            }
 
-	.carded_square_6-card_content {
-		&.side-curls {
-			@include breakpoint(large) {
-				background-image: url(../../assets/images/svg/swirl-left-dg.svg), url(../../assets/images/svg/swirl-right-dg.svg); // replace me
-				
-			}
-		}
-	}
+            &.is-active {
+                .text, .arrow {
+                    color: $green;
+                }
+            }
+        }
+
+        .panel-wrapper {
+            .icon {
+                * {
+                    stroke: $green;
+                }
+            }
+        }
+
+        .alternate-layout {
+            .tabs-title {
+                .text, .arrow {
+                    color: $core-blue;
+                }
+
+                &.is-active {
+                    .text, .arrow {
+                        color: $green;
+                    }
+                }
+            }
+
+        }
+    }
+
+    #c2 * {
+        stroke: $white;
+    }
+
+    .offer_strip.green-bkg {
+        background-color: $dark-gray;
+
+        .button {
+            color: $core-orange;
+        }
+    }
+
+    .tabbed_detailed_use_case {
+        .bg-art {
+            &:before {
+                background-image: url('../../assets/images/svg/dg-rect.svg');
+
+            }
+
+            &:after {
+                background-image: url('../../assets/images/svg/wavelines-dg.svg');
+
+            }
+        }
+    }
+
+    .hero_simple_text::before {
+        background-image: url(../../assets/images/svg/wavelines-dg.svg);
+
+    }
+
+    .carded_square_6-card_content {
+        &.side-curls {
+            @include breakpoint(large) {
+                background-image: url(../../assets/images/svg/swirl-left-dg.svg), url(../../assets/images/svg/swirl-right-dg.svg); // replace me
+
+            }
+        }
+    }
 }
