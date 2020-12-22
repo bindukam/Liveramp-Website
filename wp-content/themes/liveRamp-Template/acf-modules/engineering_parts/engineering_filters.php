@@ -35,7 +35,7 @@
 
 							$args = array(
 								'post_type'                => array( 'engineering' ),
-								'post_status'              =>  array( 'publish','acf-disabled','private' ),
+								'post_status'              =>  array( 'publish' ),//,'acf-disabled','private'
 								'meta_key'                 =>  'blog_author',
 								'meta_value'               =>  $authorID,
 							);
