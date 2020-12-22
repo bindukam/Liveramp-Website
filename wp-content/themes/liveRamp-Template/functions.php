@@ -85,6 +85,7 @@ require_once( 'library/loadmore/news.php' );
 
 require_once( 'library/loadmore/testimonials.php' );
 
+// Load Landing Pages Functions - functions-lp.php	
 require_once( 'functions-lp.php' );
 
 

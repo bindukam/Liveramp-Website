@@ -64,13 +64,13 @@
 
             &:before {
                 content: '\201c';
-                font-family: 'Flexo Bold';
+                font-family: 'Flexo Medium';
                 color: var(--theme-primary-color);
-                font-size: 14rem;
+                font-size: 15rem;
                 position: absolute;
                 z-index: -1;
                 top: -70px;
-                left: -7px;
+                left: 14px;
             }
 
             @include breakpoint(small only) {
@@ -91,14 +91,13 @@
                 width: 75%;
 
                 .cls-1, .cls-2 {
-                    stroke: $green !important;
+                    stroke: var(--theme-accent-color) !important;
                 }
             }
         }
 
         .list-headline {
             margin: 4rem 0 0 0;
-            color: $green !important;
 
             @include breakpoint(medium down) {
                 margin: 1rem 0 0 0;
@@ -138,7 +137,7 @@
                 .logo {
                     img {
                         max-height: 50px;
-                        max-width: 150px;
+                        max-width: 90px;
                         height: auto;
                         width: auto;
                         display: block;

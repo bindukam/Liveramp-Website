@@ -82,7 +82,10 @@
 		background-image: url('../../assets/images/svg/diagonal-lines-core-yellow.svg');
 	}
 	.wave-graphic {
-		background-image: url('../../assets/images/svg/wavelines-ctastrip-yellow.svg');
+		background-image: none;
+		@include breakpoint(medium) {
+			background-image: url('../../assets/images/svg/wavelines-ctastrip-yellow.svg');
+		}
 	}
 	.button-white {
 		border-color: var(--theme-accent-color);

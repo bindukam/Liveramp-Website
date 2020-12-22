@@ -5,8 +5,8 @@
     $style = "background-image:url('".$theme_svg."/wavelines-ctastrip-green.svg')";
 ?>
 
-<section class="offer_strip green-bkg relative <?php the_sub_field('width_toggle') ?> wave-graphic <?php if (get_sub_field('overlay')): echo 'overlay-me'; endif; ?>">
-	<div class="grid-container z-5-r">
+<section class="offer_strip relative <?php if (get_sub_field('overlay')): echo 'overlay-me'; endif; ?>">
+	<div class="green-bkg <?php the_sub_field('width_toggle') ?>  wave-graphic grid-container z-5-r">
 		<div class="grid-x align-middle">
 			<div class="cell medium-12 text text-center">
                 <?php if (get_sub_field('title')): ?>

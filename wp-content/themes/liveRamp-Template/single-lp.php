@@ -9,7 +9,7 @@
  * @package FoundationPress
  * @since FoundationPress 1.0.0
  */
-
+/*
 $post_ID = get_the_ID();
 if(have_rows('modules', $post_ID)){
 
@@ -33,7 +33,7 @@ if(have_rows('modules', $post_ID)){
                     if($form_submit_landing_page) {
                         header("Location: ".$form_submit_landing_page); // Redirect to next page after form submission
                         exit();
-                    }
+                    } 
                 }
             } else {
 
@@ -136,7 +136,7 @@ if(have_rows('modules', $post_ID)){
         }
     }
 }
-
+*/
 get_header('lp'); ?> 
 
 <?php 

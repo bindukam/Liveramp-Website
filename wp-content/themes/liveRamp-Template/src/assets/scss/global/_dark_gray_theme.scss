@@ -75,8 +75,11 @@
     }
 
     .wave-graphic {
-        background-image: url('../../assets/images/svg/wavelines-ctastrip-dg.svg');
-    }
+		background-image: none;
+		@include breakpoint(medium) {
+			background-image: url('../../assets/images/svg/wavelines-ctastrip-dg.svg');
+		}
+	}
 
     .content_standard_image_and_text_module {
         .image-area:after {

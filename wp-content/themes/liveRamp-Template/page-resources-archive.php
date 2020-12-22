@@ -190,6 +190,7 @@ header("Pragma: no-cache"); ?>
 		    	console.log('filter', 'clicked');
 		    	var query = '';
 		    	var amp = '';
+				$('.resource-archive').show();
 		    	$('#filter select').each(function(index, el) {
 		    		var val = $(this).val();
 		    		var key = $(this).attr('name');
@@ -212,24 +213,29 @@ header("Pragma: no-cache"); ?>
 
 		    // check for $_GET parameter 
 		    if (window.location.search) {
-		    	$('.hide-for-filters').hide();
-		    	$('.reset-filters').fadeIn();
-		    	$('html, body').animate({scrollTop: $('.filter').offset().top -130 }, 800);	
-		    	// //console.log('get');
-		    	// var category = "<?php echo $_GET['blog_categories'] ?>",
-		    	// 	author = "<?php echo $_GET['author'] ?>",
-		    	// 	date = "<?php echo $_GET['date_field'] ?>"
-		    	// 	;
-		    	// //console.log(window.location.search);
-		    	const params = new URLSearchParams(window.location.search);  
-				const blog_categories = params.get("blog_categories");
-				const author = params.get("author");
-				const date_field = params.get("date_field");
-				// //console.log(blog_categories, author);
-				$('#filter1 select[name="author"]').val(author);
-				$('#filter1 select[name="blog_categories"]').val(blog_categories);
-				$('#filter1 select[name="date_field"]').val(date_field);
-
+				const params = new URLSearchParams(window.location.search);  
+				const resources_categories = params.get("resources_categories");
+				const resources_audiences = params.get("resources_audiences");
+				const resources_topics = params.get("resources_topics");
+				
+				if(resources_categories || resources_audiences || resources_topics){
+					$('.hide-for-filters').hide();
+					$('.reset-filters').fadeIn();
+					$('html, body').animate({scrollTop: $('.filter').offset().top -130 }, 800);	
+					// //console.log('get');
+					// var category = "<?php echo $_GET['blog_categories'] ?>",
+					// 	author = "<?php echo $_GET['author'] ?>",
+					// 	date = "<?php echo $_GET['date_field'] ?>"
+					// 	;
+					// //console.log(window.location.search);
+					
+					// //console.log(blog_categories, author);
+					$('#filter1 select[name="resources_categories"]').val(resources_categories);
+					$('#filter1 select[name="resources_audiences"]').val(resources_audiences);
+					$('#filter1 select[name="resources_topics"]').val(resources_topics);
+				}else{
+					$('.reset-filters').hide();
+				}
 
 
 		    };

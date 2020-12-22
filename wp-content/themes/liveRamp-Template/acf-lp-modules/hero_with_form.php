@@ -1,7 +1,6 @@
 <?php
 
 $form_submit_landing_page = get_sub_field('form_submit_landing_page');
-
 ?>
 
 <section class="hero-with-form primary-bkg <?php echo get_sub_field('background_pattern'); ?>"">
@@ -42,7 +41,7 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
                         }
                     ?>
                     <div class="cell list-item">
-                        <div class="icon"><img src="<?php echo $icon; ?>" /></div>
+                        <div id="c1" class="icon"><img src="<?php echo $icon; ?>" /></div>
                         <div class="copy green"><?php echo $copy; ?></div>
                     </div>
                     <?php endwhile ?>
@@ -72,6 +71,45 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
                         ?>
                     </div>
                 </div>
+				
+				<!--<script src="//lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
+                <form id="mktoForm_4316" style="display:none;"></form>
+                <script type="text/javascript">
+                        MktoForms2.loadForm("//lp.liveramp.com", "320-CHP-056", 4316);
+
+                        document.getElementsByClassName("liveramp-form")[0].onsubmit = function() {
+
+                            jQuery(function($){
+                                $(this).find('input[type="submit"]').addClass('disabled button-disabled').attr('disabled', 'disabled');
+                            });
+
+                            firstname = $('#input_2_3').val();
+                            lastname = $('#input_2_4').val();
+                            email = $('#input_2_5').val();
+                            company = $('#input_2_6').val();
+                            title = $('#input_2_7').val();
+                            country = $('#input_2_9').val();
+                            
+                            MktoForms2.whenReady(function(form){
+                                form.onSuccess(function(values, followUpUrl) {
+                                    return false;
+                                });
+                                form.addHiddenFields({
+                                   "Email": email,
+                                   "FirstName": firstname,
+                                   "LastName": lastname,
+                                   "Company": company,
+                                   "Title": title,
+                                   "Country": country,
+                                });
+                                form.submit();
+                            });
+                            setTimeout(function () {
+                                document.getElementsByClassName("liveramp-form")[0].submit();
+                            }, 1000);
+                            return false;
+                        }
+                    </script>-->
             </div>
         </div>
     </div>
