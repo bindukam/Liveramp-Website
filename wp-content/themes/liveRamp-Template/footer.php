@@ -226,6 +226,16 @@ function hasSomeParentTheClass(element, classname) {
 	});
 	
 </script>
-
+<script>
+$(document).ready(function(){
+	if (location.hash) {
+		var header_height = $('#header').height()+25;
+		var scroll_distance = $("#liveramp-university-education-hub").offset().top - header_height;
+		console.log('header_height: ', header_height);
+		console.log('scroll_distance: ', scroll_distance);
+		$([document.documentElement, document.body]).animate({scrollTop: scroll_distance}, 1000);
+	}
+});
+</script>
 </body>
 </html>
