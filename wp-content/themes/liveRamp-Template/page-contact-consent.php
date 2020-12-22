@@ -34,7 +34,7 @@ get_header(); ?>
 		</div>
 	</section>
 
-	<section class="contact-page-content">
+	<section class="contact-page-content" style="background-image: url(/wp-content/themes/liveRamp-Template/dist/assets/images/svg/contact-background-green.svg);">
 		<div class="grid-container">
 			<div class="grid-x grid-margin-x align-justify">
 				<div class="cell  large-5 content">
