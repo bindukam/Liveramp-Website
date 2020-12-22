@@ -13,7 +13,7 @@
 	--theme-mixin2-color:  #FEF6D1;
 }
 
-#written-story {
+#green-theme #written-story {
     .line1 {stroke:#0f3264} 
     .line2 {stroke:#fae164}
     .line3 {stroke:#aadadc}
@@ -25,7 +25,7 @@
     .line9 {stroke:#d5e8f4}
 }  
 
-#swirl-kd {
+#green-theme #swirl-kd {
     .line1 {stroke:#FAE164}
     .line2 {stroke:#0f3264}
     .line3 {stroke:#fcf5bc}
@@ -38,7 +38,7 @@
     .line10 {stroke:#fcf5bc}
 }  
 
-#high-impact-quote {        
+#green-theme #high-impact-quote {        
     .color1 {
         stroke: #09a8ab;
     }
@@ -72,7 +72,7 @@ $yellow-wl:#fae164;//yellow
 $blue-wl:#0f3264;//blue
 $white-wl:#ffffff;//white
 
-#wavelines-all-colors {
+#green-theme #wavelines-all-colors {
     .line1 {stroke:$white-wl;}
     .line2 {stroke:$white-wl;}
     .line3 {stroke:$white-wl;}
@@ -94,7 +94,7 @@ $white-wl:#ffffff;//white
     .line19 {stroke:$yellow-wl;}
 }
 
-.gradient-text {
+#green-theme .gradient-text {
     background-image: -webkit-gradient(linear,left top,left bottom,from(#09a8ab),to(#0f3264));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -104,7 +104,7 @@ $white-wl:#ffffff;//white
 }
 
 
-#green-theme .intro_divider .green-lines {
+#green-theme #green-theme .intro_divider .green-lines {
     background-color: var(--theme-primary-color);
 }
 
@@ -118,10 +118,10 @@ $white-wl:#ffffff;//white
 	@include green-mix;
 }
 
-.diagonal-lines {
+#green-theme .diagonal-lines {
 	background-image: url('../../assets/images/svg/diagonal-lines-core-green.svg');
 }
-.wave-graphic {
+#green-theme .wave-graphic {
 	background-image: none;
 	@include breakpoint(medium) {
 		background-image: url("../../assets/images/svg/wavelines-ctastrip-oncolor-green.svg");
