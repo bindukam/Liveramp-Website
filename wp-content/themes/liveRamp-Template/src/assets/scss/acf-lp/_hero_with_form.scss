@@ -586,7 +586,11 @@
                     padding-top: 30px;
                 }
                 .grid-margin-x>.cell{
-                    box-shadow:5px 5px #8888883d
+                    box-shadow:none;
+                    .wistia_responsive_padding > .wistia_responsive_wrapper{
+                        height:auto !important;
+                        box-shadow:5px 5px #8888883d 
+                    }
                 }
             }
 
