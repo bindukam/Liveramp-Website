@@ -7,9 +7,9 @@ if($cta_type == 'none') {
 } else if($cta_type == 'media') {
     $cta_media_file = get_sub_field('cta_media_file');
     $cta_text = get_sub_field('cta_text');
-    $cta_url = '?file';
-    $cta_target = '';
-    //$cta_target = '_blank';
+    $cta_url = $cta_media_file['url'];
+    //$cta_target = '';
+    $cta_target = '_blank';
 } else if($cta_type == 'page') {
     $query_params = $_SERVER['QUERY_STRING'];
     $query_params = $query_params != '' ? '?'.$query_params : '';

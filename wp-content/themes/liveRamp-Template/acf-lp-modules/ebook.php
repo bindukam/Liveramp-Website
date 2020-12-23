@@ -176,9 +176,16 @@ if($background_image){
 							jQuery('.mktoHtmlText.mktoHasWidth').css('width', '');
 
 							//jQuery('.form-wrapper').fadeIn('400'),
-							form.onSuccess(function(values, followUpUrl) {});
 						});
-						</script>
+                        
+                        MktoForms2.whenReady(function(form) {
+                            form.onSuccess(function(values, followUpUrl) {
+                                window.location.href = "<?php echo get_sub_field('form_submit_landing_page') ?>";
+                                return false;
+                            });
+                        });
+
+                        </script>
 					</div>
                    <!-- <script src="//lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
                     <form id="mktoForm_4316" style="display:none;"></form>
