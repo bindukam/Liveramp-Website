@@ -23,18 +23,14 @@
 		
 		<?php include ('library/hreflang.php') ?>
 
-		<!-------------------- LOCAL CODE SPECIFIC TO LOCATION -------------------->
 		<?php 
 			$code_loop = get_field('code_loop', 'option'); 
 
-			//echo '<pre style="background-color:white">'.print_r($code_loop, 1).'</pre>';
 			foreach ($code_loop AS $code) {
 				echo "\n" . '<!-- '.strtoupper($code['title']).' -->';
 				echo "\n" . $code['code_block'] . "\n";
 			}
 		?>
-		
-		<!-------------------- END LOCAL CODE SPECIFIC TO LOCATION -------------------->
 
 		<!-------------------- GLOBAL CODE -------------------->
 
@@ -49,13 +45,22 @@
 		<!-- wistia script  -->
 		<script type='text/javascript' charset="ISO-8859-1" src="<?php echo $theme_uri; ?>/dist/assets/js/E-v1.js" async></script>
 
-		<!-------------------- END GLOBAL CODE -------------------->
 
 
 		<!-- iframe resizer  -->
 		<style>	.ubermenu  svg.ubermenu-image {	max-width: 1em; } </style>
 
 		<?php wp_head(); ?>
+		
+		<?php 
+			$code_loop = get_field('code_loop_below_css', 'option'); 
+
+			//echo '<pre style="background-color:white">'.print_r($code_loop, 1).'</pre>';
+			foreach ($code_loop AS $code) {
+				echo "\n" . '<!-- '.strtoupper($code['title']).' -->';
+				echo "\n" . $code['code_block'] . "\n";
+			}
+		?>
 
 	</head>
 <body <?php body_class(); ?>>
