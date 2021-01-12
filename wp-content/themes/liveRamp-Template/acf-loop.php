@@ -9,6 +9,8 @@
 
     while(have_rows('modules', $pageid)){
       the_row();
+	  
+	  echo (!empty(get_sub_field('anchor_id')) ? '<a href="javascript:void(0)" class="'.get_sub_field('anchor_id').'"></a>' : '');
 
       if ( !get_sub_field('deactivate') ) {
 
@@ -213,6 +215,11 @@
           include ('acf-modules/video_hero.php');
         }
         
+		// Secondary Nav Bar
+        if (get_row_layout()=='secondary_navigation_bar'){
+          include ('acf-modules/secondary_navigation_bar.php');
+        }
+		
         // Written Story Centered
         if (get_row_layout()=='written_story_centered'){
           include ('acf-modules/written_story_centered.php');
