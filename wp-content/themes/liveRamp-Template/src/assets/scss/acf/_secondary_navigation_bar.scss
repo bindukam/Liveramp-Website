@@ -1,0 +1,91 @@
+#dark-blue-theme {
+  .secondary_navigation_bar {
+    background-color: #09a8ab;
+  }
+}
+#core-blue-theme {
+  .secondary_navigation_bar {
+    background-color: #004ba5;
+  }
+}
+#dark-gray-theme {
+  .secondary_navigation_bar {
+    background-color: var(--theme-accent-color);
+  }
+}
+#medium-blue-theme, #-theme {
+  .secondary_navigation_bar {
+    background-color: #0f3264;
+  }
+}
+#teal-theme {
+  .secondary_navigation_bar {
+    background-color: #0F3264;
+  }
+}
+#yellow-theme{
+  .secondary_navigation_bar {
+    background-color: var(--theme-accent-color);
+  }
+}
+#green-theme{
+  .secondary_navigation_bar {
+    background-color: var(--theme-accent-color);
+  }
+}
+.secondary_navigation_bar {
+    z-index: 1;
+    ul.sec_nav_bar_wrapper{
+      list-style-type: none;
+      text-align:center;
+      padding:0;
+      margin:0;
+      li{
+       display:inline;
+       padding:0 16px;
+        a.scroll_nav_item {
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display:inline; 
+          padding:10px 16px;
+          &:hover {
+            color: #f9e446;
+            border-bottom: 2px solid currentColor;
+            display: inline;
+          }
+        }
+        a.cta{
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display:inline; 
+          padding:10px 16px;
+          &:hover {
+            color:#fff;
+            border-bottom:none;}
+        }
+      }
+    }
+    ~ section.written-story-centered  {
+      padding-right: 0px;
+      padding-left: 0px;
+      .grid-container{
+        padding-right: 0px;
+        padding-left: 0px;
+        max-width: 100%;
+        div.written-story-container{
+          max-width: 100%;
+          box-shadow: none;
+          border-radius: 0;
+        }
+      }
+    }
+}
+.secondary_navigation_bar.secBarSticky {
+  position: fixed;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .secondary_navigation_bar ul.sec_nav_bar_wrapper li a{display: inline-block !important;}
+ }
