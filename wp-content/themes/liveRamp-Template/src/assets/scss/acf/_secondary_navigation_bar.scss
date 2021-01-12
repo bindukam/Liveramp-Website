@@ -56,14 +56,17 @@
           }
         }
         a.cta{
-          color: white;
+          color: #fa8d28;
           text-align: center;
           text-decoration: none;
           display:inline; 
           padding:10px 16px;
+          background-color: #fff;
           &:hover {
-            color:#fff;
-            border-bottom:none;}
+            color:#ffffff;
+            border-bottom:none;
+            background-color: #fa8d28;
+          }
         }
       }
     }

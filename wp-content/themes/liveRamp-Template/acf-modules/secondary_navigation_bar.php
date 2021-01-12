@@ -29,12 +29,22 @@ $(".scroll_nav_item").click(function() {
 	let target = $(this).data('target');
 	let topHeaderHeight = $(".sticky-container > .sticky").outerHeight();
 	let secondaryHeaderHeight = $("#secondaryNavBar").outerHeight();
+	console.clear();
+	
 	if($("."+target).length){
-		let totalOffset = ($("."+target).offset().top - (secondaryHeaderHeight + topHeaderHeight));
-		//console.log($("."+target).offset().top);
-		$([document.documentElement, document.body]).animate({
-			scrollTop: totalOffset
-		}, 1500);
+		let totalOffset=0
+		
+		//$("."+target).offset().top - this changes depending on whether the nav is sticky or not.
+		// + 28 is for some extra padding
+
+		if ($("#secondaryNavBar").hasClass('secBarSticky')) {
+			totalOffset = ($("."+target).offset().top - (secondaryHeaderHeight + topHeaderHeight));
+		} else {
+			totalOffset = ($("."+target).offset().top - (secondaryHeaderHeight + topHeaderHeight + secondaryHeaderHeight + 28));
+		}		
+		
+		$([document.documentElement, document.body]).animate({scrollTop: totalOffset+'px'}, 1500);
+	
 	}
 });
 
@@ -54,8 +64,8 @@ $(document).ready(function(){
 		let topHeaderHeight = $(".sticky-container > .sticky").outerHeight();
 		let footerBannerOffset = $('.footer').offset().top;
 		let windowTop = $(window).scrollTop();
-		console.log(windowTop+' : windowTop');
-		console.log(footerBannerOffset+' : footerBannerOffset');
+		//console.log(windowTop+' : windowTop');
+		//console.log(footerBannerOffset+' : footerBannerOffset');
 		if (windowTop + topHeaderHeight > footerBannerOffset) {
 			navbar.classList.remove("secBarSticky");
 		} else if (window.pageYOffset > sticky) {
