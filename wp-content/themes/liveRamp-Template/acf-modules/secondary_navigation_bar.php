@@ -33,7 +33,6 @@ $(".scroll_nav_item").click(function() {
 	let target = $(this).data('target');
 	let topHeaderHeight = $(".sticky-container > .sticky").outerHeight();
 	let secondaryHeaderHeight = $("#secondaryNavBar").outerHeight();
-	console.clear();
 	
 	if($("."+target).length){
 		let totalOffset=0
