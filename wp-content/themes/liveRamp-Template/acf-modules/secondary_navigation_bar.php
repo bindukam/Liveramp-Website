@@ -14,11 +14,15 @@
 							$target = get_sub_field('cta')['target'];
 						endif;
 					?>
-					<?php if($is_cta): ?>
-						<li><a href="<?php echo $url; ?>" class="button cta" target="<?php echo $target ?>"><?php echo $title ?></a></li>
-					<?php else: ?>
-						<li><a href="javascript:void(0)" class="scroll_nav_item" data-target="<?php echo $target ?>"><?php echo $title ?></a></li>
-					<?php endif; ?>
+					
+					<?php if ($title) { ?>
+						<?php if($is_cta): ?>
+							<li><a href="<?php echo $url; ?>" class="button cta" target="<?php echo $target ?>"><?php echo $title ?></a></li>
+						<?php else: ?>
+							<li><a href="javascript:void(0)" class="scroll_nav_item" data-target="<?php echo $target ?>"><?php echo $title ?></a></li>
+						<?php endif; ?>
+					<?php } ?>
+
 			<?php endwhile; ?>
 		</ul>
 	</section>
