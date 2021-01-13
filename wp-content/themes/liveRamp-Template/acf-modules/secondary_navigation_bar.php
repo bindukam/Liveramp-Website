@@ -10,7 +10,7 @@
 						if (get_sub_field('cta')): //print_r(get_sub_field('cta'));
 							$is_cta = true;
 							$url = get_sub_field('cta')['url'];
-							$title = get_sub_field('cta')['title'];
+							$title = (get_sub_field('cta')['title']) ? get_sub_field('cta')['title'] : $title;
 							$target = get_sub_field('cta')['target'];
 						endif;
 					?>
