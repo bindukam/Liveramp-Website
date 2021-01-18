@@ -52,7 +52,18 @@ $(".scroll_nav_item").click(function() {
 });
 
 $(document).ready(function(){
-
+	var topMenu = $(".sec_nav_bar_wrapper"), 
+	 // All nav-bar items
+    menuItems = topMenu.find("a.scroll_nav_item"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      //var item = $($(this).attr("href"));
+	  let menuItemSel = $(this).data("target");
+      let item = $('.'+menuItemSel);
+      if (item.length) { return item; }
+    });
+	//console.log(scrollItems);
+	
 	// When the user scrolls the page, execute stickMyBar
 	window.onscroll = function() { stickMyBar() };
 
@@ -65,10 +76,35 @@ $(document).ready(function(){
 	// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 	function stickMyBar() {
 		let topHeaderHeight = $(".sticky-container > .sticky").outerHeight();
+		let secondaryHeaderHeight = $("#secondaryNavBar").outerHeight();
 		let footerBannerOffset = $('.footer').offset().top;
 		let windowTop = $(window).scrollTop();
 		//console.log(windowTop+' : windowTop');
 		//console.log(footerBannerOffset+' : footerBannerOffset');
+		
+		 // Get object of current scrolled item
+	   let cur = scrollItems.map(function(){
+		 if ($(this).offset().top < windowTop + topHeaderHeight  + secondaryHeaderHeight + 28)
+		   return this;
+	   });
+	   
+	   // Get current element
+	   cur = cur[cur.length-1];
+	   
+	   let itarget = cur && cur.length==1 ? cur.attr('class') : "";
+	   console.log('itarget'+itarget)
+	   // Set/remove active class
+	   if(itarget == ""){
+		menuItems
+		 .parent().removeClass("active")
+		 .end();
+	   }else{
+		menuItems
+		 .parent().removeClass("active")
+		 .end().filter("a[data-target='"+itarget+"']").parent().addClass("active");
+	   }
+		
+	    //Add/Remove sticky class from Nav-bar
 		if (windowTop + topHeaderHeight > footerBannerOffset) {
 			navbar.classList.remove("secBarSticky");
 		} else if (window.pageYOffset > sticky) {

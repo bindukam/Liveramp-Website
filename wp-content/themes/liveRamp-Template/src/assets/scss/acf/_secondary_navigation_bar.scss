@@ -52,7 +52,13 @@
         li {
             display: inline;
             padding: 0 16px;
-
+            &.active{
+                a.scroll_nav_item {
+                    color: #f9e446;
+                    border-bottom: 2px solid currentColor; 
+                    display: inline;
+                }
+            }
             a.scroll_nav_item {
                 color: white;
                 text-align: center;
@@ -77,7 +83,7 @@
 
                 &:hover {
                     color: #fa8d28;
-                    border-bottom: none;
+                    //border-bottom: none;
                     background-color: #fff;
                 }
 
