@@ -153,15 +153,16 @@ if($background_image){
                         <div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> * </div>
                         
                         <?php
-                            $gf_id = get_sub_field('gravity_form_id');
+                            /*$gf_id = get_sub_field('gravity_form_id');
                             if($gf_id) {
-                               // gravity_form($gf_id, false, false, false, null, false, 12);
-                            }
+                               gravity_form($gf_id, false, false, false, null, false, 12);
+                            }*/
+							$mktFormID = get_sub_field('marketo_form_id');
                         ?>
                         <script src="//lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
-						<form id="mktoForm_4364"></form>
+						<form id="mktoForm_<?php echo $mktFormID; ?>"></form>
 						<script type="text/javascript">
-                        MktoForms2.loadForm("//lp.liveramp.com", "320-CHP-056", 4364, function(form) {
+                        MktoForms2.loadForm("//lp.liveramp.com", "320-CHP-056", <?php echo $mktFormID; ?>, function(form) {
 							jQuery('form').removeClass().removeAttr('style');
 							jQuery('.mktoForm').css('width', '100%');
 							jQuery('.mktoGutter').remove();
@@ -187,44 +188,6 @@ if($background_image){
 
                         </script>
 					</div>
-                   <!-- <script src="//lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
-                    <form id="mktoForm_4316" style="display:none;"></form>
-                    <script type="text/javascript">
-                        MktoForms2.loadForm("//lp.liveramp.com", "320-CHP-056", 4316);
-
-                        document.getElementsByClassName("liveramp-form")[0].onsubmit = function() {
-
-                            jQuery(function($){
-                                $(this).find('input[type="submit"]').addClass('disabled button-disabled').attr('disabled', 'disabled');
-                            });
-
-                            firstname = $('#input_2_3').val();
-                            lastname = $('#input_2_4').val();
-                            email = $('#input_2_5').val();
-                            company = $('#input_2_6').val();
-                            title = $('#input_2_7').val();
-                            country = $('#input_2_9').val();
-                            
-                            MktoForms2.whenReady(function(form){
-                                form.onSuccess(function(values, followUpUrl) {
-                                    return false;
-                                });
-                                form.addHiddenFields({
-                                   "Email": email,
-                                   "FirstName": firstname,
-                                   "LastName": lastname,
-                                   "Company": company,
-                                   "Title": title,
-                                   "Country": country,
-                                });
-                                form.submit();
-                            });
-                            setTimeout(function () {
-                                document.getElementsByClassName("liveramp-form")[0].submit();
-                            }, 1000);
-                            return false;
-                        }
-                    </script>-->
                 </div>
                 <div class="lp-talent">
                     <?php if (get_sub_field('talent_headline')): ?>
