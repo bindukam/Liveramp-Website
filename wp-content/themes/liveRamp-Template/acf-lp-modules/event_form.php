@@ -1,3 +1,4 @@
+<!-- Module: LP Event Form -->
 <?php
     $theme_uri = get_template_directory_uri();
     $theme_images = $theme_uri.'/dist/assets/images';
@@ -29,6 +30,7 @@
                         gravity_form($gf_id, false, false, false, null, false, 12);
                     } */
 					$mktFormID = get_sub_field('register_marketo_form_id');
+					if($mktFormID) {
                 ?>
 				<script src="//lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
 				<form id="mktoForm_<?php echo $mktFormID; ?>"></form>
@@ -57,6 +59,7 @@
 					});
 				});
 				</script>
+				<?php } ?>
             </div>
         </div>
 	</div>

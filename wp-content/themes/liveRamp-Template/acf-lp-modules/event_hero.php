@@ -1,3 +1,4 @@
+<!-- Module: LP Event Hero -->
 <?php
 $hero_image = get_sub_field('hero_image');
 $video_id = get_sub_field('video_id');

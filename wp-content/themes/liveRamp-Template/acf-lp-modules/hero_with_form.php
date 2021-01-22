@@ -1,5 +1,5 @@
+<!-- LP Tall Banner Hero -->
 <?php
-
 $form_submit_landing_page = get_sub_field('form_submit_landing_page');
 ?>
 
@@ -48,6 +48,10 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
                 <?php endif ?>
 
             </div>
+			<?php
+			$mktFormID = get_sub_field('marketo_form_id');
+			if($mktFormID) {
+			?>
             <div class="cell large-5 form-cell">
                 <div data-sticky-container>
 
@@ -63,13 +67,6 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
                         
                         <div class="caption dark-slate margin-bottom-1"><?php _translate('all_fields_required')  ?> * </div>
                         
-                        <?php
-                            /* $gf_id = get_sub_field('gravity_form_id');
-                            if($gf_id) {
-                                gravity_form($gf_id, false, false, false, null, false, 12);
-                            } */
-							$mktFormID = get_sub_field('marketo_form_id');
-                        ?>
 						<script src="//lp.liveramp.com/js/forms2/js/forms2.min.js"></script>
 						<form id="mktoForm_<?php echo $mktFormID; ?>"></form>
 						<script type="text/javascript">
@@ -102,6 +99,7 @@ $form_submit_landing_page = get_sub_field('form_submit_landing_page');
                 </div>
 
             </div>
+			<?php } ?>
         </div>
     </div>
 </section>

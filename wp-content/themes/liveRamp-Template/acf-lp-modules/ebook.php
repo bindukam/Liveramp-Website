@@ -1,4 +1,4 @@
-
+<!-- LP Short Banner Hero -->
 <?php
 
 $mkto_id = get_sub_field('marketo_form_id', 'option');

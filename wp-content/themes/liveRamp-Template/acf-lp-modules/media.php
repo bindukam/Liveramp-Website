@@ -1,3 +1,4 @@
+<!-- LP Standard Media -->
 <?php
     $media_type = get_sub_field('media_type');
     $video_id = get_sub_field('video_id');
@@ -35,6 +36,7 @@
                     //$gf_id = get_sub_field('gravity_form_id');
                     // if($gf_id) {
 					$mktFormID = get_sub_field('marketo_form_id');
+					if($mktFormID) {
                 ?>
                 <div class="cell large-5 form-cell">
                     <div data-sticky-container>
@@ -73,7 +75,7 @@
                     </div>
                 </div>
                 <?php
-                   // }
+                   }
                 ?>
             </div>
         </div>

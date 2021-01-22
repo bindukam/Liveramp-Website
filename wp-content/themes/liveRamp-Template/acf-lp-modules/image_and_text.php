@@ -1,3 +1,4 @@
+<!-- LP Image and Text -->
 <section class="image_and_text_module pad-section">
 
 	<?php

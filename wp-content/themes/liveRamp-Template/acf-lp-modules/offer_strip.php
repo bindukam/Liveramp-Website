@@ -1,3 +1,4 @@
+<!-- LP Offer Strip -->
 <?php
     $theme_uri = get_template_directory_uri();
     $theme_images = $theme_uri.'/dist/assets/images';

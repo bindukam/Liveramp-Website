@@ -1,3 +1,4 @@
+<!-- LP Hero with Image Block -->
 <?php
 $cta_type = get_sub_field('cta_type');
 if($cta_type == 'none') {

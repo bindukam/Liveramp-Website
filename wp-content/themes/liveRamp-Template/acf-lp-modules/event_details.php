@@ -1,3 +1,4 @@
+<!-- Module: LP Event Details -->
 <?php
 
 $eyebrow = get_sub_field('eyebrow');

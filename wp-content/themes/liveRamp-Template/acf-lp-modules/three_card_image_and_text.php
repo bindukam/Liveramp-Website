@@ -1,3 +1,4 @@
+<!-- Module: LP Three Cards with Image/Text -->
 <!-- CARDS go here -->
 <section class="resource_3_card_image_and_text pad-section">
 	<!-- check and show if title or description are present  -->
