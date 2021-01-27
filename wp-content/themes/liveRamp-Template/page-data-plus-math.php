@@ -75,7 +75,7 @@ get_header(); ?>
 	                    <h1><?php _translate('data_plus_math_opt_out')  ?></h1>
 	                </div>
 	                <div class="cell medium-5 image">
-	                    <img width="1024" height="225" src="http://lrmultidevelop.wpengine.com/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-1024x225.png" class="hero-image" alt="" srcset="http://lrmultidevelop.wpengine.com/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-1024x225.png 1024w, http://lrmultidevelop.wpengine.com/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-300x66.png 300w, http://lrmultidevelop.wpengine.com/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-768x169.png 768w, http://lrmultidevelop.wpengine.com/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-640x141.png 640w, http://lrmultidevelop.wpengine.com/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller.png 1200w" sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 770px"> </div>
+	                    <img width="1024" height="225" src="/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-1024x225.png" class="hero-image" alt="" srcset="/wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-1024x225.png 1024w, /wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-300x66.png 300w, /wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-768x169.png 768w, /wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller-640x141.png 640w, /wp-content/uploads/2019/12/data-plus-math_white_hi-res-smaller.png 1200w" sizes="(max-width: 639px) 98vw, (max-width: 1199px) 64vw, 770px"> </div>
 	            </div>
 	        </div>
 	    </section>
