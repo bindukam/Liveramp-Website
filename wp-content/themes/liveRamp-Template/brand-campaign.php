@@ -478,6 +478,7 @@ section.change-world-section{
   justify-content:center;
   margin-top: 438px;
   padding: 0px 100px;
+  padding-bottom: 296px;
 }
 
 .flex-container .live-discussion-desc p{
@@ -487,6 +488,7 @@ section.change-world-section{
     color: #fff;
     line-height: 54px;
     letter-spacing: -1px;
+    margin-bottom: 40px; 
 }
 
 .flex-container .live-discussion-heading h1 {
@@ -638,11 +640,10 @@ section.change-world-section{
 }
 
 .home__title {
-	/* display: flex;
-    align-items: center; */
 	padding: 171px 0 20px;
     align-self: center;
 }
+
 .home__title .heading{
 	display: flex;
     align-items: center;
@@ -651,6 +652,7 @@ section.change-world-section{
 	font-weight: 900;
 	font-size: 115px;
 	letter-spacing: -6px;
+    font-family: "flexo-black";
 }
   
 
@@ -682,16 +684,7 @@ section.change-world-section{
 }
 
 .home__scroll-link{
-    /* writing-mode: vertical-lr;
-    transform: rotate(-180deg); */
     color: #fff;
-}
-
-#home img.home_img {
-position: absolute;
-right: 0px;
-bottom: -232px;
-width: 400px;
 }
 
 .bd-grid {
@@ -717,20 +710,33 @@ width: 400px;
     width: 42px;
 	height: 42px;
 }
+
+
 /*===== Media Query Home=====*/
 @media screen and (min-width: 1024px){
-.bd-grid {
-    margin-left: auto;
-    margin-right: auto;
-}
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 768px){
+    .vector-wave-section.icon_text_left_right .icon_text_row .cell.image-container img{
+        max-width: 85%;
+    }
+
+    .vector-wave-section.icon_text_left_right .icon_text_row.odd .text-container {
+        -webkit-order: inherit;
+        -ms-flex-order: inherit;
+        order: inherit;
+    }
+
     .home__img{
     	right: -11px;
         bottom: -137px;
         width: 356px;
     }
+
 	.home__title {
         padding: 50px 0 20px;
 	}
@@ -738,7 +744,7 @@ width: 400px;
     .home__title .heading{
     	line-height: 71px;
         font-size: 56px;
-        width:344px;
+        width: 487px;
         letter-spacing: -3px;
     }
   
@@ -748,15 +754,12 @@ width: 400px;
         line-height: 41px;
     }
 
-/*===== Addded by BK =====*/
+    /*===== Addded by BK =====*/
 
-.home__scroll {
-	padding: 137px 0 1rem;
+    .home__scroll {
+        padding: 137px 0 1rem;
+    }
 }
-
-}
-
-
 /*===== Home End =====*/
 
 /*=====Vector-wave-section =====*/
@@ -776,7 +779,7 @@ width: 400px;
 .vector-wave-section .card-intro {
     max-width: 100%;
     margin: auto;
-    padding-bottom: 32px;
+    padding-bottom: 27px;
 }
 
 .vector-wave-section .grid-x {
@@ -885,7 +888,7 @@ width: 400px;
 
 .vector-wave-section .card-intro .intro_title p{
     font-size: 21px;
-    line-height: 28.8px;
+    line-height: 31px
 }
 
 
@@ -934,9 +937,6 @@ width: 400px;
     padding-left: 1em;
 }
 
-.vector-wave-section.icon_text_left_right .icon_text_row .cell.image-container img {
-   width: 466px;
-}
 
 .vector-wave-section img {
     display: inline-block;
@@ -952,24 +952,15 @@ width: 400px;
 
 
 .vector-wave-section.icon_text_left_right .icon_text_row .cell.image-container {
-    width: 466px;
-    padding:0;
+    width: 50%;
 }
 
 .vector-wave-section.icon_text_left_right .icon_text_row .cell.text-container {
-    max-width: 647px;
     width: 50%;
 }
 
 .vector-wave-section.icon_text_left_right .icon_text_row.odd .cell.image-container{
     text-align: right;
-    margin-left:100px;
-
-} 
-
-.vector-wave-section.icon_text_left_right .icon_text_row.even .cell.image-container{
-    text-align: left;
-    margin-right:100px;
 } 
 
 .vector-wave-section.icon_text_left_right .icon_text_row.odd .cell.text-container .text_box{
@@ -979,11 +970,11 @@ width: 400px;
 }
 
 .vector-wave-section.icon_text_left_right .icon_text_row{
-    padding-top: 30px;
+    padding-top: 66px;
 }
 
-.vector-wave-section.icon_text_left_right .icon_text_row.even .cell.text-container .text_box{
-    max-width: 434px;
+.vector-wave-section.icon_text_left_right .icon_text_row.even .text_box{
+    padding-right: 98px;
 }
 
 .vector-wave-section .icon_text_left_right .icon_text_row .cell.text-container .title h3 {
@@ -1037,6 +1028,13 @@ width: 400px;
 .vector-wave-section.icon_text_left_right .icon_text_row .cell.text-container .text p {
     font-size: 18px;
     line-height: 28.8px;
+    color: #003865;
+}
+
+
+.vector-wave-section.icon_text_left_right .icon_text_row .cell.text-container .text p > a {
+    color: #73C06B;
+    text-decoration: underline;
 }
 
 .vector-wave-section p {
@@ -1068,20 +1066,6 @@ width: 400px;
     -webkit-order: 1;
     -ms-flex-order: 1;
     order: 1;
-}
-
-@media (max-width: 1199px){
-    .vector-wave-section.icon_text_left_right .icon_text_row.odd .cell.text-container .text_box{
-        margin-left: 0;
-    }
-
-    .vector-wave-section.icon_text_left_right .icon_text_row .cell.image-container img{
-        width: auto;
-    }
-
-    #home .home__title{
-        padding-left: 40px !important;
-    }
 }
 
 
@@ -1375,7 +1359,7 @@ margin-bottom: 200px;
             <a href="#about" class="home__scroll-link"><i class="fal fa-arrow-down"></i></a>
         </div>
     </div>
-    <img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/Re-invent-Portrait.png" class="home_img"  alt=""> 
+    <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/Re-invent-Portrait.png" class="home_img"  alt=""> 
     </div>
 </section> 
 
@@ -1383,9 +1367,9 @@ margin-bottom: 200px;
  <!--amazing feeling -->
  <section id="feeling_section"  class="feelingSec">
     <div class="grid-container">
-        <div class="felling-intro text-center" >
+        <div class="felling-intro text-center">
             <div class="intro_headinng">
-                <h2 style="font-size:62px">It’s an amazing feeling.</h2>
+                <h2>It’s an amazing feeling.</h2>
             </div>
     
             <div class="intro_divider">
@@ -1397,11 +1381,12 @@ margin-bottom: 200px;
             </div>
         </div>
 
+
         <div class="v_play_wrap">
             <script src="https://fast.wistia.com/embed/medias/n01lnzd5bw.jsonp" async></script>
             <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
-            <div class="wistia_embed wistia_async_n01lnzd5bw seo=false" style="height:541px;position:relative;width:962px">
-                <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+            <div class="wistia_embed wistia_async_n01lnzd5bw seo=false wistia_embed_custom">
+                <div class="wistia_swatch wistia_swatch_custom">
                     <img src="https://fast.wistia.com/embed/medias/n01lnzd5bw/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
                 </div>
             </div>        
@@ -1411,13 +1396,92 @@ margin-bottom: 200px;
  </section>
 
  <style>
- .v_play_wrap{position:relative; max-width:962px; box-shadow: 0px 0px 50px 24px rgba(0, 0, 0, 0.15); border-radius: 15px; margin:64px auto;overflow:hidden;}
- .v_play_wrap .v_thumb{max-width:100%;}
- .v_play-icon{width:135px; height:135px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto;position:absolute;}
- .v_play-icon svg{width:100%; height:100%;}
- @media (max-width:767px){
-	 .v_play-icon{width:90px; height:90px;}
+
+
+.wistia_embed_custom{
+    height: 533px;
+    position:relative;
+    width: 100%;
+}
+
+.wistia_swatch_custom{
+    height:100%;
+    left:0;
+    opacity:0;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    transition:opacity 200ms;
+    width:100%;
+}
+
+.wistia_embed_custom img.w-css-reset {
+    width: 100% !important;
+    height: 100% !important;
+    border-width: 0 !important;
+}
+
+ .v_play_wrap{
+    position:relative;
+    max-width:962px;
+    width: 100%; 
+    box-shadow: 0px 0px 50px 24px rgba(0, 0, 0, 0.15); 
+    border-radius: 15px;
+    margin:64px auto;
+    overflow:hidden;
+  }
+
+ .v_play_wrap .v_thumb{
+    max-width:100%;
  }
+
+ .v_play-icon{
+    width:135px; 
+    height:135px; 
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    position:absolute;
+}
+
+ .v_play-icon svg{
+    width:100%;
+     height:100%;
+}
+
+ @media (max-width:767px){
+    .v_play-icon{
+        width:90px;
+        height:90px;
+    }
+    .wistia_embed_custom {
+        height: 405px;
+    }
+}
+
+@media (max-width: 640){
+    .wistia_embed_custom {
+        height: 332px;
+    }
+}
+
+@media (max-width: 480px){
+    .wistia_embed_custom {
+        height: 247px;
+    }
+    .icon_text_row.even .cell.text-container .text_box{
+        width: 94%;
+    }
+}
+
+@media (max-width: 375px){
+    .wistia_embed_custom {
+        height: 186px;
+    }
+}
  
  </style>
 
@@ -1427,43 +1491,43 @@ margin-bottom: 200px;
 	<div class="grid-container">
 		<div class="section_row">
 			<div class="section_title_wrap">
-				<h2 class="section_title" style="font-size: 72px; font-family: flexo-black">The moment</h2>
-				<p class="section_intro" style="font-size:36px">you discover the power of customer intelligence.</p>
+				<h2 class="section_title">The moment</h2>
+				<p class="section_intro">you discover the power of customer intelligence.</p>
 			</div>
 			<div class="section_col_wrap">
-				<div class="section_col_thumb profile_thumb" style="background-image:url(https://nvish.wpengine.com/wp-content/uploads/brand-campaign/digonal_lines.svg) ;"><img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/danone-quote-image.jpg"></div>
+				<div class="section_col_thumb profile_thumb" style="background-image:url(<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/digonal_lines.svg) ;"><img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/danone-quote-image.jpg"></div>
 				<div class="section_col_description">
-					<blockquote class="lead_paragraph" style="line-height: 58px; font-family: flexo-medium">For Danone, we don’t want to be telling people what to eat. We learn what people like to eat and how they like to cook on a local level. By using [LiveRamp], addressability and data collaboration make our marketing more relevant and personalized.</blockquote>
+					<blockquote class="lead_paragraph">For Danone, we don’t want to be telling people what to eat. We learn what people like to eat and how they like to cook on a local level. By using [LiveRamp], addressability and data collaboration make our marketing more relevant and personalized.</blockquote>
 					<p class="post_designation">Domitille Doat, Chief Digital Officer, Danone</p>
-					<div class='section_logo'><img src="https://s3-alpha-sig.figma.com/img/6b78/dc20/7b3de13cbb926223fe23e9f8eeadf8c2?Expires=1612742400&Signature=Y56uVsnh1N25TLIDTrhVlbml8emh-aFafwED0W6QLtxZLKlVQWTd0hYAvjxybeUkfZKtqYkygWhLlduOesiHdpeHw5soLDpfD5Vya1FzqE27zd1qO25eqDwLxAb2mp75yuo06EMcV5RYqHj9weXpLHriKQe8US6m8ujKyO1yU5RNrJqHfQdLBoMqryByzKTBSo6lOXfoWSZDJPZdSnHrJDLhflCjgd5kduPhUerrjV-hNbIGWdF5lUkbaTo4mQGr~qQ4gzVOHQUyx0AXEKV9Wf1i~sa9acCCibnx4DbC3J-wCo6UX-3FUDQQPBizl-jJabb3j-w7hp8oPEzsaQCbZA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></div>
+					<div class='section_logo'><img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/danone-logo.png"></div>
 				</div>
 			</div>
 		</div>
 		<div class="section_row">
 			<div class="section_title_wrap">
-				<h2 class="section_title" style="font-size: 72px; font-family: flexo-black">The moment</h2>
-				<p class="section_intro" style="font-size:36px"> you reinvent customer experiences everywhere.</p>
+				<h2 class="section_title">The moment</h2>
+				<p class="section_intro"> you reinvent customer experiences everywhere.</p>
 			</div>
 			<div class="section_col_wrap">
-				<div class="section_col_thumb profile_thumb order1" style="background-image:url(https://nvish.wpengine.com/wp-content/uploads/brand-campaign/circle_lines.svg) ;"><img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/fitbit-quote-image.jpg"></div>
+				<div class="section_col_thumb profile_thumb order1" style="background-image:url(<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/circle_lines.svg) ;"><img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/fitbit-quote-image.jpg"></div>
 				<div class="section_col_description">
-					<blockquote class="lead_paragraph" style="line-height: 58px; font-family: flexo-medium">LiveRamp’s technology allowed us to effectively expand reach against target audiences and drive significant ROI without relying on traditional digital user IDs.</blockquote>
+					<blockquote class="lead_paragraph">LiveRamp’s technology allowed us to effectively expand reach against target audiences and drive significant ROI without relying on traditional digital user IDs.</blockquote>
 					<p class="post_designation">Jay Newell, Senior Director, Media & Customer Acquisition, Fitbit </p>
-					<div class='section_logo'><img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/fitbit-logo.png"></div>
+					<div class='section_logo'><img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/fitbit-logo.png"></div>
 				</div>
 			</div>
 		</div>
         <div class="section_row">
 			<div class="section_title_wrap">
-				<h2 class="section_title" tabindex="0" style="font-size: 72px; font-family: flexo-black">The moment</h2>
-				<p class="section_intro" style="font-size:36px"> you see the real impact of your marketing.</p>
+				<h2 class="section_title" tabindex="0">The moment</h2>
+				<p class="section_intro"> you see the real impact of your marketing.</p>
 			</div>
 			<div class="section_col_wrap">
-				<div class="section_col_thumb profile_thumb" style="background-image:url(https://nvish.wpengine.com/wp-content/uploads/brand-campaign/digonal_lines.svg) ;"><img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/bayer-quote-image.jpg"></div>
+				<div class="section_col_thumb profile_thumb" style="background-image:url(<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/digonal_lines.svg) ;"><img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/bayer-quote-image.jpg"></div>
 				<div class="section_col_description">
-					<blockquote class="lead_paragraph" style="line-height: 58px; font-family: flexo-medium">It’s been an exciting journey working with LiveRamp and understanding how it truly works. Not just on the data activation side, but with measurement and stitching data across platforms.</blockquote>
+					<blockquote class="lead_paragraph">It’s been an exciting journey working with LiveRamp and understanding how it truly works. Not just on the data activation side, but with measurement and stitching data across platforms.</blockquote>
 					<p class="post_designation">Jeff Jarrette, CMO, Bayer Consumer Health, N.A.</p>
-					<div class="section_logo"><img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/bayer-logo.png" style="width:85px; height: auto; max-height: 100%"></div>
+					<div class="section_logo"><img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/bayer-logo.png" ></div>
 				</div>
 			</div>
         </div>
@@ -1473,7 +1537,7 @@ margin-bottom: 200px;
             margin-bottom:80px;
         }
         .section_title_wrap .section_title{
-            font-family: Flexo;
+            font-family: flexo-black;
             font-style: normal;
             font-weight: 900; 
             font-size: 72px;
@@ -1486,12 +1550,12 @@ margin-bottom: 200px;
 
         .section_title_wrap .section_intro{
             font-family: Flexo;
-            font-size: 44px;
-            line-height: 1;
+            font-size: 36px;
+            line-height: 43.2px;
             text-align: center;
             letter-spacing: -1px;
             color: #73C06B;
-            font-weight: 400;
+            font-weight: 500;
         }
 
         .section_col_wrap{
@@ -1524,11 +1588,11 @@ margin-bottom: 200px;
         }
 
         .section_col_wrap .section_col_description .lead_paragraph{
-            font-family: Flexo; 
+            font-family: flexo-medium;
             font-style: normal;
             font-weight: 500; 
             font-size: 44px; 
-            line-height: 50px; 
+            line-height: 58px;
             letter-spacing: -2px;
             background-color: #CA4246;
             background-image: linear-gradient(96.07deg, #003865 2.23%, #00A0D9 101.51%);
@@ -1563,18 +1627,14 @@ margin-bottom: 200px;
         }
 
         @media print,screen and (max-width:39.99em){
-            .section_col_wrap{
-                flex-direction:column;
-                align-items:center;
-            }
             .section_col_wrap .section_col_description .lead_paragraph{
                 font-size: 33px; 
                 line-height:1;
             }
             .section_col_wrap .section_col_thumb{
                 width:100%;
-                max-width:320px;
-                margin-bottom: 66px;
+                max-width: 320px;
+                margin-bottom: 148px;
                 order:1;
             }
             .section_col_wrap .section_col_description{
@@ -1596,7 +1656,7 @@ margin-bottom: 200px;
 			<div class="cell">
 		
 		<div class="intro_headinng">
-			<h2 style="font-size: 62px">There’s nothing you can’t do.</h2>
+			<h2>There’s nothing you can’t do.</h2>
 		</div>
 		
 		<div class="intro_divider">
@@ -1610,10 +1670,9 @@ margin-bottom: 200px;
 			
 	</div>
 
-    <div class="grid-x icon_text_row even" style="padding-top:66px">
-					
+    <div class="grid-x icon_text_row even">			
         <div class="cell image-container">
-            <img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/ultraHD.png" class="lsh-features_image">
+            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/ultraHD.png" class="lsh-features_image">
         </div>
         
         <div class="cell text-container">
@@ -1627,7 +1686,7 @@ margin-bottom: 200px;
                 </div>
                 
                 <div class="text">
-                    <p style="color:#003865">Our neutral safe haven allows you to connect data across more data sources, and partners to build deeper customer intelligence. <a href="" data-wpel-link="internal" style="color:#73C06B; text-decoration: underline;">Check this out.</a></p>
+                    <p>Our neutral safe haven allows you to connect data across more data sources, and partners to build deeper customer intelligence. <a href="" data-wpel-link="internal">Check this out.</a></p>
                 </div>
             </div>
         </div>
@@ -1635,7 +1694,7 @@ margin-bottom: 200px;
     <div class="grid-x icon_text_row odd">
 					
         <div class="cell image-container">
-            <img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/activate.png" class="lsh-features_image">
+            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/activate.png" class="lsh-features_image">
         </div>
         
         <div class="cell text-container">
@@ -1649,7 +1708,7 @@ margin-bottom: 200px;
                 </div>
 
                 <div class="text">
-                    <p style="color:#003865">Our market-leading identity infrastructure integrated with the largest partner network lets you create data-driven customer experiences—without relying on traditional digital user IDs. <a href="" data-wpel-link="internal" style="color:#73C06B; text-decoration: underline;">Here’s what we mean.</a> </p>
+                    <p>Our market-leading identity infrastructure integrated with the largest partner network lets you create data-driven customer experiences—without relying on traditional digital user IDs. <a href="" data-wpel-link="internal">Here’s what we mean.</a> </p>
                 </div>
             </div>
         </div>
@@ -1657,7 +1716,7 @@ margin-bottom: 200px;
     <div class="grid-x icon_text_row even">
 					
         <div class="cell image-container">
-            <img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/budget.png" class="lsh-features_image">
+            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/budget.png" class="lsh-features_image">
         </div>
         
         <div class="cell text-container">
@@ -1671,7 +1730,7 @@ margin-bottom: 200px;
                 </div>
 
                 <div class="text">
-                    <p style="color:#003865">Understand the business impact of every marketing activity with holistic data connectivity. <a href="" data-wpel-link="internal" style="color:#73C06B; text-decoration: underline;">Only LiveRamp does this.</a> </p>
+                    <p>Understand the business impact of every marketing activity with holistic data connectivity. <a href="" data-wpel-link="internal">Only LiveRamp does this.</a> </p>
                 </div>
             </div>
         </div>
@@ -1743,24 +1802,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 								<!-- three row  -->
 					<div class="cell resource-card click-card b-radius box-shadow-over-white white-bkg hover large-4 short " data-url="https://liveramp.com/saying-the-quiet-part-out-loud-podcast/" data-blank="false">
-						<div class="image " style="background-image:url('https://nvish.wpengine.com/wp-content/uploads/brand-campaign/Thumbnail-PodcastSayingtheQuietPartOutLoud.jpg')"></div>
-							<div class="content" data-equalizer-watch="foo" style="height: 227px;">
+						<div class="image " style="background-image:url('<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/Thumbnail-PodcastSayingtheQuietPartOutLoud.jpg')"></div>
+							<div class="content" data-equalizer-watch="foo">
 
 							<div class="term">
 								<div class="grid-x">
 									<div class="cell shrink icon orange" style="margin-right: 0">
-                                        <img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/icon-paper.png" alt="">
+                                        <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/icon-paper.png" alt="">
 									</div>
-									<div class="cell auto orange" style="color:#73C06B; font-size:15px; padding-top:1px">Podcast</div>
+									<div class="cell auto orange">Podcast</div>
 								</div>
 
 							</div>
 
 
-							<div style="margin-bottom: 35px">
-								<h4 class="title primary" style="color: #003865">Podcast: Saying the Quiet Part Out Loud	</h4>
+							<div class="Podcast_cover">
+								<h4 class="title primary">Podcast: Saying the Quiet Part Out Loud	</h4>
 							</div>
-							<div class="dark-slate flexo-bold topic" style="color: #003865; font-size:15px">Learn More</div>
+							<div class="dark-slate flexo-bold topic">Learn More</div>
 														
 							</div>
 						
@@ -1769,47 +1828,47 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 					
 					<!-- three row  -->
 					<div class="cell resource-card click-card b-radius box-shadow-over-white white-bkg hover large-4 short " data-url="https://lp.liveramp.com/2021-guide-advertising-without-cookies-eb-registration.html" data-blank="false">
-						<div class="image " style="background-image:url('https://nvish.wpengine.com/wp-content/uploads/brand-campaign/Thumbnail-E-book2021GuidetoAdvertisingwithoutCookies.jpg')"></div>
-							<div class="content" data-equalizer-watch="foo" style="height: 227px;">
+						<div class="image " style="background-image:url('<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/Thumbnail-E-book2021GuidetoAdvertisingwithoutCookies.jpg')"></div>
+							<div class="content" data-equalizer-watch="foo">
 
 							<div class="term">
 								<div class="grid-x">
 									<div class="cell shrink icon orange" style="margin-right: 0">
-                                        <img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/icon-paper.png" alt="">
+                                        <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/icon-paper.png" alt="">
                                     </div>
-									<div class="cell auto orange" style="color:#73C06B;; font-size:15px; padding-top:1px">Ebook</div>
+									<div class="cell auto orange">Ebook</div>
 								</div>
 
 							</div>
 
 
-							<div style="margin-bottom: 35px">
-								<h4 class="title primary" style="color: #003865">2021 Guide to Advertising without Cookies</h4>
+							<div class="Podcast_cover">
+								<h4 class="title primary">2021 Guide to Advertising without Cookies</h4>
 							</div>
-							<div class="dark-slate flexo-bold topic" style="color: #003865">Learn More</div>
+							<div class="dark-slate flexo-bold topic">Learn More</div>
 														
 							</div>
 					</div>
 					
 					<!-- three row  -->
 					<div class="cell resource-card click-card b-radius box-shadow-over-white white-bkg hover large-4 short " data-url="https://liveramp.com/blog/" data-blank="false">
-						<div class="image " style="background-image:url('https://nvish.wpengine.com/wp-content/uploads/brand-campaign/BLG-Generic_652x400.jpg')"></div>
-							<div class="content" data-equalizer-watch="foo" style="height: 227px;">
+						<div class="image " style="background-image:url('<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/BLG-Generic_652x400.jpg')"></div>
+							<div class="content" data-equalizer-watch="foo">
 
 							<div class="term">
 								<div class="grid-x">
 									<div class="cell shrink icon orange" style="margin-right: 0">
                                         <img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/icon-paper.png" alt="">
                                     </div>
-									<div class="cell auto orange" style="color:#73C06B; font-size:15px; padding-top:1px">Blog</div>
+									<div class="cell auto orange">Blog</div>
 								</div>
 							</div>
 
-							<div style="margin-bottom: 35px">
-								<h4 class="title primary" style="color: #003865">Marketing Innovation Blog </h4>
+							<div class="Podcast_cover">
+								<h4 class="title primary" >Marketing Innovation Blog </h4>
 							</div>
 							
-                            <div class="dark-slate flexo-bold topic" style="color: #003865">Learn More</div>
+                            <div class="dark-slate flexo-bold topic">Learn More</div>
 														
 						</div>
 					</div>
@@ -1835,7 +1894,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
             transition: all .75s ease;
             content: "";
             opacity: 0;
-            background-image: url(https://24graj2x2dk813ys0w26mhu5-wpengine.netdna-ssl.com/wp-content/themes/liveRamp-Template/dist/assets/images/svg/arrow-white.svg);
+            background-image: url(/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/arrow-blue.svg);
             background-size: contain;
             background-repeat: no-repeat;
             height: .8rem;
@@ -1852,12 +1911,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         }
     </style>
 			
-					<div class="flex-container startTheDiscussion" style="padding-bottom:256px">
+					<div class="flex-container startTheDiscussion">
 						<div class="live-discussion-heading">
 							<h1>Start the discussion.</h1>
 						</div>
 						<div class="live-discussion-desc">
-						  <p style="margin-bottom: 39px;"> Talk to a LiveRamp customer data strategist now.</p>
+						  <p> Talk to a LiveRamp customer data strategist now.</p>
 						  <a class="button" target="" href="http://liveramp.com/data-connectivity/" data-wpel-link="internal">Seize the moment</a>
 						</div>
 					</div>	    			
@@ -1887,6 +1946,42 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	}
 
 }
+
+
+#-theme .cell.resource-card .term{
+     min-height: auto;
+    margin-bottom: 23px;
+}
+
+#-theme .cell.resource-card .content{
+    margin-bottom: 0;
+    padding-bottom: 23px;
+}
+
+
+#-theme .cell.resource-card .cell.orange{
+    color: #73C06B;
+    font-size: 16px;
+    padding-top: 1px;
+    line-height: 22.4px;
+}  
+
+#-theme .cell.resource-card .title.primary{
+    color: #003865;
+    font-size: 19px;
+    line-height: 25.4px;
+    margin-bottom: 61px;
+    padding-bottom: 0;
+}
+
+#-theme .cell.resource-card .flexo-bold.topic{
+    color: #003865;
+    font-size: 15px;
+    line-height: 25.5px; 
+    margin-bottom: 0;
+    position: static;
+}
+
 
 #home img.home_img {
     position: absolute;
@@ -1933,13 +2028,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     background-size: cover; 
     overflow: hidden;
 }
+
+@media (max-width: 1199px){
+    .vector-wave-section.icon_text_left_right .icon_text_row.odd .cell.text-container .text_box{
+        margin-left: 0;
+    }
+
+    .vector-wave-section.icon_text_left_right .icon_text_row.even .cell.text-container .text_box{
+        padding-right: 0;
+    }
+
+    #home .home__title{
+        padding-left: 40px !important;
+    }
+
+    /*rajinder*/
+    #home img.home_img{
+        max-width: 524px;
+        right: 0;
+    }
+}
+
 @media (max-width:1024px){
     #home img.home_img {
-        max-width: 400px;
-        right: 25px;
+        max-width: 455px;
     }
     .grid-margin-x.large-up-3>.cell {
         width: calc(33.33333% - 2rem);
+        margin: 0 16px;
+    }
+
+    .home__title{
+        padding: 109px 0 20px;
     }
 }
 
@@ -1982,17 +2102,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 }
 
 @media (max-width:767px){
-
-    .vector-wave-section.icon_text_left_right .icon_text_row .cell.text-container {
-        -webkit-order: 1;
-        -ms-flex-order: 1;
-        order: 1;
+    #home .home__title{
+         padding-left: 0 !important;   
     }
 
-    .vector-wave-section.icon_text_left_right .icon_text_row .cell.image-container {
-        -webkit-order: 2;
-        -ms-flex-order: 2;
-        order: 2;
+    .grid-margin-x.large-up-3>.cell {
+        width: 90%;
+        margin-bottom: 42px;
+        margin-left: auto;
+        margin-right: auto; 
     }
 
     .section_col_wrap .section_col_thumb {
@@ -2008,10 +2126,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     }
 
     .vector-wave-section.icon_text_left_right .icon_text_row .cell.image-container img {
-        width: 75%;
-        margin-bottom: 23px;
+        width: 296px;
+        margin-bottom: 14px;
     }
-
 
     .vector-wave-section.icon_text_left_right .icon_text_row{
         margin-top: 20px;
@@ -2025,8 +2142,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         min-height: 545px;
         align-items: flex-start;
     }
-    #home .home__title .heading{font-size: 62px;}
-    #home .home__title .heading_dec{font-size: 38px;line-height: 40px;}
+    #home .home__title .heading{
+        font-size: 62px;
+        line-height: 71.4px;
+        letter-spacing: -3.36px;
+    }
+    #home .home__title .heading_dec{
+        font-size: 38px;
+        line-height: 41.1px;
+        letter-spacing: -0.9px
+    }
     .felling-intro.text-center {
         padding: 0px;
     }
@@ -2044,18 +2169,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         font-size: 30px;
         text-align: center;
         justify-content: center;
-        padding: 100px 15px;
+        padding-left: 15px;
+        padding-right: 15px;
         margin-top: 0px;
+        padding-bottom: 202px;
+        padding-top: 270px;
     }
-    .flex-container.startTheDiscussion .live-discussion-desc p {
-        font-size: 28px;
-        line-height: 32px;
-    }
+   
     .flex-container.startTheDiscussion .live-discussion-heading h1 {
         font-size: 40px;
         line-height: 52px;
     }
-
 
     .felling-intro .intro_headinng {
         padding: 0px;
@@ -2063,13 +2187,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     }
 
     .felling-intro .intro_headinng h2
-     .section_title_wrap .section_title,
-      .intro_headinng h2,
-       .flex-container .live-discussion-heading h1{
+    .section_title_wrap .section_title,
+    .intro_headinng h2{
         font-size: 47px !important;
-        line-height: 1 !important;
+        line-height: 52px !important;
         letter-spacing: -2.8px !important;
     }
+
+
+    .flex-container .live-discussion-heading h1{
+        font-size: 46.5px;
+        line-height: 51.8px;
+        letter-spacing: -1px;
+    }
+
 
     .felling-intro .intro_divider {
         margin-left: 0;
@@ -2081,17 +2212,25 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         font-size: 21px;
     }
 
-    .section_title_wrap .section_intro {
+    .section_title_wrap .section_intro,
+    .flex-container.startTheDiscussion .live-discussion-desc p {
         font-weight: 500;
-        font-size: 36px;
-        line-height: 32px;
+        font-size: 27px;
+        line-height: 32.4px;
         text-align: left;
         letter-spacing: -1px;
+    }
+
+    .flex-container.startTheDiscussion .live-discussion-desc p{
+        text-align: center; 
+        margin-bottom: 42px; 
     }
 
     .section_title_wrap .section_title {
         font-size: 54px;
         text-align: left;
+        line-height: 64.81px;
+        letter-spacing: -2.2px;
     }
 
     .section_title_wrap {
@@ -2104,19 +2243,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
         line-height: 44.6px;
     }
 
-    .flex-container{
-        margin-top: 160px;
-        padding: 0px 40px;
-    }
-
     .section_col_wrap .section_col_description .post_designation {
         font-size: 21px;
+        line-height: 31px;
     }
 
     .section_col_wrap .section_col_description .section_logo img {
         max-width: 154px;
         max-height: 52px;
-        margin-bottom: 64px;
+        margin-bottom: 93px;
     }
 
     .section_row + .section_row {
@@ -2145,8 +2280,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     }
 
     .feelingSec#feeling_section {
-        margin-top: 43px;
-        margin-bottom: 50px; 
+        margin-top: 50px;
+        margin-bottom: 86px; 
     }
 
     .cell .intro_headinng{
@@ -2156,11 +2291,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     .vector_resource_3_card_image_and_text .intro_headinng h2,
     .vector_resource_3_card_image_and_text .intro_title p{
         width: 100%;
-    }
-
-    .cell .intro_headinng h2 {
-        font-size: 44px;
-        line-height: 1;
     }
 
     .cell .intro_title p{
@@ -2176,17 +2306,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     .grid-container.add-padding{
         padding: 0 1rem 0;
     }
-}
-
-@media (max-width: 640px){
-    .grid-margin-x.large-up-3>.cell{
-        width: 96%;
-        margin-bottom: 42px;
+    .vector-wave-section.icon_text_left_right .icon_text_row .cell.text-container {
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
     }
 
-    #home img.home_img{
-        right: 0;
-        max-width: 339px;
+    .vector-wave-section.icon_text_left_right .icon_text_row .cell.image-container {
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+    }
+
+    .grid-margin-x.large-up-3>.cell{
+        width: 96%;
+        margin-bottom: 48px;
     }
 
     .home:before{
@@ -2200,20 +2334,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     .vector-wave-section.icon_text_left_right .icon_text_row .cell.image-container,
     .vector-wave-section.icon_text_left_right .icon_text_row .cell.text-container,
     .vector-wave-section.icon_text_left_right .icon_text_row.even .cell.text-container .text_box,
-    .section_col_wrap .section_col_description{
+    .section_col_wrap .section_col_description,
+    .vector-wave-section.icon_text_left_right .icon_text_row.odd .cell.text-container .text_box{
         width: 100%;
         padding: 0;
     }
 
+    .section_col_wrap{
+        flex-direction:column;
+        align-items:center;
+    }
 }
-
-
 
 @media (max-width:480px){
     #home img.home_img {
-        max-width: 300px;
+        max-width: 339px;
+        right: -62px;
     }
-    #home .home__title .heading{width: auto;}
+
+    #home .home__title .heading{
+        width: auto;
+    }
+
+    .bg-container_btm .resource_3_card_image_and_text .resource-card .content{
+        margin-bottom: 0; 
+    }
 }
 
 /* media Query play section  */

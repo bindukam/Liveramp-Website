@@ -1,0 +1,17 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #003865;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <title>arrow-white</title>
+  <g id="Layer_2-2" data-name="Layer 2-2">
+    <path id="Stroke_3" data-name="Stroke 3" class="cls-1" d="M1,1,5,5,1,9"/>
+  </g>
+</svg>
