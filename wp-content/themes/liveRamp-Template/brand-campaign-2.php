@@ -1,4 +1,4 @@
-<?php /* Template Name: Brand Campaign */ ?>
+<?php /* Template Name: Brand Campaignss */ ?>
 
 <?php get_header(); ?>
 <style>	
@@ -7,7 +7,7 @@ html{
 }    
 
 body {
-  font-family: 'Flexo';
+  font-family: 'Flexo', sans-serif;
 }
 
 h2:focus{
@@ -307,7 +307,7 @@ section.change-world-section{
 .change-world-section h4 {
     line-height: 1.375em;
     font-weight: 700;
-    font-family: 'Flexo Bold', flexo, sans-serif;
+    font-family: 'Flexo Bold',sans-serif;
 }
 
 .change-world-section .resource_3_card_image_and_text .resource-card .content .topic {
@@ -317,7 +317,7 @@ section.change-world-section{
 }
 
 .change-world-section .flexo-bold {
-    font-family: 'Flexo Bold', flexo, sans-serif;
+    font-family: 'Flexo Bold',sans-serif;
     font-weight: 700;
 }
 
@@ -482,7 +482,7 @@ section.change-world-section{
 }
 
 .flex-container .live-discussion-desc p{
-    font-family: flexo, sans-serif;
+    font-family: Flexo;
     font-style: normal;
     font-size: 36px;
     color: #fff;
@@ -492,7 +492,7 @@ section.change-world-section{
 }
 
 .flex-container .live-discussion-heading h1 {
-    font-family: flexo, sans-serif;
+    font-family: Flexo;
     font-style: normal;
     font-weight: bold;
     font-size: 62px;
@@ -524,7 +524,7 @@ section.change-world-section{
 	line-height: 1;
 	text-align: center;
 	cursor: pointer;
-	font-family: 'Flexo Bold', flexo, sans-serif;
+	font-family: 'Flexo Bold';
 	transition: all 1s ease;
 	background-color: #FAE164;
 	color: #003865; 
@@ -652,7 +652,7 @@ section.change-world-section{
 	font-weight: 900;
 	font-size: 115px;
 	letter-spacing: -6px;
-    font-family: 'flexo black', flexo, sans-serif;
+    font-family: "'flexo black'";
 }
   
 
@@ -685,11 +685,6 @@ section.change-world-section{
 
 .home__scroll-link{
     color: #fff;
-    cursor: default;
-}
-.home__scroll-link:hover {
-    color: #fff;
-    cursor: default;
 }
 
 .bd-grid {
@@ -1040,8 +1035,6 @@ section.change-world-section{
 .vector-wave-section.icon_text_left_right .icon_text_row .cell.text-container .text p > a {
     color: #73C06B;
     text-decoration: underline;
-    font-weight:600;
-
 }
 
 .vector-wave-section p {
@@ -1076,24 +1069,23 @@ section.change-world-section{
 }
 
 
-@media print, screen and (min-width: 64.0625em) {
-    .vector-wave-section .grid-container {
-        padding-right: 1rem;
-        padding-left: 1rem;
-    }
+@media print, screen and (min-width: 64.0625em)
+.vector-wave-section .grid-container {
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 @media print, screen and (min-width: 40em){
     .vector-wave-section .grid-container {
-        padding-right: .75rem;
-        padding-left: .75rem;
-    }
+    padding-right: .75rem;
+    padding-left: .75rem;
+}
 }
 
 @media print, screen and (min-width: 40em){
     .h2, h2 {
     font-size: 2.25rem;
-    }
+}
 }
 
 #feeling_section{
@@ -1241,7 +1233,7 @@ margin-bottom: 200px;
 }
 
 .moment-container .card-main .card-main-heading {
-    font-family: flexo, sans-serif;
+    font-family: Flexo;
     font-style: normal;
     font-weight: 900;
     font-size: 72px;
@@ -1252,7 +1244,7 @@ margin-bottom: 200px;
 }
 
 .moment-container .card-main .card-main-desc{
-    font-family: flexo, sans-serif;
+    font-family: Flexo;
     font-style: normal;
     font-weight: 900;
     font-size: 38px;
@@ -1267,7 +1259,7 @@ margin-bottom: 200px;
 }
 
 .moment-container .card-desc p.first{
-    font-family: flexo, sans-serif;
+    font-family: Flexo;
     font-style: normal;
     font-weight: 500;
     font-size: 44px;
@@ -1283,7 +1275,7 @@ margin-bottom: 200px;
 }
 
 .moment-container .card-desc p.second{
-    font-family: flexo, sans-serif;
+    font-family: Flexo;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
@@ -1361,10 +1353,10 @@ margin-bottom: 200px;
 <section class="home" id="home">
     <div class="home__container bd-grid">
     <div class="home__title">
-    <h1 class="heading">The moment</h1>
+    <h1 class="heading" style="font-family: 'flexo black'">The moment</h1>
     <h3 class="heading_dec">you unlocked the real value of connected data.</h3>
         <div class="home__scroll">
-            <a class="home__scroll-link"><i class="fal fa-arrow-down"></i></a>
+            <a class="home__scroll-link" style="cursor: default"><i class="fal fa-arrow-down"></i></a>
         </div>
     </div>
     <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/Re-invent-Portrait.png" class="home_img"  alt=""> 
@@ -1499,7 +1491,7 @@ margin-bottom: 200px;
 	<div class="grid-container">
 		<div class="section_row">
 			<div class="section_title_wrap">
-				<h2 class="section_title">The moment</h2>
+				<h2 class="section_title" style="font-family: 'flexo black'">The moment</h2>
 				<p class="section_intro">you discover the power of customer intelligence.</p>
 			</div>
 			<div class="section_col_wrap">
@@ -1513,7 +1505,7 @@ margin-bottom: 200px;
 		</div>
 		<div class="section_row">
 			<div class="section_title_wrap">
-				<h2 class="section_title">The moment</h2>
+				<h2 class="section_title" style="font-family: 'flexo black'">The moment</h2>
 				<p class="section_intro"> you reinvent customer experiences everywhere.</p>
 			</div>
 			<div class="section_col_wrap">
@@ -1527,7 +1519,7 @@ margin-bottom: 200px;
 		</div>
         <div class="section_row">
 			<div class="section_title_wrap">
-				<h2 class="section_title" tabindex="0">The moment</h2>
+				<h2 class="section_title" tabindex="0" style="font-family: 'flexo black'">The moment</h2>
 				<p class="section_intro"> you see the real impact of your marketing.</p>
 			</div>
 			<div class="section_col_wrap">
@@ -1557,7 +1549,7 @@ margin-bottom: 200px;
         }
 
         .section_title_wrap .section_intro{
-            font-family: 'flexo medium', Flexo, sans-serif;
+            font-family: Flexo;
             font-size: 36px;
             line-height: 43.2px;
             text-align: center;
@@ -1596,7 +1588,7 @@ margin-bottom: 200px;
         }
 
         .section_col_wrap .section_col_description .lead_paragraph{
-            font-family: 'flexo medium', flexo, sans-serif;
+            font-family: 'flexo medium';
             font-style: normal;
             font-weight: 500; 
             font-size: 44px; 
@@ -1612,7 +1604,7 @@ margin-bottom: 200px;
         }
 
         .section_col_wrap .section_col_description .post_designation{
-            font-family: flexo, sans-serif;
+            font-family: Flexo; 
             font-style: normal;
             font-weight: 500; 
             font-size: 24px; 
@@ -1887,7 +1879,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
             line-height: 1;
             text-align: center;
             cursor: pointer;
-            font-family: 'Flexo Bold', flexo, sans-serif;
+            font-family: 'Flexo Bold';
             transition: all 1s ease;
             background-color: #FAE164;
             color: #003865; 
@@ -2373,13 +2365,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 
 .section_title_wrap .section_title {
-    background-image:linear-gradient(95.47deg, #001365 -0.52%, #00A0D9 57%, #80C468 87.12%);
+background-image:linear-gradient(95.47deg
+, #001365 -0.52%, #00A0D9 57%, #80C468 87.12%);
     background-size: 100%;
     background-repeat: repeat;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 blockquote {
   text-indent: -0.45em;
   border-left: none;
@@ -2392,10 +2384,10 @@ blockquote {
 }
 
 @supports ( hanging-punctuation: first) {
-    blockquote {
-        text-indent: 0;
-        hanging-punctuation: first;
-    }
+  blockquote {
+    text-indent: 0;
+    hanging-punctuation: first;
+  }
 }
 
 blockquote::before {
