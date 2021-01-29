@@ -261,6 +261,7 @@ section.change-world-section{
     position: relative;
     margin-bottom: 2rem;
 }
+
 .change-world-section .resource_3_card_image_and_text .resource-card .content .term {
     margin-bottom: 1rem;
     min-height: 30px;
@@ -269,7 +270,7 @@ section.change-world-section{
 .change-world-section .resource_3_card_image_and_text .resource-card .content .term .icon {
     width: 22px;
     height: 22px;
-    margin-right: .5rem;
+    margin-right: 0;
 }
 
 .change-world-section .grid-x>.shrink {
@@ -517,7 +518,7 @@ section.change-world-section{
 	
 	
 	 vertical-align: middle;
-	font-size: .9rem;
+	font-size: 16px;
 	line-height: 1;
 	text-align: center;
 	cursor: pointer;
@@ -761,7 +762,7 @@ width: 400px;
 /*=====Vector-wave-section =====*/
 .vector-wave-section {
     padding: 1.825rem 1rem 2rem;
-    margin-bottom: 59px;
+    margin-bottom: 113px;
 }
 
 .vector-wave-section .grid-container {
@@ -918,7 +919,8 @@ width: 400px;
 
 .vector-wave-section .icon_text_left_right .icon_text_row .cell.image-container {
     display: block;
-    width: 50%;
+    width: 466px;
+    padding:0;
 }
 
 .vector-wave-section .icon_text_left_right .icon_text_row.even .image-container {
@@ -933,7 +935,7 @@ width: 400px;
 }
 
 .vector-wave-section.icon_text_left_right .icon_text_row .cell.image-container img {
-    width: 90%;
+   width: 466px;
 }
 
 .vector-wave-section img {
@@ -950,8 +952,8 @@ width: 400px;
 
 
 .vector-wave-section.icon_text_left_right .icon_text_row .cell.image-container {
-    max-width: 489px;
-    width: 50%;
+    width: 466px;
+    padding:0;
 }
 
 .vector-wave-section.icon_text_left_right .icon_text_row .cell.text-container {
@@ -961,10 +963,13 @@ width: 400px;
 
 .vector-wave-section.icon_text_left_right .icon_text_row.odd .cell.image-container{
     text-align: right;
+    margin-left:100px;
+
 } 
 
 .vector-wave-section.icon_text_left_right .icon_text_row.even .cell.image-container{
     text-align: left;
+    margin-right:100px;
 } 
 
 .vector-wave-section.icon_text_left_right .icon_text_row.odd .cell.text-container .text_box{
@@ -1194,7 +1199,7 @@ width: 400px;
 
 #the_moment{
     display:block;
-    padding: 90px 1rem 140px;
+    padding: 90px 1rem 283px;
     background-color: #EAF4F9;
 }
 
@@ -1364,15 +1369,13 @@ margin-bottom: 200px;
 <section class="home" id="home">
     <div class="home__container bd-grid">
     <div class="home__title">
-    <h1 class="heading">The moment</h1>
+    <h1 class="heading" style="font-family: flexo-black">The moment</h1>
     <h3 class="heading_dec">you unlocked the real value of connected data.</h3>
         <div class="home__scroll">
             <a href="#about" class="home__scroll-link"><i class="fal fa-arrow-down"></i></a>
         </div>
     </div>
-				
-    <img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/banner-woman-1.png" class="home_img"  alt=""> 
-    <!-- <img src="https://s3-alpha-sig.figma.com/img/dbcd/c323/56b2d58a5990c336ea4a76f0f47290b0?Expires=1612742400&Signature=bdi16ADNSO8jiMZrQNrQoSrzzjbkabM6SFRb9aKFLqKMQkcmJaaLc5rdPNdCAFWIZAWkmWdrzhMswlNc1pd3oQaDFWrHvmNRqSQZkLody34GF-YBW~NfaLg3i8Poqj9buEhUKHWNeLoF8hCI~nBDAAUubIdVMrtastuFUM5GNHJOFD~3W56WPMOLcmgcwIRUgQHQjW~-jTiAxbqW9rnnej-i51RFSwp~dHju2ihF~aR8vuwSj1OnEHF6AIa6NGMCRFUCGkE0L2SauD0JAbo3lPWc7FY73N0aVaz~5aIZQbkoQBWqhlzKDVz1LLPtSafFEGhNJ~fSgifwrV5ds8M0iw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="" class="home__img"> -->
+    <img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/Re-invent-Portrait.png" class="home_img"  alt=""> 
     </div>
 </section> 
 
@@ -1382,7 +1385,7 @@ margin-bottom: 200px;
     <div class="grid-container">
         <div class="felling-intro text-center" >
             <div class="intro_headinng">
-                <h2>It’s an amazing feeling.</h2>
+                <h2 style="font-size:62px">It’s an amazing feeling.</h2>
             </div>
     
             <div class="intro_divider">
@@ -1395,18 +1398,20 @@ margin-bottom: 200px;
         </div>
 
         <div class="v_play_wrap">
-			<script src="//fast.wistia.com/embed/medias/n01lnzd5bw.jsonp" async></script>
-			<script src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-			<div class="wistia_embed wistia_async_n01lnzd5bw" style="height:349px;width:620px">&nbsp;</div>
-            <!--<img class="v_thumb" src="https://s3-alpha-sig.figma.com/img/e181/3932/665642176a45139d2693d0d8120aefb9?Expires=1612742400&Signature=A0J8XDAPNHhH5EuDfxTt4BbeDPArogGuhs5TLPNDk99y6TN4XGPQRNb1QXedWcpmI3EINKfWx1j-l2GLdqBRau3jgWXkOacR2~wiQVeTTNHpMyFvbbMlw-cRHF4gIPBJzA2F1OFwc9iwLh-m0PNNg6SRHCts18vihHrL3gNj7qhTkm~C0dr5vmteHHhS5U~wC8TsvxXpmoCMMHK6gX8XHwQPRvMt4CN3WDyv-bmO4KDjJBmngl-6qQEP2MjbIMmXuzesOh~q384FiDguJlu5rCPxzGNS9Tbesfj~s6uaQ32Lw5nD-FFleFa60PPkGSJpd1gfEbwUODqTSBjwEDi2tg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA">
-            <a href="https://liveramp.wistia.com/medias/n01lnzd5bw" class="v_play-icon" target="_blank"><img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/play-button.svg"></a>-->
+            <script src="https://fast.wistia.com/embed/medias/n01lnzd5bw.jsonp" async></script>
+            <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
+            <div class="wistia_embed wistia_async_n01lnzd5bw seo=false" style="height:541px;position:relative;width:962px">
+                <div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;">
+                    <img src="https://fast.wistia.com/embed/medias/n01lnzd5bw/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" />
+                </div>
+            </div>        
         </div>
 
     </div>
  </section>
 
  <style>
- .v_play_wrap{position:relative; max-width:965px; box-shadow: 0px 0px 50px 24px rgba(0, 0, 0, 0.15); border-radius: 15px; margin:64px auto;overflow:hidden;}
+ .v_play_wrap{position:relative; max-width:962px; box-shadow: 0px 0px 50px 24px rgba(0, 0, 0, 0.15); border-radius: 15px; margin:64px auto;overflow:hidden;}
  .v_play_wrap .v_thumb{max-width:100%;}
  .v_play-icon{width:135px; height:135px; position:absolute; left:0; right:0; top:0; bottom:0; margin:auto;position:absolute;}
  .v_play-icon svg{width:100%; height:100%;}
@@ -1422,13 +1427,13 @@ margin-bottom: 200px;
 	<div class="grid-container">
 		<div class="section_row">
 			<div class="section_title_wrap">
-				<h2 class="section_title">The moment</h2>
-				<p class="section_intro"> you discover the power of customer intelligence.</p>
+				<h2 class="section_title" style="font-size: 72px; font-family: flexo-black">The moment</h2>
+				<p class="section_intro" style="font-size:36px">you discover the power of customer intelligence.</p>
 			</div>
 			<div class="section_col_wrap">
-				<div class="section_col_thumb profile_thumb" style="background-image:url(https://nvish.wpengine.com/wp-content/uploads/brand-campaign/digonal_lines.svg) ;"><img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/sq-dummy.png"></div>
+				<div class="section_col_thumb profile_thumb" style="background-image:url(https://nvish.wpengine.com/wp-content/uploads/brand-campaign/digonal_lines.svg) ;"><img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/danone-quote-image.jpg"></div>
 				<div class="section_col_description">
-					<blockquote class="lead_paragraph">For Danone, we don’t want to be telling people what to eat. We learn what people like to eat and how they like to cook on a local level. By using [LiveRamp], addressability and data collaboration make our marketing more relevant and personalized.</blockquote>
+					<blockquote class="lead_paragraph" style="line-height: 58px; font-family: flexo-medium">For Danone, we don’t want to be telling people what to eat. We learn what people like to eat and how they like to cook on a local level. By using [LiveRamp], addressability and data collaboration make our marketing more relevant and personalized.</blockquote>
 					<p class="post_designation">Domitille Doat, Chief Digital Officer, Danone</p>
 					<div class='section_logo'><img src="https://s3-alpha-sig.figma.com/img/6b78/dc20/7b3de13cbb926223fe23e9f8eeadf8c2?Expires=1612742400&Signature=Y56uVsnh1N25TLIDTrhVlbml8emh-aFafwED0W6QLtxZLKlVQWTd0hYAvjxybeUkfZKtqYkygWhLlduOesiHdpeHw5soLDpfD5Vya1FzqE27zd1qO25eqDwLxAb2mp75yuo06EMcV5RYqHj9weXpLHriKQe8US6m8ujKyO1yU5RNrJqHfQdLBoMqryByzKTBSo6lOXfoWSZDJPZdSnHrJDLhflCjgd5kduPhUerrjV-hNbIGWdF5lUkbaTo4mQGr~qQ4gzVOHQUyx0AXEKV9Wf1i~sa9acCCibnx4DbC3J-wCo6UX-3FUDQQPBizl-jJabb3j-w7hp8oPEzsaQCbZA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"></div>
 				</div>
@@ -1436,13 +1441,13 @@ margin-bottom: 200px;
 		</div>
 		<div class="section_row">
 			<div class="section_title_wrap">
-				<h2 class="section_title">The moment</h2>
-				<p class="section_intro"> You reinvent customer experiences everywhere.</p>
+				<h2 class="section_title" style="font-size: 72px; font-family: flexo-black">The moment</h2>
+				<p class="section_intro" style="font-size:36px"> you reinvent customer experiences everywhere.</p>
 			</div>
 			<div class="section_col_wrap">
-				<div class="section_col_thumb profile_thumb order1" style="background-image:url(https://nvish.wpengine.com/wp-content/uploads/brand-campaign/circle_lines.svg) ;"><img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/fitbit.png"></div>
+				<div class="section_col_thumb profile_thumb order1" style="background-image:url(https://nvish.wpengine.com/wp-content/uploads/brand-campaign/circle_lines.svg) ;"><img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/fitbit-quote-image.jpg"></div>
 				<div class="section_col_description">
-					<blockquote class="lead_paragraph">LiveRamp’s technology allowed us to effectively expand reach against target audiences and drive significant ROI without relying on traditional digital user IDs.</blockquote>
+					<blockquote class="lead_paragraph" style="line-height: 58px; font-family: flexo-medium">LiveRamp’s technology allowed us to effectively expand reach against target audiences and drive significant ROI without relying on traditional digital user IDs.</blockquote>
 					<p class="post_designation">Jay Newell, Senior Director, Media & Customer Acquisition, Fitbit </p>
 					<div class='section_logo'><img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/fitbit-logo.png"></div>
 				</div>
@@ -1450,18 +1455,18 @@ margin-bottom: 200px;
 		</div>
         <div class="section_row">
 			<div class="section_title_wrap">
-				<h2 class="section_title" tabindex="0">The moment</h2>
-				<p class="section_intro"> you see the real impact of your marketing.</p>
+				<h2 class="section_title" tabindex="0" style="font-size: 72px; font-family: flexo-black">The moment</h2>
+				<p class="section_intro" style="font-size:36px"> you see the real impact of your marketing.</p>
 			</div>
 			<div class="section_col_wrap">
-				<div class="section_col_thumb profile_thumb" style="background-image:url(https://nvish.wpengine.com/wp-content/uploads/brand-campaign/digonal_lines.svg) ;"><img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/bayer.png"></div>
+				<div class="section_col_thumb profile_thumb" style="background-image:url(https://nvish.wpengine.com/wp-content/uploads/brand-campaign/digonal_lines.svg) ;"><img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/bayer-quote-image.jpg"></div>
 				<div class="section_col_description">
-					<blockquote class="lead_paragraph">It’s been an exciting journey working with LiveRamp and understanding how it truly works. Not just on the data activation side, but with measurement and stitching data across platforms.</blockquote>
+					<blockquote class="lead_paragraph" style="line-height: 58px; font-family: flexo-medium">It’s been an exciting journey working with LiveRamp and understanding how it truly works. Not just on the data activation side, but with measurement and stitching data across platforms.</blockquote>
 					<p class="post_designation">Jeff Jarrette, CMO, Bayer Consumer Health, N.A.</p>
-					<div class="section_logo"><img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/bayer-logo.png"></div>
+					<div class="section_logo"><img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/bayer-logo.png" style="width:85px; height: auto; max-height: 100%"></div>
 				</div>
 			</div>
-    </div>
+        </div>
 
     <style>
         .section_title_wrap{
@@ -1591,7 +1596,7 @@ margin-bottom: 200px;
 			<div class="cell">
 		
 		<div class="intro_headinng">
-			<h2>There’s nothing you can’t do.</h2>
+			<h2 style="font-size: 62px">There’s nothing you can’t do.</h2>
 		</div>
 		
 		<div class="intro_divider">
@@ -1605,7 +1610,7 @@ margin-bottom: 200px;
 			
 	</div>
 
-    <div class="grid-x icon_text_row even">
+    <div class="grid-x icon_text_row even" style="padding-top:66px">
 					
         <div class="cell image-container">
             <img src="https://nvish.wpengine.com/wp-content/uploads/brand-campaign/ultraHD.png" class="lsh-features_image">
@@ -1622,7 +1627,7 @@ margin-bottom: 200px;
                 </div>
                 
                 <div class="text">
-                    <p>Our neutral safe haven allows you to connect data across more data sources, and partners to build deeper customer intelligence.<a href="" data-wpel-link="internal">Check this out.</a></p>
+                    <p style="color:#003865">Our neutral safe haven allows you to connect data across more data sources, and partners to build deeper customer intelligence. <a href="" data-wpel-link="internal" style="color:#73C06B; text-decoration: underline;">Check this out.</a></p>
                 </div>
             </div>
         </div>
@@ -1644,7 +1649,7 @@ margin-bottom: 200px;
                 </div>
 
                 <div class="text">
-                    <p>Our market-leading identity infrastructure integrated with the largest partner network lets you create data-driven customer experiences—without relying on traditional digital user IDs. <a href="" data-wpel-link="internal">Here’s what we mean.</a> </p>
+                    <p style="color:#003865">Our market-leading identity infrastructure integrated with the largest partner network lets you create data-driven customer experiences—without relying on traditional digital user IDs. <a href="" data-wpel-link="internal" style="color:#73C06B; text-decoration: underline;">Here’s what we mean.</a> </p>
                 </div>
             </div>
         </div>
@@ -1666,7 +1671,7 @@ margin-bottom: 200px;
                 </div>
 
                 <div class="text">
-                    <p>Understand the business impact of every marketing activity with holistic data connectivity.<a href="" data-wpel-link="internal">Only LiveRamp does this.</a> </p>
+                    <p style="color:#003865">Understand the business impact of every marketing activity with holistic data connectivity. <a href="" data-wpel-link="internal" style="color:#73C06B; text-decoration: underline;">Only LiveRamp does this.</a> </p>
                 </div>
             </div>
         </div>
@@ -1698,7 +1703,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     background-repeat: no-repeat; 
     background-size: cover; 
     overflow: hidden;
-    margin-top: 20px
+    margin-top: 39px
 }
 .no_spacer{margin:0;}
 @media screen (min-width:40em) and (max-width:64.0625em){
@@ -1724,7 +1729,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
             </div>
             
             <div class="intro_title dark-blue">
-                <p>The future of transforming customer data has never been so exciting. We can’t wait to show you the possibilities. Dive in:</p>
+                <p style="line-height: 31px">The future of transforming customer data has never been so exciting. We can’t wait to show you the possibilities. Dive in:</p>
             </div>
 
         </div>
@@ -1743,34 +1748,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 							<div class="term">
 								<div class="grid-x">
-									<div class="cell shrink icon orange">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 192 192" style="enable-background:new 0 0 192 192;" xml:space="preserve" id="svg-replaced-51" class="style-svg replaced-svg svg-replaced-51">
-										<style type="text/css">
-											.st0{fill:none;stroke:#55555A;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
-											.st1{fill:none;stroke:#EC7F00;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
-										</style>
-										<g id="c2">
-											<title>Document</title>
-											<path class="st0" d="M109,11H42.7c-2,0-3.7,1.6-3.7,3.7c0,0,0,0,0,0v150.6c0,2,1.6,3.7,3.6,3.7c0,0,0,0,0,0h106.5   c2,0,3.7-1.6,3.7-3.7c0,0,0,0,0,0V70.1"></path>
-											<polygon class="st0" points="152.9,55.1 108.9,55.1 108.9,11  "></polygon>
-										</g>
-										<g id="c1">
-											<line class="st1" x1="61.1" y1="91.8" x2="130.9" y2="91.8"></line>
-											<line class="st1" x1="61.1" y1="112" x2="130.9" y2="112"></line>
-											<line class="st1" x1="61.1" y1="132.2" x2="130.9" y2="132.2"></line>
-										</g>
-										</svg>								
+									<div class="cell shrink icon orange" style="margin-right: 0">
+                                        <img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/icon-paper.png" alt="">
 									</div>
-									<div class="cell auto orange">Podcast</div>
+									<div class="cell auto orange" style="color:#73C06B; font-size:15px; padding-top:1px">Podcast</div>
 								</div>
 
 							</div>
 
 
-							<div>
-								<h4 class="title primary">Podcast: Saying the Quiet Part Out Loud	</h4>
+							<div style="margin-bottom: 35px">
+								<h4 class="title primary" style="color: #003865">Podcast: Saying the Quiet Part Out Loud	</h4>
 							</div>
-							<div class="dark-slate flexo-bold topic">Learn More</div>
+							<div class="dark-slate flexo-bold topic" style="color: #003865; font-size:15px">Learn More</div>
 														
 							</div>
 						
@@ -1784,33 +1774,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 							<div class="term">
 								<div class="grid-x">
-									<div class="cell shrink icon orange">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 192 192" style="enable-background:new 0 0 192 192;" xml:space="preserve" id="svg-replaced-51" class="style-svg replaced-svg svg-replaced-51">
-										<style type="text/css">
-											.st0{fill:none;stroke:#55555A;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
-											.st1{fill:none;stroke:#EC7F00;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
-										</style>
-										<g id="c2">
-											<title>Document</title>
-											<path class="st0" d="M109,11H42.7c-2,0-3.7,1.6-3.7,3.7c0,0,0,0,0,0v150.6c0,2,1.6,3.7,3.6,3.7c0,0,0,0,0,0h106.5   c2,0,3.7-1.6,3.7-3.7c0,0,0,0,0,0V70.1"></path>
-											<polygon class="st0" points="152.9,55.1 108.9,55.1 108.9,11  "></polygon>
-										</g>
-										<g id="c1">
-											<line class="st1" x1="61.1" y1="91.8" x2="130.9" y2="91.8"></line>
-											<line class="st1" x1="61.1" y1="112" x2="130.9" y2="112"></line>
-											<line class="st1" x1="61.1" y1="132.2" x2="130.9" y2="132.2"></line>
-										</g>
-										</svg>									</div>
-									<div class="cell auto orange">Ebook</div>
+									<div class="cell shrink icon orange" style="margin-right: 0">
+                                        <img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/icon-paper.png" alt="">
+                                    </div>
+									<div class="cell auto orange" style="color:#73C06B;; font-size:15px; padding-top:1px">Ebook</div>
 								</div>
 
 							</div>
 
 
-							<div>
-								<h4 class="title primary">2021 Guide to Advertising without Cookies</h4>
+							<div style="margin-bottom: 35px">
+								<h4 class="title primary" style="color: #003865">2021 Guide to Advertising without Cookies</h4>
 							</div>
-							<div class="dark-slate flexo-bold topic">Learn More</div>
+							<div class="dark-slate flexo-bold topic" style="color: #003865">Learn More</div>
 														
 							</div>
 					</div>
@@ -1822,45 +1798,67 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
 							<div class="term">
 								<div class="grid-x">
-									<div class="cell shrink icon orange">
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 192 192" style="enable-background:new 0 0 192 192;" xml:space="preserve" id="svg-replaced-51" class="style-svg replaced-svg svg-replaced-51">
-										<style type="text/css">
-											.st0{fill:none;stroke:#55555A;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
-											.st1{fill:none;stroke:#EC7F00;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;}
-										</style>
-										<g id="c2">
-											<title>Document</title>
-											<path class="st0" d="M109,11H42.7c-2,0-3.7,1.6-3.7,3.7c0,0,0,0,0,0v150.6c0,2,1.6,3.7,3.6,3.7c0,0,0,0,0,0h106.5   c2,0,3.7-1.6,3.7-3.7c0,0,0,0,0,0V70.1"></path>
-											<polygon class="st0" points="152.9,55.1 108.9,55.1 108.9,11  "></polygon>
-										</g>
-										<g id="c1">
-											<line class="st1" x1="61.1" y1="91.8" x2="130.9" y2="91.8"></line>
-											<line class="st1" x1="61.1" y1="112" x2="130.9" y2="112"></line>
-											<line class="st1" x1="61.1" y1="132.2" x2="130.9" y2="132.2"></line>
-										</g>
-										</svg>									</div>
-									<div class="cell auto orange">Blog</div>
+									<div class="cell shrink icon orange" style="margin-right: 0">
+                                        <img src="/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/icon-paper.png" alt="">
+                                    </div>
+									<div class="cell auto orange" style="color:#73C06B; font-size:15px; padding-top:1px">Blog</div>
 								</div>
-
 							</div>
 
-
-							<div>
-								<h4 class="title primary">Marketing Innovation Blog </h4>
+							<div style="margin-bottom: 35px">
+								<h4 class="title primary" style="color: #003865">Marketing Innovation Blog </h4>
 							</div>
-							<div class="dark-slate flexo-bold topic">Learn More</div>
+							
+                            <div class="dark-slate flexo-bold topic" style="color: #003865">Learn More</div>
 														
-							</div>
+						</div>
 					</div>
+ <style>
+        .button {
+            vertical-align: middle;
+            font-size: 16px;
+            line-height: 1;
+            text-align: center;
+            cursor: pointer;
+            font-family: 'Flexo Bold';
+            transition: all 1s ease;
+            background-color: #FAE164;
+            color: #003865; 
+            display: inline-flex;
+            align-items: center;
+            width:221;
+            height: 41px;
+            border-radius: 32px;
+            border:0;
+        }
+        .button:after {
+            transition: all .75s ease;
+            content: "";
+            opacity: 0;
+            background-image: url(https://24graj2x2dk813ys0w26mhu5-wpengine.netdna-ssl.com/wp-content/themes/liveRamp-Template/dist/assets/images/svg/arrow-white.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: .8rem;
+            width: .8rem;
+            margin-right: -.2em;
+            margin-left: .2em;
+            display: inline-block;
+        }
 
+        a.button:hover {
+            text-decoration: none;
+            background-color: #FAE164;
+            color: #003865;
+        }
+    </style>
 			
-					<div class="flex-container startTheDiscussion">
+					<div class="flex-container startTheDiscussion" style="padding-bottom:256px">
 						<div class="live-discussion-heading">
 							<h1>Start the discussion.</h1>
 						</div>
 						<div class="live-discussion-desc">
-						<p> Talk to a LiveRamp customer data strategist now.</p>
-						<button class=" button5">Seize the moment</button>
+						  <p style="margin-bottom: 39px;"> Talk to a LiveRamp customer data strategist now.</p>
+						  <a class="button" target="" href="http://liveramp.com/data-connectivity/" data-wpel-link="internal">Seize the moment</a>
 						</div>
 					</div>	    			
 		</div>
@@ -1894,7 +1892,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     position: absolute;
     right: 54px;
     bottom: 0px;
-    max-width: 435px;
+    max-width: 598px;
     width: 100%;
 }
 
@@ -1903,12 +1901,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     justify-content: center;
     height: 565px;
     align-items: flex-start;
-    padding-left: 80px;
 }
 
 #home .home__scroll {
     align-self: flex-start;
-    padding: 50px 0 2rem;
+    padding: 50px 0 2rem 15px;
     position: absolute;
     bottom: 6px;
 }
@@ -2086,7 +2083,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 
     .section_title_wrap .section_intro {
         font-weight: 500;
-        font-size: 27px;
+        font-size: 36px;
         line-height: 32px;
         text-align: left;
         letter-spacing: -1px;
