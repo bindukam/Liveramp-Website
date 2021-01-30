@@ -1764,7 +1764,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .bg-container_btm {
     height: 1300px;
     position: relative;
-	background-image: url("https://nvish.wpengine.com/wp-content/uploads/brand-campaign/bottom_bg.jpg"); 
+	background-image: url("<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/bottom_bg.jpg"); 
   	background-color: #cccccc; 
  	background-position:top -150px center; 
     background-repeat: no-repeat; 
@@ -2029,7 +2029,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .bg-container_btm {
     height: auto;
     position: relative;
-    background-image: url("https://nvish.wpengine.com/wp-content/uploads/brand-campaign/bottom_bg.jpg"); 
+    background-image: url("<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/bottom_bg.jpg"); 
     background-color: #cccccc; 
     background-position:top 0px center; 
     background-repeat: no-repeat; 
