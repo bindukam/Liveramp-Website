@@ -482,7 +482,7 @@ section.change-world-section{
 }
 
 .flex-container .live-discussion-desc p{
-    font-family: flexo, sans-serif;
+    font-family: 'flexo medium', sans-serif;
     font-style: normal;
     font-size: 36px;
     color: #fff;
@@ -492,7 +492,7 @@ section.change-world-section{
 }
 
 .flex-container .live-discussion-heading h1 {
-    font-family: flexo, sans-serif;
+    font-family: 'flexo bold', flexo, sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 62px;
