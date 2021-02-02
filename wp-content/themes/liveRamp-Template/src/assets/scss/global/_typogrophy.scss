@@ -2,6 +2,7 @@
 
 @include font-face('Flexo', '../fonts/Flexo-Font/Flexo-Regular', null, null, otf);
 @include font-face('Flexo Bold', '../fonts/Flexo-Font/Flexo-Bold', bold, null, otf);
+@include font-face('Flexo Black', '../fonts/Flexo-Font/Flexo-Black', bold, null, otf);
 @include font-face('Flexo Medium', '../fonts/Flexo-Font/Flexo-Medium', null, null, otf);
 @include font-face('Flexo Demi', '../fonts/Flexo-Font/Flexo-Demi', null, null, otf);
 
@@ -9,12 +10,17 @@ $fa-font-path:"../../../node_modules/@fortawesome/fontawesome-pro/webfonts";
 // FONT FACES
 
 .flexo-bold {
-  font-family: 'Flexo Bold', sans-serif;
+  font-family: 'Flexo Bold', sans-serif; 
+  font-weight: 700;
+}
+
+.flexo-black {
+  font-family: 'Flexo Black', sans-serif;
   font-weight: 700;
 }
 
 .flexo-medium {
-  font-family: 'Flexo Medium', sans-serif;
+  font-family: 'Flexo Medium', sans-serif; 
   font-weight: 600;
 }
 
