@@ -670,7 +670,7 @@ function codismo_table_columns( $columns ) {
     
     // allows me to see modules in dev
 
-    if ($_SERVER['SERVER_NAME']=='lrmultidevelop.wpengine.com') {
+    if (($_SERVER['SERVER_NAME']=='lrmultidevelop.wpengine.com')||($_SERVER['SERVER_NAME']=='lrmultistaging.wpengine.com')) {
 	    $custom_columns = array(
 	        'codismo_page_id' => 'Page ID',
 	        'codismo_acf_pb_modules' => 'Page Builder Modules'
@@ -689,7 +689,7 @@ function codismo_table_column( $column, $post_id ) {
         echo basename( get_page_template() );
     }
     
-    if ($_SERVER['SERVER_NAME']=='lrmultidevelop.wpengine.com') {
+    if (($_SERVER['SERVER_NAME']=='lrmultidevelop.wpengine.com')||($_SERVER['SERVER_NAME']=='lrmultistaging.wpengine.com')) {
 	    if ( $column == 'codismo_page_id' ) {
 	        echo $post_id;
 	    }
