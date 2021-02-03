@@ -660,17 +660,24 @@ function _translate($word) {
 
 function swaphttp ($url) {return str_replace( 'http://', 'https://', $url );}
 
-
 add_filter( 'manage_pages_columns', 'codismo_table_columns', 10, 1 );
 add_action( 'manage_pages_custom_column', 'codismo_table_column', 10, 2 );
  
 function codismo_table_columns( $columns ) {
  
-    $custom_columns = array(
-        'codismo_template' => 'Template'
-    );
- 
-    $columns = array_merge( $columns, $custom_columns );
+    $custom_columns = array('codismo_template' => 'Template');
+    $columns = array_merge($columns, $custom_columns);
+    
+    // allows me to see modules in dev
+
+    if ($_SERVER['SERVER_NAME']=='lrmultidevelop.wpengine.com') {
+	    $custom_columns = array(
+	        'codismo_page_id' => 'Page ID',
+	        'codismo_acf_pb_modules' => 'Page Builder Modules'
+	    );
+	 
+	    $columns = array_merge($columns, $custom_columns);
+    }
  
     return $columns;
  
@@ -681,7 +688,20 @@ function codismo_table_column( $column, $post_id ) {
     if ( $column == 'codismo_template' ) {
         echo basename( get_page_template() );
     }
- 
+    
+    if ($_SERVER['SERVER_NAME']=='lrmultidevelop.wpengine.com') {
+	    if ( $column == 'codismo_page_id' ) {
+	        echo $post_id;
+	    }
+
+	    if ( $column == 'codismo_acf_pb_modules' ) {
+	        while ( have_rows('modules', $post_id) ) : the_row();
+	      		$mods[] = get_row_layout();
+	    	endwhile;
+	      	
+	      	echo join('<br>', $mods);
+	    }
+    }
 }
 
 /** "Add X-XSS headers" code start */
