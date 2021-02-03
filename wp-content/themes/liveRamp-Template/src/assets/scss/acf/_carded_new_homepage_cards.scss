@@ -28,7 +28,8 @@
         .cell {
             max-width: 322px;
             padding-top: 30px;
-            padding-bottom: 30px;
+            padding-bottom: 50px;
+            position: relative;
 
 			@include respond-to(csm_768) { 
             	max-width: 270px;
@@ -93,6 +94,12 @@
                     letter-spacing: 0px;
                     font-family: flexo, sans-serif;;
                     padding-bottom: 15px;
+                }
+                a{
+                    position: absolute;
+                    left: 0;
+                    bottom: 22px;
+                    right: 0;
                 }
             }
         }

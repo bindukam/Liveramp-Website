@@ -1,5 +1,13 @@
 .engineering_blog {
 
+	.grid-container{
+		.cell{
+			h2{
+				margin-bottom: 2rem;
+			}
+		}
+	}
+
 		.post-card {			
 			cursor: pointer;
 
@@ -98,10 +106,14 @@
 	
 	form {
 			&#filter {
+
+				.cell{
+					margin-bottom: 2rem;
+				}
 				
 				label {
 					color: $gray;
-					margin: 5px;
+					padding-bottom: .5rem;
 				}
 
 				select,

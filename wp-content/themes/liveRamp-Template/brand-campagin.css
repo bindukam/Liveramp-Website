@@ -485,6 +485,11 @@
     .velocity-quote-logo-section .section_col_wrap .section_col_description .section_logo img{
 		max-width:168px;
 		max-height:60px;
+    }
+    
+    .velocity-quote-logo-section .section_col_wrap .section_col_description .section_logo svg{
+		max-width:168px;
+		max-height:60px;
 	}
 	
 	.velocity-quote-logo-section .section_row + .section_row{
@@ -582,6 +587,12 @@
 		}
 
 		.velocity-quote-logo-section .section_col_wrap .section_col_description .section_logo img {
+			max-width: 154px;
+			max-height: 52px;
+			margin-bottom: 93px;
+        }
+        
+        .velocity-quote-logo-section .section_col_wrap .section_col_description .section_logo svg {
 			max-width: 154px;
 			max-height: 52px;
 			margin-bottom: 93px;
@@ -979,7 +990,19 @@
     -ms-interpolation-mode: bicubic;
 }
 
+.velocity_icon_text_left_right svg {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+}
+
 .velocity_icon_text_left_right img {
+    border-style: none;
+}
+
+.velocity_icon_text_left_right svg {
     border-style: none;
 }
 
@@ -1260,6 +1283,14 @@
         padding: 0;
     }
     .velocity_icon_text_left_right .icon_text_row .cell.image-container img{
+        width: 296px;
+        margin-bottom: 14px;
+        max-width: 85%;
+        margin: auto;
+        display: block;
+    }
+
+    .velocity_icon_text_left_right .icon_text_row .cell.image-container svg{
         width: 296px;
         margin-bottom: 14px;
         max-width: 85%;

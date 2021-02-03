@@ -131,7 +131,7 @@
     <div class="grid-x icon_text_row even">
 					
         <div class="cell image-container">
-            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/ultraHD.png" class="lsh-features_image">
+            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/UltraHD.svg" class="lsh-features_image">
         </div>
         
         <div class="cell text-container">
@@ -153,7 +153,7 @@
     <div class="grid-x icon_text_row odd">
 					
         <div class="cell image-container">
-            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/activate.png" class="lsh-features_image">
+            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/Activate.svg" class="lsh-features_image">
         </div>
         
         <div class="cell text-container">
@@ -175,7 +175,7 @@
     <div class="grid-x icon_text_row even">
 					
         <div class="cell image-container">
-            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/budget.png" class="lsh-features_image">
+            <img src="<?php echo get_template_directory_uri() ?>/dist/assets/images/brand-campaign/Budget.svg" class="lsh-features_image">
         </div>
         
         <div class="cell text-container">
