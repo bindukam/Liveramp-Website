@@ -1,0 +1,1360 @@
+/** Banner section CSS **/
+.velocity-banner-section {
+    position: relative;
+    min-height: 565px; 
+    overflow: hidden;
+    background-image: linear-gradient(45deg, #f9e547, #73c063, #00a9e0);
+}
+
+.velocity-banner-section:before{
+    position: absolute;
+    width: 100%;
+    height: 100vw;
+    content: "";
+    top: -15px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(135deg, #f9e547, #73c063, #00a9e0);
+    background-size: 100%;
+    z-index: -1;
+    transition: all .5s ease-in-out;
+    animation: move 13s linear 0s normal infinite;
+}
+
+ @keyframes move {
+        0% {
+            opacity: 0;
+            transform: rotate(0deg);
+        }
+
+        16% {
+            opacity: 1;
+            transform: rotate(0deg);
+        }
+
+        32% {
+            opacity: 0;
+            transform: rotate(0deg);
+        }
+
+        33% {
+            opacity: 0;
+            transform: rotate(90deg);
+        }
+
+        49% {
+            opacity: 1;
+            transform: rotate(90deg);
+        }
+
+        65% {
+            opacity: 0;
+            transform: rotate(90deg);
+        }
+
+        66% {
+            opacity: 0;
+            transform: rotate(180deg);
+        }
+
+        82% {
+            opacity: 1;
+            transform: rotate(180deg);
+        }
+
+        100% {
+            opacity: 0;
+            transform: rotate(180deg);
+        }
+    }
+	
+.velocity-banner-section .home__container {
+    row-gap: 0px;
+    position: relative;
+	min-height: 565px;
+}
+
+.velocity-banner-section .bd-grid {
+    max-width: 1296px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.velocity-banner-section .home__title {
+    flex-direction: column;
+    justify-content: center;
+    height: 565px;
+    align-items: flex-start;
+	padding: 171px 0 20px;
+    align-self: center;
+}
+
+.velocity-banner-section .home__title .heading{
+	display: flex;
+    align-items: center;
+	color:#fff!important;
+    line-height: 127.43px;
+	font-weight: 900;
+	font-size: 115px;
+	letter-spacing: -6px;
+    font-family: 'flexo black', flexo, sans-serif;
+}
+
+.velocity-banner-section .home__title .heading_dec{
+	display: flex;
+    align-items: center;
+    color: #003865!important;
+    font-style: normal;
+	padding-bottom: 0px;
+    /* padding-bottom: 100px; */
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: -1.6px;
+}
+
+.velocity-banner-section .home__scroll {
+    align-self: flex-start;
+    padding: 50px 0 2rem 15px;
+    position: absolute;
+    bottom: 6px;
+}
+
+.velocity-banner-section .home__scroll-link {
+    color: #fff;
+	cursor: default;
+}
+.velocity-banner-section .home__scroll-link:hover {
+    color: #fff;
+    cursor: default;
+}
+.velocity-banner-section img.home_img{
+	position: absolute;
+    right: 54px;
+    bottom: 0px;
+    max-width: 598px;
+    width: 100%;
+}
+
+.velocity-banner-section .home__scroll-link svg {
+    width: 42px;
+	height: 42px;
+	font-size: 50px;
+    border-radius: 50%;
+    padding: 8px;
+    font-weight: 600;
+    border: 2px solid #fff;
+}
+
+@media print, screen and (min-width: 64.0625em){
+	.velocity-banner-section .bd-grid {
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 64.0625em){
+	.velocity-banner-section img.home_img {
+        max-width: 400px;
+        right: 25px;
+    }
+}
+
+@media screen and (min-width: 40em){
+	.velocity-banner-section .home__title .heading_dec{
+		width:55%
+	}
+}
+@media screen and (max-width: 1199px) {
+	.velocity-banner-section .home__title{
+        padding-left: 40px !important;
+    }
+	.velocity-banner-section img.home_img {
+		max-width: 524px;
+		right: 0;
+	}
+}
+
+
+@media screen and (max-width: 1024px){
+	.velocity-banner-section .home__title {
+		padding: 109px 0 20px;
+	}
+	.velocity-banner-section img.home_img {
+		max-width: 455px;
+	}
+}
+
+
+@media screen and (max-width:991px){
+    .velocity-banner-section .home__title {
+        display: block;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+	.velocity-banner-section .home__title .heading{
+        font-size: 90px;
+    }
+	.velocity-banner-section .home__title .heading_dec{
+        font-size: 35px;
+		line-height: 40px;
+    }
+}
+
+@media screen and (max-width:767px){
+	.velocity-banner-section:before {
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		content: "";
+		background: linear-gradient(
+	353deg
+	, #f9e547, #73c063, #00a9e0);
+	}
+	.velocity-banner-section .home__title {
+		display: flex;
+		padding-top: 51px;
+		flex-direction: column;
+		justify-content: flex-start;
+		min-height: 545px;
+		align-items: flex-start;
+		padding-left: 0 !important;
+	}
+	.velocity-banner-section .home__title .heading {
+		font-size: 62px;
+		line-height: 71.4px;
+		letter-spacing: -3.36px;
+	}
+	.velocity-banner-section .home__title .heading_dec {
+		font-size: 38px;
+		line-height: 41.1px;
+		letter-spacing: -0.9px;
+	}
+	
+	.velocity-banner-section img.home_img {
+		right: 0;
+		max-width: 339px;
+	}
+	.velocity-banner-section home__scroll {
+		padding: 137px 0 1rem;
+	}
+}
+
+@media screen and (max-width:991px){
+	.velocity-banner-section img.home_img {
+        max-width: 380px;
+    }
+}
+
+@media (max-width: 480px){
+	.velocity-banner-section .home__title .heading {
+		width: auto;
+	}
+	.velocity-banner-section img.home_img {
+		max-width: 339px;
+		right: -62px;
+	}
+}
+
+/** Banner section CSS ends here**/
+
+
+/** Video section CSS **/
+
+	.velocity-video-section{
+		display: block;
+		padding: 1.825rem 1rem 2rem;
+		margin-top: 90px;
+		margin-bottom: 130px;
+	}
+	.velocity-video-section .felling-intro.text-center {
+		padding: 0px 18%;
+	}
+	.velocity-video-section .felling-intro .intro_headinng {
+		text-align: center;
+		margin-bottom: 21px;
+	}
+	
+	.velocity-video-section .felling-intro .intro_headinng h2 {
+		background-color: #CA4246;
+		background-image: linear-gradient(
+	95.47deg
+	, #001365 -0.52%, #00A0D9 57%, #80C468 87.12%);
+		background-size: 100%;
+		background-repeat: repeat;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		font-size: 62px;
+		line-height: 1;
+		letter-spacing: -4px;
+	}
+	
+	.velocity-video-section .felling-intro .intro_divider {
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		height: 3px;
+		margin-right: auto;
+		margin-bottom: 2em;
+		margin-left: auto;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-align-items: stretch;
+		-ms-flex-align: stretch;
+		align-items: stretch;
+		width: 100px;
+    }
+	
+	.velocity-video-section .felling-intro .intro_divider .icon-divider-item {
+		width: 100%;
+		padding-bottom: 0;
+		font-weight: 500;
+		text-align: center;
+		background-color: #003865;
+	}
+	
+	.velocity-video-section .felling-intro .intro_title {
+		text-align: center;
+		padding: 0 30px;
+	}
+	
+	.velocity-video-section .felling-intro .intro_title p{
+		font-size: 21px;
+		line-height: 31px;
+		font-family: 'Flexo';
+	}
+	
+	.velocity-video-section .v_play_wrap {
+		position: relative;
+		max-width: 962px;
+		width: 100%;
+		box-shadow: 0px 0px 50px 24px rgb(0 0 0 / 15%);
+		border-radius: 15px;
+		margin: 64px auto 0px;
+		overflow: hidden;
+	}
+	
+	.velocity-video-section .wistia_embed_custom{
+		height: 533px;
+		position:relative;
+		width: 100%;
+	}
+
+	.velocity-video-section .wistia_swatch_custom{
+		height:100%;
+		left:0;
+		opacity:0;
+		overflow:hidden;
+		position:absolute;
+		top:0;
+		transition:opacity 200ms;
+		width:100%;
+	}
+
+	.velocity-video-section .wistia_embed_custom img.w-css-reset {
+		width: 100% !important;
+		height: 100% !important;
+		border-width: 0 !important;
+	}
+	
+
+/** Video section CSS ends here**/
+
+/** Quote-logo section CSS **/
+	.velocity-quote-logo-section {
+		display: block;
+		padding: 90px 1rem 283px;
+		background-color: #EAF4F9;
+	}
+	.velocity-quote-logo-section.blue_gradient{
+		/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffffff+0,eaf4f9+25,eaf4f9+78,ffffff+99 */
+		background: #ffffff; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ffffff 0%, #eaf4f9 25%, #eaf4f9 78%, #ffffff 99%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #ffffff 0%,#eaf4f9 25%,#eaf4f9 78%,#ffffff 99%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #ffffff 0%,#eaf4f9 25%,#eaf4f9 78%,#ffffff 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+	}
+	
+	.velocity-quote-logo-section .section_title_wrap{
+		margin-bottom:80px;
+	}
+	
+	.velocity-quote-logo-section  .section_title_wrap .section_title{
+            font-family: 'flexo black', 'flexo bold', flexo, sans-serif;
+            font-style: normal;
+            font-weight: 900; 
+            font-size: 72px;
+            line-height: 1;
+            text-align: center;
+            letter-spacing: -2.2px;
+            color: #003865!important;
+            background-color: #CA4246;
+			background-image:linear-gradient(95.47deg
+			, #001365 -0.52%, #00A0D9 57%, #80C468 87.12%);
+			background-size: 100%;
+			background-repeat: repeat;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+    }
+	
+	.velocity-quote-logo-section .section_title_wrap .section_intro{
+            font-family: 'flexo medium', Flexo, sans-serif;
+            font-size: 36px;
+            line-height: 43.2px;
+            text-align: center;
+            letter-spacing: -1px;
+            color: #73C06B;
+            font-weight: 500;
+    }
+	
+	.velocity-quote-logo-section .section_col_wrap{
+		display:flex;
+		align-items:center;
+		justify-content:space-between;
+	}
+	
+	.velocity-quote-logo-section .section_col_wrap .section_col_thumb{
+		width:28%;
+		background-size:cover;
+		background-repeat:no-repeat;
+		background-position:center;
+    }
+	
+	.velocity-quote-logo-section .section_col_wrap .section_col_thumb img{
+            width:calc(100% - 15%); 
+            border-radius:50%;
+            border:2px solid #fff;
+            box-shadow:0px 0px 50px rgba(0, 0, 0, 0.2);
+            border-radius: 176px;margin:7.5%;
+    }
+	
+	.velocity-quote-logo-section .section_col_wrap .section_col_description{
+        width:58%;
+    }
+	
+	.velocity-quote-logo-section .section_col_wrap .section_col_thumb.order1{
+        order:1;
+    }
+	
+	.velocity-quote-logo-section .section_col_wrap .section_col_description .lead_paragraph{
+		font-family: 'flexo medium', flexo, sans-serif;
+		font-style: normal;
+		font-weight: 500; 
+		font-size: 44px; 
+		line-height: 58px;
+		letter-spacing: -2px;
+		background-color: #CA4246;
+		background-image: linear-gradient(96.07deg, #003865 2.23%, #00A0D9 101.51%);
+		background-size: 100%;
+		background-repeat: repeat; 
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin-bottom: 40px;
+	}
+	
+	.velocity-quote-logo-section .section_col_wrap .section_col_description .post_designation{
+		font-family: flexo, sans-serif;
+		font-style: normal;
+		font-weight: 500; 
+		font-size: 24px; 
+		line-height: 28px; 
+		color: #73C06B; 
+		margin-bottom: 16px;
+	}
+	
+	.velocity-quote-logo-section .section_title_wrap .section_title {
+		background-image:linear-gradient(95.47deg
+		, #001365 -0.52%, #00A0D9 57%, #80C468 87.12%);
+			background-size: 100%;
+			background-repeat: repeat;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+	}
+	
+	.velocity-quote-logo-section .section_col_wrap .section_col_description .section_logo{
+		width:168px;
+	}
+
+    .velocity-quote-logo-section .section_col_wrap .section_col_description .section_logo img{
+		max-width:168px;
+		max-height:60px;
+	}
+	
+	.velocity-quote-logo-section .section_row + .section_row{
+		margin-top: 244px;
+	}
+
+	.velocity-quote-logo-section blockquote {
+		margin: 0 0 1rem;
+		padding: 5px 15px 0 15px;
+		text-indent: -0.45em;
+		border-left: none;
+		quotes: "“" "”" "‘" "’";
+	}
+
+	@supports ( hanging-punctuation: first) {
+	  blockquote {
+		text-indent: 0;
+		hanging-punctuation: first;
+	  }
+	}
+
+	.velocity-quote-logo-section blockquote::before {
+		content: open-quote;
+		padding-right: 11px;
+	}
+	
+	.velocity-quote-logo-section blockquote::after {
+		content: close-quote;
+	}
+	
+	
+	
+   @media print,screen and (max-width:39.99em){
+		.velocity-quote-logo-section .section_col_wrap .section_col_description .lead_paragraph{
+			font-size: 33px; 
+			line-height:1;
+		}
+		.velocity-quote-logo-section .section_col_wrap .section_col_thumb{
+			width:100%;
+			max-width: 320px;
+			margin-bottom: 148px;
+			order:1;
+		}
+		.velocity-quote-logo-section .section_col_wrap .section_col_description{
+			width:100%;
+		}
+	}
+	
+	@media screen and (max-width: 991px){
+		.velocity-quote-logo-section .section_title_wrap .section_title {
+			font-size: 48px;
+			line-height: 1;
+		}
+	
+		.velocity-quote-logo-section .section_col_wrap .section_col_description{
+			 width: 68%;
+		}
+
+		.velocity-quote-logo-section .section_col_wrap .section_col_description .lead_paragraph{
+			font-size: 33px;
+			line-height: 44.6px;
+		}
+	}
+	
+	@media screen and (max-width: 767px){
+		.velocity-video-section .felling-intro .intro_headinng h2, .velocity-quote-logo-section .section_title_wrap .section_title, .velocity_resource_3_card_image_and_text .flex-container .live-discussion-heading h1 {
+			font-size: 48px;
+			line-height: 1;
+		}
+	
+		.velocity-quote-logo-section {
+			padding: 0 1rem 0;
+		}
+
+		.velocity-quote-logo-section .section_title_wrap .section_title {
+			font-size: 54px;
+			text-align: left;
+			line-height: 64.81px;
+			letter-spacing: -2.2px;
+		}
+
+		.velocity-quote-logo-section .section_title_wrap {
+			margin-bottom: 40px;
+		}
+		.velocity-quote-logo-section .section_col_wrap .section_col_description .lead_paragraph {
+			font-size: 33px;
+			text-align: left;
+			margin-bottom: 24px;
+			line-height: 44.6px;
+		}
+
+		.velocity-quote-logo-section .section_col_wrap .section_col_description .post_designation {
+			font-size: 21px;
+			line-height: 31px;
+		}
+
+		.velocity-quote-logo-section .section_col_wrap .section_col_description .section_logo img {
+			max-width: 154px;
+			max-height: 52px;
+			margin-bottom: 93px;
+		}
+
+		.velocity-quote-logo-section .section_row + .section_row {
+			margin-top: 0;
+		}
+		
+		.velocity-quote-logo-section .section_title_wrap .section_intro,
+		.vector_resource_3_card_image_and_text  .flex-container.startTheDiscussion .live-discussion-desc p {
+			font-weight: 500;
+			font-size: 27px;
+			line-height: 32.4px;
+			text-align: left;
+			letter-spacing: -1px;
+		}
+		
+		.velocity-quote-logo-section.icon_text_left_right .icon_text_row .cell.image-container,
+		.velocity-quote-logo-section.icon_text_left_right .icon_text_row .cell.text-container,
+		.velocity-quote-logo-section.icon_text_left_right .icon_text_row.even .cell.text-container .text_box,
+		.velocity-quote-logo-section .section_col_wrap .section_col_description,
+		.velocity-quote-logo-section.icon_text_left_right .icon_text_row.odd .cell.text-container .text_box{
+			width: 100%;
+			padding: 0;
+		} 
+		.velocity-quote-logo-section .section_col_wrap{
+			flex-direction:column;
+			align-items:center;
+		}
+	}
+/** Quote-logo section CSS ends here**/
+
+/** brand-campagin2 css starts **/
+
+/** velocity_resource_3_card_image_and_text section CSS **/
+.velocity_resource_3_card_image_and_text .cell .intro_headinng{
+	text-align: center;
+    margin-bottom: 32px;
+}
+
+.velocity_resource_3_card_image_and_text .intro_headinng h2{
+    background-color: #CA4246;
+    background-image: linear-gradient(95.47deg, #001365 -0.52%, #00A0D9 57%, #80C468 87.12%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 62px;
+    letter-spacing: -4px;
+    line-height: 65px;
+}
+
+.velocity_resource_3_card_image_and_text .cell .intro_divider {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 3px;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-left: auto;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100px;
+}
+
+.velocity_resource_3_card_image_and_text .cell .icon-divider-item {
+    width: 100%;
+    padding-bottom: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.velocity_resource_3_card_image_and_text .blue-lines{
+	background-color: #003865;
+}
+
+.velocity_resource_3_card_image_and_text .dark-blue
+{
+    line-height: 31px;
+}
+
+.velocity_resource_3_card_image_and_text .bg-container_btm {
+    height: auto;
+    position: relative;
+	background-image: url("/wp-content/themes/liveRamp-Template/dist/assets/images/brand-campaign/bottom_bg.jpg"); 
+  	background-color: #cccccc; 
+ 	background-position:top 0px center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    overflow: hidden;
+    margin-top: 39px
+}
+
+.velocity_resource_3_card_image_and_text.no_spacer{
+    margin:0;
+}
+
+.velocity_resource_3_card_image_and_text .bg-container_btm .content{
+    height: 233px;
+}
+
+.velocity_resource_3_card_image_and_text .flex-container {
+      display: flex;
+	  flex-wrap: wrap;
+	  font-size: 30px;
+	  text-align: center;
+	  justify-content:center;
+	  margin-top: 438px;
+	  padding: 0px 100px;
+	  padding-bottom: 296px;
+  }
+  
+  .velocity_resource_3_card_image_and_text .flex-container .live-discussion-desc p{
+      font-family: 'flexo medium', sans-serif;
+      font-style: normal;
+      font-size: 36px;
+      color: #fff;
+      line-height: 54px;
+      letter-spacing: -1px;
+  }
+  
+	  .velocity_resource_3_card_image_and_text .flex-container .live-discussion-heading h1 {
+		  font-family: 'flexo bold', flexo, sans-serif;
+		  font-style: normal;
+		  font-weight: bold;
+		  font-size: 62px;
+		  line-height: 52px;
+		  color: #fff!important;
+		  letter-spacing: -1px;
+	  }
+  
+
+      .velocity_resource_3_card_image_and_text .button {
+        vertical-align: middle;
+        font-size: 16px;
+        line-height: 1;
+        text-align: center;
+        cursor: pointer;
+        font-family: 'Flexo Bold';
+        transition: all 1s ease;
+        background-color: #FAE164;
+        color: #003865; 
+        display: inline-flex;
+        align-items: center;
+        width:221;
+        height: 41px;
+        border-radius: 32px;
+        border:0;
+    }
+    .velocity_resource_3_card_image_and_text .button:after {
+        transition: all .75s ease;
+        content: "";
+        opacity: 0;
+        background-image: url('/wp-content/themes/liveRamp-Template/dist/assets/images/svg/arrow-white.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: .8rem;
+        width: .8rem;
+        margin-right: -.2em;
+        margin-left: .2em;
+        display: inline-block;
+    }
+
+    .velocity_resource_3_card_image_and_text a.button:hover {
+        text-decoration: none;
+        background-color: #FAE164;
+        color: #003865;
+    }
+	
+	.velocity_resource_3_card_image_and_text .cell.resource-card .term{
+		 min-height: auto;
+		margin-bottom: 23px;
+	}
+
+	.velocity_resource_3_card_image_and_text .cell.resource-card .content{
+		margin-bottom: 0;
+		padding-bottom: 23px;
+	}
+
+
+	.velocity_resource_3_card_image_and_text .cell.resource-card .cell.orange{
+		color: #73C06B;
+		font-size: 16px;
+		padding-top: 1px;
+		line-height: 22.4px;
+	}  
+
+	.velocity_resource_3_card_image_and_text .cell.resource-card .title.primary{
+		color: #003865 !important;
+		font-size: 19px;
+		line-height: 25.4px;
+		margin-bottom: 61px;
+		padding-bottom: 0;
+	}
+
+	.velocity_resource_3_card_image_and_text .cell.resource-card .flexo-bold.topic{
+		color: #003865;
+		font-size: 15px;
+		line-height: 25.5px; 
+		margin-bottom: 0;
+		position: static;
+	}
+    
+	.velocity_resource_3_card_image_and_text .intro_title p{
+		 font-family: 'Flexo';
+	}
+ 
+/** velocity_resource_3_card_image_and_text section CSS ENDS HERE **/
+
+/** velocity_icon_text_left_right section CSS **/
+
+.velocity_icon_text_left_right .intro_headinng {
+    text-align: left;
+}
+.velocity_icon_text_left_right .intro_headinng h2 {
+    font-size: 44px;
+}
+
+.velocity_icon_text_left_right .card-intro .intro_divider {
+    margin-left: 0;
+}
+
+.velocity_icon_text_left_right .card-intro .intro_title {
+    text-align: left;
+    padding: 0 ;
+    font-size: 21px;
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell.text-container {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell.image-container {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell.image-container,
+.velocity_icon_text_left_right .icon_text_row .cell.text-container,
+.velocity_icon_text_left_right .icon_text_row.even .cell.text-container .text_box,
+.section_col_wrap .section_col_description,
+.velocity_icon_text_left_right .icon_text_row.odd .cell.text-container .text_box{
+    width: 100%;
+    padding: 0;
+}
+
+.velocity_icon_text_left_right {
+    padding: 1.825rem 1rem 2rem;
+    margin-bottom: 113px;
+}
+
+.velocity_icon_text_left_right .grid-container {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    max-width: 72.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.velocity_icon_text_left_right .card-intro {
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 32px;
+}
+
+.velocity_icon_text_left_right .grid-x {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    width: 100%;
+}
+
+.velocity_icon_text_left_right .cell {
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    min-height: 0;
+    min-width: 0;
+    width: 100%;
+	/* text-align: center; */
+}
+
+.velocity_icon_text_left_right .card-intro .intro_heading {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-left: auto;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-weight: 500;
+    text-align: center;
+}
+
+
+.velocity_icon_text_left_right .card-intro .intro_divider {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 3px;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-left: auto;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100px;
+}
+
+.velocity_icon_text_left_right .card-intro .intro_divider .icon-divider-item {
+    width: 100%;
+    padding-bottom: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.velocity_icon_text_left_right .card-intro .intro_title {
+    text-align: center;
+    padding: 0 30px;
+    max-width: 690px;
+    margin: auto;
+}
+
+.velocity_icon_text_left_right .card-intro .intro_title p{
+    font-size: 21px;
+    line-height: 31px;
+}
+
+
+.velocity_icon_text_left_right .card-intro .dark-blue h3 {
+    color: #003865!important;
+    font-size: 36px!important;
+    line-height: 40.8px!important;
+}
+
+.velocity_icon_text_left_right .card-intro .intro_title h2 {
+    font-size: 2.5rem;
+    line-height: 44px;
+    font-weight: 700;
+    letter-spacing: -.04em;
+    margin-bottom: 16px;
+}
+
+
+.velocity_icon_text_left_right .icon_text_row {
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell.image-container {
+    display: block;
+    width: 466px;
+    padding:0;
+}
+
+.velocity_icon_text_left_right .icon_text_row.even .image-container {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+
+.velocity_icon_text_left_right img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+}
+
+.velocity_icon_text_left_right img {
+    border-style: none;
+}
+
+
+.velocity_icon_text_left_right .icon_text_row .cell.image-container {
+    width: 50%;
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell.text-container {
+    width: 50%;
+}
+
+.velocity_icon_text_left_right .icon_text_row.odd .cell.image-container{
+    text-align: right;
+} 
+
+.velocity_icon_text_left_right .icon_text_row.odd .cell.text-container .text_box{
+    max-width: 434px;
+    margin-left: 100px;
+    width: 100%;
+}
+
+.velocity_icon_text_left_right .icon_text_row{
+    padding-top: 66px;
+}
+
+.velocity_icon_text_left_right .icon_text_row.even .text_box{
+    padding-right: 98px;
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell.text-container .title h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 2.125em;
+    line-height: 1.2;
+    font-weight: 600;
+    letter-spacing: -.03em;
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell.text-container .txt-with-divider {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 60px;
+    height: 3px;
+    margin-bottom: 1em;
+    margin-left: 0;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell.text-container .txt-with-divider .txt-with-divider--item.divider--orange {
+    background-color: #fa8d28;
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell.text-container .txt-with-divider .txt-with-divider--item {
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell.text-container .text p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #7a97ab;
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell.text-container .text p a {
+    line-height: inherit;
+    color: #73c06b!important;
+    text-decoration: underline;
+    cursor: pointer; 
+}
+
+.velocity_icon_text_left_right .icon_text_row .cell.text-container .text p {
+    font-size: 18px;
+    line-height: 28.8px;
+    color: #003865;
+	font-family: 'Flexo';
+}
+
+
+.velocity_icon_text_left_right .icon_text_row .cell.text-container .text p > a {
+    color: #73C06B;
+    text-decoration: underline;
+}
+
+.velocity_icon_text_left_right p {
+    margin-bottom: 1rem;
+    font-size: inherit;
+    line-height: 1.6;
+    text-rendering: optimizeLegibility;
+}
+
+
+.velocity_icon_text_left_right .icon_text_row.odd .image-container {
+    -webkit-order: 2;
+    -ms-flex-order: 2;
+    order: 2;
+}
+
+.velocity_icon_text_left_right .icon_text_row.odd .text-container {
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    order: 1;
+}
+
+
+.velocity_icon_text_left_right .intro_headinng h2{
+    background-color: #CA4246;
+    background-image: linear-gradient(95.47deg, #001365 -0.52%, #00A0D9 57%, #80C468 87.12%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    font-size: 62px;
+    letter-spacing: -4px;
+    line-height: 65px;
+}
+.velocity_icon_text_left_right .cell .intro_headinng{
+	text-align: center;
+    margin-bottom: 32px;
+}
+
+.velocity_icon_text_left_right .blue-lines{
+	background-color: #003865;
+}
+
+.velocity_icon_text_left_right .card-intro .intro_title p{ 
+  font-family: 'Flexo';
+}
+/** velocity_icon_text_left_right section CSS ENDS HERE **/
+
+/** media query CSS starts HERE **/
+
+	@media print, screen and (min-width: 40em){
+                
+		.velocity_resource_3_card_image_and_text .intro_headinng h2{
+            width: 66%;
+            margin: 0 auto;
+        }
+    
+        .velocity_resource_3_card_image_and_text .intro_title p{
+            font-size: 21px;
+            width: 60%;
+            margin: auto;
+        }
+
+
+        .velocity_icon_text_left_right .grid-container {
+            padding-right: .75rem;
+            padding-left: .75rem;
+        }
+		
+		.velocity_resource_3_card_image_and_text .grid-margin-x>.cell {
+			width: calc(33.33333% - 2rem);
+			margin-left: .75rem;
+			margin-right: .75rem;
+		}
+
+    }
+
+    @media screen and (max-width: 768px){
+        .velocity_resource_3_card_image_and_text .cell .intro_headinng{
+            text-align: left;
+        }
+
+        .velocity_resource_3_card_image_and_text .intro_headinng h2,
+        .velocity_resource_3_card_image_and_text .intro_title p{
+            width: 100%;
+        }
+
+        .velocity_resource_3_card_image_and_text .intro_headinng h2{
+            font-size: 47px !important;
+            line-height: 52px !important;
+            letter-spacing: -2.8px !important;
+        }
+
+        .velocity_resource_3_card_image_and_text .cell .intro_divider {
+            margin-left: 0;
+        }
+
+        
+        .velocity_resource_3_card_image_and_text .cell .intro_title p{
+        text-align: left;
+        padding: 0 ;
+        font-size: 21px;
+        }
+
+        .velocity_resource_3_card_image_and_text .grid-margin-x.large-up-3>.cell{
+            width: 96%;
+            margin-bottom: 48px;
+        }
+
+
+        .velocity_resource_3_card_image_and_text .flex-container.startTheDiscussion {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 30px;
+            text-align: center;
+            justify-content: center;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 0px;
+            padding-bottom: 202px;
+            padding-top: 270px;
+        }
+       
+        .velocity_resource_3_card_image_and_text .flex-container.startTheDiscussion .live-discussion-heading h1 {
+            font-size: 40px;
+            line-height: 52px;
+            letter-spacing: -1px;
+        }
+
+        .velocity_resource_3_card_image_and_text .flex-container.startTheDiscussion .live-discussion-desc p {
+            font-weight: 500;
+            font-size: 27px;
+            line-height: 32.4px;
+            text-align: center;
+            letter-spacing: -1px;            
+            margin-bottom: 42px; 
+        }
+    
+        .velocity_icon_text_left_right .icon_text_row .cell.image-container {
+            -webkit-order: 2;
+            -ms-flex-order: 2;
+            order: 2;
+        }
+        .velocity_icon_text_left_right .icon_text_row .cell.text-container {
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+        }
+        .velocity_icon_text_left_right .cell .intro_headinng{
+        text-align: left;
+    }
+
+    .velocity_icon_text_left_right .intro_headinng h2,
+    .velocity_icon_text_left_right .intro_title p{
+        width: 100%;
+    }
+
+    .velocity_icon_text_left_right .intro_headinng h2{
+        font-size: 47px !important;
+        line-height: 52px !important;
+        letter-spacing: -2.8px !important;
+    }
+
+    .velocity_icon_text_left_right .cell .intro_divider {
+        margin-left: 0;
+    }
+
+    
+    .velocity_icon_text_left_right .cell .intro_title p{
+    text-align: left;
+    padding: 0 ;
+    font-size: 21px;
+    }
+
+    .velocity_icon_text_left_right .card-intro .intro_title {
+        text-align: left;
+        padding: 0 ;
+        font-size: 21px;
+    }
+
+    .velocity_icon_text_left_right .icon_text_row{
+        margin-top: 20px;
+    }
+
+    
+
+    .velocity_icon_text_left_right .icon_text_row .cell.image-container,.velocity_icon_text_left_right .icon_text_row .cell.text-container,.velocity_icon_text_left_right .icon_text_row.even .cell.text-container .text_box, .velocity_icon_text_left_right .icon_text_row.odd .cell.text-container .text_box{
+        width: 100%;
+        padding: 0;
+    }
+    .velocity_icon_text_left_right .icon_text_row .cell.image-container img{
+        width: 296px;
+        margin-bottom: 14px;
+        max-width: 85%;
+        margin: auto;
+        display: block;
+    }
+
+   
+    
+    }
+
+     
+@media print, screen and (min-width: 64.0625em) {
+    .velocity_icon_text_left_right .grid-container {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+@media (max-width: 1199px){
+
+    .velocity_icon_text_left_right .icon_text_row.odd .cell.text-container .text_box {
+        margin-left: 0;
+    }
+}
+
+
+
+	
+	
+	
+	@media screen and (max-width:991px){
+		.velocity-video-section .felling-intro .intro_headinng h2, .velocity-video-section .intro_headinng h2, .velocity_resource_3_card_image_and_text .intro_headinng h2,
+		.velocity_resource_3_card_image_and_text .flex-container .live-discussion-heading h1 {
+			font-size: 48px;
+			line-height: 1;
+		}
+		
+		.velocity_resource_3_card_image_and_text .flex-container .live-discussion-desc p{
+			font-size: 30px;
+		}
+
+	}
+	
+	
+	@media screen and (max-width:767px){
+		.velocity-video-section{
+			margin-top: 50px;
+			margin-bottom: 86px; 
+		}
+		.velocity-video-section .felling-intro.text-center {
+			padding: 0px;
+		}
+		.velocity-video-section .felling-intro .intro_headinng {
+			padding: 0px;
+			text-align: left;
+		}
+		.velocity-video-section .felling-intro .intro_headinng h2
+		.section_title_wrap .section_title,
+		.intro_headinng h2{
+			font-size: 47px !important;
+			line-height: 52px !important;
+			letter-spacing: -2.8px !important;
+		}
+
+		.velocity-video-section .felling-intro .intro_divider {
+			margin-left: 0;
+		}
+
+		.velocity-video-section .felling-intro .intro_title {
+			text-align: left;
+			padding: 0 ;
+			font-size: 21px;
+		}
+	}
+	
+	@media screen and (max-width: 767px){
+		.velocity-video-section .wistia_embed_custom {
+			height: 405px;
+		}
+	}
+	
+	@media screen and (max-width: 480px){
+		.velocity-video-section .wistia_embed_custom {
+			height: 247px;
+		}
+	}
+	
+	@media screen and (max-width: 375px){
+		.velocity-video-section .wistia_embed_custom {
+			height: 186px;
+		}
+	}
+
+
+    /** media query CSS ENDS HERE **/
+
+    /** brand-campagin2 css ENDS HERE **/
