@@ -94,7 +94,7 @@ $white-wl:#ffffff;//white
     .line19 {stroke:$yellow-wl;}
 }
 
-.gradient-text * {
+.gradient-text {
     background-image: -webkit-gradient(linear,left top,left bottom,from(#09a8ab),to(#0f3264));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
