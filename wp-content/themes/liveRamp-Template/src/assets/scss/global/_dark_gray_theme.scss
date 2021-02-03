@@ -10,7 +10,7 @@
     --theme-contrast-color: #fefefe;
     --theme-accent-color: #FAE164;
 
-    .gradient-text {
+    .gradient-text * {
         background-image: -webkit-gradient(linear,left top,left bottom,from(var(--theme-primary-color)),to(var(--theme-variant-color)));
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
